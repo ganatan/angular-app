@@ -1,0 +1,38 @@
+<div class="container">
+
+  <div class="row mt-4">
+    <div class="col">
+      <h2>
+        Module Items
+      </h2>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm mb-2">
+      <button type="button" class="btn btn-primary" (click)="getUsers()">Get Users</button>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="table-responsive">
+        <table class="table table-sm table-hover table-bordered table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">name</th>
+              <th scope="col">email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of items; let i=index">
+              <td>{{item.name}}</td>
+              <td>{{item.email}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
