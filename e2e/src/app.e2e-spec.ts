@@ -7,8 +7,8 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display angular-starter', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to angular-starter!');
+    expect(page.getTitleText()).toEqual('angular-starter');
   });
 });

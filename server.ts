@@ -15,7 +15,7 @@ enableProdMode();
 // Express server
 const app = express();
 
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT || 4000;
 const DIST_FOLDER = join(process.cwd(), 'dist');
 
 // Our index.html we'll use as our template
