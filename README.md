@@ -1,17 +1,16 @@
-# angular-starter-httpclient
-- Date : 23/12/2018 09:42
+# angular-starter-pwa
+- Date : 17/02/2019 10:58
 - Author : danny ganatan
 
 # Prerequisites
-- Angular version 7.1.4
-- Angular-cli version 7.1.4
-- Angular universal version 7.0.2
-- Visual studio code version 1.29.1
-- Typescript version 3.1.6
-- node.js version 10.14.1 LTS (Long Term Support)
-- npm (node package manager) version 6.4.1
+- Angular version 7.2.5
+- Angular-cli version 7.3.1
+- Visual studio code version 1.31.1
+- Typescript version 3.2.4
+- node.js version 10.15.1 LTS (Long Term Support)
+- npm (node package manager) version 6.5.0
 - Jquery version 3.3.1
-- Bootstrap version 4.2.1
+- Bootstrap version 4.3.1
 - Fontawesome version 4.7.0
 
 # Installation
@@ -38,5 +37,7 @@
 - http://localhost:4000/
 
 # Tutorials
-- https://www.ganatan.com/tutorials/angular-pwa
+- https://www.ganatan.com/tutorials/pwa-et-angular
+
 - https://www.ganatan.com/docs
+
