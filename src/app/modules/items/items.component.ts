@@ -20,7 +20,7 @@ export class ItemsComponent implements OnInit {
   constructor(
     private state: TransferState,
     private itemsService: ItemsService,
-    @Inject(PLATFORM_ID) private platformId: Object,
+    @Inject(PLATFORM_ID) private platformId: object,
     @Inject(APP_ID) private appId: string) {
   }
 
@@ -30,7 +30,7 @@ export class ItemsComponent implements OnInit {
 
   getUsers() {
 
-    this.items = this.state.get(STATE_KEY_ITEMS, <any>[]);
+    this.items = this.state.get(STATE_KEY_ITEMS, <any> []);
 
     if (this.items.length === 0) {
       this.itemsService.getItems('https://jsonplaceholder.typicode.com/users')
@@ -40,7 +40,7 @@ export class ItemsComponent implements OnInit {
               'in the browser' : 'on the server';
             console.log(`getUsers : Running ${platform} with appId=${this.appId}`);
             this.items = items;
-            this.state.set(STATE_KEY_ITEMS, <any>items);
+            this.state.set(STATE_KEY_ITEMS, <any> items);
           });
     }
   }

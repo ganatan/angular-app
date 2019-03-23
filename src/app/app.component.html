@@ -1,30 +1,28 @@
 <header>
-
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark " style="background-color: #212121;">
     <a class="navbar-brand" routerLink="/">
-      <img src="./assets/params/logo/ganatan.png" width="20" height="20" alt="">
-      <span>&nbsp;ganatan</span>
+      <span style="color:white">ganatan</span>
+      <img src="./assets/params/images/logo/ganatan.png" width="20" height="20" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
       aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" routerLink="/">
-            <i class="fa fa-fw fa-film"></i>&nbsp;Home
+            <i class="fab fa-rebel mr-1"></i> Home
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" routerLink="/about">
-            <i class="fa fa-fw fa-film"></i>&nbsp;About
+            <i class="fas fa-tv mr-1"></i> About
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" routerLink="/contact">
-            <i class="fa fa-fw fa-dashboard"></i>&nbsp;Contact
+            <i class="fas fa-film mr-1"></i> Contact
           </a>
         </li>
       </ul>
@@ -32,18 +30,12 @@
   </nav>
 </header>
 
-<main role="main" class="container">
-  <div class="starter-template">
+<main>
+  <div class="container-fluid">
     <section>
       <h1> {{ title }} </h1>
-      <h2> (Angular v 7.2.5) </h2>
+      <h2> (Angular v 7.2.10) </h2>
     </section>
     <router-outlet></router-outlet>
   </div>
 </main>
-
-<footer class="footer">
-  <div class="container">
-    <a href="https://www.ganatan.com/docs">www.ganatan.com/docs</a>
-  </div>
-</footer>
