@@ -73,9 +73,9 @@ What you need to run this app:
 * `npm run e2e`
 
 ### Author
-* Updated : 24/03/2019
+* Updated : 29/03/2019
 * Author  : danny ganatan
 * Website : https://www.ganatan.com/guide
 
 ### Tutorials
-*https://www.ganatan.com/tutorials/progressive-web-app-avec-angular
+*https://www.ganatan.com/tutorials/progressive-web-app-avec-angular-7
