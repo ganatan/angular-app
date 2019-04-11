@@ -67,7 +67,6 @@
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true,
-    "no-angle-bracket-type-assertion": false
+    "directive-class-suffix": true
   }
 }

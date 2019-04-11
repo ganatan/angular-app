@@ -12,6 +12,7 @@
       "element",
       "app",
       "kebab-case"
-    ]
+    ],
+    "no-angle-bracket-type-assertion": false    
   }
 }

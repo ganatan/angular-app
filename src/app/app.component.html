@@ -12,17 +12,17 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link" routerLink="/">
-            <i class="fab fa-rebel mr-1"></i> Home
+            <i class="fas fa-home mr-1"></i> Home
           </a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" routerLink="/about">
-            <i class="fas fa-tv mr-1"></i> About
+            <i class="far fa-question-circle mr-1"></i> About
           </a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" routerLink="/contact">
-            <i class="fas fa-film mr-1"></i> Contact
+            <i class="fas fa-envelope mr-1"></i> Contact
           </a>
         </li>
       </ul>
@@ -32,10 +32,22 @@
 
 <main>
   <div class="container-fluid">
-    <section>
-      <h1> {{ title }} </h1>
-      <h2> (Angular v 7.2.10) </h2>
-    </section>
+    <div class="row pt-1 mb-2">
+      <div class="col-md-4 text-center mb-2">
+        <h1 class="h5">
+          <i class="fab fa-android fa-lg mr-2 text-primary"></i>
+          {{ title }}<i class="fab fa-apple fa-lg ml-2 mr-1 text-primary"></i>
+        </h1>
+      </div>
+      <div class="col-md-4 text-center">
+        <h2 class="h5">{{angular}}&nbsp;&nbsp;<img src="./assets/params/images/logo/angular.png" width="36"
+            height="36" alt=""></h2>
+      </div>
+      <div class="col-md-4 text-center">
+        <h2 class="h5">{{bootstrap}}&nbsp;&nbsp;<img src="./assets/params/images/logo/bootstrap.png" width="28"
+            height="28" alt=""></h2>
+      </div>
+    </div>
     <router-outlet></router-outlet>
   </div>
 </main>
