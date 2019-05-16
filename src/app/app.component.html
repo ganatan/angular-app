@@ -1,53 +1,59 @@
 <header>
-  <nav class="navbar navbar-expand-md fixed-top navbar-dark " style="background-color: #212121;">
-    <a class="navbar-brand" routerLink="/">
-      <span style="color:white">ganatan</span>
-      <img src="./assets/params/images/logo/ganatan.png" width="20" height="20" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark " style="background-color: #212121;">
+        <a class="navbar-brand" routerLink="/">
+            <span style="color:white">ganatan</span>
+            <img src="./assets/params/images/logo/ganatan.png" width="20" height="20" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/">
-            <i class="fas fa-home mr-1"></i> Home
-          </a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/about">
-            <i class="far fa-question-circle mr-1"></i> About
-          </a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/contact">
-            <i class="fas fa-envelope mr-1"></i> Contact
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/">
+                        <i class="fas fa-home mr-1"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/about">
+                        <i class="far fa-question-circle mr-1"></i> About
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/contact">
+                        <i class="fas fa-envelope mr-1"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 <main>
-  <div class="container-fluid">
-    <div class="row pt-1 mb-2">
-      <div class="col-md-4 text-center mb-2">
-        <h1 class="h5">
-          <i class="fab fa-android fa-lg mr-2 text-primary"></i>
-          {{ title }}<i class="fab fa-apple fa-lg ml-2 mr-1 text-primary"></i>
-        </h1>
-      </div>
-      <div class="col-md-4 text-center">
-        <h2 class="h5">{{angular}}&nbsp;&nbsp;<img src="./assets/params/images/logo/angular.png" width="36"
-            height="36" alt=""></h2>
-      </div>
-      <div class="col-md-4 text-center">
-        <h2 class="h5">{{bootstrap}}&nbsp;&nbsp;<img src="./assets/params/images/logo/bootstrap.png" width="28"
-            height="28" alt=""></h2>
-      </div>
+    <div class="container-fluid">
+        <div class="row pt-1 mb-2">
+            <div class="col-md-4 text-center mb-2">
+                <h1 class="h5">
+                    <i class="fab fa-android fa-lg mr-2 text-primary"></i> {{ title }}<i class="fab fa-apple fa-lg ml-2 mr-1 text-primary"></i>
+                </h1>
+            </div>
+            <div class="col-md-4 text-center">
+                <h2 class="h5">{{angular}}&nbsp;&nbsp;<img src="./assets/params/images/logo/angular.png" width="36" height="36" alt=""></h2>
+            </div>
+            <div class="col-md-4 text-center">
+                <h2 class="h5">{{bootstrap}}&nbsp;&nbsp;<img src="./assets/params/images/logo/bootstrap.png" width="28" height="28" alt=""></h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-1">
+            <div class="col-md-12 text-center">
+                <h3 class="h6">Features&nbsp;&nbsp;<i class="fas fa-list"></i></h3>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12 text-center">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
     </div>
-    <router-outlet></router-outlet>
-  </div>
 </main>

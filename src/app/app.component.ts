@@ -11,4 +11,9 @@ export class AppComponent {
   title = environment.application.title;
   angular = environment.application.angular;
   bootstrap = environment.application.bootstrap;
+
+  constructor() {
+    console.log('Constructor:AppComponent');
+  }
+
 }

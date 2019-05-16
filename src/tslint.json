@@ -13,6 +13,6 @@
       "app",
       "kebab-case"
     ],
-    "no-angle-bracket-type-assertion": false    
+    "no-angle-bracket-type-assertion": false      
   }
 }
