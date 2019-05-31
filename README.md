@@ -1,4 +1,4 @@
-# Angular 7 Starter - Progressive Web App
+# Angular 8 Starter - Progressive Web App
 
 
 > An Angular starter kit featuring [Angular 8.0.0](https://angular.io), [Angular-cli 8.0.0](https://cli.angular.io/)
@@ -38,7 +38,8 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 ### Prerequisites
 What you need to run this app:
-* Angular-cli version 8.0.0
+* Angular version 8.0.0
+* Angular-cli version 8.0.1
 * Visual studio code version 1.34
 * Typescript version 3.4.5
 * node.js version 10.16.0 LTS (Long Term Support)
