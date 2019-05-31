@@ -8,7 +8,7 @@ import { environment } from '../../../../environments/environment';
 })
 export class HomeComponent implements OnInit {
 
-  title = environment.application.title;
+  name = environment.application.name;
   angular = environment.application.angular;
   bootstrap = environment.application.bootstrap;
 

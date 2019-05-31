@@ -1,4 +1,5 @@
 import 'zone.js/dist/zone-node';
+import 'reflect-metadata';
 import {enableProdMode} from '@angular/core';
 // Express Engine
 import {ngExpressEngine} from '@nguniversal/express-engine';
@@ -33,7 +34,7 @@ app.set('views', DIST_FOLDER);
 
 // Example Express Rest API endpoints
 // app.get('/api/**', (req, res) => { });
-// Serve static files from /browser
+// Server static files from /browser
 app.get('*.*', express.static(DIST_FOLDER, {
   maxAge: '1y'
 }));
