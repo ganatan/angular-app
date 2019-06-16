@@ -3,7 +3,7 @@ export const environment = {
   application:
   {
     name: 'angular-starter',
-    angular: 'Angular 8.0.0',
+    angular: 'Angular 8.0.1',
     bootstrap: 'Bootstrap 4.3.1',
   }
 };
