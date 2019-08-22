@@ -8,15 +8,15 @@ const routes: Routes = [
   { path: '', component: HomeComponent, },
   {
     path: 'items',
-    loadChildren: './modules/application/items/items.module#ItemsModule' ,
+    loadChildren: () => import('./modules/application/items/items.module').then(mod => mod.ItemsModule)
   },
   {
     path: 'about',
-    loadChildren: './modules/general/about/about.module#AboutModule' ,
+    loadChildren: () => import('./modules/general/about/about.module').then(mod => mod.AboutModule)
   },
   {
     path: 'contact',
-    loadChildren: './modules/general/contact/contact.module#ContactModule' ,
+    loadChildren: () => import('./modules/general/contact/contact.module').then(mod => mod.ContactModule)
   },
   { path: '**', component: NotFoundComponent }
 ];
