@@ -1,0 +1,51 @@
+{
+  "name": "wosiris-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "cross-env NODE_ENV=dev node server",
+    "prod": "cross-env NODE_ENV=prod node server",
+    "create-database": "node scripts/create/database",
+    "create-domains": "node scripts/create/domains",
+    "create-tables": "node scripts/create/generics && node scripts/create/items",
+    "import-continents": "node scripts/import/continents",
+    "import-countries": "node scripts/import/countries",
+    "import-cities": "node scripts/import/cities",
+    "import-movies": "node scripts/import/movies",
+    "export-continents": "node scripts/export/continents",
+    "export-countries": "node scripts/export/countries",
+    "export-cities": "node scripts/export/cities",
+    "export-movies": "node scripts/export/movies",
+    "export-shows": "node scripts/export/shows",
+    "import-generics": "node scripts/import/continents && node scripts/import/countries && node scripts/import/cities",
+    "import-generics-prod": "cross-env NODE_ENV=prod node scripts/import/continents && node scripts/import/countries && node scripts/import/cities",
+    "import-items": "node scripts/import/movies",
+    "import-items-prod": "cross-env NODE_ENV=prod node scripts/import/movies",
+    "database": "npm run create-database && npm run create-domains",
+    "tables": "npm run create-tables",
+    "import": "npm run import-generics && npm run import-items",
+    "import-prod": "npm run import-generics-prod && npm run import-items-prod",
+    "export": "node scripts/export/continents && node scripts/export/countries && node scripts/export/cities && node scripts/export/movies && node scripts/export/shows",
+    "export-prod": "cross-env NODE_ENV=prod node scripts/export/continents && node scripts/export/countries && node scripts/export/cities && node scripts/export/movies && node scripts/export/shows",
+    "app": "npm run database && npm run tables && npm run import",
+    "app-prod": "npm run database && npm run tables && npm run import-prod"
+  },
+  "author": "danny ganatan",
+  "license": "MCP",
+  "dependencies": {
+    "bluebird": "3.5.5",
+    "body-parser": "1.19.0",
+    "cross-env": "5.2.0",
+    "dateformat": "3.0.3",
+    "express": "4.17.1",
+    "express-prettify": "0.1.1",
+    "fs": "0.0.1-security",
+    "pg-promise": "9.0.3"
+  },
+  "engines": {
+    "node": ">= 10.16.2",
+    "npm": ">= 6.9.0"
+  }
+}

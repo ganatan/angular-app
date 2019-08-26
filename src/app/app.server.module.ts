@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
     ServerModule,
     ModuleMapLoaderModule,
     ServerTransferStateModule,
-    BrowserModule.withServerTransition({ appId: 'angular-starter' }),
+    BrowserModule.withServerTransition({ appId: 'wosiris' }),
   ],
   bootstrap: [AppComponent],
 })

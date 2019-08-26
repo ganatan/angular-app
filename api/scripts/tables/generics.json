@@ -1,0 +1,107 @@
+[
+  {
+    "name": "CONTINENT",
+    "fields": [
+      {
+        "name": "CODE",
+        "domain": "DOM_LIB_SHORT",
+        "defaultvalue": ""
+      },
+      {
+        "name": "NAME",
+        "domain": "DOM_LIB",
+        "defaultvalue": ""
+      },
+      {
+        "name": "FRENCH_NAME",
+        "domain": "DOM_LIB",
+        "defaultvalue": ""
+      },
+      {
+        "name": "WIKIPEDIA_LINK",
+        "domain": "DOM_LIB_LONG",
+        "defaultvalue": ""
+      },
+      {
+        "name": "AREA",
+        "domain": "DOM_BIGINT",
+        "defaultvalue": ""
+      },
+      {
+        "name": "POPULATION",
+        "domain": "DOM_BIGINT",
+        "defaultvalue": ""
+      },
+      {
+        "name": "COUNTRIES_NUMBER",
+        "domain": "DOM_INTEGER",
+        "defaultvalue": ""
+      }
+    ]
+  },
+  {
+    "name": "COUNTRY",
+    "fields": [
+      {
+        "name": "NAME",
+        "domain": "DOM_LIB",
+        "defaultvalue": ""
+      },
+      {
+        "name": "CONTINENT_ID",
+        "domain": "DOM_FK",
+        "defaultvalue": ""
+      },
+      {
+        "name": "WIKIPEDIA_LINK",
+        "domain": "DOM_LIB_LONG",
+        "defaultvalue": ""
+      },
+      {
+        "name": "ISO_NUMERIC",
+        "domain": "DOM_LIB",
+        "defaultvalue": ""
+      },
+      {
+        "name": "ISO_ALPHA2",
+        "domain": "DOM_LIB",
+        "defaultvalue": ""
+      },
+      {
+        "name": "ISO_ALPHA3",
+        "domain": "DOM_LIB",
+        "defaultvalue": ""
+      },
+      {
+        "name": "FLAG",
+        "domain": "DOM_LIB",
+        "defaultvalue": ""
+      }
+    ]
+  },
+  {
+    "name": "CITY",
+    "fields": [
+      {
+        "name": "NAME",
+        "domain": "DOM_LIB",
+        "defaultvalue": ""
+      },
+      {
+        "name": "COUNTRY_ID",
+        "domain": "DOM_FK",
+        "defaultvalue": ""
+      },
+      {
+        "name": "WIKIPEDIA_LINK",
+        "domain": "DOM_LIB_LONG",
+        "defaultvalue": ""
+      },
+      {
+        "name": "CAPITAL",
+        "domain": "DOM_BOOLEAN",
+        "defaultvalue": false
+      }
+    ]
+  }
+]

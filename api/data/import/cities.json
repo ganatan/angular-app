@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Kabul",
+    "wikipediaLink": "Kabul",
+    "code": "AF",
+    "capital": true
+  },
+  {
+    "name": "Tirana",
+    "wikipediaLink": "Tirana",
+    "code": "AL",
+    "capital": true
+  },
+  {
+    "name": "Algiers",
+    "wikipediaLink": "Algiers",
+    "code": "DZ",
+    "capital": true
+  },
+  {
+    "name": "Andorra la Vella",
+    "wikipediaLink": "Andorra_la_Vella",
+    "code": "AD",
+    "capital": true
+  },
+  {
+    "name": "Los Angeles",
+    "wikipediaLink": "Los_Angeles",
+    "code": "US",
+    "capital": false
+  },
+  {
+    "name": "Chicago",
+    "wikipediaLink": "Chicago",
+    "code": "US",
+    "capital": false
+  },
+  {
+    "name": "Winterset",
+    "wikipediaLink": "Winterset",
+    "code": "US",
+    "capital": false
+  }
+]

@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col">
+    <div class="d-flex">
+      <div class="p-2">
+        <form class="form-inline">
+          <input #edit aria-label="Searchfield" type="text" name="searchField" [ngModel]="searchField"
+            class="form-control form-control-sm mb-2 mr-2" id="searchField" placeholder="{{placeholder}}"
+            style="max-width: 160px;">
+          <button aria-label="Search" (click)="searching()" type="submit" class="btn btn-outline-primary btn-sm mb-2"><i
+              class="fas fa-search"></i></button>
+        </form>
+      </div>
+      <div class="p-2">
+        <div class="d-none d-md-inline-block d-lg-inline-block d-xl-inline-block pt-1 ml-2">
+          <b>
+            <span class="text-secondary">{{ itemsCount }} {{ results }}</span>
+            <i class="{{ icon }} text-secondary ml-2"></i>
+          </b>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.wosiris.com/sitemap.xml

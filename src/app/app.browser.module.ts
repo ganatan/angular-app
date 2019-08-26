@@ -9,7 +9,7 @@ import { environment } from '../environments/environment';
 @NgModule({
   imports: [
     AppModule,
-    BrowserModule.withServerTransition({ appId: 'angular-starter' }),
+    BrowserModule.withServerTransition({ appId: 'wosiris' }),
     BrowserTransferStateModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],

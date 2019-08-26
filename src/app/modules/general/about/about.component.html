@@ -1,1 +1,76 @@
-<p>about works!</p>
+<div class="row">
+  <div class="col-12 col-md-6">
+    <h1 class="h5 mb-4 text-primary">
+      <strong>Front End</strong></h1>
+    <h2 class="h6 mb-4">
+      <strong>What's included</strong></h2>
+    <blockquote class="blockquote bq-primary">
+      <div class="row"> <i class="fas fa-laptop fa-sm mt-1 mb-1 mr-3 ml-3" aria-hidden="true"></i>
+        <h3 class="h5 font-weight-bold">Dependencies</h3>
+      </div>
+      <div class="row ml-4" *ngFor="let item of dependencies.frontend">
+        <h5 class="h6 font-weight-bold dark-grey-text ml-2"><i class="fa fa-square fa-xs text-info mr-2"
+            aria-hidden="true"></i>{{item.name }}</h5>
+      </div>
+    </blockquote>
+    <blockquote class="blockquote bq-primary">
+      <div class="row"> <i class="fas fa-laptop fa-sm mt-1 mb-1 mr-3 ml-3" aria-hidden="true"></i>
+        <h2 class="h5 font-weight-bold">Features</h2>
+      </div>
+      <div class="row ml-4">
+        <div class="col">
+          <table class="table table-hover table-striped table-bordered table-responsive-md table-sm">
+            <thead>
+              <tr>
+                <th class="h6 font-weight-bold text-center">Name</th>
+                <th class="h6 font-weight-bold text-center">Tutorial<img class="ml-2"
+                    src="./assets/params/images/logo/gb.png"></th>
+                <th class="h6 font-weight-bold text-center">Tutoriel<img class="ml-2"
+                    src="./assets/params/images/logo/fr.png"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of features.frontend">
+                <td class="h6 font-weight-bold text-center">{{ item.name }}</td>
+                <td class="text-center">
+                  <a *ngIf="item.englishTutorial!=null" href="{{ item.englishTutorial }}" style="cursor: pointer">
+                    <i class="text-info fas fa-desktop"></i>
+                  </a>
+                </td>
+                <td class="text-center">
+                  <a *ngIf="item.frenchTutorial!=null" href="{{ item.frenchTutorial }}" style="cursor: pointer">
+                    <i class="text-info fas fa-desktop"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </blockquote>
+  </div>
+  <div class="col-12 col-md-6">
+    <h1 class="h5 mb-4 text-primary">
+      <strong>Back End</strong></h1>
+    <h2 class="h6 mb-4">
+      <strong>What's included</strong></h2>
+    <blockquote class="blockquote bq-primary">
+      <div class="row"> <i class="fas fa-laptop fa-sm mt-1 mb-1 mr-3 ml-3" aria-hidden="true"></i>
+        <h3 class="h5 font-weight-bold">Dependencies</h3>
+      </div>
+      <div class="row ml-4" *ngFor="let item of dependencies.backend">
+        <h5 class="h6 font-weight-bold dark-grey-text ml-2"><i class="fa fa-square fa-xs text-info mr-2"
+            aria-hidden="true"></i>{{item.name }}</h5>
+      </div>
+    </blockquote>
+    <blockquote class="blockquote bq-primary">
+      <div class="row"> <i class="fas fa-laptop fa-sm mb-1 mr-3 ml-3" aria-hidden="true"></i>
+        <h6 class="font-weight-bold">Features</h6>
+      </div>
+      <div class="row ml-4" *ngFor="let item of features.backend">
+        <h5 class="h6 font-weight-bold dark-grey-text ml-2"><i class="fa fa-square fa-xs text-info mr-2"
+            aria-hidden="true"></i>{{ item.name }}</h5>
+      </div>
+    </blockquote>
+  </div>
+</div>

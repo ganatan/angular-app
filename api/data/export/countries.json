@@ -1,0 +1,3488 @@
+[
+    {
+        "id": 1000,
+        "name": "Afghanistan",
+        "wikipediaLink": "Afghanistan",
+        "isoAlpha2": "AF",
+        "isoAlpha3": "AFG",
+        "isoNumeric": "004",
+        "flag": "af.png",
+        "img": "./assets/params/images/flags/af.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1248,
+        "name": "Åland Islands",
+        "wikipediaLink": "Åland_Islands",
+        "isoAlpha2": "AX",
+        "isoAlpha3": "ALA",
+        "isoNumeric": "248",
+        "flag": "ax.png",
+        "img": "./assets/params/images/flags/ax.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1001,
+        "name": "Albania",
+        "wikipediaLink": "Albania",
+        "isoAlpha2": "AL",
+        "isoAlpha3": "ALB",
+        "isoNumeric": "008",
+        "flag": "al.png",
+        "img": "./assets/params/images/flags/al.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1247,
+        "name": "Algeria",
+        "wikipediaLink": "Algeria",
+        "isoAlpha2": "DZ",
+        "isoAlpha3": "DZA",
+        "isoNumeric": "012",
+        "flag": "dz.png",
+        "img": "./assets/params/images/flags/dz.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1037,
+        "name": "American Samoa",
+        "wikipediaLink": "American Samoa",
+        "isoAlpha2": "AS",
+        "isoAlpha3": "ASM",
+        "isoNumeric": "016",
+        "flag": "as.png",
+        "img": "./assets/params/images/flags/as.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1057,
+        "name": "Andorra",
+        "wikipediaLink": "Andorra",
+        "isoAlpha2": "AD",
+        "isoAlpha3": "AND",
+        "isoNumeric": "020",
+        "flag": "ad.png",
+        "img": "./assets/params/images/flags/ad.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1076,
+        "name": "Angola",
+        "wikipediaLink": "Angola",
+        "isoAlpha2": "AO",
+        "isoAlpha3": "AGO",
+        "isoNumeric": "024",
+        "flag": "ao.png",
+        "img": "./assets/params/images/flags/ao.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1071,
+        "name": "Anguilla",
+        "wikipediaLink": "Anguilla",
+        "isoAlpha2": "AI",
+        "isoAlpha3": "AIA",
+        "isoNumeric": "660",
+        "flag": "ai.png",
+        "img": "./assets/params/images/flags/ai.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1092,
+        "name": "Antarctica",
+        "wikipediaLink": "Antarctica",
+        "isoAlpha2": "AQ",
+        "isoAlpha3": "ATA",
+        "isoNumeric": "010",
+        "flag": "aq.png",
+        "img": "./assets/params/images/flags/aq.png",
+        "continent": {
+            "name": "Antarctica",
+            "code": "AN"
+        }
+    },
+    {
+        "id": 1095,
+        "name": "Antigua and Barbuda",
+        "wikipediaLink": "Antigua and Barbuda",
+        "isoAlpha2": "AG",
+        "isoAlpha3": "ATG",
+        "isoNumeric": "028",
+        "flag": "ag.png",
+        "img": "./assets/params/images/flags/ag.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1002,
+        "name": "Argentina",
+        "wikipediaLink": "Argentina",
+        "isoAlpha2": "AR",
+        "isoAlpha3": "ARG",
+        "isoNumeric": "032",
+        "flag": "ar.png",
+        "img": "./assets/params/images/flags/ar.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1003,
+        "name": "Armenia",
+        "wikipediaLink": "Armenia",
+        "isoAlpha2": "AM",
+        "isoAlpha3": "ARM",
+        "isoNumeric": "051",
+        "flag": "am.png",
+        "img": "./assets/params/images/flags/am.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1004,
+        "name": "Aruba",
+        "wikipediaLink": "Aruba",
+        "isoAlpha2": "AW",
+        "isoAlpha3": "ABW",
+        "isoNumeric": "533",
+        "flag": "aw.png",
+        "img": "./assets/params/images/flags/aw.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1005,
+        "name": "Australia",
+        "wikipediaLink": "Australia",
+        "isoAlpha2": "AU",
+        "isoAlpha3": "AUS",
+        "isoNumeric": "036",
+        "flag": "au.png",
+        "img": "./assets/params/images/flags/au.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1006,
+        "name": "Austria",
+        "wikipediaLink": "Austria",
+        "isoAlpha2": "AT",
+        "isoAlpha3": "AUT",
+        "isoNumeric": "040",
+        "flag": "at.png",
+        "img": "./assets/params/images/flags/at.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1007,
+        "name": "Azerbaijan",
+        "wikipediaLink": "Azerbaijan",
+        "isoAlpha2": "AZ",
+        "isoAlpha3": "AZE",
+        "isoNumeric": "031",
+        "flag": "az.png",
+        "img": "./assets/params/images/flags/az.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1008,
+        "name": "Bahamas",
+        "wikipediaLink": "Bahamas",
+        "isoAlpha2": "BS",
+        "isoAlpha3": "BHS",
+        "isoNumeric": "044",
+        "flag": "bs.png",
+        "img": "./assets/params/images/flags/bs.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1009,
+        "name": "Bahrain",
+        "wikipediaLink": "Bahrain",
+        "isoAlpha2": "BH",
+        "isoAlpha3": "BHR",
+        "isoNumeric": "048",
+        "flag": "bh.png",
+        "img": "./assets/params/images/flags/bh.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1010,
+        "name": "Bangladesh",
+        "wikipediaLink": "Bangladesh",
+        "isoAlpha2": "BD",
+        "isoAlpha3": "BGD",
+        "isoNumeric": "050",
+        "flag": "bd.png",
+        "img": "./assets/params/images/flags/bd.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1011,
+        "name": "Barbados",
+        "wikipediaLink": "Barbados",
+        "isoAlpha2": "BB",
+        "isoAlpha3": "BRB",
+        "isoNumeric": "052",
+        "flag": "bb.png",
+        "img": "./assets/params/images/flags/bb.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1012,
+        "name": "Belarus",
+        "wikipediaLink": "Belarus",
+        "isoAlpha2": "BY",
+        "isoAlpha3": "BLR",
+        "isoNumeric": "112",
+        "flag": "by.png",
+        "img": "./assets/params/images/flags/by.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1013,
+        "name": "Belgium",
+        "wikipediaLink": "Belgium",
+        "isoAlpha2": "BE",
+        "isoAlpha3": "BEL",
+        "isoNumeric": "056",
+        "flag": "be.png",
+        "img": "./assets/params/images/flags/be.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1014,
+        "name": "Belize",
+        "wikipediaLink": "Belize",
+        "isoAlpha2": "BZ",
+        "isoAlpha3": "BLZ",
+        "isoNumeric": "084",
+        "flag": "bz.png",
+        "img": "./assets/params/images/flags/bz.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1015,
+        "name": "Benin",
+        "wikipediaLink": "Benin",
+        "isoAlpha2": "BJ",
+        "isoAlpha3": "BEN",
+        "isoNumeric": "204",
+        "flag": "bj.png",
+        "img": "./assets/params/images/flags/bj.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1016,
+        "name": "Bermuda",
+        "wikipediaLink": "Bermuda",
+        "isoAlpha2": "BM",
+        "isoAlpha3": "BMU",
+        "isoNumeric": "060",
+        "flag": "bm.png",
+        "img": "./assets/params/images/flags/bm.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1017,
+        "name": "Bhutan",
+        "wikipediaLink": "Bhutan",
+        "isoAlpha2": "BT",
+        "isoAlpha3": "BTN",
+        "isoNumeric": "064",
+        "flag": "bt.png",
+        "img": "./assets/params/images/flags/bt.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1018,
+        "name": "Bolivia (Plurinational State of)",
+        "wikipediaLink": "Bolivia (Plurinational State of)",
+        "isoAlpha2": "BO",
+        "isoAlpha3": "BOL",
+        "isoNumeric": "068",
+        "flag": "bo.png",
+        "img": "./assets/params/images/flags/bo.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1019,
+        "name": "Bonaire, Sint Eustatius and Saba",
+        "wikipediaLink": "Caribbean_Netherlands",
+        "isoAlpha2": "BQ",
+        "isoAlpha3": "BES",
+        "isoNumeric": "535",
+        "flag": "bq.png",
+        "img": "./assets/params/images/flags/bq.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1020,
+        "name": "Bosnia and Herzegovina",
+        "wikipediaLink": "Bosnia_and_Herzegovina",
+        "isoAlpha2": "BA",
+        "isoAlpha3": "BIH",
+        "isoNumeric": "070",
+        "flag": "ba.png",
+        "img": "./assets/params/images/flags/ba.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1021,
+        "name": "Botswana",
+        "wikipediaLink": "Botswana",
+        "isoAlpha2": "BW",
+        "isoAlpha3": "BWA",
+        "isoNumeric": "072",
+        "flag": "bw.png",
+        "img": "./assets/params/images/flags/bw.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1022,
+        "name": "Bouvet Island",
+        "wikipediaLink": "Bouvet_Island",
+        "isoAlpha2": "BV",
+        "isoAlpha3": "BVT",
+        "isoNumeric": "074",
+        "flag": "bv.png",
+        "img": "./assets/params/images/flags/bv.png",
+        "continent": {
+            "name": "Antarctica",
+            "code": "AN"
+        }
+    },
+    {
+        "id": 1023,
+        "name": "Brazil",
+        "wikipediaLink": "Brazil",
+        "isoAlpha2": "BR",
+        "isoAlpha3": "BRA",
+        "isoNumeric": "076",
+        "flag": "br.png",
+        "img": "./assets/params/images/flags/br.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1024,
+        "name": "British Indian Ocean Territory",
+        "wikipediaLink": "British_Indian_Ocean_Territory",
+        "isoAlpha2": "IO",
+        "isoAlpha3": "IOT",
+        "isoNumeric": "086",
+        "flag": "io.png",
+        "img": "./assets/params/images/flags/io.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1025,
+        "name": "Brunei Darussalam",
+        "wikipediaLink": "Brunei_Darussalam",
+        "isoAlpha2": "BN",
+        "isoAlpha3": "BRN",
+        "isoNumeric": "096",
+        "flag": "bn.png",
+        "img": "./assets/params/images/flags/bn.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1026,
+        "name": "Bulgaria",
+        "wikipediaLink": "Bulgaria",
+        "isoAlpha2": "BG",
+        "isoAlpha3": "BGR",
+        "isoNumeric": "100",
+        "flag": "bg.png",
+        "img": "./assets/params/images/flags/bg.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1027,
+        "name": "Burkina Faso",
+        "wikipediaLink": "Burkina_Faso",
+        "isoAlpha2": "BF",
+        "isoAlpha3": "BFA",
+        "isoNumeric": "854",
+        "flag": "bf.png",
+        "img": "./assets/params/images/flags/bf.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1028,
+        "name": "Burundi",
+        "wikipediaLink": "Burundi",
+        "isoAlpha2": "BI",
+        "isoAlpha3": "BDI",
+        "isoNumeric": "108",
+        "flag": "bi.png",
+        "img": "./assets/params/images/flags/bi.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1032,
+        "name": "Cabo Verde",
+        "wikipediaLink": "Cabo_Verde",
+        "isoAlpha2": "CV",
+        "isoAlpha3": "CPV",
+        "isoNumeric": "132",
+        "flag": "cv.png",
+        "img": "./assets/params/images/flags/cv.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1029,
+        "name": "Cambodia",
+        "wikipediaLink": "Cambodia",
+        "isoAlpha2": "KH",
+        "isoAlpha3": "KHM",
+        "isoNumeric": "116",
+        "flag": "kh.png",
+        "img": "./assets/params/images/flags/kh.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1030,
+        "name": "Cameroon",
+        "wikipediaLink": "Cameroon",
+        "isoAlpha2": "CM",
+        "isoAlpha3": "CMR",
+        "isoNumeric": "120",
+        "flag": "cm.png",
+        "img": "./assets/params/images/flags/cm.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1031,
+        "name": "Canada",
+        "wikipediaLink": "Canada",
+        "isoAlpha2": "CA",
+        "isoAlpha3": "CAN",
+        "isoNumeric": "124",
+        "flag": "ca.png",
+        "img": "./assets/params/images/flags/ca.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1033,
+        "name": "Cayman Islands",
+        "wikipediaLink": "Cayman_Islands",
+        "isoAlpha2": "KY",
+        "isoAlpha3": "CYM",
+        "isoNumeric": "136",
+        "flag": "ky.png",
+        "img": "./assets/params/images/flags/ky.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1034,
+        "name": "Central African Republic",
+        "wikipediaLink": "Central_African_Republic",
+        "isoAlpha2": "CF",
+        "isoAlpha3": "CAF",
+        "isoNumeric": "140",
+        "flag": "cf.png",
+        "img": "./assets/params/images/flags/cf.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1035,
+        "name": "Chad",
+        "wikipediaLink": "Chad",
+        "isoAlpha2": "TD",
+        "isoAlpha3": "TCD",
+        "isoNumeric": "148",
+        "flag": "td.png",
+        "img": "./assets/params/images/flags/td.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1036,
+        "name": "Chile",
+        "wikipediaLink": "Chile",
+        "isoAlpha2": "CL",
+        "isoAlpha3": "CHL",
+        "isoNumeric": "152",
+        "flag": "cl.png",
+        "img": "./assets/params/images/flags/cl.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1038,
+        "name": "China",
+        "wikipediaLink": "China",
+        "isoAlpha2": "CN",
+        "isoAlpha3": "CHN",
+        "isoNumeric": "156",
+        "flag": "cn.png",
+        "img": "./assets/params/images/flags/cn.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1039,
+        "name": "Christmas Island",
+        "wikipediaLink": "Christmas_Island",
+        "isoAlpha2": "CX",
+        "isoAlpha3": "CXR",
+        "isoNumeric": "162",
+        "flag": "cx.png",
+        "img": "./assets/params/images/flags/cx.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1040,
+        "name": "Cocos (Keeling) Islands",
+        "wikipediaLink": "Cocos (Keeling) Islands",
+        "isoAlpha2": "CC",
+        "isoAlpha3": "CCK",
+        "isoNumeric": "166",
+        "flag": "cc.png",
+        "img": "./assets/params/images/flags/cc.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1041,
+        "name": "Colombia",
+        "wikipediaLink": "Colombia",
+        "isoAlpha2": "CO",
+        "isoAlpha3": "COL",
+        "isoNumeric": "170",
+        "flag": "co.png",
+        "img": "./assets/params/images/flags/co.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1042,
+        "name": "Comoros",
+        "wikipediaLink": "Comoros",
+        "isoAlpha2": "KM",
+        "isoAlpha3": "COM",
+        "isoNumeric": "174",
+        "flag": "km.png",
+        "img": "./assets/params/images/flags/km.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1043,
+        "name": "Congo",
+        "wikipediaLink": "Congo",
+        "isoAlpha2": "CG",
+        "isoAlpha3": "COG",
+        "isoNumeric": "178",
+        "flag": "cg.png",
+        "img": "./assets/params/images/flags/cg.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1044,
+        "name": "Congo (Democratic Republic of the)",
+        "wikipediaLink": "Congo (Democratic Republic of the)",
+        "isoAlpha2": "CD",
+        "isoAlpha3": "COD",
+        "isoNumeric": "180",
+        "flag": "cd.png",
+        "img": "./assets/params/images/flags/cd.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1045,
+        "name": "Cook Islands",
+        "wikipediaLink": "Cook Islands",
+        "isoAlpha2": "CK",
+        "isoAlpha3": "COK",
+        "isoNumeric": "184",
+        "flag": "ck.png",
+        "img": "./assets/params/images/flags/ck.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1046,
+        "name": "Costa Rica",
+        "wikipediaLink": "Costa Rica",
+        "isoAlpha2": "CR",
+        "isoAlpha3": "CRI",
+        "isoNumeric": "188",
+        "flag": "cr.png",
+        "img": "./assets/params/images/flags/cr.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1047,
+        "name": "Côte d'Ivoire",
+        "wikipediaLink": "Côte d'Ivoire",
+        "isoAlpha2": "CI",
+        "isoAlpha3": "CIV",
+        "isoNumeric": "384",
+        "flag": "ci.png",
+        "img": "./assets/params/images/flags/ci.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1048,
+        "name": "Croatia",
+        "wikipediaLink": "Croatia",
+        "isoAlpha2": "HR",
+        "isoAlpha3": "HRV",
+        "isoNumeric": "191",
+        "flag": "hr.png",
+        "img": "./assets/params/images/flags/hr.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1049,
+        "name": "Cuba",
+        "wikipediaLink": "Cuba",
+        "isoAlpha2": "CU",
+        "isoAlpha3": "CUB",
+        "isoNumeric": "192",
+        "flag": "cu.png",
+        "img": "./assets/params/images/flags/cu.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1050,
+        "name": "Curaçao",
+        "wikipediaLink": "Curaçao",
+        "isoAlpha2": "CW",
+        "isoAlpha3": "CUW",
+        "isoNumeric": "531",
+        "flag": "cw.png",
+        "img": "./assets/params/images/flags/cw.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1051,
+        "name": "Cyprus",
+        "wikipediaLink": "Cyprus",
+        "isoAlpha2": "CY",
+        "isoAlpha3": "CYP",
+        "isoNumeric": "196",
+        "flag": "cy.png",
+        "img": "./assets/params/images/flags/cy.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1052,
+        "name": "Czech Republic",
+        "wikipediaLink": "Czech Republic",
+        "isoAlpha2": "CZ",
+        "isoAlpha3": "CZE",
+        "isoNumeric": "203",
+        "flag": "cz.png",
+        "img": "./assets/params/images/flags/cz.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1053,
+        "name": "Denmark",
+        "wikipediaLink": "Denmark",
+        "isoAlpha2": "DK",
+        "isoAlpha3": "DNK",
+        "isoNumeric": "208",
+        "flag": "dk.png",
+        "img": "./assets/params/images/flags/dk.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1054,
+        "name": "Djibouti",
+        "wikipediaLink": "Djibouti",
+        "isoAlpha2": "DJ",
+        "isoAlpha3": "DJI",
+        "isoNumeric": "262",
+        "flag": "dj.png",
+        "img": "./assets/params/images/flags/dj.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1055,
+        "name": "Dominica",
+        "wikipediaLink": "Dominica",
+        "isoAlpha2": "DM",
+        "isoAlpha3": "DMA",
+        "isoNumeric": "212",
+        "flag": "dm.png",
+        "img": "./assets/params/images/flags/dm.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1056,
+        "name": "Dominican Republic",
+        "wikipediaLink": "Dominican Republic",
+        "isoAlpha2": "DO",
+        "isoAlpha3": "DOM",
+        "isoNumeric": "214",
+        "flag": "do.png",
+        "img": "./assets/params/images/flags/do.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1058,
+        "name": "Ecuador",
+        "wikipediaLink": "Ecuador",
+        "isoAlpha2": "EC",
+        "isoAlpha3": "ECU",
+        "isoNumeric": "218",
+        "flag": "ec.png",
+        "img": "./assets/params/images/flags/ec.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1059,
+        "name": "Egypt",
+        "wikipediaLink": "Egypt",
+        "isoAlpha2": "EG",
+        "isoAlpha3": "EGY",
+        "isoNumeric": "818",
+        "flag": "eg.png",
+        "img": "./assets/params/images/flags/eg.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1060,
+        "name": "El Salvador",
+        "wikipediaLink": "El Salvador",
+        "isoAlpha2": "SV",
+        "isoAlpha3": "SLV",
+        "isoNumeric": "222",
+        "flag": "sv.png",
+        "img": "./assets/params/images/flags/sv.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1061,
+        "name": "Equatorial Guinea",
+        "wikipediaLink": "Equatorial Guinea",
+        "isoAlpha2": "GQ",
+        "isoAlpha3": "GNQ",
+        "isoNumeric": "226",
+        "flag": "gq.png",
+        "img": "./assets/params/images/flags/gq.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1062,
+        "name": "Eritrea",
+        "wikipediaLink": "Eritrea",
+        "isoAlpha2": "ER",
+        "isoAlpha3": "ERI",
+        "isoNumeric": "232",
+        "flag": "er.png",
+        "img": "./assets/params/images/flags/er.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1063,
+        "name": "Estonia",
+        "wikipediaLink": "Estonia",
+        "isoAlpha2": "EE",
+        "isoAlpha3": "EST",
+        "isoNumeric": "233",
+        "flag": "ee.png",
+        "img": "./assets/params/images/flags/ee.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1064,
+        "name": "Ethiopia",
+        "wikipediaLink": "Ethiopia",
+        "isoAlpha2": "ET",
+        "isoAlpha3": "ETH",
+        "isoNumeric": "231",
+        "flag": "et.png",
+        "img": "./assets/params/images/flags/et.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1065,
+        "name": "Falkland Islands (Malvinas)",
+        "wikipediaLink": "Falkland Islands (Malvinas)",
+        "isoAlpha2": "FK",
+        "isoAlpha3": "FLK",
+        "isoNumeric": "238",
+        "flag": "fk.png",
+        "img": "./assets/params/images/flags/fk.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1066,
+        "name": "Faroe Islands",
+        "wikipediaLink": "Faroe Islands",
+        "isoAlpha2": "FO",
+        "isoAlpha3": "FRO",
+        "isoNumeric": "234",
+        "flag": "fo.png",
+        "img": "./assets/params/images/flags/fo.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1067,
+        "name": "Fiji",
+        "wikipediaLink": "Fiji",
+        "isoAlpha2": "FJ",
+        "isoAlpha3": "FJI",
+        "isoNumeric": "242",
+        "flag": "fj.png",
+        "img": "./assets/params/images/flags/fj.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1068,
+        "name": "Finland",
+        "wikipediaLink": "Finland",
+        "isoAlpha2": "FI",
+        "isoAlpha3": "FIN",
+        "isoNumeric": "246",
+        "flag": "fi.png",
+        "img": "./assets/params/images/flags/fi.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1069,
+        "name": "France",
+        "wikipediaLink": "France",
+        "isoAlpha2": "FR",
+        "isoAlpha3": "FRA",
+        "isoNumeric": "250",
+        "flag": "fr.png",
+        "img": "./assets/params/images/flags/fr.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1070,
+        "name": "French Guiana",
+        "wikipediaLink": "French Guiana",
+        "isoAlpha2": "GF",
+        "isoAlpha3": "GUF",
+        "isoNumeric": "254",
+        "flag": "gf.png",
+        "img": "./assets/params/images/flags/gf.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1072,
+        "name": "French Polynesia",
+        "wikipediaLink": "French Polynesia",
+        "isoAlpha2": "PF",
+        "isoAlpha3": "PYF",
+        "isoNumeric": "258",
+        "flag": "pf.png",
+        "img": "./assets/params/images/flags/pf.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1073,
+        "name": "French Southern Territories",
+        "wikipediaLink": "French Southern Territories",
+        "isoAlpha2": "TF",
+        "isoAlpha3": "ATF",
+        "isoNumeric": "260",
+        "flag": "tf.png",
+        "img": "./assets/params/images/flags/tf.png",
+        "continent": {
+            "name": "Antarctica",
+            "code": "AN"
+        }
+    },
+    {
+        "id": 1074,
+        "name": "Gabon",
+        "wikipediaLink": "Gabon",
+        "isoAlpha2": "GA",
+        "isoAlpha3": "GAB",
+        "isoNumeric": "266",
+        "flag": "ga.png",
+        "img": "./assets/params/images/flags/ga.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1075,
+        "name": "Gambia",
+        "wikipediaLink": "Gambia",
+        "isoAlpha2": "GM",
+        "isoAlpha3": "GMB",
+        "isoNumeric": "270",
+        "flag": "gm.png",
+        "img": "./assets/params/images/flags/gm.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1077,
+        "name": "Georgia",
+        "wikipediaLink": "Georgia_(country)",
+        "isoAlpha2": "GE",
+        "isoAlpha3": "GEO",
+        "isoNumeric": "268",
+        "flag": "ge.png",
+        "img": "./assets/params/images/flags/ge.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1078,
+        "name": "Germany",
+        "wikipediaLink": "Germany",
+        "isoAlpha2": "DE",
+        "isoAlpha3": "DEU",
+        "isoNumeric": "276",
+        "flag": "de.png",
+        "img": "./assets/params/images/flags/de.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1079,
+        "name": "Ghana",
+        "wikipediaLink": "Ghana",
+        "isoAlpha2": "GH",
+        "isoAlpha3": "GHA",
+        "isoNumeric": "288",
+        "flag": "gh.png",
+        "img": "./assets/params/images/flags/gh.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1080,
+        "name": "Gibraltar",
+        "wikipediaLink": "Gibraltar",
+        "isoAlpha2": "GI",
+        "isoAlpha3": "GIB",
+        "isoNumeric": "292",
+        "flag": "gi.png",
+        "img": "./assets/params/images/flags/gi.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1081,
+        "name": "Greece",
+        "wikipediaLink": "Greece",
+        "isoAlpha2": "GR",
+        "isoAlpha3": "GRC",
+        "isoNumeric": "300",
+        "flag": "gr.png",
+        "img": "./assets/params/images/flags/gr.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1082,
+        "name": "Greenland",
+        "wikipediaLink": "Greenland",
+        "isoAlpha2": "GL",
+        "isoAlpha3": "GRL",
+        "isoNumeric": "304",
+        "flag": "gl.png",
+        "img": "./assets/params/images/flags/gl.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1083,
+        "name": "Grenada",
+        "wikipediaLink": "Grenada",
+        "isoAlpha2": "GD",
+        "isoAlpha3": "GRD",
+        "isoNumeric": "308",
+        "flag": "gd.png",
+        "img": "./assets/params/images/flags/gd.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1084,
+        "name": "Guadeloupe",
+        "wikipediaLink": "Guadeloupe",
+        "isoAlpha2": "GP",
+        "isoAlpha3": "GLP",
+        "isoNumeric": "312",
+        "flag": "gp.png",
+        "img": "./assets/params/images/flags/gp.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1085,
+        "name": "Guam",
+        "wikipediaLink": "Guam",
+        "isoAlpha2": "GU",
+        "isoAlpha3": "GUM",
+        "isoNumeric": "316",
+        "flag": "gu.png",
+        "img": "./assets/params/images/flags/gu.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1086,
+        "name": "Guatemala",
+        "wikipediaLink": "Guatemala",
+        "isoAlpha2": "GT",
+        "isoAlpha3": "GTM",
+        "isoNumeric": "320",
+        "flag": "gt.png",
+        "img": "./assets/params/images/flags/gt.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1087,
+        "name": "Guernsey",
+        "wikipediaLink": "Guernsey",
+        "isoAlpha2": "GG",
+        "isoAlpha3": "GGY",
+        "isoNumeric": "831",
+        "flag": "gg.png",
+        "img": "./assets/params/images/flags/gg.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1088,
+        "name": "Guinea",
+        "wikipediaLink": "Guinea",
+        "isoAlpha2": "GN",
+        "isoAlpha3": "GIN",
+        "isoNumeric": "324",
+        "flag": "gn.png",
+        "img": "./assets/params/images/flags/gn.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1089,
+        "name": "Guinea-Bissau",
+        "wikipediaLink": "Guinea-Bissau",
+        "isoAlpha2": "GW",
+        "isoAlpha3": "GNB",
+        "isoNumeric": "624",
+        "flag": "gw.png",
+        "img": "./assets/params/images/flags/gw.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1090,
+        "name": "Guyana",
+        "wikipediaLink": "Guyana",
+        "isoAlpha2": "GY",
+        "isoAlpha3": "GUY",
+        "isoNumeric": "328",
+        "flag": "gy.png",
+        "img": "./assets/params/images/flags/gy.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1091,
+        "name": "Haiti",
+        "wikipediaLink": "Haiti",
+        "isoAlpha2": "HT",
+        "isoAlpha3": "HTI",
+        "isoNumeric": "332",
+        "flag": "ht.png",
+        "img": "./assets/params/images/flags/ht.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1093,
+        "name": "Heard Island and McDonald Islands",
+        "wikipediaLink": "Heard Island and McDonald Islands",
+        "isoAlpha2": "HM",
+        "isoAlpha3": "HMD",
+        "isoNumeric": "334",
+        "flag": "hm.png",
+        "img": "./assets/params/images/flags/hm.png",
+        "continent": {
+            "name": "Antarctica",
+            "code": "AN"
+        }
+    },
+    {
+        "id": 1094,
+        "name": "Holy See",
+        "wikipediaLink": "Holy See",
+        "isoAlpha2": "VA",
+        "isoAlpha3": "VAT",
+        "isoNumeric": "336",
+        "flag": "va.png",
+        "img": "./assets/params/images/flags/va.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1096,
+        "name": "Honduras",
+        "wikipediaLink": "Honduras",
+        "isoAlpha2": "HN",
+        "isoAlpha3": "HND",
+        "isoNumeric": "340",
+        "flag": "hn.png",
+        "img": "./assets/params/images/flags/hn.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1097,
+        "name": "Hong Kong",
+        "wikipediaLink": "Hong Kong",
+        "isoAlpha2": "HK",
+        "isoAlpha3": "HKG",
+        "isoNumeric": "344",
+        "flag": "hk.png",
+        "img": "./assets/params/images/flags/hk.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1098,
+        "name": "Hungary",
+        "wikipediaLink": "Hungary",
+        "isoAlpha2": "HU",
+        "isoAlpha3": "HUN",
+        "isoNumeric": "348",
+        "flag": "hu.png",
+        "img": "./assets/params/images/flags/hu.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1099,
+        "name": "Iceland",
+        "wikipediaLink": "Iceland",
+        "isoAlpha2": "IS",
+        "isoAlpha3": "ISL",
+        "isoNumeric": "352",
+        "flag": "is.png",
+        "img": "./assets/params/images/flags/is.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1100,
+        "name": "India",
+        "wikipediaLink": "India",
+        "isoAlpha2": "IN",
+        "isoAlpha3": "IND",
+        "isoNumeric": "356",
+        "flag": "in.png",
+        "img": "./assets/params/images/flags/in.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1101,
+        "name": "Indonesia",
+        "wikipediaLink": "Indonesia",
+        "isoAlpha2": "ID",
+        "isoAlpha3": "IDN",
+        "isoNumeric": "360",
+        "flag": "id.png",
+        "img": "./assets/params/images/flags/id.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1102,
+        "name": "Iran (Islamic Republic of)",
+        "wikipediaLink": "Iran (Islamic Republic of)",
+        "isoAlpha2": "IR",
+        "isoAlpha3": "IRN",
+        "isoNumeric": "364",
+        "flag": "ir.png",
+        "img": "./assets/params/images/flags/ir.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1103,
+        "name": "Iraq",
+        "wikipediaLink": "Iraq",
+        "isoAlpha2": "IQ",
+        "isoAlpha3": "IRQ",
+        "isoNumeric": "368",
+        "flag": "iq.png",
+        "img": "./assets/params/images/flags/iq.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1104,
+        "name": "Ireland",
+        "wikipediaLink": "Republic_of_Ireland",
+        "isoAlpha2": "IE",
+        "isoAlpha3": "IRL",
+        "isoNumeric": "372",
+        "flag": "ie.png",
+        "img": "./assets/params/images/flags/ie.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1105,
+        "name": "Isle of Man",
+        "wikipediaLink": "Isle of Man",
+        "isoAlpha2": "IM",
+        "isoAlpha3": "IMN",
+        "isoNumeric": "833",
+        "flag": "im.png",
+        "img": "./assets/params/images/flags/im.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1106,
+        "name": "Israel",
+        "wikipediaLink": "Israel",
+        "isoAlpha2": "IL",
+        "isoAlpha3": "ISR",
+        "isoNumeric": "376",
+        "flag": "il.png",
+        "img": "./assets/params/images/flags/il.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1107,
+        "name": "Italy",
+        "wikipediaLink": "Italy",
+        "isoAlpha2": "IT",
+        "isoAlpha3": "ITA",
+        "isoNumeric": "380",
+        "flag": "it.png",
+        "img": "./assets/params/images/flags/it.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1108,
+        "name": "Jamaica",
+        "wikipediaLink": "Jamaica",
+        "isoAlpha2": "JM",
+        "isoAlpha3": "JAM",
+        "isoNumeric": "388",
+        "flag": "jm.png",
+        "img": "./assets/params/images/flags/jm.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1109,
+        "name": "Japan",
+        "wikipediaLink": "Japan",
+        "isoAlpha2": "JP",
+        "isoAlpha3": "JPN",
+        "isoNumeric": "392",
+        "flag": "jp.png",
+        "img": "./assets/params/images/flags/jp.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1110,
+        "name": "Jersey",
+        "wikipediaLink": "Jersey",
+        "isoAlpha2": "JE",
+        "isoAlpha3": "JEY",
+        "isoNumeric": "832",
+        "flag": "je.png",
+        "img": "./assets/params/images/flags/je.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1111,
+        "name": "Jordan",
+        "wikipediaLink": "Jordan",
+        "isoAlpha2": "JO",
+        "isoAlpha3": "JOR",
+        "isoNumeric": "400",
+        "flag": "jo.png",
+        "img": "./assets/params/images/flags/jo.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1112,
+        "name": "Kazakhstan",
+        "wikipediaLink": "Kazakhstan",
+        "isoAlpha2": "KZ",
+        "isoAlpha3": "KAZ",
+        "isoNumeric": "398",
+        "flag": "kz.png",
+        "img": "./assets/params/images/flags/kz.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1113,
+        "name": "Kenya",
+        "wikipediaLink": "Kenya",
+        "isoAlpha2": "KE",
+        "isoAlpha3": "KEN",
+        "isoNumeric": "404",
+        "flag": "ke.png",
+        "img": "./assets/params/images/flags/ke.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1114,
+        "name": "Kiribati",
+        "wikipediaLink": "Kiribati",
+        "isoAlpha2": "KI",
+        "isoAlpha3": "KIR",
+        "isoNumeric": "296",
+        "flag": "ki.png",
+        "img": "./assets/params/images/flags/ki.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1115,
+        "name": "Korea (Democratic People's Republic of)",
+        "wikipediaLink": "North_Korea",
+        "isoAlpha2": "KP",
+        "isoAlpha3": "PRK",
+        "isoNumeric": "408",
+        "flag": "kp.png",
+        "img": "./assets/params/images/flags/kp.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1116,
+        "name": "Korea (Republic of)",
+        "wikipediaLink": "South_Korea",
+        "isoAlpha2": "KR",
+        "isoAlpha3": "KOR",
+        "isoNumeric": "410",
+        "flag": "kr.png",
+        "img": "./assets/params/images/flags/kr.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1117,
+        "name": "Kuwait",
+        "wikipediaLink": "Kuwait",
+        "isoAlpha2": "KW",
+        "isoAlpha3": "KWT",
+        "isoNumeric": "414",
+        "flag": "kw.png",
+        "img": "./assets/params/images/flags/kw.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1118,
+        "name": "Kyrgyzstan",
+        "wikipediaLink": "Kyrgyzstan",
+        "isoAlpha2": "KG",
+        "isoAlpha3": "KGZ",
+        "isoNumeric": "417",
+        "flag": "kg.png",
+        "img": "./assets/params/images/flags/kg.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1119,
+        "name": "Lao People's Democratic Republic",
+        "wikipediaLink": "Lao People's Democratic Republic",
+        "isoAlpha2": "LA",
+        "isoAlpha3": "LAO",
+        "isoNumeric": "418",
+        "flag": "la.png",
+        "img": "./assets/params/images/flags/la.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1120,
+        "name": "Latvia",
+        "wikipediaLink": "Latvia",
+        "isoAlpha2": "LV",
+        "isoAlpha3": "LVA",
+        "isoNumeric": "428",
+        "flag": "lv.png",
+        "img": "./assets/params/images/flags/lv.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1121,
+        "name": "Lebanon",
+        "wikipediaLink": "Lebanon",
+        "isoAlpha2": "LB",
+        "isoAlpha3": "LBN",
+        "isoNumeric": "422",
+        "flag": "lb.png",
+        "img": "./assets/params/images/flags/lb.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1122,
+        "name": "Lesotho",
+        "wikipediaLink": "Lesotho",
+        "isoAlpha2": "LS",
+        "isoAlpha3": "LSO",
+        "isoNumeric": "426",
+        "flag": "ls.png",
+        "img": "./assets/params/images/flags/ls.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1123,
+        "name": "Liberia",
+        "wikipediaLink": "Liberia",
+        "isoAlpha2": "LR",
+        "isoAlpha3": "LBR",
+        "isoNumeric": "430",
+        "flag": "lr.png",
+        "img": "./assets/params/images/flags/lr.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1124,
+        "name": "Libya",
+        "wikipediaLink": "Libya",
+        "isoAlpha2": "LY",
+        "isoAlpha3": "LBY",
+        "isoNumeric": "434",
+        "flag": "ly.png",
+        "img": "./assets/params/images/flags/ly.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1125,
+        "name": "Liechtenstein",
+        "wikipediaLink": "Liechtenstein",
+        "isoAlpha2": "LI",
+        "isoAlpha3": "LIE",
+        "isoNumeric": "438",
+        "flag": "li.png",
+        "img": "./assets/params/images/flags/li.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1126,
+        "name": "Lithuania",
+        "wikipediaLink": "Lithuania",
+        "isoAlpha2": "LT",
+        "isoAlpha3": "LTU",
+        "isoNumeric": "440",
+        "flag": "lt.png",
+        "img": "./assets/params/images/flags/lt.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1127,
+        "name": "Luxembourg",
+        "wikipediaLink": "Luxembourg",
+        "isoAlpha2": "LU",
+        "isoAlpha3": "LUX",
+        "isoNumeric": "442",
+        "flag": "lu.png",
+        "img": "./assets/params/images/flags/lu.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1128,
+        "name": "Macao",
+        "wikipediaLink": "Macao",
+        "isoAlpha2": "MO",
+        "isoAlpha3": "MAC",
+        "isoNumeric": "446",
+        "flag": "mo.png",
+        "img": "./assets/params/images/flags/mo.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1129,
+        "name": "Macedonia (the former Yugoslav Republic of)",
+        "wikipediaLink": "North_Macedonia",
+        "isoAlpha2": "MK",
+        "isoAlpha3": "MKD",
+        "isoNumeric": "807",
+        "flag": "mk.png",
+        "img": "./assets/params/images/flags/mk.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1130,
+        "name": "Madagascar",
+        "wikipediaLink": "Madagascar",
+        "isoAlpha2": "MG",
+        "isoAlpha3": "MDG",
+        "isoNumeric": "450",
+        "flag": "mg.png",
+        "img": "./assets/params/images/flags/mg.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1131,
+        "name": "Malawi",
+        "wikipediaLink": "Malawi",
+        "isoAlpha2": "MW",
+        "isoAlpha3": "MWI",
+        "isoNumeric": "454",
+        "flag": "mw.png",
+        "img": "./assets/params/images/flags/mw.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1132,
+        "name": "Malaysia",
+        "wikipediaLink": "Malaysia",
+        "isoAlpha2": "MY",
+        "isoAlpha3": "MYS",
+        "isoNumeric": "458",
+        "flag": "my.png",
+        "img": "./assets/params/images/flags/my.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1133,
+        "name": "Maldives",
+        "wikipediaLink": "Maldives",
+        "isoAlpha2": "MV",
+        "isoAlpha3": "MDV",
+        "isoNumeric": "462",
+        "flag": "mv.png",
+        "img": "./assets/params/images/flags/mv.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1134,
+        "name": "Mali",
+        "wikipediaLink": "Mali",
+        "isoAlpha2": "ML",
+        "isoAlpha3": "MLI",
+        "isoNumeric": "466",
+        "flag": "ml.png",
+        "img": "./assets/params/images/flags/ml.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1135,
+        "name": "Malta",
+        "wikipediaLink": "Malta",
+        "isoAlpha2": "MT",
+        "isoAlpha3": "MLT",
+        "isoNumeric": "470",
+        "flag": "mt.png",
+        "img": "./assets/params/images/flags/mt.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1136,
+        "name": "Marshall Islands",
+        "wikipediaLink": "Marshall Islands",
+        "isoAlpha2": "MH",
+        "isoAlpha3": "MHL",
+        "isoNumeric": "584",
+        "flag": "mh.png",
+        "img": "./assets/params/images/flags/mh.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1137,
+        "name": "Martinique",
+        "wikipediaLink": "Martinique",
+        "isoAlpha2": "MQ",
+        "isoAlpha3": "MTQ",
+        "isoNumeric": "474",
+        "flag": "mq.png",
+        "img": "./assets/params/images/flags/mq.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1138,
+        "name": "Mauritania",
+        "wikipediaLink": "Mauritania",
+        "isoAlpha2": "MR",
+        "isoAlpha3": "MRT",
+        "isoNumeric": "478",
+        "flag": "mr.png",
+        "img": "./assets/params/images/flags/mr.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1139,
+        "name": "Mauritius",
+        "wikipediaLink": "Mauritius",
+        "isoAlpha2": "MU",
+        "isoAlpha3": "MUS",
+        "isoNumeric": "480",
+        "flag": "mu.png",
+        "img": "./assets/params/images/flags/mu.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1140,
+        "name": "Mayotte",
+        "wikipediaLink": "Mayotte",
+        "isoAlpha2": "YT",
+        "isoAlpha3": "MYT",
+        "isoNumeric": "175",
+        "flag": "yt.png",
+        "img": "./assets/params/images/flags/yt.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1141,
+        "name": "Mexico",
+        "wikipediaLink": "Mexico",
+        "isoAlpha2": "MX",
+        "isoAlpha3": "MEX",
+        "isoNumeric": "484",
+        "flag": "mx.png",
+        "img": "./assets/params/images/flags/mx.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1142,
+        "name": "Micronesia (Federated States of)",
+        "wikipediaLink": "Micronesia (Federated States of)",
+        "isoAlpha2": "FM",
+        "isoAlpha3": "FSM",
+        "isoNumeric": "583",
+        "flag": "fm.png",
+        "img": "./assets/params/images/flags/fm.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1143,
+        "name": "Moldova (Republic of)",
+        "wikipediaLink": "Moldova (Republic of)",
+        "isoAlpha2": "MD",
+        "isoAlpha3": "MDA",
+        "isoNumeric": "498",
+        "flag": "md.png",
+        "img": "./assets/params/images/flags/md.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1144,
+        "name": "Monaco",
+        "wikipediaLink": "Monaco",
+        "isoAlpha2": "MC",
+        "isoAlpha3": "MCO",
+        "isoNumeric": "492",
+        "flag": "mc.png",
+        "img": "./assets/params/images/flags/mc.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1145,
+        "name": "Mongolia",
+        "wikipediaLink": "Mongolia",
+        "isoAlpha2": "MN",
+        "isoAlpha3": "MNG",
+        "isoNumeric": "496",
+        "flag": "mn.png",
+        "img": "./assets/params/images/flags/mn.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1146,
+        "name": "Montenegro",
+        "wikipediaLink": "Montenegro",
+        "isoAlpha2": "ME",
+        "isoAlpha3": "MNE",
+        "isoNumeric": "499",
+        "flag": "me.png",
+        "img": "./assets/params/images/flags/me.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1147,
+        "name": "Montserrat",
+        "wikipediaLink": "Montserrat",
+        "isoAlpha2": "MS",
+        "isoAlpha3": "MSR",
+        "isoNumeric": "500",
+        "flag": "ms.png",
+        "img": "./assets/params/images/flags/ms.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1148,
+        "name": "Morocco",
+        "wikipediaLink": "Morocco",
+        "isoAlpha2": "MA",
+        "isoAlpha3": "MAR",
+        "isoNumeric": "504",
+        "flag": "ma.png",
+        "img": "./assets/params/images/flags/ma.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1149,
+        "name": "Mozambique",
+        "wikipediaLink": "Mozambique",
+        "isoAlpha2": "MZ",
+        "isoAlpha3": "MOZ",
+        "isoNumeric": "508",
+        "flag": "mz.png",
+        "img": "./assets/params/images/flags/mz.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1150,
+        "name": "Myanmar",
+        "wikipediaLink": "Myanmar",
+        "isoAlpha2": "MM",
+        "isoAlpha3": "MMR",
+        "isoNumeric": "104",
+        "flag": "mm.png",
+        "img": "./assets/params/images/flags/mm.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1151,
+        "name": "Namibia",
+        "wikipediaLink": "Namibia",
+        "isoAlpha2": "NA",
+        "isoAlpha3": "NAM",
+        "isoNumeric": "516",
+        "flag": "na.png",
+        "img": "./assets/params/images/flags/na.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1152,
+        "name": "Nauru",
+        "wikipediaLink": "Nauru",
+        "isoAlpha2": "NR",
+        "isoAlpha3": "NRU",
+        "isoNumeric": "520",
+        "flag": "nr.png",
+        "img": "./assets/params/images/flags/nr.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1153,
+        "name": "Nepal",
+        "wikipediaLink": "Nepal",
+        "isoAlpha2": "NP",
+        "isoAlpha3": "NPL",
+        "isoNumeric": "524",
+        "flag": "np.png",
+        "img": "./assets/params/images/flags/np.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1154,
+        "name": "Netherlands",
+        "wikipediaLink": "Netherlands",
+        "isoAlpha2": "NL",
+        "isoAlpha3": "NLD",
+        "isoNumeric": "528",
+        "flag": "nl.png",
+        "img": "./assets/params/images/flags/nl.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1155,
+        "name": "New Caledonia",
+        "wikipediaLink": "New Caledonia",
+        "isoAlpha2": "NC",
+        "isoAlpha3": "NCL",
+        "isoNumeric": "540",
+        "flag": "nc.png",
+        "img": "./assets/params/images/flags/nc.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1156,
+        "name": "New Zealand",
+        "wikipediaLink": "New Zealand",
+        "isoAlpha2": "NZ",
+        "isoAlpha3": "NZL",
+        "isoNumeric": "554",
+        "flag": "nz.png",
+        "img": "./assets/params/images/flags/nz.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1157,
+        "name": "Nicaragua",
+        "wikipediaLink": "Nicaragua",
+        "isoAlpha2": "NI",
+        "isoAlpha3": "NIC",
+        "isoNumeric": "558",
+        "flag": "ni.png",
+        "img": "./assets/params/images/flags/ni.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1158,
+        "name": "Niger",
+        "wikipediaLink": "Niger",
+        "isoAlpha2": "NE",
+        "isoAlpha3": "NER",
+        "isoNumeric": "562",
+        "flag": "ne.png",
+        "img": "./assets/params/images/flags/ne.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1159,
+        "name": "Nigeria",
+        "wikipediaLink": "Nigeria",
+        "isoAlpha2": "NG",
+        "isoAlpha3": "NGA",
+        "isoNumeric": "566",
+        "flag": "ng.png",
+        "img": "./assets/params/images/flags/ng.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1160,
+        "name": "Niue",
+        "wikipediaLink": "Niue",
+        "isoAlpha2": "NU",
+        "isoAlpha3": "NIU",
+        "isoNumeric": "570",
+        "flag": "nu.png",
+        "img": "./assets/params/images/flags/nu.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1161,
+        "name": "Norfolk Island",
+        "wikipediaLink": "Norfolk Island",
+        "isoAlpha2": "NF",
+        "isoAlpha3": "NFK",
+        "isoNumeric": "574",
+        "flag": "nf.png",
+        "img": "./assets/params/images/flags/nf.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1162,
+        "name": "Northern Mariana Islands",
+        "wikipediaLink": "Northern Mariana Islands",
+        "isoAlpha2": "MP",
+        "isoAlpha3": "MNP",
+        "isoNumeric": "580",
+        "flag": "mp.png",
+        "img": "./assets/params/images/flags/mp.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1163,
+        "name": "Norway",
+        "wikipediaLink": "Norway",
+        "isoAlpha2": "NO",
+        "isoAlpha3": "NOR",
+        "isoNumeric": "578",
+        "flag": "no.png",
+        "img": "./assets/params/images/flags/no.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1164,
+        "name": "Oman",
+        "wikipediaLink": "Oman",
+        "isoAlpha2": "OM",
+        "isoAlpha3": "OMN",
+        "isoNumeric": "512",
+        "flag": "om.png",
+        "img": "./assets/params/images/flags/om.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1165,
+        "name": "Pakistan",
+        "wikipediaLink": "Pakistan",
+        "isoAlpha2": "PK",
+        "isoAlpha3": "PAK",
+        "isoNumeric": "586",
+        "flag": "pk.png",
+        "img": "./assets/params/images/flags/pk.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1166,
+        "name": "Palau",
+        "wikipediaLink": "Palau",
+        "isoAlpha2": "PW",
+        "isoAlpha3": "PLW",
+        "isoNumeric": "585",
+        "flag": "pw.png",
+        "img": "./assets/params/images/flags/pw.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1167,
+        "name": "Palestine, State of",
+        "wikipediaLink": "Palestine, State of",
+        "isoAlpha2": "PS",
+        "isoAlpha3": "PSE",
+        "isoNumeric": "275",
+        "flag": "ps.png",
+        "img": "./assets/params/images/flags/ps.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1168,
+        "name": "Panama",
+        "wikipediaLink": "Panama",
+        "isoAlpha2": "PA",
+        "isoAlpha3": "PAN",
+        "isoNumeric": "591",
+        "flag": "pa.png",
+        "img": "./assets/params/images/flags/pa.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1169,
+        "name": "Papua New Guinea",
+        "wikipediaLink": "Papua New Guinea",
+        "isoAlpha2": "PG",
+        "isoAlpha3": "PNG",
+        "isoNumeric": "598",
+        "flag": "pg.png",
+        "img": "./assets/params/images/flags/pg.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1170,
+        "name": "Paraguay",
+        "wikipediaLink": "Paraguay",
+        "isoAlpha2": "PY",
+        "isoAlpha3": "PRY",
+        "isoNumeric": "600",
+        "flag": "py.png",
+        "img": "./assets/params/images/flags/py.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1171,
+        "name": "Peru",
+        "wikipediaLink": "Peru",
+        "isoAlpha2": "PE",
+        "isoAlpha3": "PER",
+        "isoNumeric": "604",
+        "flag": "pe.png",
+        "img": "./assets/params/images/flags/pe.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1172,
+        "name": "Philippines",
+        "wikipediaLink": "Philippines",
+        "isoAlpha2": "PH",
+        "isoAlpha3": "PHL",
+        "isoNumeric": "608",
+        "flag": "ph.png",
+        "img": "./assets/params/images/flags/ph.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1173,
+        "name": "Pitcairn",
+        "wikipediaLink": "Pitcairn",
+        "isoAlpha2": "PN",
+        "isoAlpha3": "PCN",
+        "isoNumeric": "612",
+        "flag": "pn.png",
+        "img": "./assets/params/images/flags/pn.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1174,
+        "name": "Poland",
+        "wikipediaLink": "Poland",
+        "isoAlpha2": "PL",
+        "isoAlpha3": "POL",
+        "isoNumeric": "616",
+        "flag": "pl.png",
+        "img": "./assets/params/images/flags/pl.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1175,
+        "name": "Portugal",
+        "wikipediaLink": "Portugal",
+        "isoAlpha2": "PT",
+        "isoAlpha3": "PRT",
+        "isoNumeric": "620",
+        "flag": "pt.png",
+        "img": "./assets/params/images/flags/pt.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1176,
+        "name": "Puerto Rico",
+        "wikipediaLink": "Puerto Rico",
+        "isoAlpha2": "PR",
+        "isoAlpha3": "PRI",
+        "isoNumeric": "630",
+        "flag": "pr.png",
+        "img": "./assets/params/images/flags/pr.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1177,
+        "name": "Qatar",
+        "wikipediaLink": "Qatar",
+        "isoAlpha2": "QA",
+        "isoAlpha3": "QAT",
+        "isoNumeric": "634",
+        "flag": "qa.png",
+        "img": "./assets/params/images/flags/qa.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1178,
+        "name": "Réunion",
+        "wikipediaLink": "Réunion",
+        "isoAlpha2": "RE",
+        "isoAlpha3": "REU",
+        "isoNumeric": "638",
+        "flag": "re.png",
+        "img": "./assets/params/images/flags/re.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1179,
+        "name": "Romania",
+        "wikipediaLink": "Romania",
+        "isoAlpha2": "RO",
+        "isoAlpha3": "ROU",
+        "isoNumeric": "642",
+        "flag": "ro.png",
+        "img": "./assets/params/images/flags/ro.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1180,
+        "name": "Russian Federation",
+        "wikipediaLink": "Russian Federation",
+        "isoAlpha2": "RU",
+        "isoAlpha3": "RUS",
+        "isoNumeric": "643",
+        "flag": "ru.png",
+        "img": "./assets/params/images/flags/ru.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1181,
+        "name": "Rwanda",
+        "wikipediaLink": "Rwanda",
+        "isoAlpha2": "RW",
+        "isoAlpha3": "RWA",
+        "isoNumeric": "646",
+        "flag": "rw.png",
+        "img": "./assets/params/images/flags/rw.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1182,
+        "name": "Saint Barthélemy",
+        "wikipediaLink": "Saint Barthélemy",
+        "isoAlpha2": "BL",
+        "isoAlpha3": "BLM",
+        "isoNumeric": "652",
+        "flag": "bl.png",
+        "img": "./assets/params/images/flags/bl.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1183,
+        "name": "Saint Helena, Ascension and Tristan da Cunha",
+        "wikipediaLink": "Saint Helena, Ascension and Tristan da Cunha",
+        "isoAlpha2": "SH",
+        "isoAlpha3": "SHN",
+        "isoNumeric": "654",
+        "flag": "sh.png",
+        "img": "./assets/params/images/flags/sh.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1184,
+        "name": "Saint Kitts and Nevis",
+        "wikipediaLink": "Saint Kitts and Nevis",
+        "isoAlpha2": "KN",
+        "isoAlpha3": "KNA",
+        "isoNumeric": "659",
+        "flag": "kn.png",
+        "img": "./assets/params/images/flags/kn.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1185,
+        "name": "Saint Lucia",
+        "wikipediaLink": "Saint Lucia",
+        "isoAlpha2": "LC",
+        "isoAlpha3": "LCA",
+        "isoNumeric": "662",
+        "flag": "lc.png",
+        "img": "./assets/params/images/flags/lc.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1186,
+        "name": "Saint Martin (French part)",
+        "wikipediaLink": "Saint Martin (French part)",
+        "isoAlpha2": "MF",
+        "isoAlpha3": "MAF",
+        "isoNumeric": "663",
+        "flag": "mf.png",
+        "img": "./assets/params/images/flags/mf.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1187,
+        "name": "Saint Pierre and Miquelon",
+        "wikipediaLink": "Saint Pierre and Miquelon",
+        "isoAlpha2": "PM",
+        "isoAlpha3": "SPM",
+        "isoNumeric": "666",
+        "flag": "pm.png",
+        "img": "./assets/params/images/flags/pm.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1188,
+        "name": "Saint Vincent and the Grenadines",
+        "wikipediaLink": "Saint Vincent and the Grenadines",
+        "isoAlpha2": "VC",
+        "isoAlpha3": "VCT",
+        "isoNumeric": "670",
+        "flag": "vc.png",
+        "img": "./assets/params/images/flags/vc.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1189,
+        "name": "Samoa",
+        "wikipediaLink": "Samoa",
+        "isoAlpha2": "WS",
+        "isoAlpha3": "WSM",
+        "isoNumeric": "882",
+        "flag": "ws.png",
+        "img": "./assets/params/images/flags/ws.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1190,
+        "name": "San Marino",
+        "wikipediaLink": "San Marino",
+        "isoAlpha2": "SM",
+        "isoAlpha3": "SMR",
+        "isoNumeric": "674",
+        "flag": "sm.png",
+        "img": "./assets/params/images/flags/sm.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1191,
+        "name": "Sao Tome and Principe",
+        "wikipediaLink": "Sao Tome and Principe",
+        "isoAlpha2": "ST",
+        "isoAlpha3": "STP",
+        "isoNumeric": "678",
+        "flag": "st.png",
+        "img": "./assets/params/images/flags/st.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1192,
+        "name": "Saudi Arabia",
+        "wikipediaLink": "Saudi Arabia",
+        "isoAlpha2": "SA",
+        "isoAlpha3": "SAU",
+        "isoNumeric": "682",
+        "flag": "sa.png",
+        "img": "./assets/params/images/flags/sa.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1193,
+        "name": "Senegal",
+        "wikipediaLink": "Senegal",
+        "isoAlpha2": "SN",
+        "isoAlpha3": "SEN",
+        "isoNumeric": "686",
+        "flag": "sn.png",
+        "img": "./assets/params/images/flags/sn.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1194,
+        "name": "Serbia",
+        "wikipediaLink": "Serbia",
+        "isoAlpha2": "RS",
+        "isoAlpha3": "SRB",
+        "isoNumeric": "688",
+        "flag": "rs.png",
+        "img": "./assets/params/images/flags/rs.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1195,
+        "name": "Seychelles",
+        "wikipediaLink": "Seychelles",
+        "isoAlpha2": "SC",
+        "isoAlpha3": "SYC",
+        "isoNumeric": "690",
+        "flag": "sc.png",
+        "img": "./assets/params/images/flags/sc.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1196,
+        "name": "Sierra Leone",
+        "wikipediaLink": "Sierra Leone",
+        "isoAlpha2": "SL",
+        "isoAlpha3": "SLE",
+        "isoNumeric": "694",
+        "flag": "sl.png",
+        "img": "./assets/params/images/flags/sl.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1197,
+        "name": "Singapore",
+        "wikipediaLink": "Singapore",
+        "isoAlpha2": "SG",
+        "isoAlpha3": "SGP",
+        "isoNumeric": "702",
+        "flag": "sg.png",
+        "img": "./assets/params/images/flags/sg.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1198,
+        "name": "Sint Maarten (Dutch part)",
+        "wikipediaLink": "Sint Maarten (Dutch part)",
+        "isoAlpha2": "SX",
+        "isoAlpha3": "SXM",
+        "isoNumeric": "534",
+        "flag": "sx.png",
+        "img": "./assets/params/images/flags/sx.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1199,
+        "name": "Slovakia",
+        "wikipediaLink": "Slovakia",
+        "isoAlpha2": "SK",
+        "isoAlpha3": "SVK",
+        "isoNumeric": "703",
+        "flag": "sk.png",
+        "img": "./assets/params/images/flags/sk.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1200,
+        "name": "Slovenia",
+        "wikipediaLink": "Slovenia",
+        "isoAlpha2": "SI",
+        "isoAlpha3": "SVN",
+        "isoNumeric": "705",
+        "flag": "si.png",
+        "img": "./assets/params/images/flags/si.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1201,
+        "name": "Solomon Islands",
+        "wikipediaLink": "Solomon Islands",
+        "isoAlpha2": "SB",
+        "isoAlpha3": "SLB",
+        "isoNumeric": "090",
+        "flag": "sb.png",
+        "img": "./assets/params/images/flags/sb.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1202,
+        "name": "Somalia",
+        "wikipediaLink": "Somalia",
+        "isoAlpha2": "SO",
+        "isoAlpha3": "SOM",
+        "isoNumeric": "706",
+        "flag": "so.png",
+        "img": "./assets/params/images/flags/so.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1203,
+        "name": "South Africa",
+        "wikipediaLink": "South Africa",
+        "isoAlpha2": "ZA",
+        "isoAlpha3": "ZAF",
+        "isoNumeric": "710",
+        "flag": "za.png",
+        "img": "./assets/params/images/flags/za.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1204,
+        "name": "South Georgia and the South Sandwich Islands",
+        "wikipediaLink": "South Georgia and the South Sandwich Islands",
+        "isoAlpha2": "GS",
+        "isoAlpha3": "SGS",
+        "isoNumeric": "239",
+        "flag": "gs.png",
+        "img": "./assets/params/images/flags/gs.png",
+        "continent": {
+            "name": "Antarctica",
+            "code": "AN"
+        }
+    },
+    {
+        "id": 1205,
+        "name": "South Sudan",
+        "wikipediaLink": "South Sudan",
+        "isoAlpha2": "SS",
+        "isoAlpha3": "SSD",
+        "isoNumeric": "728",
+        "flag": "ss.png",
+        "img": "./assets/params/images/flags/ss.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1206,
+        "name": "Spain",
+        "wikipediaLink": "Spain",
+        "isoAlpha2": "ES",
+        "isoAlpha3": "ESP",
+        "isoNumeric": "724",
+        "flag": "es.png",
+        "img": "./assets/params/images/flags/es.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1207,
+        "name": "Sri Lanka",
+        "wikipediaLink": "Sri Lanka",
+        "isoAlpha2": "LK",
+        "isoAlpha3": "LKA",
+        "isoNumeric": "144",
+        "flag": "lk.png",
+        "img": "./assets/params/images/flags/lk.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1208,
+        "name": "Sudan",
+        "wikipediaLink": "Sudan",
+        "isoAlpha2": "SD",
+        "isoAlpha3": "SDN",
+        "isoNumeric": "729",
+        "flag": "sd.png",
+        "img": "./assets/params/images/flags/sd.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1209,
+        "name": "Suriname",
+        "wikipediaLink": "Suriname",
+        "isoAlpha2": "SR",
+        "isoAlpha3": "SUR",
+        "isoNumeric": "740",
+        "flag": "sr.png",
+        "img": "./assets/params/images/flags/sr.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1210,
+        "name": "Svalbard and Jan Mayen",
+        "wikipediaLink": "Svalbard_and_Jan_Mayen",
+        "isoAlpha2": "SJ",
+        "isoAlpha3": "SJM",
+        "isoNumeric": "744",
+        "flag": "sj.png",
+        "img": "./assets/params/images/flags/sj.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1211,
+        "name": "Swaziland",
+        "wikipediaLink": "Swaziland",
+        "isoAlpha2": "SZ",
+        "isoAlpha3": "SWZ",
+        "isoNumeric": "748",
+        "flag": "sz.png",
+        "img": "./assets/params/images/flags/sz.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1212,
+        "name": "Sweden",
+        "wikipediaLink": "Sweden",
+        "isoAlpha2": "SE",
+        "isoAlpha3": "SWE",
+        "isoNumeric": "752",
+        "flag": "se.png",
+        "img": "./assets/params/images/flags/se.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1213,
+        "name": "Switzerland",
+        "wikipediaLink": "Switzerland",
+        "isoAlpha2": "CH",
+        "isoAlpha3": "CHE",
+        "isoNumeric": "756",
+        "flag": "ch.png",
+        "img": "./assets/params/images/flags/ch.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1214,
+        "name": "Syrian Arab Republic",
+        "wikipediaLink": "Syrian Arab Republic",
+        "isoAlpha2": "SY",
+        "isoAlpha3": "SYR",
+        "isoNumeric": "760",
+        "flag": "sy.png",
+        "img": "./assets/params/images/flags/sy.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1215,
+        "name": "Taiwan, Province of China",
+        "wikipediaLink": "Taiwan, Province of China",
+        "isoAlpha2": "TW",
+        "isoAlpha3": "TWN",
+        "isoNumeric": "158",
+        "flag": "tw.png",
+        "img": "./assets/params/images/flags/tw.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1216,
+        "name": "Tajikistan",
+        "wikipediaLink": "Tajikistan",
+        "isoAlpha2": "TJ",
+        "isoAlpha3": "TJK",
+        "isoNumeric": "762",
+        "flag": "tj.png",
+        "img": "./assets/params/images/flags/tj.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1217,
+        "name": "Tanzania, United Republic of",
+        "wikipediaLink": "Tanzania, United Republic of",
+        "isoAlpha2": "TZ",
+        "isoAlpha3": "TZA",
+        "isoNumeric": "834",
+        "flag": "tz.png",
+        "img": "./assets/params/images/flags/tz.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1218,
+        "name": "Thailand",
+        "wikipediaLink": "Thailand",
+        "isoAlpha2": "TH",
+        "isoAlpha3": "THA",
+        "isoNumeric": "764",
+        "flag": "th.png",
+        "img": "./assets/params/images/flags/th.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1219,
+        "name": "Timor-Leste",
+        "wikipediaLink": "Timor-Leste",
+        "isoAlpha2": "TL",
+        "isoAlpha3": "TLS",
+        "isoNumeric": "626",
+        "flag": "tl.png",
+        "img": "./assets/params/images/flags/tl.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1220,
+        "name": "Togo",
+        "wikipediaLink": "Togo",
+        "isoAlpha2": "TG",
+        "isoAlpha3": "TGO",
+        "isoNumeric": "768",
+        "flag": "tg.png",
+        "img": "./assets/params/images/flags/tg.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1221,
+        "name": "Tokelau",
+        "wikipediaLink": "Tokelau",
+        "isoAlpha2": "TK",
+        "isoAlpha3": "TKL",
+        "isoNumeric": "772",
+        "flag": "tk.png",
+        "img": "./assets/params/images/flags/tk.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1222,
+        "name": "Tonga",
+        "wikipediaLink": "Tonga",
+        "isoAlpha2": "TO",
+        "isoAlpha3": "TON",
+        "isoNumeric": "776",
+        "flag": "to.png",
+        "img": "./assets/params/images/flags/to.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1223,
+        "name": "Trinidad and Tobago",
+        "wikipediaLink": "Trinidad and Tobago",
+        "isoAlpha2": "TT",
+        "isoAlpha3": "TTO",
+        "isoNumeric": "780",
+        "flag": "tt.png",
+        "img": "./assets/params/images/flags/tt.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1224,
+        "name": "Tunisia",
+        "wikipediaLink": "Tunisia",
+        "isoAlpha2": "TN",
+        "isoAlpha3": "TUN",
+        "isoNumeric": "788",
+        "flag": "tn.png",
+        "img": "./assets/params/images/flags/tn.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1225,
+        "name": "Turkey",
+        "wikipediaLink": "Turkey",
+        "isoAlpha2": "TR",
+        "isoAlpha3": "TUR",
+        "isoNumeric": "792",
+        "flag": "tr.png",
+        "img": "./assets/params/images/flags/tr.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1226,
+        "name": "Turkmenistan",
+        "wikipediaLink": "Turkmenistan",
+        "isoAlpha2": "TM",
+        "isoAlpha3": "TKM",
+        "isoNumeric": "795",
+        "flag": "tm.png",
+        "img": "./assets/params/images/flags/tm.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1227,
+        "name": "Turks and Caicos Islands",
+        "wikipediaLink": "Turks and Caicos Islands",
+        "isoAlpha2": "TC",
+        "isoAlpha3": "TCA",
+        "isoNumeric": "796",
+        "flag": "tc.png",
+        "img": "./assets/params/images/flags/tc.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1228,
+        "name": "Tuvalu",
+        "wikipediaLink": "Tuvalu",
+        "isoAlpha2": "TV",
+        "isoAlpha3": "TUV",
+        "isoNumeric": "798",
+        "flag": "tv.png",
+        "img": "./assets/params/images/flags/tv.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1229,
+        "name": "Uganda",
+        "wikipediaLink": "Uganda",
+        "isoAlpha2": "UG",
+        "isoAlpha3": "UGA",
+        "isoNumeric": "800",
+        "flag": "ug.png",
+        "img": "./assets/params/images/flags/ug.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1230,
+        "name": "Ukraine",
+        "wikipediaLink": "Ukraine",
+        "isoAlpha2": "UA",
+        "isoAlpha3": "UKR",
+        "isoNumeric": "804",
+        "flag": "ua.png",
+        "img": "./assets/params/images/flags/ua.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1231,
+        "name": "United Arab Emirates",
+        "wikipediaLink": "United Arab Emirates",
+        "isoAlpha2": "AE",
+        "isoAlpha3": "ARE",
+        "isoNumeric": "784",
+        "flag": "ae.png",
+        "img": "./assets/params/images/flags/ae.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1232,
+        "name": "United Kingdom of Great Britain",
+        "wikipediaLink": "United Kingdom of Great Britain",
+        "isoAlpha2": "GB",
+        "isoAlpha3": "GBR",
+        "isoNumeric": "826",
+        "flag": "gb.png",
+        "img": "./assets/params/images/flags/gb.png",
+        "continent": {
+            "name": "Europe",
+            "code": "EU"
+        }
+    },
+    {
+        "id": 1234,
+        "name": "United States Minor Outlying Islands",
+        "wikipediaLink": "United States Minor Outlying Islands",
+        "isoAlpha2": "UM",
+        "isoAlpha3": "UMI",
+        "isoNumeric": "581",
+        "flag": "um.png",
+        "img": "./assets/params/images/flags/um.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1233,
+        "name": "United States of America",
+        "wikipediaLink": "United States of America",
+        "isoAlpha2": "US",
+        "isoAlpha3": "USA",
+        "isoNumeric": "840",
+        "flag": "us.png",
+        "img": "./assets/params/images/flags/us.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1235,
+        "name": "Uruguay",
+        "wikipediaLink": "Uruguay",
+        "isoAlpha2": "UY",
+        "isoAlpha3": "URY",
+        "isoNumeric": "858",
+        "flag": "uy.png",
+        "img": "./assets/params/images/flags/uy.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1236,
+        "name": "Uzbekistan",
+        "wikipediaLink": "Uzbekistan",
+        "isoAlpha2": "UZ",
+        "isoAlpha3": "UZB",
+        "isoNumeric": "860",
+        "flag": "uz.png",
+        "img": "./assets/params/images/flags/uz.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1237,
+        "name": "Vanuatu",
+        "wikipediaLink": "Vanuatu",
+        "isoAlpha2": "VU",
+        "isoAlpha3": "VUT",
+        "isoNumeric": "548",
+        "flag": "vu.png",
+        "img": "./assets/params/images/flags/vu.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1238,
+        "name": "Venezuela (Bolivarian Republic of)",
+        "wikipediaLink": "Venezuela (Bolivarian Republic of)",
+        "isoAlpha2": "VE",
+        "isoAlpha3": "VEN",
+        "isoNumeric": "862",
+        "flag": "ve.png",
+        "img": "./assets/params/images/flags/ve.png",
+        "continent": {
+            "name": "South America",
+            "code": "SA"
+        }
+    },
+    {
+        "id": 1239,
+        "name": "Viet Nam",
+        "wikipediaLink": "Viet Nam",
+        "isoAlpha2": "VN",
+        "isoAlpha3": "VNM",
+        "isoNumeric": "704",
+        "flag": "vn.png",
+        "img": "./assets/params/images/flags/vn.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1240,
+        "name": "Virgin Islands (British)",
+        "wikipediaLink": "British_Virgin_Islands",
+        "isoAlpha2": "VG",
+        "isoAlpha3": "VGB",
+        "isoNumeric": "092",
+        "flag": "vg.png",
+        "img": "./assets/params/images/flags/vg.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1241,
+        "name": "Virgin Islands (U.S.)",
+        "wikipediaLink": "Virgin Islands (U.S.)",
+        "isoAlpha2": "VI",
+        "isoAlpha3": "VIR",
+        "isoNumeric": "850",
+        "flag": "vi.png",
+        "img": "./assets/params/images/flags/vi.png",
+        "continent": {
+            "name": "North America",
+            "code": "NA"
+        }
+    },
+    {
+        "id": 1242,
+        "name": "Wallis and Futuna",
+        "wikipediaLink": "Wallis and Futuna",
+        "isoAlpha2": "WF",
+        "isoAlpha3": "WLF",
+        "isoNumeric": "876",
+        "flag": "wf.png",
+        "img": "./assets/params/images/flags/wf.png",
+        "continent": {
+            "name": "Australia",
+            "code": "OC"
+        }
+    },
+    {
+        "id": 1243,
+        "name": "Western Sahara",
+        "wikipediaLink": "Western Sahara",
+        "isoAlpha2": "EH",
+        "isoAlpha3": "ESH",
+        "isoNumeric": "732",
+        "flag": "eh.png",
+        "img": "./assets/params/images/flags/eh.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1244,
+        "name": "Yemen",
+        "wikipediaLink": "Yemen",
+        "isoAlpha2": "YE",
+        "isoAlpha3": "YEM",
+        "isoNumeric": "887",
+        "flag": "ye.png",
+        "img": "./assets/params/images/flags/ye.png",
+        "continent": {
+            "name": "Asia",
+            "code": "AS"
+        }
+    },
+    {
+        "id": 1245,
+        "name": "Zambia",
+        "wikipediaLink": "Zambia",
+        "isoAlpha2": "ZM",
+        "isoAlpha3": "ZMB",
+        "isoNumeric": "894",
+        "flag": "zm.png",
+        "img": "./assets/params/images/flags/zm.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    },
+    {
+        "id": 1246,
+        "name": "Zimbabwe",
+        "wikipediaLink": "Zimbabwe",
+        "isoAlpha2": "ZW",
+        "isoAlpha3": "ZWE",
+        "isoNumeric": "716",
+        "flag": "zw.png",
+        "img": "./assets/params/images/flags/zw.png",
+        "continent": {
+            "name": "Africa",
+            "code": "AF"
+        }
+    }
+]

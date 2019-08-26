@@ -1,6 +1,6 @@
 {
-  "name": "angular-starter",
-  "version": "0.0.0",
+  "name": "wosiris",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,7 +11,7 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod && ng run angular-starter:server:production --bundleDependencies all"
+    "build:client-and-server-bundles": "ng build --prod && ng run wosiris:server:production --bundleDependencies all"
   },
   "private": true,
   "dependencies": {
@@ -23,10 +23,10 @@
     "@angular/platform-browser": "8.2.3",
     "@angular/platform-browser-dynamic": "8.2.3",
     "@angular/platform-server": "8.2.3",
-    "@angular/pwa": "0.802.2",
+    "@angular/pwa": "0.803.0",
     "@angular/router": "8.2.3",
     "@angular/service-worker": "8.2.3",
-    "@fortawesome/fontawesome-free": "5.10.1",
+    "@fortawesome/fontawesome-free": "5.10.2",
     "@nguniversal/express-engine": "8.1.1",
     "@nguniversal/module-map-ngfactory-loader": "8.1.1",
     "bootstrap": "4.3.1",
@@ -37,8 +37,8 @@
     "zone.js": "0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.802.2",
-    "@angular/cli": "8.2.2",
+    "@angular-devkit/build-angular": "0.803.0",
+    "@angular/cli": "8.3.0",
     "@angular/compiler-cli": "8.2.3",
     "@angular/language-service": "8.2.3",
     "@types/node": "12.7.2",
