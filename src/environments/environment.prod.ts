@@ -17,8 +17,8 @@ export const environment = {
     url: 'http://localhost:5202/', */
 
     /* EXTERNAL REST API CRUD */
-     api: true,
-    url: 'https://mock.ganatan.org/', 
+    api: true,
+    url: 'https://mock.ganatan.org/',
 
     /* EXTERNAL REST API (NO CRUD) */
     /* api: true,
