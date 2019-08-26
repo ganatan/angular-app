@@ -94,5 +94,5 @@ app.get('*', function (req, res) {
 });
 
 app.listen(config.port, function () {
-  console.log('Wosiris-backend Service listening on port ' + config.port + '!');
+  console.log('ganatan-backend Service listening on port ' + config.port + '!');
 })

@@ -50,7 +50,7 @@
 git clone https://github.com/ganatan/angular8-example-pwa.git
 
 # change directory
-cd wosiris
+cd angular8-example-pwa
 
 # install the repo with npm
 npm install

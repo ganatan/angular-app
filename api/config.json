@@ -1,16 +1,16 @@
 {
   "dev": {
-    "application": "wosiris-backend",
-    "databaseName": "wosiris",
+    "application": "ganatan-backend",
+    "databaseName": "ganatan",
     "url": "http://localhost:5200/",
     "login":"postgres",
     "password":"Trustno1",
     "port": 5200
   },
   "prod": {
-    "application": "wosiris-backend",
-    "databaseName": "wosiris",
-    "url": "https://mock.wosiris.org/",
+    "application": "ganatan-backend",
+    "databaseName": "ganatan",
+    "url": "https://mock.ganatan.org/",
     "login":"postgres",
     "password":"Trustno1",
     "port": 5200

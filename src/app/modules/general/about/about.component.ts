@@ -15,7 +15,7 @@ export class AboutComponent {
       frontend: [
         { name: 'Angular 8.2.3' },
         { name: 'Angular Universal 8.1.1' },
-        { name: 'Font Awesome 5.10.1' },
+        { name: 'Font Awesome 5.10.2' },
         { name: 'Bootstrap 4.3.1' },
         { name: 'JQuery 3.4.1' },
       ],
@@ -35,42 +35,42 @@ export class AboutComponent {
         },
         {
           name: 'Routing',
-          englishTutorial: 'https://www.ganatan.com/tutorials/routing-avec-angular',
+          englishTutorial: 'https://www.ganatan.com/tutorials/routing-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/routing-avec-angular',
         },
         {
           name: 'Lazy loading',
-          englishTutorial: 'https://www.ganatan.com/tutorials/lazy-loading-avec-angular',
+          englishTutorial: 'https://www.ganatan.com/tutorials/lazy-loading-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/lazy-loading-avec-angular',
         },
         {
           name: 'Bootstrap',
-          englishTutorial: 'https://www.ganatan.com/tutorials/bootstrap-avec-angular',
+          englishTutorial: 'https://www.ganatan.com/tutorials/bootstrap-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/bootstrap-avec-angular',
         },
         {
           name: 'Server side Rendering',
-          englishTutorial: 'https://www.ganatan.com/tutorials/server-side-rendering-avec-angular-universal',
+          englishTutorial: 'https://www.ganatan.com/tutorials/server-side-rendering-with-angular-universal',
           frenchTutorial: 'https://www.ganatan.com/tutorials/server-side-rendering-avec-angular-universal',
         },
         {
           name: 'HTTPClient',
-          englishTutorial: 'https://www.ganatan.com/tutorials/httpclient-avec-angular',
+          englishTutorial: 'https://www.ganatan.com/tutorials/httpclient-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/httpclient-avec-angular',
         },
         {
           name: 'Transfer State',
-          englishTutorial: 'https://www.ganatan.com/tutorials/transfer-state-avec-angular',
+          englishTutorial: 'https://www.ganatan.com/tutorials/transfer-state-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/transfer-state-avec-angular',
         },
         {
           name: 'Progressive Web App',
-          englishTutorial: 'https://www.ganatan.com/tutorials/progressive-web-app-avec-angular',
+          englishTutorial: 'https://www.ganatan.com/tutorials/progressive-web-app-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/progressive-web-app-avec-angular',
         },
         {
           name: 'Search Engine optimization',
-          englishTutorial: 'https://www.ganatan.com/tutorials/application-web-avec-angular',
+          englishTutorial: 'https://www.ganatan.com/tutorials/web-application-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/application-web-avec-angular',
         },
         {

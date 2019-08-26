@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titleService.setTitle('Wosiris : Une application Progressive WebApp développée avec Angular');
+    this.titleService.setTitle('angular.ganatan : Une application Progressive WebApp développée avec Angular');
     this.meta.addTag({
       name: 'angular-webapp',
       content: 'danny ganatan'

@@ -1,7 +1,7 @@
 module.exports = {
   apps : [
     {
-      name      : 'wosiris-frontend',
+      name      : 'ganatan-frontend',
       script    : 'dist/server.js',
       env: {
         COMMON_VARIABLE: 'true'

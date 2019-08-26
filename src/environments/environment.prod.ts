@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   application: {
-    name: 'wosiris',
+    name: 'ganatan',
     angular: 'Angular 8.2.3',
     bootstrap: 'Bootstrap 4.3.1',
   },
@@ -17,12 +17,12 @@ export const environment = {
     url: 'http://localhost:5202/', */
 
     /* EXTERNAL REST API CRUD */
-    api: true,
-    url: 'https://mock.wosiris.org/',
+     api: true,
+    url: 'https://mock.ganatan.org/', 
 
     /* EXTERNAL REST API (NO CRUD) */
     /* api: true,
-    url: 'https://api.wosiris.org/', */
+    url: 'https://api.ganatan.org/', */
 
   },
 };

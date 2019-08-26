@@ -43,9 +43,9 @@ export class ShowsImagesListComponent extends PageListComponent implements OnIni
   }
 
   ngOnInit() {
-    this.titleService.setTitle('New TV Shows : wosiris');
+    this.titleService.setTitle('New TV Shows : angular.ganatan');
     this.meta.addTag({
-      name: 'wosiris',
+      name: 'angular.ganatan',
       content: 'danny ganatan'
     });
     this.meta.updateTag(

@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
     ServerModule,
     ModuleMapLoaderModule,
     ServerTransferStateModule,
-    BrowserModule.withServerTransition({ appId: 'wosiris' }),
+    BrowserModule.withServerTransition({ appId: 'ganatan' }),
   ],
   bootstrap: [AppComponent],
 })
