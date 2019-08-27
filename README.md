@@ -1,6 +1,6 @@
 # Angular 8 Example PWA
 
-[Live Demo](https://angular.ganatan.com) | [Installation Guidelines](https://www.ganatan.com/tutorials/progressive-web-app-with-angular)
+[Live Demo](https://angular.ganatan.com) | [Installation Guidelines](https://www.ganatan.com/tutorials/build-full-web-application-with-angular)
 
 ## Front-end with Angular 8 - Back-end with Node.js
 <a target="_blank" href="https://angular.ganatan.com"><img src="https://api.ganatan.org/articles/img/wosiris-live-demo-github.png"/></a>
