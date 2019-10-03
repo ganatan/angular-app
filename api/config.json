@@ -1,18 +1,18 @@
 {
   "dev": {
     "application": "ganatan-backend",
-    "databaseName": "ganatan",
+    "databaseName": "ganatanbackend",
     "url": "http://localhost:5200/",
     "login":"postgres",
-    "password":"Trustno1",
+    "password":"Trustno1Boromir",
     "port": 5200
   },
   "prod": {
-    "application": "ganatan-backend",
-    "databaseName": "ganatan",
+    "application": "ganatanbackend",
+    "databaseName": "ganatanbackend",
     "url": "https://mock.ganatan.org/",
     "login":"postgres",
-    "password":"Trustno1",
+    "password":"Trustno1Boromir",
     "port": 5200
   }
 }

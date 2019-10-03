@@ -7,11 +7,11 @@
 
 ### Front end : What's included
 > Dependencies
-- Angular : 8.2.3
-- Angular CLI : 8.3.0
+- Angular : 8.2.9
+- Angular CLI : 8.3.7
 - Angular Universal : 8.1.1
 - Bootstrap : 4.3.1
-- Fontawesome : 5.10.2
+- Fontawesome : 5.11.2
 - jquery : 3.4.1
 
 > Features
@@ -112,7 +112,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * in your browser [http://localhost:5200/shows](http://localhost:5200/shows) 
 
 ### Author
-* Updated : 26/08/2019
+* Updated : 03/10/2019
 * Author  : danny ganatan
 
 ## Documentation
@@ -124,4 +124,3 @@ guidelines in English
 guidelines in French
 - Installation - https://www.ganatan.com/tutorials/creer-application-web-complete-avec-angular
 - Tutoriels Etapes par étapes - https://www.ganatan.com/tutorials
-- Cours - https://www.ganatan.com/courses

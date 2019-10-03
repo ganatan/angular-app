@@ -249,6 +249,32 @@ function deleteItem(req, res, next, db, tvshow) {
     });
 }
 
+/*function getItemImage(req, res, next, db, tvshow) {
+  console.log('getItemImage');
+  let poster = './data/images/movies/';
+  var options = {
+    root: poster,
+    dotfiles: 'deny',
+    headers: {
+      'x-timestamp': Date.now(),
+      'x-sent': true
+    }
+  };
+  var fileName = req.params.name;
+  fs.exists(options.root + fileName, function (exists) {
+    if (exists) {
+    } else {
+      fileName = '0000.jpg';
+    }
+    res.sendFile(fileName, options, function (err) {
+      if (err) {
+        next(err);
+      } else {
+      }
+    });
+  });
+};*/
+
 function getItemImage(req, res, next, db, tvshow) {
   let poster = './data/images/movies/';
   var options = {
@@ -273,32 +299,6 @@ function getItemImage(req, res, next, db, tvshow) {
     });
   });
 };
-
-
-/*function getItemImage(req, res, next, db, tvshow) {
-  let articles = '../../../data/images/';
-  var options = {
-    root: 'd:/Chendra/data/movies/photo/public/poster/',
-    dotfiles: 'deny',
-    headers: {
-      'x-timestamp': Date.now(),
-      'x-sent': true
-    }
- };
-  var fileName = req.params.name;
-  fs.exists(options.root + fileName, function (exists) {
-    if (exists) {
-    } else {
-      fileName = '00000.jpg';
-    }
-    res.sendFile(fileName, options, function (err) {
-      if (err) {
-        next(err);
-      } else {
-      }
-    });
-  });
-};*/
 
 module.exports = {
   getItemsCount: getItemsCount,

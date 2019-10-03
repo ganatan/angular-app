@@ -2,7 +2,7 @@ export const environment = {
   production: false,
   application: {
     name: 'ganatan',
-    angular: 'Angular 8.2.3',
+    angular: 'Angular 8.2.9',
     bootstrap: 'Bootstrap 4.3.1',
   },
   config: {
@@ -17,8 +17,8 @@ export const environment = {
     url: 'http://localhost:5200/', */
 
     /* EXTERNAL REST API CRUD */
-    /*api: true,
-    url: 'https://mock.ganatan.org/',*/
+    /* api: true,
+    url: 'https://mock.ganatan.org/', */
 
     /* EXTERNAL REST API (NO CRUD) */
     /* api: true,
