@@ -2,7 +2,7 @@ export const environment = {
   production: false,
   application: {
     name: 'ganatan',
-    angular: 'Angular 8.2.9',
+    angular: 'Angular 8.2.12',
     bootstrap: 'Bootstrap 4.3.1',
   },
   config: {

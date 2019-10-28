@@ -7,8 +7,8 @@
 
 ### Front end : What's included
 > Dependencies
-- Angular : 8.2.9
-- Angular CLI : 8.3.8
+- Angular : 8.2.12
+- Angular CLI : 8.3.14
 - Angular Universal : 8.1.1
 - Bootstrap : 4.3.1
 - Fontawesome : 5.11.2
@@ -29,9 +29,9 @@
 
 ### Back end : What's included
 > Dependencies
-- Node.js : 10.6.3
+- Node.js : 12.13.0
 - Express.js : 4.17.1
-- pg-promise : 9.0.3
+- pg-promise : 6.12.0
 
 > Features
 - PostgreSQL 
@@ -112,7 +112,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * in your browser [http://localhost:5200/shows](http://localhost:5200/shows) 
 
 ### Author
-* Updated : 04/10/2019
+* Updated : 28/10/2019
 * Author  : danny ganatan
 
 ## Documentation

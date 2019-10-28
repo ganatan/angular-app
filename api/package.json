@@ -35,14 +35,14 @@
   "author": "danny ganatan",
   "license": "MCP",
   "dependencies": {
-    "bluebird": "3.7.0",
+    "bluebird": "3.7.1",
     "body-parser": "1.19.0",
     "cross-env": "6.0.3",
     "dateformat": "3.0.3",
     "express": "4.17.1",
     "express-prettify": "0.1.1",
     "fs": "0.0.1-security",
-    "pg-promise": "9.2.1"
+    "pg-promise": "9.3.3"
   },
   "engines": {
     "node": ">= 10.16.2",
