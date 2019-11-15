@@ -1,9 +1,9 @@
 {
-  "name": "ganatan",
-  "version": "8.2.12",
+  "name": "angular-starter",
+  "version": "8.2.14",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4200",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -11,21 +11,21 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod && ng run ganatan:server:production --bundleDependencies all"
+    "build:client-and-server-bundles": "ng build --prod && ng run angular-starter:server:production --bundleDependencies all"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "8.2.12",
-    "@angular/common": "8.2.12",
-    "@angular/compiler": "8.2.12",
-    "@angular/core": "8.2.12",
-    "@angular/forms": "8.2.12",
-    "@angular/platform-browser": "8.2.12",
-    "@angular/platform-browser-dynamic": "8.2.12",
-    "@angular/platform-server": "8.2.12",
-    "@angular/pwa": "0.803.14",
-    "@angular/router": "8.2.12",
-    "@angular/service-worker": "8.2.12",
+    "@angular/animations": "8.2.14",
+    "@angular/common": "8.2.14",
+    "@angular/compiler": "8.2.14",
+    "@angular/core": "8.2.14",
+    "@angular/forms": "8.2.14",
+    "@angular/platform-browser": "8.2.14",
+    "@angular/platform-browser-dynamic": "8.2.14",
+    "@angular/platform-server": "8.2.14",
+    "@angular/pwa": "0.803.19",
+    "@angular/router": "8.2.14",
+    "@angular/service-worker": "8.2.14",
     "@fortawesome/fontawesome-free": "5.11.2",
     "@nguniversal/express-engine": "8.1.1",
     "@nguniversal/module-map-ngfactory-loader": "8.1.1",
@@ -37,12 +37,12 @@
     "zone.js": "0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.803.14",
-    "@angular/cli": "8.3.14",
-    "@angular/compiler-cli": "8.2.12",
-    "@angular/language-service": "8.2.12",
-    "@types/node": "12.11.7",
-    "@types/jasmine": "3.4.4",
+    "@angular-devkit/build-angular": "0.803.19",
+    "@angular/cli": "8.3.19",
+    "@angular/compiler-cli": "8.2.14",
+    "@angular/language-service": "8.2.14",
+    "@types/node": "12.12.7",
+    "@types/jasmine": "3.4.6",
     "@types/jasminewd2": "2.0.8",
     "codelyzer": "5.2.0",
     "jasmine-core": "3.5.0",
@@ -54,9 +54,9 @@
     "karma-jasmine-html-reporter": "1.4.2",
     "protractor": "5.4.2",
     "ts-loader": "6.2.1",
-    "ts-node": "8.4.1",
-    "tslint": "5.20.0",
+    "ts-node": "8.5.2",
+    "tslint": "5.20.1",
     "typescript": "3.5.3",
-    "webpack-cli": "3.3.9"
+    "webpack-cli": "3.3.10"
   }
 }

@@ -42,10 +42,6 @@
     "express": "4.17.1",
     "express-prettify": "0.1.1",
     "fs": "0.0.1-security",
-    "pg-promise": "9.3.3"
-  },
-  "engines": {
-    "node": ">= 10.16.2",
-    "npm": ">= 6.9.0"
+    "pg-promise": "10.2.1"
   }
 }

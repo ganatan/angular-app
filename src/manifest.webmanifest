@@ -1,6 +1,6 @@
 {
-  "name": "ganatan",
-  "short_name": "ganatan",
+  "name": "angular-starter",
+  "short_name": "angular-starter",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ganatan": {
+    "angular-starter": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -74,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ganatan:build"
+            "browserTarget": "angular-starter:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ganatan:build:production"
+              "browserTarget": "angular-starter:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ganatan:build"
+            "browserTarget": "angular-starter:build"
           }
         },
         "test": {
@@ -123,11 +123,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ganatan:serve"
+            "devServerTarget": "angular-starter:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ganatan:serve:production"
+              "devServerTarget": "angular-starter:serve:production"
             }
           }
         },
@@ -157,5 +157,5 @@
       }
     }
   },
-  "defaultProject": "ganatan"
+  "defaultProject": "angular-starter"
 }

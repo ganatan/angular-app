@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
     ServerModule,
     ModuleMapLoaderModule,
     ServerTransferStateModule,
-    BrowserModule.withServerTransition({ appId: 'ganatan' }),
+    BrowserModule.withServerTransition({ appId: 'angular-starter' }),
   ],
   bootstrap: [AppComponent],
 })
