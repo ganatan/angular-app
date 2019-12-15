@@ -4,8 +4,6 @@ import { CommonModule } from '@angular/common';
 import { DirectivesComponent } from './directives.component';
 import { DirectivesRoutingModule } from './directives-routing.module';
 
-import { HighlightDirective } from './highlight.directive';
-
 @NgModule({
   imports: [
     CommonModule,
@@ -16,7 +14,6 @@ import { HighlightDirective } from './highlight.directive';
   ],
   declarations: [
     DirectivesComponent,
-    HighlightDirective
   ],
   providers: [
   ],

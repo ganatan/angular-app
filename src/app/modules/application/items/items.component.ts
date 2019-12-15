@@ -32,7 +32,7 @@ export class ItemsComponent implements OnInit {
   getUsers() {
     this.loaded = false;
 
-    this.items = this.state.get(STATE_KEY_ITEMS, <any>[]);
+    this.items = this.state.get(STATE_KEY_ITEMS, <any> []);
 
     if (this.items.length === 0) {
       this.itemsService.getItems('https://jsonplaceholder.typicode.com/users')
@@ -43,7 +43,7 @@ export class ItemsComponent implements OnInit {
             console.log(`getUsers : Running ${platform} with appId=${this.appId}`);
             this.items = items;
             this.loaded = true;
-            this.state.set(STATE_KEY_ITEMS, <any>items);
+            this.state.set(STATE_KEY_ITEMS, <any> items);
           });
     } else {
       this.loaded = true;

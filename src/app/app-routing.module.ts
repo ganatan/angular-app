@@ -8,7 +8,7 @@ const routes: Routes = [
   {
     path: 'directives',
     loadChildren: () => import('./modules/application/directives/directives.module').then(mod => mod.DirectivesModule)
-  },  
+  },
   {
     path: 'movies-images-list',
     loadChildren: () => import('./modules/application/movies-images-list/movies-images-list.module').then(mod => mod.MoviesImagesListModule)
@@ -17,7 +17,7 @@ const routes: Routes = [
     path: 'httpclient',
     loadChildren: () => import('./modules/application/items/items.module').then(mod => mod.ItemsModule)
   },
-    {
+  {
     path: 'about',
     loadChildren: () => import('./modules/general/about/about.module').then(mod => mod.AboutModule)
   },
