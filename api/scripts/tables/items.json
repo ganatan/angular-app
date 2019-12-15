@@ -78,25 +78,5 @@
 				"defaultvalue": ""
 			}
     ]
-  },
-  {
-    "name": "MOVIEPERSON",
-    "fields": [
-      {
-        "name": "MOVIE_ID",
-        "domain": "DOM_FK",
-        "defaultvalue": ""
-      },
-      {
-        "name": "PERSON_ID",
-        "domain": "DOM_FK",
-        "defaultvalue": ""
-      },
-      {
-        "name": "ROLE_ID",
-        "domain": "DOM_FK",
-        "defaultvalue": ""
-      }
-    ]
   }
 ]

@@ -1,0 +1,27 @@
+<div class="row">
+  <div *ngFor="let record of items; let i=index" class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-2 mb-1">
+    <div class="row">
+      <div class="col-12">
+        <div class="card-movie-date">
+          <b>{{ record.releaseDate }}</b>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card-movie-img">
+          <img src="{{ record.img }}" style="cursor: pointer" class="img-fluid shadow-lg rounded"
+            alt="{{ record.name }}">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card-movie-text">
+          <b style="font-size: 13px;">{{ record.name }}</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

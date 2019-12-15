@@ -1,259 +1,44 @@
 [
   {
-    "name": "Hawkeye and the Last of the Mohicans",
-    "releaseDate": "01/01/1957",
-    "wikipediaLink": "Hawkeye_and_the_Last_of_the_Mohicans",
-    "fileName": "Hawkeye_and_the_Last_of_the_Mohicans.jpg",
-    "show": true,
-    "movie": false
+    "name": "Iron Man",
+    "releaseDate": "02/05/2008",
+    "wikipediaLink": "Iron_Man_(2008_film)",
+    "fileName": "Iron_Man_(2008_film).jpg",
+    "img": "./assets/params/images/movies/Iron_Man_(2008_film).jpg"
   },
   {
-    "name": "Dick Tracy",
-    "releaseDate": "04/10/1931",
-    "wikipediaLink": "Dick_Tracy",
-    "fileName": "Dick_Tracy.jpg",
-    "show": true,
-    "movie": false
+    "name": "The Incredible Hulk",
+    "releaseDate": "13/06/2008",
+    "wikipediaLink": "The_Incredible_Hulk_(film)",
+    "fileName": "The_Incredible_Hulk_(film).jpg",
+    "img": "./assets/params/images/movies/The_Incredible_Hulk_(film).jpg"
   },
   {
-    "name": "Bonanza",
-    "releaseDate": "12/09/1959",
-    "wikipediaLink": "Bonanza",
-    "fileName": "Bonanza.jpg",
-    "show": true,
-    "movie": false
+    "name": "Iron Man 2",
+    "releaseDate": "26/04/2010",
+    "wikipediaLink": "Iron_Man_2",
+    "fileName": "Iron_Man_2.jpg",
+    "img": "./assets/params/images/movies/Iron_Man_2.jpg"
   },
   {
-    "name": "Wagon Train",
-    "releaseDate": "18/09/1957",
-    "wikipediaLink": "Wagon_Train",
-    "fileName": "Wagon_Train.jpg",
-    "show": true,
-    "movie": false
+    "name": "Thor",
+    "releaseDate": "06/05/2011",
+    "wikipediaLink": "Thor",
+    "fileName": "Thor_(film).jpg",
+    "img": "./assets/params/images/movies/Thor_(film).jpg"
   },
   {
-    "name": "Topper",
-    "releaseDate": "09/10/1953",
-    "wikipediaLink": "Topper_(TV_series)",
-    "fileName": "Topper_(TV_series).jpg",
-    "show": true,
-    "movie": false
+    "name": "Captain America: The First Avenger",
+    "releaseDate": "22/07/2011",
+    "wikipediaLink": "Thor",
+    "fileName": "Captain_America:_The_First_Avenger.jpg",
+    "img": "./assets/params/images/movies/Captain_America_The_First_Avenger.jpg"
   },
   {
-    "name": "Stories of the Century",
-    "releaseDate": "23/01/1954",
-    "wikipediaLink": "Stories_of_the_Century",
-    "fileName": "Stories_of_the_Century.jpg",
-    "show": true,
-    "movie": false
-  },
-  {
-    "name": "Africa Screams",
-    "releaseDate": "27/05/1949",
-    "wikipediaLink": "Africa_Screams",
-    "fileName": "Africa_Screams.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Abraham Lincoln",
-    "releaseDate": "25/08/1930",
-    "wikipediaLink": "Abraham_Lincoln_(1930_film)",
-    "fileName": "Abraham_Lincoln_(1930_film).jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Algiers",
-    "releaseDate": "05/08/1938",
-    "wikipediaLink": "Algiers_(film)",
-    "fileName": "Algiers_(film).jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "The Amazing Mr. X",
-    "releaseDate": "29/07/1948",
-    "wikipediaLink": "The_Amazing_Mr._X",
-    "fileName": "The_Amazing_Mr._X.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Angel and the Badman",
-    "releaseDate": "15/02/1947",
-    "wikipediaLink": "Angel_and_the_Badman",
-    "fileName": "Angel_and_the_Badman.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Charade",
-    "releaseDate": "05/12/1963",
-    "wikipediaLink": "Charade_(film,_1963)",
-    "fileName": "Charade_(film,_1963).jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "The Deadly Companions",
-    "releaseDate": "06/06/1961",
-    "wikipediaLink": "The_Deadly_Companions",
-    "fileName": "The_Deadly_Companions.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "The gold Rush",
-    "releaseDate": "26/06/1925",
-    "wikipediaLink": "The_Gold_Rush",
-    "fileName": "The_Gold_Rush.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Gulliver's Travels",
-    "releaseDate": "22/12/1939",
-    "wikipediaLink": "Gulliver's_Travels_(1939_film)",
-    "fileName": "Gulliver's_Travels_(1939_film).jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "A Farewell to Arms",
-    "releaseDate": "08/12/1932",
-    "wikipediaLink": "A_Farewell_to_Arms_(1932_film)",
-    "fileName": "A_Farewell_to_Arms_(1932_film).jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "It's a Wonderful Life",
-    "releaseDate": "20/12/1946",
-    "wikipediaLink": "It's_a_Wonderful_Life",
-    "fileName": "It's_a_Wonderful_Life.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "The Last Time I Saw Paris",
-    "releaseDate": "08/11/1954",
-    "wikipediaLink": "The_Last_Time_I_Saw_Paris",
-    "fileName": "The_Last_Time_I_Saw_Paris.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Little Lord Fauntleroy",
-    "releaseDate": "06/03/1936",
-    "wikipediaLink": "Little_Lord_Fauntleroy_(1936_film)",
-    "fileName": "Little_Lord_Fauntleroy_(1936_film).jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "The Little Shop of Horrors",
-    "releaseDate": "14/09/1960",
-    "wikipediaLink": "The_Little_Shop_of_Horrors",
-    "fileName": "The_Little_Shop_of_Horrors.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "McLintock!",
-    "releaseDate": "13/11/1963",
-    "wikipediaLink": "McLintock!",
-    "fileName": "McLintock!.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Meet John Doe",
-    "releaseDate": "03/05/1941",
-    "wikipediaLink": "Meet_John_Doe",
-    "fileName": "Meet_John_Doe.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Mr. Imperium",
-    "releaseDate": "02/03/1951",
-    "wikipediaLink": "Mr._Imperium",
-    "fileName": "Mr._Imperium.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "My Favorite Brunette",
-    "releaseDate": "19/03/1947",
-    "wikipediaLink": "My_Favorite_Brunette",
-    "fileName": "My_Favorite_Brunette.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Road to Bali",
-    "releaseDate": "01/11/1952",
-    "wikipediaLink": "Road_to_Bali",
-    "fileName": "Road_to_Bali.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "His Girl Friday",
-    "releaseDate": "11/01/1940",
-    "wikipediaLink": "His_Girl_Friday",
-    "fileName": "His_Girl_Friday.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Santa Fe Trail",
-    "releaseDate": "28/12/1940",
-    "wikipediaLink": "Santa_Fe_Trail_(film)",
-    "fileName": "Santa_Fe_Trail_(film).jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "The Snows of Kilimanjaro",
-    "releaseDate": "17/12/1952",
-    "wikipediaLink": "The_Snows_of_Kilimanjaro_(1952_film)",
-    "fileName": "The_Snows_of_Kilimanjaro_(1952_film).jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "The stranger",
-    "releaseDate": "02/07/1946",
-    "wikipediaLink": "The_Stranger_(1946_film)",
-    "fileName": "The_Stranger_(1946_film).jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Vengeance Valley",
-    "releaseDate": "16/02/1951",
-    "wikipediaLink": "Vengeance_Valley",
-    "fileName": "Vengeance_Valley.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Riders of Destiny",
-    "releaseDate": "10/10/1933",
-    "wikipediaLink": "Riders_of_Destiny",
-    "fileName": "Riders_of_Destiny.jpg",
-    "show": false,
-    "movie": true
-  },
-  {
-    "name": "Rock, Rock, Rock!",
-    "releaseDate": "07/12/1956",
-    "wikipediaLink": "Rock,_Rock,_Rock!_(film)",
-    "fileName": "Rock,_Rock,_Rock!_(film).jpg",
-    "show": false,
-    "movie": true
+    "name": "Marvel's The Avengers",
+    "releaseDate": "04/05/2012",
+    "wikipediaLink": "Thor",
+    "fileName": "The_Avengers_(2012_film).jpg",
+    "img": "./assets/params/images/movies/The_Avengers_(2012_film).jpg"
   }
-  
 ]

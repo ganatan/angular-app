@@ -1,19 +1,59 @@
 <div class="app">
 
-  <app-header [title]="title"></app-header>
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark " style="background-color: #212121;">
+      <a class="navbar-brand" routerLink="/">
+        <span class="mr-1" style="color:white">ganatan</span>
+        <img src="./assets/params/images/logo/ganatan.png" width="20" height="20" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/">
+              <i class="fas fa-home mr-1"></i>home
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/about">
+              <i class="far fa-question-circle mr-1"></i>About
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/contact">
+              <i class="fas fa-envelope mr-1"></i>Contact
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/signin">
+              <i class="fas fa-user mr-1"></i>Sign in
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://github.com/ganatan">
+              <i class="fab fa-github mr-1"></i>Github
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <main>
     <div class="container-fluid">
-
-      <div class="row">
-        <div class="col-3 d-none d-md-inline-block d-xl-inline-block">
-          <app-features></app-features>
-        </div>
-        <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-          <router-outlet></router-outlet>
-        </div>
-      </div>
-
+      <router-outlet></router-outlet>
     </div>
   </main>
-</div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center text-white">&copy; 2019 - www.ganatan.com</p>
+        </div>
+      </div>
+    </div>
+  </div>

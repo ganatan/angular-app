@@ -3,15 +3,15 @@
 [Live Demo](https://angular.ganatan.com) | [Installation Guidelines](https://www.ganatan.com/tutorials/build-full-web-application-with-angular)
 
 ## Front-end with Angular 8 - Back-end with Node.js
-<a target="_blank" href="https://angular.ganatan.com"><img src="https://api.ganatan.org/articles/img/angular-example-pwa.png"/></a>
+<a target="_blank" href="https://angular.ganatan.com"><img src="https://api.ganatan.org/articles/img/angular-example-app.png"/></a>
 
 ### Front end : What's included
 > Dependencies
 - Angular : 8.2.14
-- Angular CLI : 8.3.19
+- Angular CLI : 8.3.20
 - Angular Universal : 8.1.1
-- Bootstrap : 4.3.1
-- Fontawesome : 5.11.2
+- Bootstrap : 4.4.1
+- Fontawesome : 5.12.0
 - jquery : 3.4.1
 
 > Features
@@ -47,10 +47,10 @@
 
 ```bash
 # clone the repo
-git clone https://github.com/ganatan/angular8-example-pwa.git
+git clone https://github.com/ganatan/angular8-app.git
 
 # change directory
-cd angular8-example-pwa
+cd angular8-app
 
 # install the repo with npm
 npm install
@@ -75,11 +75,10 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 ### Settings
 * you can select one of these Datasources
 
-* change settings in environment.ts file 
+* Change settings in src/app/modules/application/movies-images-list
+* File config/config.service.ts
 * default: LOCAL JSON (NO CRUD)
 * LOCAL REST API CRUD : http://localhost:5200
-* EXTERNAL REST API CRUD : https://mock.ganatan.org?formatted
-* EXTERNAL REST API (NO CRUD) : https://api.ganatan.org?formatted
 
 ### Tests
 * `npm run lint`
@@ -105,15 +104,11 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * in your browser [http://localhost:5200](http://localhost:5200) 
 
 ### Tests API
-* in your browser [http://localhost:5200/continents](http://localhost:5200/continents) 
-* in your browser [http://localhost:5200/countries](http://localhost:5200/countries) 
-* in your browser [http://localhost:5200/continents](http://localhost:5200/cities) 
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
-* in your browser [http://localhost:5200/shows](http://localhost:5200/shows) 
 
 ### Author
-* Updated : 14/11/2019
-* Author  : danny ganatan
+* Updated : 15/12/19
+* Author  : danny
 
 ## Documentation
 

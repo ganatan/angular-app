@@ -1,7 +1,7 @@
 import { Component, OnInit, Injector } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
-import { PageListComponent } from '../../../components/page-list/page-list.component';
+import { PageListComponent } from './page-list/page-list.component';
 
 @Component({
   selector: 'app-movies-list',
@@ -31,7 +31,7 @@ export class MoviesImagesListComponent extends PageListComponent implements OnIn
     this.icon = 'fas fa-film';
     this.itemsCount = 0;
     this.itemsPerPage = 12;
-    this.linkRoute = 'movies-images';
+    this.linkRoute = 'movies-images-list';
 
     this.columns = [
       { name: 'Id', field: 'id', align: 'left', color: 'black', font: '' },

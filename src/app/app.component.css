@@ -2,29 +2,7 @@
   padding-left: 1rem;
 }
 
-@media (max-width: 1440px) {
-  .app main, .app footer {
-    padding-left: 0;
-  }
-}
-
-@media (min-width: 600px) {
-  .app main, .app .page-footer .container-fluid {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-}
-
-@media (min-width: 992px) {
-  .app main, .app .page-footer .container-fluid {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .app main, .app .page-footer .container-fluid {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
+.footer {
+  background: #3F729B;
+  padding: 2em;
 }

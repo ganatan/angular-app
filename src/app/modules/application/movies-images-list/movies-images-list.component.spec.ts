@@ -3,12 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { SearchBarModule } from '../../../components/search-bar/search-bar.module';
-import { SearchResultModule } from '../../../components/search-result/search-result.module';
-import { SearchResultRoutingModule } from 'src/app/components/search-result/search-result-routing.module';
-import { GridImagesModule } from '../../../components/grid-images/grid-images.module';
-import { PaginationModule } from '../../../components/pagination/pagination.module';
-import { ConfigService } from '../../../services/config/config.service';
+import { SearchBarModule } from './search-bar/search-bar.module';
+import { SearchResultModule } from './search-result/search-result.module';
+import { SearchResultRoutingModule } from './search-result/search-result-routing.module';
+import { GridImagesModule } from './grid-images/grid-images.module';
+import { PaginationModule } from './pagination/pagination.module';
+import { ConfigService } from './config/config.service';
 
 import { MoviesImagesListComponent } from './movies-images-list.component';
 

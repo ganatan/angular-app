@@ -1,0 +1,59 @@
+<div class="row pb-4">
+
+  <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+    <div class="row p-4">
+      <div class="text-center col">
+        <h1 class="h5">Feature : Components</h1>
+        <hr>
+      </div>
+
+      <div *ngIf="!smartphoneSelected">
+        <div class="alert alert-primary" role="alert">
+          Click on <button type="button" class="btn btn-primary btn-sm">n° x</button>
+          <br>to select the smartphone n° x
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Smartphone</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Not Selected</h6>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="smartphoneSelected">
+        <div class="alert alert-info" role="alert">
+          Click on <button type="button" class="btn btn-info btn-sm">Reset</button>
+          <br>to unselect the smartphone
+        </div>
+        <div class="card text-center">
+          <h5 class="card-title">Smartphone</h5>
+          <div class="row no-gutters">
+            <div class="col-md-6 pt-2 pb-2">
+              <img src="./assets/params/images/smartphones/{{ smartphoneSelected.name }}.jpg" class="card-img"
+                alt="name">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-primary font-weight-bold">{{ smartphoneSelected.name }}</h6>
+                <h6 class="card-subtitle mb-2 text-dark">{{ smartphoneSelected.model }}</h6>
+                <h6 class="card-subtitle mb-2 text-dark">{{ smartphoneSelected.prize }}</h6>
+                <h6 class="card-subtitle mb-2 text-dark">{{ smartphoneSelected.year }}</h6>
+                <button type="button" class="btn btn-info btn-sm" (click)="onReset()">Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+    <div class="row">
+      <div *ngFor="let smartphone of smartphones; let i=index"
+        class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 px-2 mb-1">
+        <app-smartphone [smartphone]="smartphone" [index]="i + 1" (selected)="onSelected($event)"></app-smartphone>
+      </div>
+    </div>
+  </div>
+
+</div>
