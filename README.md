@@ -1,4 +1,4 @@
-# Angular 8 Example PWA
+# Angular 8 Example Application
 
 [Live Demo](https://angular.ganatan.com) | [Installation Guidelines](https://www.ganatan.com/tutorials/build-full-web-application-with-angular)
 
