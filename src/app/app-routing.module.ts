@@ -18,6 +18,14 @@ const routes: Routes = [
     loadChildren: () => import('./modules/application/items/items.module').then(mod => mod.ItemsModule)
   },
   {
+    path: 'services',
+    loadChildren: () => import('./modules/application/services/services.module').then(mod => mod.ServicesModule)
+  },
+  {
+    path: 'components',
+    loadChildren: () => import('./modules/application/components/components.module').then(mod => mod.ComponentsModule)
+  },
+  {
     path: 'about',
     loadChildren: () => import('./modules/general/about/about.module').then(mod => mod.AboutModule)
   },
@@ -28,14 +36,6 @@ const routes: Routes = [
   {
     path: 'signin',
     loadChildren: () => import('./modules/general/signin/signin.module').then(mod => mod.SigninModule)
-  },
-  {
-    path: 'components',
-    loadChildren: () => import('./modules/application/components/components.module').then(mod => mod.ComponentsModule)
-  },
-  {
-    path: 'services',
-    loadChildren: () => import('./modules/application/services/services.module').then(mod => mod.ServicesModule)
   },
   { path: '', component: HomeComponent, },
   { path: '**', component: NotFoundComponent }

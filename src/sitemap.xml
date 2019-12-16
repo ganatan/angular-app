@@ -9,22 +9,67 @@
 
 <url>
   <loc>https://angular.ganatan.com/</loc>
-  <lastmod>2019-11-14T09:32:30+00:00</lastmod>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://angular.ganatan/about</loc>
-  <lastmod>2019-11-14T09:32:30+00:00</lastmod>
+  <loc>https://angular.ganatan.com/about</loc>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://angular.ganatan/contact</loc>
-  <lastmod>2019-11-14T09:32:30+00:00</lastmod>
+  <loc>https://angular.ganatan.com/contact</loc>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://angular.ganatan/items</loc>
-  <lastmod>2019-11-14T09:32:30+00:00</lastmod>
+  <loc>https://angular.ganatan.com/signin</loc>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/components</loc>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/services</loc>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/httpclient</loc>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/directives</loc>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/pipes</loc>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/observables</loc>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/modal</loc>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/reactiveform</loc>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/templatedriven</loc>
+  <lastmod>2019-12-16T08:23:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 

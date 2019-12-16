@@ -11,7 +11,6 @@ export class SmartphoneComponent implements OnInit {
 
   @Input() smartphone: Smartphone;
   @Input() index: number;
-
   @Output() selected: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() {

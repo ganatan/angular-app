@@ -6,5 +6,5 @@ export const environment = {
     angular: 'Angular 8.2.14',
     bootstrap: 'Bootstrap 4.4.1',
     fontawesome: 'Font Awesome 5.12.0',
-  },
+  }
 };

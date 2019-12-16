@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit {
   constructor(
     private meta: Meta,
     private titleService: Title) {
-
     this.features =
       [
         {
@@ -36,7 +35,7 @@ export class HomeComponent implements OnInit {
         },
         {
           name: 'HttpClient',
-          description: 'Add dialogs to your site',
+          description: 'HttpClient',
           icon: 'fa-comment-alt',
           link: 'httpclient'
         },
@@ -72,30 +71,30 @@ export class HomeComponent implements OnInit {
         },
         {
           name: 'Reactiveform',
-          description: 'Add dialogs to your site',
+          description: 'Create Reactive Form',
           icon: 'fa-comment-alt',
-          link: 'modal'
+          link: 'reactiveform'
         },
         {
           name: 'Template Driven Form',
-          description: 'Add dialogs to your site',
+          description: 'Create Template Driven Form',
           icon: 'fa-comment-alt',
-          link: 'modal'
+          link: 'templatedriven'
         },
       ];
 
   }
 
   ngOnInit() {
-    this.titleService.setTitle('angular.ganatan : Une application Progressive WebApp développée avec Angular');
+    this.titleService.setTitle('angular.ganatan: Une Application Web avec Angular');
     this.meta.addTag({
-      name: 'angular-webapp',
+      name: 'angular.ganatan',
       content: 'danny ganatan'
     });
     this.meta.updateTag(
       {
         name: 'description',
-        content: 'Cette application a été développée avec angular version 8.2.12 et bootstrap ' +
+        content: 'Cette application a été développée avec Angular version 8.2.14 et bootstrap 4.4.1' +
           ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
       });
   }

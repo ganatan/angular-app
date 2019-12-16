@@ -41,7 +41,6 @@
 - Importing Data
 - Exporting Data
 - RESTful API 
-- CRUD
 
 ## Quick start
 
@@ -77,7 +76,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 * Change settings in src/app/modules/application/movies-images-list
 * File config/config.service.ts
-* default: LOCAL JSON (NO CRUD)
+* default: LOCAL JSON
 * LOCAL REST API CRUD : http://localhost:5200
 
 ### Tests
@@ -107,7 +106,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 15/12/19
+* Updated : 16/12/19
 * Author  : danny
 
 ## Documentation
