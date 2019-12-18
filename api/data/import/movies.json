@@ -40,5 +40,68 @@
     "wikipediaLink": "Thor",
     "fileName": "The_Avengers_(2012_film).jpg",
     "img": "./assets/params/images/movies/The_Avengers_(2012_film).jpg"
+  },
+  {
+    "name": "Iron Man 3",
+    "releaseDate": "03/05/2013",
+    "wikipediaLink": "Iron_Man_3",
+    "fileName": "Iron_Man_3.jpg",
+    "img": "./assets/params/images/movies/Iron_Man_3.jpg"
+  },
+  {
+    "name": "Thor: The Dark World",
+    "releaseDate": "22/10/2013",
+    "wikipediaLink": "Thor:_The_Dark_World",
+    "fileName": "Thor_The_Dark_World.jpg",
+    "img": "./assets/params/images/movies/Thor_The_Dark_World.jpg"
+  },
+  {
+    "name": "Captain America: The Winter Soldier",
+    "releaseDate": "04/04/2014",
+    "wikipediaLink": "Captain_America:_The_Winter_Soldier",
+    "fileName": "Captain_America_The_Winter_Soldier.jpg",
+    "img": "./assets/params/images/movies/Captain_America_The_Winter_Soldier.jpg"
+  },
+  {
+    "name": "Guardians of the Galaxy",
+    "releaseDate": "01/08/2014",
+    "wikipediaLink": "Guardians_of_the_Galaxy_(film)",
+    "fileName": "Guardians_of_the_Galaxy_(film).jpg",
+    "img": "./assets/params/images/movies/Guardians_of_the_Galaxy_(film).jpg"
+  },
+  {
+    "name": "Avengers: Age of Ultron",
+    "releaseDate": "01/05/2015",
+    "wikipediaLink": "Avengers_Age_of_Ultron",
+    "fileName": "Avengers_Age_of_Ultron.jpg",
+    "img": "./assets/params/images/movies/Avengers_Age_of_Ultron.jpg"
+  },
+  {
+    "name": "Ant-Man",
+    "releaseDate": "17/07/2015",
+    "wikipediaLink": "Ant-Man_(film)",
+    "fileName": "Ant-Man_(film).jpg",
+    "img": "./assets/params/images/movies/Ant-Man_(film).jpg"
+  },
+  {
+    "name": "Captain America: Civil War",
+    "releaseDate": "06/05/2016",
+    "wikipediaLink": "Captain_America:_Civil_War",
+    "fileName": "Captain_America_Civil_War.jpg",
+    "img": "./assets/params/images/movies/Captain_America_Civil_War.jpg"
+  },
+  {
+    "name": "Doctor Strange",
+    "releaseDate": "04/11/2016",
+    "wikipediaLink": "Doctor_Strange_(2016_film)",
+    "fileName": "Doctor_Strange_(2016_film).jpg",
+    "img": "./assets/params/images/movies/Doctor_Strange_(2016_film).jpg"
+  },
+  {
+    "name": "Guardians of the Galaxy Vol. 2",
+    "releaseDate": "05/05/2017",
+    "wikipediaLink": "Guardians_of_the_Galaxy_Vol._2",
+    "fileName": "Guardians_of_the_Galaxy_Vol._2.jpg",
+    "img": "./assets/params/images/movies/Guardians_of_the_Galaxy_Vol._2.jpg"
   }
 ]
