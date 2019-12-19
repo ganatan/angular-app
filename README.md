@@ -1,46 +1,70 @@
-# Angular 8 Example Application
+<p align="center">
+  <h1 align="center">Angular 8 Application</h1>
+  <p align="center">
+    Angular 8.2.14 + Angular CLI + Angular Universal
+    <br>
+    Lazy Loading + SSR + PWA + SEO
+    <br>
+    <br>
+    <a href="https://angular.ganatan.com/">LIVE DEMO</a>
+    <br>
+    <br>
+    <a href="https://angular.ganatan.com/">
+      <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Demo example"/>
+    </a>
+  </p>
+</p>
 
-[Live Demo](https://angular.ganatan.com) | [Installation Guidelines](https://www.ganatan.com/tutorials/build-full-web-application-with-angular)
+## Table of contents
 
-## Front-end with Angular 8 - Back-end with Node.js
-<a target="_blank" href="https://angular.ganatan.com"><img src="https://api.ganatan.org/articles/img/angular-example-app.png"/></a>
+- [Status](#status)
+- [Quick start](#quick-start)
+- [Front-end](#front-end)
+- [Back-end](#back-end)
+- [Author](#author)
+- [Documentation](#documentation)
 
-### Front end : What's included
+## Status
+
+[![GitHub stars](https://img.shields.io/github/stars/ganatan/angular8-app.svg?style=social&label=Star)](https://github.com/ganatan/angular8-app)
+[![GitHub forks](https://img.shields.io/github/forks/ganatan/angular8-app.svg?style=social&label=Fork)](https://github.com/ganatan/angular8-app/fork)
+
+### Front-end : What's included
 > Dependencies
-- Angular : 8.2.14
-- Angular CLI : 8.3.20
-- Angular Universal : 8.1.1
-- Bootstrap : 4.4.1
-- Fontawesome : 5.12.0
-- jquery : 3.4.1
+- [x] Angular : 8.2.14
+- [x] Angular CLI : 8.3.20
+- [x] Angular Universal : 8.1.1
+- [x] Bootstrap : 4.4.1
+- [x] Fontawesome : 5.12.0
+- [x] jquery : 3.4.1
 
 > Features
-- Routing
-- Lazy Loading
-- Server Side Rendering
-- Progressive Web App
-- Responsive Layout
-- Search Engine Optimization (SEO)
-- Components
-- Services
-- inheritance
-- ReactiveForms
-- Search / Grid / Pagination
+- [x] Routing
+- [x] Lazy Loading
+- [x] Server Side Rendering
+- [x] Progressive Web App
+- [x] Responsive Layout
+- [x] Search Engine Optimization (SEO)
+- [x] Components
+- [x] Services
+- [x] inheritance
+- [x] Search / Grid / Pagination
 
-### Back end : What's included
+### Back-end : What's included
 > Dependencies
-- Node.js : 12.13.0
-- Express.js : 4.17.1
-- pg-promise : 10.2.1
+- [x] Node.js : 12.13.0
+- [x] Express.js : 4.17.1
+- [x] pg-promise : 10.2.1
 
 > Features
-- PostgreSQL 
-- Database Creation
-- Domains Creation
-- Tables Creation
-- Importing Data
-- Exporting Data
-- RESTful API 
+- [x] PostgreSQL 
+- [x] Database Creation
+- [x] Domains Creation
+- [x] Tables Creation
+- [x] Importing Data
+- [x] Exporting Data
+- [x] RESTful API 
+
 
 ## Quick start
 
@@ -61,7 +85,7 @@ npm start
 in your browser go to [http://localhost:4200](http://localhost:4200) 
 
 
-## Getting Started / Front-end
+## Front-end
 
 ### Installation
 * `npm install` (installing dependencies)
@@ -84,7 +108,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run test`
 * `npm run e2e`
 
-## Getting Started / Back-end
+## Back-end
 
 ### Installation
 * `change directory` cd api 
@@ -105,12 +129,12 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 ### Tests API
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
+
 ### Author
 * Updated : 16/12/19
 * Author  : danny
 
 ## Documentation
-
 English Tutorials
 - Installation - https://www.ganatan.com/tutorials/build-full-web-application-with-angular
 - Tutorials Step by Step - https://www.ganatan.com/tutorials/en

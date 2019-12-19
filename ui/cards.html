@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>angular-starter</title>
+  <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/params/css/index.css" rel="stylesheet">
+  <link href="assets/params/css/home.css" rel="stylesheet">
+
+
+  <style>
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 200px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px;
+      /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+      background-color: dodgerblue;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark " style="background-color: #212121;">
+        <a class="navbar-brand" href="#">
+          <span class="mr-1" style="color:white">ganatan</span>
+          <img src="./assets/params/images/logo/ganatan.png" width="20" height="20" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="fas fa-home mr-1"></i>home
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="far fa-question-circle mr-1"></i>About
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="fas fa-envelope mr-1"></i>Contact
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="fas fa-user mr-1"></i>Sign in
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="https://github.com/ganatan">
+                <i class="fab fa-github mr-1"></i>Github
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <main>
+      <div class="container-fluid">
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/params/images/logo/ganatan.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-center text-white">&copy; 2019 - www.ganatan.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="assets/jquery/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/params/js/index.js"></script>
+
+</body>
+
+</html>
