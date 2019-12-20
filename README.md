@@ -15,6 +15,9 @@
   </p>
 </p>
 
+## Lighthouse Audit
+<img src="https://api.ganatan.org/articles/img/search-engine-optimization-with-angular-after.png"/>
+
 ## Table of contents
 
 - [Status](#status)
@@ -29,9 +32,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/ganatan/angular8-app.svg?style=social&label=Star)](https://github.com/ganatan/angular8-app)
 [![GitHub forks](https://img.shields.io/github/forks/ganatan/angular8-app.svg?style=social&label=Fork)](https://github.com/ganatan/angular8-app/fork)
 
-
-## Lighthouse Audit
-<img src="https://api.ganatan.org/articles/img/search-engine-optimization-with-angular-after.png"/>
 
 
 ### Front-end : What's included
