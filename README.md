@@ -3,7 +3,7 @@
   <p align="center">
     Angular 8.2.14 + Angular CLI + Angular Universal
     <br>
-    Lazy Loading + SSR + PWA + SEO
+    Lazy Loading + SSR + PWA + SEO + API REST (Node.js)
     <br>
     <br>
     <a href="https://angular.ganatan.com/">LIVE DEMO</a>
