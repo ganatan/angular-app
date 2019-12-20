@@ -38,7 +38,7 @@
 > Dependencies
 - [x] Angular : 8.2.14
 - [x] Angular CLI : 8.3.21
-- [x] Angular Universal : 8.1.1
+- [x] Angular Universal : 8.2.6
 - [x] Bootstrap : 4.4.1
 - [x] Fontawesome : 5.12.0
 - [x] jquery : 3.4.1
