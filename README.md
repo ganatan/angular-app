@@ -32,7 +32,7 @@
 ### Front-end : What's included
 > Dependencies
 - [x] Angular : 8.2.14
-- [x] Angular CLI : 8.3.20
+- [x] Angular CLI : 8.3.21
 - [x] Angular Universal : 8.1.1
 - [x] Bootstrap : 4.4.1
 - [x] Fontawesome : 5.12.0
@@ -108,6 +108,14 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run test`
 * `npm run e2e`
 
+### compilation
+* `npm run build`       ( without SSR)
+* `npm run build:ssr`   ( with SSR)
+
+### production
+* `npm run serve:ssr`
+* in your browser [http://localhost:4000](http://localhost:4000) 
+
 ## Back-end
 
 ### Installation
@@ -131,7 +139,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 ### Author
-* Updated : 16/12/19
+* Updated : 20/12/19
 * Author  : danny
 
 ## Documentation
