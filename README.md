@@ -10,7 +10,7 @@
     <br>
     <br>
     <a href="https://angular.ganatan.com/">
-      <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Demo example"/>
+      <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 8 Example Application"/>
     </a>
   </p>
 </p>
@@ -113,11 +113,11 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run test`
 * `npm run e2e`
 
-### compilation
+### Compilation
 * `npm run build`       ( without SSR)
 * `npm run build:ssr`   ( with SSR)
 
-### production
+### Production
 * `npm run serve:ssr`
 * in your browser [http://localhost:4000](http://localhost:4000) 
 
