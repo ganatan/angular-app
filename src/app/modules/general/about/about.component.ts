@@ -70,26 +70,21 @@ export class AboutComponent {
         },
         {
           name: 'Search Engine optimization',
-          englishTutorial: 'https://www.ganatan.com/tutorials/web-application-with-angular',
-          frenchTutorial: 'https://www.ganatan.com/tutorials/application-web-avec-angular',
-        },
-        {
-          name: 'Responsive Layout',
-          englishTutorial: null,
-          frenchTutorial: null,
+          englishTutorial: 'https://www.ganatan.com/tutorials/search-engine-optimization-with-angular',
+          frenchTutorial: 'https://www.ganatan.com/tutorials/search-engine-optimization-avec-angular',
         },
         {
           name: 'Components',
           englishTutorial: null,
-          frenchTutorial: null,
+          frenchTutorial: 'https://www.ganatan.com/tutorials/components-avec-angular',
         },
         {
-          name: 'Modules',
+          name: 'Services',
           englishTutorial: null,
-          frenchTutorial: null,
+          frenchTutorial: 'https://www.ganatan.com/tutorials/services-avec-angular',
         },
         {
-          name: 'Search / Grid / Pagaination',
+          name: 'Responsive Images List',
           englishTutorial: null,
           frenchTutorial: null,
         },

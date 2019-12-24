@@ -1,10 +1,11 @@
 <p align="center">
   <h1 align="center">Angular 8 Application</h1>
   <p align="center">
-    Angular 8.2.14 + Angular CLI + Angular Universal
+    Angular 8.2.14 + Angular CLI + Angular Universal + Prototype bootstrap
     <br>
-    Lazy Loading + SSR + PWA + SEO + API REST (Node.js)
+    Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
+    Prototype bootstrap
     <br>
     <a href="https://angular.ganatan.com/">LIVE DEMO</a>
     <br>
@@ -121,6 +122,10 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run serve:ssr`
 * in your browser [http://localhost:4000](http://localhost:4000) 
 
+### Prototype Bootstrap
+* `change directory` cd ui
+* launch html pages in your browser
+
 ## Back-end
 
 ### Installation
@@ -144,7 +149,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 ### Author
-* Updated : 20/12/19
+* Updated : 24/12/19
 * Author  : danny
 
 ## Documentation

@@ -86,7 +86,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titleService.setTitle('angular.ganatan: Une Application Web avec Angular');
+    this.titleService.setTitle('angular.ganatan: Application Web with Angular 8');
     this.meta.addTag({
       name: 'angular.ganatan',
       content: 'danny ganatan'
@@ -94,8 +94,8 @@ export class HomeComponent implements OnInit {
     this.meta.updateTag(
       {
         name: 'description',
-        content: 'Cette application a été développée avec Angular version 8.2.14 et bootstrap 4.4.1' +
-          ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
+        content: 'This application was developed with Angular version 8.2.14 and bootstrap 4.4.1' +
+          ' It applies Routing, Lazy loading, Server side rendering and Progressive Web App (PWA)'
       });
   }
 
