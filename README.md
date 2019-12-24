@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Angular 8 Application</h1>
   <p align="center">
-    Angular 8.2.14 + Angular CLI + Angular Universal + Prototype bootstrap
+    Angular 8.2.14 + Angular CLI + Angular Universal
     <br>
     Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
