@@ -30,8 +30,33 @@
   </div>
 </div>
 
-<div class="row pt-2">
-  <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-2" *ngFor="let feature of features; let i=index">
+<div class="row pt-2 pb-4">
+  <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4" *ngFor="let item of features; let i=index">
+    <div class="card card-cascade">
+      <div class="card-img">
+        <a routerLink="/{{ item.link }}">
+          <img class="card-img-top" src="./assets/params/images/showcase/{{ item.image }}" alt="Card image cap">
+        </a>
+      </div>
+      <div class="card-body pt-0">
+<!--        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-left">
+            <a routerLink="/{{ item.link }}" class="text-primary">
+              <h6 class="font-bold pb-1">
+                <i class="{{ item.icon }}"></i> {{ item.type }}</h6>
+            </a>
+          </div>
+        </div>-->
+        <h6 class="card-title">
+          <span style="font-size: 14px;"><strong>{{ item.description }}
+            </strong></span>
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-2" *ngFor="let feature of features; let i=index">
     <div class="card bg-light mb-3">
       <a routerLink="/{{ feature.link }}">
         <div class="card-header">
@@ -49,5 +74,4 @@
         </div>
       </a>
     </div>
-  </div>
-</div>
+  </div> -->

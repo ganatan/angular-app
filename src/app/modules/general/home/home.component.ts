@@ -22,64 +22,39 @@ export class HomeComponent implements OnInit {
     this.features =
       [
         {
-          name: 'Components',
-          description: 'Define and control views',
-          icon: 'fa-share-alt-square',
+          icon: 'far fa-chart-bar',
+          type: 'Charts',
+          description: 'Integrate the open-source library Chart.js',
+          image: 'showcase-charts.png',
+          link: 'chartjs'
+        },
+        {
+          icon: 'far fa-chart-bar',
+          type: 'Components',
+          description: 'Smartphone Component with Input, Output and Event Emitter',
+          image: 'showcase-components.png',
           link: 'components'
         },
         {
-          name: 'Services',
-          description: 'A great way to share information among classes',
-          icon: 'fa-address-card',
+          icon: 'far fa-chart-bar',
+          type: 'Services',
+          description: 'Use services to view a playlist and a youtube player',
+          image: 'showcase-services-playlist-youtube.png',
           link: 'services'
         },
         {
-          name: 'HttpClient',
-          description: 'HttpClient',
-          icon: 'fa-comment-alt',
+          icon: 'far fa-chart-bar',
+          type: 'HttpClient',
+          description: 'Use an external API with the HttpClient module',
+          image: 'showcase-httpclient.png',
           link: 'httpclient'
         },
         {
-          name: 'Responsive Images list',
-          description: 'Responsive Movies List',
-          icon: 'fa-text-width',
+          icon: 'far fa-chart-bar',
+          type: 'Responsive Images list',
+          description: 'Display a Responsive List of Images',
+          image: 'showcase-responsive-images-list.png',
           link: 'movies-images-list'
-        },
-        {
-          name: 'Directives',
-          description: 'Change the appearance or behavior of a DOM element',
-          icon: 'fa-text-width',
-          link: 'directives'
-        },
-        {
-          name: 'Pipes',
-          description: 'Write display-value transformations',
-          icon: 'fa-code',
-          link: 'pipes'
-        },
-        {
-          name: 'RxJS/Observables',
-          description: 'Provide support for passing messages between publishers and subscribers',
-          icon: 'fa-comment-alt',
-          link: 'observables'
-        },
-        {
-          name: 'modal',
-          description: 'Add dialogs to your site',
-          icon: 'fa-comment-alt',
-          link: 'modal'
-        },
-        {
-          name: 'Reactiveform',
-          description: 'Create Reactive Form',
-          icon: 'fa-comment-alt',
-          link: 'reactiveform'
-        },
-        {
-          name: 'Template Driven Form',
-          description: 'Create Template Driven Form',
-          icon: 'fa-comment-alt',
-          link: 'templatedriven'
         },
       ];
 
