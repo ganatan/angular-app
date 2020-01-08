@@ -58,7 +58,7 @@
 
 ### Back-end : What's included
 > Dependencies
-- [x] Node.js : 12.13.0
+- [x] Node.js : 12.14.0
 - [x] Express.js : 4.17.1
 - [x] pg-promise : 10.2.1
 
@@ -149,7 +149,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 ### Author
-* Updated : 29/12/19
+* Updated : 08/01/2020
 * Author  : danny
 
 ## Documentation
