@@ -12,7 +12,7 @@ var ExportItems = new Promise(
       ',file_name as "fileName"' +
       ',show' +
       ',movie' +
-      ' FROM movie WHERE (id>=1000) AND (movie=true AND show=false) ORDER BY name ASC';
+      ' FROM movie WHERE (id>=1000) ORDER BY name ASC';
     db.any(query)
       .then(data => {
         var dataTmp = [];

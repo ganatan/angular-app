@@ -31,7 +31,7 @@
     "name": "Captain America: The First Avenger",
     "releaseDate": "22/07/2011",
     "wikipediaLink": "Thor",
-    "fileName": "Captain_America:_The_First_Avenger.jpg",
+    "fileName": "Captain_America_The_First_Avenger.jpg",
     "img": "./assets/params/images/movies/Captain_America_The_First_Avenger.jpg"
   },
   {
@@ -103,5 +103,61 @@
     "wikipediaLink": "Guardians_of_the_Galaxy_Vol._2",
     "fileName": "Guardians_of_the_Galaxy_Vol._2.jpg",
     "img": "./assets/params/images/movies/Guardians_of_the_Galaxy_Vol._2.jpg"
+  },
+  {
+    "name": "Spider-Man: Homecoming",
+    "releaseDate": "07/07/2017",
+    "wikipediaLink": "Spider-Man_Homecoming",
+    "fileName": "Spider-Man_Homecoming.jpg",
+    "img": "./assets/params/images/movies/Spider-Man_Homecoming.jpg"
+  },
+  {
+    "name": "Thor: Ragnarok",
+    "releaseDate": "03/11/2017",
+    "wikipediaLink": "Thor_Ragnarok",
+    "fileName": "Thor_Ragnarok.jpg",
+    "img": "./assets/params/images/movies/Thor_Ragnarok.jpg"
+  },
+  {
+    "name": "Black Panther",
+    "releaseDate": "16/02/2018",
+    "wikipediaLink": "Black_Panther_(film)",
+    "fileName": "Black_Panther_(film).jpg",
+    "img": "./assets/params/images/movies/Black_Panther_(film).jpg"
+  },
+  {
+    "name": "Avengers: Infinity War",
+    "releaseDate": "27/04/2018",
+    "wikipediaLink": "Black_Panther_(film)",
+    "fileName": "Black_Panther_(film).jpg",
+    "img": "./assets/params/images/movies/Black_Panther_(film).jpg"
+  },
+  {
+    "name": "Ant-Man and the Wasp",
+    "releaseDate": "06/07/2018",
+    "wikipediaLink": "Ant-Man_and_the_Wasp",
+    "fileName": "Ant-Man_and_the_Wasp.jpg",
+    "img": "./assets/params/images/movies/Ant-Man_and_the_Wasp.jpg"
+  },
+  {
+    "name": "Captain Marvel",
+    "releaseDate": "08/03/2019",
+    "wikipediaLink": "Captain_Marvel_(film)",
+    "fileName": "Captain_Marvel_(film).jpg",
+    "img": "./assets/params/images/movies/Captain_Marvel_(film).jpg"
+  },
+  {
+    "name": "Avengers: Endgame",
+    "releaseDate": "26/04/2019",
+    "wikipediaLink": "Avengers_Endgame",
+    "fileName": "Avengers_Endgame.jpg",
+    "img": "./assets/params/images/movies/Avengers_Endgame.jpg"
+  },
+  {
+    "name": "Spider-Man: Far From Home",
+    "releaseDate": "02/07/2019",
+    "wikipediaLink": "Spider-Man_Far_From_Home",
+    "fileName": "Spider-Man_Far_From_Home.jpg",
+    "img": "./assets/params/images/movies/Spider-Man_Far_From_Home.jpg"
   }
 ]

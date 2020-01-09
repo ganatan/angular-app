@@ -57,7 +57,7 @@ function getItems(req, res, next, db, url, tvshow) {
       ')';
   }
   sql = sql +
-    ' ORDER BY name ASC';
+    ' ORDER BY release_date ASC';
   if ((limit_req != undefined) && (offset_req != undefined)) {
     sql = sql + ' LIMIT ' + limit_req + ' OFFSET ' + offset_req;
   }
