@@ -38,7 +38,7 @@
 ### Front-end : What's included
 > Dependencies
 - [x] Angular : 8.2.14
-- [x] Angular CLI : 8.3.22
+- [x] Angular CLI : 8.3.23
 - [x] Angular Universal : 8.2.6
 - [x] Bootstrap : 4.4.1
 - [x] Fontawesome : 5.12.0
@@ -55,10 +55,11 @@
 - [x] Services
 - [x] inheritance
 - [x] Search / Grid / Pagination
+- [x] Leaflet open-source JavaScript library
 
 ### Back-end : What's included
 > Dependencies
-- [x] Node.js : 12.14.0
+- [x] Node.js : 12.14.1
 - [x] Express.js : 4.17.1
 - [x] pg-promise : 10.3.2
 
@@ -149,7 +150,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 ### Author
-* Updated : 09/01/2020
+* Updated : 21/01/2020
 * Author  : danny
 
 ## Documentation

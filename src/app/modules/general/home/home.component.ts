@@ -22,6 +22,13 @@ export class HomeComponent implements OnInit {
     this.features =
       [
         {
+          icon: 'fas fa-map-signs',
+          type: 'Leafleft',
+          description: 'An open-source JavaScript library for mobile-friendly interactive maps',
+          image: 'showcase-leaflet-feature.png',
+          link: 'leaflet'
+        },
+        {
           icon: 'far fa-chart-bar',
           type: 'Charts',
           description: 'Integrate the open-source library Chart.js',
