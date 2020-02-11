@@ -59,9 +59,9 @@
 
 ### Back-end : What's included
 > Dependencies
-- [x] Node.js : 12.14.1
+- [x] Node.js : 12.15.0
 - [x] Express.js : 4.17.1
-- [x] pg-promise : 10.3.2
+- [x] pg-promise : 10.4.3
 
 > Features
 - [x] PostgreSQL 
@@ -77,10 +77,10 @@
 
 ```bash
 # clone the repo
-git clone https://github.com/ganatan/angular8-app.git
+git clone https://github.com/ganatan/angular9-app.git
 
 # change directory
-cd angular8-app
+cd angular9-app
 
 # install the repo with npm
 npm install

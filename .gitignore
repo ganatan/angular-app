@@ -10,6 +10,7 @@
 # dependencies
 /node_modules
 package-lock.json
+/api/node_modules
 
 # profiling files
 chrome-profiler-events*.json
