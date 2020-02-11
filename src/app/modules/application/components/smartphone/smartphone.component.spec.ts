@@ -8,11 +8,9 @@ describe('SmartphoneComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        SmartphoneComponent,
-      ]
+      declarations: [ SmartphoneComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   }));
 
   beforeEach(() => {
@@ -30,5 +28,4 @@ describe('SmartphoneComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
 });

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpClientModule } from '@angular/common/http';
+
 import { ItemsComponent } from './items.component';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
 
 describe('ItemsComponent', () => {
@@ -13,9 +14,9 @@ describe('ItemsComponent', () => {
         HttpClientModule,
         BrowserTransferStateModule
       ],
-      declarations: [ ItemsComponent ]
+      declarations: [ItemsComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -13,9 +13,9 @@ export class AboutComponent {
   constructor() {
     this.dependencies = {
       frontend: [
-        { name: 'Angular 8.2.14' },
-        { name: 'Angular Universal 8.2.6' },
-        { name: 'Font Awesome 5.12.0' },
+        { name: 'Angular 9.0.0' },
+        { name: 'Angular Universal 9.0.0' },
+        { name: 'Font Awesome 5.12.1' },
         { name: 'Bootstrap 4.4.1' },
         { name: 'JQuery 3.4.1' },
       ],

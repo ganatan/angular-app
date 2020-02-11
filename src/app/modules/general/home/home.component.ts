@@ -22,20 +22,6 @@ export class HomeComponent implements OnInit {
     this.features =
       [
         {
-          icon: 'fas fa-map-signs',
-          type: 'Leafleft',
-          description: 'An open-source JavaScript library for mobile-friendly interactive maps',
-          image: 'showcase-leaflet-feature.png',
-          link: 'leaflet'
-        },
-        {
-          icon: 'far fa-chart-bar',
-          type: 'Charts',
-          description: 'Integrate the open-source library Chart.js',
-          image: 'showcase-charts.png',
-          link: 'chartjs'
-        },
-        {
           icon: 'far fa-chart-bar',
           type: 'Components',
           description: 'Smartphone Component with Input, Output and Event Emitter',
@@ -63,12 +49,26 @@ export class HomeComponent implements OnInit {
           image: 'showcase-responsive-images-list.png',
           link: 'movies-images-list'
         },
+        {
+          icon: 'fas fa-map-signs',
+          type: 'Leafleft',
+          description: 'An open-source JavaScript library for mobile-friendly interactive maps',
+          image: 'showcase-leaflet-feature.png',
+          link: 'leaflet'
+        },
+        {
+          icon: 'far fa-chart-bar',
+          type: 'Charts',
+          description: 'Integrate the open-source library Chart.js',
+          image: 'showcase-charts.png',
+          link: 'chartjs'
+        },
       ];
 
   }
 
   ngOnInit() {
-    this.titleService.setTitle('angular.ganatan: Application Web with Angular 8');
+    this.titleService.setTitle('angular.ganatan: Une Application Web avec Angular');
     this.meta.addTag({
       name: 'angular.ganatan',
       content: 'danny ganatan'
@@ -76,9 +76,8 @@ export class HomeComponent implements OnInit {
     this.meta.updateTag(
       {
         name: 'description',
-        content: 'This application was developed with Angular version 8.2.14 and bootstrap 4.4.1' +
-          ' It applies Routing, Lazy loading, Server side rendering and Progressive Web App (PWA)'
+        content: 'Cette application a été développée avec Angular version 9.0.0 et bootstrap 4.4.1' +
+          ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
       });
   }
-
 }

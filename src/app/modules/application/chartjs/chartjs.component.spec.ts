@@ -12,9 +12,9 @@ describe('ChartjsComponent', () => {
       imports: [
         ChartsModule,
       ],
-      declarations: [ ChartjsComponent ]
+      declarations: [ChartjsComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

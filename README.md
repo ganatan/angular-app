@@ -1,7 +1,7 @@
 <p align="center">
-  <h1 align="center">Angular 8 Application</h1>
+  <h1 align="center">Angular 9 Application</h1>
   <p align="center">
-    Angular 8.2.14 + Angular CLI + Angular Universal
+    Angular 9.0.0 + Angular CLI + Angular Universal
     <br>
     Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
@@ -17,7 +17,7 @@
 </p>
 
 ## Lighthouse Audit
-<img src="https://api.ganatan.org/articles/img/search-engine-optimization-with-angular-after.png"/>
+<img src="https://api.ganatan.org/articles/img/search-engine-optimization-avec-angular-lighthouse-after.png"/>
 
 ## Table of contents
 
@@ -37,11 +37,11 @@
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 8.2.14
-- [x] Angular CLI : 8.3.24
-- [x] Angular Universal : 8.2.6
+- [x] Angular : 9.0.0
+- [x] Angular CLI : 9.0.1
+- [x] Angular Universal : 9.0.0
 - [x] Bootstrap : 4.4.1
-- [x] Fontawesome : 5.12.0
+- [x] Fontawesome : 5.12.1
 - [x] jquery : 3.4.1
 
 > Features
@@ -150,7 +150,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 ### Author
-* Updated : 31/01/2020
+* Updated : 11/02/2020
 * Author  : danny
 
 ## Documentation
