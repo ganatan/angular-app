@@ -37,8 +37,8 @@
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 9.0.0
-- [x] Angular CLI : 9.0.1
+- [x] Angular : 9.0.1
+- [x] Angular CLI : 9.0.2
 - [x] Angular Universal : 9.0.0
 - [x] Bootstrap : 4.4.1
 - [x] Fontawesome : 5.12.1
@@ -150,7 +150,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 ### Author
-* Updated : 11/02/2020
+* Updated : 14/02/2020
 * Author  : danny
 
 ## Documentation
