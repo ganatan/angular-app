@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Angular 9 Application</h1>
   <p align="center">
-    Angular 9.0.0 + Angular CLI + Angular Universal
+    Angular 9.0.1 + Angular CLI + Angular Universal
     <br>
     Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
@@ -150,7 +150,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 ### Author
-* Updated : 14/02/2020
+* Updated : 16/02/2020
 * Author  : danny
 
 ## Documentation
