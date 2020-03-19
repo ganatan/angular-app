@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Angular 9 Application</h1>
   <p align="center">
-    Angular 9.0.6 + Angular CLI + Angular Universal
+    Angular 9.0.7 + Angular CLI + Angular Universal
     <br>
     Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
@@ -37,8 +37,8 @@
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 9.0.6
-- [x] Angular CLI : 9.0.5
+- [x] Angular : 9.0.7
+- [x] Angular CLI : 9.0.7
 - [x] Angular Universal : 9.0.1
 - [x] Bootstrap : 4.4.1
 - [x] Fontawesome : 5.12.1
@@ -150,7 +150,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 ### Author
-* Updated : 07/03/2020
+* Updated : 19/03/2020
 * Author  : danny
 
 ## Documentation
