@@ -37,11 +37,11 @@
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 9.0.7
-- [x] Angular CLI : 9.0.7
-- [x] Angular Universal : 9.0.1
+- [x] Angular : 9.1.2
+- [x] Angular CLI : 9.1.1
+- [x] Angular Universal : 9.1.0
 - [x] Bootstrap : 4.4.1
-- [x] Fontawesome : 5.12.1
+- [x] Fontawesome : 5.13.0
 - [x] jquery : 3.4.1
 
 > Features
@@ -59,7 +59,7 @@
 
 ### Back-end : What's included
 > Dependencies
-- [x] Node.js : 12.16.0
+- [x] Node.js : 12.16.2
 - [x] Express.js : 4.17.1
 - [x] pg-promise : 10.4.4
 
@@ -150,7 +150,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 ### Author
-* Updated : 19/03/2020
+* Updated : 20/04/2020
 * Author  : danny
 
 ## Documentation

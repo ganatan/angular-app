@@ -1,6 +1,5 @@
 @import "../node_modules/leaflet/dist/leaflet.css";
-
 body {
-    color: black;
-    font-weight: 400;
-  }
+  color: black;
+  font-weight: 400;
+}

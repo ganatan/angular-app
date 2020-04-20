@@ -7,14 +7,19 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 const routes: Routes = [
   { path: '', component: HomeComponent, },
   {
-    path: 'leaflet',
-    loadChildren: () => import('./modules/application/leaflet-feature/leaflet-feature.module')
-      .then(mod => mod.LeafletFeatureModule)
-  },
-  {
     path: 'movies-images-list',
     loadChildren: () => import('./modules/application/movies-images-list/movies-images-list.module')
       .then(mod => mod.MoviesImagesListModule)
+  },
+  {
+    path: 'leaflet',
+    loadChildren: () => import('./modules/application/example-leaflet/example-leaflet.module')
+      .then(mod => mod.ExampleLeafletModule)
+  },
+  {
+    path: 'charts',
+    loadChildren: () => import('./modules/application/example-charts/example-charts.module')
+      .then(mod => mod.ExampleChartsModule)
   },
   {
     path: 'httpclient',
@@ -23,23 +28,28 @@ const routes: Routes = [
   },
   {
     path: 'template-driven-forms',
-    loadChildren: () => import('./modules/application/template-driven-forms/template-driven-forms.module')
-      .then(mod => mod.TemplateDrivenFormsModule)
-  },
-  {
-    path: 'chartjs',
-    loadChildren: () => import('./modules/application/chartjs/chartjs.module')
-      .then(mod => mod.ChartjsModule)
-  },
-  {
-    path: 'services',
-    loadChildren: () => import('./modules/application/services/services.module')
-      .then(mod => mod.ServicesModule)
+    loadChildren: () => import('./modules/application/example-template-driven-forms/example-template-driven-forms.module')
+      .then(mod => mod.ExampleTemplateDrivenFormsModule)
   },
   {
     path: 'components',
-    loadChildren: () => import('./modules/application/components/components.module')
-      .then(mod => mod.ComponentsModule)
+    loadChildren: () => import('./modules/application/example-components/example-components.module')
+      .then(mod => mod.ExampleComponentsModule)
+  },
+  {
+    path: 'services',
+    loadChildren: () => import('./modules/application/example-services/example-services.module')
+      .then(mod => mod.ExampleServicesModule)
+  },
+  {
+    path: 'reactive-form',
+    loadChildren: () => import('./modules/application/example-reactive-form/example-reactive-form.module')
+      .then(mod => mod.ExampleReactiveFormModule)
+  },
+  {
+    path: 'bootstrap-components',
+    loadChildren: () => import('./modules/application/example-bootstrap-components/example-bootstrap-components.module')
+      .then(mod => mod.ExampleBootstrapComponentsModule)
   },
   {
     path: 'about',

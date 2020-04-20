@@ -12,9 +12,9 @@ describe('HomeComponent', () => {
       imports: [
         RouterTestingModule
       ],
-      declarations: [HomeComponent]
+      declarations: [ HomeComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   }));
 
   beforeEach(() => {

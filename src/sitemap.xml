@@ -9,78 +9,48 @@
 
 <url>
   <loc>https://angular.ganatan.com/</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
+  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://angular.ganatan.com/about</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
+  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://angular.ganatan.com/contact</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
+  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://angular.ganatan.com/signin</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
+  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://angular.ganatan.com/template-driven-forms</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
+  <loc>https://angular.ganatan.com/bootstrap-components</loc>
+  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://angular.ganatan.com/chartjs</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://angular.ganatan.com/components</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://angular.ganatan.com/services</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
+  <loc>https://angular.ganatan.com/reactive-form</loc>
+  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://angular.ganatan.com/httpclient</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
+  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://angular.ganatan.com/directives</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://angular.ganatan.com/contact/mailing</loc>
+  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://angular.ganatan.com/pipes</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://angular.ganatan.com/observables</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://angular.ganatan.com/modal</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://angular.ganatan.com/reactiveform</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://angular.ganatan.com/templatedriven</loc>
-  <lastmod>2020-02-09T07:09:34+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://angular.ganatan.com/contact/map</loc>
+  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 

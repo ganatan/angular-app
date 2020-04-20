@@ -1,0 +1,59 @@
+<div class="row pb-4">
+
+  <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+    <div class="text-center col">
+      <h1 class="h4">Feature : Services</h1>
+    </div>
+    <div class="card bg-light mb-3 text-center">
+      <div class="card-body" *ngIf="songSelected">
+        <h5 class="card-title text-primary">{{ songSelected.artist }}</h5>
+        <h6 class="card-title text-info">{{ songSelected.title }}</h6>
+        <h6 class="card-title text-secondary">{{ songSelected.top }}</h6>
+      </div>
+      <div class="card-body" *ngIf="!songSelected">
+        <div class="alert alert-danger" role="alert">
+          Select a song on the list to see the clip<br>
+          <i class="fab fa-youtube fa-2x text-danger"></i>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="songSelected" class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" [src]="('https://www.youtube.com/embed/' + songSelected.link) | safe"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+    <div class="form-group">
+      <label class="text-primary font-weight-bold" for="exampleFormControlSelect1">Classement Mégafusion
+        (Téléchargements + Streaming)</label>
+      <select class="form-control text-primary font-weight-bold" id="exampleFormControlSelect1"
+        (change)="onChange($event)">
+        <option value="1">2018</option>
+        <option value="2">2017</option>
+        <option value="3">2016</option>
+        <option value="4">2015</option>
+      </select>
+    </div>
+    <table class="table table-hover table-striped table-bordered table-responsive-md table-sm">
+      <thead>
+        <tr>
+          <th class="text-secondary" style="text-align:center;">Clip</th>
+          <th class="text-secondary" style="text-align:center;">Top</th>
+          <th class="text-primary" style="text-align:center;">Artist</th>
+          <th class="text-info" style="cursor: pointer;text-align:center;">Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let song of songs" class="table-{{ song.class }}" (click)="select(song)">
+          <td class="text-secondary" style="cursor: pointer;text-align:center"><i
+              class="fab fa-youtube text-danger"></i></td>
+          <td class="text-secondary" style="cursor: pointer;text-align:center">{{ song.top }}</td>
+          <td class="text-primary" style="cursor: pointer;text-align:center">{{ song.artist }}</td>
+          <td class="text-info" style="cursor: pointer;text-align:center">{{ song.title }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div>

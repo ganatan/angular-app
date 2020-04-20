@@ -22,46 +22,58 @@ export class HomeComponent implements OnInit {
     this.features =
       [
         {
-          icon: 'far fa-chart-bar',
-          type: 'Components',
-          description: 'Smartphone Component with Input, Output and Event Emitter',
-          image: 'showcase-components.png',
-          link: 'components'
+          type: 'Bootstrap Components',
+          description: 'Bootstrap Components , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips',
+          image: 'hub-bootstrap-components.png',
+          link: 'bootstrap-components'
         },
         {
-          icon: 'far fa-chart-bar',
+          type: 'Reactive Form',
+          description: 'A model-driven approach to handling form inputs',
+          image: 'hub-reactive-forms.png',
+          link: 'reactive-form'
+        },
+        {
           type: 'Services',
           description: 'Use services to view a playlist and a youtube player',
           image: 'showcase-services-playlist-youtube.png',
           link: 'services'
         },
         {
-          icon: 'far fa-chart-bar',
+          type: 'Components',
+          description: 'Smartphone Component with Input, Output and Event Emitter',
+          image: 'showcase-components.png',
+          link: 'components'
+        },
+        {
           type: 'HttpClient',
           description: 'Use an external API with the HttpClient module',
           image: 'showcase-httpclient.png',
           link: 'httpclient'
         },
         {
-          icon: 'far fa-chart-bar',
-          type: 'Responsive Images list',
-          description: 'Display a Responsive List of Images',
-          image: 'showcase-responsive-images-list.png',
-          link: 'movies-images-list'
+          type: 'Template Driven Forms',
+          description: 'Forms are the mainstay of business applications',
+          image: 'hub-template-driven-forms.png',
+          link: 'template-driven-forms'
         },
         {
-          icon: 'fas fa-map-signs',
+          type: 'Charts',
+          description: 'Integrate the open-source library Chart.js',
+          image: 'showcase-charts.png',
+          link: 'charts'
+        },
+        {
           type: 'Leafleft',
           description: 'An open-source JavaScript library for mobile-friendly interactive maps',
           image: 'showcase-leaflet-feature.png',
           link: 'leaflet'
         },
         {
-          icon: 'far fa-chart-bar',
-          type: 'Charts',
-          description: 'Integrate the open-source library Chart.js',
-          image: 'showcase-charts.png',
-          link: 'chartjs'
+          type: 'Responsive Images list',
+          description: 'Display a Responsive List of Images',
+          image: 'showcase-responsive-images-list.png',
+          link: 'movies-images-list'
         },
       ];
 
@@ -76,8 +88,9 @@ export class HomeComponent implements OnInit {
     this.meta.updateTag(
       {
         name: 'description',
-        content: 'Cette application a été développée avec Angular version 9.0.7 et bootstrap 4.4.1' +
+        content: 'Cette application a été développée avec Angular version 9.0.5 et bootstrap 4.4.1' +
           ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
       });
   }
+
 }
