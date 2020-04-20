@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Angular 9 Application</h1>
   <p align="center">
-    Angular 9.0.7 + Angular CLI + Angular Universal
+    Angular 9.1.2 + Angular CLI + Angular Universal
     <br>
     Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
