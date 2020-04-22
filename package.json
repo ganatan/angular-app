@@ -11,7 +11,7 @@
     "dev:ssr": "ng run angular-starter:serve-ssr",
     "serve:ssr": "node dist/angular-starter/server/main.js",
     "build:ssr": "ng build --prod && ng run angular-starter:server:production",
-    "build-hub:ssr": "ng build --prod --base-href=/angular-webapp/ && ng run angular-starter:server:production",
+    "build-demo:ssr": "ng build --prod --base-href=/angular-webapp/ && ng run angular-starter:server:production",
     "prerender": "ng run angular-starter:prerender"
   },
   "repository": {
@@ -54,13 +54,13 @@
     "zone.js": "0.10.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.901.1",
-    "@angular/cli": "9.1.1",
+    "@angular-devkit/build-angular": "0.901.2",
+    "@angular/cli": "9.1.2",
     "@angular/compiler-cli": "9.1.2",
     "@angular/language-service": "9.1.2",
     "@nguniversal/builders": "9.1.0",
     "@types/express": "4.17.6",
-    "@types/node": "13.13.1",
+    "@types/node": "13.13.2",
     "@types/jasmine": "3.5.10",
     "@types/jasminewd2": "2.0.8",
     "codelyzer": "5.2.2",
