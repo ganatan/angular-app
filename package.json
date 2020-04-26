@@ -65,14 +65,14 @@
     "@types/jasminewd2": "2.0.8",
     "codelyzer": "5.2.2",
     "jasmine-core": "3.5.0",
-    "jasmine-spec-reporter": "5.0.1",
+    "jasmine-spec-reporter": "5.0.2",
     "karma": "5.0.2",
     "karma-chrome-launcher": "3.1.0",
     "karma-coverage-istanbul-reporter": "2.1.1",
     "karma-jasmine": "3.1.1",
     "karma-jasmine-html-reporter": "1.5.3",
     "protractor": "5.4.4",
-    "ts-node": "8.9.0",
+    "ts-node": "8.9.1",
     "tslint": "6.1.1",
     "typescript": "3.8.3"
   }
