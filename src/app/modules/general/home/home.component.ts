@@ -22,10 +22,10 @@ export class HomeComponent implements OnInit {
     this.features =
       [
         {
-          type: 'Bootstrap Components',
-          description: 'Bootstrap Components , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips',
-          image: 'hub-bootstrap-components.png',
-          link: 'bootstrap-components'
+          type: 'Bootstrap Prototype',
+          description: 'Bootstrap Prototype , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips',
+          image: 'hub-bootstrap-prototype.png',
+          link: 'bootstrap-prototype'
         },
         {
           type: 'Reactive Form',

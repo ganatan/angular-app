@@ -3,7 +3,7 @@
     <div class="list-group">
       <button *ngFor="let item of features; let i=index" (click)="changeItem(item)" type="button"
         class="list-group-item list-group-item-action active" [ngClass]="{active : i+1 == current}"
-        routerLink="/bootstrap-components/{{ item.link }}">{{ item.name }}</button>
+        routerLink="/bootstrap-prototype/{{ item.link }}">{{ item.name }}</button>
     </div>
   </div>
   <div class="col-md-9 text-center">

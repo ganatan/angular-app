@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ExampleBootstrapComponentsComponent } from './example-bootstrap-components.component';
+import { ExampleBootstrapPrototypeComponent } from './example-bootstrap-prototype.component';
 
 import { AlertsComponent } from './components/alerts/items.component';
 import { BadgeComponent } from './components/badge/items.component';
@@ -21,7 +21,7 @@ import { ToastsComponent } from './components/toasts/items.component';
 
 const routes: Routes = [
   {
-    path: '', component: ExampleBootstrapComponentsComponent, children: [
+    path: '', component: ExampleBootstrapPrototypeComponent, children: [
       { path: 'alerts', component: AlertsComponent },
       { path: 'badge', component: BadgeComponent },
       { path: 'breadcrumb', component: BreadcrumbComponent },
@@ -39,7 +39,7 @@ const routes: Routes = [
       { path: 'toasts', component: ToastsComponent },
       {
         path: '',
-        redirectTo: '/bootstrap-components/alerts',
+        redirectTo: '/bootstrap-prototype/alerts',
         pathMatch: 'full'
       },
       { path: '**', component: AlertsComponent },
@@ -47,10 +47,8 @@ const routes: Routes = [
   },
 ];
 
-
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ExampleBootstrapComponentsRoutingModule { }
+export class ExampleBootstrapPrototypeRoutingModule { }

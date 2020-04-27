@@ -1,12 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExampleBootstrapComponentsComponent } from './example-bootstrap-components.component';
+import { ExampleBootstrapPrototypeComponent } from './example-bootstrap-prototype.component';
 import { FormBuilder } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 
 describe('ExampleBootstrapComponentsComponent', () => {
-  let component: ExampleBootstrapComponentsComponent;
-  let fixture: ComponentFixture<ExampleBootstrapComponentsComponent>;
+  let component: ExampleBootstrapPrototypeComponent;
+  let fixture: ComponentFixture<ExampleBootstrapPrototypeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -14,7 +14,7 @@ describe('ExampleBootstrapComponentsComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        ExampleBootstrapComponentsComponent,
+        ExampleBootstrapPrototypeComponent,
       ],
       providers: [
         FormBuilder
@@ -24,7 +24,7 @@ describe('ExampleBootstrapComponentsComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ExampleBootstrapComponentsComponent);
+    fixture = TestBed.createComponent(ExampleBootstrapPrototypeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

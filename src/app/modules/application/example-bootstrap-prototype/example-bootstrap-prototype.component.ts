@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-example-bootstrap-components',
-  templateUrl: './example-bootstrap-components.component.html',
-  styleUrls: ['./example-bootstrap-components.component.css']
+  selector: 'app-example-bootstrap-prototype',
+  templateUrl: './example-bootstrap-prototype.component.html',
+  styleUrls: ['./example-bootstrap-prototype.component.css']
 })
 
-export class ExampleBootstrapComponentsComponent {
+export class ExampleBootstrapPrototypeComponent {
   current = 1;
   features = [
     { id: 1, name: 'Alerts', link: 'alerts' },

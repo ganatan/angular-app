@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MailingComponent implements OnInit {
 
+  exampleClasse = {
+    name: 'Name Example'
+  };
+
   constructor() { }
 
   ngOnInit(): void {
