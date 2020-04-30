@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Angular 9 Application</h1>
   <p align="center">
-    Angular 9.1.3 + Angular CLI + Angular Universal
+    Angular 9.1.4 + Angular CLI + Angular Universal
     <br>
     Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
@@ -37,8 +37,8 @@
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 9.1.3
-- [x] Angular CLI : 9.1.3
+- [x] Angular : 9.1.4
+- [x] Angular CLI : 9.1.4
 - [x] Angular Universal : 9.1.0
 - [x] Bootstrap : 4.4.1
 - [x] Fontawesome : 5.13.0
@@ -149,7 +149,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 28/04/2020
+* Updated : 30/04/2020
 * Author  : danny
 
 ## Documentation

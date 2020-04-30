@@ -13,7 +13,7 @@ export class AboutComponent {
   constructor() {
     this.dependencies = {
       frontend: [
-        { name: 'Angular 9.1.3' },
+        { name: 'Angular 9.1.4' },
         { name: 'Angular Universal 9.1.0' },
         { name: 'Font Awesome 5.13.0' },
         { name: 'Bootstrap 4.4.1' },

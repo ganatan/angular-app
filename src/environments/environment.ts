@@ -3,7 +3,7 @@ export const environment = {
   application:
   {
     name: 'angular-starter',
-    angular: 'Angular 9.1.3',
+    angular: 'Angular 9.1.4',
     bootstrap: 'Bootstrap 4.4.1',
     fontawesome: 'Font Awesome 5.13.0',
   }
