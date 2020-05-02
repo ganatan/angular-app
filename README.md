@@ -149,7 +149,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 30/04/2020
+* Updated : 01/05/2020
 * Author  : danny
 
 ## Documentation

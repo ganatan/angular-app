@@ -1,16 +1,14 @@
 <div class="row justify-content-center pt-4 pb-4">
   <div class="col-md-2 text-center">
     <div class="list-group">
-      <!--      <button *ngFor="let item of features; let i=index" type="button" [ngClass]="{active : i+1 == current}"
-        class="list-group-item list-group-item-action active" routerLink="/reactive-form/{{ item.link }}">
-        {{ item.name }}
-      </button>-->
       <button *ngFor="let item of features; let i=index" (click)="changeItem(item)" type="button"
         class="list-group-item list-group-item-action active" [ngClass]="{active : i+1 == current}"
         routerLink="/reactive-form/{{ item.link }}">{{ item.name }}</button>
     </div>
   </div>
-  <div class="col-md-10">
-    <router-outlet></router-outlet>
+  <div class="col-md-10 text-center">
+    <div class="card p-4">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>

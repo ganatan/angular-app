@@ -6,10 +6,10 @@ import { SongService } from './song/song.service';
 
 @Component({
   selector: 'app-example-services',
-  templateUrl: './example-services.component.html',
-  styleUrls: ['./example-services.component.css']
+  templateUrl: './tutorial.component.html',
+  styleUrls: ['./tutorial.component.css']
 })
-export class ExampleServicesComponent implements OnInit {
+export class TutorialComponent implements OnInit {
 
   songs: Song[];
   songSelected: Song;

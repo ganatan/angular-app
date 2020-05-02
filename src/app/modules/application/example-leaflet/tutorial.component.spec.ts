@@ -1,24 +1,24 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExampleLeafletComponent } from './example-leaflet.component';
+import { TutorialComponent } from './tutorial.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
-describe('ExampleLeafletComponent', () => {
-  let component: ExampleLeafletComponent;
-  let fixture: ComponentFixture<ExampleLeafletComponent>;
+describe('TutorialComponent', () => {
+  let component: TutorialComponent;
+  let fixture: ComponentFixture<TutorialComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
         LeafletModule,
       ],
-      declarations: [ ExampleLeafletComponent ]
+      declarations: [ TutorialComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ExampleLeafletComponent);
+    fixture = TestBed.createComponent(TutorialComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

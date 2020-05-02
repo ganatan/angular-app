@@ -3,10 +3,10 @@ import { latLng, tileLayer } from 'leaflet';
 
 @Component({
   selector: 'app-example-leaflet',
-  templateUrl: './example-leaflet.component.html',
-  styleUrls: ['./example-leaflet.component.css']
+  templateUrl: './tutorial.component.html',
+  styleUrls: ['./tutorial.component.css']
 })
-export class ExampleLeafletComponent implements OnInit {
+export class TutorialComponent implements OnInit {
 
   optionsSpec: any = {
     layers: [{ url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', attribution: 'Open Street Map' }],

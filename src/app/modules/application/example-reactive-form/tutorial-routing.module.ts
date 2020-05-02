@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ExampleReactiveFormComponent } from './example-reactive-form.component';
+import { TutorialComponent } from './tutorial.component';
 
 import { ExerciceComponent } from './01-prototype/Exercice.component';
 
 const routes: Routes = [
   {
-    path: '', component: ExampleReactiveFormComponent, children: [
+    path: '', component: TutorialComponent, children: [
       { path: 'prototype', component: ExerciceComponent },
       {
         path: 'form-multi',
@@ -58,4 +58,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ExampleReactiveFormRoutingModule { }
+export class TutorialRoutingModule { }

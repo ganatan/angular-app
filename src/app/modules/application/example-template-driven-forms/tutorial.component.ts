@@ -3,10 +3,10 @@ import { Movie } from './movie';
 
 @Component({
   selector: 'app-example-template-driven-forms',
-  templateUrl: './example-template-driven-forms.component.html',
-  styleUrls: ['./example-template-driven-forms.component.css']
+  templateUrl: './tutorial.component.html',
+  styleUrls: ['./tutorial.component.css']
 })
-export class ExampleTemplateDrivenFormsComponent implements OnInit {
+export class TutorialComponent implements OnInit {
 
   movie: Movie = new Movie();
 

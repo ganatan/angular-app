@@ -4,10 +4,10 @@ import { Smartphone } from './smartphone/smartphone';
 
 @Component({
   selector: 'app-example-components',
-  templateUrl: './example-components.component.html',
-  styleUrls: ['./example-components.component.css']
+  templateUrl: './tutorial.component.html',
+  styleUrls: ['./tutorial.component.css']
 })
-export class ExampleComponentsComponent implements OnInit {
+export class TutorialComponent implements OnInit {
 
   smartphones: Smartphone[];
   smartphoneSelected: Smartphone;

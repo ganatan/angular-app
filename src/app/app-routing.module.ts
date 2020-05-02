@@ -13,13 +13,13 @@ const routes: Routes = [
   },
   {
     path: 'leaflet',
-    loadChildren: () => import('./modules/application/example-leaflet/example-leaflet.module')
-      .then(mod => mod.ExampleLeafletModule)
+    loadChildren: () => import('./modules/application/example-leaflet/tutorial.module')
+      .then(mod => mod.TutorialModule)
   },
   {
     path: 'charts',
-    loadChildren: () => import('./modules/application/example-charts/example-charts.module')
-      .then(mod => mod.ExampleChartsModule)
+    loadChildren: () => import('./modules/application/example-charts/tutorial.module')
+      .then(mod => mod.TutorialModule)
   },
   {
     path: 'httpclient',
@@ -28,23 +28,23 @@ const routes: Routes = [
   },
   {
     path: 'template-driven-forms',
-    loadChildren: () => import('./modules/application/example-template-driven-forms/example-template-driven-forms.module')
-      .then(mod => mod.ExampleTemplateDrivenFormsModule)
+    loadChildren: () => import('./modules/application/example-template-driven-forms/tutorial.module')
+      .then(mod => mod.TutorialModule)
   },
   {
     path: 'components',
-    loadChildren: () => import('./modules/application/example-components/example-components.module')
-      .then(mod => mod.ExampleComponentsModule)
+    loadChildren: () => import('./modules/application/example-components/tutorial.module')
+      .then(mod => mod.TutorialModule)
   },
   {
     path: 'services',
-    loadChildren: () => import('./modules/application/example-services/example-services.module')
-      .then(mod => mod.ExampleServicesModule)
+    loadChildren: () => import('./modules/application/example-services/tutorial.module')
+      .then(mod => mod.TutorialModule)
   },
   {
     path: 'reactive-form',
-    loadChildren: () => import('./modules/application/example-reactive-form/example-reactive-form.module')
-      .then(mod => mod.ExampleReactiveFormModule)
+    loadChildren: () => import('./modules/application/example-reactive-form/tutorial.module')
+      .then(mod => mod.TutorialModule)
   },
   {
     path: 'bootstrap-prototype',

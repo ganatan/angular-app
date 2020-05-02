@@ -4,10 +4,10 @@ import { Color, BaseChartDirective, Label } from 'ng2-charts';
 
 @Component({
   selector: 'app-example-charts',
-  templateUrl: './example-charts.component.html',
-  styleUrls: ['./example-charts.component.css']
+  templateUrl: './tutorial.component.html',
+  styleUrls: ['./tutorial.component.css']
 })
-export class ExampleChartsComponent implements OnInit {
+export class TutorialComponent implements OnInit {
 
   public type: ChartType = 'bar';
 
