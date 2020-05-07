@@ -11,7 +11,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
   imports: [
     CommonModule,
     TutorialRoutingModule,
-    LeafletModule.forRoot()
+    LeafletModule
   ],
   exports: [
     TutorialComponent,

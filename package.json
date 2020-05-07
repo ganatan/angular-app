@@ -40,7 +40,7 @@
     "@angular/platform-server": "9.1.4",
     "@angular/router": "9.1.4",
     "@angular/service-worker": "9.1.4",
-    "@asymmetrik/ngx-leaflet": "6.0.1",
+    "@asymmetrik/ngx-leaflet": "7.0.0",
     "@fortawesome/fontawesome-free": "5.13.0",
     "@nguniversal/express-engine": "9.1.0",
     "bootstrap": "4.4.1",
