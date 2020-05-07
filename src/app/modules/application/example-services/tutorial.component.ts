@@ -14,7 +14,6 @@ export class TutorialComponent implements OnInit {
   songs: Song[];
   songSelected: Song;
   yearSelected: number;
-  toto = 'JGwWNGJdvx8';
 
   constructor(private songService: SongService) {
     this.yearSelected = 1;

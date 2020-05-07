@@ -24,55 +24,55 @@ export class HomeComponent implements OnInit {
         {
           type: 'Bootstrap Prototype',
           description: 'Bootstrap Prototype , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips',
-          image: 'hub-bootstrap-prototype.png',
+          image: 'demo-bootstrap-prototype.png',
           link: 'bootstrap-prototype'
         },
         {
           type: 'Reactive Form',
           description: 'A model-driven approach to handling form inputs',
-          image: 'hub-reactive-forms.png',
+          image: 'demo-reactive-forms.png',
           link: 'reactive-form'
         },
         {
           type: 'Services',
           description: 'Use services to view a playlist and a youtube player',
-          image: 'showcase-services-playlist-youtube.png',
+          image: 'demo-services-playlist-youtube.png',
           link: 'services'
         },
         {
           type: 'Components',
           description: 'Smartphone Component with Input, Output and Event Emitter',
-          image: 'showcase-components.png',
+          image: 'demo-components.png',
           link: 'components'
         },
         {
           type: 'HttpClient',
           description: 'Use an external API with the HttpClient module',
-          image: 'showcase-httpclient.png',
+          image: 'demo-httpclient.png',
           link: 'httpclient'
         },
         {
           type: 'Template Driven Forms',
           description: 'Forms are the mainstay of business applications',
-          image: 'hub-template-driven-forms.png',
+          image: 'demo-template-driven-forms.png',
           link: 'template-driven-forms'
         },
         {
           type: 'Charts',
           description: 'Integrate the open-source library Chart.js',
-          image: 'showcase-charts.png',
+          image: 'demo-charts.png',
           link: 'charts'
         },
         {
           type: 'Leafleft',
           description: 'An open-source JavaScript library for mobile-friendly interactive maps',
-          image: 'showcase-leaflet-feature.png',
+          image: 'demo-leaflet-feature.png',
           link: 'leaflet'
         },
         {
           type: 'Responsive Images list',
           description: 'Display a Responsive List of Images',
-          image: 'showcase-responsive-images-list.png',
+          image: 'demo-responsive-images-list.png',
           link: 'movies-images-list'
         },
       ];

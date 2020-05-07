@@ -42,7 +42,7 @@
 - [x] Angular Universal : 9.1.0
 - [x] Bootstrap : 4.4.1
 - [x] Fontawesome : 5.13.0
-- [x] jquery : 3.4.1
+- [x] jquery : 3.5.1
 
 > Features
 - [x] Routing
