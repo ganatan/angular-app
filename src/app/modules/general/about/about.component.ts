@@ -13,11 +13,11 @@ export class AboutComponent {
   constructor() {
     this.dependencies = {
       frontend: [
-        { name: 'Angular 9.1.4' },
-        { name: 'Angular Universal 9.1.0' },
+        { name: 'Angular 9.1.7' },
+        { name: 'Angular Universal 9.1.1' },
         { name: 'Font Awesome 5.13.0' },
-        { name: 'Bootstrap 4.4.1' },
-        { name: 'JQuery 3.4.1' },
+        { name: 'Bootstrap 4.5.0' },
+        { name: 'JQuery 3.5.1' },
       ],
       backend: [
         { name: 'Node.js' },
