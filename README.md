@@ -59,9 +59,9 @@
 
 ### Back-end : What's included
 > Dependencies
-- [x] Node.js : 12.16.2
+- [x] Node.js : 12.16.3
 - [x] Express.js : 4.17.1
-- [x] pg-promise : 10.4.4
+- [x] pg-promise : 10.5.6
 
 > Features
 - [x] PostgreSQL 
