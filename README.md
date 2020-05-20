@@ -113,7 +113,8 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 ### Tests
 * `npm run lint`
 * `npm run test`
-* `npm run e2e`
+* `npm run e2e` 
+# Use Chrome version 83 min
 
 ### Compilation
 * `npm run build`       ( without SSR)
@@ -149,7 +150,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 19/05/2020
+* Updated : 20/05/2020
 * Author  : danny
 
 ## Documentation
