@@ -11,7 +11,7 @@
     <br>
     <br>
     <a href="https://angular.ganatan.com/">
-      <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 9 Example Application"/>
+      <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 10 Example Application"/>
     </a>
   </p>
 </p>
@@ -30,8 +30,8 @@
 
 ## Status
 
-[![GitHub stars](https://img.shields.io/github/stars/ganatan/angular9-app.svg?style=social&label=Star)](https://github.com/ganatan/angular9-app)
-[![GitHub forks](https://img.shields.io/github/forks/ganatan/angular9-app.svg?style=social&label=Fork)](https://github.com/ganatan/angular9-app/fork)
+[![GitHub stars](https://img.shields.io/github/stars/ganatan/angular10-app.svg?style=social&label=Star)](https://github.com/ganatan/angular10-app)
+[![GitHub forks](https://img.shields.io/github/forks/ganatan/angular10-app.svg?style=social&label=Fork)](https://github.com/ganatan/angular10-app/fork)
 
 
 
@@ -77,10 +77,10 @@
 
 ```bash
 # clone the repo
-git clone https://github.com/ganatan/angular9-app.git
+git clone https://github.com/ganatan/angular10-app.git
 
 # change directory
-cd angular9-app
+cd angular10-app
 
 # install the repo with npm
 npm install
