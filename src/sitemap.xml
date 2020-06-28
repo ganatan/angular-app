@@ -9,49 +9,78 @@
 
 <url>
   <loc>https://angular.ganatan.com/</loc>
-  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://angular.ganatan.com/about</loc>
-  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://angular.ganatan.com/contact</loc>
-  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://angular.ganatan.com/signin</loc>
-  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://angular.ganatan.com/bootstrap-prototype</loc>
-  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://angular.ganatan.com/reactive-form</loc>
-  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://angular.ganatan.com/httpclient</loc>
-  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/template-driven-forms</loc>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/components</loc>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/services</loc>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://angular.ganatan.com/contact/mailing</loc>
-  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://angular.ganatan.com/contact/map</loc>
-  <lastmod>2020-04-16T10:13:39+00:00</lastmod>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
+<url>
+  <loc>https://angular.ganatan.com/movies-images-list</loc>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/leaflet</loc>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/charts</loc>
+  <lastmod>2020-06-27T14:26:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>

@@ -94,6 +94,10 @@
         "named": "never"
       }
     },
+    "typedef": [
+      false,
+      "call-signature"
+    ],
     "typedef-whitespace": {
       "options": [
         {

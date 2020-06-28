@@ -1,7 +1,7 @@
 <p align="center">
-  <h1 align="center">Angular 9 Application</h1>
+  <h1 align="center">Angular 10 Application</h1>
   <p align="center">
-    Angular 9.1.9 + Angular CLI + Angular Universal
+    Angular 10.0.1 + Angular CLI + Angular Universal
     <br>
     Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
@@ -37,11 +37,11 @@
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 9.1.9
-- [x] Angular CLI : 9.1.7
-- [x] Angular Universal : 9.1.1
+- [x] Angular : 10.0.1
+- [x] Angular CLI : 10.0.0
+- [x] Angular Universal : 10.0.0
 - [x] Bootstrap : 4.5.0
-- [x] Fontawesome : 5.13.0
+- [x] Fontawesome : 5.13.1
 - [x] jquery : 3.5.1
 
 > Features
@@ -59,9 +59,9 @@
 
 ### Back-end : What's included
 > Dependencies
-- [x] Node.js : 12.16.3
+- [x] Node.js : 12.18.1
 - [x] Express.js : 4.17.1
-- [x] pg-promise : 10.5.6
+- [x] pg-promise : 10.5.7
 
 > Features
 - [x] PostgreSQL 
@@ -150,7 +150,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 23/05/2020
+* Updated : 27/06/2020
 * Author  : danny
 
 ## Documentation

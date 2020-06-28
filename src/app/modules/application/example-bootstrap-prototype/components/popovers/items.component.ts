@@ -1,19 +1,16 @@
-import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-popovers',
   templateUrl: './items.component.html',
   styleUrls: ['./items.component.css']
 })
-export class PopoversComponent implements AfterViewInit, OnInit {
+export class PopoversComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
     this.loadScript('./assets/params/js/popovers.js');
-  }
-
-  ngAfterViewInit() {
   }
 
   loadScript(name: string): void {

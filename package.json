@@ -1,9 +1,9 @@
 {
   "name": "angular-starter",
-  "version": "9.1.9",
+  "version": "10.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4200",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -11,12 +11,11 @@
     "dev:ssr": "ng run angular-starter:serve-ssr",
     "serve:ssr": "node dist/angular-starter/server/main.js",
     "build:ssr": "ng build --prod && ng run angular-starter:server:production",
-    "build-demo:ssr": "ng build --prod --base-href=/angular-webapp/ && ng run angular-starter:server:production",
     "prerender": "ng run angular-starter:prerender"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ganatan/angular9-app.git"
+    "url": "https://github.com/ganatan/angular10-app.git"
   },
   "author": {
     "name": "danny",
@@ -25,24 +24,24 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ganatan/angular9-app/issues"
+    "url": "https://github.com/ganatan/angular10-app/issues"
   },
-  "homepage": "https://github.com/ganatan/angular9-app#readme",
+  "homepage": "https://github.com/ganatan/angular10-app#readme",
   "private": true,
   "dependencies": {
-    "@angular/animations": "9.1.9",
-    "@angular/common": "9.1.9",
-    "@angular/compiler": "9.1.9",
-    "@angular/core": "9.1.9",
-    "@angular/forms": "9.1.9",
-    "@angular/platform-browser": "9.1.9",
-    "@angular/platform-browser-dynamic": "9.1.9",
-    "@angular/platform-server": "9.1.9",
-    "@angular/router": "9.1.9",
-    "@angular/service-worker": "9.1.9",
-    "@asymmetrik/ngx-leaflet": "7.0.0",
-    "@fortawesome/fontawesome-free": "5.13.0",
-    "@nguniversal/express-engine": "9.1.1",
+    "@angular/animations": "10.0.1",
+    "@angular/common": "10.0.1",
+    "@angular/compiler": "10.0.1",
+    "@angular/core": "10.0.1",
+    "@angular/forms": "10.0.1",
+    "@angular/platform-browser": "10.0.1",
+    "@angular/platform-browser-dynamic": "10.0.1",
+    "@angular/platform-server": "10.0.1",
+    "@angular/router": "10.0.1",
+    "@angular/service-worker": "10.0.1",
+    "@asymmetrik/ngx-leaflet": "7.0.1",
+    "@fortawesome/fontawesome-free": "5.13.1",
+    "@nguniversal/express-engine": "10.0.0",
     "bootstrap": "4.5.0",
     "express": "4.17.1",
     "chart.js": "2.9.3",
@@ -54,26 +53,25 @@
     "zone.js": "0.10.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.901.7",
-    "@angular/cli": "9.1.7",
-    "@angular/compiler-cli": "9.1.9",
-    "@angular/language-service": "9.1.9",
-    "@nguniversal/builders": "9.1.1",
+    "@angular-devkit/build-angular": "0.1000.0",
+    "@angular/cli": "10.0.0",
+    "@angular/compiler-cli": "10.0.1",
+    "@nguniversal/builders": "10.0.0",
     "@types/express": "4.17.6",
-    "@types/node": "14.0.5",
-    "@types/jasmine": "3.5.10",
+    "@types/node": "14.0.14",
+    "@types/jasmine": "3.5.11",
     "@types/jasminewd2": "2.0.8",
     "codelyzer": "5.2.2",
     "jasmine-core": "3.5.0",
     "jasmine-spec-reporter": "5.0.2",
-    "karma": "5.0.9",
+    "karma": "5.1.0",
     "karma-chrome-launcher": "3.1.0",
-    "karma-coverage-istanbul-reporter": "3.0.2",
-    "karma-jasmine": "3.1.1",
+    "karma-coverage-istanbul-reporter": "3.0.3",
+    "karma-jasmine": "3.3.1",
     "karma-jasmine-html-reporter": "1.5.4",
     "protractor": "7.0.0",
-    "ts-node": "8.10.1",
+    "ts-node": "8.10.2",
     "tslint": "6.1.2",
-    "typescript": "3.8.3"
+    "typescript": "3.9.5"
   }
 }
