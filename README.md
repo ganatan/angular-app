@@ -38,7 +38,7 @@
 ### Front-end : What's included
 > Dependencies
 - [x] Angular : 10.0.2
-- [x] Angular CLI : 10.0.0
+- [x] Angular CLI : 10.0.1
 - [x] Angular Universal : 10.0.1
 - [x] Bootstrap : 4.5.0
 - [x] Fontawesome : 5.13.1
@@ -150,7 +150,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 01/07/2020
+* Updated : 02/07/2020
 * Author  : danny
 
 ## Documentation
