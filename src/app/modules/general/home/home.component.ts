@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
         },
         {
           type: 'Responsive Images list',
-          description: 'Display a Responsive List of Images',
+          description: 'Display a Responsive List of Images, Marvel Cinematic Universe for the fun',
           image: 'demo-responsive-images-list.png',
           link: 'movies-images-list'
         },
@@ -88,7 +88,7 @@ export class HomeComponent implements OnInit {
     this.meta.updateTag(
       {
         name: 'description',
-        content: 'Cette application a été développée avec Angular version 9.1.9 et bootstrap 4.5.0' +
+        content: 'Cette application a été développée avec Angular version 10.0.4 et bootstrap 4.5.0' +
           ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
       });
   }
