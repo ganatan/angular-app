@@ -1,6 +1,6 @@
 {
   "name": "angular-starter",
-  "version": "10.0.3",
+  "version": "10.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4200",
@@ -29,18 +29,18 @@
   "homepage": "https://github.com/ganatan/angular10-app#readme",
   "private": true,
   "dependencies": {
-    "@angular/animations": "10.0.3",
-    "@angular/common": "10.0.3",
-    "@angular/compiler": "10.0.3",
-    "@angular/core": "10.0.3",
-    "@angular/forms": "10.0.3",
-    "@angular/platform-browser": "10.0.3",
-    "@angular/platform-browser-dynamic": "10.0.3",
-    "@angular/platform-server": "10.0.3",
-    "@angular/router": "10.0.3",
-    "@angular/service-worker": "10.0.3",
+    "@angular/animations": "10.0.4",
+    "@angular/common": "10.0.4",
+    "@angular/compiler": "10.0.4",
+    "@angular/core": "10.0.4",
+    "@angular/forms": "10.0.4",
+    "@angular/platform-browser": "10.0.4",
+    "@angular/platform-browser-dynamic": "10.0.4",
+    "@angular/platform-server": "10.0.4",
+    "@angular/router": "10.0.4",
+    "@angular/service-worker": "10.0.4",
     "@asymmetrik/ngx-leaflet": "7.0.1",
-    "@fortawesome/fontawesome-free": "5.13.1",
+    "@fortawesome/fontawesome-free": "5.14.0",
     "@nguniversal/express-engine": "10.0.1",
     "bootstrap": "4.5.0",
     "express": "4.17.1",
@@ -53,9 +53,9 @@
     "zone.js": "0.10.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.1000.2",
-    "@angular/cli": "10.0.2",
-    "@angular/compiler-cli": "10.0.3",
+    "@angular-devkit/build-angular": "0.1000.3",
+    "@angular/cli": "10.0.3",
+    "@angular/compiler-cli": "10.0.4",
     "@nguniversal/builders": "10.0.1",
     "@types/express": "4.17.7",
     "@types/node": "14.0.23",
@@ -72,6 +72,6 @@
     "protractor": "7.0.0",
     "ts-node": "8.10.2",
     "tslint": "6.1.2",
-    "typescript": "3.9.6"
+    "typescript": "3.9.7"
   }
 }
