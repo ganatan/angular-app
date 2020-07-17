@@ -28,6 +28,12 @@ export class HomeComponent implements OnInit {
           link: 'bootstrap-prototype'
         },
         {
+          type: 'Responsive Images list',
+          description: 'Display a Responsive List of Images',
+          image: 'demo-responsive-images-list.png',
+          link: 'movies-images-list'
+        },
+        {
           type: 'Reactive Form',
           description: 'A model-driven approach to handling form inputs',
           image: 'demo-reactive-forms.png',
@@ -68,12 +74,6 @@ export class HomeComponent implements OnInit {
           description: 'An open-source JavaScript library for mobile-friendly interactive maps',
           image: 'demo-leaflet-feature.png',
           link: 'leaflet'
-        },
-        {
-          type: 'Responsive Images list',
-          description: 'Display a Responsive List of Images',
-          image: 'demo-responsive-images-list.png',
-          link: 'movies-images-list'
         },
       ];
 
