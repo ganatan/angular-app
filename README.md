@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Angular 10 Application</h1>
   <p align="center">
-    Angular 10.0.4 + Angular CLI + Angular Universal
+    Angular 10.0.5 + Angular CLI + Angular Universal
     <br>
     Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
@@ -37,8 +37,8 @@
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 10.0.4
-- [x] Angular CLI : 10.0.3
+- [x] Angular : 10.0.5
+- [x] Angular CLI : 10.0.4
 - [x] Angular Universal : 10.0.1
 - [x] Bootstrap : 4.5.0
 - [x] Fontawesome : 5.14.0
@@ -151,7 +151,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 17/07/2020
+* Updated : 27/07/2020
 * Author  : danny
 
 ## Documentation
