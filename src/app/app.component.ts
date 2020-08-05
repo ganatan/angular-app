@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-starter';
-  version = 'Angular version 10.0.7';
+  version = 'Angular version 10.0.8';
 }
