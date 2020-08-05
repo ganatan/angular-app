@@ -31,6 +31,6 @@
     "express": "4.17.1",
     "express-prettify": "0.1.1",
     "fs": "0.0.1-security",
-    "pg-promise": "10.5.7"
+    "pg-promise": "10.5.8"
   }
 }
