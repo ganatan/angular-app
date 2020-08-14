@@ -14,7 +14,7 @@ export class AboutComponent {
     this.dependencies = {
       frontend: [
         { name: 'Angular 10.0.9' },
-        { name: 'Angular CLI 10.0.5' },
+        { name: 'Angular CLI 10.0.6' },
         { name: 'Angular Universal 10.0.2' },
         { name: 'Font Awesome 5.14.0' },
         { name: 'Bootstrap 4.5.2' },
