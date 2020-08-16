@@ -41,11 +41,12 @@ const routes: Routes = [
     loadChildren: () => import('./modules/application/example-services/tutorial.module')
       .then(mod => mod.TutorialModule)
   },
-  {
+/* debugging not works with VS Code on linux ???? */  
+/*  {
     path: 'reactive-form',
     loadChildren: () => import('./modules/application/example-reactive-form/tutorial.module')
       .then(mod => mod.TutorialModule)
-  },
+  }, */
   {
     path: 'bootstrap-prototype',
     loadChildren: () => import('./modules/application/example-bootstrap-prototype/example-bootstrap-prototype.module')
