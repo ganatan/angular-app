@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Angular 10 Application</h1>
   <p align="center">
-    Angular 10.0.11 + Angular CLI + Angular Universal
+    Angular 10.0.14 + Angular CLI + Angular Universal
     <br>
     Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
@@ -33,12 +33,10 @@
 [![GitHub stars](https://img.shields.io/github/stars/ganatan/angular10-app.svg?style=social&label=Star)](https://github.com/ganatan/angular10-app)
 [![GitHub forks](https://img.shields.io/github/forks/ganatan/angular10-app.svg?style=social&label=Fork)](https://github.com/ganatan/angular10-app/fork)
 
-
-
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 10.0.11
-- [x] Angular CLI : 10.0.7
+- [x] Angular : 10.0.14
+- [x] Angular CLI : 10.0.8
 - [x] Angular Universal : 10.0.2
 - [x] Bootstrap : 4.5.2
 - [x] Fontawesome : 5.14.0
@@ -110,12 +108,13 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * default: LOCAL JSON
 * LOCAL REST API CRUD : http://localhost:5200
 
+### Use Chrome version 85 min !!!!
+
 ### Tests
 * `npm run lint`
 * `npm run test`
 * `npm run e2e` 
 
-# Use Chrome version 84 min
 
 ### Compilation
 * `npm run build`       ( without SSR)
@@ -151,7 +150,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 21/08/2020
+* Updated : 27/08/2020
 * Author  : danny
 
 ## Documentation
