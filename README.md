@@ -157,7 +157,7 @@ sudo apt-get install google-chrome-stable --yes
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 29/08/2020
+* Updated : 01/09/2020
 * Author  : danny
 
 ## Documentation
