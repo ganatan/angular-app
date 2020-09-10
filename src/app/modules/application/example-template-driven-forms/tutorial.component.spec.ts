@@ -7,15 +7,15 @@ describe('TutorialComponent', () => {
   let component: TutorialComponent;
   let fixture: ComponentFixture<TutorialComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       imports: [
         FormsModule,
       ],
-      declarations: [ TutorialComponent ]
+      declarations: [TutorialComponent]
     })
-    .compileComponents();
-  }));
+      .compileComponents();
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TutorialComponent);

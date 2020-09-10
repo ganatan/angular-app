@@ -8,7 +8,7 @@ describe('ItemsComponent', () => {
   let component: ItemsComponent;
   let fixture: ComponentFixture<ItemsComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       imports: [
         HttpClientModule,
@@ -17,7 +17,7 @@ describe('ItemsComponent', () => {
       declarations: [ItemsComponent]
     })
       .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ItemsComponent);

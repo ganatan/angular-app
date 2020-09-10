@@ -16,7 +16,7 @@ describe('MoviesImagesListComponent', () => {
   let component: MoviesImagesListComponent;
   let fixture: ComponentFixture<MoviesImagesListComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       imports: [
         HttpClientModule,
@@ -36,7 +36,7 @@ describe('MoviesImagesListComponent', () => {
       ]
     })
       .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(MoviesImagesListComponent);

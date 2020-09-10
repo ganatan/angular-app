@@ -8,16 +8,16 @@ describe('ExerciceComponent', () => {
   let component: ExerciceComponent;
   let fixture: ComponentFixture<ExerciceComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       imports: [
         ReactiveFormsModule,
         FormsModule,
       ],
-      declarations: [ ExerciceComponent ]
+      declarations: [ExerciceComponent]
     })
-    .compileComponents();
-  }));
+      .compileComponents();
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ExerciceComponent);

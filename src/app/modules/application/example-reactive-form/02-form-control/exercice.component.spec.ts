@@ -7,7 +7,7 @@ describe('ExerciceComponent', () => {
   let component: ExerciceComponent;
   let fixture: ComponentFixture<ExerciceComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       imports: [
         ReactiveFormsModule,
@@ -16,7 +16,7 @@ describe('ExerciceComponent', () => {
       declarations: [ExerciceComponent]
     })
       .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ExerciceComponent);

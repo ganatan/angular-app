@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Angular 10 Application</h1>
   <p align="center">
-    Angular 10.0.14 + Angular CLI + Angular Universal
+    Angular 10.1.1 + Angular CLI + Angular Universal
     <br>
     Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
@@ -35,9 +35,9 @@
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 10.0.14
-- [x] Angular CLI : 10.0.8
-- [x] Angular Universal : 10.0.2
+- [x] Angular : 10.1.1
+- [x] Angular CLI : 10.1.0
+- [x] Angular Universal : 10.1.0
 - [x] Bootstrap : 4.5.2
 - [x] Fontawesome : 5.14.0
 - [x] jquery : 3.5.1
@@ -59,7 +59,7 @@
 > Dependencies
 - [x] Node.js : 12.18.1
 - [x] Express.js : 4.17.1
-- [x] pg-promise : 10.5.7
+- [x] pg-promise : 10.5.8
 
 > Features
 - [x] PostgreSQL 
@@ -109,6 +109,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * LOCAL REST API CRUD : http://localhost:5200
 
 ### Use Chrome version 85 min !!!!
+!! End to end tests fail with chromedriver !!
 
 ## Tests
 * `npm run lint`
@@ -116,7 +117,6 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run e2e`
 
 ## Chrome Installation on Linux
-
 sudo sh -c 'echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo apt-get update
@@ -157,7 +157,7 @@ sudo apt-get install google-chrome-stable --yes
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 02/09/2020
+* Updated : 10/09/2020
 * Author  : danny
 
 ## Documentation

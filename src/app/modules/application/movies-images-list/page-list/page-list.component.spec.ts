@@ -9,7 +9,7 @@ describe('PageListComponent', () => {
   let component: PageListComponent;
   let fixture: ComponentFixture<PageListComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       imports: [
         HttpClientModule,
@@ -23,7 +23,7 @@ describe('PageListComponent', () => {
       ]
     })
       .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(PageListComponent);

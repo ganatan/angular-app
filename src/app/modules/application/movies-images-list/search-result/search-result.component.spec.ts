@@ -8,16 +8,16 @@ describe('SearchResultComponent', () => {
   let component: SearchResultComponent;
   let fixture: ComponentFixture<SearchResultComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
         FormsModule,
       ],
-      declarations: [ SearchResultComponent ]
+      declarations: [SearchResultComponent]
     })
-    .compileComponents();
-  }));
+      .compileComponents();
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(SearchResultComponent);

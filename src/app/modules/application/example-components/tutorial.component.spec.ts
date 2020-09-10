@@ -7,7 +7,7 @@ describe('TutorialComponent', () => {
   let component: TutorialComponent;
   let fixture: ComponentFixture<TutorialComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       declarations: [
         TutorialComponent,
@@ -15,7 +15,7 @@ describe('TutorialComponent', () => {
       ]
     })
       .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TutorialComponent);

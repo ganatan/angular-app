@@ -8,7 +8,7 @@ describe('ExampleBootstrapComponentsComponent', () => {
   let component: ExampleBootstrapPrototypeComponent;
   let fixture: ComponentFixture<ExampleBootstrapPrototypeComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule
@@ -21,7 +21,7 @@ describe('ExampleBootstrapComponentsComponent', () => {
       ]
     })
       .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ExampleBootstrapPrototypeComponent);
