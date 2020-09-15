@@ -9,7 +9,7 @@ export class PaginationService {
 
   constructor() { }
 
-  range(start: any, stop: any, step: any) {
+  range(start: any, stop: any, step: any): any {
     if (stop == null) {
       stop = start || 0;
       start = 0;
@@ -19,13 +19,13 @@ export class PaginationService {
     }
     const length = Math.max(Math.ceil((stop - start) / step), 0);
     const range = Array(length);
-    for (let idx = 0; idx < length; idx++ , start += step) {
+    for (let idx = 0; idx < length; idx++, start += step) {
       range[idx] = start;
     }
     return range;
   }
 
-  getPagination(totalItems: number, currentPage: number = 1, perPage: number) {
+  getPagination(totalItems: number, currentPage: number = 1, perPage: number): any {
     const totalPages = Math.ceil(totalItems / perPage);
     let startPage: number;
     let endPage: number;

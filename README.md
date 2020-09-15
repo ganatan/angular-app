@@ -36,9 +36,9 @@
 ### Front-end : What's included
 > Dependencies
 - [x] Angular : 10.1.1
-- [x] Angular CLI : 10.1.0
+- [x] Angular CLI : 10.1.1
 - [x] Angular Universal : 10.1.0
-- [x] Bootstrap : 4.5.2
+- [x] Bootstrap : 5.0.0-alpha1
 - [x] Fontawesome : 5.14.0
 - [x] jquery : 3.5.1
 
@@ -108,8 +108,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * default: LOCAL JSON
 * LOCAL REST API CRUD : http://localhost:5200
 
-### Use Chrome version 85 min !!!!
-!! End to end tests fail with chromedriver !!
+### Use Chrome version 85 min
 
 ## Tests
 * `npm run lint`
@@ -117,10 +116,17 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run e2e`
 
 ## Chrome Installation on Linux
+
+```bash
 sudo sh -c 'echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
+
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+
 sudo apt-get update
+
 sudo apt-get install google-chrome-stable --yes
+
+```
 
 
 ### Compilation
@@ -157,7 +163,7 @@ sudo apt-get install google-chrome-stable --yes
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 10/09/2020
+* Updated : 15/09/2020
 * Author  : danny
 
 ## Documentation

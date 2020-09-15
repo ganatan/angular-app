@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { TutorialComponent } from './tutorial.component';
 
-// import { ExerciceComponent } from './01-prototype/Exercice.component';
-
 const routes: Routes = [
   {
     path: '', component: TutorialComponent, children: [
-      //      { path: 'prototype', component: ExerciceComponent },
+      {
+        path: '',
+        loadChildren: () => import('./00-main/exercice.module')
+          .then(mod => mod.ExerciceModule)
+      },
       {
         path: 'prototype',
         loadChildren: () => import('./01-prototype/exercice.module')
@@ -49,12 +51,6 @@ const routes: Routes = [
         loadChildren: () => import('./08-form-multi/exercice.module')
           .then(mod => mod.ExerciceModule)
       },
-      {
-        path: '',
-        redirectTo: '/reactive-form/prototype',
-        pathMatch: 'full'
-      },
-//      { path: '**', component: ExerciceComponent },
     ]
   },
 ];

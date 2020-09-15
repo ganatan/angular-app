@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MailingComponent } from './mailing.component';
 
@@ -7,10 +7,10 @@ describe('MailingComponent', () => {
   let fixture: ComponentFixture<MailingComponent>;
 
   beforeEach(async () => {
-    TestBed.configureTestingModule({
-      declarations: [MailingComponent]
+    await TestBed.configureTestingModule({
+      declarations: [ MailingComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   });
 
   beforeEach(() => {

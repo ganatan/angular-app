@@ -21,7 +21,7 @@ export class SearchBarComponent {
 
   constructor() { }
 
-  searching() {
+  searching(): void {
     this.search.emit(this.edit.nativeElement.value);
   }
 

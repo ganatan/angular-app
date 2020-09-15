@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>angular-starter</title>
+  <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/params/css/index.css" rel="stylesheet">
+  <link href="assets/params/css/home.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: #212121;">
+      <a class="navbar-brand" href="#">
+        <span class="mr-1">ganatan</span>
+        <img src="assets/params/images/logo/ganatan.png" width="20" height="20" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fas fa-home mr-1"></i><span style="color:white">home</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="far fa-question-circle mr-1"></i>About
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fas fa-envelope mr-1"></i>Contact
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fas fa-user mr-1"></i>Sign in
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://github.com/ganatan">
+              <i class="fab fa-github mr-1"></i>Github
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+
+      <h2 class="card-title text-primary">Tooltips</h2>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+        Tooltip on top
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right"
+        title="Tooltip on right">
+        Tooltip on right
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+        title="Tooltip on bottom">
+        Tooltip on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+        title="Tooltip on left">
+        Tooltip on left
+      </button>
+
+    </div>
+  </main>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center text-white">&copy; 2020 - www.ganatan.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/jquery/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/params/js/index.js"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+</body>
+
+</html>

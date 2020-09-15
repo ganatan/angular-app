@@ -1,0 +1,118 @@
+body {
+  padding-top: 4rem;
+  color: black;
+  font-weight: 400;
+}
+
+.navbar {
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+}
+
+.card {
+  display: block;
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  border-radius: 2px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+}
+
+@media (min-width: 768px) {
+  .bd-layout {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: "sidebar content";
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: auto 1fr 1fr
+  }
+}
+
+@media (min-width: 992px) {
+  .bd-layout {
+    grid-template-areas: "sidebar content";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr 1fr
+  }
+}
+
+.bd-sidebar {
+  grid-area: sidebar;
+}
+
+.bd-content {
+  grid-area: content;
+}
+
+.bd-links {
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .bd-links {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+    display: block !important;
+    height: calc(100vh - 7rem);
+    padding-left: .25rem;
+    margin-left: -.25rem;
+    overflow-y: auto;
+    -webkit-box-shadow: 4px 8px 6px -6px #999;
+    -moz-box-shadow: 4px 8px 6px -6px #999;
+    box-shadow: 4px 4px 6px -6px #999;
+  }
+}
+
+.bd-links a {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none
+}
+
+.bd-links a:hover,
+.bd-links a:focus {
+  color: #1976d2;
+  background-color: rgba(121, 82, 179, 0.1)
+}
+
+.bd-links a:only-child {
+  margin-left: 1.25rem
+}
+
+.bd-links a:not(:only-child)::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform 0.35s ease;
+  transform-origin: .5em 50%
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bd-links a:not(:only-child)::before {
+    transition: none
+  }
+}
+
+.bd-links a:not(:only-child):not(.collapsed) {
+  color: rgba(0, 0, 0, 0.85)
+}
+
+.bd-links a:not(:only-child):not(.collapsed)::before {
+  transform: rotate(90deg)
+}
+
+.bd-links a+ul {
+  font-size: .875rem
+}
+
+.bd-links .active {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85)
+}

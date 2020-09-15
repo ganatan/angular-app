@@ -19,7 +19,7 @@ export class TutorialComponent implements OnInit {
     this.yearSelected = 1;
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getSongs(this.yearSelected);
   }
 
@@ -27,11 +27,11 @@ export class TutorialComponent implements OnInit {
     this.songs = this.songService.getSongs(year);
   }
 
-  select(song: Song) {
+  select(song: Song): void {
     this.songSelected = song;
   }
 
-  onChange($event: any) {
+  onChange($event: any): void {
     this.yearSelected = $event.target.value;
     this.songs = this.songService.getSongs(this.yearSelected);
     this.songSelected = null;

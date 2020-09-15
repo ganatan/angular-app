@@ -1,6 +1,4 @@
-$(function () {
-  var navMain = $("#navbarsExampleDefault");
-  navMain.on("click", "a", null, function () {
-    navMain.collapse('hide');
-  });
-});
+var navMain = document.getElementById('navbarsExampleDefault')
+navMain.onclick = function () {
+  navMain.classList.remove("show");
+}

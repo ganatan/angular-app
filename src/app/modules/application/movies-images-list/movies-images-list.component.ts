@@ -19,7 +19,7 @@ export class MoviesImagesListComponent extends PageListComponent implements OnIn
 
   }
 
-  initialize() {
+  initialize(): void {
 
     this.endpoint = 'movies';
     this.link = 'movies';
@@ -42,7 +42,7 @@ export class MoviesImagesListComponent extends PageListComponent implements OnIn
     super.initialize();
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.titleService.setTitle('New Movies: angular.ganatan');
     this.meta.addTag({
       name: 'angular.ganatan',
@@ -55,7 +55,7 @@ export class MoviesImagesListComponent extends PageListComponent implements OnIn
       });
   }
 
-  selectItem(id: any) {
+  selectItem(id: any): void {
     this.router.navigate(['/' + this.link, id]);
   }
 

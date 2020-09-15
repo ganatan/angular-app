@@ -24,10 +24,10 @@ export class PaginationComponent implements OnInit, OnChanges {
     private paginationService: PaginationService,
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  ngOnChanges() {
+  ngOnChanges(): void {
     this.pagination.count = this.count;
     this.pagination.perPage = this.perPage;
     this.pagination.page = this.page;
@@ -37,7 +37,7 @@ export class PaginationComponent implements OnInit, OnChanges {
       this.pagination.perPage);
   }
 
-  selectPage(page: number) {
+  selectPage(page: number): void {
     this.changePage.emit(page);
   }
 

@@ -1,49 +1,50 @@
 <div class="row pt-1 mb-2">
-  <div class="col-md-3 text-center mb-2">
-    <h1 class="h5">
-      <i class="fas fa-laptop fa-lg mr-2 text-primary"></i>
-      {{ name }}
-      <i class="fas fa-mobile-alt fa-lg ml-2 mr-1 text-primary"></i>
-      <i class="fas fa-tablet-alt fa-lg ml-2 mr-1 text-primary"></i>
-    </h1>
+  <!--  <div class="col-md-3 text-center mb-2">
+      <h1 class="h5">
+        <i class="fas fa-laptop fa-lg mr-2 text-primary"></i>
+        {{ name }}
+        <i class="fas fa-mobile-alt fa-lg ml-2 mr-1 text-primary"></i>
+        <i class="fas fa-tablet-alt fa-lg ml-2 mr-1 text-primary"></i>
+      </h1>
+    </div> -->
+    <div class="col-md-4 text-center text-danger">
+      <h2 class="h5">
+        {{ angular }}<i class="fab fa-angular fa-lg ml-2 mr-1 text-danger"></i>
+      </h2>
+    </div>
+    <div class="col-md-4 text-center text-primary">
+      <h2 class="h5">
+        {{ bootstrap }}<i class="fab fa-bootstrap fa-lg ml-2 mr-1 text-primary"></i>
+      </h2>
+    </div>
+    <div class="col-md-4 text-center text-success">
+      <h2 class="h5">
+        {{ fontawesome }}<i class="fab fa-font-awesome-flag fa-lg ml-2 mr-1 text-success"></i>
+      </h2>
+    </div>
   </div>
-  <div class="col-md-3 text-center text-danger">
-    <h2 class="h5">
-      {{ angular }}<i class="fab fa-angular fa-lg ml-2 mr-1 text-danger"></i>
-    </h2>
+  <hr>
+  <div class="row mb-1">
+    <div class="col-md-12 text-center">
+      <h3 class="h6">Features&nbsp;&nbsp;<i class="fas fa-list"></i></h3>
+    </div>
   </div>
-  <div class="col-md-3 text-center text-primary">
-    <h2 class="h5">
-      {{ bootstrap }}<i class="fab fa-bootstrap fa-lg ml-2 mr-1 text-primary"></i>
-    </h2>
-  </div>
-  <div class="col-md-3 text-center text-primary">
-    <h2 class="h5">
-      {{ fontawesome }}<i class="fab fa-font-awesome-flag fa-lg ml-2 mr-1 text-primary"></i>
-    </h2>
-  </div>
-</div>
-<hr>
-<div class="row mb-1">
-  <div class="col-md-12 text-center">
-    <h3 class="h6">Features&nbsp;&nbsp;<i class="fas fa-list"></i></h3>
-  </div>
-</div>
-<div class="row pt-2 pb-4">
-  <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4" *ngFor="let item of features">
-    <div class="card card-cascade">
-      <div class="card-img">
-        <a routerLink="/{{ item.link }}">
-          <img class="img-fluid card-img-top" src="./assets/params/images/demo/{{ item.image }}" alt="Card image cap">
-        </a>
-      </div>
-      <div class="card-body pt-0">
-        <h4 class="h6 card-title">
-          <span style="font-size: 14px;"><strong>{{ item.description }}
-            </strong></span>
-        </h4>
+  <div class="row pt-2 pb-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-4" *ngFor="let item of features">
+      <div class="card card-cascade">
+        <div class="card-img">
+          <a routerLink="/{{ item.link }}">
+            <img class="img-fluid card-img-top" src="./assets/params/images/demo/{{ item.image }}" alt="Card image cap">
+          </a>
+        </div>
+        <div class="card-body pt-0">
+          <h4 class="h6 card-title">
+            <span style="font-size: 14px;"><strong>{{ item.description }}
+              </strong></span>
+          </h4>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
+  
+  

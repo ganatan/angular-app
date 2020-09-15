@@ -3,26 +3,31 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ExampleBootstrapPrototypeComponent } from './example-bootstrap-prototype.component';
 
-import { AlertsComponent } from './components/alerts/items.component';
-import { BadgeComponent } from './components/badge/items.component';
-import { BlockquotesComponent } from './components/blockquotes/items.component';
-import { BreadcrumbComponent } from './components/breadcrumb/items.component';
-import { ButtonsComponent } from './components/buttons/items.component';
-import { TooltipsComponent } from './components/tooltips/items.component';
-import { CollapseComponent } from './components/collapse/items.component';
-import { DropdownsComponent } from './components/dropdowns/items.component';
-import { FormsComponent } from './components/forms/items.component';
-import { ListGroupComponent } from './components/list-group/items.component';
-import { ModalComponent } from './components/modal/items.component';
-import { PaginationComponent } from './components/pagination/items.component';
-import { PopoversComponent } from './components/popovers/items.component';
-import { ProgressComponent } from './components/progress/items.component';
-import { SpinnersComponent } from './components/spinners/items.component';
-import { ToastsComponent } from './components/toasts/items.component';
+import { AlertsComponent } from './alerts/items.component';
+import { BadgeComponent } from './badge/items.component';
+import { BlockquotesComponent } from './blockquotes/items.component';
+import { BreadcrumbComponent } from './breadcrumb/items.component';
+import { ButtonsComponent } from './buttons/items.component';
+import { TooltipsComponent } from './tooltips/items.component';
+import { CollapseComponent } from './collapse/items.component';
+import { DropdownsComponent } from './dropdowns/items.component';
+import { FormsComponent } from './forms/items.component';
+import { ListGroupComponent } from './list-group/items.component';
+import { ModalComponent } from './modal/items.component';
+import { PaginationComponent } from './pagination/items.component';
+import { PopoversComponent } from './popovers/items.component';
+import { ProgressComponent } from './progress/items.component';
+import { SpinnersComponent } from './spinners/items.component';
+import { ToastsComponent } from './toasts/items.component';
 
 const routes: Routes = [
   {
     path: '', component: ExampleBootstrapPrototypeComponent, children: [
+      {
+        path: '',
+        loadChildren: () => import('./00-main/exercice.module')
+          .then(mod => mod.ExerciceModule)
+      },
       { path: 'alerts', component: AlertsComponent },
       { path: 'badge', component: BadgeComponent },
       { path: 'blockquotes', component: BlockquotesComponent },

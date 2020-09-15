@@ -17,11 +17,11 @@ export class ExerciceComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.updateControls();
   }
 
-  updateControls() {
+  updateControls(): void {
     this.name.setValue('Avengers: Endgame');
     this.releaseDate.setValue('26/04/2019');
     this.franchise.setValue(true);
@@ -31,7 +31,7 @@ export class ExerciceComponent implements OnInit {
       'the universe is in ruins.');
   }
 
-  resetControls() {
+  resetControls(): void {
     this.name.setValue(null);
     this.releaseDate.setValue(null);
     this.franchise.setValue(null);

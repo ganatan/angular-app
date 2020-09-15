@@ -15,7 +15,7 @@ export class ItemsService {
 
   constructor(private http: HttpClient) { }
 
-  filterJsonItem(value: any, id: any) {
+  filterJsonItem(value: any, id: any): void {
     let dataTmp = null;
     value.map((row: any, index: any, data: any) => {
       const idTmp = parseInt(id, 10);
@@ -26,7 +26,7 @@ export class ItemsService {
     return dataTmp;
   }
 
-  filterJsonItemsCount(value: any, text: any) {
+  filterJsonItemsCount(value: any, text: any): any {
     let resultCount = 0;
     if ((text !== undefined) && (text != null)) {
       const lcText = text.toString().toLowerCase();
@@ -42,7 +42,7 @@ export class ItemsService {
     return { count: resultCount };
   }
 
-  filterJsonItems(value: any, text: any, itemsPerPage: number, page: number) {
+  filterJsonItems(value: any, text: any, itemsPerPage: number, page: number): any {
     let result: any;
     if ((text !== undefined) && (text != null)) {
       const lcText = text.toString().toLowerCase();
@@ -131,7 +131,7 @@ export class ItemsService {
     return result;
   }
 
-  private handleError<T>(operation = 'operation', result?: T) {
+  private handleError<T>(operation = 'operation', result?: T): any {
     return (error: any): Observable<T> => {
       console.error(error);
       this.log(`${operation} failed: ${error.message}`);
@@ -139,7 +139,7 @@ export class ItemsService {
     };
   }
 
-  private log(message: string) {
+  private log(message: string): void {
   }
 
 }

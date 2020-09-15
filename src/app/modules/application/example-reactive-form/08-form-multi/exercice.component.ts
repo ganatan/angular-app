@@ -44,7 +44,7 @@ export class ExerciceComponent implements OnInit {
   }
 
   /* exampleForm1 with FormControl */
-  onResetForm1() {
+  onResetForm1(): void {
     this.name.setValue('Darth Vader');
     this.email.setValue('darthvader@starwars.com');
     this.job.setValue('Sith');
@@ -53,7 +53,7 @@ export class ExerciceComponent implements OnInit {
     this.friend02.setValue('friend02');
   }
 
-  onSetValueForm1() {
+  onSetValueForm1(): void {
     this.name.setValue('Anakin Skywalker');
     this.email.setValue('anakinskywalker@starwars.com');
     this.job.setValue('Jedi');
@@ -61,7 +61,7 @@ export class ExerciceComponent implements OnInit {
   }
 
   /* exampleForm2 with FormGroup & FormControl */
-  onPatchValueForm2() {
+  onPatchValueForm2(): void {
     this.exampleForm2.patchValue({
       name: 'Ben solo',
       email: 'bensolo@starwars.com',
@@ -70,7 +70,7 @@ export class ExerciceComponent implements OnInit {
     });
   }
 
-  onSetValueForm2() {
+  onSetValueForm2(): void {
     this.exampleForm2.setValue({
       name: 'Ben solo',
       email: 'bensolo@starwars.com',
@@ -79,7 +79,7 @@ export class ExerciceComponent implements OnInit {
     });
   }
 
-  onResetForm2() {
+  onResetForm2(): void {
     this.exampleForm2.get('name').setValue('Kylo Ren');
     this.exampleForm2.get('email').setValue('kyloren@starwars.com');
     this.exampleForm2.get('job').setValue('Sith');
@@ -87,11 +87,11 @@ export class ExerciceComponent implements OnInit {
   }
 
   /* exampleForm3 with Formbuilder */
-  get friends() {
+  get friends(): FormArray {
     return this.exampleForm3.get('friends') as FormArray;
   }
 
-  onResetForm3() {
+  onResetForm3(): void {
     this.exampleForm3.patchValue({
       name: 'Rey Palpatine',
       email: 'reypalpatine@starwars.com',
@@ -103,7 +103,7 @@ export class ExerciceComponent implements OnInit {
     this.friends.push(this.fb.control('C-3PO'));
   }
 
-  onUpdateForm3() {
+  onUpdateForm3(): void {
     this.exampleForm3.patchValue({
       name: 'Rey Skywalker',
       email: 'reyskywalker@starwars.com',

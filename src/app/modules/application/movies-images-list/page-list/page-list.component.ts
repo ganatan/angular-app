@@ -54,13 +54,13 @@ export class PageListComponent {
 
   }
 
-  initialize() {
+  initialize(): void {
     this.api = this.configService.config.api;
     this.url = this.configService.config.url + this.endpoint;
     this.readQueryParams();
   }
 
-  readQueryParams() {
+  readQueryParams(): void {
     this.route.queryParams
       .subscribe(params => {
         this.params.q = params.q;
@@ -73,7 +73,7 @@ export class PageListComponent {
       });
   }
 
-  getItems() {
+  getItems(): void {
     this.loaded = false;
     this.query = this.searchField;
     if (this.endpoint !== undefined) {
@@ -98,7 +98,7 @@ export class PageListComponent {
     }
   }
 
-  writeQueryParams(search?: boolean) {
+  writeQueryParams(search?: boolean): void {
     let query = this.searchField;
     if ((query === '') || (query === undefined)) {
       query = null;
@@ -114,27 +114,27 @@ export class PageListComponent {
   }
 
 
-  search() {
+  search(): void {
     this.query = this.searchField;
     this.writeQueryParams();
     this.getItems();
   }
 
-  changePage(page: number) {
+  changePage(page: number): void {
     this.itemsPage = page;
     this.writeQueryParams();
     this.getItems();
   }
 
-  selectItem(id: any) {
+  selectItem(id: any): void {
     this.router.navigate(['/' + this.link, id]);
   }
 
-  onChangePage(page: any) {
+  onChangePage(page: any): void {
     this.changePage(page);
   }
 
-  onSearch(query: any) {
+  onSearch(query: any): void {
     this.searchField = query;
     this.search();
   }

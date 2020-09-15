@@ -22,29 +22,29 @@ export class ExerciceComponent implements OnInit {
 
   constructor(private fb: FormBuilder) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.exampleForm.patchValue({
       name: 'Avengers: Endgame',
       releaseDate: '26/04/2019',
     });
   }
 
-  addCharacter() {
+  addCharacter(): void {
     this.characters.push(this.fb.control('New Character'));
   }
 
-  get characters() {
+  get characters(): FormArray {
     return this.exampleForm.get('characters') as FormArray;
   }
 
-  updateControls() {
+  updateControls(): void {
     this.exampleForm.patchValue({
       name: 'Avengers: Endgame patchValue',
       releaseDate: '26/04/2019 patchValue',
     });
   }
 
-  resetControls() {
+  resetControls(): void {
     this.exampleForm.patchValue({
       name: null,
       releaseDate: null,

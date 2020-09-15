@@ -1,64 +1,98 @@
-<div class="app">
+<header>
 
-  <header>
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark " style="background-color: #212121;">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bd-navbar" style="background-color: #212121;">
+    <div class="container-fluid">
       <a href="https://github.com/ganatan/angular10-app" class="d-none d-sm-block">
         <img style="position: absolute; top: 0; right: 0; border: 0; z-index: 2000;"
           src="https://api.ganatan.com/articles/img/forkme.png" alt="Fork me on GitHub"
           data-canonical-src="https://api.ganatan.com/articles/img/forkme.png" />
       </a>
       <a class="navbar-brand" routerLink="/">
-        <span class="mr-1" style="color:white">ganatan</span>
-        <img src="assets/params/images/logo/ganatan.png" width="20" height="20" alt="ganatan">
+        <span class="mr-1">ganatan</span>
+        <img src="assets/params/images/logo/ganatan.png" width="20" height="20" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-docs-nav"
         aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
-            <a class="nav-link" routerLink="/">
-              <i class="fas fa-home mr-2"></i>home
+            <a class="nav-link text-white" routerLink="/">
+              <i class="fas fa-home mr-1"></i>home
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" routerLink="/about">
-              <i class="far fa-question-circle mr-2"></i>About
+            <a class="nav-link text-white" routerLink="/about">
+              <i class="far fa-question-circle mr-1"></i>About
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" routerLink="/contact">
-              <i class="fas fa-envelope mr-2"></i>Contact
+            <a class="nav-link text-white" routerLink="/contact">
+              <i class="fas fa-envelope mr-1"></i>Contact
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" routerLink="/signin">
+            <a class="nav-link text-white" routerLink="/signin">
               <i class="fas fa-user mr-1"></i>Sign in
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="https://github.com/ganatan">
+            <a class="nav-link text-white" href="https://github.com/ganatan">
               <i class="fab fa-github mr-1"></i>Github
             </a>
           </li>
         </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <main>
-    <div class="container-fluid">
+
+</header>
+
+<main class="">
+  <div class="container-xxl bd-layout">
+    <div class="bd-sidebar">
+      <nav class="collapse bd-links pt-4" id="bd-docs-nav">
+        <ul class="list-unstyled mb-0">
+          <li class="my-1 active d-lg-none">
+            <a class="d-inline-flex align-items-center rounded" data-toggle="collapse" href="#ganatan-collapse"
+              role="button" aria-expanded="true" aria-current="true">
+              About Ganatan
+            </a>
+            <ul class="list-unstyled font-weight-normal mb-2 collapse" id="ganatan-collapse">
+              <li><a (click)="onSelectMenu('about')" class="d-inline-flex align-items-center rounded active"
+                  aria-current="page">About</a>
+              </li>
+              <li><a (click)="onSelectMenu('contact')" class="d-inline-flex align-items-center rounded">Contact</a></li>
+            </ul>
+          </li>
+          <li *ngFor="let item of items" class="my-1 active">
+            <a class="d-inline-flex align-items-center rounded" data-toggle="collapse" href="#{{ item.link }}-collapse"
+              role="button" aria-expanded="true" aria-current="true">
+              {{ item.name }}
+            </a>
+            <ul class="list-unstyled font-weight-normal mb-2 collapse" id="{{ item.link }}-collapse">
+              <li *ngFor="let element of item.elements"><a (click)="onSelectMenu(element.link)"
+                  class="d-inline-flex align-items-center rounded">{{ element.name }}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bd-content pt-4">
       <router-outlet></router-outlet>
     </div>
-  </main>
+  </div>
+</main>
 
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <p class="text-center text-white">&copy; 2020 - www.ganatan.com</p>
-        </div>
+<div class="footer" style="background-color:#1976d2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center text-white">&copy; 2020 - www.ganatan.com</p>
       </div>
     </div>
   </div>
+</div>

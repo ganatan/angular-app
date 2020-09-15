@@ -1,18 +1,16 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ItemsComponent } from './items.component';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserTransferStateModule } from '@angular/platform-browser';
 
 describe('ItemsComponent', () => {
   let component: ItemsComponent;
   let fixture: ComponentFixture<ItemsComponent>;
 
   beforeEach(async () => {
-    TestBed.configureTestingModule({
+    await TestBed.configureTestingModule({
       imports: [
-        HttpClientModule,
-        BrowserTransferStateModule
+        HttpClientModule
       ],
       declarations: [ItemsComponent]
     })

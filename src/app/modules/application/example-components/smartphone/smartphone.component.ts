@@ -16,10 +16,10 @@ export class SmartphoneComponent implements OnInit {
   constructor() {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  select(smartphone: Smartphone) {
+  select(smartphone: Smartphone): void {
     this.selected.emit(smartphone);
   }
 

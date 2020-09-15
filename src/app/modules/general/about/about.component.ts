@@ -14,11 +14,10 @@ export class AboutComponent {
     this.dependencies = {
       frontend: [
         { name: 'Angular 10.1.1' },
-        { name: 'Angular CLI 10.1.0' },
+        { name: 'Angular CLI 10.1.1' },
         { name: 'Angular Universal 10.1.0' },
         { name: 'Font Awesome 5.14.0' },
-        { name: 'Bootstrap 4.5.2' },
-        { name: 'JQuery 3.5.1' },
+        { name: 'Bootstrap 5.0.0-alpha1' },
       ],
       backend: [
         { name: 'Node.js' },

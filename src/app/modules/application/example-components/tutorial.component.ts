@@ -28,14 +28,14 @@ export class TutorialComponent implements OnInit {
       ];
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  onSelected(event: any) {
+  onSelected(event: any): void {
     this.smartphoneSelected = event;
   }
 
-  onReset() {
+  onReset(): void {
     this.smartphoneSelected = null;
   }
 

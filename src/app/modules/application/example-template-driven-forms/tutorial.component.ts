@@ -18,7 +18,7 @@ export class TutorialComponent implements OnInit {
     this.movie.worldwide = '$2,797,800,564';
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

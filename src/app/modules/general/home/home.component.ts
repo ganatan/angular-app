@@ -79,7 +79,7 @@ export class HomeComponent implements OnInit {
 
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.titleService.setTitle('angular.ganatan: Une Application Web avec Angular');
     this.meta.addTag({
       name: 'author',

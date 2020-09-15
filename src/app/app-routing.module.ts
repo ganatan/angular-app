@@ -52,14 +52,14 @@ const routes: Routes = [
       .then(mod => mod.ExampleBootstrapPrototypeModule)
   },
   {
-    path: 'about',
-    loadChildren: () => import('./modules/general/about/about.module')
-      .then(mod => mod.AboutModule)
-  },
-  {
     path: 'contact',
     loadChildren: () => import('./modules/general/contact/contact.module')
       .then(mod => mod.ContactModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./modules/general/about/about.module')
+      .then(mod => mod.AboutModule)
   },
   {
     path: 'signin',

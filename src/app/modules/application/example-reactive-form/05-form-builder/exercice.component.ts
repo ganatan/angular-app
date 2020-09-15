@@ -19,11 +19,11 @@ export class ExerciceComponent implements OnInit {
 
   constructor(private fb: FormBuilder) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.updateControls();
   }
 
-  updateControls() {
+  updateControls(): void {
     this.exampleForm.patchValue({
       name: 'Avengers: Endgame',
       releaseDate: '26/04/2019',
@@ -35,14 +35,14 @@ export class ExerciceComponent implements OnInit {
     });
   }
 
-  resetControls() {
+  resetControls(): void {
     this.exampleForm.patchValue({
       name: null,
       releaseDate: null,
       franchise: true,
-      budget:  null,
-      worldwide:  null,
-      summary:  null,
+      budget: null,
+      worldwide: null,
+      summary: null,
     });
   }
 
