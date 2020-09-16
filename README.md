@@ -163,7 +163,7 @@ sudo apt-get install google-chrome-stable --yes
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 15/09/2020
+* Updated : 16/09/2020
 * Author  : danny
 
 ## Documentation
