@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Angular 10 Application</h1>
   <p align="center">
-    Angular 10.1.1 + Angular CLI + Angular Universal
+    Angular 10.1.2 + Angular CLI + Angular Universal
     <br>
     Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
@@ -35,8 +35,8 @@
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 10.1.1
-- [x] Angular CLI : 10.1.1
+- [x] Angular : 10.1.2
+- [x] Angular CLI : 10.1.2
 - [x] Angular Universal : 10.1.0
 - [x] Bootstrap : 5.0.0-alpha1
 - [x] Fontawesome : 5.14.0
@@ -163,7 +163,7 @@ sudo apt-get install google-chrome-stable --yes
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 16/09/2020
+* Updated : 17/09/2020
 * Author  : danny
 
 ## Documentation
