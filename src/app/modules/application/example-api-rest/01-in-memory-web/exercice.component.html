@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col">
+    <div class="card p-4">
+      <h5 class="card-title text-center text-primary font-weight-bold">Items Commands</h5>
+      <div class="row text-center">
+        <div class="col-12">
+          <button type="button" class="btn btn-primary btn-sm mr-2" (click)="onReset()">Reset</button>
+          <button type="button" class="btn btn-primary btn-sm mr-2" (click)="onRead()">Read</button>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-12 text-center">
+          <div *ngIf="!itemsLoaded" class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card p-4">
+      <h5 class="card-title">Items List</h5>
+      <table class="table table-bordered table-sm table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Director</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of items">
+            <th>{{ item.id }}</th>
+            <td>{{ item.name }}</td>
+            <td>{{ item.director }}</td>
+            <td>{{ item.date }}</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Director</th>
+            <th>Date</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>

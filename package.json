@@ -38,6 +38,7 @@
     "@angular/platform-browser-dynamic": "10.1.2",
     "@angular/platform-server": "10.1.2",
     "@angular/router": "10.1.2",
+    "angular-in-memory-web-api": "0.11.0",
     "@angular/service-worker": "10.1.2",
     "@asymmetrik/ngx-leaflet": "8.1.0",
     "@fortawesome/fontawesome-free": "5.14.0",
