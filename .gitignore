@@ -9,6 +9,10 @@
 
 # dependencies
 /node_modules
+/api/node_modules
+/api-rest/express
+/api-rest/express-mysql
+/api-rest/express-postgresql
 package-lock.json
 
 
