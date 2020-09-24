@@ -7,6 +7,11 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 const routes: Routes = [
   { path: '', component: HomeComponent, },
   {
+    path: 'crud',
+    loadChildren: () => import('./modules/application/example-crud/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
+  {
     path: 'movies-images-list',
     loadChildren: () => import('./modules/application/movies-images-list/movies-images-list.module')
       .then(mod => mod.MoviesImagesListModule)

@@ -37,6 +37,18 @@ export class AppComponent {
       ]
     },
     {
+      name: 'CRUD', link: 'crud',
+      elements: [
+        { name: 'continents', link: 'crud/continents' },
+        { name: 'countries', link: 'crud/countries' },
+        { name: 'cities', link: 'crud/cities' },
+        { name: 'shows', link: 'crud/shows' },
+        { name: 'movies', link: 'crud/movies' },
+        { name: 'shows-images', link: 'crud/shows-images' },
+        { name: 'movies-images', link: 'crud/movies-images' },
+      ]
+    },
+    {
       name: 'API Rest', link: 'api-rest',
       elements: [
         { name: 'in-memory-web', link: 'api-rest/in-memory-web' },
