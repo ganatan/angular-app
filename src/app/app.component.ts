@@ -59,6 +59,17 @@ export class AppComponent {
       ]
     },
     {
+      name: 'Typescript', link: 'typescript',
+      elements: [
+        { name: 'modules', link: 'typescript/modules' },
+        { name: 'interfaces', link: 'typescript/interfaces' },
+        { name: 'classes', link: 'typescript/classes' },
+        { name: 'functions', link: 'typescript/functions' },
+        { name: 'types', link: 'typescript/types' },
+        { name: 'typing-function', link: 'typescript/typing-function' },
+      ]
+    },
+    {
       name: 'bootstrap-prototype', link: 'bootstrap-prototype',
       elements: [
         { name: 'alerts', link: 'bootstrap-prototype/alerts' },

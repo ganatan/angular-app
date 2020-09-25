@@ -7,6 +7,11 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 const routes: Routes = [
   { path: '', component: HomeComponent, },
   {
+    path: 'typescript',
+    loadChildren: () => import('./modules/application/example-typescript/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
+  {
     path: 'crud',
     loadChildren: () => import('./modules/application/example-crud/tutorial.module')
       .then(mod => mod.TutorialModule)
