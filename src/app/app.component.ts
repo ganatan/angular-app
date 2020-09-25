@@ -49,16 +49,6 @@ export class AppComponent {
       ]
     },
     {
-      name: 'API Rest', link: 'api-rest',
-      elements: [
-        { name: 'in-memory-web', link: 'api-rest/in-memory-web' },
-        { name: 'in-memory-web-from-service', link: 'api-rest/in-memory-web-from-service' },
-        { name: 'get-all', link: 'api-rest/get-all' },
-        { name: 'get-all-one', link: 'api-rest/get-all-one' },
-        { name: 'get-all-one-from-service', link: 'api-rest/get-all-one-from-service' },
-      ]
-    },
-    {
       name: 'Typescript', link: 'typescript',
       elements: [
         { name: 'modules', link: 'typescript/modules' },

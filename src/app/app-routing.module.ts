@@ -22,11 +22,6 @@ const routes: Routes = [
       .then(mod => mod.MoviesImagesListModule)
   },
   {
-    path: 'api-rest',
-    loadChildren: () => import('./modules/application/example-api-rest/tutorial.module')
-      .then(mod => mod.TutorialModule)
-  },
-  {
     path: 'leaflet',
     loadChildren: () => import('./modules/application/example-leaflet/tutorial.module')
       .then(mod => mod.TutorialModule)
