@@ -16,7 +16,7 @@ export class AboutComponent {
         { name: 'Angular 10.1.4' },
         { name: 'Angular CLI 10.1.4' },
         { name: 'Angular Universal 10.1.0' },
-        { name: 'Font Awesome 5.14.0' },
+        { name: 'Font Awesome 5.15.1' },
         { name: 'Bootstrap 5.0.0-alpha1' },
       ],
       backend: [

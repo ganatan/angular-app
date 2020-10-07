@@ -5,7 +5,7 @@ export const environment = {
     name: 'angular-starter',
     angular: 'Angular 10.1.4',
     bootstrap: 'Bootstrap 5.0.0',
-    fontawesome: 'Font Awesome 5.14.0',
+    fontawesome: 'Font Awesome 5.15.1',
   },
   url: 'http://localhost:5200',
   config: {

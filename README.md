@@ -39,7 +39,7 @@
 - [x] Angular CLI : 10.1.4
 - [x] Angular Universal : 10.1.0
 - [x] Bootstrap : 5.0.0-alpha1
-- [x] Fontawesome : 5.14.0
+- [x] Fontawesome : 5.15.1
 - [x] jquery : 3.5.1
 
 > Features
@@ -163,7 +163,7 @@ sudo apt-get install google-chrome-stable --yes
 * in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
 
 ### Author
-* Updated : 01/10/2020
+* Updated : 07/10/2020
 * Author  : danny
 
 ## Documentation
