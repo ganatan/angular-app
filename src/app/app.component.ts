@@ -9,7 +9,7 @@ import { Renderer2 } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-starter';
-  version = 'Angular version 10.1.4';
+  version = 'Angular version 10.1.5';
   items = [
     {
       name: 'Reactive Form', link: 'reactive-form',
