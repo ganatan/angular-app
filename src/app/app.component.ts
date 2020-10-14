@@ -67,6 +67,7 @@ export class AppComponent {
         { name: 'blockquotes', link: 'bootstrap-prototype/blockquotes' },
         { name: 'breadcrumb', link: 'bootstrap-prototype/breadcrumb' },
         { name: 'buttons', link: 'bootstrap-prototype/buttons' },
+        { name: 'carousel', link: 'bootstrap-prototype/carousel'},
         { name: 'collapse', link: 'bootstrap-prototype/collapse' },
         { name: 'dropdowns', link: 'bootstrap-prototype/dropdowns' },
         { name: 'forms', link: 'bootstrap-prototype/forms' },

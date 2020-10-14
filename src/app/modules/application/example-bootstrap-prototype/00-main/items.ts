@@ -16,4 +16,5 @@ export const ITEMS: any[] =
     { id: 14, name: 'Spinners', link: 'spinners' },
     { id: 15, name: 'Toasts', link: 'toasts' },
     { id: 16, name: 'Tooltips', link: 'tooltips' },
+    { id: 17, name: 'Carousel', link: 'carousel' },
   ];

@@ -7,6 +7,7 @@ import { AlertsComponent } from './alerts/items.component';
 import { BadgeComponent } from './badge/items.component';
 import { BlockquotesComponent } from './blockquotes/items.component';
 import { BreadcrumbComponent } from './breadcrumb/items.component';
+import { CarouselComponent } from './carousel/carousel.component';
 import { ButtonsComponent } from './buttons/items.component';
 import { TooltipsComponent } from './tooltips/items.component';
 import { CollapseComponent } from './collapse/items.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
       { path: 'badge', component: BadgeComponent },
       { path: 'blockquotes', component: BlockquotesComponent },
       { path: 'breadcrumb', component: BreadcrumbComponent },
+      { path: 'carousel', component: CarouselComponent },
       { path: 'buttons', component: ButtonsComponent },
       { path: 'tooltips', component: TooltipsComponent },
       { path: 'collapse', component: CollapseComponent },

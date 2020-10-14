@@ -5,7 +5,7 @@
         <form class="form-inline">
           <input #edit aria-label="Searchfield" type="text" name="searchField" [ngModel]="searchField"
             class="form-control form-control-sm mb-2 mr-2" id="searchField" placeholder="{{placeholder}}"
-            style="max-width: 160px;">
+            style="max-width: 160px;" (keypress)="searching()">
           <button aria-label="Search" (click)="searching()" type="submit" class="btn btn-outline-primary btn-sm mb-2"><i
               class="fas fa-search"></i></button>
         </form>
