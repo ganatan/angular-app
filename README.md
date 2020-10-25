@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Angular 10 Application</h1>
   <p align="center">
-    Angular 10.1.6 + Angular CLI + Angular Universal
+    Angular 10.2.0 + Angular CLI + Angular Universal
     <br>
     Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
     <br>
@@ -35,8 +35,8 @@
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 10.1.6
-- [x] Angular CLI : 10.1.7
+- [x] Angular : 10.2.0
+- [x] Angular CLI : 10.2.0
 - [x] Angular Universal : 10.1.0
 - [x] Bootstrap : 5.0.0-alpha1
 - [x] Fontawesome : 5.15.1
