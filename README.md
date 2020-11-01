@@ -208,10 +208,10 @@ node server
 
 ### Tests API
 * in your browser [http://localhost:5204/movies](http://localhost:5204/movies) 
-* in your browser [http://localhost:5204/movies](http://localhost:5204/shows) 
-* in your browser [http://localhost:5204/movies](http://localhost:5204/continents) 
-* in your browser [http://localhost:5204/movies](http://localhost:5204/cities) 
-* in your browser [http://localhost:5204/movies](http://localhost:5204/countries) 
+* in your browser [http://localhost:5204/shows](http://localhost:5204/shows) 
+* in your browser [http://localhost:5204/continents](http://localhost:5204/continents) 
+* in your browser [http://localhost:5204/countries](http://localhost:5204/countries) 
+* in your browser [http://localhost:5204/cities](http://localhost:5204/cities) 
 
 ### Author
 * Updated : 01/11/2020
