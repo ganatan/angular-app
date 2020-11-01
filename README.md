@@ -152,7 +152,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 - [x] Tables Creation
 - [x] Importing Data
 - [x] Exporting Data
-- [x] Serving RESTful API CRUD
+- [x] Serving RESTful CRUD API 
 
 
 ## Database Creation with SQL
@@ -166,8 +166,8 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 ## Database Creation with Node.js
 * Change settings in postgresql-express-batch/app/config
 * File config/config.json
-* dbUser: "postgres",
-* dbPassword: "Trustno1",
+* dbUser: "postgres" 
+* dbPassword: "Trustno1"   ! Change the Fox Mulder password by your password
 
 
 ```bash
@@ -181,7 +181,7 @@ npm install
 # create database and import JSON data
 npm run create
 
-# export JSON data
+# export JSON data in data/export
 npm run export
 
 ```
@@ -190,8 +190,8 @@ npm run export
 ## Serving CRUD REST API with Node.js & Express
 * Change settings in postgresql-express-crud/app/config
 * File config/config.json
-* dbUser: "postgres",
-* dbPassword: "Trustno1",
+* dbUser: "postgres"
+* dbPassword: "Trustno1"    ! Change the Fox Mulder password by your password
 
 ```bash
 
