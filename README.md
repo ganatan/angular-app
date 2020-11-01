@@ -131,9 +131,11 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run serve:ssr`
 * in your browser [http://localhost:4000](http://localhost:4000) 
 
-### Prototype Bootstrap
-* `change directory` cd ui
-* launch html pages in your browser
+### Bootstrap UI Prototypes 
+* `change directory` cd ui (Bootstrap 4) or ui-v5 (Bootstrap 5)
+* Launch html pages in your browser
+
+
 
 ## Back-end
 
