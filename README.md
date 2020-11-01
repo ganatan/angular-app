@@ -1,20 +1,45 @@
+# Angular 10 / Bootstrap 5 & CRUD REST API
+
+<table>
+<tr>
+<td>
+  <a href="https://www.ganatan.com/en">
+    <img src="./img/ganatan-about-github.png" align="right"
+    alt="Ganatan Angular Example Demo" width="140" height="140">
+  </a>
+
+it's a repo designed to create a **Web Application with Angular 10**
+
+
+* Frontend - [**Angular 10.2.0**](https://github.com/angular/angular/releases) & [**Angular CLI 10.2.0**](https://github.com/angular/angular-cli/releases/)
+
+* UI prototypes - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) & [**bootstrap 4**](https://getbootstrap.com/docs/4.5/getting-started/download/)
+
+* Backend - CRUD REST API [**PostgreSQL**](https://www.postgresql.org/download/)
+
+* See the [**Live demo**](#live-demo), Test the repo with [**Quick start**](#quick-start) and for more information Read the step by step [**Tutorial**](#tutorial) or read the [**Getting started**](#getting-started)
+
+* And if you want to [**support**](#support)
+:star: Star us on GitHub
+
+</td>
+</tr>
+</table>
+
+# [Live Demo](#live-demo)
+Here is a working live demo :  https://angular.ganatan.com/
+
+
 <p align="center">
-  <h1 align="center">Angular 10 Application</h1>
   <p align="center">
-    Angular 10.2.1 + Angular CLI + Angular Universal
-    <br>
-    Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
-    <br>
-    Prototype bootstrap
-    <br>
-    <a href="https://angular.ganatan.com/">LIVE DEMO</a>
-    <br>
-    <br>
     <a href="https://angular.ganatan.com/">
       <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 10 Example Application"/>
     </a>
   </p>
 </p>
+
+
+
 
 ## Lighthouse Audit
 <img src="https://api.ganatan.com/articles/img/search-engine-optimization-avec-angular-lighthouse-after.png"/>
@@ -51,25 +76,10 @@
 - [x] Search Engine Optimization (SEO)
 - [x] Components
 - [x] Services
-- [x] inheritance
+- [x] Reactive Form
+- [x] Template Driven Forms
 - [x] Search / Grid / Pagination
-- [x] Leaflet open-source JavaScript library
-
-### Back-end : What's included
-> Dependencies
-- [x] Node.js : 12.18.1
-- [x] Express.js : 4.17.1
-- [x] pg-promise : 10.5.8
-
-> Features
-- [x] PostgreSQL 
-- [x] Database Creation
-- [x] Domains Creation
-- [x] Tables Creation
-- [x] Importing Data
-- [x] Exporting Data
-- [x] RESTful API 
-
+- [x] Leaflet
 
 ## Quick start
 
@@ -108,26 +118,10 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * default: LOCAL JSON
 * LOCAL REST API CRUD : http://localhost:5200
 
-### Use Chrome version 85 min
-
 ## Tests
 * `npm run lint`
 * `npm run test`
 * `npm run e2e`
-
-## Chrome Installation on Linux
-
-```bash
-sudo sh -c 'echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
-
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-
-sudo apt-get update
-
-sudo apt-get install google-chrome-stable --yes
-
-```
-
 
 ### Compilation
 * `npm run build`       ( without SSR)
@@ -143,34 +137,87 @@ sudo apt-get install google-chrome-stable --yes
 
 ## Back-end
 
-### Installation
-* `change directory` cd api 
-* `npm install` (installing dependencies)
-* `npm outdated` (verifying dependencies)
+### Back-end : What's included
 
-### Database Creation
-* `change login and password for postgreSQL in file config.json`
-* `login":"postgres"`
-* `password":"your_password"`
+> Tools
+- [x] postgresql-express-batch (with Node.js)
+- [x] postgresql-express-crud (with Node.js and Express)
+- [x] postgresql-sql (with SQL Scripts)
 
-* `npm run app` (database creation)
+> Features
+- [x] Database Creation
+- [x] Domains Creation
+- [x] Tables Creation
+- [x] Importing Data
+- [x] Exporting Data
+- [x] Serving RESTful API CRUD
 
-### Developpement
-* `npm run start`
-* in your browser [http://localhost:5200](http://localhost:5200) 
+
+## Database Creation with SQL
+> Use the SQL scripts in postgresql-sql
+- [x] create-database.sql
+- [x] create-domains.sql
+- [x] create-tables.sql
+- [x] insert-data.sql
+
+
+## Database Creation with Node.js
+* Change settings in postgresql-express-batch/app/config
+* File config/config.json
+* dbUser: "postgres",
+* dbPassword: "Trustno1",
+
+
+```bash
+
+# select the repo
+cd postgresql-express-batch
+
+# install the repo with npm
+npm install
+
+# create database and import JSON data
+npm run create
+
+# export JSON data
+npm run export
+
+```
+
+
+## Serving CRUD REST API with Node.js & Express
+* Change settings in postgresql-express-crud/app/config
+* File config/config.json
+* dbUser: "postgres",
+* dbPassword: "Trustno1",
+
+```bash
+
+# select the repo
+cd postgresql-express-crud
+
+# install the repo with npm
+npm install
+
+# create database and import JSON data
+node server
+
+```
 
 ### Tests API
-* in your browser [http://localhost:5200/movies](http://localhost:5200/movies) 
+* in your browser [http://localhost:5204/movies](http://localhost:5204/movies) 
+* in your browser [http://localhost:5204/movies](http://localhost:5204/shows) 
+* in your browser [http://localhost:5204/movies](http://localhost:5204/continents) 
+* in your browser [http://localhost:5204/movies](http://localhost:5204/cities) 
+* in your browser [http://localhost:5204/movies](http://localhost:5204/countries) 
 
 ### Author
-* Updated : 29/10/2020
+* Updated : 01/11/2020
 * Author  : danny
 
 ## Documentation
 English Tutorials
-- Installation - https://www.ganatan.com/tutorials/build-full-web-application-with-angular
-- Tutorials Step by Step - https://www.ganatan.com/tutorials/en
+- Step by Step - https://www.ganatan.com/tutorials/en
 
 Tutoriels en français
-- Installation - https://www.ganatan.com/tutorials/creer-application-web-complete-avec-angular
-- Tutoriels Etapes par étapes - https://www.ganatan.com/tutorials
+- Etapes par étapes - https://www.ganatan.com/tutorials
