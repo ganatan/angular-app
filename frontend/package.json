@@ -50,7 +50,7 @@
     "ng2-charts": "2.4.2",
     "rxjs": "6.6.3",
     "tslib": "2.0.3",
-    "zone.js": "0.11.2"
+    "zone.js": "0.11.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.1002.0",
@@ -59,7 +59,7 @@
     "@nguniversal/builders": "10.1.0",
     "@types/express": "4.17.8",
     "@types/node": "14.14.6",
-    "@types/jasmine": "3.6.0",
+    "@types/jasmine": "3.6.1",
     "@types/jasminewd2": "2.0.8",
     "codelyzer": "6.0.1",
     "jasmine-core": "3.6.0",
