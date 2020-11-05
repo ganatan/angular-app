@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 10**
 
 
-* Frontend - [**Angular 10.2.1**](https://github.com/angular/angular/releases) & [**Angular CLI 10.2.0**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 10.2.2**](https://github.com/angular/angular/releases) & [**Angular CLI 10.2.0**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototypes - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) & [**bootstrap 4**](https://getbootstrap.com/docs/4.5/getting-started/download/)
 
@@ -214,7 +214,7 @@ node server
 * in your browser [http://localhost:5204/cities](http://localhost:5204/cities) 
 
 ### Author
-* Updated : 04/11/2020
+* Updated : 05/11/2020
 * Author  : danny
 
 ## Documentation
