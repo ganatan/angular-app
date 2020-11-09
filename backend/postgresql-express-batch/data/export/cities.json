@@ -96,22 +96,6 @@
         }
     },
     {
-        "name": "Kabul",
-        "wikipediaLink": "Kabul",
-        "frName": "Kaboul",
-        "frWikipediaLink": "Kaboul",
-        "capital": true,
-        "image": "af.png",
-        "country": {
-            "name": "Afghanistan",
-            "code": "AF"
-        },
-        "continent": {
-            "name": "Asia",
-            "code": "AS"
-        }
-    },
-    {
         "name": "Los Angeles",
         "wikipediaLink": "Los_Angeles",
         "frName": "Los Angeles",

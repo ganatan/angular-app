@@ -201,7 +201,7 @@ cd postgresql-express-crud
 # install the repo with npm
 npm install
 
-# create database and import JSON data
+# Serve API REST CRUD
 node server
 
 ```

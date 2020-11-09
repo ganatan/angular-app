@@ -1,0 +1,25 @@
+# Angular 10 / Bootstrap 5 & CRUD REST API
+## Back-end
+
+## Database Creation with Node.js
+* Change settings in postgresql-express-batch/app/config
+* File config/config.json
+* dbUser: "postgres" 
+* dbPassword: "Trustno1"   !  Change the Fox Mulder password by your password
+
+
+```bash
+
+# select the repo
+cd postgresql-express-batch
+
+# install the repo with npm
+npm install
+
+# create database and import JSON data
+npm run create
+
+# export JSON data in data/export
+npm run export
+
+```
