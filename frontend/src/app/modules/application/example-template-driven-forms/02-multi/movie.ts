@@ -4,4 +4,5 @@ export class Movie {
   domestic: string;
   international: string;
   worldwide: string;
+  franchise: boolean;
 }
