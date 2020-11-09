@@ -1,20 +1,5 @@
+# Angular 10 / Bootstrap 5 & CRUD REST API
 ## Back-end
-
-### Back-end : What's included
-
-> Tools
-- [x] postgresql-express-batch (with Node.js)
-- [x] postgresql-express-crud (with Node.js and Express)
-- [x] postgresql-sql (with SQL Scripts)
-
-> Features
-- [x] Database Creation
-- [x] Domains Creation
-- [x] Tables Creation
-- [x] Importing Data
-- [x] Exporting Data
-- [x] Serving RESTful CRUD API 
-
 
 ## Database Creation with SQL
 > Use the SQL scripts in postgresql-sql
@@ -22,7 +7,6 @@
 - [x] create-domains.sql
 - [x] create-tables.sql
 - [x] insert-data.sql
-
 
 ## Database Creation with Node.js
 * Change settings in postgresql-express-batch/app/config
