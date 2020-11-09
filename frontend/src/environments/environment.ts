@@ -7,7 +7,7 @@ export const environment = {
     bootstrap: 'Bootstrap 5.0.0',
     fontawesome: 'Font Awesome 5.15.1',
   },
-  url: 'http://localhost:5204',
+  url: 'http://localhost:5004',
   config: {
     /* SELECT ONE OF THOSE CONFIGURATIONS */
 

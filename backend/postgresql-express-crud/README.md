@@ -21,9 +21,9 @@ node server
 ```
 
 ### Tests API
-* in your browser [http://localhost:5204/movies](http://localhost:5204/movies) 
-* in your browser [http://localhost:5204/shows](http://localhost:5204/shows) 
-* in your browser [http://localhost:5204/continents](http://localhost:5204/continents) 
-* in your browser [http://localhost:5204/countries](http://localhost:5204/countries) 
-* in your browser [http://localhost:5204/cities](http://localhost:5204/cities) 
+* in your browser [http://localhost:5004/movies](http://localhost:5004/movies) 
+* in your browser [http://localhost:5004/shows](http://localhost:5004/shows) 
+* in your browser [http://localhost:5004/continents](http://localhost:5004/continents) 
+* in your browser [http://localhost:5004/countries](http://localhost:5004/countries) 
+* in your browser [http://localhost:5004/cities](http://localhost:5004/cities) 
 
