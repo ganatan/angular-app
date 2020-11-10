@@ -26,7 +26,9 @@ npm install
 # create database and import JSON data
 npm run create
 
-# export JSON data in data/export
+# For the fun delete All data/export Files
+# Export JSON data in data/export
+# Check the new files (for example movies.json) 
 npm run export
 
 ```
