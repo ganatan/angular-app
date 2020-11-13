@@ -3,11 +3,11 @@ export const environment = {
   application:
   {
     name: 'angular-starter',
-    angular: 'Angular 10.2.2',
+    angular: 'Angular 11.0.0',
     bootstrap: 'Bootstrap 5.0.0',
     fontawesome: 'Font Awesome 5.15.1',
   },
-  url: 'http://localhost:5200',
+  url: 'http://localhost:5204',
   config: {
     /* SELECT ONE OF THOSE CONFIGURATIONS */
 

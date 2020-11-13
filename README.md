@@ -1,4 +1,4 @@
-# Angular 10 / Bootstrap 5 & CRUD REST API
+# Angular 11 / Bootstrap 5 & CRUD REST API
 
 <table>
 <tr>
@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 10**
 
 
-* Frontend - [**Angular 10.2.2**](https://github.com/angular/angular/releases) & [**Angular CLI 10.2.0**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 11.0.0**](https://github.com/angular/angular/releases) & [**Angular CLI 11.0.0**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototypes - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) & [**bootstrap 4**](https://getbootstrap.com/docs/4.5/getting-started/download/)
 
@@ -33,7 +33,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 <p align="center">
   <p align="center">
     <a href="https://angular.ganatan.com/">
-      <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 10 Example Application"/>
+      <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 11 Example Application"/>
     </a>
   </p>
 </p>
@@ -60,10 +60,10 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 10.2.1
-- [x] Angular CLI : 10.2.0
-- [x] Angular Universal : 10.1.0
-- [x] Bootstrap : 5.0.0-alpha1
+- [x] Angular : 11.0.0
+- [x] Angular CLI : 11.0.0
+- [x] Angular Universal : 11.0.0
+- [x] Bootstrap : 5.0.0-alpha3
 - [x] Fontawesome : 5.15.1
 - [x] jquery : 3.5.1
 
@@ -85,7 +85,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ```bash
 # clone the repo
-git clone https://github.com/ganatan/angular10-app.git
+git clone https://github.com/ganatan/angular11-app.git
 
 # change directory
 cd angular10-app
@@ -216,7 +216,7 @@ node server
 * in your browser [http://localhost:5004/cities](http://localhost:5004/cities) 
 
 ### Author
-* Updated : 11/11/2020
+* Updated : 12/11/2020
 * Author  : danny
 
 ## Documentation

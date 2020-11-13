@@ -16,7 +16,6 @@ import { ItemsService } from './items.service';
   declarations: [
     ItemsComponent
   ],
-  providers: [ItemsService
-  ],
+  providers: [ItemsService],
 })
 export class ItemsModule { }
