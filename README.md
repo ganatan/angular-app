@@ -96,6 +96,7 @@ git clone https://bitbucket.org/ganatan/angular11-app.git
 
 # change directory
 cd angular11-app
+cd frontend
 
 # install the repo with npm
 npm install
