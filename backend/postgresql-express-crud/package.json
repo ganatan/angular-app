@@ -24,6 +24,6 @@
     "express": "4.17.1",
     "express-prettify": "0.1.1",
     "nodemon": "2.0.6",
-    "pg-promise": "10.7.1"
+    "pg-promise": "10.8.0"
   }
 }

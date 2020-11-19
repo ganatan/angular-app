@@ -19,8 +19,6 @@ it's a repo designed to create a **Web Application with Angular 11**
 
 * See the [**Live demo**](#live-demo), Test the repo with [**Quick start**](#quick-start) and for more information Read the step by step [**Tutorial**](#tutorial) or read the [**Getting started**](#getting-started)
 
-* And if you want to [**support**](#support)
-:star: Star us on GitHub
 
 </td>
 </tr>
@@ -52,11 +50,6 @@ Here is a working live demo :  https://angular.ganatan.com/
 - [Back-end](#back-end)
 - [Author](#author)
 - [Documentation](#documentation)
-
-## Status
-
-[![GitHub stars](https://img.shields.io/github/stars/ganatan/angular10-app.svg?style=social&label=Star)](https://github.com/ganatan/angular10-app)
-[![GitHub forks](https://img.shields.io/github/forks/ganatan/angular10-app.svg?style=social&label=Fork)](https://github.com/ganatan/angular10-app/fork)
 
 ### Front-end : What's included
 > Dependencies
