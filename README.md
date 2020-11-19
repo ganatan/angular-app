@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 10**
 
 
-* Frontend - [**Angular 11.0.0**](https://github.com/angular/angular/releases) & [**Angular CLI 11.0.1**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 11.0.1**](https://github.com/angular/angular/releases) & [**Angular CLI 11.0.2**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototypes - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) & [**bootstrap 4**](https://getbootstrap.com/docs/4.5/getting-started/download/)
 
@@ -84,11 +84,18 @@ Here is a working live demo :  https://angular.ganatan.com/
 ## Quick start
 
 ```bash
-# clone the repo
+# select a repo
+# download the example or clone the repo from github
 git clone https://github.com/ganatan/angular11-app.git
 
+# download the example or clone the repo from gitlab
+git clone https://gitlab.com/ganatan/angular11-app.git
+
+# download the example or clone the repo from bitbucket
+git clone https://bitbucket.org/ganatan/angular11-app.git
+
 # change directory
-cd angular10-app
+cd angular11-app
 
 # install the repo with npm
 npm install
@@ -118,7 +125,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * default: LOCAL JSON
 * LOCAL REST API CRUD : http://localhost:5004
 
-## Tests
+## Tests (Use Chrome Version 87 minimum)
 * `npm run lint`
 * `npm run test`
 * `npm run e2e`
@@ -216,7 +223,7 @@ node server
 * in your browser [http://localhost:5004/cities](http://localhost:5004/cities) 
 
 ### Author
-* Updated : 13/11/2020
+* Updated : 19/11/2020
 * Author  : danny
 
 ## Documentation
