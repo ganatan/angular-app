@@ -53,8 +53,8 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 11.0.0
-- [x] Angular CLI : 11.0.1
+- [x] Angular : 11.0.1
+- [x] Angular CLI : 11.0.2
 - [x] Angular Universal : 11.0.0
 - [x] Bootstrap : 5.0.0-alpha3
 - [x] Fontawesome : 5.15.1
