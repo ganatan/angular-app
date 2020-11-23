@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server",
     "dev": "nodemon node server",
-    "prod": "cross-env NODE_ENV=prod node server"
+    "prod": "cross-env NODE_ENV=prod node server",
+    "pm2-prod": "pm2 start process.config.js --env prod"
   },
   "author": {
     "name": "danny",

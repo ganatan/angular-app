@@ -1,7 +1,8 @@
 # Angular 11 / Bootstrap 5 & CRUD REST API
 ## Back-end
-
 ## Database Creation with Node.js
+
+## PostgreSQL Password
 * Change settings in postgresql-express-batch/app/config
 * File config/config.json
 * dbUser: "postgres" 

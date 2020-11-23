@@ -166,6 +166,8 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 ## Database Creation with Node.js
+
+## PostgreSQL Password
 * Change settings in postgresql-express-batch/app/config
 * File config/config.json
 * dbUser: "postgres" 
@@ -192,6 +194,8 @@ npm run export
 
 
 ## Serving CRUD REST API with Node.js & Express
+
+## PostgreSQL Password
 * Change settings in postgresql-express-crud/app/config
 * File config/config.json
 * dbUser: "postgres"
@@ -205,8 +209,18 @@ cd postgresql-express-crud
 # install the repo with npm
 npm install
 
-# Serve API REST CRUD
-node server
+# Serve CRUD REST API : development mode with nodemon
+npm run dev
+
+# Serve CRUD REST API : local mode
+npm run start
+
+# Serve CRUD REST API : production mode
+npm run prod
+
+# Serve CRUD REST API : production mode with pm2 (process manager)
+pm2 start process.config.js --env prod
+
 
 ```
 

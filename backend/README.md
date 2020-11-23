@@ -48,8 +48,17 @@ cd postgresql-express-crud
 # install the repo with npm
 npm install
 
-# Serve API REST CRUD
-node server
+# Serve CRUD REST API : development mode with nodemon
+npm run dev
+
+# Serve CRUD REST API : local mode
+npm run start
+
+# Serve CRUD REST API : production mode
+npm run prod
+
+# Serve CRUD REST API : production mode with pm2 (process manager)
+pm2 start process.config.js --env prod
 
 ```
 
