@@ -23,7 +23,7 @@ DROP TABLE movie;
 DROP SEQUENCE movie_id_seq;
 
 DROP TABLE images;
-DROP SEQUENCE image_id_seq;
+DROP SEQUENCE images_id_seq;
 
 DROP TABLE person;
 DROP SEQUENCE person_id_seq;

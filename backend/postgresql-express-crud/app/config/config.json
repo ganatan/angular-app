@@ -22,7 +22,7 @@
     "firstKey" : 1000
   },
   "prod": {
-    "url": "http://api.ganatan.com/express/pg",
+    "url": "https://api.ganatan.com/express/pg",
     "webSite": "https://www.ganatan.com/api",
     "appName": "postgresql-express-crud",
     "port": 5004,
