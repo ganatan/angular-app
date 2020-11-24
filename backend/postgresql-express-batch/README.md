@@ -22,7 +22,8 @@ npm run create
 
 # For the fun delete All data/export Files
 # Export JSON data in data/export
-# Check the new files (for example movies.json) 
 npm run export
+
+# Check the new files (for example movies.json) 
 
 ```
