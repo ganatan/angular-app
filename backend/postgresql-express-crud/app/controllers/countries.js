@@ -90,7 +90,7 @@ function getItems(req, res, next) {
             "isoAlpha2": record[index].isoAlpha2,
             "isoAlpha3": record[index].isoAlpha3,
             "isoNumeric": record[index].isoNumeric,
-            "image": { "href": image },
+            "image": image,
             "continent": {
               "name": record[index].continentName,
               "code": record[index].continentCode,
@@ -128,7 +128,7 @@ function getItem(req, res, next) {
     ' WHERE (t1.id = $1)';
   db.one(sql, id)
     .then(function (record) {
-      const flag = url + '/countries/flags/' + record.flag;
+      const image = url + '/countries/flags/' + record.flag;
       res.status(200)
         .json({
           "id": record.id,
@@ -139,7 +139,7 @@ function getItem(req, res, next) {
           "isoAlpha2": record.isoAlpha2,
           "isoAlpha3": record.isoAlpha3,
           "isoNumeric": record.isoNumeric,
-          "flag": flag,
+          "image": image,
           "continent": {
             "name": record.continentName,
             "code": record.continentCode,

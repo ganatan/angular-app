@@ -63,6 +63,7 @@ export class PageFormComponent {
         if (params.id !== undefined) {
           this.itemsService.getItem(this.api, this.url, params.id)
             .subscribe(data => {
+              console.log('0001:' + JSON.stringify(data));
               if ((data !== null) && (data !== undefined)) {
                 this.item = data;
                 this.setFormValue(this.item);

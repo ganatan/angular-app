@@ -5,7 +5,7 @@
         "wikipediaLink": "Algiers",
         "code": "DZ",
         "capital": true,
-        "img": "./assets/params/images/crud/flags/dz.png",
+        "image": "./assets/params/images/crud/flags/dz.png",
         "country": {
             "name": "Algeria",
             "code": "DZ"
@@ -21,7 +21,7 @@
         "wikipediaLink": "Andorra_la_Vella",
         "code": "AD",
         "capital": true,
-        "img": "./assets/params/images/crud/flags/ad.png",
+        "image": "./assets/params/images/crud/flags/ad.png",
         "country": {
             "name": "Andorra",
             "code": "AD"
@@ -37,7 +37,7 @@
         "wikipediaLink": "Chicago",
         "code": "US",
         "capital": false,
-        "img": "./assets/params/images/crud/flags/us.png",
+        "image": "./assets/params/images/crud/flags/us.png",
         "country": {
             "name": "United States of America",
             "code": "US"
@@ -53,7 +53,7 @@
         "wikipediaLink": "Kabul",
         "code": "AF",
         "capital": true,
-        "img": "./assets/params/images/crud/flags/af.png",
+        "image": "./assets/params/images/crud/flags/af.png",
         "country": {
             "name": "Afghanistan",
             "code": "AF"
@@ -69,7 +69,7 @@
         "wikipediaLink": "Los_Angeles",
         "code": "US",
         "capital": false,
-        "img": "./assets/params/images/crud/flags/us.png",
+        "image": "./assets/params/images/crud/flags/us.png",
         "country": {
             "name": "United States of America",
             "code": "US"
@@ -85,7 +85,7 @@
         "wikipediaLink": "Tirana",
         "code": "AL",
         "capital": true,
-        "img": "./assets/params/images/crud/flags/al.png",
+        "image": "./assets/params/images/crud/flags/al.png",
         "country": {
             "name": "Albania",
             "code": "AL"
@@ -101,7 +101,7 @@
         "wikipediaLink": "Winterset",
         "code": "US",
         "capital": false,
-        "img": "./assets/params/images/crud/flags/us.png",
+        "image": "./assets/params/images/crud/flags/us.png",
         "country": {
             "name": "United States of America",
             "code": "US"

@@ -83,9 +83,7 @@ function getItems(req, res, next) {
             "frName": record[index].frName,
             "frWikipediaLink": record[index].frWikipediaLink,
             "wikipediaLink": record[index].wikipediaLink,
-            "image": {
-              "href": image
-            },
+            "image": image,
             "links":
               [
                 {
@@ -129,9 +127,7 @@ function getItem(req, res, next) {
           "frName": record.frName,
           "frWikipediaLink": record.frWikipediaLink,
           "wikipediaLink": record.wikipediaLink,
-          "image": {
-            "href": image
-          },
+          "image": image
         });
     })
     .catch(function (err) {

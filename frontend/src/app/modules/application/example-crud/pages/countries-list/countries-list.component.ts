@@ -54,7 +54,7 @@ export class CountriesListComponent extends PageListComponent {
       {
         type: 'img',
         title: { caption: 'Flag', class: 'font-weight-bold text-center' },
-        data: { field: 'img', class: 'font-weight-bold text-center' }
+        data: { field: 'image', class: 'font-weight-bold text-center' }
       },
       {
         title: { caption: 'Iso2', class: 'text-center' },

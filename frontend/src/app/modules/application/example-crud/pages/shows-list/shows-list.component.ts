@@ -51,7 +51,7 @@ export class ShowsListComponent extends PageListComponent {
       {
         type: 'smallimg',
         title: { caption: 'Img', class: 'font-weight-bold text-center' },
-        data: { field: 'img', class: 'font-weight-bold text-center' }
+        data: { field: 'image', class: 'font-weight-bold text-center' }
       },
       {
         title: { caption: 'Name', class: 'text-primary font-weight-bold text-center' },

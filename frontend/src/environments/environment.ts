@@ -12,11 +12,11 @@ export const environment = {
     /* SELECT ONE OF THOSE CONFIGURATIONS */
 
     /* LOCAL JSON (NO CRUD) */
-    api: false,
+     api: false,
     url: './assets/params/json/crud/',
 
-    /* LOCAL REST API CRUD  */
+    /* LOCAL REST API CRUD WITH POSTGRESQL */
     /* api: true,
-    url: 'http://localhost:5200/', */
+    url: 'http://localhost:5004/', */
   },
 };

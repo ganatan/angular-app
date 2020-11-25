@@ -29,7 +29,7 @@ export class MoviesFormComponent extends PageFormComponent {
       ],
       wikipediaLink: null,
       releaseDate: null,
-      img: null,
+      image: null,
       show: null,
       movie: null,
       fileName: null,
@@ -42,7 +42,7 @@ export class MoviesFormComponent extends PageFormComponent {
     this.item.name = null;
     this.item.wikipediaLink = null;
     this.item.fileName = null;
-    this.item.img = null;
+    this.item.image = null;
     this.item.show = false;
     this.item.movie = true;
     this.item.releaseDate = null;
@@ -54,7 +54,7 @@ export class MoviesFormComponent extends PageFormComponent {
     this.form.controls.name.setValue(item.name);
     this.form.controls.wikipediaLink.setValue(item.wikipediaLink);
     this.form.controls.fileName.setValue(item.fileName);
-    this.form.controls.img.setValue(item.img);
+    this.form.controls.image.setValue(item.image);
     this.form.controls.show.setValue(item.show);
     this.form.controls.movie.setValue(item.movie);
     this.form.controls.releaseDate.setValue(item.releaseDate);

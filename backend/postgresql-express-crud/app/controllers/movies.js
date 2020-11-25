@@ -96,9 +96,7 @@ function getItems(req, res, next) {
             "international": parseInt(record[index].international),
             "worldwide": parseInt(record[index].worldwide),
             "budget": parseInt(record[index].budget),
-            "image": {
-              "href": image
-            },
+            "image": image,
             "links":
               [
                 {
@@ -155,9 +153,7 @@ function getItem(req, res, next) {
           "international": parseInt(record.international),
           "worldwide": parseInt(record.worldwide),
           "budget": parseInt(record.budget),
-          "image": {
-            "href": image
-          },
+          "image": image
         });
     })
     .catch(function (err) {

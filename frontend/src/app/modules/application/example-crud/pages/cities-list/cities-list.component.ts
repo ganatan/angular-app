@@ -68,7 +68,7 @@ export class CitiesListComponent extends PageListComponent {
       {
         type: 'img',
         title: { caption: 'Flag', class: 'text-secondary font-weight-bold text-center' },
-        data: { field: 'img', class: 'font-weight-bold text-center' }
+        data: { field: 'image', class: 'font-weight-bold text-center' }
       },
       {
         type: 'subfield',

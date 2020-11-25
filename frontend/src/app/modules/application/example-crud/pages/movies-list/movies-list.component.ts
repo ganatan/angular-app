@@ -51,7 +51,7 @@ export class MoviesListComponent extends PageListComponent {
       {
         type: 'smallimg',
         title: { caption: 'Img', class: 'font-weight-bold text-center' },
-        data: { field: 'img', class: 'font-weight-bold text-center', height: 129, width: 90 }
+        data: { field: 'image', class: 'font-weight-bold text-center', height: 129, width: 90 }
       },
       {
         title: { caption: 'Name', class: 'text-primary font-weight-bold text-center' },

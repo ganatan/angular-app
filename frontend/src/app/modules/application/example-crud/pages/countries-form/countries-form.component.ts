@@ -49,7 +49,7 @@ export class CountriesFormComponent extends PageFormComponent {
         Validators.maxLength(3)
         ]
       ],
-      img: null,
+      image: null,
       flag: [null,
         [Validators.required]
       ],
@@ -67,7 +67,7 @@ export class CountriesFormComponent extends PageFormComponent {
     this.item.isoNumeric = null;
     this.item.wikipediaLink = null;
     this.item.flag = null;
-    this.item.img = null;
+    this.item.image = null;
     super.resetForm();
   }
 
@@ -79,7 +79,7 @@ export class CountriesFormComponent extends PageFormComponent {
     this.form.controls.isoAlpha3.setValue(item.isoAlpha3);
     this.form.controls.isoNumeric.setValue(item.isoNumeric);
     this.form.controls.flag.setValue(item.flag);
-    this.form.controls.img.setValue(item.img);
+    this.form.controls.image.setValue(item.image);
     super.setFormValue(item);
   }
 
