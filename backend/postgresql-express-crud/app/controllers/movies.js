@@ -92,10 +92,10 @@ function getItems(req, res, next) {
             "frWikipediaLink": record[index].frWikipediaLink,
             "wikipediaLink": record[index].wikipediaLink,
             "franchise": record[index].franchise,
-            "domestic": record[index].domestic,
-            "international": record[index].international,
-            "worldwide": record[index].worldwide,
-            "budget": record[index].budget,
+            "domestic": parseInt(record[index].domestic),
+            "international": parseInt(record[index].international),
+            "worldwide": parseInt(record[index].worldwide),
+            "budget": parseInt(record[index].budget),
             "image": {
               "href": image
             },
@@ -151,10 +151,10 @@ function getItem(req, res, next) {
           "frWikipediaLink": record.frWikipediaLink,
           "wikipediaLink": record.wikipediaLink,
           "franchise": record.franchise,
-          "domestic": record.domestic,
-          "international": record.international,
-          "worldwide": record.worldwide,
-          "budget": record.budget,
+          "domestic": parseInt(record.domestic),
+          "international": parseInt(record.international),
+          "worldwide": parseInt(record.worldwide),
+          "budget": parseInt(record.budget),
           "image": {
             "href": image
           },

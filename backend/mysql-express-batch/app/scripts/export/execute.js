@@ -1,8 +1,9 @@
 const fs = require('fs');
 const fsPromises = require('fs').promises;
 
-const db = require("../../db/connection");
 const config = require('../../config/config.json')[process.env.NODE_ENV || 'dev'];
+const database = require('../../db/connection');
+
 const routing = require('./routing');
 
 const dataConfig = config.dataConfig;
@@ -21,7 +22,7 @@ async function writeItems(param, data) {
   return true;
 }
 
-async function exportItems(param) {
+async function exportItems(db, param) {
   try {
     const results = await routing.exportItems(db, param);
     if (results != null) {
@@ -35,7 +36,7 @@ async function exportItems(param) {
   }
 };
 
-async function executeExport() {
+async function executeExport(db) {
   return new Promise(function (resolve, reject) {
     const args = process.argv.slice(2);
     const arg = args[0];
@@ -49,7 +50,7 @@ async function executeExport() {
         return false;
       } else {
         const param = JSON.parse(record);
-        exportItems(param)
+        exportItems(db, param)
           .then((res) => {
             console.log('- Export finished -> { ' + param.caption + ' }');
             process.exit();
@@ -63,4 +64,38 @@ async function executeExport() {
   })
 };
 
-executeExport();
+
+async function execute() {
+  try {
+    db = await database.connection(false);
+    if (db != null) {
+      await executeExport(db)
+      return true;
+    } else {
+      return false;
+    }
+  }
+  catch (err) {
+    console.log('- Database Creation started {' + err + ' }');
+    return false;
+  }
+}
+
+execute()
+  .then(res => {
+    /*    if (res) {
+          console.log('- Tables creation -> started');
+        } else {
+          console.log('- Database Creation failed - >');
+        }*/
+    process.exit();
+  })
+  .catch(err => {
+    //    console.log('- Create Database : failed -> { ' + err + ' }');
+    process.exit();
+  });
+
+
+
+
+
