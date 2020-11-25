@@ -144,28 +144,37 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 ### Back-end : What's included
 
 > Tools
+- [x] mysql-express-batch (with Node.js)
+- [x] mysql-sql (with SQL Scripts)
+
 - [x] postgresql-express-batch (with Node.js)
 - [x] postgresql-express-crud (with Node.js and Express)
 - [x] postgresql-sql (with SQL Scripts)
 
 > Features
 - [x] Database Creation
-- [x] Domains Creation
+- [x] Domains Creation (only PostgreSQL)
 - [x] Tables Creation
 - [x] Importing Data
 - [x] Exporting Data
 - [x] Serving RESTful CRUD API 
 
 
-## Database Creation with SQL
+## Database Creation with PostgreSQL 
 > Use the SQL scripts in postgresql-sql
 - [x] create-database.sql
 - [x] create-domains.sql
 - [x] create-tables.sql
 - [x] insert-data.sql
 
+## Database Creation with MySQL
+> Use the SQL scripts in mysql-sql
+- [x] create-database.sql
+- [x] create-tables.sql
+- [x] insert-data.sql
 
-## Database Creation with Node.js
+
+## Database Creation with Node.js and PostgreSQL
 
 ## PostgreSQL Password
 * Change settings in postgresql-express-batch/app/config
@@ -192,6 +201,7 @@ npm run export
 # Check the new files (for example movies.json) 
 
 ```
+## Database Creation with Node.js and MySQL
 
 ## MySQL Password
 * Change settings in mysql-express-batch/app/config
@@ -220,7 +230,7 @@ npm run export
 ```
 
 
-## Serving CRUD REST API with Node.js & Express
+## Serving CRUD REST API with Node.js & Express & PostgreSQL
 
 ## PostgreSQL Password
 * Change settings in postgresql-express-crud/app/config
@@ -251,7 +261,7 @@ pm2 start process.config.js --env prod
 
 ```
 
-### Tests API
+### Tests API & PostgreSQL
 * in your browser [http://localhost:5004/movies](http://localhost:5004/movies) 
 * in your browser [http://localhost:5004/shows](http://localhost:5004/shows) 
 * in your browser [http://localhost:5004/continents](http://localhost:5004/continents) 
@@ -259,7 +269,7 @@ pm2 start process.config.js --env prod
 * in your browser [http://localhost:5004/cities](http://localhost:5004/cities) 
 
 ### Author
-* Updated : 24/11/2020
+* Updated : 25/11/2020
 * Author  : danny
 
 ## Documentation
