@@ -1,4 +1,3 @@
-
 const config = require('./app/config/config.json')[process.env.NODE_ENV || 'dev'];
 
 const express = require('express')
@@ -51,5 +50,3 @@ app.listen(port, function () {
   console.log('- PostgreSQL - Express - API RestFul CRUD');
   console.log(`- Listening on port ${port} !`);
 })
-
-

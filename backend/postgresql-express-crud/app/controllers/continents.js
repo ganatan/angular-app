@@ -24,9 +24,9 @@ function getItemsCount(req, res, next) {
       ')';
   }
   db.one(sql)
-    .then(function (result) {
+    .then(function (record) {
       res.status(200)
-        .json({ "count": result.count });
+        .json({ "count": record.count });
     })
     .catch(function (err) {
       return next(err);

@@ -1,7 +1,7 @@
 # Angular 11 / Bootstrap 5 & CRUD REST API
 ## Back-end
 
-## Serving CRUD REST API with Node.js & Express
+## Serving CRUD REST API with Node.js & Express & PostgreSQL
 * Change settings in postgresql-express-crud/app/config
 * File config/config.json
 * dbUser: "postgres"
