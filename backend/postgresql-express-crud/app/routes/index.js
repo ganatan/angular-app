@@ -5,10 +5,12 @@ const config = require('../config/config.json')[process.env.NODE_ENV || 'dev'];
 
 const webSite = config.webSite;
 const url = config.url;
+const appName = config.appName;
 
 router.get('/', function (req, res) {
   res.json(
     {
+      "appName": appName,
       "webSite": webSite,
       "moviesUrl": url + "/movies",
       "showsUrl": url + "/shows",
