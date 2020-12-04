@@ -33,7 +33,7 @@ function getItems(req, res, next) {
   let limit_req = req.query['limit'];
   let limit = 10;
   let offset = 0;
-  if ((limit_req == undefined) || (offset_req == undefined)) {
+  if ((limit_req === undefined) || (offset_req === undefined)) {
     limit = 10;
     offset = 0;
   }
