@@ -167,7 +167,7 @@ function createItem(req, res, next) {
 
 function updateItem(req, res, next) {
   let item = {
-    id: req.body.id,
+    id: req.params.id,
     name: req.body.name,
     code: req.body.code,
     area: req.body.area,

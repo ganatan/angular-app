@@ -85,6 +85,12 @@ VALUES('Richard Kiel','Richard_Kiel',
 (select id from gender where name='woman'));
 
 
+INSERT INTO company (name) VALUES('netflix');
+INSERT INTO company (name) VALUES('amc');
+INSERT INTO company (name) VALUES('disney');
+INSERT INTO company (name) VALUES('hbo');
+
+
 INSERT INTO movie(name,wikipedia_link,release_date,running_time,franchise,tvshow,movie,clip,
 image,domestic,worldwide,international,budget) 
 VALUES('Avengers: Endgame','Avengers:_Endgame','2019-04-26','03:01:00',true,false,true,false,

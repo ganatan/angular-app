@@ -222,7 +222,7 @@ function createItem(req, res, next) {
 
 function updateItem(req, res, next) {
   let item = {
-    id: req.body.id,
+    id: req.params.id,
     name: req.body.name,
     isoAlpha2: req.body.isoAlpha2,
     isoAlpha3: req.body.isoAlpha3,

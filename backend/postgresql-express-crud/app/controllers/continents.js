@@ -195,7 +195,7 @@ function createItem(req, res, next) {
 
 function updateItem(req, res, next) {
   let item = {
-    id: req.body.id,
+    id: req.params.id,
     code: req.body.code,
     name: req.body.name,
     wikipediaLink: req.body.wikipediaLink,

@@ -1,4 +1,5 @@
 const cities = require('./cities');
+const companies = require('./companies');
 const continents = require('./continents');
 const countries = require('./countries');
 const genders = require('./genders');
@@ -10,6 +11,7 @@ const users = require('./users');
 
 async function exportItems(db, param) {
   if (param.endpoint === 'cities') { return await cities.exportItems(db, param); }
+  if (param.endpoint === 'companies') { return await companies.exportItems(db, param); }
   if (param.endpoint === 'continents') { return await continents.exportItems(db, param); }
   if (param.endpoint === 'countries') { return await countries.exportItems(db, param); }
   if (param.endpoint === 'genders') { return await genders.exportItems(db, param); }

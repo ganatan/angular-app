@@ -1,5 +1,21 @@
 [
   {
+    "name": "company",
+    "pk": true,
+    "fields": [
+      {
+        "name": "name",
+        "domain": "dom_lib",
+        "defaultvalue": ""
+      },
+      {
+        "name": "wikipedia_link",
+        "domain": "dom_lib",
+        "defaultvalue": ""
+      }
+    ]
+  },
+  {
     "name": "genre",
     "pk": true,
     "fields": [

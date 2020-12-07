@@ -1,4 +1,5 @@
 const cities = require('./cities');
+const companies = require('./companies');
 const continents = require('./continents');
 const countries = require('./countries');
 const genders = require('./genders');
@@ -12,6 +13,7 @@ const views = require('./views');
 
 async function createItem(db, param, item, index) {
   if (param.endpoint === 'cities') { return await cities.createItem(db, param, item, index); }
+  if (param.endpoint === 'companies') { return await companies.createItem(db, param, item, index); }
   if (param.endpoint === 'continents') { return await continents.createItem(db, param, item, index); }
   if (param.endpoint === 'countries') { return await countries.createItem(db, param, item, index); }
   if (param.endpoint === 'genders') { return await genders.createItem(db, param, item, index); }

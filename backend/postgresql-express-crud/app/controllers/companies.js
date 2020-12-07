@@ -9,14 +9,13 @@ const webSite = config.webSite;
 const queryMax = config.queryMax;
 const offsetMax = config.offsetMax;
 
-
 function getItemsCount(req, res, next) {
   let q = req.query['q'];
   if (q != undefined) { q = q.toUpperCase().substring(0, queryMax); }
   let sql =
     'SELECT' +
     ' count(id) as "count"' +
-    ' FROM users' +
+    ' FROM company' +
     ' WHERE (id >= ' + firstKey + ')';
   if (q != undefined) {
     sql = sql +
@@ -25,9 +24,9 @@ function getItemsCount(req, res, next) {
       ')';
   }
   db.one(sql)
-    .then(function (data) {
+    .then(function (result) {
       res.status(200)
-        .json({ "count": data.count });
+        .json({ "count": result.count });
     })
     .catch(function (err) {
       return next(err);
@@ -45,12 +44,13 @@ function getItems(req, res, next) {
   if (isNaN(offset)) { offset = 0; }
   if (limit > limitMax) { limit = limitMax; }
   if (offset > offsetMax) { offset = 0; }
+
   let sql =
     'SELECT' +
-    ' t1.id' +
-    ',t1.name' +
-    ',t1.password as "password"' +
-    ' FROM users t1' +
+    ' id' +
+    ',name' +
+    ',wikipedia_link as "wikipediaLink"' +
+    ' FROM company' +
     ' WHERE (id >= ' + firstKey + ')';
   if (q != undefined) {
     sql = sql +
@@ -62,45 +62,52 @@ function getItems(req, res, next) {
   sql = sql + ' LIMIT ' + limit + ' OFFSET ' + offset;
 
   db.any(sql)
-    .then(data => {
-      let dataTmp = [];
-      data.map((row, index, data) => {
-        dataTmp.push(
+    .then(records => {
+      const results = [];
+      records.map((row, index, record) => {
+        const area = parseInt(record[index].area);
+        const population = parseInt(record[index].population);
+        results.push(
           {
-            "id": data[index].id,
-            "name": data[index].name,
-            "password": data[index].password,
+            "id": record[index].id,
+            "name": record[index].name,
+            "wikipediaLink": record[index].wikipediaLink,
             "links":
               [{
                 "rel": "self",
-                "href": url + '/users/' + data[index].id
+                "href": url + '/companies/' + record[index].id
               }]
           });
       })
       res.status(200)
-        .json(dataTmp);
+        .json(results);
     })
     .catch(function (err) {
       return next(err);
     });
 }
 
-function getItem(req, res, next, tvshow) {
+function getItem(req, res, next) {
   let id = parseInt(req.params.id);
   if (isNaN(id)) { id = 0; }
   let sql =
     'SELECT' +
     ' t1.id' +
     ',t1.name' +
-    ',t1.password as "password"' +
-    ' FROM users t1 WHERE (t1.id = $1)';
+    ',t1.wikipedia_link as "wikipediaLink"' +
+    ' FROM company t1' +
+    ' WHERE (t1.id = $1)';
   db.one(sql, id)
-    .then(function (data) {
+    .then(function (record) {
+      let area = parseInt(record.area);
+      let population = parseInt(record.population);
       res.status(200)
         .json({
-          "id": data.id,
-          "name": data.name,
-          "wikipediaLink": data.wikipediaLink,
+          "id": record.id,
+          "name": record.name,
+          "wikipediaLink": record.wikipediaLink,
+          "frName": record.frName,
+          "frWikipediaLink": record.frWikipediaLink,
         });
     })
     .catch(function (err) {
@@ -114,26 +121,32 @@ function getItem(req, res, next, tvshow) {
 
 function createItem(req, res, next) {
   let item = {
+    code: req.body.code,
     name: req.body.name,
     wikipediaLink: req.body.wikipediaLink,
+    frName: req.body.frName,
+    frWikipediaLink: req.body.frWikipediaLink,
+    area: req.body.area,
+    population: req.body.population,
+    countriesNumber: req.body.countriesNumber,
   }
   let sql =
-    'INSERT INTO users' +
+    'INSERT INTO company' +
     ' (' +
     ' name' +
-    ',password' +
+    ',wikipedia_link' +
     ' ) VALUES' +
     ' (' +
     ' ${name}' +
-    ',${password}' +
+    ',${wikipediaLink}' +
     ' ) RETURNING' +
     ' id' +
     ',name' +
-    ',password as "password"';
+    ',wikipedia_link as "wikipediaLink"';
   db.one(sql, item)
-    .then(function (data) {
+    .then(function (result) {
       res.status(200)
-        .json(data);
+        .json(result);
     })
     .catch(function (err) {
       return next(err);
@@ -146,18 +159,19 @@ function updateItem(req, res, next) {
     name: req.body.name,
     wikipediaLink: req.body.wikipediaLink,
   }
+  console.log('0004:updateItem:' + JSON.stringify(item));
   let sql =
-    'UPDATE users SET' +
+    'UPDATE company SET' +
     ' name=${name}' +
-    ',password=${password}' +
+    ',wikipedia_link=${wikipediaLink}' +
     ' WHERE id=${id}' +
     ' RETURNING' +
     ' id' +
     ',name' +
-    ',password as "password"';
-  db.one(sql, item).then(function (data) {
+    ',wikipedia_link as "wikipediaLink"';
+  db.one(sql, item).then(function (result) {
     res.status(200)
-      .json(data);
+      .json(result);
   })
     .catch(function (err) {
       return next(err);
@@ -166,18 +180,19 @@ function updateItem(req, res, next) {
 
 function deleteItem(req, res, next) {
   const id = parseInt(req.params.id);
-  db.result('DELETE FROM users WHERE id = $1', id)
+  db.result('DELETE FROM company WHERE id = $1', id)
     .then(function (result) {
       res.status(200)
         .json({
           status: 'success',
-          message: `Removed ${result.rowCount} user`
+          message: `Removed ${result.rowCount} company`
         });
     })
     .catch(function (err) {
       return next(err);
     });
 }
+
 
 module.exports = {
   getItemsCount: getItemsCount,
@@ -187,4 +202,3 @@ module.exports = {
   updateItem: updateItem,
   deleteItem: deleteItem,
 };
-

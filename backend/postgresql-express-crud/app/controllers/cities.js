@@ -203,7 +203,7 @@ function createItem(req, res, next) {
 
 function updateItem(req, res, next) {
   const item = {
-    id: req.body.id,
+    id: req.params.id,
     name: req.body.name,
     wikipediaLink: req.body.wikipediaLink,
     capital: req.body.capital,

@@ -7,6 +7,7 @@ DROP TABLE profession;
 DROP TABLE genre;
 DROP TABLE movie;
 DROP TABLE images;
+DROP TABLE company;
 DROP TABLE person;
 DROP TABLE views;
 DROP TABLE trailer;

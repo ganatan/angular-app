@@ -9,6 +9,7 @@ const pretty = require('express-prettify');
 const cors = require('cors');
 
 const cities = require('./app/routes/cities');
+const companies = require('./app/routes/companies');
 const continents = require('./app/routes/continents');
 const countries = require('./app/routes/countries');
 const genders = require('./app/routes/genders');
@@ -31,6 +32,7 @@ app.use(compression());
 app.use(cors());
 
 app.use('/cities', cities);
+app.use('/companies', companies);
 app.use('/continents', continents);
 app.use('/countries', countries);
 app.use('/genders', genders);
