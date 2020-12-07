@@ -35,7 +35,7 @@
     "import-generics": "npm run import-users && npm run import-continents && npm run import-countries && npm run import-cities",
     "import-items": "npm run import-companies && npm run import-genres && npm run import-genders && npm run import-professions && npm run import-movies && npm run import-persons",
     "export-generics": "npm run export-users && npm run export-continents && npm run export-countries && npm run export-cities",
-    "export-items": "npm run export-genres && npm run export-genders && npm run export-professions && npm run export-movies && npm run export-persons",
+    "export-items": "npm run export-companies && npm run export-genres && npm run export-genders && npm run export-professions && npm run export-movies && npm run export-persons",
     "import": "npm run import-generics && npm run import-items",
     "export": "npm run export-generics && npm run export-items",
     "import-prod": "cross-env NODE_ENV=prod npm run import-generics && npm run import-items",
