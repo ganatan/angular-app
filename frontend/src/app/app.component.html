@@ -11,7 +11,7 @@
         <span class="mr-1">ganatan</span>
         <img src="assets/params/images/logo/ganatan.png" width="20" height="20" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-docs-nav"
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav"
         aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -56,7 +56,7 @@
       <nav class="collapse bd-links pt-4" id="bd-docs-nav">
         <ul class="list-unstyled mb-0">
           <li class="my-1 active d-lg-none">
-            <a class="d-inline-flex align-items-center rounded" data-toggle="collapse" href="#ganatan-collapse"
+            <a class="d-inline-flex align-items-center rounded" data-bs-toggle="collapse" href="#ganatan-collapse"
               role="button" aria-expanded="true" aria-current="true">
               About Ganatan
             </a>
@@ -68,7 +68,7 @@
             </ul>
           </li>
           <li *ngFor="let item of items" class="my-1 active">
-            <a class="d-inline-flex align-items-center rounded" data-toggle="collapse" href="#{{ item.link }}-collapse"
+            <a class="d-inline-flex align-items-center rounded" data-bs-toggle="collapse" href="#{{ item.link }}-collapse"
               role="button" aria-expanded="true" aria-current="true">
               {{ item.name }}
             </a>
