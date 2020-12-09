@@ -22,7 +22,7 @@
           <span class="mr-1">ganatan</span>
           <img src="assets/params/images/logo/ganatan.png" width="20" height="20" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault"
           aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,27 +63,27 @@
     <div class="container-fluid">
 
       <h2 class="card-title text-primary">Popovers</h2>
-      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"
+      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title"
         data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
         popover</button>
       <hr>
-      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+      <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover"
         data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
         Popover on top
       </button>
 
-      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+      <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover"
         data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
         Popover on right
       </button>
 
-      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+      <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover"
         data-placement="bottom" data-content="Vivamus
           sagittis lacus vel augue laoreet rutrum faucibus.">
         Popover on bottom
       </button>
 
-      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+      <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover"
         data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
         Popover on left
       </button>
@@ -106,7 +106,7 @@
 
 
   <script>
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="popover"]'))
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
       return new bootstrap.Popover(popoverTriggerEl)
     })

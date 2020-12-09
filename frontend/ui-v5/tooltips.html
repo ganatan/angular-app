@@ -22,7 +22,7 @@
           <span class="mr-1">ganatan</span>
           <img src="assets/params/images/logo/ganatan.png" width="20" height="20" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault"
           aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -61,18 +61,18 @@
 
   <main>
     <div class="container-fluid">
-      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-placement="top" title="Tooltip on top">
         Tooltip on top
       </button>
-      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right"
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-placement="right"
         title="Tooltip on right">
         Tooltip on right
       </button>
-      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-placement="bottom"
         title="Tooltip on bottom">
         Tooltip on bottom
       </button>
-      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-placement="left"
         title="Tooltip on left">
         Tooltip on left
       </button>
@@ -95,7 +95,7 @@
 
 
   <script>
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl)
     })
