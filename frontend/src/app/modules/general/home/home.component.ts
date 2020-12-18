@@ -22,16 +22,16 @@ export class HomeComponent implements OnInit {
     this.features =
       [
         {
-          type: 'Bootstrap Prototype',
-          description: 'Bootstrap Prototype , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips',
-          image: 'demo-bootstrap-prototype.png',
-          link: 'bootstrap-prototype'
-        },
-        {
           type: 'Responsive Images list',
           description: 'Display a Responsive List of Images, Marvel Cinematic Universe for the fun',
           image: 'demo-responsive-images-list.png',
           link: 'movies-images-list'
+        },
+        {
+          type: 'Bootstrap Prototype',
+          description: 'Bootstrap Prototype , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips',
+          image: 'demo-bootstrap-prototype.png',
+          link: 'bootstrap-prototype'
         },
         {
           type: 'Reactive Form',
