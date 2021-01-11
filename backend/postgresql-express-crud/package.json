@@ -24,7 +24,7 @@
     "cross-env": "7.0.3",
     "express": "4.17.1",
     "express-prettify": "0.1.1",
-    "nodemon": "2.0.6",
-    "pg-promise": "10.8.6"
+    "nodemon": "2.0.7",
+    "pg-promise": "10.8.7"
   }
 }
