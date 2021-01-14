@@ -3,9 +3,9 @@ export const environment = {
   application:
   {
     name: 'angular-starter',
-    angular: 'Angular 11.0.8',
+    angular: 'Angular 11.0.9',
     bootstrap: 'Bootstrap 5.0.0',
-    fontawesome: 'Font Awesome 5.15.1',
+    fontawesome: 'Font Awesome 5.15.2',
   },
   url: 'http://localhost:5004',
   config: {
