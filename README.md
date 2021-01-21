@@ -53,9 +53,9 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 11.0.9
-- [x] Angular CLI : 11.0.7
-- [x] Angular Universal : 11.0.1
+- [x] Angular : 11.1.0
+- [x] Angular CLI : 11.1.0
+- [x] Angular Universal : 11.1.0
 - [x] Bootstrap : 5.0.0-beta1
 - [x] Fontawesome : 5.15.1
 - [x] jquery : 3.5.1
@@ -269,7 +269,7 @@ pm2 start process.config.js --env prod
 * in your browser [http://localhost:5004/cities](http://localhost:5004/cities) 
 
 ### Author
-* Updated : 20/01/2021
+* Updated : 21/01/2021
 * Author  : danny
 
 ## Documentation
