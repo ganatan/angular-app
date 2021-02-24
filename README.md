@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 11**
 
 
-* Frontend - [**Angular 11.2.1**](https://github.com/angular/angular/releases) & [**Angular CLI 11.2.1**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 11.2.2**](https://github.com/angular/angular/releases) & [**Angular CLI 11.2.1**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototypes - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) & [**bootstrap 4**](https://getbootstrap.com/docs/4.5/getting-started/download/)
 
@@ -269,7 +269,7 @@ pm2 start process.config.js --env prod
 * in your browser [http://localhost:5004/cities](http://localhost:5004/cities) 
 
 ### Author
-* Updated : 18/02/2021
+* Updated : 24/02/2021
 * Author  : danny
 
 ## Documentation
