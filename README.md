@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 11**
 
 
-* Frontend - [**Angular 11.2.3**](https://github.com/angular/angular/releases) & [**Angular CLI 11.2.2**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 11.2.4**](https://github.com/angular/angular/releases) & [**Angular CLI 11.2.3**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototypes - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) & [**bootstrap 4**](https://getbootstrap.com/docs/4.5/getting-started/download/)
 
@@ -53,12 +53,12 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 11.2.3
-- [x] Angular CLI : 11.2.2
-- [x] Angular Universal : 11.2.0
-- [x] Bootstrap : 5.0.0-beta1
-- [x] Fontawesome : 5.15.1
-- [x] jquery : 3.5.1
+- [x] Angular : 11.2.4
+- [x] Angular CLI : 11.2.3
+- [x] Angular Universal : 11.2.1
+- [x] Bootstrap : 5.0.0-beta2
+- [x] Fontawesome : 5.15.2
+- [x] jquery : 3.6.0
 
 > Features
 - [x] Routing
@@ -124,6 +124,9 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run lint`
 * `npm run test`
 * `npm run e2e`
+
+## Tests prerequisites
+- ChromeDriver only supports Chrome version 89
 
 ### Compilation
 * `npm run build`       ( without SSR)
@@ -269,7 +272,7 @@ pm2 start process.config.js --env prod
 * in your browser [http://localhost:5004/cities](http://localhost:5004/cities) 
 
 ### Author
-* Updated : 26/02/2021
+* Updated : 07/03/2021
 * Author  : danny
 
 ## Documentation
