@@ -120,7 +120,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * default: LOCAL JSON
 * LOCAL REST API CRUD : http://localhost:5004
 
-## Tests (Use Chrome Version 87 minimum)
+## Tests
 * `npm run lint`
 * `npm run test`
 * `npm run e2e`
