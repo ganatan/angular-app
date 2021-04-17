@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #212121;">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <span class="mr-1">ganatan</span>
+          <span class="me-1">ganatan</span>
           <img src="assets/params/images/logo/ganatan.png" width="20" height="20" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault"
@@ -30,27 +30,27 @@
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
               <a class="nav-link text-white" href="#">
-                <i class="fas fa-home mr-1"></i><span>home</span>
+                <i class="fas fa-home me-1"></i><span>home</span>
               </a>
             </li>
             <li class="nav-item active">
               <a class="nav-link text-white" href="#">
-                <i class="far fa-question-circle mr-1"></i>About
+                <i class="far fa-question-circle me-1"></i>About
               </a>
             </li>
             <li class="nav-item active">
               <a class="nav-link text-white" href="#">
-                <i class="fas fa-envelope mr-1"></i>Contact
+                <i class="fas fa-envelope me-1"></i>Contact
               </a>
             </li>
             <li class="nav-item active">
               <a class="nav-link text-white" href="#">
-                <i class="fas fa-user mr-1"></i>Sign in
+                <i class="fas fa-user me-1"></i>Sign in
               </a>
             </li>
             <li class="nav-item active">
               <a class="nav-link text-white" href="https://github.com/ganatan">
-                <i class="fab fa-github mr-1"></i>Github
+                <i class="fab fa-github me-1"></i>Github
               </a>
             </li>
           </ul>
@@ -63,28 +63,28 @@
     <div class="container-fluid">
 
       <h2 class="card-title text-primary">Popovers</h2>
-      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title"
+      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"
         data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
         popover</button>
       <hr>
-      <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover"
-        data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
         Popover on top
       </button>
 
-      <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover"
-        data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
         Popover on right
       </button>
 
-      <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover"
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
         data-placement="bottom" data-content="Vivamus
           sagittis lacus vel augue laoreet rutrum faucibus.">
         Popover on bottom
       </button>
 
-      <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover"
-        data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
         Popover on left
       </button>
 
@@ -95,18 +95,17 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <p class="text-center text-white">&copy; 2020 - www.ganatan.com</p>
+          <p class="text-center text-white">&copy; 2021 - www.ganatan.com</p>
         </div>
       </div>
     </div>
   </div>
 
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/params/js/index.js"></script>
 
 
   <script>
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="popover"]'))
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
       return new bootstrap.Popover(popoverTriggerEl)
     })

@@ -8,7 +8,7 @@
           data-canonical-src="https://api.ganatan.com/articles/img/forkme.png" />
       </a>
       <a class="navbar-brand" routerLink="/">
-        <span class="mr-1">ganatan</span>
+        <span class="me-1">ganatan</span>
         <img src="assets/params/images/logo/ganatan.png" width="20" height="20" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav"
@@ -19,7 +19,7 @@
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
             <a class="nav-link text-white" routerLink="/">
-              <i class="fas fa-home mr-1"></i>home
+              <i class="fas fa-home me-1"></i>home
             </a>
           </li>
           <li class="nav-item active">
@@ -29,17 +29,17 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link text-white" routerLink="/contact">
-              <i class="fas fa-envelope mr-1"></i>Contact
+              <i class="fas fa-envelope me-1"></i>Contact
             </a>
           </li>
           <li class="nav-item active">
             <a class="nav-link text-white" routerLink="/signin">
-              <i class="fas fa-user mr-1"></i>Sign in
+              <i class="fas fa-user me-1"></i>Sign in
             </a>
           </li>
           <li class="nav-item active">
             <a class="nav-link text-white" href="https://github.com/ganatan">
-              <i class="fab fa-github mr-1"></i>Github
+              <i class="fab fa-github me-1"></i>Github
             </a>
           </li>
         </ul>
@@ -50,7 +50,116 @@
 
 </header>
 
-<main class="">
+
+<div class="container-xxl my-md-4 bd-layout">
+
+  <aside class="bd-sidebar">
+    <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+      <ul class="list-unstyled mb-0 py-3 pt-md-1">
+        <li class="mb-1">
+          <a class="bd-select d-inline-flex align-items-center rounded" data-bs-toggle="collapse" href="#ganatan-collapse"
+            role="button" aria-expanded="true" aria-current="true">
+            <i class="fas fa-house-user me-2"></i>
+            About Ganatan
+          </a>
+          <ul class="list-unstyled font-weight-normal mb-2 collapse" id="ganatan-collapse">
+            <li><a (click)="onSelectMenu('about')" class="d-inline-flex align-items-center rounded active"
+                aria-current="page">About</a>
+            </li>
+            <li><a (click)="onSelectMenu('contact')" class="d-inline-flex align-items-center rounded">Contact</a></li>
+          </ul>
+        </li>
+        <li *ngFor="let item of items; let i = index" class="mb-1">
+          <a class="bd-select d-inline-flex align-items-center rounded" data-bs-toggle="collapse"
+            href="#{{ item.link }}-collapse" role="button" aria-expanded="true" aria-current="true">
+            <i class="fas fa-house-user me-2"></i>
+            {{ item.name }}
+          </a>
+          <div class="collapse" id="{{ item.link }}-collapse">
+            <ul class="list-unstyled fw-normal pb-1 small">
+              <li *ngFor="let element of item.elements"><a (click)="onSelectMenu(element.link)" class="d-inline-flex align-items-center rounded"
+                  aria-current="page">
+                  {{ element.name }}</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  <!--  <div class="p-3 bg-white" style="width: 280px;">
+    <ul class="list-unstyled ps-0">
+      <li *ngFor="let item of items; let i = index" class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+          data-bs-target="#{{ i }}" aria-expanded="true">
+          {{ i }}
+        </button>
+        <div class="collapse" id="{{ i }}">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li *ngFor="let element of item.elements"><a href="" class="link-dark rounded">{{ element.name }}</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div> -->
+
+
+
+  <!--  <aside class="bd-sidebar">
+    <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+      <ul class="list-unstyled mb-0 py-3 pt-md-1">
+        <li *ngFor="let item of items" class="mb-1">
+          <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse"
+            data-bs-target="#{{ item.link }}-collapse" aria-expanded="true" aria-current="true">
+            Getting started
+          </button>
+          <div class="collapse" id="{{ item.link }}-collapse">
+            <ul class="list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="d-inline-flex align-items-center rounded" aria-current="page">
+                  Getting started 1</a></li>
+              <li><a href="#" class="d-inline-flex align-items-center rounded">Getting started 2</a></li>
+              <li><a href="#" class="d-inline-flex align-items-center rounded">Getting started 3</a></li>
+              <li><a href="#" class="d-inline-flex align-items-center rounded">Getting started 4</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </aside> -->
+
+  <!--  <aside class="bd-sidebar">
+    <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+      <ul class="list-unstyled mb-0 py-3 pt-md-1">
+        <li *ngFor="let item of items" class="mb-1 active">
+          <a class="d-inline-flex align-items-center rounded" data-bs-toggle="collapse" href="#{{ item.link }}-collapse"
+            role="button" aria-expanded="true" aria-current="true">
+            {{ item.name }}
+          </a>
+          <div class="collapse" id="{{ item.link }}-collapse">
+            <ul class="list-unstyled fw-normal pb-1 small">
+              <li *ngFor="let element of item.elements"><a (click)="onSelectMenu(element.link)"
+                  class="d-inline-flex align-items-center rounded">{{ element.name }}</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </aside> -->
+
+  <main class="bd-main order-1">
+    <div class="bd-content ps-lg-4">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+
+</div>
+
+
+
+<!--<main class="">
   <div class="container-xxl bd-layout">
     <div class="bd-sidebar">
       <nav class="collapse bd-links pt-4" id="bd-docs-nav">
@@ -85,7 +194,7 @@
       <router-outlet></router-outlet>
     </div>
   </div>
-</main>
+</main> -->
 
 <div class="footer" style="background-color:#1976d2">
   <div class="container">

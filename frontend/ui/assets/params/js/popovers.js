@@ -1,3 +1,3 @@
 $(function () {
-  $('[data-bs-toggle="popover"]').popover()
+  $('[data-toggle="popover"]').popover()
 });
