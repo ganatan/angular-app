@@ -7,26 +7,6 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 const routes: Routes = [
   { path: '', component: HomeComponent, },
   {
-    path: 'typescript',
-    loadChildren: () => import('./modules/application/example-typescript/tutorial.module')
-      .then(mod => mod.TutorialModule)
-  },
-  {
-    path: 'crud',
-    loadChildren: () => import('./modules/application/example-crud/tutorial.module')
-      .then(mod => mod.TutorialModule)
-  },
-  {
-    path: 'movies-images-list',
-    loadChildren: () => import('./modules/application/movies-images-list/movies-images-list.module')
-      .then(mod => mod.MoviesImagesListModule)
-  },
-  {
-    path: 'leaflet',
-    loadChildren: () => import('./modules/application/example-leaflet/tutorial.module')
-      .then(mod => mod.TutorialModule)
-  },
-  {
     path: 'charts',
     loadChildren: () => import('./modules/application/example-charts/tutorial.module')
       .then(mod => mod.TutorialModule)
@@ -35,7 +15,7 @@ const routes: Routes = [
     path: 'httpclient',
     loadChildren: () => import('./modules/application/items/items.module')
       .then(mod => mod.ItemsModule)
-  },
+  },  
   {
     path: 'template-driven-forms',
     loadChildren: () => import('./modules/application/example-template-driven-forms/tutorial.module')
@@ -55,12 +35,12 @@ const routes: Routes = [
     path: 'reactive-form',
     loadChildren: () => import('./modules/application/example-reactive-form/tutorial.module')
       .then(mod => mod.TutorialModule)
-  },
+  },    
   {
-    path: 'bootstrap-prototype',
-    loadChildren: () => import('./modules/application/example-bootstrap-prototype/example-bootstrap-prototype.module')
-      .then(mod => mod.ExampleBootstrapPrototypeModule)
-  },
+    path: 'bootstrap',
+    loadChildren: () => import('./modules/application/example-bootstrap/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },  
   {
     path: 'contact',
     loadChildren: () => import('./modules/general/contact/contact.module')
@@ -82,7 +62,7 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     initialNavigation: 'enabled'
-  })],
+})],
   exports: [RouterModule],
   declarations: []
 })

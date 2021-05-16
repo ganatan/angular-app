@@ -45,7 +45,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let song of songs" class="table-{{ song.class }}" (click)="select(song)">
+        <tr *ngFor="let song of songs" class="table" (click)="select(song)">
           <td class="text-secondary" style="cursor: pointer;text-align:center"><i
               class="fab fa-youtube text-danger"></i></td>
           <td class="text-secondary" style="cursor: pointer;text-align:center">{{ song.top }}</td>

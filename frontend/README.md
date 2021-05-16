@@ -1,4 +1,4 @@
-# Angular 11 / Bootstrap 5 & CRUD REST API
+# Angular 12 / Bootstrap 5 & CRUD REST API
 # Frontend
 
 
@@ -10,9 +10,7 @@
 * in your browser [http://localhost:4200](http://localhost:4200) 
 
 ## Tests
-* `npm run lint`
 * `npm run test`
-* `npm run e2e`
 
 ## Tests prerequisites
 - ChromeDriver only supports Chrome version 89
@@ -23,6 +21,7 @@
 
 ### Production
 * `npm run serve:ssr`
+
 * in your browser [http://localhost:4000](http://localhost:4000) 
 
 

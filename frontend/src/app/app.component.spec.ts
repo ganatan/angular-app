@@ -7,13 +7,12 @@ describe('AppComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         RouterTestingModule
-      ],
+      ],            
       declarations: [
         AppComponent
       ],
     }).compileComponents();
   });
-
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);

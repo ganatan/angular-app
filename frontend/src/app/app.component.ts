@@ -9,8 +9,37 @@ import { Renderer2 } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-starter';
-  version = 'Angular version 11.2.13';
+  version = 'Angular version 12.0.0';
   items = [
+    {
+      name: 'bootstrap', link: 'bootstrap',
+      elements: [
+        { name: 'alerts', link: 'bootstrap/alerts' },
+        { name: 'badge', link: 'bootstrap/badge' },
+        { name: 'blockquotes', link: 'bootstrap/blockquotes' },
+        { name: 'breadcrumb', link: 'bootstrap/breadcrumb' },
+        { name: 'buttons', link: 'bootstrap/buttons' },
+        { name: 'collapse', link: 'bootstrap/collapse' },
+        { name: 'dropdowns', link: 'bootstrap/dropdowns' },
+        { name: 'forms', link: 'bootstrap/forms' },
+        { name: 'list-group', link: 'bootstrap/list-group' },
+        { name: 'modal', link: 'bootstrap/modal' },
+        { name: 'pagination', link: 'bootstrap/pagination' },
+        { name: 'popovers', link: 'bootstrap/popovers' },
+        { name: 'progress', link: 'bootstrap/progress' },
+        { name: 'spinners', link: 'bootstrap/spinners' },
+      ]
+    },
+    {
+      name: 'Features', link: 'Features',
+      elements: [
+        { name: 'charts', link: 'charts' },
+        { name: 'httpclient', link: 'httpclient' },
+        { name: 'template-driven-forms', link: 'template-driven-forms' },
+        { name: 'components', link: 'components' },
+        { name: 'services', link: 'services' }
+      ]
+    },
     {
       name: 'Reactive Form', link: 'reactive-form',
       elements: [
@@ -22,60 +51,6 @@ export class AppComponent {
         { name: 'form-builder-nested', link: 'reactive-form/form-builder-nested' },
         { name: 'form-array', link: 'reactive-form/form-array' },
         { name: 'form-multi', link: 'reactive-form/form-multi' },
-      ]
-    },
-    {
-      name: 'Features', link: 'Features',
-      elements: [
-        { name: 'charts', link: 'charts' },
-        { name: 'leaflet', link: 'leaflet' },
-        { name: 'movies-images-list', link: 'movies-images-list' },
-        { name: 'httpclient', link: 'httpclient' },
-        { name: 'template-driven-forms', link: 'template-driven-forms' },
-        { name: 'components', link: 'components' },
-        { name: 'services', link: 'services' }
-      ]
-    },
-    {
-      name: 'CRUD', link: 'crud',
-      elements: [
-        { name: 'continents', link: 'crud/continents' },
-        { name: 'countries', link: 'crud/countries' },
-        { name: 'cities', link: 'crud/cities' },
-        { name: 'shows', link: 'crud/shows' },
-        { name: 'movies', link: 'crud/movies' },
-        { name: 'shows-images', link: 'crud/shows-images' },
-        { name: 'movies-images', link: 'crud/movies-images' },
-      ]
-    },
-    {
-      name: 'Typescript', link: 'typescript',
-      elements: [
-        { name: 'modules', link: 'typescript/modules' },
-        { name: 'interfaces', link: 'typescript/interfaces' },
-        { name: 'classes', link: 'typescript/classes' },
-        { name: 'functions', link: 'typescript/functions' },
-        { name: 'types', link: 'typescript/types' },
-        { name: 'typing-function', link: 'typescript/typing-function' },
-      ]
-    },
-    {
-      name: 'bootstrap-prototype', link: 'bootstrap-prototype',
-      elements: [
-        { name: 'alerts', link: 'bootstrap-prototype/alerts' },
-        { name: 'badge', link: 'bootstrap-prototype/badge' },
-        { name: 'blockquotes', link: 'bootstrap-prototype/blockquotes' },
-        { name: 'breadcrumb', link: 'bootstrap-prototype/breadcrumb' },
-        { name: 'buttons', link: 'bootstrap-prototype/buttons' },
-        { name: 'collapse', link: 'bootstrap-prototype/collapse' },
-        { name: 'dropdowns', link: 'bootstrap-prototype/dropdowns' },
-        { name: 'forms', link: 'bootstrap-prototype/forms' },
-        { name: 'list-group', link: 'bootstrap-prototype/list-group' },
-        { name: 'modal', link: 'bootstrap-prototype/modal' },
-        { name: 'pagination', link: 'bootstrap-prototype/pagination' },
-        { name: 'popovers', link: 'bootstrap-prototype/popovers' },
-        { name: 'progress', link: 'bootstrap-prototype/progress' },
-        { name: 'spinners', link: 'bootstrap-prototype/spinners' },
       ]
     },
   ];

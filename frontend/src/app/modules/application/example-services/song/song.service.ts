@@ -9,7 +9,9 @@ import { SONGS } from './mock-songs';
 export class SongService {
 
   song: Song[];
-  constructor() { }
+  constructor() {
+    this.song = [];
+   }
 
   getSongs(year: number): Song[] {
     this.song = SONGS[year - 1].items;

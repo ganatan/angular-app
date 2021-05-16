@@ -13,8 +13,7 @@ describe('ContactComponent', () => {
         RouterTestingModule
       ],
       declarations: [ContactComponent]
-    })
-      .compileComponents();
+    }).compileComponents();
   });
 
   beforeEach(() => {

@@ -5,4 +5,14 @@ export class Movie {
   budget: number;
   worldwide: number;
   summary: string;
+
+  constructor() {
+    this.name = '';
+    this.releaseDate = '';
+    this.franchise = false;
+    this.budget = 0;
+    this.worldwide = 0;
+    this.summary = '';
+  }
+
 }

@@ -1,4 +1,4 @@
-# Angular 11 / Bootstrap 5 & CRUD REST API
+ # Angular 11 / Bootstrap 5 & CRUD REST API
 
 <table>
 <tr>
@@ -136,8 +136,8 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run serve:ssr`
 * in your browser [http://localhost:4000](http://localhost:4000) 
 
-### Bootstrap UI Prototypes 
-* `change directory` cd ui (Bootstrap 4) or ui-v5 (Bootstrap 5)
+### Bootstrap UI
+* `change directory` cd ui (Bootstrap 5)
 * Launch html pages in your browser
 
 

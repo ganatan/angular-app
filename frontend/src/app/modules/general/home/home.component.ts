@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
 import { environment } from '../../../../environments/environment';
+import { Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -17,21 +19,16 @@ export class HomeComponent implements OnInit {
   features: any;
 
   constructor(
+    @Inject(PLATFORM_ID) private platformId: object,
     private meta: Meta,
     private titleService: Title) {
     this.features =
       [
         {
-          type: 'Responsive Images list',
-          description: 'Display a Responsive List of Images, Marvel Cinematic Universe for the fun',
-          image: 'demo-responsive-images-list.png',
-          link: 'movies-images-list'
-        },
-        {
-          type: 'Bootstrap Prototype',
-          description: 'Bootstrap Prototype , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips',
+          type: 'Bootstrap',
+          description: 'Bootstrap , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips',
           image: 'demo-bootstrap-prototype.png',
-          link: 'bootstrap-prototype'
+          link: 'bootstrap'
         },
         {
           type: 'Reactive Form',
@@ -69,17 +66,14 @@ export class HomeComponent implements OnInit {
           image: 'demo-charts.png',
           link: 'charts'
         },
-        {
-          type: 'Leafleft',
-          description: 'An open-source JavaScript library for mobile-friendly interactive maps',
-          image: 'demo-leaflet-feature.png',
-          link: 'leaflet'
-        },
       ];
 
   }
 
   ngOnInit(): void {
+
+    this.loadScript('assets/params/js/index.js');
+
     this.titleService.setTitle('angular.ganatan: Une Application Web avec Angular');
     this.meta.addTag({
       name: 'author',
@@ -88,9 +82,22 @@ export class HomeComponent implements OnInit {
     this.meta.updateTag(
       {
         name: 'description',
-        content: 'Cette application a été développée avec Angular version 11.2.5 et bootstrap 5' +
+        content: 'Cette application a été développée avec Angular version 12.0.0 et bootstrap 5.0.1' +
           ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
       });
   }
 
+  loadScript(name: string): void {
+
+    if (isPlatformBrowser(this.platformId)) {
+      const s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.src = name;
+      s.async = false;
+      document.getElementsByTagName('head')[0].appendChild(s);
+    }
+  }
+
+
 }
+

@@ -22,7 +22,7 @@ export class ItemsComponent implements OnInit {
     private itemsService: ItemsService,
     @Inject(PLATFORM_ID) private platformId: object,
     @Inject(APP_ID) private appId: string) {
-
+      this.loaded = false;
   }
 
   ngOnInit(): void {

@@ -14,6 +14,8 @@ export class SmartphoneComponent implements OnInit {
   @Output() selected: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() {
+    this.smartphone = new Smartphone;
+    this.index = 1;
   }
 
   ngOnInit(): void {

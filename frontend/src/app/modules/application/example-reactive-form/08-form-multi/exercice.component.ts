@@ -80,10 +80,10 @@ export class ExerciceComponent implements OnInit {
   }
 
   onResetForm2(): void {
-    this.exampleForm2.get('name').setValue('Kylo Ren');
+/*    this.exampleForm2.get('name').setValue('Kylo Ren');
     this.exampleForm2.get('email').setValue('kyloren@starwars.com');
     this.exampleForm2.get('job').setValue('Sith');
-    this.exampleForm2.get('comment').setValue('Killer of Han solo');
+    this.exampleForm2.get('comment').setValue('Killer of Han solo');*/
   }
 
   /* exampleForm3 with Formbuilder */
