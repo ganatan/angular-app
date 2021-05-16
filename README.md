@@ -1,4 +1,4 @@
- # Angular 11 / Bootstrap 5 & CRUD REST API
+ # Angular 12 / Bootstrap 5 & CRUD REST API
 
 <table>
 <tr>
@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 11**
 
 
-* Frontend - [**Angular 11.2.13**](https://github.com/angular/angular/releases) & [**Angular CLI 11.2.12**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 12.0.0**](https://github.com/angular/angular/releases) & [**Angular CLI 12.0.0**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototypes - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) & [**bootstrap 4**](https://getbootstrap.com/docs/4.5/getting-started/download/)
 
@@ -53,12 +53,11 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 11.2.4
-- [x] Angular CLI : 11.2.3
-- [x] Angular Universal : 11.2.1
-- [x] Bootstrap : 5.0.0-beta2
+- [x] Angular : 12.0.0
+- [x] Angular CLI : 12.0.0
+- [x] Angular Universal : 12.0.0
+- [x] Bootstrap : 5.0.1
 - [x] Fontawesome : 5.15.2
-- [x] jquery : 3.6.0
 
 > Features
 - [x] Routing
