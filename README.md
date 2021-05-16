@@ -13,7 +13,7 @@ it's a repo designed to create a **Web Application with Angular 11**
 
 * Frontend - [**Angular 12.0.0**](https://github.com/angular/angular/releases) & [**Angular CLI 12.0.0**](https://github.com/angular/angular-cli/releases/)
 
-* UI prototypes - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) & [**bootstrap 4**](https://getbootstrap.com/docs/4.5/getting-started/download/)
+* UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
 * Backend - CRUD REST API [**PostgreSQL**](https://www.postgresql.org/download/)
 
@@ -31,7 +31,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 <p align="center">
   <p align="center">
     <a href="https://angular.ganatan.com/">
-      <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 11 Example Application"/>
+      <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 12 Example Application"/>
     </a>
   </p>
 </p>
