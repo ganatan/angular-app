@@ -7,11 +7,6 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 const routes: Routes = [
   { path: '', component: HomeComponent, },
   {
-    path: 'charts',
-    loadChildren: () => import('./modules/application/example-charts/tutorial.module')
-      .then(mod => mod.TutorialModule)
-  },
-  {
     path: 'httpclient',
     loadChildren: () => import('./modules/application/items/items.module')
       .then(mod => mod.ItemsModule)

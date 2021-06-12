@@ -9,7 +9,7 @@ import { Renderer2 } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-starter';
-  version = 'Angular version 12.0.2';
+  version = 'Angular version 12.0.4';
   items = [
     {
       name: 'bootstrap', link: 'bootstrap',
@@ -33,7 +33,6 @@ export class AppComponent {
     {
       name: 'Features', link: 'Features',
       elements: [
-        { name: 'charts', link: 'charts' },
         { name: 'httpclient', link: 'httpclient' },
         { name: 'template-driven-forms', link: 'template-driven-forms' },
         { name: 'components', link: 'components' },

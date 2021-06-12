@@ -60,12 +60,6 @@ export class HomeComponent implements OnInit {
           image: 'demo-template-driven-forms.png',
           link: 'template-driven-forms'
         },
-        {
-          type: 'Charts',
-          description: 'Integrate the open-source library Chart.js',
-          image: 'demo-charts.png',
-          link: 'charts'
-        },
       ];
 
   }
@@ -82,7 +76,7 @@ export class HomeComponent implements OnInit {
     this.meta.updateTag(
       {
         name: 'description',
-        content: 'Cette application a été développée avec Angular version 12.0.2 et bootstrap 5.0.1' +
+        content: 'Cette application a été développée avec Angular version 12.0.4 et bootstrap 5.0.1' +
           ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
       });
   }

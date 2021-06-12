@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 11**
 
 
-* Frontend - [**Angular 12.0.2**](https://github.com/angular/angular/releases) & [**Angular CLI 12.0.2**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 12.0.4**](https://github.com/angular/angular/releases) & [**Angular CLI 12.0.4**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
@@ -53,8 +53,8 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 12.0.2
-- [x] Angular CLI : 12.0.2
+- [x] Angular : 12.0.4
+- [x] Angular CLI : 12.0.4
 - [x] Angular Universal : 12.0.1
 - [x] Bootstrap : 5.0.1
 - [x] Fontawesome : 5.15.2
@@ -111,18 +111,9 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run start`
 * in your browser [http://localhost:4200](http://localhost:4200) 
 
-### Settings
-* you can select one of these Datasources
-
-* Change settings in src/app/modules/application/movies-images-list
-* File config/config.service.ts
-* default: LOCAL JSON
-* LOCAL REST API CRUD : http://localhost:5004
 
 ## Tests
 * `npm run lint`
-* `npm run test`
-* `npm run e2e`
 
 ## Tests prerequisites
 - ChromeDriver only supports Chrome version 89
@@ -271,7 +262,7 @@ pm2 start process.config.js --env prod
 * in your browser [http://localhost:5004/cities](http://localhost:5004/cities) 
 
 ### Author
-* Updated : 22/05/2021
+* Updated : 12/06/2021
 * Author  : danny
 
 ## Documentation
