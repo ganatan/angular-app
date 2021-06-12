@@ -57,7 +57,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 - [x] Angular CLI : 12.0.4
 - [x] Angular Universal : 12.0.1
 - [x] Bootstrap : 5.0.1
-- [x] Fontawesome : 5.15.2
+- [x] Fontawesome : 5.15.3
 
 > Features
 - [x] Routing
@@ -70,8 +70,6 @@ Here is a working live demo :  https://angular.ganatan.com/
 - [x] Services
 - [x] Reactive Form
 - [x] Template Driven Forms
-- [x] Search / Grid / Pagination
-- [x] Leaflet
 
 ## Quick start
 
