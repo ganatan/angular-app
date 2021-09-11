@@ -9,7 +9,7 @@ import { Renderer2 } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-starter';
-  version = 'Angular version 12.2.4';
+  version = 'Angular version 12.2.5';
   items = [
     {
       name: 'bootstrap', link: 'bootstrap',
