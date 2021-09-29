@@ -8,7 +8,7 @@
     alt="Ganatan Angular Example Demo" width="140" height="140">
   </a>
 
-it's a repo designed to create a **Web Application with Angular 11**
+it's a repo designed to create a **Web Application with Angular 12**
 
 
 * Frontend - [**Angular 12.2.7**](https://github.com/angular/angular/releases) & [**Angular CLI 12.2.7**](https://github.com/angular/angular-cli/releases/)
