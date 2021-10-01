@@ -27,7 +27,7 @@
 
 ## Documentation
 English Tutorials
-- Step by Step - https://www.ganatan.com/tutorials/en
+- Step by Step - http://www.ganatan.com/tutorials/en
 
 Tutoriels en français
-- Etapes par étapes - https://www.ganatan.com/tutorials
+- Etapes par étapes - http://www.ganatan.com/tutorials
