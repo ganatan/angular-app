@@ -3,7 +3,7 @@
 <table>
 <tr>
 <td>
-  <a href="https://www.ganatan.com/en">
+  <a href="http://www.ganatan.com/en">
     <img src="./img/ganatan-about-github.png" align="right"
     alt="Ganatan Angular Example Demo" width="140" height="140">
   </a>
@@ -25,12 +25,12 @@ it's a repo designed to create a **Web Application with Angular 12**
 </table>
 
 # [Live Demo](#live-demo)
-Here is a working live demo :  https://angular.ganatan.com/
+Here is a working live demo :  http://angular.ganatan.com/
 
 
 <p align="center">
   <p align="center">
-    <a href="https://angular.ganatan.com/">
+    <a href="http://angular.ganatan.com/">
       <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 12 Example Application"/>
     </a>
   </p>
@@ -40,7 +40,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 
 ## Lighthouse Audit
-<img src="https://api.ganatan.com/articles/img/search-engine-optimization-avec-angular-lighthouse-after.png"/>
+<img src="http://api.ganatan.com/articles/img/search-engine-optimization-avec-angular-lighthouse-after.png"/>
 
 ## Table of contents
 
@@ -265,7 +265,7 @@ pm2 start process.config.js --env prod
 
 ## Documentation
 English Tutorials
-- Step by Step - https://www.ganatan.com/tutorials/en
+- Step by Step - http://www.ganatan.com/tutorials/en
 
 Tutoriels en français
-- Etapes par étapes - https://www.ganatan.com/tutorials
+- Etapes par étapes - http://www.ganatan.com/tutorials
