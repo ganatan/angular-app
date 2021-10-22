@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 12**
 
 
-* Frontend - [**Angular 12.2.7**](https://github.com/angular/angular/releases) & [**Angular CLI 12.2.7**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 12.2.11**](https://github.com/angular/angular/releases) & [**Angular CLI 12.2.11**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
@@ -53,10 +53,10 @@ Here is a working live demo :  http://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 12.2.7
-- [x] Angular CLI : 12.2.7
-- [x] Angular Universal : 12.1.0
-- [x] Bootstrap : 5.1.1
+- [x] Angular : 12.2.11
+- [x] Angular CLI : 12.2.11
+- [x] Angular Universal : 12.1.2
+- [x] Bootstrap : 5.1.3
 - [x] Fontawesome : 5.15.4
 
 > Features
