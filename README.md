@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 12**
 
 
-* Frontend - [**Angular 12.2.11**](https://github.com/angular/angular/releases) & [**Angular CLI 12.2.11**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 12.2.12**](https://github.com/angular/angular/releases) & [**Angular CLI 12.2.12**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
@@ -53,9 +53,9 @@ Here is a working live demo :  http://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 12.2.11
-- [x] Angular CLI : 12.2.11
-- [x] Angular Universal : 12.1.2
+- [x] Angular : 12.2.12
+- [x] Angular CLI : 12.2.12
+- [x] Angular Universal : 12.1.3
 - [x] Bootstrap : 5.1.3
 - [x] Fontawesome : 5.15.4
 
@@ -260,7 +260,7 @@ pm2 start process.config.js --env prod
 * in your browser [http://localhost:5004/cities](http://localhost:5004/cities) 
 
 ### Author
-* Updated : 29/09/2021
+* Updated : 29/10/2021
 * Author  : danny
 
 ## Documentation
