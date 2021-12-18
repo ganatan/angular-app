@@ -12,9 +12,6 @@
 ## Tests
 * `npm run test`
 
-## Tests prerequisites
-- ChromeDriver only supports Chrome version 89
-
 ### Compilation
 * `npm run build`       ( without SSR)
 * `npm run build:ssr`   ( with SSR)

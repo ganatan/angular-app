@@ -8,7 +8,7 @@
     alt="Ganatan Angular Example Demo" width="140" height="140">
   </a>
 
-it's a repo designed to create a **Web Application with Angular 11**
+it's a repo designed to create a **Web Application with Angular 13**
 
 
 * Frontend - [**Angular 13.1.1**](https://github.com/angular/angular/releases) & [**Angular CLI 13.1.2**](https://github.com/angular/angular-cli/releases/)
@@ -31,7 +31,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 <p align="center">
   <p align="center">
     <a href="https://angular.ganatan.com/">
-      <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 12 Example Application"/>
+      <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 13 Example Application"/>
     </a>
   </p>
 </p>
@@ -56,7 +56,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 - [x] Angular : 13.1.1
 - [x] Angular CLI : 13.1.2
 - [x] Angular Universal : 13.0.1
-- [x] Bootstrap : 5.0.1
+- [x] Bootstrap : 5.1.3
 - [x] Fontawesome : 5.15.4
 
 > Features
