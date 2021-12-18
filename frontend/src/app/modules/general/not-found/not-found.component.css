@@ -1,0 +1,35 @@
+.nga-btn-notfound {
+  font-family: inherit;
+  color: inherit;
+  display: inline-block;
+  line-height: 32px;
+  line-height: 3.2rem;
+  padding: 0 16px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-radius: 3px;
+  text-decoration: none;
+  overflow: hidden;
+  border: none;
+  color: white;
+}
+
+.nga-btn-notfound {
+  background-color: black;
+  padding: 2px 34px 0;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 30px;
+  line-height: 3rem;
+  border-radius: 48px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+  box-sizing: border-box;
+  cursor: pointer
+}
+
+.nga-btn-notfound:hover {
+  background-color: #09238d;
+  color: white;
+}

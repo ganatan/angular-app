@@ -1,0 +1,30 @@
+{
+  "name": "postgresql-express-crud",
+  "version": "1.0.0",
+  "description": "PostgreSQL - Express - API RestFul CRUD",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon node server",
+    "prod": "cross-env NODE_ENV=prod node server",
+    "pm2-prod": "pm2 start process.config.js --env prod"
+  },
+  "author": {
+    "name": "danny",
+    "email": "dannyganatan@gmail.com",
+    "url": "https://www.ganatan.com/"
+  },
+  "license": "MCP",
+  "dependencies": {
+    "bluebird": "3.7.2",
+    "body-parser": "1.19.0",
+    "compression": "1.7.4",
+    "cookie-parser": "1.4.5",
+    "cors": "2.8.5",
+    "cross-env": "7.0.3",
+    "express": "4.17.1",
+    "express-prettify": "0.1.1",
+    "nodemon": "2.0.12",
+    "pg-promise": "10.11.0"
+  }
+}

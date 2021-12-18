@@ -1,6 +1,21 @@
 export const SONGS: any[] =
   [
     {
+      year: '2019',
+      items: [
+        { link: 'Fy1xQSiLx8U', top: '1', artist: 'Angèle feat. Roméo Elvis', title: 'Tout oublier' },
+        { link: 'AAqATW60uFM', top: '2', artist: 'Bramsito feat. Booba', title: 'Sale mood' },
+        { link: 'k_eEW2Ioe-o', top: '3', artist: 'Eva feat. Lartiste', title: 'On Fleek' },
+        { link: '3egagRvougI', top: '4', artist: 'Booba', title: 'PGP' },
+        { link: 'W-gmIG41dGA', top: '5', artist: 'Heuss l\'Enfoiré feat. ', title: 'Sofiane	Khapta' },
+        { link: '0uLp-tejcSo', top: '6', artist: 'Ninho', title: 'Goutte d\'eau' },
+        { link: 'BtyHYIpykN0', top: '7', artist: 'PNL', title: 'Au DD' },
+        { link: 'AhO3INtwFwA', top: '8', artist: 'Niska feat. Booba', title: 'Médicament' },
+        { link: 'e1wbWhMOCaQ', top: '9', artist: 'Booba', title: 'Arc-en-ciel' },
+        { link: 'r7qovpFAGrQ', top: '10', artist: 'Lil Nas X	', title: 'Old Town Road' },
+      ]
+    },
+    {
       year: '2018',
       items: [
         { link: 'S6baf8BqKDI', top: '1', artist: 'Lartiste featuring Caroliina', title: 'Mafiosa' },

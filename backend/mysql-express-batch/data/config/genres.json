@@ -1,9 +1,0 @@
-{
-  "table": "genre",
-  "endpoint": "genres",
-  "caption": "Genres",
-  "file": "genres.json",
-  "key": "name",
-  "data": "name",
-  "name": "name"
-}

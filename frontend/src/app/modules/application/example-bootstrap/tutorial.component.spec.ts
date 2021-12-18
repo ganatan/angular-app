@@ -4,7 +4,7 @@ import { TutorialComponent } from './tutorial.component';
 import { FormBuilder } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 
-describe('ExampleBootstrapComponentsComponent', () => {
+describe('ExampleBootstrapComponent', () => {
   let component: TutorialComponent;
   let fixture: ComponentFixture<TutorialComponent>;
 

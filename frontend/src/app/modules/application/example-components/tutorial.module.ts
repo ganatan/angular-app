@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { TutorialRoutingModule } from './tutorial-routing.module';
 import { TutorialComponent } from './tutorial.component';
-import { SmartphoneComponent } from './smartphone/smartphone.component';
+import { ChannelComponent } from './channel/channel.component';
 
 @NgModule({
   declarations: [
     TutorialComponent,
-    SmartphoneComponent
+    ChannelComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,32 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Template Driven Form Single Test</h5>
+    <hr>
+    <div class="row">
+      <div class="col-6">
+        <form>
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" [(ngModel)]="firstName"
+              aria-describedby="firstNameHelp">
+          </div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" [(ngModel)]="lastName"
+              aria-describedby="lastNameHelp">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-6">
+        Input Result
+        <div class="alert alert-primary" role="alert">
+          firstName : {{ firstName }}
+        </div>
+        <div class="alert alert-primary" role="alert">
+          lastName : {{ lastName }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

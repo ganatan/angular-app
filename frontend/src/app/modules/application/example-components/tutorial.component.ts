@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Smartphone } from './smartphone/smartphone';
+import { Channel } from './channel/channel';
 
 @Component({
   selector: 'app-example-components',
@@ -9,35 +9,37 @@ import { Smartphone } from './smartphone/smartphone';
 })
 export class TutorialComponent implements OnInit {
 
-  smartphones: Smartphone[];
-  smartphoneSelected: Smartphone;
+  channels: Channel[];
+  channelSelected: Channel;
 
   constructor() {
-    this.smartphones =
+    this.channelSelected = new Channel();
+    this.channels =
       [
-        { name: 'iPhone 3G', model: 'Apple', prize: '560', year: '2008' },
-        { name: 'iPhone 4', model: 'Apple', prize: '560', year: '2010' },
-        { name: 'iPhone 5', model: 'Apple', prize: '560', year: '2012' },
-        { name: 'iPhone 6', model: 'Apple', prize: '560', year: '2014' },
-        { name: 'iPhone 7', model: 'Apple', prize: '560', year: '2016' },
-        { name: 'iPhone X', model: 'Apple', prize: '560', year: '2017' },
-        { name: 'iPhone XS', model: 'Apple', prize: '560', year: '2018' },
-        { name: 'iPhone 8', model: 'Apple', prize: '560', year: '2017' },
-        { name: 'iPhone XR', model: 'Apple', prize: '560', year: '2018' },
-        { name: 'iPhone 11', model: 'Apple', prize: '560', year: '2019' },
+        { title: 'Disney Channel', name: 'disney-channel', releaseDate: '22/03/1997' },
+        { title: 'FOX', name: 'fox', releaseDate: '09/10/1986' },
+        { title: 'Discovery Channel', name: 'discovery-channel', releaseDate: '17/06/1985' },
+        { title: 'HBO', name: 'hbo', releaseDate: '08/11/1972' },
+        { title: 'History', name: 'history', releaseDate: '01/01/1995' },
+        { title: 'Hulu', name: 'hulu', releaseDate: '29/108/2007' },
+        { title: 'MTV', name: 'mtv', releaseDate: '01/08/1981' },
+        { title: 'NBC', name: 'nbc', releaseDate: '01/07/1941' },
+        { title: 'Netflix', name: 'netflix', releaseDate: '29/08/1997' },
+        { title: 'Showtime', name: 'showtime', releaseDate: '09/05/1976' },
+        { title: 'USA Nnetwork', name: 'usa-network', releaseDate: '22/09/1977' },
       ];
-      this.smartphoneSelected = this.smartphones[0];
   }
 
   ngOnInit(): void {
+    this.channelSelected = this.channels[0];
   }
 
   onSelected(event: any): void {
-    this.smartphoneSelected = event;
+    this.channelSelected = event;
   }
 
   onReset(): void {
-    this.smartphoneSelected = this.smartphones[0];
+    this.channelSelected = new Channel();
   }
 
 }

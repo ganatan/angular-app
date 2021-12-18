@@ -1,9 +1,0 @@
-{
-  "table": "continent",
-  "endpoint": "continents",
-  "caption": "Continents",
-  "file": "continents.json",
-  "key": "code",
-  "data": "code",
-  "name": "name"
-}

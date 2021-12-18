@@ -16,10 +16,12 @@ export class TutorialComponent implements OnInit {
   yearSelected: number;
 
   constructor(private songService: SongService) {
-    this.yearSelected = 1;
     this.songs = [];
-    this.songSelected = new Song;
-    }
+    this.yearSelected = 3;
+    this.songs = this.songService.getSongs(this.yearSelected);
+    this.songSelected = new Song();
+    this.songSelected = this.songs[0];
+  }
 
   ngOnInit(): void {
     this.getSongs(this.yearSelected);
@@ -33,10 +35,11 @@ export class TutorialComponent implements OnInit {
     this.songSelected = song;
   }
 
-  onChange($event: any): void {
+  onChangeYear($event: any): void {
     this.yearSelected = $event.target.value;
     this.songs = this.songService.getSongs(this.yearSelected);
-    this.songSelected = new Song;
+    this.songSelected = new Song();
+    this.songSelected = this.songs[0];
   }
 
 }

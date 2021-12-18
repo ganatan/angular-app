@@ -1,0 +1,44 @@
+<div class="container bd-layout">
+  <div class="bd-sidebar">
+    <ul class="list-unstyled p-2">
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+          data-bs-target="#reactive-collapse" aria-expanded="true" aria-current="true">
+          Reactive
+        </button>
+        <div class="collapse show" id="reactive-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a routerLink="/forms/prototype" class="link-dark rounded">Prototype</a></li>
+            <li><a routerLink="/forms/form-control" class="link-dark rounded">form-control</a></li>
+            <li><a routerLink="/forms/form-control-class" class="link-dark rounded">form-control-class</a></li>
+            <li><a routerLink="/forms/form-group" class="link-dark rounded">form-group</a></li>
+            <li><a routerLink="/forms/form-builder" class="link-dark rounded">form-builder</a></li>
+            <li><a routerLink="/forms/form-builder-nested" class="link-dark rounded">form-builder-nested</a></li>
+            <li><a routerLink="/forms/form-array" class="link-dark rounded">form-array</a></li>
+            <li><a routerLink="/forms/form-multi" class="link-dark rounded">form-multi</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+          data-bs-target="#template-collapse" aria-expanded="false">
+          Template Driven
+        </button>
+        <div class="collapse" id="template-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a routerLink="/forms/single" class="link-dark rounded">single</a></li>
+            <li><a routerLink="/forms/multi" class="link-dark rounded">multi</a></li>
+            <li><a routerLink="/forms/init-class" class="link-dark rounded">init-class</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col p-4">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>

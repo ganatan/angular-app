@@ -1,0 +1,50 @@
+<header class="navbar navbar-expand-lg navbar-dark fixed-top nga-navbar">
+  <nav class="container" aria-label="Main navigation">
+    <a routerLink="/" class="navbar-brand" alt="Accueil" aria-label="Ganatan">
+      <img src="./assets/params/images/logo/ganatan-logo.png" srcset="./assets/params/images/logo/ganatan-logo.png,
+      ./assets/params/images/logo/ganatan-logo@2x.png 2x" width="25" height="25" alt="Ganatan Logo">
+      <span class="nga-navbar-logo mx-1">ganatan</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/news">
+            <i class="fas fa-photo-video me-1"></i>News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/boxoffice">
+            <i class="fas fa-film me-1"></i>Boxoffice</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/bootstrap">
+            <i class="fab fa-bootstrap me-1"></i>Bootstrap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/angular">
+            <i class="fab fa-angular me-1"></i>Angular</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/about">
+            <i class="far fa-question-circle me-1"></i>About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/contact">
+            <i class="fas fa-envelope me-1"></i>Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button type="button" class="btn btn-sm nga-btn-navbar me-2" routerLink="/signup"><i
+            class="fas fa-user-plus me-2"></i>Sign up</button>
+        <button type="button" class="btn btn-sm btn-outline-light me-2" routerLink="/login"><i class="fas fa-sign-in-alt me-2"></i>Login</button>
+      </form>
+    </div>
+  </nav>
+</header>

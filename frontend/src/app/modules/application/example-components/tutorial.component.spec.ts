@@ -1,9 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TutorialComponent } from './tutorial.component';
-import { SmartphoneComponent } from './smartphone/smartphone.component';
+import { ChannelComponent } from './channel/channel.component';
 
-describe('TutorialComponent', () => {
+describe('ExampleComponentsComponent', () => {
   let component: TutorialComponent;
   let fixture: ComponentFixture<TutorialComponent>;
 
@@ -11,7 +11,7 @@ describe('TutorialComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         TutorialComponent,
-        SmartphoneComponent,
+        ChannelComponent,
       ]
     })
       .compileComponents();

@@ -10,6 +10,7 @@ export class Song {
     this.top = '';
     this.artist = '';
     this.title = '';
+
   }
 
 }

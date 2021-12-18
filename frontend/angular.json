@@ -30,10 +30,10 @@
               "src/robots.txt"
             ],
             "styles": [
-              "src/styles.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/assets/params/css/navbar.css"
+              "src/assets/params/css/fonts.googleapis.min.css",
+              "src/styles.css"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -158,10 +158,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-starter:build:production"
+              "browserTarget": "angular-starter:build:production",
+              "serverTarget": "angular-starter:server:production"
             },
             "development": {
-              "browserTarget": "angular-starter:build:development"
+              "browserTarget": "angular-starter:build:development",
+              "serverTarget": "angular-starter:server:development"
             }
           },
           "defaultConfiguration": "production"

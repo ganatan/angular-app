@@ -1,0 +1,290 @@
+.nga-btn {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 0.82rem;
+  -webkit-border-radius: 0.125rem;
+  border-radius: 0.125rem;
+}
+
+.nga-btn:hover, .nga-btn:active, .nga-btn:focus {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  outline: 0;
+}
+
+.nga-btn-primary {
+  border: 2px solid #4285f4 !important;
+  color: #4285f4 !important;
+  background-color: transparent !important;
+}
+
+.nga-form-control {
+  border: 1.20px solid #dfe3e7;
+  background-color: #fff;
+  border: 1.90px solid #dfe3e7;
+}
+
+.nga-form-control:focus {
+  color: #555252;
+  background-color: #fff;
+  border-color: #5a8dee;
+  border: 1.90px solid #5a8dee;
+  outline: 0;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .1)
+}
+
+.form-check .nga-form-check-label i {
+  color: grey;
+}
+
+.nga-badge {
+  display: inline-block;
+  padding: 0 12px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  background-color: #eceff1;
+  border-radius: 16px;
+  transition: all 0.3s linear;
+}
+
+.nga-badge:hover {
+  background-color: #e0e0e0;
+}
+
+.nga-badge .close {
+  padding-left: 10px;
+  line-height: 32px;
+}
+
+.nga-badge .fa-film {
+  color: grey;
+}
+
+.nga-badge .fa-desktop {
+  color: grey;
+}
+
+.nga-badge .fa-volume-up {
+  color: grey;
+}
+
+.nga-badge .fa-playstation {
+  color: grey;
+}
+
+.nga-badge .fa-photo-video {
+  color: grey;
+}
+
+.nga-card-movie {
+  padding: 5px 5px 5px 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0px solid #dfe3e7;
+  border-radius: 0.25rem;
+}
+
+.nga-card {
+  display: block;
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  border-radius: 2px;
+  transition: all .2s ease-in-out;
+  margin-top: 20px;
+}
+
+.nga-card .card-img-block {
+  width: 91%;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+}
+
+.nga-card .card-img-block .nga-card-img {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+  cursor: pointer;
+}
+
+.nga-player {
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+.nga-player:hover {
+  opacity: 0.4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nga-embed {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nga-embed::before {
+  display: block;
+  content: "";
+}
+
+.nga-embed .nga-embed-item, .nga-embed iframe, .nga-embed embed, .nga-embed object, .nga-embed video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.nga-embed-youtube::before {
+  padding-top: 56.25%;
+}
+
+.nga-z-depth {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important
+}
+
+.card-movie {
+  position: relative;
+  background-color: #fff;
+  border: 0px solid #ddd;
+  border-radius: 0.25rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+.card-movie-date a {
+  color: gray;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.card-movie-date {
+  padding: 0px 10px 0px 0px;
+  position: relative;
+  font-size: 9px;
+  border: 0px solid #ddd;
+  border-radius: 0.25rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: gray;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+.card-movie-date a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.card-movie-img {
+  opacity: 1.0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+
+.card-movie-img:hover {
+  opacity: 0.9;
+}
+
+.card-movie-text a {
+  color: #3F729B;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  cursor: pointer;
+}
+
+.card-movie-text i {
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+.card-movie-text a:hover {
+  color: black;
+}
+
+.card-movie-text {
+  padding: 7px 4px 0px 0px;
+  display: block;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.4;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nga-bd-blue-200 {
+  color: #000;
+  background-color: #9ec5fe
+}
+
+.nga-bd-blue-300 {
+  color: #000;
+  background-color: #6ea8fe
+}
+
+.nga-bd-blue-400 {
+  color: #000;
+  background-color: #3d8bfd
+}
+
+.nga-bd-blue-500 {
+  color: #fff;
+  background-color: #0d6efd
+}
+
+.nga-bd-blue-600 {
+  color: #fff;
+  background-color: #0a58ca
+}
+
+.nga-bd-blue-700 {
+  color: #fff;
+  background-color: #084298
+}
+
+.nga-bd-blue-800 {
+  color: #fff;
+  background-color: #052c65
+}

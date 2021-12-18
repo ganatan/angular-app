@@ -1,0 +1,62 @@
+<div class="container py-5">
+  <div class="row pb-4 justify-content-center">
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+      <div class="row p-4 text-center">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">HttpClient Feature</h5>
+            <hr>
+            <p class="card-text">Commands</p>
+            <button type="button" class="btn btn-primary ms-2 mb-2" (click)="getUsers()">Get</button>
+            <button type="button" class="btn btn-primary ms-2 mb-2" (click)="resetUsers()">Reset</button>
+          </div>
+        </div>
+        <div *ngIf="!loaded">
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-success" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-warning" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-info" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-dark" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+      <div class="row p-4">
+        <div class="table-responsive nga-httpclient-table blue-gradient" *ngIf="loaded">
+          <table class="table table-hover table-striped table-responsive-md">
+            <thead>
+              <tr>
+                <th>name</th>
+                <th>username</th>
+                <th class="d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of items">
+                <td>{{item.name}}</td>
+                <td>{{item.username}}</td>
+                <td class="d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">{{item.email}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

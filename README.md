@@ -1,17 +1,17 @@
- # Angular 12 / Bootstrap 5 & CRUD REST API
+ # Angular 13 / Bootstrap 5 & CRUD REST API
 
 <table>
 <tr>
 <td>
-  <a href="http://www.ganatan.com/en">
+  <a href="https://www.ganatan.com/en">
     <img src="./img/ganatan-about-github.png" align="right"
     alt="Ganatan Angular Example Demo" width="140" height="140">
   </a>
 
-it's a repo designed to create a **Web Application with Angular 12**
+it's a repo designed to create a **Web Application with Angular 11**
 
 
-* Frontend - [**Angular 12.2.12**](https://github.com/angular/angular/releases) & [**Angular CLI 12.2.12**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 13.1.1**](https://github.com/angular/angular/releases) & [**Angular CLI 13.1.2**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
@@ -25,12 +25,12 @@ it's a repo designed to create a **Web Application with Angular 12**
 </table>
 
 # [Live Demo](#live-demo)
-Here is a working live demo :  http://angular.ganatan.com/
+Here is a working live demo :  https://angular.ganatan.com/
 
 
 <p align="center">
   <p align="center">
-    <a href="http://angular.ganatan.com/">
+    <a href="https://angular.ganatan.com/">
       <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 12 Example Application"/>
     </a>
   </p>
@@ -40,7 +40,7 @@ Here is a working live demo :  http://angular.ganatan.com/
 
 
 ## Lighthouse Audit
-<img src="http://api.ganatan.com/articles/img/search-engine-optimization-avec-angular-lighthouse-after.png"/>
+<img src="https://api.ganatan.com/articles/img/search-engine-optimization-avec-angular-lighthouse-after.png"/>
 
 ## Table of contents
 
@@ -53,10 +53,10 @@ Here is a working live demo :  http://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 12.2.12
-- [x] Angular CLI : 12.2.12
-- [x] Angular Universal : 12.1.3
-- [x] Bootstrap : 5.1.3
+- [x] Angular : 13.1.1
+- [x] Angular CLI : 13.1.2
+- [x] Angular Universal : 13.0.1
+- [x] Bootstrap : 5.0.1
 - [x] Fontawesome : 5.15.4
 
 > Features
@@ -70,6 +70,8 @@ Here is a working live demo :  http://angular.ganatan.com/
 - [x] Services
 - [x] Reactive Form
 - [x] Template Driven Forms
+- [x] Search / Grid / Pagination
+- [x] Leaflet
 
 ## Quick start
 
@@ -109,9 +111,18 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run start`
 * in your browser [http://localhost:4200](http://localhost:4200) 
 
+### Settings
+* you can select one of these Datasources
+
+* Change settings in src/app/modules/application/movies-images-list
+* File config/config.service.ts
+* default: LOCAL JSON
+* LOCAL REST API CRUD : http://localhost:5004
 
 ## Tests
 * `npm run lint`
+* `npm run test`
+* `npm run e2e`
 
 ## Tests prerequisites
 - ChromeDriver only supports Chrome version 89
@@ -260,12 +271,12 @@ pm2 start process.config.js --env prod
 * in your browser [http://localhost:5004/cities](http://localhost:5004/cities) 
 
 ### Author
-* Updated : 29/10/2021
+* Updated : 22/05/2021
 * Author  : danny
 
 ## Documentation
 English Tutorials
-- Step by Step - http://www.ganatan.com/tutorials/en
+- Step by Step - https://www.ganatan.com/tutorials/en
 
 Tutoriels en français
-- Etapes par étapes - http://www.ganatan.com/tutorials
+- Etapes par étapes - https://www.ganatan.com/tutorials

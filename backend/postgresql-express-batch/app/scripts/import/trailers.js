@@ -1,16 +1,21 @@
 async function createItem(db, item, index) {
   try {
+    console.log('0001:' + JSON.stringify(item))
     let values = {
-      code: item.code,
+      youtubeLink: item.youtubeLink,
+      releaseDate: item.releaseDate,
       createDate: item.createDate,
+      category: item.category,
+      name: item.name,
     };
-    let sql = 'INSERT INTO trailers' +
+    console.log('0002:' + JSON.stringify(values))
+    let sql = 'INSERT INTO trailer' +
       ' (' +
-      ' code' +
+      ' name' +
       ',create_date' +
       ' ) VALUES' +
       ' (' +
-      ' ${code}' +
+      ' ${name}' +
       ',${createDate}' +
       ' )';
     await db.none(sql, values)
