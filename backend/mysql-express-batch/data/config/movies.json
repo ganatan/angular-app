@@ -1,0 +1,9 @@
+{
+  "table": "movie",
+  "endpoint": "movies",
+  "caption": "Movies",
+  "file": "movies.json",
+  "key": "wikipedia_link",
+  "data": "wikipediaLink",
+  "name": "name"
+}

@@ -1,4 +1,4 @@
-# Angular 11 / Bootstrap 5 & CRUD REST API
+# Angular 13 / Bootstrap 5 & CRUD REST API
 
 ## Back-end
 

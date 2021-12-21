@@ -52,13 +52,13 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "3.7.2",
-    "body-parser": "1.19.0",
+    "body-parser": "1.19.1",
     "cross-env": "7.0.3",
-    "dateformat": "4.5.1",
-    "express": "4.17.1",
+    "dateformat": "5.0.2",
+    "express": "4.17.2",
     "express-prettify": "0.1.1",
     "fs": "0.0.1-security",
     "moment": "2.29.1",
-    "pg-promise": "10.11.0"
+    "pg-promise": "10.11.1"
   }
 }

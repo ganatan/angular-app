@@ -1,0 +1,9 @@
+{
+  "table": "gender",
+  "endpoint": "genders",
+  "caption": "Genders",
+  "file": "genders.json",
+  "key": "name",
+  "data": "name",
+  "name": "name"
+}
