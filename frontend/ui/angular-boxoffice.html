@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
+  <link href="./assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./assets/params/css/fonts.googleapis.min.css" rel="stylesheet">
+  <title>angular-movies</title>
+
+  <style>
+    body {
+      padding-top: 3.5rem;
+      font-family: "Roboto", sans-serif;
+    }
+  </style>
+
+  <style>
+    .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+      color: white;
+      font-weight: 500;
+      border-top: 1px solid #09238d;
+      border-bottom: 1px solid #09238d;
+    }
+
+    .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+      color: yellow;
+      border-top: 1px solid yellow;
+      border-bottom: 1px solid yellow;
+    }
+
+    .nga-navbar {
+      -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
+      background-color: #09238d;
+    }
+
+    .nga-navbar-logo {
+      font-weight: 700;
+    }
+
+    .nga-navbar-logo:hover {
+      color: rgba(255, 255, 255, 0.75);
+    }
+  </style>
+
+  <style>
+    .nga-footer {
+      background-color: #212121;
+      color: white;
+    }
+
+    .nga-footer a {
+      color: white;
+      text-decoration: none
+    }
+
+    .nga-footer a:hover,
+    .nga-footer a:focus {
+      color: yellow;
+      text-decoration: underline;
+    }
+
+    .nga-footer .hint {
+      background-color: #1976d2;
+    }
+
+    .nga-footer .hint:hover {
+      opacity: 0.8;
+    }
+
+    .nga-btn-social {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      padding: 0;
+      margin: 10px;
+      overflow: hidden;
+      vertical-align: middle;
+      cursor: pointer;
+      border-radius: 50%;
+      -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      width: 47px;
+      height: 47px
+    }
+
+    .nga-btn-social i {
+      font-size: 1.25rem;
+      line-height: 47px
+    }
+
+    .nga-btn-social i {
+      display: inline-block;
+      width: inherit;
+      color: white;
+      text-align: center
+    }
+
+    .nga-btn-social:hover {
+      -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+
+    .nga-btn-social i:hover {
+      color: black;
+    }
+  </style>
+
+  <style>
+    .nga-btn-github {
+      background-color: #333;
+    }
+
+    .nga-btn-gitlab {
+      background-color: #ff4500;
+    }
+
+    .nga-btn-bitbucket {
+      background-color: #4c75a3;
+    }
+
+    .nga-btn-linkedin {
+      background-color: #0082ca;
+    }
+
+    .nga-btn-twitter {
+      background-color: #55acee;
+    }
+  </style>
+
+  <style>
+    .nga-container {
+      font-size: 0.9em;
+    }
+
+    .nga-btn-boxoffice {
+      -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+      font-size: 0.81rem;
+      border: 0;
+      -webkit-border-radius: 0.125rem;
+      border-radius: 0.125rem;
+    }
+
+    .nga-btn-boxoffice:hover,
+    .nga-btn-boxoffice:active,
+    .nga-btn-boxoffice:focus {
+      -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+      outline: 0;
+    }
+
+    .nga-btn-boxoffice-primary {
+      border: 2px solid #4285f4 !important;
+      color: #4285f4 !important;
+      background-color: transparent !important;
+    }
+  </style>
+
+  <style>
+    .nga-card-filter {
+      display: block;
+      background-color: rgba(255, 255, 255, .8);
+      -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      border-radius: 2px;
+      transition: all .2s ease-in-out;
+      margin-top: 20px;
+    }
+
+    .nga-card-filter .card-img-block {
+      width: 91%;
+      margin: 0 auto;
+      position: relative;
+      top: -20px;
+    }
+
+    .nga-card-filter .card-img-block .nga-card-img {
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+      cursor: pointer;
+    }
+
+    .nga-filterEnabled {
+      color: #dee2e6;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header class="navbar navbar-expand-lg navbar-dark fixed-top nga-navbar">
+    <nav class="container" aria-label="Main navigation">
+      <a href="" class="navbar-brand" alt="Accueil" aria-label="Ganatan">
+        <img src="./assets/params/images/logo/ganatan-logo.png" srcset="./assets/params/images/logo/ganatan-logo.png,
+        ./assets/params/images/logo/ganatan-logo@2x.png 2x" width="25" height="25" alt="Ganatan Logo">
+        <span class="nga-navbar-logo mx-1">ganatan</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="">
+              <i class="fas fa-photo-video me-1"></i>News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="">
+              <i class="fas fa-film me-1"></i>Boxoffice</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="">
+              <i class="fab fa-bootstrap me-1"></i>Bootstrap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="">
+              <i class="fab fa-angular me-1"></i>Angular</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="">
+              <i class="far fa-question-circle me-1"></i>About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col">
+          <div class="d-flex">
+            <div class="d-flex me-auto">
+              <input type="text" class="form-control me-2" id="name" placeholder="movies ...">
+              <button type="button" class="btn nga-btn-boxoffice-primary btn-sm nga-btn-boxoffice"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="d-flex me-auto d-none d-md-block">
+              <div class=" pt-2 ml-4">
+                <b>
+                  <span style="color:gray;">7 Movies</span>
+                </b>
+              </div>
+            </div>
+            <div class="d-flex ms-auto">
+              <button class="btn nga-btn-boxoffice-primary btn-sm nga-btn-boxoffice me-2" type="button">
+                <i class="fas fa-plus" aria-hidden="true"></i>
+              </button>
+              <button class="btn nga-btn-boxoffice-primary btn-sm nga-btn-boxoffice" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <span class="d-none d-sm-inline-block">&nbsp;
+                  <strong>Filters</strong>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col">
+          <div class="collapse" id="collapseFilter">
+            <form>
+              <div class="nga-card-filter mb-2">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 mb-4">
+                      <strong class="text-primary">Filters</strong>
+                      <hr>
+                      <div class="row g-3 mb-1">
+                        <label for="filterDate" class="col-sm-3 col-form-label me-2">Date</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control form-select-sm" placeholder="" aria-label="startDate">
+                        </div>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control form-select-sm" placeholder="" aria-label="endDate">
+                        </div>
+                      </div>
+                      <div class="row g-3 mb-1">
+                        <label for="filterWorlwide" class="col-sm-3 col-form-label me-2">WorldWide</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control form-select-sm" placeholder=""
+                            aria-label="minWorlwide">
+                        </div>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control form-select-sm" placeholder=""
+                            aria-label="maxWorlwide">
+                        </div>
+                      </div>
+                      <div class="row g-3 mb-1">
+                        <label for="filterInternational" class="col-sm-3 col-form-label me-2">International</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control form-select-sm" placeholder=""
+                            aria-label="minInternational">
+                        </div>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control form-select-sm" placeholder=""
+                            aria-label="maxInternational">
+                        </div>
+                      </div>
+                      <div class="row g-3">
+                        <label for="filterDomestic" class="col-sm-3 col-form-label me-2">Domestic</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control form-select-sm" placeholder=""
+                            aria-label="minDomestic">
+                        </div>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control form-select-sm" placeholder=""
+                            aria-label="maxDomestic">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-4">
+                      <h6>
+                        <strong class="text-primary">Sorted by</strong>
+                      </h6>
+                      <hr>
+                      <div class="row g-3 mb-1">
+                        <div class="col-sm-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sortType" id="sortRankDesc" checked>
+                            <label class="form-check-label" for="sortRankDesc">
+                              Rank
+                              <i class="fas fa-arrows-alt-v ms-1"></i>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sortType" id="sortRankAsc">
+                            <label class="form-check-label" for="sortRankAsc">
+                              Rank
+                              <i class="fas fa-long-arrow-alt-up ms-1"></i>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sortType" id="sortDateDesc">
+                            <label class="form-check-label" for="sortDateDesc">
+                              Date
+                              <i class="fas fa-long-arrow-alt-down ms-1"></i>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sortType" id="sortDateAsc">
+                            <label class="form-check-label" for="sortDateAsc">
+                              Date
+                              <i class="fas fa-long-arrow-alt-up ms-1"></i>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sortType" id="sortNameDesc">
+                            <label class="form-check-label" for="sortNameDesc">
+                              Name
+                              <i class="fas fa-long-arrow-alt-down ms-1"></i>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sortType" id="sortNameAsc">
+                            <label class="form-check-label" for="sortNameAsc">
+                              Name
+                              <i class="fas fa-long-arrow-alt-up ms-1"></i>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row g-3 mb-1">
+                        <div class="col-sm-8">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sortType" id="sorWorlwideDesc">
+                            <label class="form-check-label" for="sorWorlwideDesc">
+                              Worlwide
+                              <i class="fas fa-long-arrow-alt-down ms-1"></i>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sortType" id="sortWorldwideAsc">
+                            <label class="form-check-label" for="sortWorldwideAsc">
+                              Worlwide
+                              <i class="fas fa-long-arrow-alt-up ms-1"></i>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-3 mb-1">
+                        <div class="col-sm-8">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sortType" id="sortInternationalDesc">
+                            <label class="form-check-label" for="sortInternationalDesc">
+                              International
+                              <i class="fas fa-long-arrow-alt-down ms-1"></i>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sortType" id="sortInternationalAsc">
+                            <label class="form-check-label" for="sortInternationalAsc">
+                              International
+                              <i class="fas fa-long-arrow-alt-up ms-1"></i>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-3 mb-1">
+                        <div class="col-sm-8">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sortType" id="sortDomesticDesc">
+                            <label class="form-check-label" for="sortDomesticDesc">
+                              Domestic
+                              <i class="fas fa-long-arrow-alt-down ms-1"></i>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sortType" id="sortDomesticAsc">
+                            <label class="form-check-label" for="sortDomesticAsc">
+                              Domestic
+                              <i class="fas fa-long-arrow-alt-up ms-1"></i>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-4">
+                      <h6>
+                        <strong class="text-primary">Elements per page</strong>
+                      </h6>
+                      <hr>
+                      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option value="1">5 Elements</option>
+                        <option value="2">10 Elements</option>
+                        <option value="3">20 Elements</option>
+                        <option value="4">30 Elements</option>
+                        <option value="5">40 Elements</option>
+                        <option selected value="6">50 Elements</option>
+                        <option value="7">100 Elements</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center nga-container">
+        <div class="table-responsive pt-4">
+          <table class="table table-hover table-striped table-bordered table-sm">
+            <thead>
+              <tr>
+                <th style="cursor: pointer"
+                  class="text-info font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  Rank<i class="ms-1 fas fa-arrows-alt-v nga-filterEnabled"></i></th>
+                <th class="text-center text-danger">Trailer</th>
+                <th style="cursor: pointer" class="text-primary font-weight-bold text-center">Name<i
+                    class="ms-1 fas fa-long-arrow-alt-up nga-filterEnabled"></i></th>
+                <th
+                  class="text-success font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  Wiki</th>
+                <th style="cursor: pointer" class="font-weight-bold text-center">Date<i
+                    class="ms-1 fas fas fa-arrows-alt-v nga-filterEnabled"></i></th>
+                <th style="cursor: pointer" class="text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  Worldwide<i class="ms-1 fas fa-long-arrow-alt-up"></i>
+                </th>
+                <th style="cursor: pointer" class="text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  International<i class="ms-1 fas fa-arrows-alt-v nga-filterEnabled"></i></th>
+                <th style="cursor: pointer" class="text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  Domestic<i class="ms-1 fas fa-arrows-alt-v nga-filterEnabled"></i></th>
+                <th style="cursor: pointer" class="text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  Budget<i class="ms-1 fas fas fa-arrows-alt-v nga-filterEnabled"></i></th>
+              </tr>
+            </thead>
+            <tbody style="cursor: pointer">
+              <tr>
+                <td class="text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  1
+                </td>
+                <td class="text-center text-danger">
+                  <i class="fab fa-youtube"></i>
+                </td>
+                <td class="text-primary font-weight-bold text-center">
+                  Indiana Jones and the Last Crusade
+                </td>
+                <td class="font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  <i class="fab fa-wikipedia-w text-success fw-bold"></i>
+                </td>
+                <td class="font-weight-bold text-center">
+                  12/06/81
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  389,925,971
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  141,766,000
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  248,159,971
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  18,000,000
+                </td>
+              </tr>
+              <tr>
+                <td class="text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  2
+                </td>
+                <td class="text-center text-danger">
+                  <i class="fab fa-youtube"></i>
+                </td>
+                <td class="text-primary font-weight-bold text-center">
+                  Indiana Jones and the Last Crusade
+                </td>
+                <td class="font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  <i class="fab fa-wikipedia-w text-success"></i>
+                </td>
+                <td class="font-weight-bold text-center">
+                  12/06/81
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  389,925,971
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  141,766,000
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  248,159,971
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  18,000,000
+                </td>
+              </tr>
+              <tr>
+                <td class="text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  3
+                </td>
+                <td class="text-center text-danger">
+                  <i class="fab fa-youtube"></i>
+                </td>
+                <td class="text-primary font-weight-bold text-center">
+                  Indiana Jones and the Last Crusade
+                </td>
+                <td class="font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  <i class="fab fa-wikipedia-w text-success"></i>
+                </td>
+                <td class="font-weight-bold text-center">
+                  12/06/81
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  389,925,971
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  141,766,000
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  248,159,971
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  18,000,000
+                </td>
+              </tr>
+              <tr>
+                <td class="text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  4
+                </td>
+                <td class="text-center text-danger">
+                  <i class="fab fa-youtube"></i>
+                </td>
+                <td class="text-primary font-weight-bold text-center">
+                  Indiana Jones and the Last Crusade
+                </td>
+                <td class="font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  <i class="fab fa-wikipedia-w text-success"></i>
+                </td>
+                <td class="font-weight-bold text-center">
+                  12/06/81
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  389,925,971
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  141,766,000
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  248,159,971
+                </td>
+                <td class="text-end d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">
+                  18,000,000
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav aria-label="pagination">
+            <ul class="pagination pagination-sm justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&lsaquo;</span>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&rsaquo;</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="nga-footer">
+    <div class="hint">
+      <div class="container text-center text-md-start">
+        <div class="row py-4">
+          <div class="col">
+            <div style="font-size:.75em" class="h6 mb-0 text-white">
+              A wizard is never late, nor is he early, he arrives precisely when he means to.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5 text-center text-lg-start">
+      <div class="row">
+        <div class="col-12 col-lg-5 mb-3">
+          <h2 class="h5"><img class="mb-1 me-1" src="./assets/params/images/logo/ganatan-logo.png" srcset="./assets/params/images/logo/ganatan-logo.png,
+            ./assets/params/images/logo/ganatan-logo@2x.png 2x" width="25" height="25" alt="Logo Ganatan">GANATAN</h2>
+          <hr class="text-primary mb-4 mt-0 d-inline-block " style="width: 120px;">
+          <p>Web Application : Angular 12, Bootstrap 5 </p>
+          <p>Routing, Lazy Loading, SSR, PWA, SEO </p>
+          <div>
+            <a type="button" class="nga-btn-social nga-btn-linkedin" href="https://www.linkedin.com/in/dannyganatan/"
+              aria-label="Linkedin ganatan">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a type="button" class="nga-btn-social nga-btn-twitter" href="https://twitter.com/dannyganatan"
+              aria-label="Twitter ganatan">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a type="button" class="nga-btn-social nga-btn-github" href="https://github.com/ganatan"
+              aria-label="Github ganatan">
+              <i class="fab fa-github"></i></a>
+            <a type="button" class="nga-btn-social nga-btn-gitlab" href="https://gitlab.com/ganatan"
+              aria-label="Gitlab ganatan">
+              <i class="fab fa-gitlab"></i></a>
+            <a type="button" class="nga-btn-social nga-btn-bitbucket" href="https://bitbucket.org/ganatan/"
+              aria-label="Bitbucket ganatan">
+              <i class="fab fa-bitbucket"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <h2 class="h5">Tools</h2>
+          <hr class="text-primary mt-0 d-inline-block" style="width: 70px;">
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://angular.io/">Angular</a></li>
+            <li class="mb-2"><a href="https://getbootstrap.com/">Bootstrap</a></li>
+            <li class="mb-2"><a href="https://fontawesome.com/">Font Awesome</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <h2 class="h5">Learn</h2>
+          <hr class="text-primary mt-0 d-inline-block" style="width: 70px;">
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://www.ganatan.com/tutorials">Tutorials</a></li>
+            <li class="mb-2"><a href="https://www.ganatan.com/about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="py-3 text-center" style="background-color: black;">
+      <div class="container">
+        2021 :<a href="https://www.ganatan.com/"> www.ganatan.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/params/js/bootstrap.js"></script>
+
+</body>
+
+</html>
