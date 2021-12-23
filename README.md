@@ -79,16 +79,16 @@ Here is a working live demo :  https://angular.ganatan.com/
 # select a repo from github, gitlab or bitbucket
 
 # download the example or clone the repo from github
-git clone https://github.com/ganatan/angular12-app.git
+git clone https://github.com/ganatan/angular-app.git
 
 # download the example or clone the repo from gitlab
-git clone https://gitlab.com/ganatan/angular12-app.git
+git clone https://gitlab.com/ganatan/angular-app.git
 
 # download the example or clone the repo from bitbucket
-git clone https://bitbucket.org/ganatan/angular12-app.git
+git clone https://bitbucket.org/ganatan/angular-app.git
 
 # change directory
-cd angular12-app
+cd angular-app
 cd frontend
 
 # install the repo with npm
