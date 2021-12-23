@@ -122,10 +122,6 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 ## Tests
 * `npm run lint`
 * `npm run test`
-* `npm run e2e`
-
-## Tests prerequisites
-- ChromeDriver only supports Chrome version 89
 
 ### Compilation
 * `npm run build`       ( without SSR)
@@ -136,7 +132,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * in your browser [http://localhost:4000](http://localhost:4000) 
 
 ### Bootstrap UI
-* `change directory` cd ui (Bootstrap 5)
+* `change directory` cd ui
 * Launch html pages in your browser
 
 
