@@ -1,5 +1,10 @@
 <header class="navbar navbar-expand-lg navbar-dark fixed-top nga-navbar">
   <nav class="container" aria-label="Main navigation">
+    <a href="https://github.com/ganatan/angular-app" class="d-none d-sm-block">
+      <img style="position: absolute; top: 0; right: 0; border: 0; z-index: 2000;"
+        src="https://api.ganatan.com/articles/img/forkme.png" alt="Fork me on GitHub"
+        data-canonical-src="https://api.ganatan.com/articles/img/forkme.png" />
+    </a>
     <a routerLink="/" class="navbar-brand" alt="Accueil" aria-label="Ganatan">
       <img src="./assets/params/images/logo/ganatan-logo.png" srcset="./assets/params/images/logo/ganatan-logo.png,
       ./assets/params/images/logo/ganatan-logo@2x.png 2x" width="25" height="25" alt="Ganatan Logo">
@@ -12,22 +17,22 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/angular">
+            <i class="fab fa-angular me-1"></i>Angular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/bootstrap">
+            <i class="fab fa-bootstrap me-1"></i>Bootstrap</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
           <a class="nav-link" aria-current="page" routerLink="/news">
             <i class="fas fa-photo-video me-1"></i>News</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="page" routerLink="/boxoffice">
             <i class="fas fa-film me-1"></i>Boxoffice</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="/bootstrap">
-            <i class="fab fa-bootstrap me-1"></i>Bootstrap</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="/angular">
-            <i class="fab fa-angular me-1"></i>Angular</a>
         </li>
       </ul>
       <ul class="navbar-nav me-auto">
@@ -43,7 +48,8 @@
       <form class="d-flex">
         <button type="button" class="btn btn-sm nga-btn-navbar me-2" routerLink="/signup"><i
             class="fas fa-user-plus me-2"></i>Sign up</button>
-        <button type="button" class="btn btn-sm btn-outline-light me-2" routerLink="/login"><i class="fas fa-sign-in-alt me-2"></i>Login</button>
+        <button type="button" class="btn btn-sm btn-outline-light me-2" routerLink="/login"><i
+            class="fas fa-sign-in-alt me-2"></i>Login</button>
       </form>
     </div>
   </nav>
