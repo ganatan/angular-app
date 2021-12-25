@@ -40,15 +40,16 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 
 
-## Lighthouse Audit
+# Lighthouse Audit
+
 <p align="center">
   <p align="center">
     <a href="https://angular.ganatan.com">
-      <img src="./img/search-engine-optimization-avec-angular-lighthouse-after.png" align="right"
-      alt="Ganatan Lighthouse SEO Angular Example Demo">
+      <img src="./img/search-engine-optimization-avec-angular-lighthouse-after.png" alt="Ganatan Lighthouse SEO Angular Example Demo"/>
     </a>
   </p>
 </p>
+
 
 ## Table of contents
 
