@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
+  production: true,
   application:
   {
     name: 'angular-starter',
