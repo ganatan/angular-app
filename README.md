@@ -41,7 +41,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 
 ## Lighthouse Audit
-<img src="https://api.ganatan.com/articles/img/search-engine-optimization-avec-angular-lighthouse-after.png"/>
+<img src="./img/search-engine-optimization-avec-angular-lighthouse-after.png"/>
 
 ## Table of contents
 
