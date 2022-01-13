@@ -28,8 +28,8 @@ export class AboutComponent {
     this.quote = new Quote();
     this.dependencies = {
       frontend: [
-        { name: 'Angular 13.1.1' },
-        { name: 'Angular CLI 13.1.2' },
+        { name: 'Angular 13.1.2' },
+        { name: 'Angular CLI 13.1.3' },
         { name: 'Angular Universal 13.0.1' },
         { name: 'Bootstrap 5.1.3' },
         { name: 'Font Awesome 5.15.4' },
@@ -127,7 +127,7 @@ export class AboutComponent {
     this.meta.updateTag(
       {
         name: 'description',
-        content: 'Cette application a été développée avec Angular version 13.1.1 et bootstrap 5.1.3' +
+        content: 'Cette application a été développée avec Angular version 13.1.2 et bootstrap 5.1.3' +
           ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
       });
   }
