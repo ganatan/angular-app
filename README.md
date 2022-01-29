@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 13**
 
 
-* Frontend - [**Angular 13.1.3**](https://github.com/angular/angular/releases) & [**Angular CLI 13.1.4**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 13.2.0**](https://github.com/angular/angular/releases) & [**Angular CLI 13.2.0**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
@@ -62,8 +62,8 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 13.1.3
-- [x] Angular CLI : 13.1.4
+- [x] Angular : 13.2.0
+- [x] Angular CLI : 13.2.0
 - [x] Angular Universal : 13.0.1
 - [x] Bootstrap : 5.1.3
 - [x] Fontawesome : 5.15.4
