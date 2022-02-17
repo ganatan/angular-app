@@ -22,7 +22,7 @@
                   <button [disabled]="form.invalid || !api" type="submit"
                     class="btn btn-outline-primary btn-sm mb-2 ml-3" (click)="onCopy()"><i
                       class="fas fa-copy fa-lg"></i></button>
-                  <button [disabled]="form.invalid || !api || item.id==undefined || item.id==null" type="submit"
+                  <button [disabled]="form.invalid || !api || item.id===undefined || item.id===null" type="submit"
                     class="btn btn-outline-primary btn-sm mb-2 ml-3" (click)="onDelete()"><i
                       class="fas fa-trash-alt fa-lg"></i></button>
                 </a>
@@ -48,7 +48,7 @@
                   </div>
                 </div>
                 <div class="form-group col-md-4">
-                  <img *ngIf="form.value.image!=null" src="{{ form.value.image }}" class="shadow-lg rounded ml-4 mt-2"
+                  <img *ngIf="form.value.image!==null" src="{{ form.value.image }}" class="shadow-lg rounded ml-4 mt-2"
                     height="63" width="105">
                 </div>
               </div>

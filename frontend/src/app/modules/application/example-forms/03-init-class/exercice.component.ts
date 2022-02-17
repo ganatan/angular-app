@@ -6,7 +6,7 @@ import { Movie } from './movie';
   templateUrl: './exercice.component.html',
   styleUrls: ['./exercice.component.css']
 })
-export class ExerciceComponent implements OnInit {
+export class ExerciceComponent {
 
   movie: Movie = new Movie();
 
@@ -17,9 +17,6 @@ export class ExerciceComponent implements OnInit {
     this.movie.international = '$2,797,800,564';
     this.movie.worldwide = '$2,797,800,564';
     this.movie.franchise = true;
-  }
-
-  ngOnInit(): void {
   }
 
 }

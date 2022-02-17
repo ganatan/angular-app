@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 13**
 
 
-* Frontend - [**Angular 13.2.1**](https://github.com/angular/angular/releases) & [**Angular CLI 13.2.2**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 13.2.2**](https://github.com/angular/angular/releases) & [**Angular CLI 13.2.3**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
@@ -62,8 +62,8 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 13.2.1
-- [x] Angular CLI : 13.2.2
+- [x] Angular : 13.2.2
+- [x] Angular CLI : 13.2.3
 - [x] Angular Universal : 13.0.1
 - [x] Bootstrap : 5.1.3
 - [x] Fontawesome : 5.15.4
@@ -92,9 +92,6 @@ git clone https://github.com/ganatan/angular-app.git
 
 # download the example or clone the repo from gitlab
 git clone https://gitlab.com/ganatan/angular-app.git
-
-# download the example or clone the repo from bitbucket
-git clone https://bitbucket.org/ganatan/angular-app.git
 
 # change directory
 cd angular-app
@@ -268,7 +265,6 @@ pm2 start process.config.js --env prod
 * in your browser [http://localhost:5004/cities](http://localhost:5004/cities) 
 
 ### Author
-* Updated : 05/02/2022
 * Author  : danny
 
 ## Documentation

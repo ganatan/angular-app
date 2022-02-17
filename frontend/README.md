@@ -12,6 +12,9 @@
 ## Tests
 * `npm run test`
 
+## Lint
+* `npm run lint`
+
 ### Compilation
 * `npm run build`       ( without SSR)
 * `npm run build:ssr`   ( with SSR)

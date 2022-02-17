@@ -6,8 +6,7 @@ import { FormBuilder, FormArray, FormGroup, FormControl } from '@angular/forms';
   templateUrl: './exercice.component.html',
   styleUrls: ['./exercice.component.css'],
 })
-export class ExerciceComponent implements OnInit {
-
+export class ExerciceComponent {
 
   /* exampleForm1 with FormControl only */
   name = new FormControl('');
@@ -38,9 +37,6 @@ export class ExerciceComponent implements OnInit {
     this.onResetForm1();
     this.onResetForm2();
     this.onResetForm3();
-  }
-
-  ngOnInit(): void {
   }
 
   /* exampleForm1 with FormControl */

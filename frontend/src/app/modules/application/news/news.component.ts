@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder } from '@angular/forms';
 
@@ -14,7 +14,7 @@ declare var bootstrap: any;
   templateUrl: './news.component.html',
   styleUrls: ['./news.component.css']
 })
-export class NewsComponent {
+export class NewsComponent implements OnInit {
 
   itemsLoaded: boolean;
   items: Item[];

@@ -7,14 +7,12 @@ import { ModalEbookService } from './modal-ebook/modal-ebook.service';
   templateUrl: './tutorial.component.html',
   styleUrls: ['./tutorial.component.css']
 })
-export class TutorialComponent implements OnInit {
+export class TutorialComponent {
 
   constructor(private modalEbookService: ModalEbookService) {
   }
 
-  ngOnInit(): void {
-  }
-  
+
   openModal() {
     this.modalEbookService.open('modalEbook', 10);
   }

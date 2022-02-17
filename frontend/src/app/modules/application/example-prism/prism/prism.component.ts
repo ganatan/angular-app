@@ -8,7 +8,7 @@ import { ElementRef, ViewChild } from '@angular/core';
 declare var Prism: any;
 
 @Component({
-  selector: 'prism-block',
+  selector: 'app-prism-block',
   template: ``,
   providers: [
     {

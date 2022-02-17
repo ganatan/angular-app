@@ -19,10 +19,10 @@
                   <button [disabled]="form.invalid || !api" type="submit"
                     class="btn btn-outline-primary btn-sm mb-2 ml-3" (click)="onUpdate()"><i
                       class="fas fa-save fa-lg"></i></button>
-                  <button [disabled]="form.invalid || !api || item.id==undefined || item.id==null" type="submit"
+                  <button [disabled]="form.invalid || !api || item.id===undefined || item.id===null" type="submit"
                     class="btn btn-outline-primary btn-sm mb-2 ml-3" (click)="onCopy()"><i
                       class="fas fa-copy fa-lg"></i></button>
-                  <button [disabled]="form.invalid || !api || item.id==undefined || item.id==null" type="submit"
+                  <button [disabled]="form.invalid || !api || item.id===undefined || item.id===null" type="submit"
                     class="btn btn-outline-primary btn-sm mb-2 ml-3" (click)="onDelete()"><i
                       class="fas fa-trash-alt fa-lg"></i></button>
                 </a>

@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { PLATFORM_ID } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { isPlatformBrowser } from '@angular/common';
@@ -12,7 +12,7 @@ import { Observable, of } from 'rxjs';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
 
   dependencies: any;
   features: any;
@@ -28,11 +28,11 @@ export class AboutComponent {
     this.quote = new Quote();
     this.dependencies = {
       frontend: [
-        { name: 'Angular 13.2.1' },
-        { name: 'Angular CLI 13.2.0' },
+        { name: 'Angular 13.2.2' },
+        { name: 'Angular CLI 13.2.3' },
         { name: 'Angular Universal 13.0.1' },
         { name: 'Bootstrap 5.1.3' },
-        { name: 'Font Awesome 5.15.4' },
+        { name: 'Font Awesome 6.0.0' },
       ],
       backend: [
         { name: 'Node.js 14.17.3' },
@@ -127,7 +127,7 @@ export class AboutComponent {
     this.meta.updateTag(
       {
         name: 'description',
-        content: 'Cette application a été développée avec Angular version 13.2.1 et bootstrap 5.1.3' +
+        content: 'Cette application a été développée avec Angular version 13.2.2 et bootstrap 5.1.3' +
           ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
       });
   }

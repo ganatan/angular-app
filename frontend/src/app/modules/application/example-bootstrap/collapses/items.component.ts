@@ -7,12 +7,9 @@ declare var bootstrap: any;
   templateUrl: './items.component.html',
   styleUrls: ['./items.component.css']
 })
-export class CollapsesComponent implements OnInit {
+export class CollapsesComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 
   closeCollapse() {

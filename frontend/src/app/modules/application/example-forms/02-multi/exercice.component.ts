@@ -6,7 +6,7 @@ import { Movie } from './movie';
   templateUrl: './exercice.component.html',
   styleUrls: ['./exercice.component.css']
 })
-export class ExerciceComponent implements OnInit {
+export class ExerciceComponent {
 
   country: any;
   actor: string;
@@ -18,9 +18,6 @@ export class ExerciceComponent implements OnInit {
     this.actor = 'Tom Cruise';
     this.movie.name = 'Edge of Tomorrow';
     this.movieAny = { name: 'Avatar' };
-  }
-
-  ngOnInit(): void {
   }
 
 }

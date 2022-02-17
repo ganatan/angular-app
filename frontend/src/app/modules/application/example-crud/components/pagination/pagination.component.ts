@@ -9,7 +9,7 @@ import { PaginationService } from './pagination.service';
   templateUrl: './pagination.component.html',
   styleUrls: ['./pagination.component.css']
 })
-export class PaginationComponent implements OnInit, OnChanges {
+export class PaginationComponent implements OnChanges {
 
 
   @Input() count: any;
@@ -23,9 +23,6 @@ export class PaginationComponent implements OnInit, OnChanges {
   constructor(
     private paginationService: PaginationService,
   ) { }
-
-  ngOnInit(): void {
-  }
 
   ngOnChanges(): void {
     this.pagination.count = this.count;

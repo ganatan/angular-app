@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './items.component.html',
   styleUrls: ['./items.component.css']
 })
-export class BreadcrumbComponent implements OnInit {
+export class BreadcrumbComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

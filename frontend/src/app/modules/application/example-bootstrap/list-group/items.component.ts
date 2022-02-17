@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './items.component.html',
   styleUrls: ['./items.component.css']
 })
-export class ListGroupComponent implements OnInit {
+export class ListGroupComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

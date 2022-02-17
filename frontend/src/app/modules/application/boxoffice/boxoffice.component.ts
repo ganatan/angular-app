@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder } from '@angular/forms';
 
@@ -14,7 +14,7 @@ declare var bootstrap: any;
   templateUrl: './boxoffice.component.html',
   styleUrls: ['./boxoffice.component.css']
 })
-export class BoxofficeComponent {
+export class BoxofficeComponent implements OnInit {
   itemsLoaded: boolean;
   items: Item[];
   player: string;
@@ -104,7 +104,7 @@ export class BoxofficeComponent {
   onCloseModal() {
     this.player = '';
     this.playerLoaded = false;
-  }  
+  }
 
   addItem() {
     this.router.navigate(['/movies', 0]);

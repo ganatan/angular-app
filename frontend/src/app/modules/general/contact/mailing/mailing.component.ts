@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './mailing.component.html',
   styleUrls: ['./mailing.component.css']
 })
-export class MailingComponent implements OnInit {
+export class MailingComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
