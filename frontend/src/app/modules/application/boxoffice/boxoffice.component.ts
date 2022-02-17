@@ -7,7 +7,7 @@ import { ItemsService } from './items/items.service';
 import { environment } from '../../../../environments/environment';
 
 
-declare var bootstrap: any;
+declare const bootstrap: any;
 
 @Component({
   selector: 'app-boxoffice',
@@ -70,7 +70,7 @@ export class BoxofficeComponent implements OnInit {
   }
 
   formFilterChanged(data: any) {
-    let shows = data["shows"];
+    const shows = data["shows"];
   };
 
   getItems(): any {
@@ -91,7 +91,7 @@ export class BoxofficeComponent implements OnInit {
       this.modalPlayer = new bootstrap.Modal(document.getElementById('exampleModal'), {
         keyboard: true
       })
-      let selectPlayer = document.getElementById('exampleModal')
+      const selectPlayer = document.getElementById('exampleModal')
       selectPlayer?.addEventListener('show.bs.modal', this.onShowModal.bind(this));
       selectPlayer?.addEventListener('hidden.bs.modal', this.onCloseModal.bind(this));
     }

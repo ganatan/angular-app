@@ -12,6 +12,7 @@ export class CategoryPipe implements PipeTransform {
       case 'documentary': { result = 'fas fa-photo-video'; break; }
       default: { result = 'fas fa-desktop'; break; }
     }
+    
     return result;
   }
 }

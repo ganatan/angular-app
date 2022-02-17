@@ -1,10 +1,10 @@
 export class Params {
 
-  public q: string;
+  public query: string;
   public page: string;
 
   constructor() { 
-    this.q = '';
+    this.query = '';
     this.page = '';
   }
 

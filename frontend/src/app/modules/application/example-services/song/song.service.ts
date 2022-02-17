@@ -15,6 +15,7 @@ export class SongService {
 
   getSongs(year: number): Song[] {
     this.song = SONGS[year - 1].items;
+    
     return this.song;
   }
 

@@ -63,12 +63,12 @@ export class PageListComponent {
   readQueryParams(): void {
     this.route.queryParams
       .subscribe(params => {
-        this.params.q = params['q'];
+        this.params.query = params['q'];
         if (params['page'] !== undefined) {
           this.params.page = params['page'];
           this.itemsPage = parseInt(this.params.page, 10);
         }
-        this.searchField = this.params.q;
+        this.searchField = this.params.query;
         this.getItems();
       });
   }
@@ -108,7 +108,7 @@ export class PageListComponent {
     if (this.itemsPage > 1) {
       page = this.itemsPage.toString();
     }
-    this.params.q = query;
+    this.params.query = query;
     this.params.page = page;
     this.router.navigate(['crud/' + url], { queryParams: this.params });
   }

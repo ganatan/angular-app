@@ -5,7 +5,7 @@ import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
 import { ElementRef, ViewChild } from '@angular/core';
 
-declare var Prism: any;
+declare const Prism: any;
 
 @Component({
   selector: 'app-prism-block',
@@ -28,7 +28,7 @@ export class PrismComponent implements ControlValueAccessor, AfterViewInit {
   private codeNode: Node;
   public selectedValue: number;
 
-  propagateChange = (_: any) => { };
+  propagateChange = (element: any) => { };
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: object,

@@ -22,6 +22,7 @@ export class PaginationService {
     for (let idx = 0; idx < length; idx++, start += step) {
       range[idx] = start;
     }
+    
     return range;
   }
 

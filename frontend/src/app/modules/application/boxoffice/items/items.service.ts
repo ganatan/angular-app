@@ -23,6 +23,7 @@ export class ItemsService {
     return (error: any): Observable<T> => {
       console.error(error);
       this.log(`${operation} failed: ${error.message}`);
+
       return of(result as T);
     };
   }

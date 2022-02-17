@@ -30,11 +30,11 @@ export class TutorialComponent implements OnInit {
   loadScript(name: string): void {
 
     if (isPlatformBrowser(this.platformId)) {
-      const s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.src = name;
-      s.async = false;
-      document.getElementsByTagName('head')[0].appendChild(s);
+      const src = document.createElement('script');
+      src.type = 'text/javascript';
+      src.src = name;
+      src.async = false;
+      document.getElementsByTagName('head')[0].appendChild(src);
     }
   }
 

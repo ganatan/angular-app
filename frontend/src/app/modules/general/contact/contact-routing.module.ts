@@ -9,22 +9,22 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import(`./mailing/mailing.module`)
-          .then(m => m.MailingModule)
+          .then(module => module.MailingModule)
       },
       {
         path: 'mailing',
         loadChildren: () => import(`./mailing/mailing.module`)
-          .then(m => m.MailingModule)
+          .then(module => module.MailingModule)
       },
       {
         path: 'map',
         loadChildren: () => import(`./map/map.module`)
-          .then(m => m.MapModule)
+          .then(module => module.MapModule)
       },
       {
         path: '**',
         loadChildren: () => import(`./mailing/mailing.module`)
-          .then(m => m.MailingModule)
+          .then(module => module.MailingModule)
       },
 
     ]

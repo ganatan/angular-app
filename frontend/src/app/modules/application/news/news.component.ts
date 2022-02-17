@@ -7,7 +7,7 @@ import { Badge } from './badge';
 import { ItemsService } from './items/items.service';
 import { environment } from '../../../../environments/environment';
 
-declare var bootstrap: any;
+declare const bootstrap: any;
 
 @Component({
   selector: 'app-news',
@@ -119,7 +119,7 @@ export class NewsComponent implements OnInit {
 
   closeFilters() {
     this.filtersEnabled = !this.filtersEnabled;
-    var collapse = document.getElementById('collapseFilters')
+    const collapse = document.getElementById('collapseFilters')
     new bootstrap.Collapse(collapse, { hide: true });
   }
 
@@ -139,7 +139,7 @@ export class NewsComponent implements OnInit {
       this.modalPlayer = new bootstrap.Modal(document.getElementById('newsModal'), {
         keyboard: true
       })
-      let selectPlayer = document.getElementById('newsModal')
+      const selectPlayer = document.getElementById('newsModal')
       selectPlayer?.addEventListener('show.bs.modal', this.onShowModal.bind(this));
       selectPlayer?.addEventListener('hidden.bs.modal', this.onCloseModal.bind(this));
     }

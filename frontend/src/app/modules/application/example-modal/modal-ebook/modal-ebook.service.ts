@@ -3,7 +3,7 @@ import { Subject } from 'rxjs';
 import { Item } from './item';
 import { Injectable } from "@angular/core";
 
-declare var bootstrap: any;
+declare const bootstrap: any;
 
 @Injectable()
 export class ModalEbookService {
@@ -31,10 +31,10 @@ export class ModalEbookService {
 
   open(idModal: string, pageId?: any) {
     this.pageId = pageId;
-    let modalEbook = new bootstrap.Modal(document.getElementById('modalEbook'), {
+    const modalEbook = new bootstrap.Modal(document.getElementById('modalEbook'), {
       keyboard: true
     })
-    let selectPlayer = document.getElementById('newsModal')
+    const selectPlayer = document.getElementById('newsModal')
     selectPlayer?.addEventListener('show.bs.modal', this.onShowModal.bind(this));
     selectPlayer?.addEventListener('hidden.bs.modal', this.onCloseModal.bind(this));
     if (modalEbook) {

@@ -23,6 +23,7 @@ export class ItemsService {
         dataTmp = data[index];
       }
     });
+
     return dataTmp;
   }
 
@@ -31,14 +32,15 @@ export class ItemsService {
     if ((text !== undefined) && (text != null)) {
       const lcText = text.toString().toLowerCase();
       const result = value.filter(
-        (e: { name: string; }) => (
-          (e.name.toLowerCase().indexOf(lcText) === 0)
+        (element: { name: string; }) => (
+          (element.name.toLowerCase().indexOf(lcText) === 0)
         )
       );
       resultCount = result.length;
     } else {
       resultCount = value.length;
     }
+
     return { count: resultCount };
   }
 
@@ -47,8 +49,8 @@ export class ItemsService {
     if ((text !== undefined) && (text != null)) {
       const lcText = text.toString().toLowerCase();
       result = value.filter(
-        (e: { name: string; }) => (
-          (e.name.toLowerCase().indexOf(lcText) === 0)
+        (elment: { name: string; }) => (
+          (elment.name.toLowerCase().indexOf(lcText) === 0)
         )
       );
     } else {
@@ -62,6 +64,7 @@ export class ItemsService {
         data.push(result[index]);
       }
     });
+
     return data;
   }
 
@@ -86,6 +89,7 @@ export class ItemsService {
           catchError(this.handleError('getItems', []))
         );
     }
+
     return result;
   }
 
@@ -93,9 +97,8 @@ export class ItemsService {
     if (!api) { url = url + '.json'; }
     let filter = '';
     if ((itemsPerPage !== undefined) || (page !== undefined) || (query !== undefined)) {
-      let limit: number;
+      const limit: number= itemsPerPage;
       let offset: number;
-      limit = itemsPerPage;
       offset = 0;
       if (page === 0) {
         page = 1;
@@ -128,6 +131,7 @@ export class ItemsService {
           catchError(this.handleError('getItems', []))
         );
     }
+
     return result;
   }
 
@@ -138,7 +142,7 @@ export class ItemsService {
       if (api) {
         const urlParameter = url + '/' + id;
         result = this.http.get<any>(urlParameter).pipe(
-          tap(_ => this.log(`fetched item id=${id}`)),
+          tap(element => this.log(`fetched item id=${id}`)),
           catchError(this.handleError<any>(`getItem id=${id}`))
         );
       } else {
@@ -149,11 +153,13 @@ export class ItemsService {
         );
       }
     }
+
     return result;
   }
 
   addItem(url: any, item: any): Observable<any> {
     const body = JSON.stringify(item);
+
     return this.http.post<any>(url, body, httpOptions).pipe(
       tap((itemData: any) => this.log(`added item w/ id=${item.id}`)),
       catchError(this.handleError<any>('addItem'))
@@ -162,16 +168,18 @@ export class ItemsService {
 
   updateItem(body: object, id: number, link: any): Observable<any> {
     const url = link + '/' + id;
+
     return this.http.put(url, body, httpOptions).pipe(
-      tap(_ => this.log(`updated item id=id`)),
+      tap(element => this.log(`updated item id=id`)),
       catchError(this.handleError<any>('updateItem'))
     );
   }
 
   deleteItem(link: any, id: number): Observable<any> {
     const url = link + '/' + id;
+
     return this.http.delete<any>(url, httpOptions).pipe(
-      tap(_ => this.log(`deleted item id=${id}`)),
+      tap(element => this.log(`deleted item id=${id}`)),
       catchError(this.handleError<any>('deleteItem'))
     );
   }
@@ -180,6 +188,7 @@ export class ItemsService {
     return (error: any): Observable<T> => {
       console.error(error);
       this.log(`${operation} failed: ${error.message}`);
+
       return of(result as T);
     };
   }

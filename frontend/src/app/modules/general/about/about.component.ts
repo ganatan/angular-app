@@ -134,7 +134,7 @@ export class AboutComponent implements OnInit {
 
 
   loadQuote() {
-    let quotes = [
+    const quotes = [
       {
         name: 'Lawrence of Arabia',
         title: 'There is nothing in the desert and no man needs nothing',
@@ -151,7 +151,7 @@ export class AboutComponent implements OnInit {
         link: 'https://en.wikipedia.org/wiki/Blade_Runner'
       },
     ];
-    let index = quotes.length;
+    const index = quotes.length;
     let id = this.id;
     while (this.id === id) {
       id = Math.floor(Math.random() * index);

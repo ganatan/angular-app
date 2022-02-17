@@ -99,6 +99,7 @@ export class ModalEbookComponent implements AfterViewInit {
     // let url = this.configService.getConfig().getUrl();
     url = url + 'subscription-tutorial';
     const body = JSON.stringify({ pageId: pageId, pagename: pagename, email: email });
+
     return this.http.post<any>(url, body, httpOptions).pipe(
       timeout(3000),
       tap((itemData: any) => this.log(`added item w/ id=${9999}`)),
@@ -110,6 +111,7 @@ export class ModalEbookComponent implements AfterViewInit {
     return (error: any): Observable<T> => {
       console.error(error);
       this.log(`${operation} failed: ${error.message}`);
+
       return of(result as T);
     };
   }
