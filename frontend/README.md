@@ -11,6 +11,7 @@
 
 ## Tests
 * `npm run test`
+* `npm run coverage`
 
 ## Lint
 * `npm run lint`
