@@ -9,12 +9,12 @@
 * `npm run start`
 * in your browser [http://localhost:4200](http://localhost:4200) 
 
+## Linter
+* `npm run lint`
+
 ## Tests
 * `npm run test`
 * `npm run coverage`
-
-## Lint
-* `npm run lint`
 
 ### Compilation
 * `npm run build`       ( without SSR)

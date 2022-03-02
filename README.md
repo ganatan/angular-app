@@ -117,9 +117,12 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run start`
 * in your browser [http://localhost:4200](http://localhost:4200) 
 
-## Tests
+## Linter
 * `npm run lint`
+
+## Tests
 * `npm run test`
+* `npm run coverage`
 
 ### Compilation
 * `npm run build`       ( without SSR)
