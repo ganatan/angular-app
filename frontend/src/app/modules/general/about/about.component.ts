@@ -32,7 +32,7 @@ export class AboutComponent implements OnInit {
         { name: 'Angular CLI 13.3.0' },
         { name: 'Angular Universal 13.0.1' },
         { name: 'Bootstrap 5.1.3' },
-        { name: 'Font Awesome 6.1.0' },
+        { name: 'Font Awesome 6.1.1' },
       ],
       backend: [
         { name: 'Node.js 14.17.3' },
