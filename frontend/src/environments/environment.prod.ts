@@ -3,9 +3,9 @@ export const environment = {
   application:
   {
     name: 'angular-starter',
-    angular: 'Angular 13.3.0',
+    angular: 'Angular 13.3.1',
     bootstrap: 'Bootstrap 5.1.3',
-    fontawesome: 'Font Awesome 6.0.0',
+    fontawesome: 'Font Awesome 6.1.1',
   },
   urlNews: './assets/params/json/mock/trailers.json',
   /*   urlNews: 'http://localhost:5004/trailers', */
