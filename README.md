@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 13**
 
 
-* Frontend - [**Angular 13.3.1**](https://github.com/angular/angular/releases) & [**Angular CLI 13.3.1**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 13.3.2**](https://github.com/angular/angular/releases) & [**Angular CLI 13.3.2**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
@@ -62,8 +62,8 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 13.3.1
-- [x] Angular CLI : 13.3.1
+- [x] Angular : 13.3.2
+- [x] Angular CLI : 13.3.2
 - [x] Angular Universal : 13.0.1
 - [x] Bootstrap : 5.1.3
 - [x] Fontawesome : 6.1.1
@@ -80,12 +80,11 @@ Here is a working live demo :  https://angular.ganatan.com/
 - [x] Reactive Form
 - [x] Template Driven Forms
 - [x] Search / Grid / Pagination
-- [x] Leaflet
 
 ## Quick start
 
 ```bash
-# select a repo from github, gitlab or bitbucket
+# select a repo from github or gitlab
 
 # download the example or clone the repo from github
 git clone https://github.com/ganatan/angular-app.git
