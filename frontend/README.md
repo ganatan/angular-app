@@ -4,6 +4,7 @@
 
 ### Installation
 * `npm install` (installing dependencies)
+* `npm outdated` (verifying dependencies versions)
 
 ### Developpement
 * `npm run start`
