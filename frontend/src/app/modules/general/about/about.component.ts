@@ -28,8 +28,8 @@ export class AboutComponent implements OnInit {
     this.quote = new Quote();
     this.dependencies = {
       frontend: [
-        { name: 'Angular 13.3.4' },
-        { name: 'Angular CLI 13.3.3' },
+        { name: 'Angular 13.3.5' },
+        { name: 'Angular CLI 13.3.4' },
         { name: 'Angular Universal 13.0.1' },
         { name: 'Bootstrap 5.1.3' },
         { name: 'Font Awesome 6.1.1' },
