@@ -87,7 +87,7 @@ export class AngularComponent implements OnInit {
     this.meta.updateTag(
       {
         name: 'description',
-        content: 'Cette application a été développée avec Angular version 13.3.5 et bootstrap 5.1.3' +
+        content: 'Cette application a été développée avec Angular version 13.3.6 et bootstrap 5.1.3' +
           ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
       });
   }
