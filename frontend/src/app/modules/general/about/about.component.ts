@@ -28,7 +28,7 @@ export class AboutComponent implements OnInit {
     this.quote = new Quote();
     this.dependencies = {
       frontend: [
-        { name: 'Angular 13.3.7' },
+        { name: 'Angular 13.3.8' },
         { name: 'Angular CLI 13.3.5' },
         { name: 'Angular Universal 13.1.1' },
         { name: 'Bootstrap 5.1.3' },
@@ -127,7 +127,7 @@ export class AboutComponent implements OnInit {
     this.meta.updateTag(
       {
         name: 'description',
-        content: 'Cette application a été développée avec Angular version 13.3.7 et bootstrap 5.1.3' +
+        content: 'Cette application a été développée avec Angular version 13.3.8 et bootstrap 5.1.3' +
           ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
       });
   }
