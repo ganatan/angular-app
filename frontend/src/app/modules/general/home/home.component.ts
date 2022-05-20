@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
 
 import { environment } from '../../../../environments/environment';
@@ -27,17 +26,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    if (isPlatformBrowser(this.platformId)) {
-      const navMain = document.getElementById('navbarCollapse');
-      if (navMain) {
-        navMain.onclick = function onClick() {
-          if (navMain) {
-            navMain.classList.remove("show");
-          }
-        }
-      }
-    }
-
     this.titleService.setTitle('angular.ganatan.com : An Angular Application Web');
     this.meta.addTag({
       name: 'author',
@@ -51,7 +39,7 @@ export class HomeComponent implements OnInit {
       });
   }
 
-  loadScript(name: string): void {
+/*  loadScript(name: string): void {
     if (isPlatformBrowser(this.platformId)) {
       const src = document.createElement('script');
       src.type = 'text/javascript';
@@ -59,7 +47,7 @@ export class HomeComponent implements OnInit {
       src.async = false;
       document.getElementsByTagName('head')[0].appendChild(src);
     }
-  }
+  }*/
 
 }
 

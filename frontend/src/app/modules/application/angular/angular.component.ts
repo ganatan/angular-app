@@ -77,8 +77,6 @@ export class AngularComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.loadScript('assets/params/js/index.js');
-
     this.titleService.setTitle('angular.ganatan: Une Application Web avec Angular');
     this.meta.addTag({
       name: 'author',
