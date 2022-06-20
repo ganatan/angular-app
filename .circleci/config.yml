@@ -7,20 +7,20 @@ jobs:
     steps:
       - checkout
       - run: npm i
-      - run: npm run lint
+      - run: ng lint
   test:
     docker:
       - image: circleci/node:13.8.0
     steps:
       - checkout
       - run: npm i
-      - run: npm run test
+      - run: ng test
   analyze:
     docker:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run: npm audit
+      - run: ng audit
 
 workflows:
   my_workflow:
