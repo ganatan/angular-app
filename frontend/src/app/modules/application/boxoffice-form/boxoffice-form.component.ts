@@ -10,9 +10,9 @@ export class BoxofficeFormComponent implements OnInit {
   exampleForm = this.fb.group({
     name: [''],
     releaseDate: [''],
-    franchise: [''],
-    budget: [''],
-    worldwide: [''],
+    franchise: [true],
+    budget: [0],
+    worldwide: [0],
     summary: [''],
   });
 

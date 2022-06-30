@@ -1,4 +1,4 @@
- # Angular 13 / Bootstrap 5 & CRUD REST API
+ # Angular 14 / Bootstrap 5 & CRUD REST API
 
 <table>
 <tr>
@@ -8,10 +8,10 @@
     alt="Ganatan Angular Example Demo" width="140" height="140">
   </a>
 
-it's a repo designed to create a **Web Application with Angular 13**
+it's a repo designed to create a **Web Application with Angular 14**
 
 
-* Frontend - [**Angular 13.3.9**](https://github.com/angular/angular/releases) & [**Angular CLI 13.3.6**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 14.0.4**](https://github.com/angular/angular/releases) & [**Angular CLI 14.0.4**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
@@ -31,7 +31,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 <p align="center">
   <p align="center">
     <a href="https://angular.ganatan.com/">
-      <img src="https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif" alt="Angular 13 Example 
+      <img src="https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif" alt="Angular 14 Example 
       Application"/>
     </a>
   </p>
@@ -62,9 +62,9 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 13.3.9
-- [x] Angular CLI : 13.3.6
-- [x] Angular Universal : 13.1.1
+- [x] Angular : 14.0.4
+- [x] Angular CLI : 14.0.4
+- [x] Angular Universal : 14.0.2
 - [x] Bootstrap : 5.1.3
 - [x] Fontawesome : 6.1.1
 

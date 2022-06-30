@@ -9,7 +9,9 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class AppComponent implements OnInit {
   title = 'angular-starter';
-  version = 'Angular version 13.3.9';
+  footerUrl = 'https://www.ganatan.com/';
+  footerLink = 'www.ganatan.com';
+
   constructor(
     @Inject(PLATFORM_ID) private platformId: object) {
   }
@@ -28,4 +30,4 @@ export class AppComponent implements OnInit {
     }
   }
 
-}  
+}

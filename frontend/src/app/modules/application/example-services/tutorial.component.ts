@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '../../../services/seo/seo.service';
 
 import { Song } from './song/song';
 
@@ -15,7 +16,14 @@ export class TutorialComponent implements OnInit {
   songSelected: Song;
   yearSelected: number;
 
-  constructor(private songService: SongService) {
+  constructor(private songService: SongService,
+    private seoService: SeoService) {
+
+    const content = 'Example Forms content with meta';
+    this.seoService.setMetaDescription(content);
+
+    this.seoService.setMetaTitle('angular-starter Title : example-services Page');
+
     this.songs = [];
     this.yearSelected = 3;
     this.songs = this.songService.getSongs(this.yearSelected);

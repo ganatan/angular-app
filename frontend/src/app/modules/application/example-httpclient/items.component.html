@@ -1,14 +1,15 @@
 <div class="container py-5">
-  <div class="row pb-4 justify-content-center">
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-      <div class="row p-4 text-center">
-        <div class="card mb-4">
+  <div class="row pb-4">
+
+    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+      <div class="row pb-4">
+        <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title">HttpClient Feature</h5>
+            <h5 class="card-title">Feature : HttpClient</h5>
             <hr>
-            <p class="card-text">Commands</p>
-            <button type="button" class="btn btn-primary ms-2 mb-2" (click)="getUsers()">Get</button>
-            <button type="button" class="btn btn-primary ms-2 mb-2" (click)="resetUsers()">Reset</button>
+            <p class="card-text">Use HtppClient</p>
+            <button type="button" class="btn btn-primary mr-4" (click)="getUsers()">Get</button>
+            <button type="button" class="btn btn-primary" (click)="resetUsers()">Reset</button>
           </div>
         </div>
         <div *ngIf="!loaded">
@@ -36,27 +37,29 @@
         </div>
       </div>
     </div>
+
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-      <div class="row p-4">
-        <div class="table-responsive nga-httpclient-table blue-gradient" *ngIf="loaded">
+      <div class="row">
+        <div class="table-responsive httpclient-table blue-gradient" *ngIf="loaded">
           <table class="table table-hover table-striped table-responsive-md">
             <thead>
               <tr>
-                <th>name</th>
-                <th>username</th>
-                <th class="d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">email</th>
+                <th scope="col">name</th>
+                <th scope="col">username</th>
+                <th scope="col">email</th>
               </tr>
             </thead>
             <tbody>
               <tr *ngFor="let item of items">
                 <td>{{item.name}}</td>
                 <td>{{item.username}}</td>
-                <td class="d-none d-md-table-cell d-lg-table-cell d-xl-table-cell">{{item.email}}</td>
+                <td>{{item.email}}</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
     </div>
+
   </div>
 </div>

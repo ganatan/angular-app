@@ -12,9 +12,9 @@ export class ExerciceComponent implements OnInit {
 
   name = new FormControl('');
   releaseDate = new FormControl('');
-  franchise = new FormControl('');
-  budget = new FormControl('');
-  worldwide = new FormControl('');
+  franchise = new FormControl<boolean>(true);
+  budget = new FormControl<number>(0);
+  worldwide = new FormControl<number>(0);
   summary = new FormControl('');
 
   movie: Movie;
@@ -57,12 +57,12 @@ export class ExerciceComponent implements OnInit {
   }
 
   getClass(): void {
-    this.movie.name = this.name.value;
-    this.movie.releaseDate = this.releaseDate.value;
-    this.movie.franchise = this.franchise.value;
-    this.movie.budget = this.budget.value;
-    this.movie.worldwide = this.worldwide.value;
-    this.movie.summary = this.summary.value;
+    this.movie.name = this.name.value!;
+    this.movie.releaseDate = this.releaseDate.value!;
+    this.movie.franchise = this.franchise.value!;
+    this.movie.budget = this.budget.value!;
+    this.movie.worldwide = this.worldwide.value!;
+    this.movie.summary = this.summary.value!;
   }
 
 }

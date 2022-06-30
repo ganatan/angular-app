@@ -3,6 +3,8 @@ import { environment } from '../../../../environments/environment';
 import { isPlatformBrowser } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
 
+import { SeoService } from '../../../services/seo/seo.service';
+
 @Component({
   selector: 'app-angular',
   templateUrl: './angular.component.html',
@@ -18,9 +20,9 @@ export class AngularComponent implements OnInit {
   features: any;
 
   constructor(
-    @Inject(PLATFORM_ID) private platformId: object,
-    private meta: Meta,
-    private titleService: Title) {
+    private seoService: SeoService,
+    @Inject(PLATFORM_ID) private platformId: object) {
+
     this.features =
       [
         {
@@ -77,17 +79,15 @@ export class AngularComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.titleService.setTitle('angular.ganatan: Une Application Web avec Angular');
-    this.meta.addTag({
-      name: 'author',
-      content: 'danny ganatan'
-    });
-    this.meta.updateTag(
-      {
-        name: 'description',
-        content: 'Cette application a été développée avec Angular version 13.3.9 et bootstrap 5.1.3' +
-          ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
-      });
+    const content =
+      'Cette application a été développée avec Angular version 14.0.4 et bootstrap 5.1.3' +
+      ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)';
+
+    const title = 'angular-starter Title : Angular Page';
+
+    this.seoService.setMetaDescription(content);
+    this.seoService.setMetaTitle(title);
+
   }
 
   loadScript(name: string): void {

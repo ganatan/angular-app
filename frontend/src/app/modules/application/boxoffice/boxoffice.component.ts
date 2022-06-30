@@ -22,10 +22,10 @@ export class BoxofficeComponent implements OnInit {
   modalPlayer: any;
 
   formFilter = this.fb.group({
-    shows: [''],
-    movies: [''],
-    clips: [''],
-    games: [''],
+    shows: [true],
+    movies: [true],
+    clips: [true],
+    games: [true],
   });
 
   constructor(

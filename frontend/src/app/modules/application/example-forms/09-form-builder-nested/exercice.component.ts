@@ -11,13 +11,13 @@ export class ExerciceComponent implements OnInit {
   exampleForm = this.fb.group({
     name: [''],
     releaseDate: [''],
-    franchise: [''],
+    franchise: [false],
     summary: [''],
     boxoffice: this.fb.group({
-      budget: [''],
-      worldwide: [''],
-      international: [''],
-      domestic: [''],
+      budget: [0],
+      worldwide: [0],
+      international: [0],
+      domestic: [0],
     }),
 
   });

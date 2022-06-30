@@ -10,9 +10,9 @@ export class ExerciceComponent implements OnInit {
   exampleForm = this.fb.group({
     name: [''],
     releaseDate: [''],
-    franchise: [''],
-    budget: [''],
-    worldwide: [''],
+    franchise: [false],
+    budget: [0],
+    worldwide: [0],
     summary: [''],
   });
 

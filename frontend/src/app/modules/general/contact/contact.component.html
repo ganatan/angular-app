@@ -1,20 +1,10 @@
-<div class="container  text-center">
-  <div class="row">
-    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-      <h1>contact works!</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-      <ul>
-        <li><a routerLink="/contact/mailing">Mailing</a></li>
-        <li><a routerLink="/contact/map">Map</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
+<div class="container py-5">
+  <p>contact works!</p>
+  <ul>
+    <li><a routerLink="/contact/mailing">Mailing</a></li>
+    <li><a routerLink="/contact/mapping">Mapping</a></li>
+    <li><a routerLink="/contact/website">Website</a></li>
+  </ul>
+  <h4>Child Routes Result</h4>
+  <router-outlet></router-outlet>
 </div>

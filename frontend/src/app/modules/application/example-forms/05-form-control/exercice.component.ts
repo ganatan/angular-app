@@ -24,7 +24,7 @@ export class ExerciceComponent implements OnInit {
   updateControls(): void {
     this.name.setValue('Avengers: Endgame');
     this.releaseDate.setValue('26/04/2019');
-    this.franchise.setValue(true);
+    this.franchise.setValue('true');
     this.budget.setValue('356000000');
     this.worldwide.setValue('2797800564');
     this.summary.setValue('After the devastating events of Avengers: Infinity War (2018), ' +

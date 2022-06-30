@@ -5,7 +5,7 @@ import { isPlatformBrowser } from '@angular/common';
 
 import { Quote } from './quote';
 
-import { Observable, of } from 'rxjs';
+import { SeoService } from '../../../services/seo/seo.service';
 
 @Component({
   selector: 'app-about',
@@ -20,23 +20,25 @@ export class AboutComponent implements OnInit {
   id: number;
 
   constructor(
-    @Inject(PLATFORM_ID) private platformId: object,
-    private meta: Meta,
-    private titleService: Title) {
+    private seoService: SeoService,
+    @Inject(PLATFORM_ID) private platformId: object) {
+
+    const content = 'About content with meta';
+    this.seoService.setMetaDescription(content);
 
     this.id = 0;
     this.quote = new Quote();
     this.dependencies = {
       frontend: [
-        { name: 'Angular 13.3.9' },
-        { name: 'Angular CLI 13.3.6' },
-        { name: 'Angular Universal 13.1.1' },
+        { name: 'Angular 14.0.4' },
+        { name: 'Angular CLI 14.0.4' },
+        { name: 'Angular Universal 14.0.2' },
         { name: 'Bootstrap 5.1.3' },
         { name: 'Font Awesome 6.1.1' },
       ],
       backend: [
-        { name: 'Node.js 14.17.3' },
-        { name: 'Express 4.17.1' },
+        { name: 'Node.js 16.15.0' },
+        { name: 'Express 4.18.1' },
         { name: 'pg-promise 10.10.2' },
       ]
     };
@@ -113,23 +115,19 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      // MCP
-      // $('html,body').scrollTop(0);
     }
 
     this.loadQuote();
 
-    this.titleService.setTitle('angular.ganatan.com : A Propos');
-    this.meta.addTag({
-      name: 'author',
-      content: 'danny ganatan'
-    });
-    this.meta.updateTag(
-      {
-        name: 'description',
-        content: 'Cette application a été développée avec Angular version 13.3.9 et bootstrap 5.1.3' +
-          ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
-      });
+    const content =
+      'Cette application a été développée avec Angular version 14.0.4 et bootstrap 5.1.3' +
+      ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)';
+
+    const title = 'angular-starter Title : About Page';
+
+    this.seoService.setMetaDescription(content);
+    this.seoService.setMetaTitle(title);
+
   }
 
 
@@ -161,3 +159,4 @@ export class AboutComponent implements OnInit {
   }
 
 }
+

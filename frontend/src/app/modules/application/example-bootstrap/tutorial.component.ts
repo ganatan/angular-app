@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
+import { SeoService } from '../../../services/seo/seo.service';
 
 @Component({
   selector: 'app-example-bootstrap',
@@ -8,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TutorialComponent {
 
-  constructor() {
+  constructor(private seoService: SeoService) {
+    
+    const content = 'Example Bootstrap content with meta';
+    this.seoService.setMetaDescription(content);
+
+    this.seoService.setMetaTitle('angular-starter Title : example-bootstrap Page');
+    
   }
 
 }

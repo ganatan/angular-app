@@ -1,11 +1,11 @@
-.nga-httpclient-table {
-  border-radius: 10px;
-}
-
-.nga-httpclient-table table {
-  color: #FFFFFF;
-}
-
-.nga-httpclient-table.blue-gradient {
-  background: linear-gradient(40deg, #45cafc, #5664bd) !important
-}
+.httpclient-table {
+    border-radius: 10px;
+  }
+  
+  .httpclient-table table {
+    color: #FFFFFF;
+  }
+  
+  .httpclient-table.blue-gradient {
+    background: linear-gradient(40deg, #45cafc, #5664bd) !important
+  }

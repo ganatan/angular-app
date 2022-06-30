@@ -28,15 +28,15 @@ export class NewsComponent implements OnInit {
   resultsFound: boolean;
 
   formFilters = this.fb.group({
-    dateType: [''],
+    dateType: [1],
     fromDate: [''],
     toDate: [''],
-    sortType: [''],
-    show: [''],
-    movie: [''],
-    clip: [''],
-    game: [''],
-    elementsCount: [''],
+    sortType: [1],
+    show: [false],
+    movie: [false],
+    clip: [false],
+    game: [false],
+    elementsCount: [0],
   });
 
   constructor(

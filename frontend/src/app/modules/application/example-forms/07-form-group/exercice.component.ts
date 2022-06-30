@@ -11,9 +11,9 @@ export class ExerciceComponent implements OnInit {
   exampleForm = new FormGroup({
     name: new FormControl(''),
     releaseDate: new FormControl(''),
-    franchise: new FormControl(''),
-    budget: new FormControl(''),
-    worldwide: new FormControl(''),
+    franchise: new FormControl<boolean>(false),
+    budget: new FormControl<number>(0),
+    worldwide: new FormControl<number>(0),
     summary: new FormControl('')
   });
 

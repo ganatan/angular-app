@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { SeoService } from '../../../services/seo/seo.service';
 
 @Component({
   selector: 'app-signup',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent {
 
-  constructor() { }
+  constructor(private seoService: SeoService) {
+    
+    const content = 'Signup content with meta';
+    this.seoService.setMetaDescription(content);
+    
+  }
 
 }

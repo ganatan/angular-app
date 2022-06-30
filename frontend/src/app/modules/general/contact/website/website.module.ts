@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MapRoutingModule } from './map-routing.module';
+import { WebsiteRoutingModule } from './website-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    MapRoutingModule
+    WebsiteRoutingModule
   ]
 })
-export class MapModule { }
+export class WebsiteModule { }

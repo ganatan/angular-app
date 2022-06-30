@@ -1,53 +1,31 @@
-import { Component, OnInit } from '@angular/core';
-import { Inject, PLATFORM_ID } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
-
+import { Component } from '@angular/core';
 import { environment } from '../../../../environments/environment';
+import { SeoService } from '../../../services/seo/seo.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
   name = environment.application.name;
   angular = environment.application.angular;
   bootstrap = environment.application.bootstrap;
   fontawesome = environment.application.fontawesome;
 
-  features: any;
+  constructor(private seoService: SeoService) {
 
-  constructor(
-    @Inject(PLATFORM_ID) private platformId: object,
-    private meta: Meta,
-    private titleService: Title) {
+    const content =
+      'This application was developed with ' + this.angular + ' and ' + this.bootstrap +
+      ' It applies Routing, Lazy loading and Progressive Web App (PWA)';
+
+    const title = 'angular-starter Title : Home Page';
+
+    this.seoService.setMetaDescription(content);
+    this.seoService.setMetaTitle(title);
+
+
   }
-
-  ngOnInit(): void {
-
-    this.titleService.setTitle('angular.ganatan.com : An Angular Application Web');
-    this.meta.addTag({
-      name: 'author',
-      content: 'danny ganatan'
-    });
-    this.meta.updateTag(
-      {
-        name: 'description',
-        content: 'This application was developed with Angular version 13.3.9 and bootstrap 5.1.3' +
-          ' It applies Routing, Lazy loading, Server side rendering and Progressive Web App (PWA)'
-      });
-  }
-
-/*  loadScript(name: string): void {
-    if (isPlatformBrowser(this.platformId)) {
-      const src = document.createElement('script');
-      src.type = 'text/javascript';
-      src.src = name;
-      src.async = false;
-      document.getElementsByTagName('head')[0].appendChild(src);
-    }
-  }*/
 
 }
-

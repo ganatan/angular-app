@@ -9,22 +9,27 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import(`./mailing/mailing.module`)
-          .then(module => module.MailingModule)
+          .then(mod => mod.MailingModule)
       },
       {
         path: 'mailing',
         loadChildren: () => import(`./mailing/mailing.module`)
-          .then(module => module.MailingModule)
+          .then(mod => mod.MailingModule)
       },
       {
-        path: 'map',
-        loadChildren: () => import(`./map/map.module`)
-          .then(module => module.MapModule)
+        path: 'mapping',
+        loadChildren: () => import(`./mapping/mapping.module`)
+          .then(mod => mod.MappingModule)
+      },
+      {
+        path: 'website',
+        loadChildren: () => import(`./website/website.module`)
+          .then(mod => mod.WebsiteModule)
       },
       {
         path: '**',
         loadChildren: () => import(`./mailing/mailing.module`)
-          .then(module => module.MailingModule)
+          .then(mod => mod.MailingModule)
       },
 
     ]
