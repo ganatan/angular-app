@@ -1,6 +1,6 @@
 # Angular 14 Example Transfer state
 
-> An Angular starter kit featuring [Angular 14.1.1](https://angular.io), [Angular CLI 14.1.1](https://cli.angular.io/)
+> An Angular starter kit featuring [Angular 14.1.2](https://angular.io), [Angular CLI 14.1.2](https://cli.angular.io/)
 
 > it's part of a repo series designed to create a Progressive Web App with Angular
 
