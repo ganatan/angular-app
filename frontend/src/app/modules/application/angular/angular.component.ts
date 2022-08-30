@@ -80,7 +80,7 @@ export class AngularComponent implements OnInit {
   ngOnInit(): void {
 
     const content =
-      'Cette application a été développée avec Angular version 14.1.3 et bootstrap 5.2.0' +
+      'Cette application a été développée avec Angular version 14.2.0 et bootstrap 5.2.0' +
       ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)';
 
     const title = 'angular-starter Title : Angular Page';
