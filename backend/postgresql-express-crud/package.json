@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "dev": "nodemon node server",
+    "dev": "nodemon server",
     "prod": "cross-env NODE_ENV=prod node server",
     "pm2-prod": "pm2 start process.config.js --env prod"
   },
@@ -24,7 +24,7 @@
     "cross-env": "7.0.3",
     "express": "4.18.1",
     "express-prettify": "0.1.2",
-    "nodemon": "2.0.19",
-    "pg-promise": "10.11.1"
+    "nodemon": "2.0.20",
+    "pg-promise": "10.12.0"
   }
 }
