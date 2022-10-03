@@ -4,7 +4,7 @@ export const environment = {
   {
     name: 'angular-starter',
     angular: 'Angular 14.2.4',
-    bootstrap: 'Bootstrap 5.2.1',
+    bootstrap: 'Bootstrap 5.2.2',
     fontawesome: 'Font Awesome 6.2.0',
   },
   urlNews: './assets/params/json/mock/trailers.json',
