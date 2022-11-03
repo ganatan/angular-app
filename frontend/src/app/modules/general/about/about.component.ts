@@ -31,7 +31,7 @@ export class AboutComponent implements OnInit {
     this.dependencies = {
       frontend: [
         { name: 'Angular 14.2.8' },
-        { name: 'Angular CLI 14.2.7' },
+        { name: 'Angular CLI 14.2.8' },
         { name: 'Angular Universal 14.2.0' },
         { name: 'Bootstrap 5.2.2' },
         { name: 'Font Awesome 6.2.0' },
