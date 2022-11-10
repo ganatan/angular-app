@@ -20,8 +20,7 @@ export class TutorialComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    //    this.loadScript('assets/params/js/prism.js');
-    this.loadScript('assets/params/js/prism.min.js');
+    this.loadScript('assets/params/js/prism.js');
   }
 
   openModal() {

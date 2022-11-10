@@ -63,10 +63,10 @@ export class PrismComponent implements ControlValueAccessor, AfterViewInit {
 
   update(data?: any) {
 
-    if (data !== undefined) {
+/*    if (data !== undefined) {
       this.code = data;
       this.renderer.removeChild(this.preNode, this.codeNode);
-    }
+    } */
 
     this.preNode = this.renderer.createElement('pre');
     this.codeNode = this.renderer.createElement('code');
