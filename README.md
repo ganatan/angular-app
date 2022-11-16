@@ -66,7 +66,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 - [x] Angular CLI : 14.2.9
 - [x] Angular Universal : 14.2.2
 - [x] Bootstrap : 5.2.2
-- [x] Fontawesome : 6.2.0
+- [x] Fontawesome : 6.2.1
 
 > Features
 - [x] Routing
