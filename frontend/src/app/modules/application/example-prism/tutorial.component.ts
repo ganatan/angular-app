@@ -11,7 +11,6 @@ import { isPlatformBrowser } from '@angular/common';
 export class TutorialComponent implements OnInit {
 
   element = {
-    //    text: '<pre><code class="language-css">p { color: red }</code></pre>',
     text: 'console.log("0001");',
     languagecode: 'javascript'
   }
