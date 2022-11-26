@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToastsComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
     this.loadScript('./assets/params/js/toasts.js');
   }

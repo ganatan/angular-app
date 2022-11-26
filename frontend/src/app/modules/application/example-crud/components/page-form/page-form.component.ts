@@ -58,6 +58,7 @@ export class PageFormComponent {
   }
 
   createForm(): void {
+    console.log('createForm');
   }
 
   getItemById(): void {
@@ -82,6 +83,7 @@ export class PageFormComponent {
   }
 
   setFormValue(item: any): void {
+    console.log(item);
   }
 
   onCreate(): void {
@@ -129,6 +131,7 @@ export class PageFormComponent {
   deleteItem(url: any, id: number): void {
     this.itemsService.deleteItem(url, id)
       .subscribe(data => {
+        console.log(data);
         this.resetForm();
       });
   }

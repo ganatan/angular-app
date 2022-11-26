@@ -20,9 +20,6 @@ export class SearchBarComponent {
 
   @Output() search = new EventEmitter<string>();
 
-  constructor() {
-  }
-
   searching(): void {
     this.search.emit(this.edit.nativeElement.value);
   }

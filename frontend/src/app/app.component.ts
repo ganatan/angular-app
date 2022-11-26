@@ -8,12 +8,14 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'angular-starter';
+
+  title = 'angular-bootstrap';
   footerUrl = 'https://www.ganatan.com/';
   footerLink = 'www.ganatan.com';
 
   constructor(
-    @Inject(PLATFORM_ID) private platformId: object) {
+    @Inject(PLATFORM_ID) private platformId: object
+    ) {
   }
 
   ngOnInit(): void {
@@ -28,6 +30,6 @@ export class AppComponent implements OnInit {
         }
       }
     }
-  }
+  } 
 
 }

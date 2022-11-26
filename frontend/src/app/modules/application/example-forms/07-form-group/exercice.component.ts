@@ -17,8 +17,6 @@ export class ExerciceComponent implements OnInit {
     summary: new FormControl('')
   });
 
-  constructor() { }
-
   ngOnInit(): void {
     this.updateControls();
   }

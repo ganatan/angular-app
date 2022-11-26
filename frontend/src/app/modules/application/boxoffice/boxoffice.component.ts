@@ -6,7 +6,7 @@ import { Item } from './items/item';
 import { ItemsService } from './items/items.service';
 import { environment } from '../../../../environments/environment';
 
-
+// eslint-disable-next-line
 declare const bootstrap: any;
 
 @Component({
@@ -19,6 +19,7 @@ export class BoxofficeComponent implements OnInit {
   items: Item[];
   player: string;
   playerLoaded: boolean;
+  // eslint-disable-next-line
   modalPlayer: any;
 
   formFilter = this.fb.group({
@@ -46,32 +47,11 @@ export class BoxofficeComponent implements OnInit {
       games: true,
     });
 
-    /*    this.formFilter = new FormGroup({
-          toto: new FormControl(),
-          movie: new FormControl(),
-          clip: new FormControl(),
-          game: new FormControl(),
-        });
-    
-        this.formFilter.setValue({
-          toto: true,
-        });  */
-
   }
 
   ngOnInit(): void {
     this.getItems();
-
-    this.formFilter.valueChanges
-      .subscribe(data => {
-        this.formFilterChanged(data);
-      });
-
   }
-
-  formFilterChanged(data: any) {
-    const shows = data["shows"];
-  };
 
   getItems(): any {
     const url = environment.urlMovies;
@@ -84,7 +64,7 @@ export class BoxofficeComponent implements OnInit {
       );
   }
 
-  onSelectItemTrailer(item: any, id: any) {
+  onSelectItemTrailer(item: any) {
     this.player = item.youtubeLink;
     this.playerLoaded = true;
     if (this.modalPlayer === undefined) {
@@ -92,13 +72,9 @@ export class BoxofficeComponent implements OnInit {
         keyboard: true
       })
       const selectPlayer = document.getElementById('exampleModal')
-      selectPlayer?.addEventListener('show.bs.modal', this.onShowModal.bind(this));
       selectPlayer?.addEventListener('hidden.bs.modal', this.onCloseModal.bind(this));
     }
     this.modalPlayer?.show();
-  }
-
-  onShowModal() {
   }
 
   onCloseModal() {

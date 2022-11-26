@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import { catchError, map } from 'rxjs/operators';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -79,7 +79,6 @@ export class ItemsService {
     if (api) {
       result = this.http.get<any>(urlParameter)
         .pipe(
-          tap(heroes => this.log(`fetched items`)),
           catchError(this.handleError('getItems', []))
         );
     } else {
@@ -142,7 +141,6 @@ export class ItemsService {
       if (api) {
         const urlParameter = url + '/' + id;
         result = this.http.get<any>(urlParameter).pipe(
-          tap(element => this.log(`fetched item id=${id}`)),
           catchError(this.handleError<any>(`getItem id=${id}`))
         );
       } else {
@@ -161,7 +159,6 @@ export class ItemsService {
     const body = JSON.stringify(item);
 
     return this.http.post<any>(url, body, httpOptions).pipe(
-      tap((itemData: any) => this.log(`added item w/ id=${item.id}`)),
       catchError(this.handleError<any>('addItem'))
     );
   }
@@ -170,7 +167,6 @@ export class ItemsService {
     const url = link + '/' + id;
 
     return this.http.put(url, body, httpOptions).pipe(
-      tap(element => this.log(`updated item id=id`)),
       catchError(this.handleError<any>('updateItem'))
     );
   }
@@ -179,22 +175,17 @@ export class ItemsService {
     const url = link + '/' + id;
 
     return this.http.delete<any>(url, httpOptions).pipe(
-      tap(element => this.log(`deleted item id=${id}`)),
       catchError(this.handleError<any>('deleteItem'))
     );
   }
 
   private handleError<T>(operation = 'operation', result?: T): any {
     return (error: any): Observable<T> => {
-      console.error(error);
-      this.log(`${operation} failed: ${error.message}`);
+      console.error(`${operation} failed: ${error.message}`);
 
       return of(result as T);
     };
   }
-
-  private log(message: string): void {
-  }
-
+  
 }
 

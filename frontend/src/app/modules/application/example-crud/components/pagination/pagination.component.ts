@@ -1,4 +1,4 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
+import { Component, OnChanges } from '@angular/core';
 import { Input, Output, EventEmitter } from '@angular/core';
 
 import { Pagination } from './pagination';
@@ -10,7 +10,6 @@ import { PaginationService } from './pagination.service';
   styleUrls: ['./pagination.component.css']
 })
 export class PaginationComponent implements OnChanges {
-
 
   @Input() count: any;
   @Input() page: any;

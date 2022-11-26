@@ -22,9 +22,6 @@ export class TutorialComponent implements OnInit {
     this.loadScript('assets/params/js/prism.js');
   }
 
-  openModal() {
-  }
-
   loadScript(name: string): void {
 
     if (isPlatformBrowser(this.platformId)) {

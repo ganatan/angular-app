@@ -22,7 +22,7 @@ export class TutorialComponent implements OnInit {
     const content = 'Example Forms content with meta';
     this.seoService.setMetaDescription(content);
 
-    this.seoService.setMetaTitle('angular-starter Title : example-services Page');
+    this.seoService.setMetaTitle('Angular-seo Title : example-services Page');
 
     this.songs = [];
     this.yearSelected = 3;
@@ -43,6 +43,7 @@ export class TutorialComponent implements OnInit {
     this.songSelected = song;
   }
 
+  // eslint-disable-next-line
   onChangeYear($event: any): void {
     this.yearSelected = $event.target.value;
     this.songs = this.songService.getSongs(this.yearSelected);

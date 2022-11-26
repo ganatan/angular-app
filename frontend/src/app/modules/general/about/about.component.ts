@@ -1,11 +1,11 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { PLATFORM_ID } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
-import { isPlatformBrowser } from '@angular/common';
 
 import { Quote } from './quote';
 
 import { SeoService } from '../../../services/seo/seo.service';
+import { Feature } from './feature';
+import { Dependency } from './dependency';
 
 @Component({
   selector: 'app-about',
@@ -14,8 +14,8 @@ import { SeoService } from '../../../services/seo/seo.service';
 })
 export class AboutComponent implements OnInit {
 
-  dependencies: any;
-  features: any;
+  dependencies: Dependency;
+  features: Feature;
   quote: Quote;
   id: number;
 
@@ -30,10 +30,10 @@ export class AboutComponent implements OnInit {
     this.quote = new Quote();
     this.dependencies = {
       frontend: [
-        { name: 'Angular 14.2.10' },
-        { name: 'Angular CLI 14.2.9' },
-        { name: 'Angular Universal 14.2.2' },
-        { name: 'Bootstrap 5.2.2' },
+        { name: 'Angular 15.0.1' },
+        { name: 'Angular CLI 15.0.1' },
+        { name: 'Angular Universal 15.0.0' },
+        { name: 'Bootstrap 5.2.3' },
         { name: 'Font Awesome 6.2.1' },
       ],
       backend: [
@@ -92,12 +92,12 @@ export class AboutComponent implements OnInit {
         },
         {
           name: 'Components',
-          englishTutorial: null,
+          englishTutorial: '',
           frenchTutorial: 'https://www.ganatan.com/tutorials/components-avec-angular',
         },
         {
           name: 'Services',
-          englishTutorial: null,
+          englishTutorial: '',
           frenchTutorial: 'https://www.ganatan.com/tutorials/services-avec-angular',
         },
       ],
@@ -114,13 +114,10 @@ export class AboutComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-    }
-
     this.loadQuote();
 
     const content =
-      'Cette application a été développée avec Angular version 14.2.10 et bootstrap 5.2.2' +
+      'Cette application a été développée avec Angular version 15.0.1 et bootstrap 5.2.3' +
       ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)';
 
     const title = 'angular-starter Title : About Page';

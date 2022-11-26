@@ -4,87 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>angular-home</title>
+  <title>angular-starter-home</title>
 
   <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/params/css/fonts.googleapis.min.css" rel="stylesheet">
 
-  <style>
-    body {
-      padding-top: 3.5rem;
-      font-family: "Roboto", sans-serif;
-    }
-  </style>
-
-  <!-- HEADER -->
-  <style>
-    .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
-      color: white;
-      font-weight: 500;
-      border-top: 1px solid #09238d;
-      border-bottom: 1px solid #09238d;
-    }
-
-    .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
-      color: yellow;
-      border-top: 1px solid yellow;
-      border-bottom: 1px solid yellow;
-    }
-
-    .nga-navbar {
-      -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
-      background-color: #09238d;
-    }
-
-    .nga-logo {
-      font-weight: 700;
-    }
-
-    .nga-logo:hover {
-      color: rgba(255, 255, 255, 0.75);
-    }
-
-    .nga-btn-navbar {
-      color: #fff;
-      background-color: #1976d2;
-      border-color: #0d6efd;
-    }
-
-    .nga-btn-navbar:hover {
-      color: white;
-      background-color: #0b5ed7;
-      border-color: #0a58ca;
-    }
-  </style>
-
-  <!-- FOOTER -->
-  <style>
-    .nga-footer {
-      background-color: #212121;
-      color: white;
-    }
-
-    .nga-footer a {
-      color: white;
-      text-decoration: none
-    }
-
-    .nga-footer a:hover,
-    .nga-footer a:focus {
-      color: yellow;
-      text-decoration: underline;
-    }
-
-    .nga-footer .hint {
-      background-color: #1976d2;
-    }
-
-    .nga-footer .hint:hover {
-      opacity: 0.8;
-    }
-  </style>
+  <link href="assets/params/css/body.css" rel="stylesheet">
+  <link href="assets/params/css/header.css" rel="stylesheet">
+  <link href="assets/params/css/footer.css" rel="stylesheet">
 
   <!-- HOME -->
   <style>
@@ -111,30 +39,6 @@
       color: #0d6efd;
       text-decoration: none;
     }
-
-    /*    .nga-card-step {
-      box-shadow: 0 1px 1px rgba(0, 0, 0, .04), 0 3px 3px rgba(0, 0, 0, .09);
-      margin: 4px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .nga-card-step:hover {
-      box-shadow: 0 4px 4px rgba(0, 0, 0, .09), 0 4px 4px rgba(0, 0, 0, .13);
-      border-radius: 5px;
-      color: #0d6efd;
-
-    }
-
-    .nga-card-step a {
-      color: black;
-      text-decoration: none;
-    }
-
-    .nga-card-step a:hover {
-      color: #0d6efd;
-      text-decoration: none;
-    } */
   </style>
 
 </head>
@@ -170,9 +74,9 @@
           </li>
         </ul>
         <form class="d-flex">
-          <button type="button" class="btn btn-sm nga-btn-navbar me-2"><i class="fas fa-user-plus me-2"></i>Sign
-            up</button>
-          <button type="button" class="btn btn-sm btn-outline-light me-2"><i
+          <button type="button" class="btn btn-sm btn-primary me-2" routerLink="/signup"><i
+              class="fas fa-user-plus me-2"></i>Sign up</button>
+          <button type="button" class="btn btn-sm btn-outline-light me-2" routerLink="/login"><i
               class="fas fa-sign-in-alt me-2"></i>Login</button>
         </form>
       </div>
@@ -192,17 +96,17 @@
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 text-center text-danger mb-2">
           <h2 class="h5">
-            Angular 14.2.10<i class="fab fa-angular fa-lg ms-2"></i>
+            Angular 14.2.2<i class="fa-brands fa-angular fa-lg ms-2"></i>
           </h2>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 text-center text-primary mb-2">
           <h2 class="h5">
-            Bootstrap 5.2.2<i class="fab fa-bootstrap fa-lg ms-2"></i>
+            Bootstrap 5.2.1<i class="fa-brands fa-bootstrap fa-lg ms-2"></i>
           </h2>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 text-center text-success mb-2">
           <h2 class="h5">
-            Font Awesome 5.15.4<i class="fab fa-font-awesome-flag fa-lg ms-2"></i>
+            Font Awesome 6.2.0<i class="fa-solid fa-font-awesome fa-lg ms-2"></i>
           </h2>
         </div>
       </div>

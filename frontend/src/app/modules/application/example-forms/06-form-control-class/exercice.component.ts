@@ -56,13 +56,13 @@ export class ExerciceComponent implements OnInit {
     this.summary.setValue(null);
   }
 
-  getClass(): void {
-    this.movie.name = this.name.value!;
-    this.movie.releaseDate = this.releaseDate.value!;
-    this.movie.franchise = this.franchise.value!;
-    this.movie.budget = this.budget.value!;
-    this.movie.worldwide = this.worldwide.value!;
-    this.movie.summary = this.summary.value!;
-  }
+  /*  getClass(): void {
+      this.movie.name = this.name.value!;
+      this.movie.releaseDate = this.releaseDate.value!;
+      this.movie.franchise = this.franchise.value!;
+      this.movie.budget = this.budget.value!;
+      this.movie.worldwide = this.worldwide.value!;
+      this.movie.summary = this.summary.value!;
+    } */
 
 }

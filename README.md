@@ -1,4 +1,4 @@
- # Angular 14 / Bootstrap 5 & CRUD REST API
+ # Angular 15 / Bootstrap 5 & CRUD REST API
 
 <table>
 <tr>
@@ -8,10 +8,10 @@
     alt="Ganatan Angular Example Demo" width="140" height="140">
   </a>
 
-it's a repo designed to create a **Web Application with Angular 14**
+it's a repo designed to create a **Web Application with Angular 15**
 
 
-* Frontend - [**Angular 14.2.10**](https://github.com/angular/angular/releases) & [**Angular CLI 14.2.9**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 15.0.1**](https://github.com/angular/angular/releases) & [**Angular CLI 15.0.1**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
@@ -62,10 +62,10 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 14.2.10
-- [x] Angular CLI : 14.2.9
-- [x] Angular Universal : 14.2.2
-- [x] Bootstrap : 5.2.2
+- [x] Angular : 15.0.1
+- [x] Angular CLI : 15.0.1
+- [x] Angular Universal : 15.0.0
+- [x] Bootstrap : 5.2.3
 - [x] Fontawesome : 6.2.1
 
 > Features

@@ -25,19 +25,6 @@
   color: rgba(255, 255, 255, 0.75);
 }
 
-
-.nga-btn-navbar {
-  color: #fff;
-  background-color: #1976d2;
-  border-color: #0d6efd;
-}
-
-.nga-btn-navbar:hover {
-  color: white;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
-}
-
 .nga-logo {
   font-weight: 700;
 }

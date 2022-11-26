@@ -7,6 +7,7 @@ import { Badge } from './badge';
 import { ItemsService } from './items/items.service';
 import { environment } from '../../../../environments/environment';
 
+// eslint-disable-next-line
 declare const bootstrap: any;
 
 @Component({
@@ -22,6 +23,7 @@ export class NewsComponent implements OnInit {
   searchField: string;
   player: string;
   playerLoaded: boolean;
+  // eslint-disable-next-line
   modalPlayer: any;
   loaded: boolean;
   filtersEnabled: boolean;
@@ -70,24 +72,11 @@ export class NewsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getItems();
-    this.formFilters.valueChanges
-      .subscribe(data => {
-        this.formFiltersChanged(data, false);
-      });
   }
 
-  getItems(): any {
+  getItems() {
     this.loaded = false;
     const url = environment.urlNews;
-    /*    setTimeout(() => {
-          this.itemsService.getItems(url)
-            .subscribe(
-              items => {
-                this.items = items;
-                this.loaded = true;
-              }
-            );
-        }, 500); */
     this.itemsService.getItems(url)
       .subscribe(
         items => {
@@ -97,42 +86,7 @@ export class NewsComponent implements OnInit {
       );
   }
 
-  formFiltersChanged(data: any, closingBadge: boolean) {
-    this.badges = [];
-    if (data["movie"]) {
-      this.badges.push({ name: 'movie', caption: 'Movie', icon: 'fas fa-film' })
-    };
-    if (data["show"]) {
-      this.badges.push({ name: 'show', caption: 'Show', icon: 'fas fa-desktop' });
-    };
-    if (data["clip"]) {
-      this.badges.push({ name: 'clip', caption: 'Clip', icon: 'fas fa-volume-up' })
-    };
-    if (data["game"]) {
-      this.badges.push({ name: 'game', caption: 'Game', icon: 'fab fa-playstation' })
-    };
-    if (!closingBadge) {
-      this.closeFilters();
-    }
-    this.getItems();
-  }
-
-  closeFilters() {
-    this.filtersEnabled = !this.filtersEnabled;
-    const collapse = document.getElementById('collapseFilters')
-    new bootstrap.Collapse(collapse, { hide: true });
-  }
-
-  addItem() {
-    this.router.navigate(['/news', 0]);
-  }
-
-
-  closeBadge(badge: string) {
-    this.closeFilters();
-  }
-
-  openTrailer(item: any, id: any) {
+  openTrailer(item: any) {
     this.player = item.youtubeLink;
     this.playerLoaded = true;
     if (this.modalPlayer === undefined) {
@@ -140,13 +94,9 @@ export class NewsComponent implements OnInit {
         keyboard: true
       })
       const selectPlayer = document.getElementById('newsModal')
-      selectPlayer?.addEventListener('show.bs.modal', this.onShowModal.bind(this));
       selectPlayer?.addEventListener('hidden.bs.modal', this.onCloseModal.bind(this));
     }
     this.modalPlayer?.show();
-  }
-
-  onShowModal() {
   }
 
   onCloseModal() {
@@ -162,12 +112,6 @@ export class NewsComponent implements OnInit {
 
   onSearch() {
     this.getItems();
-  }
-
-  onLoading(event: any) {
-  }
-
-  loadError(event: any) {
   }
 
 }

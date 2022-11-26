@@ -1,7 +1,6 @@
-import { Inject, PLATFORM_ID, Component, AfterViewInit, Input } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { Inject, PLATFORM_ID, Component, Input } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { catchError, tap } from 'rxjs/operators';
+import { catchError } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { timeout } from 'rxjs/operators';
@@ -27,7 +26,7 @@ const httpOptions = {
   styleUrls: ['./modal-ebook.component.css']
 })
 
-export class ModalEbookComponent implements AfterViewInit {
+export class ModalEbookComponent {
 
   @Input() id: string;
   @Input() title: string;
@@ -65,7 +64,6 @@ export class ModalEbookComponent implements AfterViewInit {
               if ((data === undefined) || (data === null)) {
                 data = { id: 1, message: 'User created!' };
               }
-//              $('#modalEbook').modal('hide');
               this.item.action = 'valid';
               this.item.emailebook = this.emailebook;
               this.item.data = data;
@@ -74,49 +72,29 @@ export class ModalEbookComponent implements AfterViewInit {
             });
       }
     } else {
-//      $('#modalEbook').modal('hide');
       this.item.action = 'cancel';
       this.item.emailebook = this.emailebook;
       this.modalEbookService.afterClosed(this.item);
     }
   }
 
-  ngAfterViewInit() {
-    if (isPlatformBrowser(this.platformId)) {
-/*      $('#modalEbook').on('show.bs.modal', function (this: any, $event: any) {
-      }, ($event: any) => {
-        this.onLoad(event);
-      }); */
-    }
-  }
-
-  onLoad(event: any) {
-    this.loading = false;
-  }
-
   getSubscriptionTutorial(email: any, pageId: any, pagename: any): Observable<any> {
     let url = '';
-    // let url = this.configService.getConfig().getUrl();
     url = url + 'subscription-tutorial';
     const body = JSON.stringify({ pageId: pageId, pagename: pagename, email: email });
 
     return this.http.post<any>(url, body, httpOptions).pipe(
       timeout(3000),
-      tap((itemData: any) => this.log(`added item w/ id=${9999}`)),
       catchError(this.handleError<any>('addItem'))
     );
   }
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
-      console.error(error);
-      this.log(`${operation} failed: ${error.message}`);
+      console.error(`${operation} failed: ${error.message}`);
 
       return of(result as T);
     };
-  }
-
-  private log(message: string) {
   }
 
 }

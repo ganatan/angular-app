@@ -11,7 +11,7 @@ export class ChannelComponent {
 
   @Input() channel: Channel;
   @Input() index: number;
-  @Output() selected: EventEmitter<any> = new EventEmitter<any>();
+  @Output() selected: EventEmitter<Channel> = new EventEmitter<Channel>();
 
   constructor() {
     this.channel = new Channel();

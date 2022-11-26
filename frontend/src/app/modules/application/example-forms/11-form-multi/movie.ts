@@ -3,6 +3,8 @@ export class Movie {
   releaseDate: string;
 
   constructor() {
+    this.name = '';
+    this.releaseDate = '';
   }
 
 }

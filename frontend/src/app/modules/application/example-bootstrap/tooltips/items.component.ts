@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TooltipsComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
     this.loadScript('./assets/params/js/tooltips.js');
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Injector } from '@angular/core';
 
 import { PageListComponent } from '../../components/page-list/page-list.component';
@@ -15,7 +15,7 @@ export class ShowsComponent extends PageListComponent {
   }
 
   override initialize(): void {
-    
+
     this.endpoint = 'shows';
     this.link = 'shows';
     this.placeholder = 'shows...';

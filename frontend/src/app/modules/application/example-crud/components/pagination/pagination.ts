@@ -8,6 +8,4 @@ export class Pagination {
   public page: any;
   public perPage: any;
 
-  constructor(
-  ) { }
 }

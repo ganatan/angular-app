@@ -1,9 +1,9 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { environment } from '../../../../environments/environment';
 import { isPlatformBrowser } from '@angular/common';
-import { Meta, Title } from '@angular/platform-browser';
 
 import { SeoService } from '../../../services/seo/seo.service';
+import { Feature } from './feature';
 
 @Component({
   selector: 'app-angular',
@@ -17,7 +17,7 @@ export class AngularComponent implements OnInit {
   bootstrap = environment.application.bootstrap;
   fontawesome = environment.application.fontawesome;
 
-  features: any;
+  features: Array<Feature>;
 
   constructor(
     private seoService: SeoService,
@@ -80,7 +80,7 @@ export class AngularComponent implements OnInit {
   ngOnInit(): void {
 
     const content =
-      'Cette application a été développée avec Angular version 14.2.10 et bootstrap 5.2.2' +
+      'Cette application a été développée avec Angular version 15.0.1 et bootstrap 5.2.3' +
       ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)';
 
     const title = 'angular-starter Title : Angular Page';

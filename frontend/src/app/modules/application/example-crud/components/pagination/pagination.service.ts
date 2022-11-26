@@ -7,8 +7,7 @@ import { Injectable } from '@angular/core';
 
 export class PaginationService {
 
-  constructor() { }
-
+  // eslint-disable-next-line
   range(start: any, stop: any, step: any): any {
     if (stop == null) {
       stop = start || 0;
@@ -22,11 +21,11 @@ export class PaginationService {
     for (let idx = 0; idx < length; idx++, start += step) {
       range[idx] = start;
     }
-    
+
     return range;
   }
 
-  getPagination(totalItems: number, currentPage: number = 1, perPage: number): any {
+  getPagination(totalItems: number, currentPage: number, perPage: number) {
     const totalPages = Math.ceil(totalItems / perPage);
     let startPage: number;
     let endPage: number;

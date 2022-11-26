@@ -15,8 +15,6 @@ export class ExerciceComponent implements OnInit {
   worldwide = new FormControl('');
   summary = new FormControl('');
 
-  constructor() { }
-
   ngOnInit(): void {
     this.updateControls();
   }

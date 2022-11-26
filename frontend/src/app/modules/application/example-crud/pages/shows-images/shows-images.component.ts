@@ -55,7 +55,7 @@ export class ShowsImagesComponent extends PageListComponent implements OnInit {
       });
   }
 
-  override selectItem(id: any): void {
+  override selectItem(id: number): void {
     this.router.navigate(['/crud/' + this.link, id]);
   }
 

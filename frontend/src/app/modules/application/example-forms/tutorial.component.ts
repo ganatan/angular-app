@@ -13,7 +13,7 @@ export class TutorialComponent {
     const content = 'Example Forms content with meta';
     this.seoService.setMetaDescription(content);
 
-    this.seoService.setMetaTitle('angular-starter Title : example-forms Page');
+    this.seoService.setMetaTitle('Angular-seo Title : example-forms Page');
     
   }
 

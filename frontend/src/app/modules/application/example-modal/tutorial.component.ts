@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { ModalEbookService } from './modal-ebook/modal-ebook.service';
 

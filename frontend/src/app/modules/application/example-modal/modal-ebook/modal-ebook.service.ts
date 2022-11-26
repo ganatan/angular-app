@@ -3,6 +3,7 @@ import { Subject } from 'rxjs';
 import { Item } from './item';
 import { Injectable } from "@angular/core";
 
+// eslint-disable-next-line
 declare const bootstrap: any;
 
 @Injectable()
@@ -18,9 +19,6 @@ export class ModalEbookService {
   missionAnnounced$ = this.missionAnnouncedSource.asObservable();
   missionConfirmed$ = this.missionConfirmedSource.asObservable();
 
-  constructor() {
-  }
-
   announceMission(mission: string) {
     this.missionAnnouncedSource.next(mission);
   }
@@ -34,18 +32,9 @@ export class ModalEbookService {
     const modalEbook = new bootstrap.Modal(document.getElementById('modalEbook'), {
       keyboard: true
     })
-    const selectPlayer = document.getElementById('newsModal')
-    selectPlayer?.addEventListener('show.bs.modal', this.onShowModal.bind(this));
-    selectPlayer?.addEventListener('hidden.bs.modal', this.onCloseModal.bind(this));
     if (modalEbook) {
       modalEbook?.show();
     } 
-  }
-
-  onShowModal() {
-  }
-
-  onCloseModal() {
   }
 
   afterClosed(item: Item) {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Movie } from './movie';
 
 @Component({
@@ -8,10 +8,10 @@ import { Movie } from './movie';
 })
 export class ExerciceComponent {
 
-  country: any;
+  country: string;
   actor: string;
   movie: Movie = new Movie();
-  movieAny: any;
+  movieAny = { name: '' };
 
   constructor() {
     this.country = 'United States';

@@ -3,7 +3,7 @@ import { Component, Input, Renderer2, forwardRef, AfterViewInit } from '@angular
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
-import { ElementRef, ViewChild } from '@angular/core';
+import { ElementRef } from '@angular/core';
 
 declare const Prism: any;
 
@@ -28,7 +28,9 @@ export class PrismComponent implements ControlValueAccessor, AfterViewInit {
   private codeNode: Node;
   public selectedValue: number;
 
-  propagateChange = (element: any) => { };
+  propagateChange = (element: any) => {
+    console.log('propagateChange' + element);
+  };
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: object,
@@ -45,7 +47,7 @@ export class PrismComponent implements ControlValueAccessor, AfterViewInit {
 
   public writeValue(obj: number): void {
     this.selectedValue = obj;
-    this.update(obj);
+    this.update();
   }
 
   public registerOnChange(fn: any) {
@@ -53,6 +55,7 @@ export class PrismComponent implements ControlValueAccessor, AfterViewInit {
   }
 
   public registerOnTouched(fn: any) {
+    this.propagateChange = fn;
   }
 
   ngAfterViewInit() {
@@ -61,12 +64,7 @@ export class PrismComponent implements ControlValueAccessor, AfterViewInit {
     }
   }
 
-  update(data?: any) {
-
-/*    if (data !== undefined) {
-      this.code = data;
-      this.renderer.removeChild(this.preNode, this.codeNode);
-    } */
+  update() {
 
     this.preNode = this.renderer.createElement('pre');
     this.codeNode = this.renderer.createElement('code');

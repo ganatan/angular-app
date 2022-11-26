@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopoversComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
     this.loadScript('./assets/params/js/popovers.js');
   }

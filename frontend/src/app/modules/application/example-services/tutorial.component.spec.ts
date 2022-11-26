@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TutorialComponent } from './tutorial.component';
 import { SafePipe } from './safe.pipe';

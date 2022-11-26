@@ -98,7 +98,7 @@ export class PageListComponent {
     }
   }
 
-  writeQueryParams(search?: boolean): void {
+  writeQueryParams(): void {
     let query = this.searchField;
     if ((query === '') || (query === undefined)) {
       query = '';

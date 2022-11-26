@@ -8,24 +8,14 @@
       "files": [
         "*.ts"
       ],
-      "parserOptions": {
-        "project": [
-          "tsconfig.json"
-        ],
-        "createDefaultProgram": true
-      },
       "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
-        "no-var": "error",
-        "prefer-const": "error",
-        "func-names": "error",
-        "id-length": "error",
-        "newline-before-return": "error",
-        "space-before-blocks": "error",
-        "no-alert": "error",
+        "@typescript-eslint/no-explicit-any": "off",
         "@angular-eslint/directive-selector": [
           "error",
           {
@@ -51,7 +41,16 @@
       "extends": [
         "plugin:@angular-eslint/template/recommended"
       ],
-      "rules": {}
+      "rules": {
+        "no-undefined": "error",
+        "no-var": "error",
+        "prefer-const": "error",
+        "func-names": "error",
+        "id-length": "error",
+        "newline-before-return": "error",
+        "space-before-blocks": "error",
+        "no-alert": "error"
+      }
     }
   ]
 }

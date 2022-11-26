@@ -1,25 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { ItemsComponent } from './items.component';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserTransferStateModule } from '@angular/platform-browser';
+import { ItemsComponent } from './items.component';
 
-describe('ExampleHttpclientComponent', () => {
+describe('ItemsComponent', () => {
   let component: ItemsComponent;
   let fixture: ComponentFixture<ItemsComponent>;
 
   beforeEach(async () => {
-    TestBed.configureTestingModule({
+    await TestBed.configureTestingModule({
       imports: [
-        HttpClientModule,
-        BrowserTransferStateModule
-      ],
-      declarations: [ItemsComponent]
+        HttpClientModule
+      ],      
+      declarations: [ ItemsComponent ]
     })
-      .compileComponents();
-  });
+    .compileComponents();
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(ItemsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
