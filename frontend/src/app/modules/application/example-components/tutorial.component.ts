@@ -18,7 +18,7 @@ export class TutorialComponent implements OnInit {
     const content = 'Example Components content with meta';
     this.seoService.setMetaDescription(content);
 
-    this.seoService.setMetaTitle('Angular-seo Title : example-components Page');
+    this.seoService.setMetaTitle('angular-starter Title : example-components Page');
 
     this.channelSelected = new Channel();
     this.channels =

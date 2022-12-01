@@ -22,7 +22,7 @@ export class TutorialComponent implements OnInit {
     const content = 'Example Forms content with meta';
     this.seoService.setMetaDescription(content);
 
-    this.seoService.setMetaTitle('Angular-seo Title : example-services Page');
+    this.seoService.setMetaTitle('angular-starter Title : example-services Page');
 
     this.songs = [];
     this.yearSelected = 3;
