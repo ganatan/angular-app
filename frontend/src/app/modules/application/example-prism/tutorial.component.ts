@@ -72,8 +72,20 @@ npm install -g @angular/cli@15.0.2
 `,
         languagecode: 'json'
       },
+      {
+        text: `
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+include /etc/nginx/modules-enabled/*.conf;
+        
+events {
+  worker_connections 768;
+}      
+`,
+        languagecode: 'nginx'
+      },
     ]
-
 
   }
 

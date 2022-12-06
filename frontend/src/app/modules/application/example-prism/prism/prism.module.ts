@@ -10,6 +10,7 @@ import 'prismjs/components/prism-git';
 import 'prismjs/components/prism-bash';
 import 'prismjs/components/prism-python';
 import 'prismjs/components/prism-json';
+import 'prismjs/components/prism-nginx';
 
 import { PrismComponent } from './prism.component';
 
