@@ -8,16 +8,27 @@
   <div class="row  justify-content-center">
     <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
       <p>Mode Manual Javascript Language</p>
-      <pre><code class="language-javascript">console.log("Tour of Heroes");</code></pre>
+      <pre><code class="language-javascript">
+        console.log("Tour of Heroes");
+      </code></pre>
     </div>
   </div>
   <div class="row  justify-content-center">
     <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
-      <p>Mode Component 1</p>
-      <app-prism-block class="" [code]="element.text" [language]="element.languagecode"></app-prism-block>
+      <p>Mode Component Javascript</p>
+      <app-prism-block class="" [code]="element[0].text" [language]="element[0].languagecode"></app-prism-block>
       <br>
-      <p>Mode Component 2</p>
-      <app-prism-block class="" [code]="element.text" [language]="element.languagecode"></app-prism-block>
+      <p>Mode Component Java</p>
+      <app-prism-block class="" [code]="element[1].text" [language]="element[1].languagecode"></app-prism-block>
+      <br>
+      <p>Mode Component Python</p>
+      <app-prism-block class="" [code]="element[2].text" [language]="element[2].languagecode"></app-prism-block>
+      <br>
+      <p>Mode Component Git</p>
+      <app-prism-block class="" [code]="element[3].text" [language]="element[3].languagecode"></app-prism-block>
+      <br>
+      <p>Mode Component JSON</p>
+      <app-prism-block class="" [code]="element[4].text" [language]="element[4].languagecode"></app-prism-block>
       <br>
       <br>
       <ul>

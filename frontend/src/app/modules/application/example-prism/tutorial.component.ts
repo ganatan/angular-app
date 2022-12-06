@@ -10,12 +10,71 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class TutorialComponent implements OnInit {
 
-  element = {
+  element = [{
     text: 'console.log("0001");',
     languagecode: 'javascript'
-  }
+  }]
 
   constructor(@Inject(PLATFORM_ID) private platformId: object,) {
+
+    this.element = [
+      {
+        text: `
+if (typeof monObjet.methode === 'function') {
+  monObjet.methode();
+} else if (typeof monObjet.methode2 === 'function') {
+  monObjet.methode2();
+}`,
+        languagecode: 'javascript'
+      },
+      {
+        text: `
+switch(nombre){
+  //case traditionnel
+  case 5:
+    System.out.println("La variable est égale à 5");
+    break;
+  //nouveau case
+  case 5 -> System.out.println("La variable est égale à 5");
+}`,
+        languagecode: 'java'
+      },
+      {
+        text: `
+def accum(pas):
+  total = 0
+  def ajoute(n):
+    nonlocal total
+    total += n * pas
+    return total
+  return ajoute      
+}`,
+        languagecode: 'python'
+      },
+      {
+        text: `
+# Désinstallez Angular CLI
+npm uninstall -g @angular/cli
+        
+# Installez Angular CLI 
+npm install -g @angular/cli@15.0.2
+}`,
+        languagecode: 'git'
+      },
+      {
+        text: `
+"dependencies": {
+  "@angular/animations": "15.0.1",
+  "@angular/common": "15.0.1",
+  "@angular/compiler": "15.0.1",
+  "zone.js": "0.12.0"
+},      
+`,
+        languagecode: 'json'
+      },
+    ]
+
+
   }
 
   ngOnInit(): void {

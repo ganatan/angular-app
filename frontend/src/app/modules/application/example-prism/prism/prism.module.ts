@@ -8,6 +8,8 @@ import 'prismjs/components/prism-sql';
 import 'prismjs/components/prism-java';
 import 'prismjs/components/prism-git';
 import 'prismjs/components/prism-bash';
+import 'prismjs/components/prism-python';
+import 'prismjs/components/prism-json';
 
 import { PrismComponent } from './prism.component';
 
