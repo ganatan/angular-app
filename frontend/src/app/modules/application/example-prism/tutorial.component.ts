@@ -57,16 +57,16 @@ def accum(pas):
 npm uninstall -g @angular/cli
         
 # Installez Angular CLI 
-npm install -g @angular/cli@15.0.2
+npm install -g @angular/cli@15.0.3
 }`,
         languagecode: 'git'
       },
       {
         text: `
 "dependencies": {
-  "@angular/animations": "15.0.1",
-  "@angular/common": "15.0.1",
-  "@angular/compiler": "15.0.1",
+  "@angular/animations": "15.0.3",
+  "@angular/common": "15.0.3",
+  "@angular/compiler": "15.0.3",
   "zone.js": "0.12.0"
 },      
 `,
