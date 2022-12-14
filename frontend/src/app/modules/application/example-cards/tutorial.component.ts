@@ -6,11 +6,11 @@ import { SeoService } from '../../../services/seo/seo.service';
 import { Feature } from './feature';
 
 @Component({
-  selector: 'app-angular',
-  templateUrl: './angular.component.html',
-  styleUrls: ['./angular.component.css']
+  selector: 'app-tutorial',
+  templateUrl: './tutorial.component.html',
+  styleUrls: ['./tutorial.component.css']
 })
-export class AngularComponent implements OnInit {
+export class TutorialComponent implements OnInit {
 
   name = environment.application.name;
   angular = environment.application.angular;

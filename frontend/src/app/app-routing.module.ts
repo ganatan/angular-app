@@ -7,28 +7,33 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 const routes: Routes = [
   { path: '', component: HomeComponent, },
   {
+    path: 'landing-page',
+    loadChildren: () => import('./modules/application/example-landing-page/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
+  {
     path: 'crud',
     loadChildren: () => import('./modules/application/example-crud/tutorial.module')
       .then(mod => mod.TutorialModule)
   },
   {
     path: 'news',
-    loadChildren: () => import('./modules/application/news/news.module')
+    loadChildren: () => import('./modules/application/example-news/news.module')
       .then(mod => mod.NewsModule)
   },
   {
     path: 'news/:id',
-    loadChildren: () => import('./modules/application/news-form/news-form.module')
+    loadChildren: () => import('./modules/application/example-news-form/news-form.module')
       .then(mod => mod.NewsFormModule)
   },
   {
     path: 'boxoffice',
-    loadChildren: () => import('./modules/application/boxoffice/boxoffice.module')
+    loadChildren: () => import('./modules/application/example-boxoffice/boxoffice.module')
       .then(mod => mod.BoxofficeModule)
   },
   {
     path: 'boxoffice/:id',
-    loadChildren: () => import('./modules/application/boxoffice-form/boxoffice-form.module')
+    loadChildren: () => import('./modules/application/example-boxoffice-form/boxoffice-form.module')
       .then(mod => mod.BoxofficeFormModule)
   },
   {
@@ -42,9 +47,9 @@ const routes: Routes = [
       .then(mod => mod.TutorialModule)
   },
   {
-    path: 'angular',
-    loadChildren: () => import('./modules/application/angular/angular.module')
-      .then(mod => mod.AngularModule)
+    path: 'cards',
+    loadChildren: () => import('./modules/application/example-cards/tutorial.module')
+      .then(mod => mod.TutorialModule)
   },
   {
     path: 'httpclient',
@@ -96,7 +101,9 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabledBlocking'
+    useHash: false,
+    anchorScrolling: 'enabled',
+    scrollPositionRestoration: 'enabled'
   })],
   exports: [RouterModule],
   declarations: []
