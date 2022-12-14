@@ -18,7 +18,7 @@ export class HomeComponent {
     {
       icon: "fa-solid fa-file-lines",
       name: "Landing Page",
-      description: "Using linear-gradient",
+      description: "Css linear-gradient",
       link:'/landing-page'
     },
     {

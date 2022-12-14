@@ -23,6 +23,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/sitemap.xml",
               "src/robots.txt",
               "src/manifest.webmanifest"
             ],
