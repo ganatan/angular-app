@@ -10,15 +10,15 @@
 
 .nga-footer a:hover,
 .nga-footer a:focus {
-  color: yellow;
+  color: white;
   text-decoration: underline;
 }
 
-.nga-footer .hint {
+.nga-footer .nga-hint {
   background-color: #1976d2;
 }
 
-.nga-footer .hint:hover {
+.nga-footer .nga-hint:hover {
   opacity: 0.8;
 }
 
@@ -76,3 +76,4 @@
 .nga-btn-twitter {
   background-color: #55acee;
 }
+

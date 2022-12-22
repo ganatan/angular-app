@@ -1,15 +1,16 @@
-.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+.nga-nav-link {
   color: white;
-  font-weight: 500;
   border-top: 1px solid #09238d;
   border-bottom: 1px solid #09238d;
+  font-weight: 500;
 }
 
-.navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+.nga-nav-link:hover {
   color: yellow;
   border-top: 1px solid yellow;
   border-bottom: 1px solid yellow;
 }
+
 
 .nga-navbar {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 11px 10px 0 rgba(0, 0, 0, 0.12);
@@ -17,27 +18,21 @@
   background-color: #09238d;
 }
 
-.nga-navbar-logo {
-  font-weight: 700;
+.nga-logo {
+  font-weight: 500;
 }
 
-.nga-navbar-logo:hover {
+.nga-logo:hover {
   color: rgba(255, 255, 255, 0.75);
 }
 
 .nga-btn-navbar {
   --bs-btn-color: #fff;
   --bs-btn-bg: #1976d2;
-  --bs-btn-border-color: #0d6efd;
+  --bs-btn-border-color: #1976d2;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #0b5ed7;
   --bs-btn-hover-border-color: #0a58ca;
-  --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0a58ca;
-  --bs-btn-active-border-color: #0a53be;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #0d6efd;
-  --bs-btn-disabled-border-color: #0d6efd;
 }
+
+
