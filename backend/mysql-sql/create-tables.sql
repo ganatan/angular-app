@@ -4,8 +4,9 @@ CREATE TABLE users (
      password CHAR(50),
      PRIMARY KEY (id)
 );
-ALTER TABLE users AUTO_INCREMENT = 1000;
 
+ALTER TABLE
+     users AUTO_INCREMENT = 1000;
 
 CREATE TABLE continent (
      id MEDIUMINT NOT NULL AUTO_INCREMENT,
@@ -19,8 +20,9 @@ CREATE TABLE continent (
      countries_number INT,
      PRIMARY KEY (id)
 );
-ALTER TABLE continent AUTO_INCREMENT = 1000;
 
+ALTER TABLE
+     continent AUTO_INCREMENT = 1000;
 
 CREATE TABLE country (
      id MEDIUMINT NOT NULL AUTO_INCREMENT,
@@ -35,21 +37,23 @@ CREATE TABLE country (
      flag CHAR(50),
      PRIMARY KEY (id)
 );
-ALTER TABLE country AUTO_INCREMENT = 1000;
 
+ALTER TABLE
+     country AUTO_INCREMENT = 1000;
 
 CREATE TABLE city (
-    id MEDIUMINT NOT NULL AUTO_INCREMENT,
-    name CHAR(50) NOT NULL,
-    wikipedia_link CHAR(50),
-    fr_name CHAR(50),
-    fr_wikipedia_link CHAR(50),
-    country_id INTEGER,
-    capital BOOLEAN,
-    PRIMARY KEY (id)
+     id MEDIUMINT NOT NULL AUTO_INCREMENT,
+     name CHAR(50) NOT NULL,
+     wikipedia_link CHAR(50),
+     fr_name CHAR(50),
+     fr_wikipedia_link CHAR(50),
+     country_id INTEGER,
+     capital BOOLEAN,
+     PRIMARY KEY (id)
 );
-ALTER TABLE city AUTO_INCREMENT = 1000;
 
+ALTER TABLE
+     city AUTO_INCREMENT = 1000;
 
 CREATE TABLE gender (
      id MEDIUMINT NOT NULL AUTO_INCREMENT,
@@ -57,8 +61,9 @@ CREATE TABLE gender (
      wikipedia_link CHAR(50),
      PRIMARY KEY (id)
 );
-ALTER TABLE gender AUTO_INCREMENT = 1000;
 
+ALTER TABLE
+     gender AUTO_INCREMENT = 1000;
 
 CREATE TABLE profession (
      id MEDIUMINT NOT NULL AUTO_INCREMENT,
@@ -68,8 +73,9 @@ CREATE TABLE profession (
      fr_wikipedia_link CHAR(50),
      PRIMARY KEY (id)
 );
-ALTER TABLE profession AUTO_INCREMENT = 1000;
 
+ALTER TABLE
+     profession AUTO_INCREMENT = 1000;
 
 CREATE TABLE genre (
      id MEDIUMINT NOT NULL AUTO_INCREMENT,
@@ -79,29 +85,33 @@ CREATE TABLE genre (
      fr_wikipedia_link CHAR(50),
      PRIMARY KEY (id)
 );
-ALTER TABLE genre AUTO_INCREMENT = 1000;
 
+ALTER TABLE
+     genre AUTO_INCREMENT = 1000;
 
 CREATE TABLE images (
      id MEDIUMINT NOT NULL AUTO_INCREMENT,
      name CHAR(50) NOT NULL,
      PRIMARY KEY (id)
 );
-ALTER TABLE images AUTO_INCREMENT = 1000;
+
+ALTER TABLE
+     images AUTO_INCREMENT = 1000;
 
 CREATE TABLE company (
      id MEDIUMINT NOT NULL AUTO_INCREMENT,
      name CHAR(50) NOT NULL,
      PRIMARY KEY (id)
 );
-ALTER TABLE company AUTO_INCREMENT = 1000;
 
+ALTER TABLE
+     company AUTO_INCREMENT = 1000;
 
 CREATE TABLE movie (
      id MEDIUMINT NOT NULL AUTO_INCREMENT,
      name CHAR(100) NOT NULL,
      wikipedia_link CHAR(100) NOT NULL,
-     fr_name  CHAR(100),
+     fr_name CHAR(100),
      fr_wikipedia_link CHAR(100),
      release_date DATE,
      domestic BIGINT,
@@ -116,14 +126,15 @@ CREATE TABLE movie (
      image CHAR(50),
      PRIMARY KEY (id)
 );
-ALTER TABLE movie AUTO_INCREMENT = 1000;
 
+ALTER TABLE
+     movie AUTO_INCREMENT = 1000;
 
 CREATE TABLE person (
      id MEDIUMINT NOT NULL AUTO_INCREMENT,
      name CHAR(100) NOT NULL,
      wikipedia_link CHAR(100) NOT NULL,
-     fr_name  CHAR(100),
+     fr_name CHAR(100),
      fr_wikipedia_link CHAR(100),
      birth_date DATE,
      birth_city_id INT,
@@ -133,8 +144,9 @@ CREATE TABLE person (
      image CHAR(50),
      PRIMARY KEY (id)
 );
-ALTER TABLE person AUTO_INCREMENT = 1000;
 
+ALTER TABLE
+     person AUTO_INCREMENT = 1000;
 
 CREATE TABLE trailer (
      id MEDIUMINT NOT NULL AUTO_INCREMENT,
@@ -143,8 +155,9 @@ CREATE TABLE trailer (
      youtube_link CHAR(50) NOT NULL,
      PRIMARY KEY (id)
 );
-ALTER TABLE trailer AUTO_INCREMENT = 1000;
 
+ALTER TABLE
+     trailer AUTO_INCREMENT = 1000;
 
 CREATE TABLE views (
      id MEDIUMINT NOT NULL AUTO_INCREMENT,
@@ -154,29 +167,16 @@ CREATE TABLE views (
      comment CHAR(200),
      PRIMARY KEY (id)
 );
-ALTER TABLE views AUTO_INCREMENT = 1000;
 
+ALTER TABLE
+     views AUTO_INCREMENT = 1000;
 
-CREATE TABLE movie_person
-(
-    movie_id INT,
-    person_id INT,
-    profession_id INT
+CREATE TABLE movie_person (
+     movie_id INT,
+     person_id INT,
+     profession_id INT
 );
 
+CREATE TABLE movie_genre (movie_id INT, genre_id INT);
 
-CREATE TABLE movie_genre
-(
-    movie_id INT,
-    genre_id INT
-);
-
-
-CREATE TABLE movie_image
-(
-    movie_id INT,
-    image_id INT
-);
-
-
-
+CREATE TABLE movie_image (movie_id INT, image_id INT);
