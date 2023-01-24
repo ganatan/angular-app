@@ -1,6 +1,6 @@
 {
-  "name": "angular-starter",
-  "version": "15.1.",
+  "name": "angular-seo",
+  "version": "15.1.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4200",
