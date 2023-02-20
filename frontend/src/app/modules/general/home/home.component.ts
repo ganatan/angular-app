@@ -84,9 +84,16 @@ export class HomeComponent {
     {
       icon: "fa-solid fa-spell-check",
       name: "Prism",
-      description: "Syntax highlighter,",
+      description: "Syntax highlighter",
       link:'/prism'
     },
+    {
+      icon: "fa-regular fa-comment-dots",
+      name: "Prettyjson",
+      description: "JSON formatter",
+      link:'/prettyjson'
+    },
+    
   ]
 
   constructor(private seoService: SeoService) {

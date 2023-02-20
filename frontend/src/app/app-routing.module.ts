@@ -47,6 +47,11 @@ const routes: Routes = [
       .then(mod => mod.TutorialModule)
   },
   {
+    path: 'prettyjson',
+    loadChildren: () => import('./modules/application/example-prettyjson/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
+  {
     path: 'cards',
     loadChildren: () => import('./modules/application/example-cards/tutorial.module')
       .then(mod => mod.TutorialModule)
