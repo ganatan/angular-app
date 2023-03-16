@@ -1,6 +1,6 @@
 # Angular 15 Example Transfer state
 
-> An Angular starter kit featuring [Angular 15.2.2](https://angular.io), [Angular CLI 15.2.2](https://cli.angular.io/)
+> An Angular starter kit featuring [Angular 15.2.2](https://angular.io), [Angular CLI 15.2.3](https://cli.angular.io/)
 
 > it's part of a repo series designed to create a Progressive Web App with Angular
 
