@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 15**
 
 
-* Frontend - [**Angular 15.2.3**](https://github.com/angular/angular/releases) & [**Angular CLI 15.2.4**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 15.2.4**](https://github.com/angular/angular/releases) & [**Angular CLI 15.2.4**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
@@ -62,7 +62,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 15.2.3
+- [x] Angular : 15.2.4
 - [x] Angular CLI : 15.2.4
 - [x] Angular Universal : 15.2.0
 - [x] Bootstrap : 5.2.3
