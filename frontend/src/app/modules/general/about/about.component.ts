@@ -34,7 +34,7 @@ export class AboutComponent implements OnInit {
         { name: 'Angular CLI 15.2.4' },
         { name: 'Angular Universal 15.2.0' },
         { name: 'Bootstrap 5.2.3' },
-        { name: 'Font Awesome 6.3.0' },
+        { name: 'Font Awesome 6.4.0' },
       ],
       backend: [
         { name: 'Node.js 16.15.0' },
