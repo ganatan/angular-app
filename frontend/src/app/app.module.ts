@@ -18,7 +18,7 @@ import { FooterModule } from './components/footer/footer.module';
     NotFoundComponent,
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'angular-starter' }),
+    BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     HeaderModule,

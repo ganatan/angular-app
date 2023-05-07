@@ -62,36 +62,6 @@ const routes: Routes = [
       .then(mod => mod.ItemsModule)
   },
   {
-    path: 'services',
-    loadChildren: () => import('./modules/application/example-services/tutorial.module')
-      .then(mod => mod.TutorialModule)
-  },
-  {
-    path: 'forms',
-    loadChildren: () => import('./modules/application/example-forms/tutorial.module')
-      .then(mod => mod.TutorialModule)
-  },
-  {
-    path: 'components',
-    loadChildren: () => import('./modules/application/example-components/tutorial.module')
-      .then(mod => mod.TutorialModule)
-  },
-  {
-    path: 'bootstrap',
-    loadChildren: () => import('./modules/application/example-bootstrap/tutorial.module')
-      .then(mod => mod.TutorialModule)
-  },
-  {
-    path: 'signup',
-    loadChildren: () => import('./modules/general/signup/signup.module')
-      .then(mod => mod.SignupModule)
-  },
-  {
-    path: 'login',
-    loadChildren: () => import('./modules/general/login/login.module')
-      .then(mod => mod.LoginModule)
-  },
-  {
     path: 'contact',
     loadChildren: () => import('./modules/general/contact/contact.module')
       .then(mod => mod.ContactModule)
@@ -101,14 +71,47 @@ const routes: Routes = [
     loadChildren: () => import('./modules/general/about/about.module')
       .then(mod => mod.AboutModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./modules/general/login/login.module')
+      .then(mod => mod.LoginModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./modules/general/signup/signup.module')
+      .then(mod => mod.SignupModule)
+  },
+  {
+    path: 'bootstrap',
+    loadChildren: () => import('./modules/application/example-bootstrap/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
+  {
+    path: 'components',
+    loadChildren: () => import('./modules/application/example-components/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
+  {
+    path: 'forms',
+    loadChildren: () => import('./modules/application/example-forms/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
+  {
+    path: 'services',
+    loadChildren: () => import('./modules/application/example-services/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
+
+
   { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
+    // initialNavigation: 'enabledBlocking'
     useHash: false,
     anchorScrolling: 'enabled',
-    scrollPositionRestoration: 'enabled'
+    scrollPositionRestoration: 'enabled'    
   })],
   exports: [RouterModule],
   declarations: []

@@ -9,13 +9,12 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class AppComponent implements OnInit {
 
-  title = 'angular-bootstrap';
+  title = 'angular-starter';
   footerUrl = 'https://www.ganatan.com/';
   footerLink = 'www.ganatan.com';
 
   constructor(
-    @Inject(PLATFORM_ID) private platformId: object
-    ) {
+    @Inject(PLATFORM_ID) private platformId: object) {
   }
 
   ngOnInit(): void {

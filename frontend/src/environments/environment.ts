@@ -3,8 +3,8 @@ export const environment = {
   application:
   {
     name: 'angular-starter',
-    angular: 'Angular 15.2.8',
-    bootstrap: 'Bootstrap 5.2.4',
+    angular: 'Angular 16.0.0',
+    bootstrap: 'Bootstrap 5.2.3',
     fontawesome: 'Font Awesome 6.4.0',
   },
   urlNews: './assets/params/json/mock/trailers.json',
