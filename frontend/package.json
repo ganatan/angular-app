@@ -1,5 +1,5 @@
 {
-  "name": "angular-starter",
+  "name": "angular-app",
   "version": "16.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "coverage": "ng test --no-watch --code-coverage",
+    "serve": "node server",
     "lint": "ng lint",
     "dev:ssr": "ng run angular-starter:serve-ssr",
     "serve:ssr": "node dist/angular-starter/server/main.js",
@@ -44,7 +45,7 @@
     "@angular-eslint/template-parser": "16.0.1",
     "@angular/cli": "16.0.0",
     "@angular/compiler-cli": "16.0.0",
-    "@nguniversal/builders": "^16.0.0",
+    "@nguniversal/builders": "16.0.0",
     "@types/express": "4.17.17",
     "@types/jasmine": "4.3.1",
     "@types/node": "20.1.0",

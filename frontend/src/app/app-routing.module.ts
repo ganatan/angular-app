@@ -60,28 +60,7 @@ const routes: Routes = [
     path: 'httpclient',
     loadChildren: () => import('./modules/application/example-httpclient/items.module')
       .then(mod => mod.ItemsModule)
-  },
-  {
-    path: 'contact',
-    loadChildren: () => import('./modules/general/contact/contact.module')
-      .then(mod => mod.ContactModule)
-  },
-  {
-    path: 'about',
-    loadChildren: () => import('./modules/general/about/about.module')
-      .then(mod => mod.AboutModule)
-  },
-  {
-    path: 'login',
-    loadChildren: () => import('./modules/general/login/login.module')
-      .then(mod => mod.LoginModule)
-  },
-  {
-    path: 'signup',
-    loadChildren: () => import('./modules/general/signup/signup.module')
-      .then(mod => mod.SignupModule)
-  },
-  {
+  },  {
     path: 'bootstrap',
     loadChildren: () => import('./modules/application/example-bootstrap/tutorial.module')
       .then(mod => mod.TutorialModule)
@@ -103,6 +82,26 @@ const routes: Routes = [
   },
 
 
+  {
+    path: 'contact',
+    loadChildren: () => import('./modules/general/contact/contact.module')
+      .then(mod => mod.ContactModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./modules/general/about/about.module')
+      .then(mod => mod.AboutModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./modules/general/login/login.module')
+      .then(mod => mod.LoginModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./modules/general/signup/signup.module')
+      .then(mod => mod.SignupModule)
+  },
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -112,7 +111,7 @@ const routes: Routes = [
     useHash: false,
     anchorScrolling: 'enabled',
     scrollPositionRestoration: 'enabled'    
-  })],
+})],
   exports: [RouterModule],
   declarations: []
 })

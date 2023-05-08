@@ -32,13 +32,13 @@ export class AboutComponent implements OnInit {
       frontend: [
         { name: 'Angular 16.0.0' },
         { name: 'Angular CLI 16.0.0' },
-        { name: 'Angular Universal 15.2.1' },
+        { name: 'Angular Universal 16.0.0' },
         { name: 'Bootstrap 5.2.3' },
         { name: 'Font Awesome 6.4.0' },
       ],
       backend: [
-        { name: 'Node.js 16.15.0' },
-        { name: 'Express 4.18.1' },
+        { name: 'Node.js 18.16.0' },
+        { name: 'Express 4.18.2' },
         { name: 'pg-promise 10.10.2' },
       ]
     };

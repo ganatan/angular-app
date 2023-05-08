@@ -20,15 +20,15 @@ import { FooterModule } from './components/footer/footer.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    HeaderModule,
-    FooterModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
+    HttpClientModule,
+    HeaderModule,
+    FooterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

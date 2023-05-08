@@ -25,7 +25,7 @@
               "src/assets",
               "src/manifest.webmanifest",
               "src/sitemap.xml",
-              "src/robots.txt"              
+              "src/robots.txt"
             ],
             "styles": [
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
