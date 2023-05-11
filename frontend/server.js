@@ -2,10 +2,10 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'dist/angular-starter')));
+app.use(express.static(path.join(__dirname, 'dist/angular-starter/browser')));
 
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'dist/angular-starter', 'index.html'));
+  res.sendFile(path.join(__dirname, 'dist/angular-starter/browser', 'index.html'));
 });
 
 const port = 4000;
