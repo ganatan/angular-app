@@ -1,6 +1,6 @@
 {
-  "name": "angular-starter",
-  "short_name": "angular-starter",
+  "name": "angular-app",
+  "short_name": "angular-app",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
