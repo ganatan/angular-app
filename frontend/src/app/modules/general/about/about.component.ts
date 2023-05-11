@@ -117,7 +117,7 @@ export class AboutComponent implements OnInit {
     this.loadQuote();
 
     const content =
-      'Cette application a été développée avec Angular version 16.0.0 et bootstrap 5.2.3' +
+      'Cette application a été développée avec Angular version 16.0.1 et bootstrap 5.2.3' +
       ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)';
 
     const title = 'angular-starter Title : About Page';
