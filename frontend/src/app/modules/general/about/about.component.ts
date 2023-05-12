@@ -32,7 +32,7 @@ export class AboutComponent implements OnInit {
       frontend: [
         { name: 'Angular 16.0.1' },
         { name: 'Angular CLI 16.0.1' },
-        { name: 'Angular Universal 16.0.0' },
+        { name: 'Angular Universal 16.0.1' },
         { name: 'Bootstrap 5.2.3' },
         { name: 'Font Awesome 6.4.0' },
       ],

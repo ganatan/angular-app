@@ -64,7 +64,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 > Dependencies
 - [x] Angular : 16.0.1
 - [x] Angular CLI : 16.0.1
-- [x] Angular Universal : 16.0.0
+- [x] Angular Universal : 16.0.1
 - [x] Bootstrap : 5.2.3
 - [x] Fontawesome : 6.4.0
 
