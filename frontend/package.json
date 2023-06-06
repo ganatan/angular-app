@@ -49,15 +49,15 @@
     "@types/express": "4.17.17",
     "@types/jasmine": "4.3.2",
     "@types/node": "20.2.5",
-    "@typescript-eslint/eslint-plugin": "5.59.8",
-    "@typescript-eslint/parser": "5.59.8",
+    "@typescript-eslint/eslint-plugin": "5.59.9",
+    "@typescript-eslint/parser": "5.59.9",
     "eslint": "8.42.0",
     "jasmine-core": "4.6.0",
     "karma": "6.4.2",
     "karma-chrome-launcher": "3.2.0",
     "karma-coverage": "2.2.0",
     "karma-jasmine": "5.1.0",
-    "karma-jasmine-html-reporter": "2.0.0",
+    "karma-jasmine-html-reporter": "2.1.0",
     "typescript": "5.0.4"
   }
 }
