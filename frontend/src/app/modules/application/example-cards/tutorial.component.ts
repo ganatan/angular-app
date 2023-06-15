@@ -80,7 +80,7 @@ export class TutorialComponent implements OnInit {
   ngOnInit(): void {
 
     const content =
-      'Cette application a été développée avec Angular version 16.1.0 et bootstrap 5.3.0' +
+      'Cette application a été développée avec Angular version 16.1.1 et bootstrap 5.3.0' +
       ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)';
 
     const title = 'angular-starter Title : Angular Page';
