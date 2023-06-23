@@ -31,7 +31,7 @@ export class AboutComponent implements OnInit {
     this.dependencies = {
       frontend: [
         { name: 'Angular 16.1.2' },
-        { name: 'Angular CLI 16.1.0' },
+        { name: 'Angular CLI 16.1.1' },
         { name: 'Angular Universal 16.1.0' },
         { name: 'Bootstrap 5.3.0' },
         { name: 'Font Awesome 6.4.0' },
@@ -117,7 +117,7 @@ export class AboutComponent implements OnInit {
     this.loadQuote();
 
     const content =
-      'Cette application a été développée avec Angular version 16.1.0 et bootstrap 5.3.0' +
+      'Cette application a été développée avec Angular version 16.1.2 et bootstrap 5.3.0' +
       ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)';
 
     const title = 'angular-starter Title : About Page';
