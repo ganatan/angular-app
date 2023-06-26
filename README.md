@@ -1,4 +1,4 @@
- # Angular 16 / Bootstrap 5 & CRUD REST API
+# Angular 16 / Bootstrap 5 & CRUD REST API
 
 <table>
 <tr>
@@ -10,21 +10,22 @@
 
 it's a repo designed to create a **Web Application with Angular 16**
 
+* Frontend - [**Angular 16.1.2**](https://github.com/angular/angular/releases) & [**Angular CLI 16.1.1
+  **](https://github.com/angular/angular-cli/releases/)
 
-* Frontend - [**Angular 16.1.2**](https://github.com/angular/angular/releases) & [**Angular CLI 16.1.1**](https://github.com/angular/angular-cli/releases/)
-
-* UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
+* UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/)
 
 * Backend - CRUD REST API [**PostgreSQL**](https://www.postgresql.org/download/)
 
-* See the [**Live demo**](#live-demo), Test the repo with [**Quick start**](#quick-start) and for more information Read the step by step [**Tutorial**](#tutorial) or read the [**Getting started**](#getting-started)
-
+* See the [**Live demo**](#live-demo), Test the repo with [**Quick start**](#quick-start) and for more information Read
+  the step by step [**Tutorial**](#tutorial) or read the [**Getting started**](#getting-started)
 
 </td>
 </tr>
 </table>
 
 # [Live Demo](#live-demo)
+
 Here is a working live demo :  https://angular.ganatan.com/
 
 
@@ -35,10 +36,6 @@ Here is a working live demo :  https://angular.ganatan.com/
       Application"/>
     </a>
   </p>
-</p>
-
-
-
 
 # Lighthouse Audit
 
@@ -48,8 +45,6 @@ Here is a working live demo :  https://angular.ganatan.com/
       <img src="./img/search-engine-optimization-avec-angular-lighthouse-after.png" alt="Ganatan Lighthouse SEO Angular Example Demo"/>
     </a>
   </p>
-</p>
-
 
 ## Table of contents
 
@@ -61,7 +56,9 @@ Here is a working live demo :  https://angular.ganatan.com/
 - [Documentation](#documentation)
 
 ### Front-end : What's included
+
 > Dependencies
+
 - [x] Angular : 16.1.2
 - [x] Angular CLI : 16.1.1
 - [x] Angular Universal : 16.1.0
@@ -69,6 +66,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 - [x] Fontawesome : 6.4.0
 
 > Features
+
 - [x] Routing
 - [x] Lazy Loading
 - [x] Server Side Rendering
@@ -103,45 +101,51 @@ npm install
 npm start
 
 ```
-in your browser go to [http://localhost:4200](http://localhost:4200) 
 
+in your browser go to [http://localhost:4200](http://localhost:4200)
 
 ## Front-end
 
 ### Installation
+
 * `npm install` (installing dependencies)
 * `npm outdated` (verifying dependencies)
 
-### Developpement
+### Development
+
 * `npm run start`
-* in your browser [http://localhost:4200](http://localhost:4200) 
+* in your browser [http://localhost:4200](http://localhost:4200)
 
 ## Linter
+
 * `npm run lint`
 
 ## Tests
+
 * `npm run test`
 * `npm run coverage`
 
 ### Compilation
+
 * `npm run build`       ( without SSR)
 * `npm run build:ssr`   ( with SSR)
 
 ### Production
+
 * `npm run serve:ssr`
-* in your browser [http://localhost:4000](http://localhost:4000) 
+* in your browser [http://localhost:4000](http://localhost:4000)
 
 ### Bootstrap UI
+
 * `change directory` cd ui
 * Launch html pages in your browser
-
-
 
 ## Back-end
 
 ### Back-end : What's included
 
 > Tools
+
 - [x] mysql-express-batch (with Node.js)
 - [x] mysql-sql (with SQL Scripts)
 
@@ -150,36 +154,39 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 - [x] postgresql-sql (with SQL Scripts)
 
 > Features
+
 - [x] Database Creation
 - [x] Domains Creation (only PostgreSQL)
 - [x] Tables Creation
 - [x] Importing Data
 - [x] Exporting Data
-- [x] Serving RESTful CRUD API 
+- [x] Serving RESTful CRUD API
 
+## Database Creation with PostgreSQL
 
-## Database Creation with PostgreSQL 
 > Use the SQL scripts in postgresql-sql
+
 - [x] create-database.sql
 - [x] create-domains.sql
 - [x] create-tables.sql
 - [x] insert-data.sql
 
 ## Database Creation with MySQL
+
 > Use the SQL scripts in mysql-sql
+
 - [x] create-database.sql
 - [x] create-tables.sql
 - [x] insert-data.sql
 
-
 ## Database Creation with Node.js and PostgreSQL
 
 ## PostgreSQL Password
+
 * Change settings in postgresql-express-batch/app/config
 * File config/config.json
-* dbUser: "postgres" 
+* dbUser: "postgres"
 * dbPassword: "Trustno1"   ! Change the Fox Mulder password by your password
-
 
 ```bash
 
@@ -199,14 +206,15 @@ npm run export
 # Check the new files (for example movies.json) 
 
 ```
+
 ## Database Creation with Node.js and MySQL
 
 ## MySQL Password
+
 * Change settings in mysql-express-batch/app/config
 * File config/config.json
-* dbUser: "root" 
+* dbUser: "root"
 * dbPassword: "Trustno1"   !  Change the Fox Mulder password by your password
-
 
 ```bash
 
@@ -227,10 +235,10 @@ npm run export
 
 ```
 
-
 ## Serving CRUD REST API with Node.js & Express & PostgreSQL
 
 ## PostgreSQL Password
+
 * Change settings in postgresql-express-crud/app/config
 * File config/config.json
 * dbUser: "postgres"
@@ -260,18 +268,23 @@ pm2 start process.config.js --env prod
 ```
 
 ### Tests API & PostgreSQL
-* in your browser [http://localhost:5004/movies](http://localhost:5004/movies) 
-* in your browser [http://localhost:5004/shows](http://localhost:5004/shows) 
-* in your browser [http://localhost:5004/continents](http://localhost:5004/continents) 
-* in your browser [http://localhost:5004/countries](http://localhost:5004/countries) 
-* in your browser [http://localhost:5004/cities](http://localhost:5004/cities) 
+
+* in your browser [http://localhost:5004/movies](http://localhost:5004/movies)
+* in your browser [http://localhost:5004/shows](http://localhost:5004/shows)
+* in your browser [http://localhost:5004/continents](http://localhost:5004/continents)
+* in your browser [http://localhost:5004/countries](http://localhost:5004/countries)
+* in your browser [http://localhost:5004/cities](http://localhost:5004/cities)
 
 ### Author
+
 * Author  : danny
 
 ## Documentation
+
 English Tutorials
+
 - Step by Step - https://www.ganatan.com/tutorials/en
 
 Tutoriels en français
+
 - Etapes par étapes - https://www.ganatan.com/tutorials
