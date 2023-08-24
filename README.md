@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 16**
 
 
-* Frontend - [**Angular 16.2.1**](https://github.com/angular/angular/releases) & [**Angular CLI 16.2.0**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 16.2.2**](https://github.com/angular/angular/releases) & [**Angular CLI 16.2.0**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
