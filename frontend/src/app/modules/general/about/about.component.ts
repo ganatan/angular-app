@@ -37,9 +37,9 @@ export class AboutComponent implements OnInit {
         { name: 'Font Awesome 6.4.2' },
       ],
       backend: [
-        { name: 'Node.js 18.16.0' },
+        { name: 'Node.js 18.17.1' },
         { name: 'Express 4.18.2' },
-        { name: 'pg-promise 10.10.2' },
+        { name: 'pg-promise 11.5.4' },
       ]
     };
 
