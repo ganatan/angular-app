@@ -34,7 +34,7 @@
     "prismjs": "1.29.0",
     "rxjs": "7.8.1",
     "tslib": "2.6.2",
-    "zone.js": "0.13.2"
+    "zone.js": "0.13.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "16.2.1",
