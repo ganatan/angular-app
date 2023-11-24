@@ -38,8 +38,6 @@ Here is a working live demo :  https://angular.ganatan.com/
 </p>
 
 
-
-
 # Lighthouse Audit
 
 <p align="center">
