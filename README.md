@@ -1,6 +1,5 @@
  # Angular 17 / Bootstrap 5 & CRUD REST API
 
-
 <table>
 <tr>
 <td>
