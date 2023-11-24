@@ -15,7 +15,6 @@
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
-        "@typescript-eslint/no-explicit-any": "off",
         "@angular-eslint/directive-selector": [
           "error",
           {
@@ -31,7 +30,8 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@typescript-eslint/no-explicit-any": "off"
       }
     },
     {
@@ -39,7 +39,8 @@
         "*.html"
       ],
       "extends": [
-        "plugin:@angular-eslint/template/recommended"
+        "plugin:@angular-eslint/template/recommended",
+        "plugin:@angular-eslint/template/accessibility"
       ],
       "rules": {
         "no-undefined": "error",
@@ -49,7 +50,7 @@
         "id-length": "error",
         "newline-before-return": "error",
         "space-before-blocks": "error",
-        "no-alert": "error"            
+        "no-alert": "error"                
       }
     }
   ]

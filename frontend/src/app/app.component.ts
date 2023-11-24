@@ -1,16 +1,28 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
+import { HeaderModule } from './components/header/header.module';
+import { FooterModule } from './components/footer/footer.module';
+
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [
+    CommonModule, 
+    RouterLink, 
+    RouterOutlet,
+    HeaderModule,
+    FooterModule,
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-
-  title = 'angular-app';
-  footerUrl = 'https://www.ganatan.com/';
+  title = 'angular-routing';
+  footerUrl = 'https://www.ganatan.com';
   footerLink = 'www.ganatan.com';
 
   constructor(
@@ -32,3 +44,4 @@ export class AppComponent implements OnInit {
   }
 
 }
+
