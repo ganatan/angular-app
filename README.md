@@ -9,10 +9,10 @@
     alt="Ganatan Angular Example Demo" width="140" height="140">
   </a>
 
-it's a repo designed to create a **Web Application with Angular 16**
+it's a repo designed to create a **Web Application with Angular 17**
 
 
-* Frontend - [**Angular 16.2.9**](https://github.com/angular/angular/releases) & [**Angular CLI 16.2.6**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 17.0.4**](https://github.com/angular/angular/releases) & [**Angular CLI 17.0.3**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
@@ -63,9 +63,9 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 16.2.9
-- [x] Angular CLI : 16.2.6
-- [x] Angular Universal : 16.2.0
+- [x] Angular : 17.0.4
+- [x] Angular CLI : 17.0.3
+- [x] Angular Universal : 17.0.3
 - [x] Bootstrap : 5.3.2
 - [x] Fontawesome : 6.4.2
 
