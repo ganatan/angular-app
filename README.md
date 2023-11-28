@@ -1,8 +1,4 @@
  # Angular 17 / Bootstrap 5 & CRUD REST API
-<<<<<<< HEAD
-
-=======
->>>>>>> b94c0f34de43484a6515bbede48eb018bdd35aec
 
 <table>
 <tr>
@@ -66,7 +62,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 > Dependencies
 - [x] Angular : 17.0.4
 - [x] Angular CLI : 17.0.3
-- [x] Angular Universal : 17.0.3
+- [x] Angular SSR : 17.0.3
 - [x] Bootstrap : 5.3.2
 - [x] Fontawesome : 6.4.2
 
