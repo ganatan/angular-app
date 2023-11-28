@@ -15,8 +15,7 @@
 * `npm run coverage`
 
 ### Compilation
-* `npm run build`       ( without SSR)
-* `npm run build:ssr`   ( with SSR)
+* `npm run build`       ( with SSR)
 
 ### Production
 * `npm run serve:ssr`
@@ -24,4 +23,4 @@
 
 
 ### Author
-* Author  : ganatan
+* Author  : danny
