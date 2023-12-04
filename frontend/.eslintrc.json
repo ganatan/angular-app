@@ -31,7 +31,15 @@
             "style": "kebab-case"
           }
         ],
-        "@typescript-eslint/no-explicit-any": "off"
+        "@typescript-eslint/no-explicit-any": "off",
+        "no-undefined": "off",
+        "no-var": "error",
+        "prefer-const": "error",
+        "func-names": "error",
+        "id-length": "error",
+        "newline-before-return": "error",
+        "space-before-blocks": "error",
+        "no-alert": "error"                
       }
     },
     {
@@ -43,14 +51,6 @@
         "plugin:@angular-eslint/template/accessibility"
       ],
       "rules": {
-        "no-undefined": "error",
-        "no-var": "error",
-        "prefer-const": "error",
-        "func-names": "error",
-        "id-length": "error",
-        "newline-before-return": "error",
-        "space-before-blocks": "error",
-        "no-alert": "error"                
       }
     }
   ]
