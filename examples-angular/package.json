@@ -1,16 +1,12 @@
 {
   "name": "@examples-angular/source",
-  "version": "0.0.0",
+  "version": "17.0.5",
   "license": "MIT",
   "scripts": {
     "start-starter": "nx serve angular-starter",
-    "start-starter-v2": "nx run angular-starter:serve",
     "lint-starter": "nx lint angular-starter",
-    "lint-starter-v2": "nx run angular-starter:lint",
     "test-starter": "nx test angular-starter",
-    "test-starter-v2": "nx run angular-starter:test",
     "build-starter": "nx build angular-starter",
-    "build-starter-v2": "nx run angular-starter:build",
     "e2e-starter": "nx e2e angular-starter-e2e",
     "start-crud": "nx serve angular-crud",
     "lint-crud": "nx lint angular-crud",
