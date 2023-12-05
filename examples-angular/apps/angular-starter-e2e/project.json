@@ -1,0 +1,33 @@
+{
+  "name": "angular-starter-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/angular-starter-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/angular-starter-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "angular-starter:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "angular-starter:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "angular-starter:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/angular-starter-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["angular-starter"]
+}
