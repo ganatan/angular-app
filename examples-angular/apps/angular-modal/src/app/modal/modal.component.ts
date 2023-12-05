@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 import { timeout } from 'rxjs/operators';
 */
 
-import { ModalFormService } from './modal-form.service';
+import { ModalService } from './modal.service';
 
 /*
 const httpOptions = {
@@ -25,25 +25,25 @@ const httpOptions = {
 */
 
 @Component({
-  selector: 'app-modal-form',
-  templateUrl: './modal-form.component.html',
-  styleUrls: ['./modal-form.component.css']
+  selector: 'app-modal',
+  templateUrl: './modal.component.html',
+  styleUrls: ['./modal.component.css']
 })
 
-export class ModalFormComponent {
+export class ModalComponent {
 
   name: string;
   description: string;
 
   constructor(
-    private modalFormService: ModalFormService) {
+    private modalService: ModalService) {
 
     this.name = '';
     this.description = '';
-    this.modalFormService.receiveData()
+    this.modalService.receiveData()
       .subscribe(
         data => {
-          console.log('00000000001:ModalFormComponent:' + JSON.stringify(data));
+          console.log('00000000001:ModalComponent:' + JSON.stringify(data));
           this.name = data['name'];
           this.description = data['description'];
         });
@@ -55,34 +55,9 @@ export class ModalFormComponent {
       name: this.name,
       description: this.description,
     }
-    this.modalFormService.afterClosed(item);
+    this.modalService.afterClosed(item);
   }
 
-  /*
-  @Input() id: string;
-  @Input() title: string;
-
-  name: string;
-  emailebook: string;
-  nameebook: string;
-  item = new Item();
-  loading = false;
-  emailerror = false;
-  nameerror = false;
-
-  constructor(
-    @Inject(PLATFORM_ID) private platformId: object,
-    private http: HttpClient,
-    private modalFormService: ModalFormService) {
-
-    this.id = '';
-    this.name = 'example name';
-    this.emailebook = '';
-    this.nameebook = '';
-    this.title = '';
-
-  }
-  */
   /*
     close(action: any) {
       if (action) {

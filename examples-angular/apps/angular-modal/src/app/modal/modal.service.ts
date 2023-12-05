@@ -6,7 +6,7 @@ import { Injectable } from "@angular/core";
 declare const bootstrap: any;
 
 @Injectable()
-export class ModalFormService {
+export class ModalService {
 
   formModal: any;
   messageSendData = new Subject<string>();

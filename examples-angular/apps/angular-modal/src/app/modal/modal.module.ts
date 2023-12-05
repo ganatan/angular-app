@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
-import { ModalFormComponent } from './modal-form.component';
+import { ModalComponent } from './modal.component';
 
 @NgModule({
   imports: [
@@ -10,10 +10,10 @@ import { ModalFormComponent } from './modal-form.component';
     FormsModule,
   ],
   exports: [
-    ModalFormComponent,
+    ModalComponent,
   ],
   declarations: [
-    ModalFormComponent,
+    ModalComponent,
   ],
 })
-export class ModalFormModule { }
+export class ModalModule { }
