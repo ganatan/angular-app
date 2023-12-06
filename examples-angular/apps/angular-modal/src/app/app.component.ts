@@ -5,6 +5,7 @@ import { ModalService } from './modal/modal.service';
 import { ModalModule } from './modal/modal.module';
 
 import { CommonModule } from '@angular/common';
+import { inject } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -23,8 +24,12 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'angular-modal';
   dataModal: any;
+  
+  private modalService = inject(ModalService);
 
-  constructor(private modalService: ModalService) {
+  constructor(
+    // private modalService: ModalService
+    ) {
     const dataModal = {
       name: '1111',
       description: '2222',
@@ -46,4 +51,5 @@ export class AppComponent {
           }
         });
   }
+
 }

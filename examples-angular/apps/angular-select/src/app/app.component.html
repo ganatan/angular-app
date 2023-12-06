@@ -1,0 +1,33 @@
+<div class="row p-4">
+  <div class="col-2">
+    angular-select
+  </div>
+  <div class="col-4">
+    <button type="button" class="btn btn-primary">Primary</button>
+  </div>
+</div>
+<div class="row p-4">
+  <div class="col-4">
+    <select class="form-select form-select-sm">
+      <option selected>default select menu</option>
+      <option value="1">value1</option>
+      <option value="2">value2</option>
+      <option value="3">value3</option>
+      <option value="4">value4</option>
+    </select>
+  </div>
+</div>
+<div class="row p-4">
+  <div class="col-4">
+    <select class="form-select form-select-sm" (click)="clickOnSelect()" (change)="changeOnSelect($event)"
+      [(ngModel)]="selectValue">
+      <option *ngFor='let item of items; let indexItem=index;'>
+        {{ item.name }}
+      </option>
+    </select>
+    selectValue : {{ selectValue }}<br>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>

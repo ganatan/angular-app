@@ -22,7 +22,12 @@
     "lint-modal": "nx lint angular-modal",
     "test-modal": "nx test angular-modal",
     "build-modal": "nx build angular-modal",
-    "e2e-modal": "nx e2e angular-modal-e2e"
+    "e2e-modal": "nx e2e angular-modal-e2e",
+    "start-select": "nx serve angular-select",
+    "lint-select": "nx lint angular-select",
+    "test-select": "nx test angular-select",
+    "build-select": "nx build angular-select",
+    "e2e-select": "nx e2e angular-select-e2e"
   },
   "private": true,
   "dependencies": {

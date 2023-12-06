@@ -1,28 +1,6 @@
 import { Component } from '@angular/core';
-
-/*
-import {  HttpHeaders } from '@angular/common/http';
-import { Inject, PLATFORM_ID,  Input } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { catchError } from 'rxjs/operators';
-import { HttpClient } from '@angular/common/http';
-import { timeout } from 'rxjs/operators';
-*/
-
 import { ModalService } from './modal.service';
-
-/*
-const httpOptions = {
-  headers: new HttpHeaders(
-    {
-      'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, HEAD,POST, PUT, DELETE, OPTIONS',
-      'Access-Control-Allow-Headers': 'Origin, X-Requested-With, contentType,Content-Type, Accept, Authorization'
-    }
-  )
-};
-*/
+import { inject } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -35,8 +13,11 @@ export class ModalComponent {
   name: string;
   description: string;
 
+  private modalService = inject(ModalService);
+
   constructor(
-    private modalService: ModalService) {
+    // private modalService: ModalService
+  ) {
 
     this.name = '';
     this.description = '';
@@ -47,7 +28,6 @@ export class ModalComponent {
           this.name = data['name'];
           this.description = data['description'];
         });
-
   }
 
   onClose() {
@@ -116,3 +96,26 @@ export class ModalComponent {
 
 
 }
+
+
+
+/*
+import {  HttpHeaders } from '@angular/common/http';
+import { Inject, PLATFORM_ID,  Input } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
+import { timeout } from 'rxjs/operators';
+*/
+/*
+const httpOptions = {
+  headers: new HttpHeaders(
+    {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, HEAD,POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Origin, X-Requested-With, contentType,Content-Type, Accept, Authorization'
+    }
+  )
+};
+*/
