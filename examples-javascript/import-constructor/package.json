@@ -1,0 +1,14 @@
+{
+  "name": "gestion-des-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app-modules.js",
+  "scripts": {
+    "start": "http-server -o"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "httpserver": "^0.3.0"
+  }
+}
