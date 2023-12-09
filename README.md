@@ -181,6 +181,7 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 ```bash
 
 # select the repo
+cd application-node
 cd postgresql-express-batch
 
 # install the repo with npm
@@ -208,6 +209,7 @@ npm run export
 ```bash
 
 # select the repo
+cd application-node
 cd mysql-express-batch
 
 # install the repo with npm
@@ -236,6 +238,7 @@ npm run export
 ```bash
 
 # select the repo
+cd application-node
 cd postgresql-express-crud
 
 # install the repo with npm
