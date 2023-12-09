@@ -92,7 +92,7 @@ git clone https://gitlab.com/ganatan/angular-app.git
 
 # change directory
 cd angular-app
-cd frontend
+cd application-angular
 
 # install the repo with npm
 npm install
