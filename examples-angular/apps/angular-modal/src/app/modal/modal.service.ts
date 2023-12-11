@@ -12,7 +12,6 @@ export class ModalService {
   messageSendData = new Subject<string>();
   messageReceiveData = new Subject<string>();
 
-  // open(idModal: string, data?: any) {
   open(data?: any) {
     this.formModal = new bootstrap.Modal(
       document.getElementById('modalForm')
