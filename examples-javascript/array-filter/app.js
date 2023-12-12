@@ -36,7 +36,8 @@ console.log(results5);
 const items6 = [
   { name: 'id', value: 1111 },
   { name: 'enabled', value: true },
-  { name: 'name', value: 'example name' },
+  { name: 'name', value: 'example name 1' },
+  { name: 'name', value: 'example name 2' },
   { name: 'level', value: 'example level' },
 ];
 const results6 = items6.filter((item) => (item.name === 'name'));

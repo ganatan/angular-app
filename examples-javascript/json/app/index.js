@@ -9,34 +9,34 @@ let items =
 	[
 		{
 			"id": 1005,
-			"name": "Brenon",
-			"login": "a810123",
-			"firstName": "François",
+			"name": "aaaaa",
+			"login": "11111",
+			"firstName": "bbbbb",
 			"function": "function07",
 			"application": "application07",
 			"role": "role07",
-			"code": "AADMIN_ROLES_VALIDATOR",
+			"code": "AADMIN",
 			"permission": "In aADMIN, valid role validations",
 			"debut": "10/09/23",
 			"fin": "31/12/23",
-			"par": "Osvald",
+			"par": "zzzzzz",
 			"self": {
 				"href": "http://localhost:5203/permissions/1005"
 			}
 		},
 		{
 			"id": 1009,
-			"name": "Descotils",
-			"login": "a425667",
-			"firstName": "Juliette",
+			"name": "bbbbbb",
+			"login": "222222",
+			"firstName": "ccccc",
 			"function": "function09",
 			"application": "application09",
 			"role": "role09",
-			"code": "AADMIN_INSTRUCTORS_MENU",
+			"code": "AADMIN",
 			"permission": "In aADMIN, to view instructors menu",
 			"debut": "01/05/23",
 			"fin": "31/12/23",
-			"par": "Léost",
+			"par": "ddddd",
 			"self": {
 				"href": "http://localhost:5203/permissions/1009"
 			}
@@ -51,9 +51,9 @@ let items =
 let item =
 {
 	"id": 1005,
-	"name": "Brenon",
-	"login": "a810123",
-	"firstName": "François",
+	"name": "aaaaa",
+	"login": "11111",
+	"firstName": "bbbbbb",
 	"function": "function07",
 	"application": "application07",
 	"role": "role07",
@@ -61,7 +61,7 @@ let item =
 	"permission": "In aADMIN, valid role validations",
 	"debut": "10/09/23",
 	"fin": "31/12/23",
-	"par": "Osvald"
+	"par": "eeeeee"
 }
 
 // display(items);
