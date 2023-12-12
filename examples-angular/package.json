@@ -1,5 +1,5 @@
 {
-  "name": "@examples-angular/source",
+  "name": "examples-angular",
   "version": "17.0.6",
   "license": "MIT",
   "scripts": {
