@@ -259,6 +259,12 @@ pm2 start process.config.js --env prod
 
 ```
 
+### Examples
+* Examples Angular
+* Examples Bootstrap
+* Examples React
+* Examples Node
+
 ### Tests API & PostgreSQL
 * in your browser [http://localhost:5004/movies](http://localhost:5004/movies) 
 * in your browser [http://localhost:5004/shows](http://localhost:5004/shows) 
