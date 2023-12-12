@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { ModalService } from './modal/modal.service';
-import { ModalModule } from './modal/modal.module';
+import { ModalFormService } from './modal-form/modal-form.service';
+import { ModalFormModule } from './modal-form/modal-form.module';
 
 import { CommonModule } from '@angular/common';
 import { inject } from '@angular/core';
@@ -12,10 +12,10 @@ import { inject } from '@angular/core';
   imports: [
     CommonModule,
     RouterModule,
-    ModalModule,
+    ModalFormModule,
   ],
   providers: [
-    ModalService,
+    ModalFormService,
   ],
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -25,25 +25,26 @@ export class AppComponent {
   title = 'angular-modal';
   dataModal: any;
 
-  private modalService = inject(ModalService);
+  private modalFormService = inject(ModalFormService);
 
   constructor() {
     const dataModal = {
-      name: 'name 1111',
-      description: 'description 2222',
+      code: 'code 1111',
+      name: 'name 2222',
     }
     this.dataModal = dataModal;
   }
 
   openModal() {
-    this.modalService.open(this.dataModal);
-    this.modalService.sendData()
+    this.modalFormService.open(this.dataModal);
+    this.modalFormService.sendData()
       .subscribe(
         data => {
+          console.log('00000000001:openModal:' + JSON.stringify(data));
           this.dataModal = {
+            code: data['code'],
             name: data['name'],
-            description: data['description'],
-          }
+          } 
         });
   }
 

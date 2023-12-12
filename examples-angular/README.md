@@ -18,17 +18,26 @@
 
 ## Features List
 
+
 ## Bootstrap
 * `npm run start-bootstrap`
 * in your browser [http://localhost:4200](http://localhost:4200) 
 
+
 ## Modal
 * `npm run start-modal`
 * in your browser [http://localhost:4200](http://localhost:4200) 
-    
+
+
+## ModalForm
+* `npm run start-modal-form`
+* in your browser [http://localhost:4200](http://localhost:4200) 
+
+
 ## Select
 * `npm run start-select`
 * in your browser [http://localhost:4200](http://localhost:4200) 
+
 
 ## Starter
 * `npm run start-starter`

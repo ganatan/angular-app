@@ -5,7 +5,7 @@ import { Injectable } from "@angular/core";
 declare const bootstrap: any;
 
 @Injectable()
-export class ModalService {
+export class ModalFormService {
 
   formModal: any;
   messageSendData = new Subject<string>();
@@ -19,7 +19,7 @@ export class ModalService {
     this.messageReceiveData.next(data);
   }
 
-  afterClosed(message: any) {
+  afterSaved(message: any) {
     this.formModal.hide();
     this.messageSendData.next(message);
   }

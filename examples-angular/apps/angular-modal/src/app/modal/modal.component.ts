@@ -22,7 +22,6 @@ export class ModalComponent {
     this.modalService.receiveData()
       .subscribe(
         data => {
-          console.log('00000000001:ModalComponent:' + JSON.stringify(data));
           this.name = data['name'];
           this.description = data['description'];
         });
