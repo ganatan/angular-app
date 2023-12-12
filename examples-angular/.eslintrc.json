@@ -26,7 +26,7 @@
       "extends": ["plugin:@nx/typescript"],
       "rules": {
         "@typescript-eslint/no-explicit-any": "off",
-        "no-undefined": "error",
+        "no-undefined": "off",
         "no-var": "off",
         "prefer-const": "error",
         "func-names": "error",

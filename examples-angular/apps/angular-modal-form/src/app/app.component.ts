@@ -22,10 +22,12 @@ import { inject } from '@angular/core';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+
   title = 'angular-modal';
   dataModal: any;
 
   private modalFormService = inject(ModalFormService);
+  private sub: any;
 
   constructor() {
     const dataModal = {
@@ -37,15 +39,21 @@ export class AppComponent {
 
   openModal() {
     this.modalFormService.open(this.dataModal);
-    this.modalFormService.sendData()
+    this.sub = this.modalFormService.sendData()
       .subscribe(
         data => {
-          console.log('00000000001:openModal:' + JSON.stringify(data));
           this.dataModal = {
             code: data['code'],
             name: data['name'],
-          } 
+          }
         });
+  }
+
+  onUnsuscribe() {
+    console.log('AppComponent:onUnsuscribe:ModalFormService:');
+    if (this.sub !== undefined) {
+      this.sub.unsubscribe();
+    }
   }
 
 }

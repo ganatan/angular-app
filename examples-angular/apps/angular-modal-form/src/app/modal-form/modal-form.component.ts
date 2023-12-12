@@ -10,7 +10,6 @@ import { FormBuilder } from '@angular/forms';
 
 export class ModalFormComponent {
 
-
   private modalService = inject(ModalFormService);
 
   name: string;
@@ -27,6 +26,7 @@ export class ModalFormComponent {
     this.modalService.receiveData()
       .subscribe(
         data => {
+          console.log('00000000001:modalService:subscribe');
           this.exampleForm.patchValue({
             code: data['code'],
             name: data['name'],
@@ -40,6 +40,10 @@ export class ModalFormComponent {
       code: this.exampleForm.value['code'],
     }
     this.modalService.afterSaved(item);
+  }
+
+  ngOnDestroy() {
+    console.log('ModalFormComponent:ngOnDestroy');
   }
 
 }
