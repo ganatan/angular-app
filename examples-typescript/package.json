@@ -1,0 +1,16 @@
+{
+  "name": "examples-typescript",
+  "version": "1.0.0",
+  "description": "npm init",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "build-class": "tsc src/ts-class.ts --outDir dist",
+    "dev-class": "tsc src/ts-class.ts  --outDir dist && node dist/ts-class"
+  },
+  "author": "danny",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
