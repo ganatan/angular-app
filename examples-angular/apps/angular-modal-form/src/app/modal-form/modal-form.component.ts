@@ -42,8 +42,4 @@ export class ModalFormComponent {
     this.modalService.afterSaved(item);
   }
 
-  ngOnDestroy() {
-    console.log('ModalFormComponent:ngOnDestroy');
-  }
-
 }

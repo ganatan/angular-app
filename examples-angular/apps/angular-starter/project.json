@@ -2,7 +2,7 @@
   "name": "angular-starter",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "examples-angular",
+  "prefix": "app",
   "sourceRoot": "apps/angular-starter/src",
   "tags": [],
   "targets": {

@@ -9,7 +9,7 @@ import { ToolsComponent } from '@examples-angular/tools';
     RouterModule,
     ToolsComponent
   ],
-  selector: 'examples-angular-root',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

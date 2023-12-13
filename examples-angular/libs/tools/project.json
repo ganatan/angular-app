@@ -2,7 +2,7 @@
   "name": "tools",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/tools/src",
-  "prefix": "examples-angular",
+  "prefix": "app",
   "tags": [],
   "projectType": "library",
   "targets": {

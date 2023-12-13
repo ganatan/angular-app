@@ -1,32 +1,28 @@
 {
-  "name": "angular-bootstrap",
+  "name": "angular-charts",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/angular-bootstrap/src",
+  "sourceRoot": "apps/angular-charts/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/angular-bootstrap",
-        "index": "apps/angular-bootstrap/src/index.html",
-        "main": "apps/angular-bootstrap/src/main.ts",
-        "polyfills": [
-          "zone.js"
-        ],
-        "tsConfig": "apps/angular-bootstrap/tsconfig.app.json",
+        "outputPath": "dist/apps/angular-charts",
+        "index": "apps/angular-charts/src/index.html",
+        "main": "apps/angular-charts/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/angular-charts/tsconfig.app.json",
         "assets": [
-          "apps/angular-bootstrap/src/favicon.ico",
-          "apps/angular-bootstrap/src/assets"
+          "apps/angular-charts/src/favicon.ico",
+          "apps/angular-charts/src/assets"
         ],
         "styles": [
           "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
           "node_modules/bootstrap/dist/css/bootstrap.min.css",
-          "apps/angular-bootstrap/src/styles.css"
+          "apps/angular-charts/src/styles.css"
         ],
         "scripts": [
           "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -63,10 +59,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "angular-bootstrap:build:production"
+          "buildTarget": "angular-charts:build:production"
         },
         "development": {
-          "buildTarget": "angular-bootstrap:build:development"
+          "buildTarget": "angular-charts:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -74,34 +70,24 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "angular-bootstrap:build"
+        "buildTarget": "angular-charts:build"
       }
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
-      "options": {
-        "lintFilePatterns": [
-          "apps/angular-bootstrap/**/*.ts",
-          "apps/angular-bootstrap/**/*.html"
-        ]
-      }
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/angular-bootstrap/jest.config.ts"
+        "jestConfig": "apps/angular-charts/jest.config.ts"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "angular-bootstrap:build"
+        "buildTarget": "angular-charts:build"
       }
     }
   }
