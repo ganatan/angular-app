@@ -24,6 +24,11 @@
 * in your browser [http://localhost:4200](http://localhost:4200) 
 
 
+## Charts
+* `npm run start-charts`
+* in your browser [http://localhost:4200](http://localhost:4200) 
+
+
 ## Modal
 * `npm run start-modal`
 * in your browser [http://localhost:4200](http://localhost:4200) 
