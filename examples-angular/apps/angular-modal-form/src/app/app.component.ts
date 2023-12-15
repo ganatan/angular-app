@@ -23,7 +23,7 @@ import { inject } from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'angular-modal';
+  title = 'angular-modal-form';
   dataModal: any;
 
   private modalFormService = inject(ModalFormService);

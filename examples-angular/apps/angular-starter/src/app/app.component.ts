@@ -17,8 +17,6 @@ export class AppComponent {
   title = 'angular-starter';
 
   constructor() {
-    var toto = 'toto';
-    console.log(toto);
   }
 
 }

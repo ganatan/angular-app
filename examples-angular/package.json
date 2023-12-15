@@ -26,7 +26,11 @@
     "start-starter": "nx serve angular-starter",
     "lint-starter": "nx lint angular-starter",
     "test-starter": "nx test angular-starter",
-    "build-starter": "nx build angular-starter"
+    "build-starter": "nx build angular-starter",
+    "start-youtube-search": "nx serve angular-youtube-search",
+    "lint-youtube-search": "nx lint angular-youtube-search",
+    "test-youtube-search": "nx test angular-youtube-search",
+    "build-youtube-search": "nx build angular-youtube-search"
   },
   "private": true,
   "dependencies": {

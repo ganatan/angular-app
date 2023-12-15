@@ -12,9 +12,9 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it(`should have as title 'angular-bootstrap'`, () => {
+  it(`should have as title 'angular-charts'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-bootstrap');
+    expect(app.title).toEqual('angular-charts');
   });
 });

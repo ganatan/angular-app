@@ -1,0 +1,81 @@
+<div class="container pt-4">
+  <div class="row p-4">
+    <div class="col">
+      <div class="d-flex">
+        <div class="d-flex me-auto">
+          <form class="row g-3">
+            <div class="col-auto">
+              <input type="text" class="form-control" name="searchInput" id="searchInput" placeholder="text"
+                [(ngModel)]="searchInput">
+            </div>
+            <div class="col-auto">
+              <button type="button" class="btn btn-primary mb-3" (click)="search()">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row p-4">
+    <div class="col">
+      url : {{ url }}
+    </div>
+  </div>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items; let i=index">
+        <td>{{ item.title }}</td>
+        <td>{{ item.description }}</td>
+        <td>
+          <img src="http://img.youtube.com/vi/{{ item.id }}/default.jpg" alt="" />
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!--
+<div class="container pt-4">
+  <div class="row p-4">
+    <div class="col">
+      <div class="d-flex">
+        <div class="d-flex me-auto">
+          <form class="row g-3">
+            <div class="col-auto">
+              <input type="text" class="form-control" id="inputPassword2" placeholder="example video">
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3" (click)="search()">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      items : {{ items | json }}
+      <tr *ngFor="let item of items; let i=index" >
+        <td>Dune - Bande-Annonce Officielle (VF) - Denis Villeneuve, Timothée Chalamet</td>
+        <td>Cité à l'Oscar, Denis Villeneuve (PREMIER CONTACT, BLADE RUNNER 2049) a porté à l'écran le mythique roman de
+          Frank ...</td>
+        <td>gHt8tCHbB2M</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+-->
+<router-outlet></router-outlet>

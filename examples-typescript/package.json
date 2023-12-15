@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node app",
-    "build-class": "tsc src/ts-class.ts --outDir dist",
-    "dev-class": "tsc src/ts-class.ts  --outDir dist && node dist/ts-class"
+    "dev-class": "tsc src/ts-class.ts  --outDir dist && node dist/ts-class",
+    "dev-replace": "tsc src/ts-replace.ts  --outDir dist && node dist/ts-replace"
   },
   "author": "danny",
   "license": "ISC",
