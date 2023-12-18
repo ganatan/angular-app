@@ -15,15 +15,19 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'angular-select';
+
   items: any;
   selectValue: any;
+  selectValueSimple: any;
+
   constructor() {
-    this.selectValue = "value3";
+    this.selectValueSimple = "3";
+
+    this.selectValue = "2";
     this.items = [
-      { name: 'value1' },
-      { name: 'value2' },
-      { name: 'value3' },
-      { name: 'value4' }
+      { name: 'Analyze', value: '1' },
+      { name: 'Automatic', value: '2' },
+      { name: 'Manual', value: '3' },
     ]
   }
 
@@ -31,13 +35,37 @@ export class AppComponent {
     console.log('clickOnOption:' + this.selectValue);
   }
 
+  clickOnSelectSimple() {
+    console.log('clickOnSelectSimple:' + this.selectValueSimple);
+  }
+
+  changeOnSelectSimple(event: any) {
+    console.log('changeOnSelectSimple:' + JSON.stringify(event));
+    console.log('changeOnSelectSimple:' + this.selectValueSimple);
+  }
+
+  clickOnOptionSimple() {
+    console.log('clickOnOptionSimple:' + this.selectValueSimple);
+  }
+
   clickOnSelect() {
     console.log('clickOnSelect:' + this.selectValue);
   }
-  
-  changeOnSelect(event:any) {
-    console.log('changeOnSelect:' + JSON.stringify(event));
-    console.log('changeOnSelect:' + this.selectValue);
+
+  changeOnSelect(event: any, data: any) {
+    console.log('changeOnSelect1:' + JSON.stringify(event));
+    console.log('changeOnSelect2:' + JSON.stringify(data));
+    console.log('changeOnSelect3:' + this.selectValue);
+  }
+
+  onModelChange(event: any) {
+    console.log('onModelChange:' + JSON.stringify(event));
+    console.log('onModelChange:' + this.selectValue);
+  }
+
+
+  onChange1() {
+    console.log('onChange1');
   }
 
 }
