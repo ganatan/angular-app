@@ -3,6 +3,7 @@
   "version": "17.0.7",
   "scripts": {
     "ng": "ng",
+    "dev": "ng serve --port 4200",
     "start": "ng serve --port 4200",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",

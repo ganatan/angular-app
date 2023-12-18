@@ -31,3 +31,19 @@
 
 ### Compilation
 * `npm run build-starter`       
+
+
+
+## Props
+## Development
+* `npm run start-props`
+* in your browser [http://localhost:4200](http://localhost:4200) 
+
+## Linter
+* `npm run lint-props`
+
+## Tests
+* `npm run test-props`
+
+### Compilation
+* `npm run build-props`       
