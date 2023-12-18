@@ -13,11 +13,6 @@ export class ItemsService {
   }
 
   getItems(url: string): Observable<any> {
-    /*    let url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25';
-        url += `&q=${param1}%20${param1}`;
-        url += '&type=video&order=relevance';
-        url += '&key=AIzaSyAqOFa5JJpWqlnpwz9rC0LYy9TP9O6OqFc';
-        url += '&prettyPrint=fa'; */
     const result = this.http.get<any>(url)
       .pipe(
         catchError(this.handleError('getItems', []))
