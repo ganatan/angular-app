@@ -18,7 +18,7 @@
 
   <div class="row p-2">
     <div class="col-6 mx-auto">
-      <table class="table table-bordered">
+      <table class="table table-bordered table-sm">
         <thead>
           <tr>
             <th>Id</th>
@@ -30,10 +30,10 @@
         <tbody>
           <tr *ngFor="let item of dataTable; let i=index">
             <td>
-              <input type="text" class="form-control" id="id-{{i}}" name="id-{{i}}" [(ngModel)]="item.id">
+              <input type="text" class="form-control form-control-sm" id="id-{{i}}" name="id-{{i}}" [(ngModel)]="item.id">
             </td>
             <td>
-              <input type="text" class="form-control" id="title-{{i}}" name="title-{{i}}" [(ngModel)]="item.title">
+              <input type="text" class="form-control form-control-sm" id="title-{{i}}" name="title-{{i}}" [(ngModel)]="item.title">
             </td>
             <td>
               <div class="form-check">
