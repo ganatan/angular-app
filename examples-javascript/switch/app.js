@@ -1,6 +1,5 @@
 let movie = "Gladiator";
 
-
 switch (movie) {
   case 'Gladiator':
     console.log('Gladiator');
@@ -10,7 +9,7 @@ switch (movie) {
     console.log('Alien');
 
     break;
-  
-    default:
+
+  default:
     console.log('Unknown');
 }

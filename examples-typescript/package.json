@@ -4,8 +4,8 @@
   "description": "npm init",
   "main": "index.js",
   "scripts": {
-    "start": "node app",
     "dev-class": "tsc src/ts-class.ts  --outDir dist && node dist/ts-class",
+    "dev-push": "tsc src/ts-push.ts  --outDir dist && node dist/ts-push",
     "dev-replace": "tsc src/ts-replace.ts  --outDir dist && node dist/ts-replace"
   },
   "author": "danny",
