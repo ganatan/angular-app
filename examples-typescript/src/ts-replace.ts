@@ -23,7 +23,12 @@ function replaceAllSpace2(name: string) {
   return nameTmp;
 }
 
-
+function replaceAllSingleQuote(name: string) {
+  let substring = '&#39;';
+  let replacement = `'`;
+  let nameTmp = name.replace(new RegExp(substring, 'g'), replacement);
+  return nameTmp;
+}
 
 let res = replaceName('Steven Spielberg');
 console.log('replaceName:' + res);
@@ -39,3 +44,7 @@ console.log('replaceAllName:' + res4);
 
 let res5 = replaceAllSpace2('Steven Spielberg is a Director');
 console.log('replaceAllName:' + res5);
+
+
+let res6 = replaceAllSingleQuote('L&#39;ame des guerriers');
+console.log('replaceAllSingleQuote:' + res6);

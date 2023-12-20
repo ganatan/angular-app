@@ -1,3 +1,14 @@
+/* ---------------- array.filter avec deux parametres utilisés dans les confitions de filtres --------------*/
+let filterCondition0 = (param1, param2) => (element) => {
+  let res = (element === param1) || (element === param2);
+  return res;
+}
+
+let items0 = ['id', 'enabled', 'name', 'level'];
+items0 = items0.filter(filterCondition0("id", "enabled"));
+console.log('items0:' + JSON.stringify(items0))
+
+
 const items1 = ['id', 'enabled', 'name', 'level'];
 const results1 = items1.filter((item) => (item === 'id' || item === 'name'));
 console.log('results1: ' + results1);
@@ -69,9 +80,6 @@ function filterCondition(element) {
     console.log('00000000003:' + condition);
     res = true;
   };
-  /*  if (title === condition) {
-      res = true;
-    }*/
   return res;
 }
 let param = 'dune';
@@ -99,3 +107,4 @@ const items8 = [
   { "value": 2, "name": "budget 225", "valueFieldReference": 2 }];
 const results8 = items8.filter(filterCondition8);  
 console.log('results8: ' + JSON.stringify(results8));
+

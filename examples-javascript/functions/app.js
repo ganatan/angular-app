@@ -1,3 +1,16 @@
+let varArrowFunction8 = wordToCompare => {
+  console.log('00000000001:varArrowFunction8');
+}
+varArrowFunction8()
+
+
+var varArrowFunction = () => {
+  console.log('00000000001:varArrowFunction');
+};
+varArrowFunction();
+
+
+
 function functionDeclaration() {
   console.log('00000000001:functionDeclaration');
 }
