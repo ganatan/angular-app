@@ -47,3 +47,33 @@ itemsTotal2.forEach((value) => {
   }
 })
 console.log('itemsTotal3:' + JSON.stringify(itemsTotal3));
+
+
+
+console.log('');
+console.log('-------------------------------');
+console.log('------------------------------- concatene itemsMaster et itemsSlave');
+console.log('------------------------------- ne tient pas compte des doublons');
+
+let itemsMaster =
+  [
+    { "id": "1111", "title": "aaaa" },
+    { "id": "2222", "title": "bbbb" },
+  ];
+
+let itemsSlave =
+  [
+    { "id": "2222", "title": "cccc" },
+    { "id": "3333", "title": "dddd" },
+  ];
+
+let itemsCumul = itemsMaster;
+itemsSlave.forEach((element) => {
+  const exist = itemsCumul.filter((item) => (item.id === element.id));
+  if (exist.length === 0) {
+    itemsCumul.push(element);
+  }
+})
+console.log('itemsCumul:' + JSON.stringify(itemsCumul));
+
+

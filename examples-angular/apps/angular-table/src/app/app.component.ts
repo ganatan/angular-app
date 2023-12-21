@@ -32,5 +32,9 @@ export class AppComponent {
       ]
     this.dataTable = items;
   }
+  
+  onChange(event:any) {
+    console.log('onChange:' + JSON.stringify(event));
+  }
 
 }
