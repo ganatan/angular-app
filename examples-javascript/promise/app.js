@@ -34,7 +34,7 @@ function executePromise2() {
 
 
 
-async function toto() {
+async function executePromises() {
   console.log('00000000001');
 //  let result = await executePromise2;
   executePromise2()
@@ -52,7 +52,7 @@ async function toto() {
     }) */
 }
 
-toto();
+executePromises();
 
 
 

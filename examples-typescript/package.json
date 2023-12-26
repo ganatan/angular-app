@@ -4,6 +4,7 @@
   "description": "npm init",
   "main": "index.js",
   "scripts": {
+    "dev-await": "tsc src/ts-await.ts  --outDir dist && node dist/ts-await",
     "dev-class": "tsc src/ts-class.ts  --outDir dist && node dist/ts-class",
     "dev-filter": "tsc src/ts-filter.ts  --outDir dist && node dist/ts-filter",
     "dev-for": "tsc src/ts-for.ts  --outDir dist && node dist/ts-for",
