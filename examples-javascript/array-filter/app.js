@@ -1,3 +1,32 @@
+/* supprimer les doublons */
+var list = [1, 3, 5, 1, 2, 3, 7, 4, 5];
+var listFiltered = list.filter((value, index) => list.indexOf(value) === index);
+console.log('listFiltered : ' + listFiltered);
+
+var list2 = ['name 1 ', 'name 2 ', 'name 1 ', 'name 2 ', 'name 1 again']
+const listFiltered2 = list2.filter(function (element, index) {
+  console.log('00000000001:' + element);
+  console.log('00000000002:' + index);
+  return list2.indexOf(element) == index;
+})
+console.log('listFiltered2 : ' + listFiltered2);
+
+const list3 = [
+  { code: '0001', name: "name1" },
+  { code: '0002', name: "name2" },
+  { code: '0002', name: "name3" },
+  { code: '0003', name: "name4" },
+  { code: '0003', name: "name5" },
+  { code: '0004', name: "name6" },
+  { code: '0004', name: "name7" },
+  { code: '0005', name: "name8" }
+];
+
+const listFiltered3 = [...new Map(list3.map(item => [item.code, item])).values()]
+console.log('listFiltered3 : ' + JSON.stringify(listFiltered3));
+
+
+
 /* ---------------- array.filter avec deux parametres utilisés dans les confitions de filtres --------------*/
 let filterCondition0 = (param1, param2) => (element) => {
   let res = (element === param1) || (element === param2);
@@ -94,7 +123,7 @@ function filterCondition8(element) {
   console.log('filterCondition8:' + JSON.stringify(element));
   console.log('filterCondition8:' + typeof element.value);
   let res = false;
-  if (element.value === 2 ) {
+  if (element.value === 2) {
     console.log('filterCondition8:true');
     res = true;
   };
@@ -105,6 +134,6 @@ const items8 = [
   { "name": "- aucun -", "value": "- aucun -", "valueFieldReference": null },
   { "value": 1, "name": "budget 160", "valueFieldReference": 1 },
   { "value": 2, "name": "budget 225", "valueFieldReference": 2 }];
-const results8 = items8.filter(filterCondition8);  
+const results8 = items8.filter(filterCondition8);
 console.log('results8: ' + JSON.stringify(results8));
 
