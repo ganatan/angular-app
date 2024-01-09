@@ -61,8 +61,8 @@ Here is a working live demo :  https://angular.ganatan.com/
 ### Front-end : What's included
 > Dependencies
 - [x] Angular : 17.0.8
-- [x] Angular CLI : 17.0.7
-- [x] Angular SSR : 17.0.7
+- [x] Angular CLI : 17.0.9
+- [x] Angular SSR : 17.0.9
 - [x] Bootstrap : 5.3.2
 - [x] Fontawesome : 6.4.2
 
