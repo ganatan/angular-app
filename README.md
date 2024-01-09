@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 17**
 
 
-* Frontend - [**Angular 17.0.7**](https://github.com/angular/angular/releases) & [**Angular CLI 17.0.7**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 17.0.8**](https://github.com/angular/angular/releases) & [**Angular CLI 17.0.9**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
