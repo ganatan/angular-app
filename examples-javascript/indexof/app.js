@@ -17,7 +17,15 @@ console.log('index1:' + index1);
 console.log('index2:' + index2);
 console.log('index3:' + index3);
 
-
 console.log('param1:' + param1);
 console.log('param2:' + param2);
 console.log('param3:' + param3);
+
+
+let text2 = 'https://example.com/param1.jpg 140w, https://example.com/param2.jpg 210w';
+
+
+let index21 = text2.lastIndexOf("https");
+param21 = text2.substring(index21, text2.length)
+console.log('index21:' + index21);
+console.log('param21:' + param21);
