@@ -19,4 +19,3 @@ keys.map((element) => {
   });
 });
 console.log('map:' + JSON.stringify(map));
-
