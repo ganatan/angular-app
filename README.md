@@ -128,9 +128,22 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run serve:ssr`
 * in your browser [http://localhost:4000](http://localhost:4000) 
 
-### Bootstrap UI
-* `change directory` cd ui
-* Launch html pages in your browser
+
+### Angular & Docker
+
+* `build image`
+* docker build -t angular-starter:1.0.0 .
+
+* `run container`
+* docker run -d -p 4000:4000 angular-starter:1.0.0
+
+* `run container mode bash`
+* docker run -it angular-starter:1.0.0 /bin/bash
+
+
+* in your browser [http://localhost:4000](http://localhost:4000) 
+
+
 
 
 
