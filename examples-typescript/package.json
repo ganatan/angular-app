@@ -9,6 +9,7 @@
     "dev-date": "tsc src/ts-date.ts  --outDir dist && node dist/ts-date",
     "dev-filter": "tsc src/ts-filter.ts  --outDir dist && node dist/ts-filter",
     "dev-for": "tsc src/ts-for.ts  --outDir dist && node dist/ts-for",
+    "dev-interface": "tsc src/ts-interface.ts  --outDir dist && node dist/ts-interface",
     "dev-push": "tsc src/ts-push.ts  --outDir dist && node dist/ts-push",
     "dev-remove-space": "tsc src/ts-remove-space.ts  --outDir dist && node dist/ts-remove-space",
     "dev-replace": "tsc src/ts-replace.ts  --outDir dist && node dist/ts-replace"
