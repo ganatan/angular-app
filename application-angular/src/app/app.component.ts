@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { Inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
-
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { HeaderModule } from './components/header/header.module';
 import { FooterModule } from './components/footer/footer.module';
 
@@ -11,8 +10,8 @@ import { FooterModule } from './components/footer/footer.module';
   selector: 'app-root',
   standalone: true,
   imports: [
-    CommonModule, 
-    RouterLink, 
+    CommonModule,
+    RouterLink,
     RouterOutlet,
     HeaderModule,
     FooterModule,
@@ -26,6 +25,7 @@ export class AppComponent implements OnInit {
   footerLink = 'www.ganatan.com';
 
   constructor(
+    @Inject(DOCUMENT) private document: Document,
     @Inject(PLATFORM_ID) private platformId: object) {
   }
 
