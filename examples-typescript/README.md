@@ -45,3 +45,5 @@ npm install typescript
   npm install typescript -g
 
 
+# Gestion des variables d'environnement
+  npm i --save-dev @types/node
