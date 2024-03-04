@@ -11,7 +11,7 @@
 it's a repo designed to create a **Web Application with Angular 17**
 
 
-* Frontend - [**Angular 17.2.1**](https://github.com/angular/angular/releases) & [**Angular CLI 17.2.0**](https://github.com/angular/angular-cli/releases/)
+* Frontend - [**Angular 17.2.3**](https://github.com/angular/angular/releases) & [**Angular CLI 17.2.2**](https://github.com/angular/angular-cli/releases/)
 
 * UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
 
@@ -60,10 +60,10 @@ Here is a working live demo :  https://angular.ganatan.com/
 
 ### Front-end : What's included
 > Dependencies
-- [x] Angular : 17.2.1
-- [x] Angular CLI : 17.2.0
-- [x] Angular SSR : 17.2.0
-- [x] Bootstrap : 5.3.2
+- [x] Angular : 17.2.3
+- [x] Angular CLI : 17.2.2
+- [x] Angular SSR : 17.2.2
+- [x] Bootstrap : 5.3.3
 - [x] Fontawesome : 6.4.2
 
 > Features
