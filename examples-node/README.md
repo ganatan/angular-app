@@ -4,7 +4,7 @@
 ## Features Type XXXXXXX
 ## Development
 * `npm run start-xxxxxxx`
-* in your browser [http://localhost:4200](http://localhost:4200) 
+* in your browser [http://localhost:3000](http://localhost:3000) 
 
 ## Linter
 * `npm run lint-xxxxxxx`
@@ -21,7 +21,7 @@
 ## Starter
 ## Development
 * `npm run start-starter`
-* in your browser [http://localhost:4200](http://localhost:4200) 
+* in your browser [http://localhost:3000](http://localhost:3000) 
 
 ## Linter
 * `npm run lint-starter`
