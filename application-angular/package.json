@@ -10,8 +10,7 @@
     "lint": "ng lint",
     "test": "ng test",
     "coverage": "ng test --no-watch --code-coverage",
-    "serve": "node server.js",
-    "serve:ssr": "node dist/angular-starter/server/server.mjs"
+    "serve": "node dist/angular-starter/server/server.mjs"
   },
   "private": true,
   "dependencies": {

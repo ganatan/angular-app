@@ -18,7 +18,7 @@
 * `npm run build`       ( with SSR)
 
 ### Production
-* `npm run serve:ssr`
+* `npm run serve`
 * in your browser [http://localhost:4000](http://localhost:4000) 
 
 
