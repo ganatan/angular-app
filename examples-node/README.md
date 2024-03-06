@@ -31,3 +31,13 @@
 
 ### Compilation
 * `npm run build-starter`       
+
+
+
+## Pdf
+## Development
+* `npm run start-pdf`
+* in your browser [http://localhost:3000](http://localhost:3000) 
+* in your browser [http://localhost:3000/pdf](http://localhost:3000/pdf) 
+
+* in your directory apps/node-pdf/pdf check exemple.pdf
