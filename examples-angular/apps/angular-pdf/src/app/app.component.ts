@@ -14,6 +14,7 @@ import { PdfService } from './pdf.service';
 })
 export class AppComponent {
   title = 'angular-pdf';
+
   constructor(private pdfService: PdfService) {
   }
 

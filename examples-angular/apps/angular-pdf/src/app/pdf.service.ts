@@ -28,12 +28,12 @@ export class PdfService {
     const doc = new jsPDF.default();
     const headers = Object.keys(items[0]);
     const tableData = items.map((element: any) => Object.values(element));
-    doc.autoTable({
+    (doc as any).autoTable({
       head: [headers],
       body: tableData
     });
     const pdfBlob = doc.output('blob');
-    
+
     return pdfBlob;
   }
 
