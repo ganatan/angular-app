@@ -12,9 +12,9 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it(`should have as title 'angular-component'`, () => {
+  it(`should have as title 'angular-pdf'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-component');
+    expect(app.title).toEqual('angular-pdf');
   });
 });

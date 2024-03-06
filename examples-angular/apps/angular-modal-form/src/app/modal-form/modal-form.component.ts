@@ -26,7 +26,6 @@ export class ModalFormComponent {
     this.modalService.receiveData()
       .subscribe(
         data => {
-          console.log('00000000001:modalService:subscribe');
           this.exampleForm.patchValue({
             code: data['code'],
             name: data['name'],
