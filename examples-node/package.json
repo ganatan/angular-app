@@ -21,7 +21,9 @@
     "axios": "1.6.7",
     "express": "4.18.3",
     "pdfkit": "^0.14.0",
-    "sequelize": "6.37.1",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.1",
     "tslib": "2.6.2"
   },
   "devDependencies": {

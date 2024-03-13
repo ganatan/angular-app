@@ -1,0 +1,26 @@
+{
+    "development": {
+      "username": "postgres",
+      "password": "Trustno1",
+      "database": "backendprototype",
+      "host": "localhost",
+      "dialect": "postgres",
+      "logging": false
+    },
+    "test": {
+      "username": "postgres",
+      "password": "Trustno1",
+      "database": "backendprototype",
+      "host": "localhost",
+      "dialect": "postgres",
+      "logging": false
+    },
+    "production": {
+      "username": "postgres",
+      "password": "Trustno1",
+      "database": "backendprototype",
+      "host": "localhost",
+      "dialect": "postgres",
+      "logging": false
+    }
+  }
