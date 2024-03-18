@@ -7,13 +7,6 @@ class Movie {
   }
 }
 
-/*let movie = {
-  name: "Gladiator",
-  director: "Will Alexander",
-  date: "1999",
-}; */
-
-
 let movie = new Movie("Gladiator", "Ridley Scott", 2000);
 let movie2 = new Movie("Gladiator2", "Ridley Scott2", 2002);
 let movie3 = new Movie("Gladiator3", "Ridley Scott3", 2003);
