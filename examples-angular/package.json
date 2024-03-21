@@ -74,6 +74,7 @@
     "@nx/angular": "18.0.8",
     "@types/papaparse": "5.3.14",
     "bootstrap": "5.3.3",
+    "chart.js": "^4.4.2",
     "jspdf": "2.5.1",
     "jspdf-autotable": "3.8.2",
     "ngx-toastr": "18.0.0",
