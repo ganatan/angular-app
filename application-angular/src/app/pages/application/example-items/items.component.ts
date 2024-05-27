@@ -11,7 +11,6 @@ import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 })
 export class ItemsComponent implements OnInit {
 
-
   // eslint-disable-next-line  @typescript-eslint/no-explicit-any
   items: any;
   loaded: boolean;

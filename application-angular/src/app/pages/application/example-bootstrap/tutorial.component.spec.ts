@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterModule } from '@angular/router';
 
 import { TutorialComponent } from './tutorial.component';
 import { FormBuilder } from '@angular/forms';
-import { RouterTestingModule } from '@angular/router/testing';
 
 describe('ExampleBootstrapComponent', () => {
   let component: TutorialComponent;
@@ -11,7 +11,7 @@ describe('ExampleBootstrapComponent', () => {
   beforeEach(async () => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterModule.forRoot([])
       ],
       declarations: [
         TutorialComponent,

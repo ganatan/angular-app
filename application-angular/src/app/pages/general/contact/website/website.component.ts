@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-website',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './website.component.html',
   styleUrl: './website.component.css'
 })

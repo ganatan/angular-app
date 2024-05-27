@@ -55,12 +55,11 @@ export const routes: Routes = [
     path: 'cards',
     loadChildren: () => import('./pages/application/example-cards/tutorial.module')
       .then(mod => mod.TutorialModule)
-  },
-  {
+  },  {
     path: 'httpclient',
     loadChildren: () => import('./pages/application/example-items/items.module')
       .then(mod => mod.ItemsModule)
-  },  
+  },
   {
     path: 'bootstrap',
     loadChildren: () => import('./pages/application/example-bootstrap/tutorial.module')

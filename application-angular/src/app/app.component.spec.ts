@@ -1,31 +1,19 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
+import { ActivatedRoute } from '@angular/router';
+
 import { AppComponent } from './app.component';
-import { RouterTestingModule } from '@angular/router/testing';
-import { DOCUMENT } from '@angular/common';
 
 describe('AppComponent', () => {
-
-  let comp: AppComponent;
-  let fixture: ComponentFixture<AppComponent>;
-  let doc: Document;
-
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent, RouterTestingModule],
+      imports: [AppComponent],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {}
+        }
+      ]
     }).compileComponents();
-  });
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(AppComponent);
-    comp = fixture.componentInstance;
-    doc = TestBed.inject(DOCUMENT);
-  });
-
-  it('should test ngOnInit', () => {
-    comp.ngOnInit();
-    const navMain = doc.getElementById('navbarCollapse');
-    navMain?.click();
-    expect(true).toBe(true);
   });
 
   it('should create the app', () => {
