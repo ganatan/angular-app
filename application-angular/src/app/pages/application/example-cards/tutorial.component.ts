@@ -17,7 +17,7 @@ export class TutorialComponent implements OnInit {
   bootstrap = environment.application.bootstrap;
   fontawesome = environment.application.fontawesome;
 
-  features: Array<Feature>;
+  features: Feature[];
 
   constructor(
     private seoService: SeoService,

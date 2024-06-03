@@ -1,21 +1,27 @@
-import { TestBed } from '@angular/core/testing';
-import { HttpClient } from '@angular/common/http';
-import { ItemsService } from './items.service';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
+import { ItemsComponent } from './items.component';
 
-describe('ItemsService', () => {
-  let service: ItemsService;
+describe('ItemsComponent', () => {
+  let component: ItemsComponent;
+  let fixture: ComponentFixture<ItemsComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      providers: [
-        ItemsService,
-        { provide: HttpClient, useValue: {} }
-      ]
-    });
-    service = TestBed.inject(ItemsService);
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [
+        HttpClientModule
+      ],
+      declarations: [ItemsComponent]
+    }).compileComponents();
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  beforeEach(() => {
+    fixture = TestBed.createComponent(ItemsComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
   });
 });

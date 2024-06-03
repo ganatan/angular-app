@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { ItemsService } from './items.service';
 
 describe('ItemsService', () => {
@@ -7,8 +7,9 @@ describe('ItemsService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [
-        HttpClientModule
+      providers: [
+        ItemsService,
+        { provide: HttpClient, useValue: {} }
       ]
     });
     service = TestBed.inject(ItemsService);
