@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-// eslint-disable-next-line
 declare const bootstrap: any;
 
 @Component({

@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RouterModule, ActivatedRoute } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { ContactComponent } from './contact.component';
 
@@ -10,18 +10,10 @@ describe('ContactComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterModule.forRoot([])
-      ],
-      declarations: [ContactComponent],
-      providers: [
-        {
-          provide: ActivatedRoute,
-          useValue: {
-          }
-        }
-      ]
-    }).compileComponents();
-
+        RouterTestingModule
+      ],      
+      declarations: [ContactComponent]
+    });
     fixture = TestBed.createComponent(ContactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

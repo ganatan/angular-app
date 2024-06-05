@@ -6,7 +6,6 @@ import { Item } from './items/item';
 import { ItemsService } from './items/items.service';
 import { environment } from '../../../../environments/environment';
 
-// eslint-disable-next-line
 declare const bootstrap: any;
 
 @Component({
@@ -19,7 +18,6 @@ export class BoxofficeComponent implements OnInit {
   items: Item[];
   player: string;
   playerLoaded: boolean;
-  // eslint-disable-next-line
   modalPlayer: any;
 
   formFilter = this.fb.group({

@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 export const SONGS: any[] =
   [
     {

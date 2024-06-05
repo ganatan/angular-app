@@ -7,7 +7,6 @@ import { Badge } from './badge';
 import { ItemsService } from './items/items.service';
 import { environment } from '../../../../environments/environment';
 
-// eslint-disable-next-line
 declare const bootstrap: any;
 
 @Component({
@@ -23,7 +22,6 @@ export class NewsComponent implements OnInit {
   searchField: string;
   player: string;
   playerLoaded: boolean;
-  // eslint-disable-next-line
   modalPlayer: any;
   loaded: boolean;
   filtersEnabled: boolean;

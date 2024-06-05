@@ -3,7 +3,6 @@ import { Subject } from 'rxjs';
 import { Item } from './item';
 import { Injectable } from "@angular/core";
 
-// eslint-disable-next-line
 declare const bootstrap: any;
 
 @Injectable()

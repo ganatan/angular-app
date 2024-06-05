@@ -7,7 +7,6 @@ import { Injectable } from '@angular/core';
 
 export class PaginationService {
 
-  // eslint-disable-next-line
   range(start: any, stop: any, step: any): any {
     if (stop == null) {
       stop = start || 0;
