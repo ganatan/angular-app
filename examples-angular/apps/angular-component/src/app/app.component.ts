@@ -13,4 +13,13 @@ import { ImageComponent } from './image/image.component';
 })
 export class AppComponent {
   title = 'angular-component';
+  display:any;
+
+  constructor() 
+   {
+    this.display = {
+      cssClass : 'toto'
+    }
+   }
+   
 }
