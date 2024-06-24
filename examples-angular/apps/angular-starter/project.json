@@ -16,8 +16,10 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/angular-starter/tsconfig.app.json",
         "assets": [
-          "apps/angular-starter/src/favicon.ico",
-          "apps/angular-starter/src/assets"
+          {
+            "glob": "**/*",
+            "input": "apps/angular-starter/public"
+          }
         ],
         "styles": ["apps/angular-starter/src/styles.css"],
         "scripts": []
@@ -68,26 +70,13 @@
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "apps/angular-starter/**/*.ts",
-          "apps/angular-starter/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
         "jestConfig": "apps/angular-starter/jest.config.ts"
-      }
-    },
-    "serve-static": {
-      "executor": "@nx/web:file-server",
-      "options": {
-        "buildTarget": "angular-starter:build"
       }
     }
   }

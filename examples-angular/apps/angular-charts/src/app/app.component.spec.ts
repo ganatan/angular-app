@@ -7,9 +7,17 @@ describe('AppComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         AppComponent,
-        RouterTestingModule
-      ],
+        RouterTestingModule],
     }).compileComponents();
+  });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Welcome angular-charts',
+    );
   });
 
   it(`should have as title 'angular-charts'`, () => {

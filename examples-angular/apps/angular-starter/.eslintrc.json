@@ -13,7 +13,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "examplesAngular",
+            "prefix": "app",
             "style": "camelCase"
           }
         ],

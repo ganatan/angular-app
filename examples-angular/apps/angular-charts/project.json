@@ -16,8 +16,10 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/angular-charts/tsconfig.app.json",
         "assets": [
-          "apps/angular-charts/src/favicon.ico",
-          "apps/angular-charts/src/assets"
+          {
+            "glob": "**/*",
+            "input": "apps/angular-charts/public"
+          }
         ],
         "styles": [
           "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
@@ -74,20 +76,13 @@
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"]
+      "executor": "@nx/eslint:lint"
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
         "jestConfig": "apps/angular-charts/jest.config.ts"
-      }
-    },
-    "serve-static": {
-      "executor": "@nx/web:file-server",
-      "options": {
-        "buildTarget": "angular-charts:build"
       }
     }
   }

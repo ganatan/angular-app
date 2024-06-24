@@ -24,17 +24,7 @@
     {
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:@nx/typescript"],
-      "rules": {
-        "@typescript-eslint/no-explicit-any": "off",
-        "no-undefined": "off",
-        "no-var": "off",
-        "prefer-const": "error",
-        "func-names": "error",
-        "id-length": "error",
-        "newline-before-return": "error",
-        "space-before-blocks": "error",
-        "no-alert": "error"                
-      }
+      "rules": {}
     },
     {
       "files": ["*.js", "*.jsx"],
@@ -46,8 +36,7 @@
       "env": {
         "jest": true
       },
-      "rules": {
-      }
+      "rules": {}
     }
   ]
 }

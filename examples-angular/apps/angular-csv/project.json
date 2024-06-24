@@ -16,11 +16,19 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/angular-csv/tsconfig.app.json",
         "assets": [
-          "apps/angular-csv/src/favicon.ico",
-          "apps/angular-csv/src/assets"
+          {
+            "glob": "**/*",
+            "input": "apps/angular-csv/public"
+          }
         ],
-        "styles": ["apps/angular-csv/src/styles.css"],
-        "scripts": []
+        "styles": [
+          "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+          "node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "apps/angular-csv/src/styles.css"
+        ],
+        "scripts": [
+          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+        ]
       },
       "configurations": {
         "production": {
@@ -67,17 +75,14 @@
         "buildTarget": "angular-csv:build"
       }
     },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
         "jestConfig": "apps/angular-csv/jest.config.ts"
-      }
-    },
-    "serve-static": {
-      "executor": "@nx/web:file-server",
-      "options": {
-        "buildTarget": "angular-csv:build"
       }
     }
   }

@@ -16,8 +16,10 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/angular-modal/tsconfig.app.json",
         "assets": [
-          "apps/angular-modal/src/favicon.ico",
-          "apps/angular-modal/src/assets"
+          {
+            "glob": "**/*",
+            "input": "apps/angular-modal/public"
+          }
         ],
         "styles": [
           "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
@@ -74,26 +76,13 @@
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "apps/angular-modal/**/*.ts",
-          "apps/angular-modal/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
         "jestConfig": "apps/angular-modal/jest.config.ts"
-      }
-    },
-    "serve-static": {
-      "executor": "@nx/web:file-server",
-      "options": {
-        "buildTarget": "angular-modal:build"
       }
     }
   }
