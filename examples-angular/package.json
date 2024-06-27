@@ -1,6 +1,6 @@
 {
   "name": "examples-angular",
-  "version": "18.0.4",
+  "version": "18.0.5",
   "license": "MIT",
   "scripts": {
     "start-starter": "nx serve angular-starter",
@@ -43,6 +43,10 @@
     "lint-modal-form": "nx lint angular-modal-form",
     "test-modal-form": "nx test angular-modal-form",
     "build-modal-form": "nx build angular-modal-form",
+    "start-module": "nx serve angular-module",
+    "lint-module": "nx lint angular-module",
+    "test-module": "nx test angular-module",
+    "build-module": "nx build angular-module",
     "start-mouseover": "nx serve angular-mouseover",
     "lint-mouseover": "nx lint angular-mouseover",
     "test-mouseover": "nx test angular-mouseover",
@@ -78,8 +82,8 @@
     "@angular/platform-browser": "18.0.5",
     "@angular/platform-browser-dynamic": "18.0.5",
     "@angular/router": "18.0.5",
-    "@nx/angular": "19.3.2",
     "@fortawesome/fontawesome-free": "6.5.2",
+    "@nx/angular": "19.3.2",
     "bootstrap": "5.3.3",
     "chart.js": "4.4.3",
     "jspdf": "2.5.1",
