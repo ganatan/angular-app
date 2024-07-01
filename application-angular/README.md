@@ -1,15 +1,49 @@
-# Angular 18 Example HttpClient
+ # Angular 18 / Bootstrap 5 & CRUD REST API
 
-> An Angular starter kit featuring [Angular 18.0.5](https://angular.io), [Angular CLI 18.0.6](https://cli.angular.io/)
+<table>
+<tr>
+<td>
+  <a href="https://www.ganatan.com/en">
+    <img src="./img/ganatan-about-github.png" align="right"
+    alt="Ganatan Angular Example Demo" width="140" height="140">
+  </a>
 
-> it's part of a repo series designed to create a Progressive Web App with Angular
+it's a repo designed to create a **Web Application with Angular 18**
 
-# Web Application Live Demo
+
+* Frontend - [**Angular 18.0.5**](https://github.com/angular/angular/releases) & [**Angular CLI 18.0.6**](https://github.com/angular/angular-cli/releases/)
+
+* UI prototype - [**bootstrap 5**](https://v5.getbootstrap.com/docs/5.0/getting-started/download/) 
+
+* Backend - CRUD REST API [**PostgreSQL**](https://www.postgresql.org/download/)
+
+* See the [**Live demo**](#live-demo), Test the repo with [**Quick start**](#quick-start) and for more information Read the step by step [**Tutorial**](#tutorial) or read the [**Getting started**](#getting-started)
+
+
+</td>
+</tr>
+</table>
+
+# [Live Demo](#live-demo)
+Here is a working live demo :  https://angular.ganatan.com/
+
+
 <p align="center">
   <p align="center">
     <a href="https://angular.ganatan.com/">
-      <img src="https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif" alt="Angular 16 Example 
+      <img src="https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif" alt="Angular 17 Example 
       Application"/>
+    </a>
+  </p>
+</p>
+
+
+# Lighthouse Audit
+
+<p align="center">
+  <p align="center">
+    <a href="https://angular.ganatan.com">
+      <img src="./img/search-engine-optimization-avec-angular-lighthouse-after.png" alt="Ganatan Lighthouse SEO Angular Example Demo"/>
     </a>
   </p>
 </p>
@@ -17,16 +51,17 @@
 ## Quick start
 
 ```bash
-# choose a repo
+# select a repo from github or gitlab
+
 # download the example or clone the repo from github
-git clone https://github.com/ganatan/angular-httpclient.git
+git clone https://github.com/ganatan/angular-app.git
 
 # download the example or clone the repo from gitlab
-git clone https://gitlab.com/ganatan/angular-httpclient.git
-
+git clone https://gitlab.com/ganatan/angular-app.git
 
 # change directory
-cd angular-httpclient
+cd angular-app
+cd application-angular
 
 # install the repo with npm
 npm install
@@ -37,8 +72,8 @@ npm start
 ```
 in your browser go to [http://localhost:4200](http://localhost:4200) 
 
-## Getting Started
 
+## Front-end
 
 ### Installation
 * `npm install` (installing dependencies)
@@ -48,34 +83,16 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 * `npm run start`
 * in your browser [http://localhost:4200](http://localhost:4200) 
 
-### Production 
-* `npm run build`
+## Linter
+* `npm run lint`
 
-## Tests (Use Chrome Version 87 minimum)
+## Tests
 * `npm run test`
+* `npm run coverage`
 
 ### Compilation
-* `npm run build`       ( without SSR)
-* `npm run build:ssr`   ( with SSR)
+* `npm run build`   ( with SSR)
 
 ### Production
 * `npm run serve:ssr`
 * in your browser [http://localhost:4000](http://localhost:4000) 
-
-### Prototype Bootstrap 5
-* `change directory` cd ui
-* launch html pages in your browser
-
-
-### Author
-* Author  : danny
-
-### Documentation
-
-English Tutorials
-- Installation - https://www.ganatan.com/tutorials/httpclient-with-angular
-- Tutorials Step-by-Step - https://www.ganatan.com/tutorials/en
-
-Tutoriels en français
-- Installation - https://www.ganatan.com/tutorials/httpclient-avec-angular
-- Tutoriels Etape par étape - https://www.ganatan.com/tutorials
