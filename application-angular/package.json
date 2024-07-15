@@ -41,14 +41,14 @@
     "@types/jasmine": "5.1.4",
     "@types/node": "20.14.10",
     "angular-eslint": "18.1.0",
-    "eslint": "9.6.0",
+    "eslint": "9.7.0",
     "jasmine-core": "5.1.2",
     "karma": "6.4.3",
     "karma-chrome-launcher": "3.2.0",
     "karma-coverage": "2.2.1",
     "karma-jasmine": "5.1.0",
     "karma-jasmine-html-reporter": "2.1.0",
-    "typescript": "5.4.5",
+    "typescript": "5.5.3",
     "typescript-eslint": "8.0.0-alpha.20"
   }
 }
