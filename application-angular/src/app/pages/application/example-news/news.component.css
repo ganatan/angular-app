@@ -19,64 +19,7 @@
   background-color: transparent !important;
 }
 
-.nga-form-control {
-  border: 1.20px solid #dfe3e7;
-  background-color: #fff;
-  border: 1.90px solid #dfe3e7;
-}
-
-.nga-form-control:focus {
-  color: #555252;
-  background-color: #fff;
-  border-color: #5a8dee;
-  border: 1.90px solid #5a8dee;
-  outline: 0;
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .1)
-}
-
 .form-check .nga-form-check-label i {
-  color: grey;
-}
-
-.nga-badge {
-  display: inline-block;
-  padding: 0 12px;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  font-size: 13px;
-  color: rgba(0, 0, 0, 0.6);
-  cursor: pointer;
-  background-color: #eceff1;
-  border-radius: 16px;
-  transition: all 0.3s linear;
-}
-
-.nga-badge:hover {
-  background-color: #e0e0e0;
-}
-
-.nga-badge .close {
-  padding-left: 10px;
-  line-height: 32px;
-}
-
-.nga-badge .fa-film {
-  color: grey;
-}
-
-.nga-badge .fa-desktop {
-  color: grey;
-}
-
-.nga-badge .fa-volume-up {
-  color: grey;
-}
-
-.nga-badge .fa-playstation {
-  color: grey;
-}
-
-.nga-badge .fa-photo-video {
   color: grey;
 }
 
@@ -254,37 +197,3 @@
   text-overflow: ellipsis;
 }
 
-.nga-bd-blue-200 {
-  color: #000;
-  background-color: #9ec5fe
-}
-
-.nga-bd-blue-300 {
-  color: #000;
-  background-color: #6ea8fe
-}
-
-.nga-bd-blue-400 {
-  color: #000;
-  background-color: #3d8bfd
-}
-
-.nga-bd-blue-500 {
-  color: #fff;
-  background-color: #0d6efd
-}
-
-.nga-bd-blue-600 {
-  color: #fff;
-  background-color: #0a58ca
-}
-
-.nga-bd-blue-700 {
-  color: #fff;
-  background-color: #084298
-}
-
-.nga-bd-blue-800 {
-  color: #fff;
-  background-color: #052c65
-}
