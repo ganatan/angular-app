@@ -24,4 +24,16 @@ export class AppComponent {
     console.log('00000000001:onMouseOver');
   }
 
+  onDoubleClick() {
+    console.log('00000000001:onDoubleClick');
+  }
+
+  eventClicked(event: any) {
+    console.log('00000000001:eventClicked:' + JSON.stringify(event));
+  }
+
+  onClick(): void {
+    console.log('00000000001:onClick');
+  }
+
 }
