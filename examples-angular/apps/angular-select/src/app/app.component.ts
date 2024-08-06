@@ -2,12 +2,15 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms'; 
 
 @Component({
   standalone: true,
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule],
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,11 +19,28 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   title = 'angular-select';
 
+  formItemExample: FormGroup;
+
   items: any;
   selectValue: any;
   selectValueSimple: any;
+  
+  selectedValue: string = '2'; 
+  options = [
+    { value: '1', label: 'One' },
+    { value: '2', label: 'Two' },
+    { value: '3', label: 'Three' }
+  ];
 
-  constructor() {
+
+
+  constructor(private fb: FormBuilder) {
+
+
+    this.formItemExample = this.fb.group({
+      selectedValue: ['1']
+    });
+
     this.selectValueSimple = "3";
 
     this.selectValue = "2";

@@ -36,4 +36,27 @@
 </div>
 
 
+<div class="row p-4">
+  <div class="col-4">
+    <label for="example-select" class="form-label">Application</label>
+    <select id="example-select" class="form-select" [(ngModel)]="selectedValue">
+      <option *ngFor='let option of options; let indexItem=index;' value="{{option.value}}">
+        {{ option.label }}
+      </option>
+    </select>
+  </div>
+</div>
+
+
+<form [formGroup]="formItemExample" class="row p-4">
+  <div class="col-4">
+    <label for="example-select" class="form-label">Application formItemExample</label>
+    <select id="example-select" class="form-select" formControlName="selectedValue">
+      <option *ngFor='let option of options; let indexItem = index' [value]="option.value">
+        {{ option.label }}
+      </option>
+    </select>
+  </div>
+</form>
+
 <router-outlet></router-outlet>
