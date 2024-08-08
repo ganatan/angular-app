@@ -43,7 +43,7 @@ export class RichTextEditorComponent implements OnInit, AfterViewInit {
 
       //const editor02 = this.document.getElementById('bbbb');
       //if (editor02) {
-      console.log('00000000002');
+      console.log('00000000002:' + this.myDivElement);
       //this.myDivElement.nativeElement.innerHTML = '<p>ligne1<br />ligne2<br />ligne3<br />ligne4<br /></p>';
       this.myDivElement.nativeElement.innerHTML = value;
       // }

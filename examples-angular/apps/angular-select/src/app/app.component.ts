@@ -32,11 +32,7 @@ export class AppComponent {
     { value: '3', label: 'Three' }
   ];
 
-
-
   constructor(private fb: FormBuilder) {
-
-
     this.formItemExample = this.fb.group({
       selectedValue: ['1']
     });
