@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ImageComponent } from './image/image.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   standalone: true,
   imports: [
+    CommonModule,
     ImageComponent,
     RouterModule],
   selector: 'app-root',
@@ -13,13 +15,15 @@ import { ImageComponent } from './image/image.component';
 })
 export class AppComponent {
   title = 'angular-component';
-  display:any;
+  display: any;
+  type: string = 'aaaaaa-typeimageexample';
+  // typeobj: string = 'aaaaaa-typeimageexample';
+  typeobj = { type: 'aaaaaa-typeimageexample' };
 
-  constructor() 
-   {
+  constructor() {
     this.display = {
-      cssClass : 'toto'
+      cssClass: 'toto'
     }
-   }
-   
+  }
+
 }

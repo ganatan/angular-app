@@ -2,7 +2,7 @@
 const eslint = require("@eslint/js");
 const tseslint = require("typescript-eslint");
 const angular = require("angular-eslint");
-  
+
 module.exports = tseslint.config(
   {
     files: ["**/*.ts"],
@@ -38,8 +38,8 @@ module.exports = tseslint.config(
       "id-length": "error",
       "newline-before-return": "error",
       "space-before-blocks": "error",
-      "no-alert": "error"                
-},
+      "no-alert": "error"
+    },
   },
   {
     files: ["**/*.html"],
