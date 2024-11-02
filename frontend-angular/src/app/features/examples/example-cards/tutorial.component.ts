@@ -2,7 +2,7 @@ import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { environment } from '../../../../environments/environment';
 import { isPlatformBrowser } from '@angular/common';
 
-import { SeoService } from '../../../services/seo/seo.service';
+import { SeoService } from '../../../core/services/seo/seo.service';
 import { Feature } from './feature';
 
 @Component({
