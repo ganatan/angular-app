@@ -1,9 +1,0 @@
-{
-  "table": "profession",
-  "endpoint": "professions",
-  "caption": "Professions",
-  "file": "professions.json",
-  "key": "name",
-  "data": "name",
-  "name": "name"
-}

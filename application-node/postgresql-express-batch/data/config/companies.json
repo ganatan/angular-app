@@ -1,9 +1,0 @@
-{
-  "table": "company",
-  "endpoint": "companies",
-  "caption": "Companies",
-  "file": "companies.json",
-  "key": "name",
-  "data": "name",
-  "name": "name"
-}

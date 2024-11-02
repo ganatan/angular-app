@@ -1,9 +1,0 @@
-{
-  "table": "person",
-  "endpoint": "persons",
-  "caption": "Persons",
-  "file": "persons.json",
-  "key": "wikipedia_link",
-  "data": "wikipediaLink",
-  "name": "name"
-}

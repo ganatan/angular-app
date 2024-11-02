@@ -1,9 +1,0 @@
-{
-  "table": "trailer",
-  "endpoint": "trailers",
-  "caption": "Trailers",
-  "file": "trailers.json",
-  "key": "code",
-  "data": "code",
-  "name": "code"
-}

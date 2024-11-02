@@ -1,9 +1,0 @@
-{
-  "table": "views",
-  "endpoint": "views",
-  "caption": "Views",
-  "file": "views.json",
-  "key": "code",
-  "data": "code",
-  "name": "code"
-}

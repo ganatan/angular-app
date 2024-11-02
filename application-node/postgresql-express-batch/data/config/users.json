@@ -1,9 +1,0 @@
-{
-  "table": "users",
-  "endpoint": "users",
-  "caption": "Users",
-  "file": "users.json",
-  "key": "name",
-  "data": "name",
-  "name": "name"
-}

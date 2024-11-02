@@ -1,9 +1,0 @@
-{
-  "table": "city",
-  "endpoint": "cities",
-  "caption": "Cities",
-  "file": "cities.json",
-  "key": "wikipedia_link",
-  "data": "wikipediaLink",
-  "name": "name"
-}
