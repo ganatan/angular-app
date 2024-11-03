@@ -1,7 +1,7 @@
 
 # Angular 18 Fullstack Application
 
-[🇫🇷 Read in French](./README.fr.md)
+[Lire en Français](./README.fr.md)
 
 This repository contains a fullstack web application with separate frontend and backend services. It includes:
 
@@ -28,7 +28,7 @@ Each component can be installed, developed, and deployed independently.
 
 A live demo is available at [https://angular.ganatan.com](https://angular.ganatan.com).
 
-![Angular Example Application](https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif)
+[![Angular Example Application](https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif)](https://angular.ganatan.com)
 
 ---
 
