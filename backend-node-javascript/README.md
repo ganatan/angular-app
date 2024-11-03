@@ -1,4 +1,4 @@
-## Backend Quick start
+## Backend-node-javascript
 
 ```bash
 # select a repo from github or gitlab
@@ -77,8 +77,4 @@ DB_USER=postgres
 DB_PASSWORD=Trustno1
 JWT_SECRET=mulder
 JWT_EXPIRATION=1h
-
-# angular-starter-backend
-
-# Projet Node.js angular-starter-backend
 

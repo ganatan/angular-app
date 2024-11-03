@@ -1,6 +1,6 @@
 import request from 'supertest';
 import express from 'express';
-import indexRoutes from '../../index.routes';
+import indexRoutes from '../../src/index.routes';
 
 const app = express();
 app.use('/', indexRoutes);

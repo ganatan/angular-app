@@ -1,6 +1,6 @@
 import express from 'express';
-import continentRoutes from './api/continents/continent.routes';
-import indexRoutes from './api/index.routes';
+import continentRoutes from './features/continent/continent.routes';
+import indexRoutes from './index.routes';
 
 const app = express();
 const port = 9000;
