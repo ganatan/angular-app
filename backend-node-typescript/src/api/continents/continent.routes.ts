@@ -3,6 +3,7 @@ import { getAllContinents, getContinent, createContinent, updateContinent, delet
 
 const router = Router();
 
+
 router.get('/', getAllContinents);
 router.get('/:id', getContinent);
 router.post('/', createContinent);
