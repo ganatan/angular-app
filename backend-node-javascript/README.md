@@ -43,7 +43,7 @@ in your browser go to [http://localhost:9000](http://localhost:9000)
 
 ### Production
 * `npm run serve`
-* in your browser [http://localhost:4000](http://localhost:3000) 
+* in your browser [http://localhost:3000](http://localhost:3000) 
 
 
 
