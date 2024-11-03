@@ -1,6 +1,6 @@
 {
   "name": "angular-starter",
-  "version": "18.2.1",
+  "version": "18.1.1",
   "scripts": {
     "ng": "ng",
     "dev": "ng serve --port 4200",
@@ -34,7 +34,7 @@
     "@angular/ssr": "18.1.1",
     "@fortawesome/fontawesome-free": "6.6.0",
     "bootstrap": "5.3.3",
-    "dotenv": "^16.4.5",
+    "dotenv": "16.4.5",
     "express": "4.19.2",
     "prismjs": "1.29.0",
     "rxjs": "7.8.1",

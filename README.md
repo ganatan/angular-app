@@ -1,4 +1,4 @@
- # Angular 18 / Bootstrap 5 & CRUD REST API
+ # Angular 18 Frontend / Backend-node CRUD REST API
 
 <table>
 <tr>
@@ -79,7 +79,7 @@ Here is a working live demo :  https://angular.ganatan.com/
 - [x] Template Driven Forms
 - [x] Search / Grid / Pagination
 
-## Quick start
+## Frontend Quick start
 
 ```bash
 # select a repo from github or gitlab
@@ -103,8 +103,6 @@ npm start
 ```
 in your browser go to [http://localhost:4200](http://localhost:4200) 
 
-
-## Front-end
 
 ### Installation
 * `npm install` (installing dependencies)
@@ -142,6 +140,57 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 * in your browser [http://localhost:4000](http://localhost:4000) 
+
+
+
+## Backend Quick start
+
+```bash
+# select a repo from github or gitlab
+
+# download the example or clone the repo from github
+git clone https://github.com/ganatan/angular-app.git
+
+# download the example or clone the repo from gitlab
+git clone https://gitlab.com/ganatan/angular-app.git
+
+# change directory
+cd angular-app
+cd backend-node-javascript
+
+# install the repo with npm
+npm install
+
+# start the server
+npm start
+
+```
+in your browser go to [http://localhost:9000](http://localhost:9000) 
+
+
+### Installation
+* `npm install` (installing dependencies)
+* `npm outdated` (verifying dependencies)
+
+### Developpement
+* `npm run start`
+* in your browser [http://localhost:9000](http://localhost:9000) 
+
+## Linter
+* `npm run lint`
+
+## Tests
+* `npm run test`
+* `npm run coverage`
+
+### Compilation
+* `npm run build`   
+
+### Production
+* `npm run serve`
+* in your browser [http://localhost:4000](http://localhost:3000) 
+
+
 
 ### Author
 * Author  : danny
