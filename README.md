@@ -1,7 +1,8 @@
 
 # Angular 18 Fullstack Application
 
-[Lire en Français](./README.fr.md)
+[🇬🇧 English](./README.md) | [🇫🇷 Français](./README.fr.md)
+
 
 This repository contains a fullstack web application with separate frontend and backend services. It includes:
 

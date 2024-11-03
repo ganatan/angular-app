@@ -1,7 +1,8 @@
 
 # Application Fullstack Angular 18
 
-[Read in English](./README.md)
+[🇬🇧 English](./README.md) | [🇫🇷 Français](./README.fr.md)
+
 
 Ce dépôt contient une application web fullstack avec des services frontend et backend séparés. Il inclut :
 
