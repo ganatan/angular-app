@@ -1,13 +1,8 @@
 import { Router } from 'express';
-import { getAllContinents, getContinent, createContinent, updateContinent, deleteContinent } from './continent.controller';
+import { continentController } from './continent.controller';
 
 const router = Router();
 
-
-router.get('/', getAllContinents);
-router.get('/:id', getContinent);
-router.post('/', createContinent);
-router.put('/:id', updateContinent);
-router.delete('/:id', deleteContinent);
+router.get('/', (req, res) => continentController.getAllContinents(req, res));
 
 export default router;

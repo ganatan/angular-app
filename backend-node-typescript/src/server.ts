@@ -1,10 +1,14 @@
+import 'reflect-metadata';
+
 import express from 'express';
 import continentRoutes from './features/continent/continent.routes';
 import indexRoutes from './index.routes';
 
-import { errorHandler } from './infrastructure/errors/error-handler';
+import { errorHandler } from './infrastructure/middleware/error-handler';
 
 const app = express();
+app.use(express.json());
+
 const port = 9000;
 
 app.use(express.json());
