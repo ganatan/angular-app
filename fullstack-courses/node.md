@@ -1,6 +1,6 @@
 
 # Node Course
 
-- [class](node/class.md)
+- [mongodb](node/mongodb-adapter.md)
 
 Click on a link to open the corresponding documentation.
