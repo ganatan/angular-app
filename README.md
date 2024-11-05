@@ -21,6 +21,7 @@ This repository contains a series of courses to help you get familiar with vario
 - [Git](fullstack-courses/git.md)
 - [Angular](fullstack-courses/angular.md)
 - [Javascript](fullstack-courses/javascript.md)
+- [Node](fullstack-courses/node.md)
 
 Click on a link to open the corresponding documentation.
 
