@@ -47,7 +47,7 @@ in your browser go to [http://localhost:9000](http://localhost:9000)
 
 
 
-# Environements
+# Environments
 
 ## MOCK - Fichier tools/env/.env.mock
 DB_CLIENT=mock
