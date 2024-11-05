@@ -20,9 +20,9 @@ Ce répertoire contient une série de cours pour vous aider à vous familiariser
 
 ## Liste des Cours
 
-- [Git](courses/git.md)
-- [Angular](courses/angular.md)
-- [Javascript](courses/javascript.md)
+- [Git](fullstack-courses/git.md)
+- [Angular](fullstack-courses/angular.md)
+- [Javascript](fullstack-courses/javascript.md)
 
 Cliquez sur un lien pour ouvrir la documentation correspondante.
 
