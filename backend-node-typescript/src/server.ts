@@ -6,10 +6,13 @@ import indexRoutes from './index.routes';
 
 import { errorHandler } from './infrastructure/middleware/error-handler';
 
+import config from './core/config/config';
+
+const PORT = config.port;
+console.log('00000000001:' + JSON.stringify(PORT))
+
 const app = express();
 app.use(express.json());
-
-const port = 9000;
 
 app.use(express.json());
 
@@ -23,6 +26,6 @@ app.use('/', indexRoutes);
 
 app.use(errorHandler);
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
 });
