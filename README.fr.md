@@ -14,7 +14,7 @@ Chaque composant peut être installé, développé et déployé indépendamment.
 
 ---
 
-# Documentation des Cours Fullstack
+# Guide des Cours Fullstack
 
 Ce répertoire contient une série de cours pour vous aider à vous familiariser avec divers outils et frameworks.
 

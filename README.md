@@ -14,7 +14,7 @@ Each component can be installed, developed, and deployed independently.
 
 ---
 
-# Fullstack Course Documentation
+# Fullstack Course Guide
 
 This repository contains a series of courses to help you get familiar with various tools and frameworks.
 
