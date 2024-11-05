@@ -2,6 +2,7 @@ import 'dotenv/config';
 
 const config = {
   development: {
+    appName: 'backend-node-javascript-dev',
     host: 'localhost',
     port: 9000,
     db: {
@@ -14,6 +15,7 @@ const config = {
     },
   },
   production: {
+    appName: 'backend-node-javascript-prod',
     host: 'localhost',
     port: 3000,
     db: {
@@ -26,6 +28,7 @@ const config = {
     },
   },
   test: {
+    appName: 'backend-node-javascript-test',
     host: 'localhost',
     port: 7000,
     db: {

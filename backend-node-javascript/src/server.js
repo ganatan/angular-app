@@ -12,7 +12,7 @@ const dbConnectionService = new DBConnectionService(dbAdapterFactory, config);
 const dbConnectionManager = new DBConnectionManager(dbConnectionService);
 
 const ENV = process.env.NODE_ENV || 'development';
-const { port: PORT, host: HOST } = config[ENV];
+const { port: PORT, host: HOST, appName: APPNAME } = config[ENV];
 
 let server;
 const connections = new Set();
@@ -22,6 +22,7 @@ const startServer = async () => {
     await dbConnectionManager.connectDB();
     server = app.listen(PORT, () => {
       console.log(`Server running at http://${HOST}:${PORT} in ${ENV} mode`);
+      console.log(`Application Name: ${APPNAME}`);
     });
 
     server.on('connection', connection => {

@@ -22,6 +22,7 @@ export default [
   {
     ...pluginJs.configs.recommended,
     rules: {
+      'no-console': 'off',
       'eqeqeq': 'error',
       'curly': 'error',
       'no-unused-vars': ['error', { 'args': 'none', 'ignoreRestSiblings': true }],
@@ -47,7 +48,6 @@ export default [
       'no-mixed-operators': 'error',
       'no-trailing-spaces': 'error',
       'linebreak-style': 'off',
-      'no-console': 'off',
       'max-len': 'off',
       'no-param-reassign': 'off',
       'prefer-destructuring': 'off',
