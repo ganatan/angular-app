@@ -14,11 +14,9 @@ Chaque composant peut être installé, développé et déployé indépendamment.
 
 ---
 
-# Documentation des Cours
+# Documentation des Cours Fullstack
 
 Ce répertoire contient une série de cours pour vous aider à vous familiariser avec divers outils et frameworks.
-
-## Liste des Cours
 
 - [Git](fullstack-courses/git.md)
 - [Angular](fullstack-courses/angular.md)

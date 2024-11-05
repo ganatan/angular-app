@@ -14,11 +14,9 @@ Each component can be installed, developed, and deployed independently.
 
 ---
 
-# Course Documentation
+# Fullstack Course Documentation
 
 This repository contains a series of courses to help you get familiar with various tools and frameworks.
-
-## Course List
 
 - [Git](fullstack-courses/git.md)
 - [Angular](fullstack-courses/angular.md)
