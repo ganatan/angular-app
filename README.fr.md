@@ -14,6 +14,20 @@ Chaque composant peut être installé, développé et déployé indépendamment.
 
 ---
 
+# Documentation des Cours
+
+Ce répertoire contient une série de cours pour vous aider à vous familiariser avec divers outils et frameworks.
+
+## Liste des Cours
+
+- [Git](courses/git.md)
+- [Angular](courses/angular.md)
+- [Javascript](courses/javascript.md)
+
+Cliquez sur un lien pour ouvrir la documentation correspondante.
+
+---
+
 ## Table des matières
 
 - [Démo en ligne](#démo-en-ligne)

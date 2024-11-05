@@ -3,6 +3,6 @@ import { continentController } from './continent.controller';
 
 const router = Router();
 
-router.get('/', (req, res) => continentController.getAllContinents(req, res));
+router.get('/', (req, res) => continentController.getItems(req, res));
 
 export default router;

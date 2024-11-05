@@ -5,8 +5,8 @@ import { ContinentRepository } from './continent.repository';
 export class ContinentController {
   constructor(private continentService: ContinentService) { }
 
-  async getAllContinents(req: Request, res: Response): Promise<void> {
-    const continents = await this.continentService.getAllContinents();
+  async getItems(req: Request, res: Response): Promise<void> {
+    const continents = await this.continentService.getItems();
     res.json(continents);
   }
 

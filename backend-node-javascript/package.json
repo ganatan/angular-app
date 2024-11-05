@@ -30,7 +30,7 @@
     "test-continent-repository-mysql": "npm run test:single -- src/features/continent/__tests__/unit/continent-repository-mysql.test.js",
     "test-continent-repository-postgresql": "npm run test:single -- src/features/continent/__tests__/unit/continent-repository-postgresql.test.js",
     "test-continent-repository": "npm run test:single -- src/features/continent/__tests__/unit/continent-repository.test.js",
-    "test-continent-route": "npm run test:single -- src/features/continent/__tests__/unit/continent-route.test.js",
+    "test-continent-routes": "npm run test:single -- src/features/continent/__tests__/unit/continent-routes.test.js",
     "test-continent-service": "npm run test:single -- src/features/continent/__tests__/unit/continent-service.test.js",
     "test-setup-route": "npm run test:single -- src/features/setup/__tests__/unit/setup-route.test.js",
     "test-database-service": "npm run test:single -- src/features/setup/__tests__/unit/database-service.test.js",

@@ -1,5 +1,5 @@
 import express from 'express';
-import continentRoutes from './features/continent/continent-route.js';
+import continentRoutes from './features/continent/continent-routes.js';
 import setupRoutes from './features/setup/setup-route.js';
 
 const router = express.Router();

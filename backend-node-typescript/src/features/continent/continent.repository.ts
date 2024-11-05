@@ -3,7 +3,7 @@ import { mockContinents } from './continent.mock';
 
 export class ContinentRepository {
 
-  async findAll(): Promise<Continent[]> {
+  async getItems(): Promise<Continent[]> {
     return mockContinents;
   }
 }

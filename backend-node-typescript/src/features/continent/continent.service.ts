@@ -6,8 +6,8 @@ import { Continent } from './continent.model';
 export class ContinentService {
   constructor(private continentRepository: ContinentRepository) {}
 
-  getAllContinents(): Promise<Continent[]> {
-    return this.continentRepository.findAll();
+  getItems(): Promise<Continent[]> {
+    return this.continentRepository.getItems();
   }
 
 }
