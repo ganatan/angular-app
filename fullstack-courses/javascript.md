@@ -1,7 +1,5 @@
 
-# Angular Documentation
-
-## Course List
+# Javascript Documentation
 
 - [class](javascript/class.md)
 - [forEach](javascript/foreach.md)

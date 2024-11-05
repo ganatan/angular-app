@@ -1,8 +1,6 @@
 
 # Angular Documentation
 
-## Course List
-
 - [Installation](angular/installation.md)
 - [Standalone](angular/standalone.md)
 
