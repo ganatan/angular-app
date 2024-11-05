@@ -21,7 +21,7 @@ app.use(requestLogger);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
-app.use('/', featuresRoutes);
+app.use(featuresRoutes);
 
 app.use('/', indexRoutes);
 app.use('*', indexRoutes);
