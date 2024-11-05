@@ -1,5 +1,5 @@
 
-# Angular Documentation
+# Angular Course
 
 - [Installation](angular/installation.md)
 - [Standalone](angular/standalone.md)

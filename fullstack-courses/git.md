@@ -1,5 +1,5 @@
 
-# Git Documentation
+# Git Course
 
 ## Installation on linux
 

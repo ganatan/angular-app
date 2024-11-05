@@ -1,5 +1,5 @@
 
-# Javascript Documentation
+# Javascript Course
 
 - [class](javascript/class.md)
 - [forEach](javascript/foreach.md)
