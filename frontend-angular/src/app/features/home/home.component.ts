@@ -28,6 +28,12 @@ export class HomeComponent {
       link: '/continents'
     },
     {
+      icon: "fa-solid fa-screwdriver-wrench",
+      name: "library",
+      description: "library-angular",
+      link: '/library-angular'
+    },
+    {
       icon: "fa-solid fa-file-lines",
       name: "Landing Page",
       description: "Css linear-gradient",

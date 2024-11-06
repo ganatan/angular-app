@@ -15,6 +15,12 @@ export const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
+    path: 'library-angular',
+    loadChildren: () => import('./features/library-angular/library-angular.module')
+      .then(mod => mod.LibraryAngularModule),
+  },
+  
+  {
     path: 'continents/:id',
     loadChildren: () => import('./features/continent-form/tutorial.module')
       .then(mod => mod.TutorialModule),
