@@ -5,34 +5,19 @@
 
 ```javascript
 // example-foreach.js
-class Movie {
-  constructor(name, director) {
-    this.name = name;
-    this.director = director;
-  }
+let items = [
+  { name: 'Alien' },
+  { name: 'Gladiator' }
+]
 
-  show() {
-    console.log('show:' + movie.name);
-    console.log('show:' + movie.director);
-    console.log('show:' + this.#getName());
-  }
-
-  #getName() { // Private method
-    return this.name;
-  }
-
+function getItems(items) {
+  items.forEach((element, index, table) => {
+    console.log('element:' + JSON.stringify(element));
+    console.log('index:' + index);
+    console.log('table:' + JSON.stringify(table));
+  });
 }
 
-let movie = new Movie('Alien', 'Ridley Scott');
-
-console.log('movie:name:' + movie.name);
-console.log('movie:director:' + movie.director);
-
-console.log('movie:Object.keys:' + Object.keys(movie))
-
-movie.show();
-
-// Error: private method '#getName' is not accessible
- // console.log(movie.#getName());
+getItems(items);
 ```
 
