@@ -4,6 +4,15 @@
 [🇬🇧 English](./README.md) | [🇫🇷 Français](./README.fr.md)
 
 
+<table>
+<tr>
+<td>
+  <a href="https://www.ganatan.com/en">
+    <img src="./img/ganatan-about-github.png" align="right"
+    alt="Ganatan Angular Example Demo" width="140" height="140">
+  </a>
+
+
 This repository contains a fullstack web application with separate frontend and backend services. It includes:
 
 - **Frontend**: An Angular 18 application with Bootstrap for the UI
@@ -45,6 +54,16 @@ A live demo is available at [https://angular.ganatan.com](https://angular.ganata
 [![Angular Example Application](https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif)](https://angular.ganatan.com)
 
 ---
+
+# Lighthouse Audit
+
+<p align="center">
+  <p align="center">
+    <a href="https://angular.ganatan.com">
+      <img src="./img/search-engine-optimization-avec-angular-lighthouse-after.png" alt="Ganatan Lighthouse SEO Angular Example Demo"/>
+    </a>
+  </p>
+</p>
 
 ## Frontend - Angular
 
