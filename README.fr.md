@@ -1,7 +1,7 @@
 
 # Application Fullstack Angular 18
 
-[🇬🇧 English](./README.md) | [🇫🇷 Français](./README.fr.md)
+[![English](./ui/version-en.png) English](./README.md) | [![Français](./ui/version-fr.png) Français](./README.fr.md)
 
 <table>
 <tr>
