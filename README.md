@@ -1,8 +1,7 @@
 
 # Angular 18 Fullstack Application
 
-
-[![English](./ui/flag-en.png) English](./README.md) | [![Français](./ui/flag-fr.png) Français]
+[![English](./ui/version-en.png) English](./README.md) | [![Français](./ui/version-fr.png) Français](./README.fr.md)
 
 <table>
 <tr>
