@@ -16,6 +16,8 @@ Ce dépôt contient une application web fullstack avec des services frontend et 
 - **Frontend** : une application Angular 18 avec Bootstrap pour l’interface utilisateur
 - **Backend (JavaScript)** : une application Node.js/Express en JavaScript
 - **Backend (TypeScript)** : une application Node.js/Express en TypeScript
+- **Library**: Une librairie Angular 18 avec des composants Ganatan
+
 
 Chaque composant peut être installé, développé et déployé indépendamment.
 

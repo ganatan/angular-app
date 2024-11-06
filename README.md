@@ -16,6 +16,7 @@ This repository contains a fullstack web application with separate frontend and 
 - **Frontend**: An Angular 18 application with Bootstrap for the UI
 - **Backend (JavaScript)**: A Node.js/Express application using JavaScript
 - **Backend (TypeScript)**: A Node.js/Express application using TypeScript
+- **Library**: An Angular 18 library with Ganatan components
 
 Each component can be installed, developed, and deployed independently.
 
