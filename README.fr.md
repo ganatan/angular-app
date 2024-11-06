@@ -3,6 +3,13 @@
 
 [🇬🇧 English](./README.md) | [🇫🇷 Français](./README.fr.md)
 
+<table>
+<tr>
+<td>
+  <a href="https://www.ganatan.com/en">
+    <img src="./ui/ganatan-about-github.png" align="right"
+    alt="Ganatan Angular Example Demo" width="140" height="140">
+  </a>
 
 Ce dépôt contient une application web fullstack avec des services frontend et backend séparés. Il inclut :
 
@@ -45,6 +52,16 @@ Une démo en ligne est disponible à [https://angular.ganatan.com](https://angul
 [![Application Exemple Angular](https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif)](https://angular.ganatan.com)
 
 ---
+
+# Lighthouse Audit
+
+<p align="center">
+  <p align="center">
+    <a href="https://angular.ganatan.com">
+      <img src="./ui/search-engine-optimization-avec-angular-lighthouse-after.png" alt="Ganatan Lighthouse SEO Angular Example Demo"/>
+    </a>
+  </p>
+</p>
 
 ## Frontend - Angular
 
