@@ -60,7 +60,7 @@
     "dotenv": "16.4.5",
     "express": "4.21.1",
     "mongodb": "6.10.0",
-    "mysql2": "3.11.3",
+    "mysql2": "3.11.4",
     "pg": "8.13.1",
     "supertest": "7.0.0",
     "swagger-jsdoc": "6.2.8",
