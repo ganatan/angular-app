@@ -6,12 +6,21 @@
 
 ```bash
 # library creation
-ng new library-angular --create-application=true
+ng new library-example --create-application=true
 
-cd library-angular
+cd library-example
 
-ng generate library @ganatan-angular/nga-table
-ng generate library @ganatan-angular/nga-edit
+ng generate library @account-example/component-table
+ng generate library @account-example/component-edit
 
 ```
+
+```bash
+# library scripts
+"build-table": "ng build @account-example/component-table",
+"dev-table": "ng build @account-example/component-table --watch",
+"lint-table": "ng lint @account-example/component-table",
+"test-table": "ng test @account-example/component-table",
+"publish-table": "npm run build-table & cd dist & cd account-example/component-table & npm publish --access public",
+
 ---
