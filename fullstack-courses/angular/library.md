@@ -5,11 +5,24 @@
 
 - [Check Creating Libraries](https://angular.dev/tools/libraries/creating-libraries#getting-started)
 
-
 ```bash
 # library creation
 ng new library-example --create-application=true
 
+cd library-example
+
+# **Note**: This step is mandatory to set up ESLint in your Angular project.
+ng add @angular-eslint/schematics
+
+"start": "ng serve",
+"build": "ng build",
+"watch": "ng build --watch --configuration development",
+"test": "ng test",
+"lint": "ng lint",
+```
+
+```bash
+# components creation
 cd library-example
 
 ng generate library @account-example/component-table
