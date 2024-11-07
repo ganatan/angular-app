@@ -3,6 +3,8 @@
 
 ## Creation
 
+- [Check Creating Libraries](https://angular.dev/tools/libraries/creating-libraries#getting-started)
+
 
 ```bash
 # library creation
