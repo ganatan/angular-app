@@ -13,6 +13,9 @@ npm uninstall -g @angular/cli
 npm install -g @angular/cli
 npm install -g @angular/cli@18.2.10
 
+# Check version
+ng --version
+
 # Creation
 ng new angular-starter
 
