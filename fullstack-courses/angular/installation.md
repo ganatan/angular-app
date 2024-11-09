@@ -19,10 +19,6 @@ ng --version
 # Creation
 ng new angular-starter
 
-# Change scripts
-  "scripts": {
-    "serve": "node dist/angular-starter/server/server.mjs"
-
 # Checko dependencies
 npm outdated
 
@@ -40,6 +36,10 @@ ng add @angular/pwa
 
 # SSR installation
 ng add @angular/ssr
+
+# Change scripts
+  "scripts": {
+    "serve": "node dist/angular-starter/server/server.mjs"
 
 ```
 ---
