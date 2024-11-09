@@ -19,6 +19,15 @@ ng --version
 # Creation
 ng new angular-starter
 
+# Change scripts
+  "scripts": {
+    "serve": "node dist/angular-starter/server/server.mjs"
+
+# Checko dependencies
+npm outdated
+
+npm list --depth=0
+
 ```
 ---
 
