@@ -4,11 +4,11 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@ganatan/nga-edit": [
-        "./dist/ganatan/nga-edit"
+      "@ganatan-angular/nga-edit": [
+        "./dist/ganatan-angular/nga-edit"
       ],
-      "@ganatan/nga-table": [
-        "./dist/ganatan/nga-table"
+      "@ganatan-angular/nga-table": [
+        "./dist/ganatan-angular/nga-table"
       ]
     },
     "outDir": "./dist/out-tsc",

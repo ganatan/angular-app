@@ -101,23 +101,23 @@
         }
       }
     },
-    "@ganatan/nga-table": {
+    "@ganatan-angular/nga-table": {
       "projectType": "library",
-      "root": "projects/ganatan/nga-table",
-      "sourceRoot": "projects/ganatan/nga-table/src",
+      "root": "projects/ganatan-angular/nga-table",
+      "sourceRoot": "projects/ganatan-angular/nga-table/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ganatan/nga-table/ng-package.json"
+            "project": "projects/ganatan-angular/nga-table/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ganatan/nga-table/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ganatan-angular/nga-table/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ganatan/nga-table/tsconfig.lib.json"
+              "tsConfig": "projects/ganatan-angular/nga-table/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -125,7 +125,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/ganatan/nga-table/tsconfig.spec.json",
+            "tsConfig": "projects/ganatan-angular/nga-table/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -136,31 +136,31 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/ganatan/nga-table/**/*.ts",
-              "projects/ganatan/nga-table/**/*.html"
+              "projects/ganatan-angular/nga-table/**/*.ts",
+              "projects/ganatan-angular/nga-table/**/*.html"
             ],
-            "eslintConfig": "projects/ganatan/nga-table/eslint.config.js"
+            "eslintConfig": "projects/ganatan-angular/nga-table/eslint.config.js"
           }
         }
       }
     },
-    "@ganatan/nga-edit": {
+    "@ganatan-angular/nga-edit": {
       "projectType": "library",
-      "root": "projects/ganatan/nga-edit",
-      "sourceRoot": "projects/ganatan/nga-edit/src",
+      "root": "projects/ganatan-angular/nga-edit",
+      "sourceRoot": "projects/ganatan-angular/nga-edit/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ganatan/nga-edit/ng-package.json"
+            "project": "projects/ganatan-angular/nga-edit/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ganatan/nga-edit/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ganatan-angular/nga-edit/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ganatan/nga-edit/tsconfig.lib.json"
+              "tsConfig": "projects/ganatan-angular/nga-edit/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -168,7 +168,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/ganatan/nga-edit/tsconfig.spec.json",
+            "tsConfig": "projects/ganatan-angular/nga-edit/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -179,10 +179,10 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/ganatan/nga-edit/**/*.ts",
-              "projects/ganatan/nga-edit/**/*.html"
+              "projects/ganatan-angular/nga-edit/**/*.ts",
+              "projects/ganatan-angular/nga-edit/**/*.html"
             ],
-            "eslintConfig": "projects/ganatan/nga-edit/eslint.config.js"
+            "eslintConfig": "projects/ganatan-angular/nga-edit/eslint.config.js"
           }
         }
       }

@@ -1,5 +1,5 @@
 {
-  "name": "@ganatan/nga-table",
+  "name": "@ganatan-angular/nga-table",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^18.2.0",

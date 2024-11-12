@@ -20,19 +20,19 @@ ng add @angular-eslint/schematics
 
 ```bash
 # components creation
-cd library-exangularample
+cd library-angular
 
-ng generate library @ganatan/nga-table
-ng generate library @ganatan/nga-edit
+ng generate library @ganatan-angular/nga-table
+ng generate library @ganatan-angular/nga-edit
 
 ```
 
 ```bash
 # library scripts
-"build-table": "ng build @ganatan/nga-table",
-"dev-table": "ng build @ganatan/nga-table --watch",
-"lint-table": "ng lint @ganatan/nga-table",
-"test-table": "ng test @ganatan/nga-table",
-"publish-table": "npm run build-table & cd dist & cd ganatan/nga-table & npm publish --access public",
+"build-table": "ng build @ganatan-angular/nga-table",
+"dev-table": "ng build @ganatan-angular/nga-table --watch",
+"lint-table": "ng lint @ganatan-angular/nga-table",
+"test-table": "ng test @ganatan-angular/nga-table",
+"publish-table": "npm run build-table & cd dist & cd ganatan-angular/nga-table & npm publish --access public",
 
 ---

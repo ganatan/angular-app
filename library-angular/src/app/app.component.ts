@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NgaEditComponent } from '@ganatan/nga-edit';
-import { NgaTableComponent } from '@ganatan/nga-table';
+import { NgaEditComponent } from '@ganatan-angular/nga-edit';
+import { NgaTableComponent } from '@ganatan-angular/nga-table';
 @Component({
   selector: 'app-root',
   standalone: true,
