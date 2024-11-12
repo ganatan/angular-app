@@ -3,8 +3,8 @@
   "version": "18.2.11",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "dev": "ng serve --port 5000",
+    "start": "ng serve --port 5000",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",

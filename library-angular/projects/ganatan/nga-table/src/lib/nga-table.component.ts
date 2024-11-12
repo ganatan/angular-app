@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-nga-table',
+  selector: 'nga-table',
   standalone: true,
   imports: [],
   template: `
     <p>
-      nga-table works!
+      nga-table works! test
     </p>
   `,
   styles: ``
