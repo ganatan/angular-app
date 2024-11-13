@@ -19,13 +19,24 @@ sudo apt-get --yes purge git
 # List config
 git config --list
 
+# List config Local
+git config --list --local
+
 # List global user account
 git config --global user.email
 git config --global user.name
 
+# List Local user account
+git config --local user.email
+git config --local user.name
+
 # Change global user account
 git config --global user.email "user_email"
 git config --global user.name "user_name"
+
+# Change local user account
+git config --local user.email "user_email"
+git config --local user.name "user_name"
 
 # Set default editor
 git config --global core.editor "notepad"
