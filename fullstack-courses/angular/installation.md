@@ -11,7 +11,7 @@ npm uninstall -g @angular/cli
 
 # Installation
 npm install -g @angular/cli
-npm install -g @angular/cli@18.2.10
+npm install -g @angular/cli@18.2.12
 
 # Check version
 ng --version

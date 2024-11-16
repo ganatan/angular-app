@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
@@ -8,7 +8,7 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./tutorial.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class TutorialComponent implements OnInit {
+export class TutorialComponent {
 
   element = [{
     text: 'console.log("0001");',
@@ -87,10 +87,6 @@ events {
       },
     ]
 
-  }
-
-  ngOnInit(): void {
-    this.loadScript('assets/params/js/prism.js');
   }
 
   loadScript(name: string): void {
