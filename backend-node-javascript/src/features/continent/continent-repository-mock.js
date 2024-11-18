@@ -1,8 +1,18 @@
-import fs from 'fs';
+/*import fs from 'fs';
 import path from 'path';
 
 const baseDir = process.cwd();
 const filePath = path.join(baseDir, 'data/mock/continent-mock.json');
+*/
+import fs from 'fs';
+import path from 'path';
+
+const baseDir = process.cwd();
+const isProduction = process.env.NODE_ENV === 'production';
+
+const filePath = isProduction
+  ? path.join(baseDir, 'dist', 'data', 'mock', 'continent-mock.json')
+  : path.join(baseDir, 'data', 'mock', 'continent-mock.json'); 
 
 const continentsData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 

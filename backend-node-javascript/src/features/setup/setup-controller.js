@@ -7,6 +7,7 @@ class SetupController {
 
     this.createDatabase = this.createDatabase.bind(this);
     this.createDomains = this.createDomains.bind(this);
+    this.deleteDomains = this.deleteDomains.bind(this);
     this.createTables = this.createTables.bind(this);
   }
 
@@ -24,6 +25,17 @@ class SetupController {
   async createDomains(req, res, next) {
     try {
       const items = await this.setupDomainService.createDomains(req);
+      res.locals.data = items;
+
+      return next();
+    } catch (error) {
+      return next(error);
+    }
+  }
+
+  async deleteDomains(req, res, next) {
+    try {
+      const items = await this.setupDomainService.deleteDomains(req);
       res.locals.data = items;
 
       return next();

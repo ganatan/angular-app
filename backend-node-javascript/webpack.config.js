@@ -13,6 +13,7 @@ export default {
     server: './src/starter.js',
     'create-database': './tools/database-scripts/create-database.js',
     'create-domains': './tools/database-scripts/create-domains.js',
+    'delete-domains': './tools/database-scripts/delete-domains.js',
   },
   target: 'async-node',
   output: {

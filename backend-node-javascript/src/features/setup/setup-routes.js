@@ -17,6 +17,7 @@ const setupController = new SetupController(databaseService, domainService, tabl
 
 router.get('/create-database', setupController.createDatabase, handleResponse);
 router.get('/create-domains', setupController.createDomains, handleResponse);
+router.get('/delete-domains', setupController.deleteDomains, handleResponse);
 router.get('/create-tables', setupController.createTables, handleResponse);
 
 router.get('/', (req, res) => {
