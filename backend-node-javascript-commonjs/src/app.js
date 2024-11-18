@@ -10,6 +10,9 @@ const handleResponse = require('./infrastructure/logger/response-handler');
 const handleError = require('./infrastructure/errors/error-handler');
 const requestLogger = require('./infrastructure/logger/request-logger');
 
+const featuresRoutes = require('./features-routes');
+const indexRoutes = require('./index-routes');
+
 const app = express();
 
 app.use(express.json());
@@ -21,9 +24,10 @@ app.use(requestLogger);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
-const routes = require('./main-routes');
+app.use(featuresRoutes);
 
-app.use('/', routes);
+app.use('/', indexRoutes);
+app.use('*', indexRoutes);
 
 app.use(handleResponse);
 app.use(handleError);
