@@ -9,7 +9,8 @@ class DomainService {
   }
 
   initPool = (env, databaseName) => {
-    const localhost = config[env].db.localhost;
+    // const localhost = config[env].db.localhost;
+    const localhost = config.db.localhost;
     this.pool = new Pool({
       user: 'postgres',
       host: localhost,
@@ -20,7 +21,7 @@ class DomainService {
   };
 
   createDomains = async () => {
-    const createDatabaseName = 'angular_backend_test';
+    const createDatabaseName = 'angular_backend';
     const env = process.env.NODE_ENV || 'development';
 
     this.initPool(env, createDatabaseName);

@@ -12,7 +12,7 @@ const dbConnectionService = new DBConnectionService(dbAdapterFactory, config);
 const dbConnectionManager = new DBConnectionManager(dbConnectionService);
 
 const ENV = process.env.NODE_ENV || 'development';
-const { port: PORT, host: HOST, appName: APPNAME } = config[ENV];
+const { port: PORT, host: HOST, appName: APPNAME } = config;
 
 let server;
 const connections = new Set();

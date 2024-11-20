@@ -5,10 +5,8 @@ import config from '../../core/config/config.js';
 
 class DatabaseService {
   createDatabase = async () => {
-    const createDatabaseName = 'angular_backend_test';
-
-    const env = process.env.NODE_ENV || 'development';
-    const localhost = config[env].db.localhost;
+    const createDatabaseName = 'angular_backend';
+    const localhost = config.db.localhost;
 
     this.pool = new Pool({
       user: 'postgres',
