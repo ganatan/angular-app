@@ -8,8 +8,8 @@ module.exports = {
   mode: 'development',
   entry: {
     server: './src/server.js',
-    // 'create-database': './tools/database-scripts/create-database.js',
-    // 'create-domains': './tools/database-scripts/create-domains.js',
+    'create-database': './tools/database-scripts/create-database.js',
+    'create-domains': './tools/database-scripts/create-domains.js',
   },
   target: 'node',
   externals: [nodeExternals()],

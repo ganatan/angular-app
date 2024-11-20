@@ -1,6 +1,6 @@
 'use strict';
 
-const DatabaseService = require('../../src/features/setup/db-connection-manager');
+const DatabaseService = require('../../src/features/setup/database-service');
 
 async function main() {
   const databaseName = 'woper';
