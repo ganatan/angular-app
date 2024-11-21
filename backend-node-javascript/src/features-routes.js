@@ -1,10 +1,10 @@
 import express from 'express';
-import continentRoutes from './features/continent/continent-routes.js';
-import setupRoutes from './features/setup/setup-routes.js';
+import continentRoute from './features/continent/continent-route.js';
+import setupRoute from './features/setup/setup-route.js';
 
 const router = express.Router();
 
-router.use('/continents', continentRoutes);
-router.use('/setup', setupRoutes);
+router.use('/continents', continentRoute);
+router.use('/setup', setupRoute);
 
 export default router;

@@ -1,6 +1,6 @@
 import request from 'supertest';
 import express from 'express';
-import setupRouter from '../../setup-routes';
+import setupRouter from '../../setup-route';
 
 jest.mock('../../database-service');
 jest.mock('../../domain-service');
