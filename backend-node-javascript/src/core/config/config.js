@@ -15,7 +15,7 @@ const development = {
     host: 'localhost',
     user: process.env.DB_USER || 'dev_user',
     password: process.env.DB_PASSWORD || 'dev_password',
-    database: 'angular_backend',
+    database: 'backend_angular',
     port: 5432,
   },
 };
@@ -29,7 +29,7 @@ const production = {
     host: 'localhost',
     user: process.env.DB_USER || 'prod_user',
     password: process.env.DB_PASSWORD || 'prod_password',
-    database: 'angular_backend',
+    database: 'backend_angular',
     port: 5432,
   },
 };
@@ -43,7 +43,7 @@ const test = {
     host: 'localhost',
     user: process.env.DB_USER || 'test_user',
     password: process.env.DB_PASSWORD || 'test_password',
-    database: 'angular_backend',
+    database: 'backend_angular',
     port: 5432,
   },
 };

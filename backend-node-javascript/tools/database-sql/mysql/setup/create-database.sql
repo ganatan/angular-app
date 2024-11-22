@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS angular_backend;
+DROP DATABASE IF EXISTS backend_angular;
 
-CREATE DATABASE angular_backend;
+CREATE DATABASE backend_angular;

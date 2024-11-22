@@ -5,7 +5,7 @@ import config from '../../core/config/config.js';
 
 class DatabaseService {
   createDatabase = async () => {
-    const createDatabaseName = 'angular_backend';
+    const createDatabaseName = 'backend_angular';
     const localhost = config.db.localhost;
 
     this.pool = new Pool({

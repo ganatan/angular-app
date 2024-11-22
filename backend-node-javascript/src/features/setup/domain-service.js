@@ -21,7 +21,7 @@ class DomainService {
   };
 
   createDomains = async () => {
-    const createDatabaseName = 'angular_backend';
+    const createDatabaseName = 'backend_angular';
     const env = process.env.NODE_ENV || 'development';
 
     this.initPool(env, createDatabaseName);
@@ -145,7 +145,7 @@ class DomainService {
   };
 
   deleteDomains = async () => {
-    const deleteDatabaseName = 'angular_backend_test';
+    const deleteDatabaseName = 'backend_angular_test';
     const env = process.env.NODE_ENV || 'development';
 
     this.initPool(env, deleteDatabaseName);
