@@ -4,6 +4,7 @@
 ## posqtgresql without pool
 
 ```javascript
+
 const dbConfig = {
   user: 'postgres',
   host: 'localhost',
@@ -26,6 +27,7 @@ const connectToDatabase = async () => {
     await client.end();
   }
 
+
 };
 connectToDatabase();
 ```
@@ -34,6 +36,7 @@ connectToDatabase();
 ## posqtgresql with pool
 
 ```javascript
+
 const dbConfig = {
   user: 'postgres',
   host: 'localhost',
@@ -42,7 +45,7 @@ const dbConfig = {
   port: 5432,
 };
 
-var Pool = require('pg-pool')
+const { Pool } = require('pg');
 
 const connectToDatabase = async () => {
 
@@ -53,7 +56,6 @@ const connectToDatabase = async () => {
     console.log('Heure actuelle depuis la base de données :', JSON.stringify(result.rows));
   } finally {
     client.release();
-    // await pool.end();
   }
 
 };
