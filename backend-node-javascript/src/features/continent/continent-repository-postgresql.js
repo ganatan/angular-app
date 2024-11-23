@@ -402,6 +402,7 @@ class PostgreSQLAdapter {
       return null;
     }
   }
+
 }
 
 export default PostgreSQLAdapter;

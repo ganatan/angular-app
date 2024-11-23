@@ -1,6 +1,6 @@
 class ContinentController {
-  constructor(continentService) {
-    this.continentService = continentService;
+  constructor(service) {
+    this.service = service;
 
     this.createItem = this.createItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
@@ -11,7 +11,7 @@ class ContinentController {
 
   async getItems(req, res, next) {
     try {
-      const items = await this.continentService.getItems(req);
+      const items = await this.service.getItems(req);
       res.locals.data = items;
 
       return next();
@@ -23,7 +23,7 @@ class ContinentController {
   async getItem(req, res, next) {
     const { id } = req.params;
     try {
-      const item = await this.continentService.getItem(id);
+      const item = await this.service.getItem(id);
       if (!item) {
         return next({ status: 404, message: 'Continent not found' });
       }
@@ -37,7 +37,7 @@ class ContinentController {
 
   async createItem(req, res, next) {
     try {
-      const newItem = await this.continentService.createItem(req.body);
+      const newItem = await this.service.createItem(req.body);
       res.locals.data = newItem;
 
       return next();
@@ -49,7 +49,7 @@ class ContinentController {
   async updateItem(req, res, next) {
     const { id } = req.params;
     try {
-      const updatedItem = await this.continentService.updateItem(id, req.body);
+      const updatedItem = await this.service.updateItem(id, req.body);
       if (!updatedItem) {
         return next({ status: 404, message: 'Continent not found' });
       }
@@ -64,7 +64,7 @@ class ContinentController {
   async deleteItem(req, res, next) {
     const { id } = req.params;
     try {
-      const deletedItem = await this.continentService.deleteItem(id);
+      const deletedItem = await this.service.deleteItem(id);
       if (!deletedItem) {
         return next({ status: 404, message: 'Continent not found' });
       }

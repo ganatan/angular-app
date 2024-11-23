@@ -13,7 +13,6 @@ class ContinentRepository {
   constructor() {
     try {
       const dbFactory = DBFactory.getInstance(dbClients);
-      // const dbConfig = config[process.env.NODE_ENV || 'development'];
       const dbConfig = config;
       this.dbClient = dbFactory.createClient(dbConfig);
       const dbType = dbConfig.db.client;

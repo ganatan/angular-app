@@ -1,11 +1,11 @@
 class ContinentService {
 
-  constructor(continentRepository) {
-    this.continentRepository = continentRepository;
+  constructor(repository) {
+    this.repository = repository;
   }
 
   getItems = async (req) => {
-    const items = await this.continentRepository.getItems(req);
+    const items = await this.repository.getItems(req);
     if (!items) {
       return [];
     }
@@ -14,23 +14,23 @@ class ContinentService {
   };
 
   getItem = async (index) => {
-    const continent = await this.continentRepository.getItem(index);
+    const continent = await this.repository.getItem(index);
 
     return continent;
   };
 
   createItem = async (continentData) => {
-    const res = await this.continentRepository.createItem(continentData);
+    const res = await this.repository.createItem(continentData);
 
     return res;
   };
 
   updateItem = async (id, continentData) => {
-    return await this.continentRepository.updateItem(id, continentData);
+    return await this.repository.updateItem(id, continentData);
   };
 
   deleteItem = async (id) => {
-    const res = await this.continentRepository.deleteItem(id);
+    const res = await this.repository.deleteItem(id);
 
     return res;
   };
