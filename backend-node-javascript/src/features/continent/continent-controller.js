@@ -1,3 +1,5 @@
+const ITEM_NAME = 'Continent';
+
 class ContinentController {
   constructor(service) {
     this.service = service;
@@ -11,7 +13,8 @@ class ContinentController {
 
   async getItems(req, res, next) {
     try {
-      const items = await this.service.getItems(req);
+      const { query } = req;
+      const items = await this.service.getItems(query);
       res.locals.data = items;
 
       return next();
@@ -25,7 +28,7 @@ class ContinentController {
     try {
       const item = await this.service.getItem(id);
       if (!item) {
-        return next({ status: 404, message: 'Continent not found' });
+        return next({ status: 404, message: `${ITEM_NAME} not found` });
       }
       res.locals.data = item;
 
@@ -37,7 +40,8 @@ class ContinentController {
 
   async createItem(req, res, next) {
     try {
-      const newItem = await this.service.createItem(req.body);
+      const { body } = req;
+      const newItem = await this.service.createItem(body);
       res.locals.data = newItem;
 
       return next();
@@ -48,10 +52,11 @@ class ContinentController {
 
   async updateItem(req, res, next) {
     const { id } = req.params;
+    const { body } = req;
     try {
-      const updatedItem = await this.service.updateItem(id, req.body);
+      const updatedItem = await this.service.updateItem(id, body);
       if (!updatedItem) {
-        return next({ status: 404, message: 'Continent not found' });
+        return next({ status: 404, message: `${ITEM_NAME} not found` });
       }
       res.locals.data = updatedItem;
 
@@ -66,13 +71,12 @@ class ContinentController {
     try {
       const deletedItem = await this.service.deleteItem(id);
       if (!deletedItem) {
-        return next({ status: 404, message: 'Continent not found' });
+        return next({ status: 404, message: `${ITEM_NAME} not found` });
       }
-      res.locals.data = { message: 'Continent deleted successfully' };
+      res.locals.data = { message: `${ITEM_NAME} deleted successfully` };
 
       return next();
     } catch (error) {
-
       return next(error);
     }
   }
