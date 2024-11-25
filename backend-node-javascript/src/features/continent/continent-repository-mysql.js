@@ -3,7 +3,7 @@ class MySQLAdapter {
     this.dbClient = dbClient;
   }
 
-  async getItems(req) {
+  async getItems(filters) {
     try {
       const {
         name = '',
@@ -19,7 +19,7 @@ class MySQLAdapter {
         page = 1,
         limit = 10,
         sort = 'name',
-      } = req.query;
+      } = filters;
 
       const validPage = page > 0 ? parseInt(page, 10) : 1;
       const validLimit = limit > 0 ? parseInt(limit, 10) : 10;

@@ -303,7 +303,7 @@ class PostgreSQLAdapter {
     }
   }
 
-  validateContinentData({ area, population, countriesNumber }) {
+  validateItemData({ area, population, countriesNumber }) {
     if (area > MAX_INTEGER || area < MIN_INTEGER) {
       return false;
     }
@@ -319,13 +319,13 @@ class PostgreSQLAdapter {
     return true;
   }
 
-  async createItem(continentData) {
+  async createItem(itemData) {
     try {
-      const area = parseInt(continentData.area, 10);
-      const population = parseInt(continentData.population, 10);
-      const countriesNumber = parseInt(continentData.countriesNumber, 10);
+      const area = parseInt(itemData.area, 10);
+      const population = parseInt(itemData.population, 10);
+      const countriesNumber = parseInt(itemData.countriesNumber, 10);
 
-      if (!this.validateContinentData({ area, population, countriesNumber })) {
+      if (!this.validateItemData({ area, population, countriesNumber })) {
         return null;
       }
 
@@ -335,9 +335,9 @@ class PostgreSQLAdapter {
       `;
 
       const values = [
-        truncate(continentData.code, 20),
-        truncate(continentData.name, 50),
-        truncate(continentData.wikipediaLink, 50),
+        truncate(itemData.code, 20),
+        truncate(itemData.name, 50),
+        truncate(itemData.wikipediaLink, 50),
         area,
         population,
         countriesNumber,
@@ -351,13 +351,13 @@ class PostgreSQLAdapter {
     }
   }
 
-  async updateItem(id, continentData) {
+  async updateItem(id, itemData) {
     try {
-      const area = parseInt(continentData.area, 10);
-      const population = parseInt(continentData.population, 10);
-      const countriesNumber = parseInt(continentData.countriesNumber, 10);
+      const area = parseInt(itemData.area, 10);
+      const population = parseInt(itemData.population, 10);
+      const countriesNumber = parseInt(itemData.countriesNumber, 10);
 
-      if (!this.validateContinentData({ area, population, countriesNumber })) {
+      if (!this.validateItemData({ area, population, countriesNumber })) {
         return null;
       }
 
@@ -374,9 +374,9 @@ class PostgreSQLAdapter {
       `;
 
       const values = [
-        truncate(continentData.code, 20),
-        truncate(continentData.name, 50),
-        truncate(continentData.wikipediaLink, 50),
+        truncate(itemData.code, 20),
+        truncate(itemData.name, 50),
+        truncate(itemData.wikipediaLink, 50),
         area,
         population,
         countriesNumber,
