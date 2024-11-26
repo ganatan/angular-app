@@ -15,4 +15,3 @@ router.use('/', index);
 router.use('*', index);
 
 module.exports = router;
-

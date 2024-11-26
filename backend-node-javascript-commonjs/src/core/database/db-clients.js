@@ -5,7 +5,6 @@ const DB_CLIENTS = {
   MONGODB: 'mongodb',
   MYSQL: 'mysql',
   PG: 'pg',
-  SEQUELIZE_PG: 'sequelize-pg',
 };
 
 module.exports = DB_CLIENTS;

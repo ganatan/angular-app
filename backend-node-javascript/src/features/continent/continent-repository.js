@@ -40,12 +40,12 @@ class ContinentRepository {
     }
   }
 
-  async getItems(req) {
+  async getItems(filters) {
     if (!this.adapter) {
       return { error: 'Database connection not initialized' };
     }
 
-    return await this.adapter.getItems(req);
+    return await this.adapter.getItems(filters);
   }
 
   async getItem(id) {
@@ -56,20 +56,20 @@ class ContinentRepository {
     return await this.adapter.getItem(id);
   }
 
-  async createItem(continentData) {
+  async createItem(itemData) {
     if (!this.adapter) {
       return { error: 'Database connection not initialized' };
     }
 
-    return await this.adapter.createItem(continentData);
+    return await this.adapter.createItem(itemData);
   }
 
-  async updateItem(id, continentData) {
+  async updateItem(id, itemData) {
     if (!this.adapter) {
       return { error: 'Database connection not initialized' };
     }
 
-    return await this.adapter.updateItem(id, continentData);
+    return await this.adapter.updateItem(id, itemData);
   }
 
   async deleteItem(id) {

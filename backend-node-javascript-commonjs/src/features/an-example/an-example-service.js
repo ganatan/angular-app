@@ -4,7 +4,7 @@ class AnExampleService {
   constructor() {
   }
 
-  async getItems(req) {
+  async getItems(filters) {
     try {
       const items = [
         { name: 'example0001' },

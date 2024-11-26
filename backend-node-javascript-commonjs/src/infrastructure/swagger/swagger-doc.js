@@ -1,11 +1,9 @@
 'use strict';
 
 const swaggerJsdoc = require('swagger-jsdoc');
-
 const config = require('../../core/config/config');
 
-const ENV = process.env.NODE_ENV || 'development';
-const { port: PORT, host: HOST } = config[ENV];
+const { port: PORT, host: HOST } = config;
 const url = `${HOST}:${PORT}`;
 
 const swaggerOptions = {

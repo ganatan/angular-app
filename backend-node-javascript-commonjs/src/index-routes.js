@@ -7,12 +7,10 @@ const handleResponse = require('./infrastructure/logger/response-handler');
 const router = express.Router();
 const config = require('./core/config/config');
 
-const env = process.env.NODE_ENV || 'development';
-
-const host = config[env].host;
-const port = config[env].port;
+const host = config.host;
+const port = config.port;
 const url = `http://${host}:${port}`;
-const dbClient = config[env].db.client;
+const dbClient = config.db.client;
 
 const apiPaths = {
   continents: '/continents',

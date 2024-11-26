@@ -1,42 +1,31 @@
 'use strict';
 
 class ContinentService {
-
-  constructor(continentRepository) {
-    this.continentRepository = continentRepository;
+  constructor(repository) {
+    this.repository = repository;
   }
 
-  getItems = async (req) => {
-    const items = await this.continentRepository.getItems(req);
-    if (!items) {
-      return [];
-    }
+  async getItems(filters) {
+    const items = await this.repository.getItems(filters);
 
-    return items;
-  };
+    return items || [];
+  }
 
-  getItem = async (index) => {
-    const continent = await this.continentRepository.getItem(index);
+  async getItem(id) {
+    return await this.repository.getItem(id);
+  }
 
-    return continent;
-  };
+  async createItem(itemData) {
+    return await this.repository.createItem(itemData);
+  }
 
-  createItem = async (continentData) => {
-    const res = await this.continentRepository.createItem(continentData);
+  async updateItem(id, itemData) {
+    return await this.repository.updateItem(id, itemData);
+  }
 
-    return res;
-  };
-
-  updateItem = async (id, continentData) => {
-    return await this.continentRepository.updateItem(id, continentData);
-  };
-
-  deleteItem = async (id) => {
-    const res = await this.continentRepository.deleteItem(id);
-
-    return res;
-  };
-
-};
+  async deleteItem(id) {
+    return await this.repository.deleteItem(id);
+  }
+}
 
 module.exports = ContinentService;

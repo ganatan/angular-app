@@ -1,4 +1,5 @@
 'use strict';
+
 const { MongoClient } = require('mongodb');
 
 class MongoDBClient {

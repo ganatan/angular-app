@@ -19,6 +19,11 @@
             "date": 1732437436210,
             "name": "data\\logs\\warn.log-2024-11-24.log",
             "hash": "9e19fa48507d72f110155a8a13def65c49d513c5d5899f3ea427c102b8a5e41e"
+        },
+        {
+            "date": 1732632563763,
+            "name": "data\\logs\\warn.log-2024-11-26.log",
+            "hash": "b0e0a820d5a1adaf24b68831b99b7e8c8c411ea0c79de1bc4efb32a8d8690871"
         }
     ],
     "hashType": "sha256"

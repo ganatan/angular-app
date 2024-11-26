@@ -15,7 +15,7 @@ const dbConnectionManager = new DBConnectionManager(dbConnectionService);
 const app = require('./app');
 
 const ENV = process.env.NODE_ENV || 'development';
-const { port: PORT, host: HOST } = config[ENV];
+const { port: PORT, host: HOST, appName: APPNAME } = config;
 
 let server;
 const connections = new Set();

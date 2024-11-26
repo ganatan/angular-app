@@ -8,12 +8,12 @@ const filePath = isProduction
   ? path.join(baseDir, 'dist', 'data', 'mock', 'continent-mock.json')
   : path.join(baseDir, 'data', 'mock', 'continent-mock.json');
 
-const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+const itemData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
 class MockAdapter {
   constructor(dbClient) {
     this.dbClient = dbClient;
-    this.data = data;
+    this.itemData = itemData;
   }
 
   async getMockTrace() {
@@ -42,7 +42,7 @@ class MockAdapter {
       const validLimit = limit > 0 ? parseInt(limit, 10) : 10;
       const offset = (validPage - 1) * validLimit;
 
-      let filteredData = this.data;
+      let filteredData = this.itemData;
 
       if (name) {
         filteredData = filteredData.filter(item => item.name.toLowerCase().includes(name.toLowerCase()));
@@ -133,33 +133,33 @@ class MockAdapter {
   }
 
   async getItem(id) {
-    const item = this.data.find(cont => cont.id === parseInt(id, 10));
+    const item = this.itemData.find(cont => cont.id === parseInt(id, 10));
 
     return item || null;
   }
 
   async createItem(data) {
-    const newId = this.data.length ? Math.max(...this.data.map(cont => cont.id)) + 1 : 1;
+    const newId = this.itemData.length ? Math.max(...this.itemData.map(cont => cont.id)) + 1 : 1;
     const newItem = { id: newId, ...data };
-    this.data.push(newItem);
+    this.itemData.push(newItem);
 
     return newItem;
   }
 
   async updateItem(id, data) {
-    const index = this.data.findIndex(cont => cont.id === parseInt(id, 10));
+    const index = this.itemData.findIndex(cont => cont.id === parseInt(id, 10));
     if (index === -1) { return null; };
 
-    this.data[index] = { ...this.data[index], ...data };
+    this.itemData[index] = { ...this.itemData[index], ...data };
 
-    return this.data[index];
+    return this.itemData[index];
   }
 
   async deleteItem(id) {
-    const index = this.data.findIndex(cont => cont.id === parseInt(id, 10));
+    const index = this.itemData.findIndex(cont => cont.id === parseInt(id, 10));
     if (index === -1) { return null; };
 
-    const deletedItem = this.data.splice(index, 1);
+    const deletedItem = this.itemData.splice(index, 1);
 
     return deletedItem[0];
   }

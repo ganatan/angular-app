@@ -10,8 +10,8 @@ const handleResponse = require('./infrastructure/logger/response-handler');
 const handleError = require('./infrastructure/errors/error-handler');
 const requestLogger = require('./infrastructure/logger/request-logger');
 
-const featuresRoutes = require('./features-routes');
-const indexRoutes = require('./index-routes');
+// const featuresRoutes = require('./features-routes');
+// const indexRoutes = require('./index-routes');
 
 const app = express();
 
@@ -24,20 +24,12 @@ app.use(requestLogger);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
-app.use(featuresRoutes);
+// app.use(featuresRoutes);
 
-app.use('/', indexRoutes);
-app.use('*', indexRoutes);
+// app.use('/', indexRoutes);
+// app.use('*', indexRoutes);
 
 app.use(handleResponse);
 app.use(handleError);
 
 module.exports = app;
-
-/*
-app.use(cors({
-  origin: 'http://localhost:4200',
-  methods: 'GET,POST,PUT,DELETE,OPTIONS',
-  allowedHeaders: 'Content-Type,Authorization',
-}));
-*/

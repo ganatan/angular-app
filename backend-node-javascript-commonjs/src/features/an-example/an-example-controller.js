@@ -10,7 +10,8 @@ class AnExampleController {
 
   async getItems(req, res, next) {
     try {
-      const items = await this.service.getItems(req);
+      const { query } = req;
+      const items = await this.service.getItems(query);
       res.locals.data = items;
 
       return next();
