@@ -6,4 +6,7 @@ const extractTableName = (query) => {
   return match ? match[1].toLowerCase() : null;
 };
 
-module.exports = { extractTableName };
+const truncate = (value, maxLength) =>
+  value && value.length > maxLength ? value.slice(0, maxLength) : value;
+
+module.exports = { extractTableName, truncate };

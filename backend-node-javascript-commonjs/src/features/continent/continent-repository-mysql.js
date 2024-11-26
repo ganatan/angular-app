@@ -5,7 +5,7 @@ class MySQLAdapter {
     this.dbClient = dbClient;
   }
 
-  async getItems(req) {
+  async getItems(filters) {
     try {
       const {
         name = '',
@@ -21,7 +21,7 @@ class MySQLAdapter {
         page = 1,
         limit = 10,
         sort = 'name',
-      } = req.query;
+      } = filters;
 
       const validPage = page > 0 ? parseInt(page, 10) : 1;
       const validLimit = limit > 0 ? parseInt(limit, 10) : 10;
@@ -323,10 +323,10 @@ class MySQLAdapter {
     }
   }
 
-  async createItem(continentData) {
+  async createItem(itemData) {
     try {
       const query = 'INSERT INTO continent (code, name) VALUES (?, ?)';
-      const values = [continentData.code, continentData.name];
+      const values = [itemData.code, itemData.name];
 
       return await this.dbClient.query(query, values);
     } catch (error) {
@@ -336,10 +336,10 @@ class MySQLAdapter {
     }
   }
 
-  async updateItem(id, continentData) {
+  async updateItem(id, itemData) {
     try {
       const query = 'UPDATE continent SET code = ?, name = ? WHERE id = ?';
-      const values = [continentData.code, continentData.name, parseInt(id, 10)];
+      const values = [itemData.code, itemData.name, parseInt(id, 10)];
 
       return await this.dbClient.query(query, values);
     } catch (error) {

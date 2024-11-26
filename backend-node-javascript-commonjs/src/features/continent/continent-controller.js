@@ -1,5 +1,7 @@
 'use strict';
 
+const ITEM_NAME = 'Continent';
+
 class ContinentController {
   constructor(service) {
     this.service = service;

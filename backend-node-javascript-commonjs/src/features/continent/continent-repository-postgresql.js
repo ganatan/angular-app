@@ -6,12 +6,14 @@ const {
   MAX_BIGINT,
   MIN_BIGINT } = require('../../shared/constants/data-limits-constants');
 
+const { truncate } = require('../../shared/utils/query-utils');
+
 class PostgreSQLAdapter {
   constructor(dbClient) {
     this.dbClient = dbClient;
   }
 
-  async getItems(req) {
+  async getItems(filters) {
     try {
       const {
         name = '',
@@ -27,7 +29,7 @@ class PostgreSQLAdapter {
         page = 1,
         limit = 10,
         sort = 'name',
-      } = req.query;
+      } = filters;
 
       const validPage = page > 0 ? parseInt(page, 10) : 1;
       const validLimit = limit > 0 ? parseInt(limit, 10) : 10;
@@ -110,121 +112,121 @@ class PostgreSQLAdapter {
 
   buildQuery(filterConditions, limit, offset, sortBy = 'name', sortOrder = 'ASC') {
     return `
-      WITH filtered_data AS (
+        WITH filtered_data AS (
+          SELECT
+            id,
+            code,
+            name,
+            wikipedia_link as "wikipedia_link",
+            area :: int as "area",
+            population :: float as "population",
+            countries_number :: int as "countries_number",
+            ROUND((population / NULLIF(area, 0))::NUMERIC, 5) as "density"
+          FROM
+            continent
+          ${filterConditions}
+          ORDER BY
+          ${sortBy} ${sortOrder}
+        ),
+        pagination AS (
+          SELECT
+            id,
+            code,
+            name,
+            wikipedia_link as "wikipediaLink",
+            area :: int as area,
+            population :: float as "population",
+            countries_number :: int as "countriesNumber",
+            ROUND((population / NULLIF(area, 0))::NUMERIC, 5) as "density"
+          FROM
+            filtered_data
+          LIMIT ${limit} OFFSET ${offset}
+        ),
+        totals AS (
+          SELECT
+            SUM(area) :: int AS total_area_all,
+            SUM(population) :: float AS total_population_all,
+            SUM(countries_number) :: int AS total_countries_number_all,
+            COUNT(id) :: int AS count_all,
+            ROUND((SUM(population) / NULLIF(SUM(area), 0))::NUMERIC, 5) AS average_density_all
+          FROM
+            filtered_data
+        ),
+        totals_pagination AS (
+          SELECT
+            SUM(area) :: int AS total_area,
+            SUM(population) :: float AS total_population,
+            SUM("countriesNumber") :: int AS total_countries_number,
+            COUNT(id) :: int AS count,
+            ROUND((SUM(population) / NULLIF(SUM(area), 0))::NUMERIC, 5) AS average_density
+          FROM
+            pagination
+        )
         SELECT
-          id,
-          code,
-          name,
-          wikipedia_link as "wikipedia_link",
-          area :: int as "area",
-          population :: float as "population",
-          countries_number :: int as "countries_number",
-          ROUND((population / NULLIF(area, 0))::NUMERIC, 5) as "density"
+          (
+            SELECT
+              count_all
+            FROM
+              totals
+          ) :: int AS "count",
+          (
+            SELECT
+              total_area_all
+            FROM
+              totals
+          ) :: int AS "area",
+          (
+            SELECT
+              total_population_all
+            FROM
+              totals
+          ) :: float AS "population",
+          (
+            SELECT
+              total_countries_number_all
+            FROM
+              totals
+          ) :: int AS "countriesNumber",
+          (
+            SELECT
+              count
+            FROM
+              totals_pagination
+          ) :: int AS "countPagination",
+          (
+            SELECT
+              total_area
+            FROM
+              totals_pagination
+          ) :: int AS "areaPagination",
+          (
+            SELECT
+              total_population
+            FROM
+              totals_pagination
+          ) :: float AS "populationPagination",
+          (
+            SELECT
+              total_countries_number
+            FROM
+              totals_pagination
+          ) :: int AS "countriesNumberPagination",
+          (
+            SELECT
+              average_density_all
+            FROM
+              totals
+          ) AS "density",
+          (
+            SELECT
+              average_density
+            FROM
+              totals_pagination
+          ) AS "densityPagination",
+          json_agg(pagination.*) AS continents
         FROM
-          continent
-        ${filterConditions}
-        ORDER BY
-        ${sortBy} ${sortOrder}
-      ),
-      pagination AS (
-        SELECT
-          id,
-          code,
-          name,
-          wikipedia_link as "wikipediaLink",
-          area :: int as area,
-          population :: float as "population",
-          countries_number :: int as "countriesNumber",
-          ROUND((population / NULLIF(area, 0))::NUMERIC, 5) as "density"
-        FROM
-          filtered_data
-        LIMIT ${limit} OFFSET ${offset}
-      ),
-      totals AS (
-        SELECT
-          SUM(area) :: int AS total_area_all,
-          SUM(population) :: float AS total_population_all,
-          SUM(countries_number) :: int AS total_countries_number_all,
-          COUNT(id) :: int AS count_all,
-          ROUND((SUM(population) / NULLIF(SUM(area), 0))::NUMERIC, 5) AS average_density_all
-        FROM
-          filtered_data
-      ),
-      totals_pagination AS (
-        SELECT
-          SUM(area) :: int AS total_area,
-          SUM(population) :: float AS total_population,
-          SUM("countriesNumber") :: int AS total_countries_number,
-          COUNT(id) :: int AS count,
-          ROUND((SUM(population) / NULLIF(SUM(area), 0))::NUMERIC, 5) AS average_density
-        FROM
-          pagination
-      )
-      SELECT
-        (
-          SELECT
-            count_all
-          FROM
-            totals
-        ) :: int AS "count",
-        (
-          SELECT
-            total_area_all
-          FROM
-            totals
-        ) :: int AS "area",
-        (
-          SELECT
-            total_population_all
-          FROM
-            totals
-        ) :: float AS "population",
-        (
-          SELECT
-            total_countries_number_all
-          FROM
-            totals
-        ) :: int AS "countriesNumber",
-        (
-          SELECT
-            count
-          FROM
-            totals_pagination
-        ) :: int AS "countPagination",
-        (
-          SELECT
-            total_area
-          FROM
-            totals_pagination
-        ) :: int AS "areaPagination",
-        (
-          SELECT
-            total_population
-          FROM
-            totals_pagination
-        ) :: float AS "populationPagination",
-        (
-          SELECT
-            total_countries_number
-          FROM
-            totals_pagination
-        ) :: int AS "countriesNumberPagination",
-        (
-          SELECT
-            average_density_all
-          FROM
-            totals
-        ) AS "density",
-        (
-          SELECT
-            average_density
-          FROM
-            totals_pagination
-        ) AS "densityPagination",
-        json_agg(pagination.*) AS continents
-      FROM
-        pagination;
-          `;
+          pagination;
+            `;
   }
 
   formatResult(result) {
@@ -269,23 +271,23 @@ class PostgreSQLAdapter {
     }
     try {
       const query = `
-        SELECT
-          id,
-          code,
-          name,
-          wikipedia_link as "wikipediaLink",
-          area :: int as "area",
-          population :: float as "population",
-          countries_number :: int as "countriesNumber",
-          ROUND(
-            (
-              CAST(population AS NUMERIC) / NULLIF(CAST(area AS NUMERIC), 0)
-            ),
-            5
-          ) as "density"
-        FROM
-          continent
-        WHERE id = $1`
+          SELECT
+            id,
+            code,
+            name,
+            wikipedia_link as "wikipediaLink",
+            area :: int as "area",
+            population :: float as "population",
+            countries_number :: int as "countriesNumber",
+            ROUND(
+              (
+                CAST(population AS NUMERIC) / NULLIF(CAST(area AS NUMERIC), 0)
+              ),
+              5
+            ) as "density"
+          FROM
+            continent
+          WHERE id = $1`
         ;
 
       const result = await this.dbClient.query(query, [idReceive]);
@@ -302,7 +304,7 @@ class PostgreSQLAdapter {
     }
   }
 
-  validateContinentData({ area, population, countriesNumber }) {
+  validateItemData({ area, population, countriesNumber }) {
     if (area > MAX_INTEGER || area < MIN_INTEGER) {
       return false;
     }
@@ -318,25 +320,25 @@ class PostgreSQLAdapter {
     return true;
   }
 
-  async createItem(continentData) {
+  async createItem(itemData) {
     try {
-      const area = parseInt(continentData.area, 10);
-      const population = parseInt(continentData.population, 10);
-      const countriesNumber = parseInt(continentData.countriesNumber, 10);
+      const area = parseInt(itemData.area, 10);
+      const population = parseInt(itemData.population, 10);
+      const countriesNumber = parseInt(itemData.countriesNumber, 10);
 
-      if (!this.validateContinentData({ area, population, countriesNumber })) {
+      if (!this.validateItemData({ area, population, countriesNumber })) {
         return null;
       }
 
       const query = `
-        INSERT INTO continent (code, name, wikipedia_link, area, population, countries_number) 
-        VALUES ($1, $2, $3, $4, $5, $6)
-      `;
+          INSERT INTO continent (code, name, wikipedia_link, area, population, countries_number) 
+          VALUES ($1, $2, $3, $4, $5, $6)
+        `;
 
       const values = [
-        continentData.code,
-        continentData.name,
-        continentData.wikipediaLink,
+        truncate(itemData.code, 20),
+        truncate(itemData.name, 50),
+        truncate(itemData.wikipediaLink, 50),
         area,
         population,
         countriesNumber,
@@ -350,32 +352,32 @@ class PostgreSQLAdapter {
     }
   }
 
-  async updateItem(id, continentData) {
+  async updateItem(id, itemData) {
     try {
-      const area = parseInt(continentData.area, 10);
-      const population = parseInt(continentData.population, 10);
-      const countriesNumber = parseInt(continentData.countriesNumber, 10);
+      const area = parseInt(itemData.area, 10);
+      const population = parseInt(itemData.population, 10);
+      const countriesNumber = parseInt(itemData.countriesNumber, 10);
 
-      if (!this.validateContinentData({ area, population, countriesNumber })) {
+      if (!this.validateItemData({ area, population, countriesNumber })) {
         return null;
       }
 
       const query = `
-        UPDATE continent 
-        SET 
-          code = $1, 
-          name = $2, 
-          wikipedia_link = $3, 
-          area = $4, 
-          population = $5, 
-          countries_number = $6
-        WHERE id = $7
-      `;
+          UPDATE continent 
+          SET 
+            code = $1, 
+            name = $2, 
+            wikipedia_link = $3, 
+            area = $4, 
+            population = $5, 
+            countries_number = $6
+          WHERE id = $7
+        `;
 
       const values = [
-        continentData.code,
-        continentData.name,
-        continentData.wikipediaLink,
+        truncate(itemData.code, 20),
+        truncate(itemData.name, 50),
+        truncate(itemData.wikipediaLink, 50),
         area,
         population,
         countriesNumber,
@@ -401,6 +403,7 @@ class PostgreSQLAdapter {
       return null;
     }
   }
+
 }
 
 module.exports = PostgreSQLAdapter;

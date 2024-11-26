@@ -7,7 +7,7 @@ class DBConnectionService {
   }
 
   createClient() {
-    const dbConfig = this.config[process.env.NODE_ENV || 'development'];
+    const dbConfig = this.config;
 
     return this.dbFactory.createClient(dbConfig);
   }

@@ -25,6 +25,7 @@ const startServer = async () => {
     await dbConnectionManager.connectDB();
     server = app.listen(PORT, () => {
       console.log(`Server running at http://${HOST}:${PORT} in ${ENV} mode`);
+      console.log(`Application Name: ${APPNAME}`);
     });
 
     server.on('connection', connection => {

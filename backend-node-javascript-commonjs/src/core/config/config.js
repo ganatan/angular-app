@@ -9,7 +9,7 @@ if (env === undefined || env === null) {
 }
 
 const development = {
-  appName: 'backend-node-javascript-dev',
+  appName: 'backend-node-javascript-commonjs-dev',
   host: 'localhost',
   port: 9000,
   db: {
@@ -23,7 +23,7 @@ const development = {
 };
 
 const production = {
-  appName: 'backend-node-javascript-prod',
+  appName: 'backend-node-javascript-commonjs-prod',
   host: 'localhost',
   port: 3000,
   db: {
@@ -37,7 +37,7 @@ const production = {
 };
 
 const test = {
-  appName: 'backend-node-javascript-test',
+  appName: 'backend-node-javascript-commonjs-test',
   host: 'localhost',
   port: 7000,
   db: {
