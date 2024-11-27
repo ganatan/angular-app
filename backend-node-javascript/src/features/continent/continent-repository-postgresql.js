@@ -332,6 +332,15 @@ class PostgreSQLAdapter {
       const query = `
         INSERT INTO continent (code, name, wikipedia_link, area, population, countries_number) 
         VALUES ($1, $2, $3, $4, $5, $6)
+        RETURNING 
+          id, 
+          code, 
+          name, 
+          wikipedia_link AS "wikipediaLink", 
+          area, 
+          population, 
+          countries_number AS "countriesNumber", 
+          ROUND((population / NULLIF(area, 0))::NUMERIC, 5) AS "density"
       `;
 
       const values = [
@@ -343,7 +352,9 @@ class PostgreSQLAdapter {
         countriesNumber,
       ];
 
-      return await this.dbClient.query(query, values);
+      const result = await this.dbClient.query(query, values);
+
+      return result[0];
     } catch (error) {
       console.error('Error creating continent:', error);
 
@@ -371,6 +382,15 @@ class PostgreSQLAdapter {
           population = $5, 
           countries_number = $6
         WHERE id = $7
+        RETURNING 
+          id, 
+          code, 
+          name, 
+          wikipedia_link AS "wikipediaLink", 
+          area, 
+          population, 
+          countries_number AS "countriesNumber", 
+          ROUND((population / NULLIF(area, 0))::NUMERIC, 5) AS "density"
       `;
 
       const values = [
@@ -383,7 +403,9 @@ class PostgreSQLAdapter {
         parseInt(id, 10),
       ];
 
-      return await this.dbClient.query(query, values);
+      const result = await this.dbClient.query(query, values);
+
+      return result[0];
     } catch (error) {
       console.error('Error updating continent:', error);
 

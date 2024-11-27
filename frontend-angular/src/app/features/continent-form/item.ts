@@ -6,7 +6,7 @@ export interface Item {
   area: number;
   population: number;
   countriesNumber: number;
-  density: number;
+  // density: number;
 }
 
 

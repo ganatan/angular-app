@@ -119,6 +119,7 @@ export class TutorialComponent {
   createItem(item: Item) {
     this.itemService.createItem(item)
       .subscribe(data => {
+        console.log('00000000001:' + JSON.stringify(data));
         this.setForm(this.formItem, data);
       });
   }
