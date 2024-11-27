@@ -13,3 +13,40 @@
 {"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-27 14:17:49"}
 {"level":"error","message":"IP Address: undefined","timestamp":"2024-11-27 14:17:49"}
 {"level":"info","message":"GET /random-url - ::ffff:127.0.0.1","timestamp":"2024-11-27 14:17:50"}
+{"level":"error","message":"Error: Test Error","timestamp":"2024-11-27 15:18:02"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-27 15:18:02"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-27 15:18:02"}
+{"level":"error","message":"Error: Test Error","timestamp":"2024-11-27 15:18:02"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-27 15:18:02"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-27 15:18:02"}
+{"level":"error","message":"Error: Unknown error","timestamp":"2024-11-27 15:18:02"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-27 15:18:02"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-27 15:18:02"}
+{"level":"info","message":"GET /random-url - ::ffff:127.0.0.1","timestamp":"2024-11-27 15:18:03"}
+{"level":"info","message":"GET /continents/1014 - ::1","timestamp":"2024-11-27 15:19:05"}
+{"level":"info","message":"GET /continents - ::1","timestamp":"2024-11-27 15:19:06"}
+{"level":"info","message":"GET /continents - ::1","timestamp":"2024-11-27 15:19:09"}
+{"level":"info","message":"GET /continents/1034 - ::1","timestamp":"2024-11-27 15:19:12"}
+{"level":"info","message":"DELETE /continents/1034 - ::1","timestamp":"2024-11-27 15:19:13"}
+{"level":"info","message":"GET /continents - ::1","timestamp":"2024-11-27 15:19:15"}
+{"level":"info","message":"GET /continents/1014 - ::1","timestamp":"2024-11-27 15:19:19"}
+{"level":"info","message":"POST /continents - ::1","timestamp":"2024-11-27 15:19:36"}
+{"level":"info","message":"PUT /continents/1035 - ::1","timestamp":"2024-11-27 15:19:39"}
+{"level":"info","message":"GET /continents - ::1","timestamp":"2024-11-27 15:19:45"}
+{"level":"info","message":"GET /continents/1035 - ::1","timestamp":"2024-11-27 15:19:46"}
+{"level":"info","message":"POST /continents - ::1","timestamp":"2024-11-27 15:19:48"}
+{"level":"info","message":"POST /continents - ::1","timestamp":"2024-11-27 15:19:50"}
+{"level":"info","message":"POST /continents - ::1","timestamp":"2024-11-27 15:19:51"}
+{"level":"info","message":"GET /continents - ::1","timestamp":"2024-11-27 15:19:53"}
+{"level":"info","message":"GET /continents/1038 - ::1","timestamp":"2024-11-27 15:19:59"}
+{"level":"info","message":"DELETE /continents/1038 - ::1","timestamp":"2024-11-27 15:20:00"}
+{"level":"info","message":"GET /continents - ::1","timestamp":"2024-11-27 15:20:02"}
+{"level":"info","message":"GET /continents/1035 - ::1","timestamp":"2024-11-27 15:20:02"}
+{"level":"info","message":"DELETE /continents/1035 - ::1","timestamp":"2024-11-27 15:20:04"}
+{"level":"info","message":"GET /continents - ::1","timestamp":"2024-11-27 15:20:05"}
+{"level":"info","message":"GET /continents/1036 - ::1","timestamp":"2024-11-27 15:20:07"}
+{"level":"info","message":"DELETE /continents/1036 - ::1","timestamp":"2024-11-27 15:20:07"}
+{"level":"info","message":"GET /continents - ::1","timestamp":"2024-11-27 15:20:09"}
+{"level":"info","message":"GET /continents/1037 - ::1","timestamp":"2024-11-27 15:20:10"}
+{"level":"info","message":"DELETE /continents/1037 - ::1","timestamp":"2024-11-27 15:20:11"}
+{"level":"info","message":"GET /continents - ::1","timestamp":"2024-11-27 15:20:12"}
