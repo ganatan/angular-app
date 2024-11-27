@@ -340,7 +340,7 @@ class PostgreSQLAdapter {
           area, 
           population, 
           countries_number AS "countriesNumber", 
-          ROUND((population / NULLIF(area, 0))::NUMERIC, 5) AS "density"
+          ROUND((population::NUMERIC / NULLIF(area, 0))::NUMERIC, 5) AS "density"
       `;
 
       const values = [
@@ -390,7 +390,7 @@ class PostgreSQLAdapter {
           area, 
           population, 
           countries_number AS "countriesNumber", 
-          ROUND((population / NULLIF(area, 0))::NUMERIC, 5) AS "density"
+          ROUND((population::NUMERIC / NULLIF(area, 0))::NUMERIC, 5) AS "density"
       `;
 
       const values = [
