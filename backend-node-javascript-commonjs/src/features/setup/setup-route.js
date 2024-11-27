@@ -15,11 +15,11 @@ const databaseService = new DatabaseService();
 const domainService = new DomainService();
 const tableService = new TableService();
 
-const setupController = new SetupController(databaseService, domainService, tableService);
+const controller = new SetupController(databaseService, domainService, tableService);
 
-router.get('/create-database', setupController.createDatabase, handleResponse);
-router.get('/create-domains', setupController.createDomains, handleResponse);
-router.get('/create-tables', setupController.createTables, handleResponse);
+router.get('/create-database', controller.createDatabase, handleResponse);
+router.get('/create-domains', controller.createDomains, handleResponse);
+router.get('/create-tables', controller.createTables, handleResponse);
 
 router.get('/', (req, res, next) => {
   res.json(

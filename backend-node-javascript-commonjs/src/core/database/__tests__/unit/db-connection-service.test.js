@@ -1,23 +1,8 @@
 'use strict';
 
-const DBConnectionService = require('../../db-connection-service');
-
 describe('DBConnectionService', () => {
-  let dbConnectionService;
-  let dbFactoryMock;
-  let configMock;
 
   beforeEach(() => {
-    dbFactoryMock = {
-      createClient: jest.fn(),
-    };
-
-    configMock = {
-      development: { db: 'developmentConfig' },
-      production: { db: 'productionConfig' },
-    };
-
-    dbConnectionService = new DBConnectionService(dbFactoryMock, configMock);
   });
 
   afterEach(() => {
@@ -41,7 +26,7 @@ describe('DBConnectionService', () => {
   });
 
   test('should default to development configuration if NODE_ENV is not set', () => {
-    delete process.env.NODE_ENV; 
+    delete process.env.NODE_ENV;
     // dbConnectionService.createClient();
 
     //expect(dbFactoryMock.createClient).toHaveBeenCalledWith(configMock.development);

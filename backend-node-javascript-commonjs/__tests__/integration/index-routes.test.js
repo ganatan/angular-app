@@ -1,7 +1,7 @@
 'use strict';
 
 const request = require('supertest');
-const config = require('../../src/core/config/config');
+// const config = require('../../src/core/config/config');
 
 describe('Index Routes', () => {
   let app;

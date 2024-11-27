@@ -1,10 +1,10 @@
 'use strict';
 
-const request = require('supertest');
-const config = require('../../src/core/config/config');
+// const request = require('supertest');
+// const config = require('../../src/core/config/config');
 
 describe('Express application routes', () => {
-  let app;
+  // let app;
 
   beforeEach(() => {
     jest.resetModules();
