@@ -8,14 +8,14 @@ import ContinentController from './continent-controller.js';
 
 const router = express.Router();
 
-const continentRepository = new ContinentRepository();
-const continentService = new ContinentService(continentRepository);
-const continentController = new ContinentController(continentService);
+const repository = new ContinentRepository();
+const service = new ContinentService(repository);
+const controller = new ContinentController(service);
 
-router.get('/', continentController.getItems, handleResponse);
-router.get('/:id', continentController.getItem, handleResponse);
-router.post('/', continentController.createItem, handleResponse);
-router.delete('/:id', continentController.deleteItem, handleResponse);
-router.put('/:id', continentController.updateItem, handleResponse);
+router.get('/', controller.getItems, handleResponse);
+router.get('/:id', controller.getItem, handleResponse);
+router.post('/', controller.createItem, handleResponse);
+router.delete('/:id', controller.deleteItem, handleResponse);
+router.put('/:id', controller.updateItem, handleResponse);
 
 export default router;
