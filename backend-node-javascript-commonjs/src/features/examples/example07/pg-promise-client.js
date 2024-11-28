@@ -10,6 +10,6 @@ const config = {
   password: 'Trustno1',
 };
 
-const db = pgp(config);
+const dbClient = pgp(config);
 
-module.exports = db;
+module.exports = dbClient;

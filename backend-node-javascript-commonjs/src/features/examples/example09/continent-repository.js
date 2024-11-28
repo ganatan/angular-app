@@ -5,12 +5,12 @@ class ContinentRepository {
     this.dbClient = dbClient;
   }
 
-  async getItems(query = {}) {
+  async getItems() {
     try {
       const sql = 'SELECT * FROM CONTINENT';
-      const items = await this.dbClient.any(sql, query);
+      const result = await this.dbClient.query(sql);
 
-      return items;
+      return result.rows;
     } catch (error) {
       console.error('Error retrieving continents:', error);
 
