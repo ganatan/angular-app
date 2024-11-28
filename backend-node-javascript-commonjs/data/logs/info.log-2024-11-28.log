@@ -218,3 +218,26 @@
 {"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:53:28"}
 {"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:53:28"}
 {"level":"info","message":"GET /random-url - ::ffff:127.0.0.1","timestamp":"2024-11-28 13:53:29"}
+{"level":"info","message":"GET /example06 - ::1","timestamp":"2024-11-28 13:57:13"}
+{"level":"info","message":"GET /example05 - ::1","timestamp":"2024-11-28 13:57:15"}
+{"level":"info","message":"GET /example04 - ::1","timestamp":"2024-11-28 13:57:17"}
+{"level":"info","message":"GET /example03 - ::1","timestamp":"2024-11-28 13:57:19"}
+{"level":"info","message":"GET /example02 - ::1","timestamp":"2024-11-28 13:57:22"}
+{"level":"info","message":"GET /example01 - ::1","timestamp":"2024-11-28 13:57:24"}
+{"level":"info","message":"GET /example07 - ::1","timestamp":"2024-11-28 13:57:27"}
+{"level":"info","message":"GET /example07 - ::1","timestamp":"2024-11-28 14:03:36"}
+{"level":"info","message":"GET /example07 - ::1","timestamp":"2024-11-28 14:04:54"}
+{"level":"info","message":"GET /example07 - ::1","timestamp":"2024-11-28 14:05:22"}
+{"level":"info","message":"GET /example07 - ::1","timestamp":"2024-11-28 14:05:29"}
+{"level":"error","message":"Error: Test Error","timestamp":"2024-11-28 14:06:11"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 14:06:11"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 14:06:11"}
+{"level":"error","message":"Error: Test Error","timestamp":"2024-11-28 14:06:11"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 14:06:11"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 14:06:11"}
+{"level":"error","message":"Error: Unknown error","timestamp":"2024-11-28 14:06:11"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 14:06:11"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 14:06:11"}
+{"level":"info","message":"GET /random-url - ::ffff:127.0.0.1","timestamp":"2024-11-28 14:06:12"}
+{"level":"info","message":"GET /example07 - ::1","timestamp":"2024-11-28 14:06:20"}
+{"level":"info","message":"GET /example07 - ::1","timestamp":"2024-11-28 14:06:31"}

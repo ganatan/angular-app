@@ -3,7 +3,7 @@
 const express = require('express');
 const router = express.Router();
 
-const handleResponse = require('../../infrastructure/logger/response-handler.js');
+const handleResponse = require('../../../infrastructure/logger/response-handler.js');
 
 const ContinentController = require('./continent-controller');
 
