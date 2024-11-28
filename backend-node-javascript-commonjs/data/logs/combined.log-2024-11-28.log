@@ -163,3 +163,24 @@
 {"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:31:14"}
 {"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:31:14"}
 {"level":"info","message":"GET /random-url - ::ffff:127.0.0.1","timestamp":"2024-11-28 13:31:16"}
+{"level":"info","message":"GET /example05 - ::1","timestamp":"2024-11-28 13:37:43"}
+{"level":"info","message":"GET /example05 - ::1","timestamp":"2024-11-28 13:39:11"}
+{"level":"info","message":"GET /example06 - ::1","timestamp":"2024-11-28 13:42:07"}
+{"level":"info","message":"GET /example06 - ::1","timestamp":"2024-11-28 13:43:03"}
+{"level":"info","message":"GET /example02 - ::1","timestamp":"2024-11-28 13:44:27"}
+{"level":"info","message":"GET /example01 - ::1","timestamp":"2024-11-28 13:45:25"}
+{"level":"info","message":"GET /example02 - ::1","timestamp":"2024-11-28 13:45:28"}
+{"level":"info","message":"GET /example03 - ::1","timestamp":"2024-11-28 13:45:30"}
+{"level":"info","message":"GET /example04 - ::1","timestamp":"2024-11-28 13:45:33"}
+{"level":"info","message":"GET /example05 - ::1","timestamp":"2024-11-28 13:45:35"}
+{"level":"info","message":"GET /example06 - ::1","timestamp":"2024-11-28 13:45:39"}
+{"level":"error","message":"Error: Test Error","timestamp":"2024-11-28 13:46:27"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:46:27"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:46:27"}
+{"level":"error","message":"Error: Test Error","timestamp":"2024-11-28 13:46:27"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:46:27"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:46:27"}
+{"level":"error","message":"Error: Unknown error","timestamp":"2024-11-28 13:46:27"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:46:27"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:46:27"}
+{"level":"info","message":"GET /random-url - ::ffff:127.0.0.1","timestamp":"2024-11-28 13:46:28"}

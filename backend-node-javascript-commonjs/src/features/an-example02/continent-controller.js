@@ -3,7 +3,7 @@
 class ContinentController {
   constructor() {}
 
-  getItems(req, res, next) {
+  async getItems(req, res, next) {
     try {
       const items = [
         { name: 'continent0001' },
