@@ -1,11 +1,8 @@
 'use strict';
 
-const AnExampleService = require('./an-example-service');
-
-class AnExampleController {
-  constructor() {
-    this.service = new AnExampleService();
-    this.getItems = this.getItems.bind(this);
+class ContinentController {
+  constructor(service) {
+    this.service = service;
   }
 
   async getItems(req, res, next) {
@@ -23,4 +20,4 @@ class AnExampleController {
 
 }
 
-module.exports = AnExampleController;
+module.exports = ContinentController;

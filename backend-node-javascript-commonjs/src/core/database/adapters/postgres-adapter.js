@@ -4,13 +4,14 @@ const { Pool } = require('pg');
 
 class PostgreSQLClient {
   constructor(dbClient) {
-    this.pool = new Pool({
+    const dbConfig = {
       user: dbClient.user,
       host: dbClient.host,
       database: dbClient.database,
       password: dbClient.password,
       port: dbClient.port,
-    });
+    };
+    this.pool = new Pool(dbConfig);
 
     if (PostgreSQLClient.instance) {
       return PostgreSQLClient.instance;

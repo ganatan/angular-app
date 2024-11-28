@@ -1,16 +1,17 @@
 'use strict';
 
-class AnExampleService {
+class ContinentRepository {
+
   constructor() {
   }
 
   async getItems(filters) {
     try {
       const items = [
-        { name: 'example0001' },
-        { name: 'example0002' },
-        { name: 'example0003' },
-        { name: 'example0004' },
+        { name: 'continent0001' },
+        { name: 'continent0002' },
+        { name: 'continent0003' },
+        { name: 'continent0004' },
       ];
 
       return items;
@@ -20,6 +21,7 @@ class AnExampleService {
       return null;
     }
   }
+
 }
 
-module.exports = AnExampleService;
+module.exports = ContinentRepository;

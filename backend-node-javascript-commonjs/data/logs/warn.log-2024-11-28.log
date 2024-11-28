@@ -34,3 +34,57 @@
 {"level":"error","message":"Error: Unknown error","timestamp":"2024-11-28 08:50:31"}
 {"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 08:50:31"}
 {"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 08:50:31"}
+{"level":"error","message":"Error: Cannot read properties of undefined (reading 'getItems')","timestamp":"2024-11-28 10:21:28"}
+{"level":"error","message":"Request: GET /examples","timestamp":"2024-11-28 10:21:28"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 10:21:28"}
+{"level":"error","message":"Error: Cannot read properties of undefined (reading 'service')","timestamp":"2024-11-28 10:23:21"}
+{"level":"error","message":"Request: GET /examples","timestamp":"2024-11-28 10:23:21"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 10:23:21"}
+{"level":"error","message":"Error: Cannot read properties of undefined (reading 'service')","timestamp":"2024-11-28 12:40:09"}
+{"level":"error","message":"Request: GET /examples","timestamp":"2024-11-28 12:40:09"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 12:40:09"}
+{"level":"error","message":"Error: Cannot read properties of undefined (reading 'service')","timestamp":"2024-11-28 12:40:32"}
+{"level":"error","message":"Request: GET /examples","timestamp":"2024-11-28 12:40:32"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 12:40:32"}
+{"level":"error","message":"Error: Cannot read properties of undefined (reading 'service')","timestamp":"2024-11-28 12:40:58"}
+{"level":"error","message":"Request: GET /examples","timestamp":"2024-11-28 12:40:58"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 12:40:58"}
+{"level":"error","message":"Error: Cannot read properties of undefined (reading 'service')","timestamp":"2024-11-28 12:41:10"}
+{"level":"error","message":"Request: GET /examples","timestamp":"2024-11-28 12:41:10"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 12:41:10"}
+{"level":"error","message":"Error: Cannot read properties of undefined (reading 'service')","timestamp":"2024-11-28 12:41:25"}
+{"level":"error","message":"Request: GET /examples","timestamp":"2024-11-28 12:41:25"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 12:41:25"}
+{"level":"error","message":"Error: Cannot read properties of undefined (reading 'service')","timestamp":"2024-11-28 12:42:33"}
+{"level":"error","message":"Request: GET /examples","timestamp":"2024-11-28 12:42:33"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 12:42:33"}
+{"level":"error","message":"Error: Cannot read properties of undefined (reading 'service')","timestamp":"2024-11-28 12:43:45"}
+{"level":"error","message":"Request: GET /examples","timestamp":"2024-11-28 12:43:45"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 12:43:45"}
+{"level":"error","message":"Error: Cannot read properties of undefined (reading 'service')","timestamp":"2024-11-28 12:44:48"}
+{"level":"error","message":"Request: GET /examples","timestamp":"2024-11-28 12:44:48"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 12:44:48"}
+{"level":"error","message":"Error: Cannot read properties of undefined (reading 'service')","timestamp":"2024-11-28 12:53:37"}
+{"level":"error","message":"Request: GET /example01","timestamp":"2024-11-28 12:53:37"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 12:53:37"}
+{"level":"error","message":"Error: sdfgsdf is not defined","timestamp":"2024-11-28 13:12:13"}
+{"level":"error","message":"Request: GET /example01","timestamp":"2024-11-28 13:12:13"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 13:12:13"}
+{"level":"error","message":"Error: sdfgsdf is not defined","timestamp":"2024-11-28 13:13:08"}
+{"level":"error","message":"Request: GET /example01","timestamp":"2024-11-28 13:13:08"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 13:13:08"}
+{"level":"error","message":"Error: sdfgsdf is not defined","timestamp":"2024-11-28 13:15:10"}
+{"level":"error","message":"Request: GET /example01","timestamp":"2024-11-28 13:15:10"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 13:15:10"}
+{"level":"error","message":"Error: sdfgsdf is not defined","timestamp":"2024-11-28 13:15:10"}
+{"level":"error","message":"Request: GET /example01","timestamp":"2024-11-28 13:15:10"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 13:15:10"}
+{"level":"error","message":"Error: Test Error","timestamp":"2024-11-28 13:31:14"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:31:14"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:31:14"}
+{"level":"error","message":"Error: Test Error","timestamp":"2024-11-28 13:31:14"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:31:14"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:31:14"}
+{"level":"error","message":"Error: Unknown error","timestamp":"2024-11-28 13:31:14"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:31:14"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:31:14"}

@@ -1,13 +1,13 @@
 'use strict';
 
 const express = require('express');
+const router = express.Router();
 
 const handleResponse = require('../../infrastructure/logger/response-handler.js');
 
-const AnExampleController = require('./an-example-controller');
+const ContinentController = require('./continent-controller');
 
-const router = express.Router();
-const controller = new AnExampleController();
+const controller = new ContinentController();
 
 router.get('/', controller.getItems, handleResponse);
 
