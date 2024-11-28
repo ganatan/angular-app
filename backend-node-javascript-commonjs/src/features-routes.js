@@ -13,8 +13,6 @@ const example04 = require('./features/an-example04/continent-route');
 const example05 = require('./features/an-example05/continent-route');
 const example06 = require('./features/an-example06/continent-route');
 
-const example10 = require('./features/an-example10/continent-route');
-
 const index = require('./index-routes');
 
 router.use('/continents', continent);
@@ -25,8 +23,6 @@ router.use('/example03', example03);
 router.use('/example04', example04);
 router.use('/example05', example05);
 router.use('/example06', example06);
-
-router.use('/example10', example10);
 
 router.use('/', index);
 router.use('*', index);

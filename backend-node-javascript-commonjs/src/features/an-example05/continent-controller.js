@@ -8,7 +8,8 @@ class ContinentController {
 
   async getItems(req, res, next) {
     try {
-      res.locals.data = this.service.getItems();
+      const items = await this.service.getItems();
+      res.locals.data = items;
 
       return next();
     } catch (error) {

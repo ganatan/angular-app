@@ -5,8 +5,10 @@ class ContinentService {
     this.repository = repository;
   }
 
-  async getItems() {
-    return this.repository.getItems();
+  async getItems(query) {
+    const items = await this.repository.getItems(query);
+
+    return items || [];
   }
 }
 

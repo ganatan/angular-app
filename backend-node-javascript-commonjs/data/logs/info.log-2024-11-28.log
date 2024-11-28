@@ -184,3 +184,37 @@
 {"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:46:27"}
 {"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:46:27"}
 {"level":"info","message":"GET /random-url - ::ffff:127.0.0.1","timestamp":"2024-11-28 13:46:28"}
+{"level":"info","message":"GET /example06 - ::1","timestamp":"2024-11-28 13:49:23"}
+{"level":"info","message":"GET /example05 - ::1","timestamp":"2024-11-28 13:49:25"}
+{"level":"info","message":"GET /example06 - ::1","timestamp":"2024-11-28 13:49:27"}
+{"level":"info","message":"GET /example06 - ::1","timestamp":"2024-11-28 13:50:14"}
+{"level":"error","message":"Error: filters is not defined","timestamp":"2024-11-28 13:50:14"}
+{"level":"error","message":"Request: GET /example06","timestamp":"2024-11-28 13:50:14"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 13:50:14"}
+{"level":"info","message":"GET /example06 - ::1","timestamp":"2024-11-28 13:50:27"}
+{"level":"info","message":"GET /example10 - ::1","timestamp":"2024-11-28 13:50:56"}
+{"level":"error","message":"Error: Cannot read properties of undefined (reading 'service')","timestamp":"2024-11-28 13:50:56"}
+{"level":"error","message":"Request: GET /example10","timestamp":"2024-11-28 13:50:56"}
+{"level":"error","message":"IP Address: ::1","timestamp":"2024-11-28 13:50:56"}
+{"level":"info","message":"GET /example10 - ::1","timestamp":"2024-11-28 13:51:10"}
+{"level":"info","message":"GET /example06 - ::1","timestamp":"2024-11-28 13:51:31"}
+{"level":"info","message":"GET /example06 - ::1","timestamp":"2024-11-28 13:52:05"}
+{"level":"error","message":"Error: Test Error","timestamp":"2024-11-28 13:53:07"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:53:07"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:53:07"}
+{"level":"error","message":"Error: Test Error","timestamp":"2024-11-28 13:53:07"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:53:07"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:53:07"}
+{"level":"error","message":"Error: Unknown error","timestamp":"2024-11-28 13:53:07"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:53:07"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:53:07"}
+{"level":"error","message":"Error: Test Error","timestamp":"2024-11-28 13:53:28"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:53:28"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:53:28"}
+{"level":"error","message":"Error: Test Error","timestamp":"2024-11-28 13:53:28"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:53:28"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:53:28"}
+{"level":"error","message":"Error: Unknown error","timestamp":"2024-11-28 13:53:28"}
+{"level":"error","message":"Request: undefined undefined","timestamp":"2024-11-28 13:53:28"}
+{"level":"error","message":"IP Address: undefined","timestamp":"2024-11-28 13:53:28"}
+{"level":"info","message":"GET /random-url - ::ffff:127.0.0.1","timestamp":"2024-11-28 13:53:29"}
