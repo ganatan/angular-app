@@ -1,18 +1,18 @@
 'use strict';
 
-const continentsData = require('../../../data/mock/continent-mock.json');
+const itemsData = require('../../../data/mock/continent-mock.json');
 
 class MockAdapter {
   constructor(dbClient) {
     this.dbClient = dbClient;
-    this.continents = continentsData;
+    this.items = itemsData;
   }
 
   async getMockTrace() {
     return null;
   }
 
-  async getItems(req) {
+  async getItems(filters) {
     try {
       const {
         name = '',
@@ -28,79 +28,79 @@ class MockAdapter {
         page = 1,
         limit = 10,
         sort = 'name',
-      } = req.query;
+      } = filters;
 
       const validPage = page > 0 ? parseInt(page, 10) : 1;
       const validLimit = limit > 0 ? parseInt(limit, 10) : 10;
       const offset = (validPage - 1) * validLimit;
 
-      let filteredContinents = this.continents;
+      let filteredItems = this.items;
 
       if (name) {
-        filteredContinents = filteredContinents.filter(continent => continent.name.toLowerCase().includes(name.toLowerCase()));
+        filteredItems = filteredItems.filter(item => item.name.toLowerCase().includes(name.toLowerCase()));
       }
 
       if (code) {
-        filteredContinents = filteredContinents.filter(continent => continent.code.toLowerCase().includes(code.toLowerCase()));
+        filteredItems = filteredItems.filter(item => item.code.toLowerCase().includes(code.toLowerCase()));
       }
 
       if (areaMin !== null) {
-        filteredContinents = filteredContinents.filter(continent => continent.area >= parseInt(areaMin, 10));
+        filteredItems = filteredItems.filter(item => item.area >= parseInt(areaMin, 10));
       }
       if (areaMax !== null) {
-        filteredContinents = filteredContinents.filter(continent => continent.area <= parseInt(areaMax, 10));
+        filteredItems = filteredItems.filter(item => item.area <= parseInt(areaMax, 10));
       }
 
       if (populationMin !== null) {
-        filteredContinents = filteredContinents.filter(continent => continent.population >= parseInt(populationMin, 10));
+        filteredItems = filteredItems.filter(item => item.population >= parseInt(populationMin, 10));
       }
       if (populationMax !== null) {
-        filteredContinents = filteredContinents.filter(continent => continent.population <= parseInt(populationMax, 10));
+        filteredItems = filteredItems.filter(item => item.population <= parseInt(populationMax, 10));
       }
 
       if (countriesNumberMin !== null) {
-        filteredContinents = filteredContinents.filter(continent => continent.countriesNumber >= parseInt(countriesNumberMin, 10));
+        filteredItems = filteredItems.filter(item => item.countriesNumber >= parseInt(countriesNumberMin, 10));
       }
       if (countriesNumberMax !== null) {
-        filteredContinents = filteredContinents.filter(continent => continent.countriesNumber <= parseInt(countriesNumberMax, 10));
+        filteredItems = filteredItems.filter(item => item.countriesNumber <= parseInt(countriesNumberMax, 10));
       }
 
       if (densityMin !== null) {
-        filteredContinents = filteredContinents.filter(continent => (continent.population / continent.area) >= parseFloat(densityMin));
+        filteredItems = filteredItems.filter(item => (item.population / item.area) >= parseFloat(densityMin));
       }
       if (densityMax !== null) {
-        filteredContinents = filteredContinents.filter(continent => (continent.population / continent.area) <= parseFloat(densityMax));
+        filteredItems = filteredItems.filter(item => (item.population / item.area) <= parseFloat(densityMax));
       }
 
       const sortOrder = sort.startsWith('-') ? -1 : 1;
       const sortBy = sort.startsWith('-') ? sort.substring(1) : sort;
 
-      filteredContinents.sort((itema, itemb) => {
+      filteredItems.sort((itema, itemb) => {
         if (itema[sortBy] < itemb[sortBy]) { return -1 * sortOrder; };
         if (itema[sortBy] > itemb[sortBy]) { return 1 * sortOrder; };
 
         return 0;
       });
 
-      const paginatedContinents = filteredContinents.slice(offset, offset + validLimit);
+      const paginatedItems = filteredItems.slice(offset, offset + validLimit);
 
-      paginatedContinents.forEach(continent => {
-        continent.density = continent.area ? (continent.population / continent.area).toFixed(2) : 0;
+      paginatedItems.forEach(item => {
+        item.density = item.area ? (item.population / item.area).toFixed(2) : 0;
       });
 
-      const totals = this.calculateTotals(filteredContinents);
-      const paginationTotals = this.calculateTotals(paginatedContinents);
+      const totals = this.calculateTotals(filteredItems);
+      const paginationTotals = this.calculateTotals(paginatedItems);
 
       return {
         paginationTotals: {
-          count: paginatedContinents.length,
+          count: paginatedItems.length,
           ...paginationTotals,
         },
         allTotals: {
-          count: filteredContinents.length,
+          count: filteredItems.length,
           ...totals,
         },
-        continents: paginatedContinents,
+        continents: paginatedItems,
       };
 
     } catch (error) {
@@ -110,10 +110,10 @@ class MockAdapter {
     }
   }
 
-  calculateTotals(continents) {
-    const totalArea = continents.reduce((sum, continent) => sum + continent.area, 0);
-    const totalPopulation = continents.reduce((sum, continent) => sum + continent.population, 0);
-    const totalCountries = continents.reduce((sum, continent) => sum + continent.countriesNumber, 0);
+  calculateTotals(items) {
+    const totalArea = items.reduce((sum, item) => sum + item.area, 0);
+    const totalPopulation = items.reduce((sum, item) => sum + item.population, 0);
+    const totalCountries = items.reduce((sum, item) => sum + item.countriesNumber, 0);
     const averageDensity = totalArea ? (totalPopulation / totalArea).toFixed(2) : 0;
 
     return {
@@ -125,35 +125,35 @@ class MockAdapter {
   }
 
   async getItem(id) {
-    const continent = this.continents.find(cont => cont.id === parseInt(id, 10));
+    const result = this.items.find(item => item.id === parseInt(id, 10));
 
-    return continent || null;
+    return result || null;
   }
 
-  async createItem(continentData) {
-    const newId = this.continents.length ? Math.max(...this.continents.map(cont => cont.id)) + 1 : 1;
-    const newContinent = { id: newId, ...continentData };
-    this.continents.push(newContinent);
+  async createItem(itemData) {
+    const newId = this.items.length ? Math.max(...this.items.map(cont => cont.id)) + 1 : 1;
+    const newItem = { id: newId, ...itemData };
+    this.items.push(newItem);
 
-    return newContinent;
+    return newItem;
   }
 
-  async updateItem(id, continentData) {
-    const index = this.continents.findIndex(cont => cont.id === parseInt(id, 10));
+  async updateItem(id, itemData) {
+    const index = this.items.findIndex(cont => cont.id === parseInt(id, 10));
     if (index === -1) { return null; };
 
-    this.continents[index] = { ...this.continents[index], ...continentData };
+    this.items[index] = { ...this.items[index], ...itemData };
 
-    return this.continents[index];
+    return this.items[index];
   }
 
   async deleteItem(id) {
-    const index = this.continents.findIndex(cont => cont.id === parseInt(id, 10));
+    const index = this.items.findIndex(cont => cont.id === parseInt(id, 10));
     if (index === -1) { return null; };
 
-    const deletedContinent = this.continents.splice(index, 1);
+    const deletedItem = this.items.splice(index, 1);
 
-    return deletedContinent[0];
+    return deletedItem[0];
   }
 }
 

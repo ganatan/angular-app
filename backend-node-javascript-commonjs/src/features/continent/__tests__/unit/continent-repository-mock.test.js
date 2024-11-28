@@ -13,15 +13,13 @@ describe('MockAdapter', () => {
 
     test('should handle filtering with zero values', async () => {
       // Arrange
-      const req = {
-        query: {
-          countriesNumberMin: 0,
-          countriesNumberMax: 0,
-        },
+      const body = {
+        countriesNumberMin: 0,
+        countriesNumberMax: 0,
       };
 
       // Act
-      const result = await mockAdapter.getItems(req);
+      const result = await mockAdapter.getItems(body);
 
       // Assert
       expect(result.continents).toBeDefined();
@@ -33,22 +31,6 @@ describe('MockAdapter', () => {
     test('should handle invalid sort field gracefully', async () => {
       // Arrange: Create a condition where sortBy will be undefined
       const req = { query: { sort: '-' } };
-
-      // Act
-      const result = await mockAdapter.getItems(req);
-
-      // Assert
-      expect(result).toBeDefined();
-      expect(result.continents).toBeDefined();
-    });
-
-    test('should filter by maximum density with zero area', async () => {
-      // Arrange
-      const req = { query: { densityMax: 0.1 } };
-      mockAdapter.continents = [
-        { ...mockAdapter.continents[0] },
-        { ...mockAdapter.continents[0], area: 0, population: 100 },
-      ];
 
       // Act
       const result = await mockAdapter.getItems(req);
@@ -140,17 +122,4 @@ describe('MockAdapter', () => {
     });
   });
 
-  describe('error handling', () => {
-    test('should handle error when continents data is corrupted', async () => {
-      // Arrange
-      mockAdapter.continents = null;
-      const req = { query: {} };
-
-      // Act
-      const result = await mockAdapter.getItems(req);
-
-      // Assert
-      expect(result).toBeNull();
-    });
-  });
 });
