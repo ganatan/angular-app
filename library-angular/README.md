@@ -35,4 +35,10 @@ ng generate library @ganatan-angular/nga-edit
 "test-table": "ng test @ganatan-angular/nga-table",
 "publish-table": "npm run build-table & cd dist & cd ganatan-angular/nga-table & npm publish --access public",
 
+"build-edit": "ng build @ganatan-angular/nga-edit",
+"dev-edit": "ng build @ganatan-angular/nga-edit --watch",
+"lint-edit": "ng lint @ganatan-angular/nga-edit",
+"test-edit": "ng test @ganatan-angular/nga-edit",
+"publish-edit": "npm run build-table & cd dist & cd ganatan-angular/nga-edit & npm publish --access public"
+
 ---

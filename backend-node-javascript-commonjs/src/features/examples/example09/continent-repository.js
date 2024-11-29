@@ -5,7 +5,7 @@ class ContinentRepository {
     this.dbClient = dbClient;
   }
 
-  async getItems() {
+  async getItems(filters) {
     try {
       const sql = 'SELECT * FROM CONTINENT';
       const result = await this.dbClient.query(sql);
