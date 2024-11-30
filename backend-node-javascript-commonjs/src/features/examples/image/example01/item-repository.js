@@ -1,9 +1,9 @@
 'use strict';
 
-class ItemRepository {
+const fs = require('fs').promises;
 
-  constructor() {
-  }
+class ItemRepository {
+  constructor() {}
 
   async getItems(query) {
     try {
@@ -17,11 +17,19 @@ class ItemRepository {
       return items;
     } catch (error) {
       console.error('Error retrieving examples:', error);
-
       return null;
     }
   }
 
+  async validateImagePath(imagePath) {
+    console.log('00000000001:' + imagePath)
+    try {
+      await fs.access(imagePath);
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
 }
 
 module.exports = ItemRepository;

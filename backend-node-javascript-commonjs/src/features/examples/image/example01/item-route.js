@@ -14,5 +14,6 @@ const service = new ItemService(repository);
 const controller = new ItemController(service);
 
 router.get('/', controller.getItems, handleResponse);
+router.get('/img/:name', controller.getItemImage, handleResponse);
 
 module.exports = router;
