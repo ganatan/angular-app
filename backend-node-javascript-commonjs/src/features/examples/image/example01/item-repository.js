@@ -22,7 +22,6 @@ class ItemRepository {
   }
 
   async validateImagePath(imagePath) {
-    console.log('00000000001:' + imagePath)
     try {
       await fs.access(imagePath);
       return true;
@@ -30,6 +29,7 @@ class ItemRepository {
       return false;
     }
   }
+
 }
 
 module.exports = ItemRepository;

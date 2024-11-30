@@ -37,6 +37,7 @@ class ItemController {
       return next(error);
     }
   }
+  
 }
 
 module.exports = ItemController;

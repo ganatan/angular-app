@@ -18,7 +18,6 @@ const continentExample09 = require('./features/examples/continent/example09/cont
 
 const imageExample01 = require('./features/examples/image/example01/item-route');
 
-
 const index = require('./index-routes');
 
 router.use('/continents', continent);
