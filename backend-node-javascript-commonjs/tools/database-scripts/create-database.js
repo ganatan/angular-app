@@ -3,7 +3,7 @@
 const DatabaseService = require('../../src/features/setup/database-service');
 
 async function main() {
-  const databaseName = 'woper';
+  const databaseName = 'backend_angular';
 
   try {
     console.log(`Starting database creation for: ${databaseName}`);

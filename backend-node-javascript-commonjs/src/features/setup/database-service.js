@@ -6,7 +6,7 @@ class DatabaseService {
 
   createDatabase = async () => {
 
-    const createDatabaseName = 'woper';
+    const createDatabaseName = 'backend_angular';
     const client = await pgPostgresPool.connect();
     console.log(`Connected to PostgreSQL as ${client.user}`);
 

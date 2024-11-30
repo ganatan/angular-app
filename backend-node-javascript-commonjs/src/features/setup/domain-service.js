@@ -6,7 +6,7 @@ const { Pool } = require('pg');
 const pgPostgresPool = new Pool({
   user: 'postgres',
   host: 'localhost',
-  database: 'woper',
+  database: 'backend_angular',
   password: 'Trustno1',
   port: 5432,
 });
@@ -66,7 +66,7 @@ class DomainService {
   };
 
   createDomains = async () => {
-    pgPostgresPool.database = 'woper';
+    pgPostgresPool.database = 'backend_angular';
     const client = await pgPostgresPool.connect();
     console.log(`Connected to PostgreSQL as ${client.user}`);
 
