@@ -1,22 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
+
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
-
-import { SharedModule } from './shared/shared.module';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [
     CommonModule,
-    RouterLink,
     RouterOutlet,
-    SharedModule,
+    HeaderComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
   title = 'angular-routing';
@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     if (isPlatformBrowser(this.platformId)) {
       const navMain = this.document.getElementById('navbarCollapse');
       if (navMain) {
@@ -39,8 +40,6 @@ export class AppComponent implements OnInit {
         }
       }
     }
-
   }
 
 }
-

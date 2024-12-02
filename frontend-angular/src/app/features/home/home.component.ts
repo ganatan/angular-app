@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 import { environment } from '../../../environments/environment';
-
 import { SeoService } from '../../core/services/seo/seo.service';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule, RouterLink, RouterOutlet],
+  imports: [CommonModule, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -21,18 +19,6 @@ export class HomeComponent {
   fontawesome = environment.application.fontawesome;
 
   items = [
-    {
-      icon: "fa-solid fa-globe",
-      name: "continents",
-      description: "continents",
-      link: '/continents'
-    },
-    {
-      icon: "fa-solid fa-screwdriver-wrench",
-      name: "library",
-      description: "library-angular",
-      link: '/library-angular'
-    },
     {
       icon: "fa-solid fa-file-lines",
       name: "Landing Page",
@@ -64,12 +50,6 @@ export class HomeComponent {
       link: '/boxoffice'
     },
     {
-      icon: "fa-brands fa-readme",
-      name: "CRUD",
-      description: "Create Read Update",
-      link: '/crud'
-    },
-    {
       icon: "fa-solid fa-blender-phone",
       name: "Services",
       description: "angular Services",
@@ -93,25 +73,6 @@ export class HomeComponent {
       description: "Reactive & Template",
       link: '/forms'
     },
-    {
-      icon: "fa-regular fa-window-restore",
-      name: "Modal",
-      description: "Modal with bootstrap",
-      link: '/modal'
-    },
-    {
-      icon: "fa-solid fa-spell-check",
-      name: "Prism",
-      description: "Syntax highlighter",
-      link: '/prism'
-    },
-    {
-      icon: "fa-regular fa-comment-dots",
-      name: "Prettyjson",
-      description: "JSON formatter",
-      link: '/prettyjson'
-    },
-
   ]
 
   constructor(private seoService: SeoService) {

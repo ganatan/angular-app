@@ -11,7 +11,7 @@ describe('NotFoundComponent', () => {
       imports: [NotFoundComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(NotFoundComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

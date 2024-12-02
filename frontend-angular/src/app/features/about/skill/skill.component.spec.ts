@@ -11,7 +11,7 @@ describe('SkillComponent', () => {
       imports: [SkillComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(SkillComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-mapping',
-  standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './mapping.component.html',
   styleUrl: './mapping.component.css'
 })

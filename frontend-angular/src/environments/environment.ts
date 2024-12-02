@@ -2,9 +2,9 @@ export const environment = {
   application:
   {
     name: 'angular-starter',
-    angular: 'Angular 18.2.12',
+    angular: 'Angular 19.0.1',
     bootstrap: 'Bootstrap 5.3.3',
-    fontawesome: 'Font Awesome 6.6.0',
+    fontawesome: 'Font Awesome 6.7.1',
   },
   urlNews: './assets/params/json/mock/trailers.json',
   urlMovies: './assets/params/json/mock/movies.json',
@@ -12,5 +12,5 @@ export const environment = {
     api: false,
     url: './assets/params/json/crud/',
   },
-  backendAdminUrl: 'http://localhost:3000',
+  backendAdminUrl: 'http://localhost:9000',
 };

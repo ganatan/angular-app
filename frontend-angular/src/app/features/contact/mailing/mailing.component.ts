@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-mailing',
-  standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './mailing.component.html',
   styleUrl: './mailing.component.css'
 })

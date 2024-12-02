@@ -11,7 +11,7 @@ describe('MailingComponent', () => {
       imports: [MailingComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(MailingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

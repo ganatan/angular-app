@@ -11,7 +11,7 @@ describe('WebsiteComponent', () => {
       imports: [WebsiteComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(WebsiteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -11,7 +11,7 @@ describe('MappingComponent', () => {
       imports: [MappingComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(MappingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
