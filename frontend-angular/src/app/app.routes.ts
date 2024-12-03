@@ -7,6 +7,17 @@ export const routes: Routes = [
   { path: '', component: HomeComponent, },
 
   {
+    path: 'continents',
+    loadComponent: () => import('./features/continent/item.component')
+      .then(mod => mod.ItemComponent)
+  },
+  {
+    path: 'continents/:id',
+    loadComponent: () => import('./features/continent-form/item.component')
+      .then(mod => mod.ItemComponent)
+  },
+
+  {
     path: 'landing-page',
     loadComponent: () => import('./features/tutorials/example-landing-page/tutorial.component')
       .then(mod => mod.TutorialComponent)

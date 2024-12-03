@@ -20,6 +20,12 @@ export class HomeComponent {
 
   items = [
     {
+      icon: "fa-solid fa-globe",
+      name: "continents",
+      description: "continents",
+      link: '/continents'
+    },
+    {
       icon: "fa-solid fa-file-lines",
       name: "Landing Page",
       description: "Css linear-gradient",
