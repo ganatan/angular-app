@@ -9,6 +9,7 @@ import {
   forwardRef,
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
+
 import 'prismjs/prism';
 import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-css';

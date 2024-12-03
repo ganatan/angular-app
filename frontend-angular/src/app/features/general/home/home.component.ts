@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
-import { environment } from '../../../environments/environment';
-import { SeoService } from '../../core/services/seo/seo.service';
+import { environment } from '../../../../environments/environment';
+import { SeoService } from '../../../core/services/seo/seo.service';
 
 @Component({
   selector: 'app-home',

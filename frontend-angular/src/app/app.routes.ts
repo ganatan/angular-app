@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 
-import { HomeComponent } from './features/home/home.component';
-import { NotFoundComponent } from './features/not-found/not-found.component';
+import { HomeComponent } from './features/general/home/home.component'
+import { NotFoundComponent } from './features/general/not-found/not-found.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent, },
@@ -13,12 +13,12 @@ export const routes: Routes = [
   },
   {
     path: 'continents',
-    loadComponent: () => import('./features/continent/item.component')
+    loadComponent: () => import('./features/general/continent/item.component')
       .then(mod => mod.ItemComponent)
   },
   {
     path: 'continents/:id',
-    loadComponent: () => import('./features/continent-form/item.component')
+    loadComponent: () => import('./features/general/continent-form/item.component')
       .then(mod => mod.ItemComponent)
   },
 
@@ -72,24 +72,24 @@ export const routes: Routes = [
 
   {
     path: 'login',
-    loadComponent: () => import(`./features/login/login.component`)
+    loadComponent: () => import(`./features/general/login/login.component`)
       .then(mod => mod.LoginComponent)
   },
   {
     path: 'signup',
-    loadComponent: () => import(`./features/signup/signup.component`)
+    loadComponent: () => import(`./features/general/signup/signup.component`)
       .then(mod => mod.SignupComponent)
   },
 
   {
     path: 'contact',
-    loadChildren: () => import(`./features/contact/contact.routes`)
+    loadChildren: () => import(`./features/general/contact/contact.routes`)
       .then(routes => routes.routes)
   },
 
   {
     path: 'about',
-    loadChildren: () => import('./features/about/about.routes')
+    loadChildren: () => import('./features/general/about/about.routes')
       .then(routes => routes.routes)
   },
 
