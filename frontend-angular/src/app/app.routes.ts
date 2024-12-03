@@ -7,6 +7,11 @@ export const routes: Routes = [
   { path: '', component: HomeComponent, },
 
   {
+    path: 'prism',
+    loadComponent: () => import('./features/tutorials/example-prism/tutorial.component')
+      .then(mod => mod.TutorialComponent)
+  },
+  {
     path: 'continents',
     loadComponent: () => import('./features/continent/item.component')
       .then(mod => mod.ItemComponent)

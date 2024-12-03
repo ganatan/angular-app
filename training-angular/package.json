@@ -55,6 +55,10 @@
     "lint-pdf": "nx lint angular-pdf",
     "test-pdf": "nx test angular-pdf",
     "build-pdf": "nx build angular-pdf",
+    "start-prism": "nx serve angular-prism",
+    "lint-prism": "nx lint angular-prism",
+    "test-prism": "nx test angular-prism",
+    "build-prism": "nx build angular-prism",
     "start-rich-text-editor": "nx serve angular-rich-text-editor",
     "lint-rich-text-editor": "nx lint angular-rich-text-editor",
     "test-rich-text-editor": "nx test angular-rich-text-editor",
@@ -97,6 +101,7 @@
     "jspdf": "2.5.1",
     "jspdf-autotable": "3.8.2",
     "ngx-toastr": "19.0.0",
+    "prismjs": "1.29.0",
     "rxjs": "7.8.1",
     "tslib": "2.6.3",
     "zone.js": "0.14.10"

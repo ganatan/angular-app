@@ -79,6 +79,12 @@ export class HomeComponent {
       description: "Reactive & Template",
       link: '/forms'
     },
+    {
+      icon: "fa-solid fa-spell-check",
+      name: "Prism",
+      description: "Syntax highlighter",
+      link: '/prism'
+    },
   ]
 
   constructor(private seoService: SeoService) {
