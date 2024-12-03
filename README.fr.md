@@ -1,5 +1,5 @@
 
-# Application Fullstack Angular 18
+# Application Fullstack Angular 19
 
 [![English](./ui/version-en.png) English](./README.md) | [![Français](./ui/version-fr.png) Français](./README.fr.md)
 
@@ -13,7 +13,7 @@
 
 Ce dépôt contient une application web fullstack avec des services frontend et backend séparés. Il inclut :
 
-- **Frontend** : une application Angular 18 avec Bootstrap pour l’interface utilisateur
+- **Frontend** : une application Angular 19 avec Bootstrap pour l’interface utilisateur
 - **Backend (JavaScript)** : une application Node.js/Express en JavaScript
 - **Backend (TypeScript)** : une application Node.js/Express en TypeScript
 - **Library**: Une librairie Angular 18 avec des composants Ganatan
