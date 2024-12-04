@@ -7,8 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { ItemsService } from './services/items.service';
 import { Item } from './services/item';
 
-import { PaginationService } from './services/pagination.service';
-import { Pagination } from './services/pagination';
+import { PaginationService } from '../../../shared/services/pagination/pagination.service';
+import { Pagination } from '../../../shared/services/pagination/pagination';
 
 import { registerLocaleData } from '@angular/common';
 import { LOCALE_ID } from '@angular/core';

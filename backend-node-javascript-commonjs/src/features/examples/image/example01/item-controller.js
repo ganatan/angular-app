@@ -1,7 +1,5 @@
 'use strict';
 
-const path = require('path');
-
 class ItemController {
   constructor(service) {
     this.service = service;
@@ -31,13 +29,13 @@ class ItemController {
       }
 
       return res.sendFile(imagePath, (err) => {
-        if (err) return next(err);
+        if (err) { return next(err); };
       });
     } catch (error) {
       return next(error);
     }
   }
-  
+
 }
 
 module.exports = ItemController;

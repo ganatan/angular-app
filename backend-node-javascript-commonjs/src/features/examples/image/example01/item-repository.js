@@ -3,7 +3,7 @@
 const fs = require('fs').promises;
 
 class ItemRepository {
-  constructor() {}
+  constructor() { }
 
   async getItems(query) {
     try {
@@ -17,6 +17,7 @@ class ItemRepository {
       return items;
     } catch (error) {
       console.error('Error retrieving examples:', error);
+
       return null;
     }
   }
@@ -24,8 +25,10 @@ class ItemRepository {
   async validateImagePath(imagePath) {
     try {
       await fs.access(imagePath);
+
       return true;
-    } catch (error) {
+    } catch {
+
       return false;
     }
   }

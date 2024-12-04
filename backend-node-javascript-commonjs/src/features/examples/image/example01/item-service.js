@@ -9,6 +9,7 @@ class ItemService {
 
   async getItems(query) {
     const items = await this.repository.getItems(query);
+
     return items || [];
   }
 
