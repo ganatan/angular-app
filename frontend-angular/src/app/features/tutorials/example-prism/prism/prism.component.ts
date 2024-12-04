@@ -68,7 +68,6 @@ export class PrismComponent implements ControlValueAccessor, AfterViewInit {
   }
 
   registerOnTouched(fn: () => void): void {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const _ignored = fn;
   }
 
