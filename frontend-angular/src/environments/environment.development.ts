@@ -1,8 +1,15 @@
 export const environment = {
+  appInfo: {
+    name: 'Ganatan',
+    nameUC: 'GANATAN',
+    logo: 'ganatan',
+    network: 'ganatan',
+    website: 'www.ganatan.com',
+  },
   application:
   {
     name: 'angular-starter',
-    angular: 'Angular 19.0.1 Dev',
+    angular: 'Angular 19.0.4 Dev',
     bootstrap: 'Bootstrap 5.3.3',
     fontawesome: 'Font Awesome 6.7.1',
   },

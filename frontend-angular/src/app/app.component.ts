@@ -7,6 +7,8 @@ import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 
+import { environment } from '../environments/environment';
+
 @Component({
   selector: 'app-root',
   imports: [
@@ -20,8 +22,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 })
 export class AppComponent implements OnInit {
   title = 'angular-routing';
-  footerUrl = 'https://www.ganatan.com';
-  footerLink = 'www.ganatan.com';
+  footerUrl = `https://${environment.appInfo.website}`;
+  footerLink = environment.appInfo.website;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
