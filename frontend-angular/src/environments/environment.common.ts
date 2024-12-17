@@ -12,6 +12,6 @@ export const applicationBase = {
   name: 'angular-starter',
   angular: 'Angular 19.0.4',
   bootstrap: 'Bootstrap 5.3.3',
-  fontawesome: 'Font Awesome 6.7.1',
+  fontawesome: 'Font Awesome 6.7.2',
 };
 
