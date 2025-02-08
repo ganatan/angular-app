@@ -22,27 +22,24 @@ Each component can be installed, developed, and deployed independently.
 
 ---
 
-# Fullstack Course Guide
-
-This repository contains a series of courses to help you get familiar with various tools and frameworks.
-
-- [Git](fullstack-courses/git.md)
-- [Angular](fullstack-courses/angular.md)
-- [Javascript](fullstack-courses/javascript.md)
-- [Node](fullstack-courses/node.md)
-
-Click on a link to open the corresponding documentation.
-
----
-
 ## Table of Contents
 
-- [Live Demo](#live-demo)
-- [Frontend - Angular](#frontend---angular)
-- [Backend - Node.js (JavaScript)](#backend---nodejs-javascript)
-- [Backend - Node.js (TypeScript)](#backend---nodejs-typescript)
-- [Author](#author)
-- [Documentation](#documentation)
+- [Angular 19 Fullstack Application](#angular-19-fullstack-application)
+  - [Table of Contents](#table-of-contents)
+  - [Live Demo](#live-demo)
+- [Lighthouse Audit](#lighthouse-audit)
+  - [Frontend - Angular](#frontend---angular)
+    - [Quick Start](#quick-start)
+    - [Development](#development)
+    - [Docker](#docker)
+  - [Backend - Node.js (JavaScript)](#backend---nodejs-javascript)
+    - [Quick Start](#quick-start-1)
+    - [Development](#development-1)
+  - [Backend - Node.js (TypeScript)](#backend---nodejs-typescript)
+    - [Quick Start](#quick-start-2)
+    - [Development](#development-2)
+  - [Author](#author)
+  - [Documentation](#documentation)
 
 ---
 
