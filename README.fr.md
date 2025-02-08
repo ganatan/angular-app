@@ -16,34 +16,27 @@ Ce dépôt contient une application web fullstack avec des services frontend et 
 - **Frontend** : une application Angular 19 avec Bootstrap pour l’interface utilisateur
 - **Backend (JavaScript)** : une application Node.js/Express en JavaScript
 - **Backend (TypeScript)** : une application Node.js/Express en TypeScript
-- **Library**: Une librairie Angular 18 avec des composants Ganatan
-
-
-Chaque composant peut être installé, développé et déployé indépendamment.
-
----
-
-# Guide des Cours Fullstack
-
-Ce répertoire contient une série de cours pour vous aider à vous familiariser avec divers outils et frameworks.
-
-- [Git](fullstack-courses/git.md)
-- [Angular](fullstack-courses/angular.md)
-- [Javascript](fullstack-courses/javascript.md)
-- [Node](fullstack-courses/node.md)
-
-Cliquez sur un lien pour ouvrir la documentation correspondante.
 
 ---
 
 ## Table des matières
 
-- [Démo en ligne](#démo-en-ligne)
-- [Frontend - Angular](#frontend---angular)
-- [Backend - Node.js (JavaScript)](#backend---nodejs-javascript)
-- [Backend - Node.js (TypeScript)](#backend---nodejs-typescript)
-- [Auteur](#auteur)
-- [Documentation](#documentation)
+- [Application Fullstack Angular 19](#application-fullstack-angular-19)
+  - [Table des matières](#table-des-matières)
+  - [Démo en ligne](#démo-en-ligne)
+- [Lighthouse Audit](#lighthouse-audit)
+  - [Frontend - Angular](#frontend---angular)
+    - [Démarrage rapide](#démarrage-rapide)
+    - [Développement](#développement)
+    - [Docker](#docker)
+  - [Backend - Node.js (JavaScript)](#backend---nodejs-javascript)
+    - [Démarrage rapide](#démarrage-rapide-1)
+    - [Développement](#développement-1)
+  - [Backend - Node.js (TypeScript)](#backend---nodejs-typescript)
+    - [Démarrage rapide](#démarrage-rapide-2)
+    - [Développement](#développement-2)
+  - [Auteur](#auteur)
+  - [Documentation](#documentation)
 
 ---
 
