@@ -51,16 +51,16 @@ export class AboutComponent implements OnInit {
     this.quote = new Quote();
     this.dependencies = {
       frontend: [
-        { name: 'Angular 17.2.4' },
-        { name: 'Angular CLI 17.2.3' },
-        { name: 'Angular SSR 17.2.3' },
+        { name: 'Angular 19.2.2' },
+        { name: 'Angular CLI 19.2.3' },
+        { name: 'Angular SSR 19.2.3' },
         { name: 'Bootstrap 5.3.3' },
-        { name: 'Font Awesome 6.5.1' },
+        { name: 'Font Awesome 6.7.2' },
       ],
       backend: [
-        { name: 'Node.js 18.17.1' },
-        { name: 'Express 4.18.2' },
-        { name: 'pg-promise 11.5.4' },
+        { name: 'Node.js 22.13.1' },
+        { name: 'Express 4.21.2' },
+        { name: 'pg-promise 11.12.1' },
       ]
     };
 
