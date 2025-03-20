@@ -1,6 +1,6 @@
 {
   "name": "angular-starter",
-  "version": "19.2.2",
+  "version": "19.2.3",
   "scripts": {
     "ng": "ng",
     "dev": "ng serve --port 4200",
@@ -14,17 +14,17 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "19.2.2",
-    "@angular/common": "19.2.2",
-    "@angular/compiler": "19.2.2",
-    "@angular/core": "19.2.2",
-    "@angular/forms": "19.2.2",
-    "@angular/platform-browser": "19.2.2",
-    "@angular/platform-browser-dynamic": "19.2.2",
-    "@angular/platform-server": "19.2.2",
-    "@angular/router": "19.2.2",
-    "@angular/service-worker": "19.2.2",
-    "@angular/ssr": "19.2.3",
+    "@angular/animations": "19.2.3",
+    "@angular/common": "19.2.3",
+    "@angular/compiler": "19.2.3",
+    "@angular/core": "19.2.3",
+    "@angular/forms": "19.2.3",
+    "@angular/platform-browser": "19.2.3",
+    "@angular/platform-browser-dynamic": "19.2.3",
+    "@angular/platform-server": "19.2.3",
+    "@angular/router": "19.2.3",
+    "@angular/service-worker": "19.2.3",
+    "@angular/ssr": "19.2.4",
     "@fortawesome/fontawesome-free": "6.7.2",
     "bootstrap": "5.3.3",
     "express": "4.21.2",
@@ -34,10 +34,10 @@
     "zone.js": "0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "19.2.3",
-    "@angular/cli": "19.2.3",
-    "@angular/compiler-cli": "19.2.2",
-    "@types/express": "5.0.0",
+    "@angular-devkit/build-angular": "19.2.4",
+    "@angular/cli": "19.2.4",
+    "@angular/compiler-cli": "19.2.3",
+    "@types/express": "5.0.1",
     "@types/jasmine": "5.1.7",
     "@types/node": "22.13.10",
     "angular-eslint": "19.2.1",
@@ -49,6 +49,6 @@
     "karma-jasmine": "5.1.0",
     "karma-jasmine-html-reporter": "2.1.0",
     "typescript": "5.7.3",
-    "typescript-eslint": "8.26.1"
+    "typescript-eslint": "8.27.0"
   }
 }
