@@ -1,7 +1,0 @@
-TRUNCATE TABLE continent;
-
-TRUNCATE TABLE country;
-
-TRUNCATE TABLE city;
-
-TRUNCATE TABLE person;
