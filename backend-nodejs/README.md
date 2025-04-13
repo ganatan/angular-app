@@ -1,24 +1,21 @@
-# getItems
-  GET
-  http://localhost:3000/persons
 
+### Installation
+* `npm install` (installing dependencies)
+* `npm outdated` (verifying dependencies)
 
-# createItem
-  POST
-  http://localhost:3000/persons
+### Developpement
+* `npm run start`
+* in your browser [http://localhost:4200](http://localhost:3000) 
 
-  {
-    "name": "James Cameron"
-  }
+## Linter
+* `npm run lint`
 
-# updateItem
-  PUT
-  http://localhost:3000/persons/1
-  {
-      "name": "Steven Spielbergaaaa",
-      "city": "Cincinnatiaaaa"
-  }
+## Tests
+* `npm run test`
+* `npm run coverage`
 
-# deleteItem
-  DELETE
-  http://localhost:3000/persons/1
+### Compilation
+* `npm run build`       ( without SSR)
+
+### Author
+* Author  : danny
