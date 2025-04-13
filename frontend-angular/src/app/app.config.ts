@@ -7,6 +7,11 @@ import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { provideServiceWorker } from '@angular/service-worker';
 
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
+registerLocaleData(localeFr);
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideHttpClient(
@@ -23,5 +28,10 @@ export const appConfig: ApplicationConfig = {
     provideServiceWorker('ngsw-worker.js', {
       enabled: !isDevMode(),
       registrationStrategy: 'registerWhenStable:30000'
-    })]
+    }),
+    {
+      provide: LOCALE_ID,
+      useValue: 'fr-FR'
+    }
+  ],
 };

@@ -1,165 +1,105 @@
+# Angular 19 – Application Fullstack
 
-# Angular 19 Fullstack Application
+**👉 If you don’t speak French, the English version is here**: [![English](./ui/version-en.png)](./README.en.md)
 
-[![English](./ui/version-en.png) English](./README.md) | [![Français](./ui/version-fr.png) Français](./README.fr.md)
 
-<table>
-<tr>
-<td>
-  <a href="https://www.ganatan.com/en">
-    <img src="./ui/ganatan-about-github.png" align="right"
-    alt="Ganatan Angular Example Demo" width="140" height="140">
-  </a>
+<img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
 
-This repository contains a fullstack web application with separate frontend and backend services. It includes:
+Ce dépôt contient une **application web fullstack** composée de deux projets distincts :
 
-- **Frontend**: An Angular 19 application with Bootstrap for the UI
-- **Backend (JavaScript)**: A Node.js/Express application using JavaScript
-- **Backend (TypeScript)**: A Node.js/Express application using TypeScript
+- **frontend-angular** : application Angular 19  
+- **backend-nodesjs** : API Express.js (Node.js) avec gestion de données mockées ou réelles (PostgreSQL/MySQL)
 
 ---
 
-## Table of Contents
-
-- [Angular 19 Fullstack Application](#angular-19-fullstack-application)
-  - [Table of Contents](#table-of-contents)
-  - [Live Demo](#live-demo)
-- [Lighthouse Audit](#lighthouse-audit)
-  - [Frontend - Angular](#frontend---angular)
-    - [Quick Start](#quick-start)
-    - [Development](#development)
-    - [Docker](#docker)
-  - [Backend - Node.js (JavaScript)](#backend---nodejs-javascript)
-    - [Quick Start](#quick-start-1)
-    - [Development](#development-1)
-  - [Backend - Node.js (TypeScript)](#backend---nodejs-typescript)
-    - [Quick Start](#quick-start-2)
-    - [Development](#development-2)
-  - [Author](#author)
-  - [Documentation](#documentation)
+## 🌐 Démo en ligne  
+[Voir la démo](https://angular.ganatan.com)
 
 ---
 
-## Live Demo
+## 🔧 Fonctionnement du frontend (Angular)
 
-A live demo is available at [https://angular.ganatan.com](https://angular.ganatan.com).
+Par défaut, l'application Angular utilise le fichier `environment.ts` :
 
-[![Angular Example Application](https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif)](https://angular.ganatan.com)
+```ts
+useDatabase: false,
+backend: 'http://localhost:3000',
+```
+
+### Deux modes disponibles :
+
+| `useDatabase` | Fonctionnement                         |
+|---------------|----------------------------------------|
+| `false`       | Utilise des **données mockées** côté frontend |
+| `true`        | Utilise des **données réelles** fournies par le backend (`http://localhost:3000`) |
 
 ---
 
-# Lighthouse Audit
+## 🛠️ Fonctionnement du backend (Node.js)
 
-<p align="center">
-  <p align="center">
-    <a href="https://angular.ganatan.com">
-      <img src="./ui/search-engine-optimization-avec-angular-lighthouse-after.png" alt="Ganatan Lighthouse SEO Angular Example Demo"/>
-    </a>
-  </p>
-</p>
+Le backend est configuré via le fichier `.env` :
 
-## Frontend - Angular
+```env
+PORT=3000
+DB_CLIENT=mock
+```
 
-### Quick Start
+### Comportement en fonction du `DB_CLIENT` :
 
-To get started with the Angular frontend:
+| `DB_CLIENT` | Données utilisées     | Remplissage de la base |
+|-------------|------------------------|--------------------------|
+| `mock`      | Données simulées (mock)| Aucun                   |
+| `pg`        | PostgreSQL              | Lancer les scripts SQL  |
+| `mysql`     | MySQL                   | Lancer les scripts SQL  |
+
+---
+
+## 🔗 API disponibles
+
+Les URL disponibles par défaut via le backend sont :
+
+- [http://localhost:3000/continents](http://localhost:3000/continents)
+- [http://localhost:3000/cities](http://localhost:3000/cities)
+- [http://localhost:3000/countries](http://localhost:3000/countries)
+- [http://localhost:3000/persons](http://localhost:3000/persons)
+- [http://localhost:3000/professions](http://localhost:3000/professions)
+
+---
+
+## 🚀 Démarrage rapide
+
+### Frontend
 
 ```bash
-# Clone the repository
 git clone https://github.com/ganatan/angular-app.git
 cd angular-app/frontend-angular
-
-# Install dependencies and start the development server
 npm install
 npm start
 ```
 
-Visit [http://localhost:4200](http://localhost:4200) in your browser.
-
-### Development
-
-- `npm run start` – Start the development server
-- `npm run lint` – Run the linter
-- `npm run test` – Run tests
-- `npm run build` – Build the application for production
-
-### Docker
-
-To run the Angular application in Docker:
-
-```bash
-# Build Docker image
-docker build -t angular-starter:1.0.0 .
-
-# Run Docker container
-docker run -d -p 4000:4000 angular-starter:1.0.0
-```
-
-Visit [http://localhost:4000](http://localhost:4000) in your browser.
+Accessible via : [http://localhost:4200](http://localhost:4200)
 
 ---
 
-## Backend - Node.js (JavaScript)
-
-### Quick Start
-
-To get started with the JavaScript backend:
+### Backend
 
 ```bash
-# Navigate to the backend directory
-cd angular-app/backend-node-javascript
-
-# Install dependencies and start the development server
+cd angular-app/backend-nodesjs
 npm install
 npm start
 ```
 
-Visit [http://localhost:9000](http://localhost:9000) in your browser.
-
-### Development
-
-- `npm run start` – Start the development server
-- `npm run lint` – Run the linter
-- `npm run test` – Run tests
-- `npm run build` – Build the application for production
-- `npm run serve` – Start the server in production mode
+Accessible via : [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## Backend - Node.js (TypeScript)
+## 👤 Auteur
 
-### Quick Start
-
-To get started with the TypeScript backend:
-
-```bash
-# Navigate to the backend directory
-cd angular-app/backend-node-typescript
-
-# Install dependencies and start the development server
-npm install
-npm start
-```
-
-Visit [http://localhost:9000](http://localhost:9000) in your browser.
-
-### Development
-
-- `npm run start` – Start the development server
-- `npm run lint` – Run the linter
-- `npm run test` – Run tests
-- `npm run build` – Build the application for production
-- `npm run serve` – Start the server in production mode
+- **Danny** – [www.ganatan.com](https://www.ganatan.com)
 
 ---
 
-## Author
+## 📚 Documentation
 
-- **Danny** - [Ganatan](https://www.ganatan.com)
-
-## Documentation
-
-For step-by-step tutorials and more information:
-
-- **English** - [https://www.ganatan.com/tutorials/en](https://www.ganatan.com/tutorials/en)
-- **Français** - [https://www.ganatan.com/tutorials](https://www.ganatan.com/tutorials)
+- 🇫🇷 [Tutoriels en français](https://www.ganatan.com/tutorials)
+- 🇬🇧 [Tutorials in English](https://www.ganatan.com/en/tutorials)

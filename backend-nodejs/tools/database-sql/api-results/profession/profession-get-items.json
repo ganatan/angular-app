@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "pagination": {
+      "currentPage": 1,
+      "perPage": 10,
+      "totalItems": 7,
+      "totalPages": 1
+    }
+  },
+  "totals": {
+    "global": {
+      "count": "7",
+      "area": "150278000",
+      "population": "7632821490",
+      "countriesCount": "195",
+      "density": 50.79134
+    },
+    "currentPage": {
+      "count": 7,
+      "area": 150278000,
+      "population": 7632821490,
+      "countriesCount": 195,
+      "density": 50.79134
+    }
+  },
+  "data": [
+    {
+      "id": 1006,
+      "name": "South America-pg",
+      "code": "SA",
+      "area": 17840000,
+      "population": "428240000",
+      "countriesCount": 12,
+      "density": "24.00000"
+    },
+    {
+      "id": 1005,
+      "name": "North America-pg",
+      "code": "NA",
+      "area": 24709000,
+      "population": "587615000",
+      "countriesCount": 23,
+      "density": "23.00000"
+    },
+    {
+      "id": 1004,
+      "name": "Europe-pg",
+      "code": "EU",
+      "area": 10180000,
+      "population": "742648000",
+      "countriesCount": 45,
+      "density": "72.00000"
+    },
+    {
+      "id": 1003,
+      "name": "Australia-pg",
+      "code": "OC",
+      "area": 8600000,
+      "population": "41261000",
+      "countriesCount": 14,
+      "density": "4.00000"
+    },
+    {
+      "id": 1002,
+      "name": "Asia-pg",
+      "code": "AS",
+      "area": 44579000,
+      "population": "4545133000",
+      "countriesCount": 47,
+      "density": "101.00000"
+    },
+    {
+      "id": 1001,
+      "name": "Antarctica-pg",
+      "code": "AN",
+      "area": 14000000,
+      "population": "4490",
+      "countriesCount": 0,
+      "density": "0.00000"
+    },
+    {
+      "id": 1000,
+      "name": "Africa-pg",
+      "code": "AF",
+      "area": 30370000,
+      "population": "1287920000",
+      "countriesCount": 54,
+      "density": "42.00000"
+    }
+  ]
+}

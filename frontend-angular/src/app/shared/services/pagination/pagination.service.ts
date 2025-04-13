@@ -14,9 +14,9 @@ export class PaginationService {
   }
 
   getPagination(pagination: Pagination): Pagination {
-    const { totalItems, itemsPerPage } = pagination;
+    const { totalItems, perPage } = pagination;
     let currentPage = pagination.currentPage;
-    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    const totalPages = Math.ceil(totalItems / perPage);
 
     if (currentPage > totalPages) {
       currentPage = this.STARTING_PAGE;
@@ -29,7 +29,7 @@ export class PaginationService {
     return {
       totalItems,
       currentPage,
-      itemsPerPage,
+      perPage,
       totalPages,
       startPage,
       endPage,
@@ -55,11 +55,11 @@ export class PaginationService {
     return { startPage: currentPage - 2, endPage: currentPage + 4 };
   }
 
-  initializePagination(itemsPerPage: number): Pagination {
+  initializePagination(perPage: number): Pagination {
     return {
       totalItems: 0,
       currentPage: this.STARTING_PAGE,
-      itemsPerPage,
+      perPage,
       totalPages: 0,
       startPage: this.STARTING_PAGE,
       endPage: this.STARTING_PAGE,

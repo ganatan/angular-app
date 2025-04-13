@@ -10,16 +10,16 @@ describe('PaginationService', () => {
 
   it('should initialize a Pagination object correctly', () => {
     // Arrange
-    const itemsPerPage = 5;
+    const perPage = 5;
 
     // Act
-    const pagination: Pagination = service.initializePagination(itemsPerPage);
+    const pagination: Pagination = service.initializePagination(perPage);
     
     // Assert
     expect(pagination).toEqual({
       totalItems: 0,
       currentPage: 1,
-      itemsPerPage,
+      perPage,
       totalPages: 0,
       startPage: 1,
       endPage: 1,
@@ -34,7 +34,7 @@ describe('PaginationService', () => {
     const input = {
       totalItems: 10,
       currentPage: 5,
-      itemsPerPage: 5,
+      perPage: 5,
       totalPages: 2,
       startPage: 1,
       endPage: 2,
@@ -56,7 +56,7 @@ describe('PaginationService', () => {
     const input = {
       totalItems: 25,
       currentPage: 3,
-      itemsPerPage: 5,
+      perPage: 5,
       totalPages: 5,
       startPage: 1,
       endPage: 5,
@@ -79,7 +79,7 @@ describe('PaginationService', () => {
     const input = {
       totalItems: 100,
       currentPage: 3,
-      itemsPerPage: 5,
+      perPage: 5,
       totalPages: 20,
       startPage: 1,
       endPage: 7,
@@ -102,7 +102,7 @@ describe('PaginationService', () => {
     const input = {
       totalItems: 100,
       currentPage: 18,
-      itemsPerPage: 5,
+      perPage: 5,
       totalPages: 20,
       startPage: 14,
       endPage: 20,
@@ -125,7 +125,7 @@ describe('PaginationService', () => {
     const input = {
       totalItems: 100,
       currentPage: 10,
-      itemsPerPage: 5,
+      perPage: 5,
       totalPages: 20,
       startPage: 8,
       endPage: 14,
