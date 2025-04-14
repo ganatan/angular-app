@@ -1,4 +1,4 @@
-import { validateItem } from '../profession.schema.js';
+import { validateItem } from '../../profession.schema.js';
 
 describe('validateItem', () => {
   test('should throw error if name is missing', () => {

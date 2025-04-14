@@ -6,7 +6,7 @@
     "start": "node src/server",
     "dev": "nodemon src/server",
     "lint": "eslint .",
-    "lint:profession": "eslint src/modules/profession/item.controller.js",
+    "lint:profession:controller": "eslint src/modules/profession/profession.controller.js",
     "test": "jest",
     "coverage": "jest --coverage",
     "build": "webpack --mode production --output-path dist",

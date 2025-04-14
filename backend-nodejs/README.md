@@ -5,7 +5,11 @@
 
 ### Developpement
 * `npm run start`
-* in your browser [http://localhost:4200](http://localhost:3000) 
+* in your browser [http://localhost:3000](http://localhost:3000) 
+
+### Swagger
+
+* in your browser [http://localhost:3000/api-docs/](http://localhost:3000/api-docs/) 
 
 ## Linter
 * `npm run lint`
@@ -15,7 +19,7 @@
 * `npm run coverage`
 
 ### Compilation
-* `npm run build`       ( without SSR)
+* `npm run build`     
 
 ### Author
 * Author  : danny

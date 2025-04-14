@@ -1,8 +1,8 @@
 import request from 'supertest';
-import app from '../src/app.js';
+import app from '../../src/app.js';
 
 describe('GET /unknown-route', () => {
-  it('should return 404 for unknown routes', async () => {
+  test('should return 404 for unknown routes', async () => {
     // Arrange
     const endpoint = '/unknown-route';
 
@@ -15,7 +15,7 @@ describe('GET /unknown-route', () => {
 });
 
 describe('GET /', () => {
-  it('should return 200 for index route', async () => {
+  test('should return 200 for index route', async () => {
     // Arrange
     const endpoint = '/';
 
@@ -26,3 +26,4 @@ describe('GET /', () => {
     expect(response.status).toBe(200);
   });
 });
+

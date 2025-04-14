@@ -1,7 +1,7 @@
-import server from '../src/server.js';
+import server from '../../src/server.js';
 
 describe('Server startup', () => {
-  it('should start and listen correctly', async () => {
+  test('should start and listen correctly', async () => {
     // Arrange
     const runningServer = server;
 
