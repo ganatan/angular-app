@@ -1,4 +1,4 @@
-import { HTTP_STATUS } from '../../shared/constants/http/http-status.js';
+import { HTTP_STATUS } from '../../../shared/constants/http/http-status.js';
 
 const permissionHandler = (allowedRoles = []) => {
   return (req, res, next) => {

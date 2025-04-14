@@ -1,6 +1,6 @@
 import request from 'supertest';
 import express from 'express';
-import responseHandler from '../../../../infrastructure/middleware/response-handler.js';
+import responseHandler from '../../../../infrastructure/middleware/error/response-handler.js';
 
 describe('Profession Routes', () => {
   let app;
