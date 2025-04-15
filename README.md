@@ -8,7 +8,8 @@
 Ce dépôt contient une **application web fullstack** composée de deux projets distincts :
 
 - **frontend-angular** : application Angular 19  
-- **backend-nodesjs** : API Express.js (Node.js) avec gestion de données mockées ou réelles (PostgreSQL/MySQL)
+- **backend-nodejs** : API Express.js (Node.js) avec gestion de données mockées ou réelles (PostgreSQL/MySQL)
+- **backend-typescript** : API Typescript & Express.js (Node.js) avec gestion de données mockées ou réelles (PostgreSQL/MySQL)
 
 ---
 

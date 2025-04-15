@@ -5,7 +5,8 @@
 This repository contains a **fullstack web application** made up of two separate projects:
 
 - **frontend-angular**: Angular 19 frontend application  
-- **backend-nodesjs**: Node.js API using mocked or real data (PostgreSQL/MySQL)
+- **backend-nodejs**: Node.js API using mocked or real data (PostgreSQL/MySQL)
+- **backend-typescript**: Typescript API using mocked or real data (PostgreSQL/MySQL)
 
 ---
 
@@ -81,10 +82,34 @@ Accessible at: [http://localhost:4200](http://localhost:4200)
 
 ---
 
-### Backend
+### Backend Nodejs
 
 ```bash
 cd angular-app/backend-nodesjs
+npm install
+npm start
+```
+
+Accessible at: [http://localhost:3000](http://localhost:3000)
+
+---
+
+### Backend Typescript
+
+```bash
+cd angular-app/backend-typescript
+npm install
+npm start
+```
+
+Accessible at: [http://localhost:3000](http://localhost:3000)
+
+---
+
+### Backend Typescript
+
+```bash
+cd angular-app/backend-typescript
 npm install
 npm start
 ```
