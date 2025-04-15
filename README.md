@@ -87,7 +87,7 @@ Accessible via : [http://localhost:4200](http://localhost:4200)
 ### Backend
 
 ```bash
-cd angular-app/backend-nodesjs
+cd angular-app/backend-nodejs
 npm install
 npm start
 ```
