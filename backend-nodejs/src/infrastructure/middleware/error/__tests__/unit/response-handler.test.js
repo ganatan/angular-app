@@ -1,4 +1,4 @@
-import responseHandler from '../../error/response-handler.js';
+import responseHandler from '../../response-handler';
 
 describe('responseHandler', () => {
   let req;

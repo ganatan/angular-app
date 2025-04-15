@@ -4,13 +4,14 @@ import cors from 'cors';
 import config from './core/config/config.js';
 
 import initLocals from './infrastructure/middleware/core/init-locals.js';
-import fakeAuth from './infrastructure/middleware/auth/fake-auth.js';
 import notFoundHandler from './infrastructure/middleware/error/not-found-handler.js';
 import responseHandler from './infrastructure/middleware/error/response-handler.js';
 import errorHandler from './infrastructure/middleware/error/error-handler.js';
 
 import requestLogger from './infrastructure/logger/request-logger.js';
 import errorLogger from './infrastructure/logger/error-logger.js';
+
+import fakeAuth from './infrastructure/middleware/auth/fake-auth.js';
 
 import swaggerRouter from './infrastructure/swagger/swagger.router.js';
 

@@ -2,6 +2,7 @@ import DB_CLIENTS from '../../core/config/db-clients.js';
 
 import MockRepository from './profession.repository.mock.js';
 import PgRepository from './profession.repository.pg.js';
+import PgSequelizeRepository from './profession.repository.pg-sequelize.js';
 import MysqlRepository from './profession.repository.mysql.js';
 
 class Repository {
@@ -9,6 +10,9 @@ class Repository {
     switch (dbClient) {
       case DB_CLIENTS.PG:
         this.repository = new PgRepository();
+        break;
+      case DB_CLIENTS.PG_SEQUELIZE:
+        this.repository = new PgSequelizeRepository();
         break;
       case DB_CLIENTS.MYSQL:
         this.repository = new MysqlRepository();
@@ -41,7 +45,7 @@ class Repository {
   }
 
   async existsByName(name) {
-    return await this.repository.existsByName(name);
+    return this.repository.existsByName(name);
   }
 }
 
