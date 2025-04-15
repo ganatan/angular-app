@@ -41,16 +41,18 @@ Le backend est configuré via le fichier `.env` :
 
 ```env
 PORT=3000
-DB_CLIENT=mock
+# === DEFAULT DB CLIENT ===
+DB_CLIENT=mock # pg | pg-sequelize | mysql | mock
 ```
 
 ### Comportement en fonction du `DB_CLIENT` :
 
-| `DB_CLIENT` | Données utilisées     | Remplissage de la base |
-|-------------|------------------------|--------------------------|
-| `mock`      | Données simulées (mock)| Aucun                   |
-| `pg`        | PostgreSQL              | Lancer les scripts SQL  |
-| `mysql`     | MySQL                   | Lancer les scripts SQL  |
+| `DB_CLIENT`     | Données utilisées            |
+|-----------------|------------------------------|
+| `mock`          | Données simulées (mock)      |
+| `pg`            | PostgreSQL                   |
+| `pg-sequelize`  | PostgreSQL via ORM Sequelize |
+| `mysql`         | MySQL                        |
 
 ---
 
