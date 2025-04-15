@@ -84,7 +84,7 @@ Accessible via : [http://localhost:4200](http://localhost:4200)
 
 ---
 
-### Backend
+### Backend Nodejs
 
 ```bash
 cd angular-app/backend-nodejs
@@ -92,7 +92,19 @@ npm install
 npm start
 ```
 
-Accessible via : [http://localhost:3000](http://localhost:3000)
+Accessible at: [http://localhost:3000](http://localhost:3000)
+
+---
+
+### Backend Typescript
+
+```bash
+cd angular-app/backend-typescript
+npm install
+npm start
+```
+
+Accessible at: [http://localhost:3000](http://localhost:3000)
 
 ---
 
