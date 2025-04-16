@@ -1,5 +1,5 @@
 import { fn, col, where } from 'sequelize';
-import Profession from './profession.model.pg-sequelize.js';
+import Profession from '../models/profession.model.pg-sequelize.js';
 
 class PgSequelizeRepository {
   async getItems({ page = 1, size = 100 } = {}) {

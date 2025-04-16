@@ -1,5 +1,5 @@
 import { DataTypes } from 'sequelize';
-import sequelize from '../../core/database/clients/mysql/sequelize.client.js';
+import sequelize from '../../../core/database/clients/mysql/sequelize.client.js';
 
 const Profession = sequelize.define('Profession', {
   id: {

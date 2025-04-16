@@ -1,8 +1,8 @@
-import Service from '../../profession.service.js';
-import { ITEM_CONSTANTS } from '../../profession.constant.js';
-import * as schema from '../../profession.schema.js';
+import Service from '../../services/profession.service.js';
+import { ITEM_CONSTANTS } from '../../constants/profession.constant.js';
+import * as schema from '../../schemas/profession.schema.js';
 
-jest.mock('../../profession.schema.js');
+jest.mock('../../schemas/profession.schema.js');
 
 describe('ProfessionService', () => {
   let service;

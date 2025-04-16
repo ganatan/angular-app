@@ -1,4 +1,4 @@
-import Controller from '../../profession.controller.js';
+import Controller from '../../controllers/profession.controller.js';
 import { HTTP_STATUS } from '../../../../shared/constants/http/http-status.js';
 
 describe('ProfessionController', () => {

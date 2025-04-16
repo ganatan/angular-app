@@ -1,4 +1,4 @@
-import Repository from '../../profession.repository.js';
+import Repository from '../../repositories/profession.repository.js';
 import { ITEMS_MOCK_DATA } from '../../../../data/mocks/profession.mock-data.js';
 
 describe('ProfessionRepository', () => {

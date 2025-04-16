@@ -1,21 +1,22 @@
-import pool from '../../core/database/clients/mysql/native.client.js';
+import pool from '../../../core/database/clients/postgres/native.client.js';
 
 import {
   addFilterCondition,
   addRangeCondition,
   adaptSortField,
-} from '../../shared/utils/query/query-utils.js';
+} from '../../../shared/utils/query/query-utils.js';
 
 import {
   DEFAULT_ITEMS_PER_PAGE,
   DEFAULT_MIN_ENTITY_ID,
   MAX_ITEMS_PER_PAGE,
-} from '../../shared/constants/pagination/pagination.constants.js';
-import { SORT_DIRECTION } from '../../shared/constants/sort/sort.constants.js';
+} from '../../../shared/constants/pagination/pagination.constants.js';
+import { SORT_DIRECTION } from '../../../shared/constants/sort/sort.constants.js';
 
-import { ITEM_CONSTANTS } from './profession.constant.js';
+import { ITEM_CONSTANTS } from '../constants/profession.constant.js';
 
-class MysqlRepository {
+class PgRepository {
+
   async getItems(filters) {
     try {
       const {
@@ -38,7 +39,8 @@ class MysqlRepository {
       filterConditions = addFilterCondition(filterConditions, filterParams, 'name', name);
       filterConditions = addRangeCondition(filterConditions, filterParams, 'id', idMin, idMax);
 
-      const sortMapping = {};
+      const sortMapping = {
+      };
       let sortBy = adaptSortField(sort, sortMapping);
       const sortOrder = sort.startsWith('-') ? SORT_DIRECTION.DESC : SORT_DIRECTION.ASC;
       if (sort.startsWith('-')) {
@@ -47,13 +49,14 @@ class MysqlRepository {
 
       const sqlCount = this.buildQueryCount(filterConditions);
       const sqlData = this.buildQueryData(filterConditions, perPage, offset, sortBy, sortOrder);
+      const [countResult, dataResult] = await Promise.all([
+        pool.query(sqlCount, filterParams),
+        pool.query(sqlData, filterParams),
+      ]);
 
-      const [countRows] = await pool.query(sqlCount, filterParams);
-      const [dataRows] = await pool.query(sqlData, filterParams);
+      const global = countResult.rows[0];
 
-      const global = countRows[0];
-
-      return this.formatResultItems(dataRows, {
+      return this.formatResultItems(dataResult.rows, {
         currentPage: currentPage,
         perPage: perPage,
         totalItems: parseInt(global.count, 10),
@@ -71,10 +74,10 @@ class MysqlRepository {
     return {
       metadata: {
         pagination: {
-          currentPage,
-          perPage,
-          totalItems,
-          totalPages,
+          currentPage: currentPage,
+          perPage: perPage,
+          totalItems: totalItems,
+          totalPages: totalPages,
         },
       },
       data: data,
@@ -111,52 +114,50 @@ class MysqlRepository {
       SELECT 
         *
       FROM ${ITEM_CONSTANTS.TABLE_NAME}
-      WHERE id = ?
+      WHERE id = $1
     `;
 
-    const [rows] = await pool.query(query, [id]);
+    try {
+      const { rows } = await pool.query(query, [id]);
+      if (!rows.length) {
+        return null;
+      }
 
-    return rows.length ? rows[0] : null;
+      return rows[0];
+    } catch (error) {
+      throw new Error(`Failed to fetch item by ID ${id} - ${error.message}`);
+    }
   }
 
   async createItem(data) {
     const { name } = data;
-    const insertQuery = `INSERT INTO ${ITEM_CONSTANTS.TABLE_NAME} (name) VALUES (?)`;
-    const [result] = await pool.query(insertQuery, [name]);
+    const { rows } = await pool.query(`INSERT INTO ${ITEM_CONSTANTS.TABLE_NAME} (name) VALUES ($1) RETURNING *`, [name]);
 
-    const id = result.insertId;
-
-    return this.getItemById(id);
+    return rows[0];
   }
 
   async updateItem(id, data) {
     const { name } = data;
-    const updateQuery = `UPDATE ${ITEM_CONSTANTS.TABLE_NAME} SET name = ? WHERE id = ?`;
-    await pool.query(updateQuery, [name, id]);
+    const { rows } = await pool.query(`UPDATE ${ITEM_CONSTANTS.TABLE_NAME} SET name = $1 WHERE id = $2 RETURNING *`, [name, id]);
 
-    return this.getItemById(id);
+    return rows.length ? rows[0] : null;
   }
 
   async deleteItem(id) {
-    const item = await this.getItemById(id);
-    if (!item) { return null; }
+    const { rows } = await pool.query(`DELETE FROM ${ITEM_CONSTANTS.TABLE_NAME} WHERE id = $1 RETURNING *`, [id]);
 
-    await pool.query(`DELETE FROM ${ITEM_CONSTANTS.TABLE_NAME} WHERE id = ?`, [id]);
-
-    return item;
+    return rows.length ? rows[0] : null;
   }
 
   async existsByName(name) {
-    const query = `
-      SELECT 1
-      FROM ${ITEM_CONSTANTS.TABLE_NAME}
-      WHERE LOWER(name) = LOWER(?)
-      LIMIT 1
-    `;
-    const [rows] = await pool.query(query, [name]);
+    const { rows } = await pool.query(
+      `SELECT 1 FROM ${ITEM_CONSTANTS.TABLE_NAME}  WHERE LOWER(name) = LOWER($1) LIMIT 1`,
+      [name],
+    );
 
     return rows.length > 0;
   }
+
 }
 
-export default MysqlRepository;
+export default PgRepository;

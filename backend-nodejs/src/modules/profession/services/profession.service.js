@@ -1,4 +1,4 @@
-import { ITEM_CONSTANTS } from './profession.constant.js';
+import { ITEM_CONSTANTS } from '../constants/profession.constant.js';
 
 class Service {
   constructor(repository) {

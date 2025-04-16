@@ -4,7 +4,7 @@ import cityRouter from '../modules/city/city.router.js';
 import continentRouter from '../modules/continent/continent.router.js';
 import countryRouter from '../modules/country/country.router.js';
 import personRouter from '../modules/person/person.router.js';
-import professionRouter from '../modules/profession/profession.router.js';
+import professionRouter from '../modules/profession/routes/profession.router.js';
 import mediaTypeRouter from '../modules/media-type/media-type.router.js';
 import mediaRouter from '../modules/media/media.router.js';
 

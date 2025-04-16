@@ -1,9 +1,8 @@
 import { fn, col, where } from 'sequelize';
-import Profession from './profession.model.mysql-sequelize.js';
+import Profession from '../models/profession.model.mysql-sequelize.js';
 
 class MysqlSequelizeRepository {
   async getItems({ page = 1, size = 100 } = {}) {
-    console.log('00000000001:MysqlSequelizeRepository');
     const offset = (page - 1) * size;
     const { count, rows } = await Profession.findAndCountAll({
       offset: offset,
