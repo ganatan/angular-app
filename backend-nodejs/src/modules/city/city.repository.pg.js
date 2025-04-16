@@ -1,4 +1,4 @@
-import pool from '../../core/database/database-pg.js';
+import pool from '../../core/database/clients/postgres/native.client.js';
 
 import {
   addFilterCondition,

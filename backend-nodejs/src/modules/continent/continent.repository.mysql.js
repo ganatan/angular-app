@@ -1,4 +1,4 @@
-import pool from '../../core/database/database-mysql.js';
+import pool from '../../core/database/clients/mysql/native.client.js';
 
 import {
   addFilterCondition,
