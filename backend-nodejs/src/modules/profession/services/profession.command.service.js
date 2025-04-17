@@ -1,22 +1,9 @@
+import ProfessionEntity from '../entities/profession.entity.js';
 import { ITEM_CONSTANTS } from '../constants/profession.constant.js';
 
-class Service {
+class ProfessionCommandService {
   constructor(repository) {
     this.repository = repository;
-  }
-
-  async getItems(query) {
-    return await this.repository.getItems(query);
-  }
-
-  async getItemById(id) {
-    const item = await this.repository.getItemById(id);
-
-    if (!item) {
-      throw new Error(ITEM_CONSTANTS.NOT_FOUND);
-    }
-
-    return item;
   }
 
   async createItem(data) {
@@ -25,16 +12,20 @@ class Service {
       throw new Error(ITEM_CONSTANTS.ALREADY_EXISTS);
     }
 
-    return await this.repository.createItem(data);
+    const profession = new ProfessionEntity(data);
+    const created = await this.repository.createItem(profession.toJSON());
+
+    return new ProfessionEntity(created);
   }
 
   async updateItem(id, data) {
-    const updated = await this.repository.updateItem(id, data);
+    const profession = new ProfessionEntity({ id, ...data });
+    const updated = await this.repository.updateItem(id, profession.toJSON());
     if (!updated) {
       throw new Error(ITEM_CONSTANTS.NOT_FOUND);
     }
 
-    return updated;
+    return new ProfessionEntity(updated);
   }
 
   async deleteItem(id) {
@@ -43,8 +34,8 @@ class Service {
       throw new Error(ITEM_CONSTANTS.NOT_FOUND);
     }
 
-    return deleted;
+    return new ProfessionEntity(deleted);
   }
 }
 
-export default Service;
+export default ProfessionCommandService;

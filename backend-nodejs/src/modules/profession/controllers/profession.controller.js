@@ -3,8 +3,10 @@ import { ITEM_CONSTANTS } from '../constants/profession.constant.js';
 import { validateItem } from '../schemas/profession.schema.js';
 
 class Controller {
-  constructor(service) {
-    this.service = service;
+  constructor({ commandService, queryService }) {
+    this.commandService = commandService;
+    this.queryService = queryService;
+
     this.getItems = this.getItems.bind(this);
     this.getItemById = this.getItemById.bind(this);
     this.createItem = this.createItem.bind(this);
@@ -14,7 +16,7 @@ class Controller {
 
   async getItems(req, res, next) {
     try {
-      const result = await this.service.getItems(req.query);
+      const result = await this.queryService.getItems(req.query);
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
 
       return next();
@@ -26,7 +28,7 @@ class Controller {
 
   async getItemById(req, res, next) {
     try {
-      const result = await this.service.getItemById(parseInt(req.params.id));
+      const result = await this.queryService.getItemById(parseInt(req.params.id));
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
 
       return next();
@@ -51,7 +53,7 @@ class Controller {
   async createItem(req, res, next) {
     try {
       validateItem(req.body);
-      const result = await this.service.createItem(req.body);
+      const result = await this.commandService.createItem(req.body);
       res.locals = { data: result, statusCode: HTTP_STATUS.CREATED };
 
       return next();
@@ -70,7 +72,7 @@ class Controller {
   async updateItem(req, res, next) {
     try {
       validateItem(req.body);
-      const result = await this.service.updateItem(parseInt(req.params.id), req.body);
+      const result = await this.commandService.updateItem(parseInt(req.params.id), req.body);
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
 
       return next();
@@ -88,7 +90,7 @@ class Controller {
 
   async deleteItem(req, res, next) {
     try {
-      const result = await this.service.deleteItem(parseInt(req.params.id));
+      const result = await this.commandService.deleteItem(parseInt(req.params.id));
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
 
       return next();
