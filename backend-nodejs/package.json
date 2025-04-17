@@ -18,7 +18,7 @@
     "test:profession:service": "npm test -- profession.service.test.js",
     "test:profession:schema": "npm test -- profession.schema.test.js",
     "test:profession:controller": "npm test -- profession.controller.test.js",
-    "test:profession:router": "npm test -- profession.router.test.js",
+    "test:profession:routes": "npm test -- profession.routes.test.js",
     "test:response-handler": "npm test -- response-handler.test.js",
     "test:not-found-handler": "npm test -- not-found-handler.test.js",
     "test:error-logger": "npm test -- error-logger.test.js",

@@ -13,10 +13,10 @@ import errorLogger from './infrastructure/logger/error-logger.js';
 
 import fakeAuth from './infrastructure/middleware/auth/fake-auth.js';
 
-import swaggerRouter from './infrastructure/swagger/swagger.router.js';
+import swaggerRoutes from './infrastructure/swagger/swagger.routes.js';
 
-import rootRouter from './routers/root.router.js';
-import modulesRouter from './routers/modules.router.js';
+import rootRoutes from './routers/root.routes.js';
+import appRoutes from './routers/app.routes.js';
 
 const app = express();
 
@@ -32,10 +32,10 @@ if (['development', 'test'].includes(config.nodeEnv)) {
 
 app.use(requestLogger);
 
-app.use('/api-docs', swaggerRouter);
+app.use('/api-docs', swaggerRoutes);
 
-app.use(rootRouter);
-app.use(modulesRouter);
+app.use(rootRoutes);
+app.use(appRoutes);
 
 app.use(notFoundHandler);
 app.use(responseHandler);
