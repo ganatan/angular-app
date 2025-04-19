@@ -21,5 +21,9 @@
 ### Compilation
 * `npm run build`     
 
+### Production
+* `npm run serve`
+* in your browser [http://localhost:3000](http://localhost:3000) 
+
 ### Author
 * Author  : danny
