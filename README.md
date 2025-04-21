@@ -15,6 +15,15 @@ Ce dépôt contient une **Application Web fullstack**.
 
 🔗 [Voir la démo Angular](https://angular.ganatan.com)
 
+<p align="center">
+  <p align="center">
+    <a href="https://angular.ganatan.com/">
+      <img src="https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif" alt="Angular 19 Example 
+      Application"/>
+    </a>
+  </p>
+</p>
+
 ---
 
 ## 📁 Structure du projet
