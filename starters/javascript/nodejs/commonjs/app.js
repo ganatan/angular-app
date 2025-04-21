@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const port = 3000
 
 const persons = [
   { id: 1, name: 'Christopher Nolan' },
@@ -16,6 +15,28 @@ app.get('/persons', (req, res) => {
   res.json(persons)
 })
 
-app.listen(port, () => {
-  console.log(`API listening on http://localhost:${port}`)
-})
+module.exports = app
+
+
+
+// const express = require('express')
+// const app = express()
+// const port = 3000
+
+// const persons = [
+//   { id: 1, name: 'Christopher Nolan' },
+//   { id: 2, name: 'Quentin Tarantino' },
+//   { id: 3, name: 'Steven Spielberg' },
+//   { id: 4, name: 'Martin Scorsese' },
+//   { id: 5, name: 'James Cameron' },
+//   { id: 6, name: 'Ridley Scott' },
+//   { id: 7, name: 'Denis Villeneuve' }
+// ]
+
+// app.get('/persons', (req, res) => {
+//   res.json(persons)
+// })
+
+// app.listen(port, () => {
+//   console.log(`API listening on http://localhost:${port}`)
+// })

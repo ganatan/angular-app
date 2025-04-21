@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app",
-    "dev": "nodemon app",
-    "lint": "eslint ."
+    "start": "node server",
+    "dev": "nodemon server",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:coverage": "jest --coverage"    
   },
   "keywords": [],
   "author": "",
@@ -14,11 +16,13 @@
   "type": "commonjs",
   "dependencies": {
     "express": "5.1.0",
-    "nodemon": "3.1.9"
+    "nodemon": "3.1.9",
+    "supertest": "^7.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
     "eslint": "^9.25.0",
-    "globals": "^16.0.0"
+    "globals": "^16.0.0",
+    "jest": "^29.7.0"
   }
 }
