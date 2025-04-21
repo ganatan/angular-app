@@ -17,6 +17,37 @@ This repository contains a **fullstack web application** :
 
 ---
 
+## 📁 Project Structure
+
+### 🧩 Frontend
+
+- **`frontend-angular`**  
+  Angular 19 application (including Routing, Lazy Loading, SSR, PWA, SEO).
+
+---
+
+### 🚀 Backends
+
+- **`backend-nodejs`**  
+  Express.js API in JavaScript (ESM)  
+  Uses either mocked data or a real database (PostgreSQL/MySQL)
+
+- **`backend-typescript`**  
+  Express.js API in TypeScript  
+  Uses either mocked data or a real database (PostgreSQL/MySQL)
+
+---
+
+### 🧪 Technical Starters (bonus)
+
+- **`backend-javascript-commonjs`**  
+  JavaScript Node.js starter using CommonJS (`require/module.exports`, ESLint, Jest, Webpack)
+
+- **`backend-javascript-esm`**  
+  JavaScript Node.js starter using ESM (`import/export`, ESLint, Jest, Webpack)
+
+---
+
 ## 🔧 Frontend Configuration (Angular)
 
 In `environment.ts` :
