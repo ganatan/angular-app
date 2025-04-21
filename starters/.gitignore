@@ -1,4 +1,4 @@
-# Commun à tous les starters
+# --- Node.js / JavaScript / TypeScript ---
 **/node_modules/
 **/.history/
 **/dist/
@@ -6,3 +6,20 @@
 **/logs/
 **/data/logs/
 **/package-lock.json
+
+# --- Java (Eclipse, compilation, IDE, build tools) ---
+**/bin/                      # Fichiers compilés (Eclipse)
+**/out/                      # Dossier de sortie (parfois utilisé)
+**/*.class                   # Fichiers de classes compilés
+**/.classpath
+**/.project
+**/.settings/
+
+# --- Jar, war, etc ---
+**/*.jar
+**/*.war
+**/*.ear
+
+# --- OS / IDE général ---
+**/.DS_Store
+**/Thumbs.db
