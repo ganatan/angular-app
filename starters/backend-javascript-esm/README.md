@@ -24,14 +24,13 @@ npm test
 ## 📊 Couverture
 
 ```bash
-npm run test:coverage
+npm run coverage
 ```
 
 ## 🧹 Lint
 
 ```bash
 npm run lint
-npm run lint:fix
 ```
 
 ## 🏗️ Build Webpack
