@@ -4,6 +4,9 @@ import { defineConfig } from "eslint/config"
 
 export default defineConfig([
   {
+    ignores: ["dist/**"], // ✅ ignore tous les fichiers dans dist/
+  },
+  {
     files: ["**/*.{js,mjs,cjs}"],
     plugins: { js },
     extends: ["js/recommended"],
