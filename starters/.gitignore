@@ -1,0 +1,8 @@
+# Commun à tous les starters
+**/node_modules/
+**/.history/
+**/dist/
+**/coverage/
+**/logs/
+**/data/logs/
+**/package-lock.json
