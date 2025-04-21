@@ -1,0 +1,7 @@
+/node_modules/
+/.history/
+/data/logs/
+/dist
+/coverage
+package-lock.json
+/logs
