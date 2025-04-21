@@ -22,7 +22,7 @@ Ce dépôt contient une **Application Web fullstack**.
 
 ---
 
-### 🚀 Backends principaux
+### 🚀 Backends
 
 - **`backend-nodejs`**  
   API Express.js en JavaScript (ESM)  
