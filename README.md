@@ -1,7 +1,6 @@
 # Angular 19 – Application Fullstack
 
-**👉 If you don’t speak French, the English version is here**:  
-[![English](./ui/version-en.png)](./README.en.md)
+**👉 If you don’t speak French, the English version is here**: [![English](./ui/version-en.png)](./README.en.md)
 
 <img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
 
@@ -21,7 +20,7 @@ Ce dépôt contient une **Application Angular fullstack** avec Angular 19 et plu
 ### 🚀 Backends principaux
 
 - **`backend-nodejs`**  
-  API Express.js en JavaScript (CommonJS)  
+  API Express.js en JavaScript (ESM)  
   Données mockées ou base de données (PostgreSQL/MySQL)
 
 - **`backend-typescript`**  
