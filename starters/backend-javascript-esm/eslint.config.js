@@ -11,25 +11,11 @@ export default defineConfig([
     plugins: { js },
     extends: ["js/recommended"],
     rules: {
-      "no-var": "error",
-      "prefer-const": "warn",
-      "no-unused-vars": "warn"
-    }
-  },
-  {
-    files: ["**/*.js"],
-    languageOptions: {
-      sourceType: "commonjs"
+      "no-var": "error"
     }
   },
   {
     files: ["**/*.{js,mjs,cjs}"],
-    languageOptions: {
-      globals: globals.node
-    }
-  },
-  {
-    files: ["**/*.test.js"],
     languageOptions: {
       globals: {
         ...globals.node,
