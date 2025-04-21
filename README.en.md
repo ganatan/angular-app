@@ -75,7 +75,7 @@ DB_CLIENT=mock # mock | pg | mysql
 
 | `DB_CLIENT` | Source de données      |
 |-------------|------------------------|
-| `mock`      | Données simulées       |
+| `mock`      | Mocked Data            |
 | `pg`        | PostgreSQL             |
 | `mysql`     | MySQL                  |
 
