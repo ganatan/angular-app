@@ -2,6 +2,8 @@
 
 **👉 Si vous ne parlez pas anglais, la version française est ici** : [![Français](./ui/version-fr.png)](./README.md)
 
+<img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
+
 This repository contains a **fullstack web application** made up of two separate projects:
 
 - **frontend-angular**: Angular 19 frontend application  
