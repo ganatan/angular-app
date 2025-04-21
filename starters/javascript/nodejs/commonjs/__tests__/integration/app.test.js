@@ -1,5 +1,5 @@
 const request = require('supertest')
-const app = require('./app')
+const app = require('../../src/app')
 
 describe('GET /persons', () => {
   test('should return list of persons', async () => {
