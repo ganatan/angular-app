@@ -4,7 +4,7 @@
 
 <img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
 
-This repository contains a **fullstack web application** made up of two separate projects:
+This repository contains a **fullstack web application** :
 
 - **frontend-angular**: Angular 19 frontend application  
 - **backend-nodejs**: Node.js API using mocked or real data (PostgreSQL/MySQL)
@@ -17,60 +17,54 @@ This repository contains a **fullstack web application** made up of two separate
 
 ---
 
-## 🔧 Frontend behavior (Angular)
+## 🔧 Frontend Configuration (Angular)
 
-The Angular app uses the `environment.ts` file:
+In `environment.ts` :
 
 ```ts
 useDatabase: false,
 backend: 'http://localhost:3000',
 ```
 
-### Two modes available:
-
-| `useDatabase` | Behavior                                  |
-|---------------|-------------------------------------------|
-| `false`       | Uses **mock data** from the frontend      |
-| `true`        | Uses **real data** from the backend (`http://localhost:3000`) |
+| `useDatabase` | Mode                                  |
+|---------------|---------------------------------------|
+| `false`       | **Mocked** data on the frontend       |
+| `true`        | **Real** data provided by the backend |
 
 ---
 
-## 🛠️ Backend behavior (Node.js)
+## 🛠 Backends Configuration
 
-The backend uses a `.env` configuration file:
+Dans le fichier `.env` :
 
 ```env
 PORT=3000
-# === DEFAULT DB CLIENT ===
-DB_CLIENT=mock # pg | mysql | mock
+DB_CLIENT=mock # mock | pg | mysql
 ```
 
-### Behavior based on `DB_CLIENT`:
-
-| `DB_CLIENT`     | Data source                  |
-|-----------------|------------------------------|
-| `mock`          | Mocked data                  |
-| `pg`            | PostgreSQL                   |
-| `mysql`         | MySQL                        |
-
+| `DB_CLIENT` | Source de données      |
+|-------------|------------------------|
+| `mock`      | Données simulées       |
+| `pg`        | PostgreSQL             |
+| `mysql`     | MySQL                  |
 
 ---
 
-## 🔗 Available API endpoints
+## 🔗 Exposed APIs
 
-Default backend endpoints are:
-
-- [http://localhost:3000/continents](http://localhost:3000/continents)
-- [http://localhost:3000/cities](http://localhost:3000/cities)
-- [http://localhost:3000/countries](http://localhost:3000/countries)
-- [http://localhost:3000/persons](http://localhost:3000/persons)
-- [http://localhost:3000/professions](http://localhost:3000/professions)
+| Resource      | URL                                      |
+|---------------|------------------------------------------|
+| Continents    | [http://localhost:3000/continents](http://localhost:3000/continents) |
+| Cities        | [http://localhost:3000/cities](http://localhost:3000/cities)         |
+| Countries     | [http://localhost:3000/countries](http://localhost:3000/countries)   |
+| Persons       | [http://localhost:3000/persons](http://localhost:3000/persons)       |
+| Professions   | [http://localhost:3000/professions](http://localhost:3000/professions) |
 
 ---
 
-## 🚀 Quick Start
+## ⚙️ Quick Start
 
-### Frontend
+### ▶️ Angular Frontend 
 
 ```bash
 git clone https://github.com/ganatan/angular-app.git
@@ -79,11 +73,11 @@ npm install
 npm start
 ```
 
-Accessible at: [http://localhost:4200](http://localhost:4200)
+🔗 [http://localhost:4200](http://localhost:4200)
 
 ---
 
-### Backend Nodejs
+### ▶️ Node.js Backend (ESM)
 
 ```bash
 cd angular-app/backend-nodejs
@@ -91,11 +85,11 @@ npm install
 npm start
 ```
 
-Accessible at: [http://localhost:3000](http://localhost:3000)
+🔗 [http://localhost:3000](http://localhost:3000)
 
 ---
 
-### Backend Typescript
+### ▶️ TypeScript Backend 
 
 ```bash
 cd angular-app/backend-typescript
@@ -103,19 +97,7 @@ npm install
 npm start
 ```
 
-Accessible at: [http://localhost:3000](http://localhost:3000)
-
----
-
-### Backend Typescript
-
-```bash
-cd angular-app/backend-typescript
-npm install
-npm start
-```
-
-Accessible at: [http://localhost:3000](http://localhost:3000)
+🔗 [http://localhost:3000](http://localhost:3000)
 
 ---
 

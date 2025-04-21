@@ -6,10 +6,14 @@
 
 Ce dépôt contient une **Application Web fullstack**.
 
-- **frontend-angular**: Angular 19
-- **backend-nodejs**: API Node.js
-- **backend-typescript**: API Typescript
+- **frontend-angular**: Application frontend Angular 19
+- **backend-nodejs**: API Node.js utilisant des données simulées ou réelles (PostgreSQL/MySQL)
+- **backend-typescript**: API TypeScript utilisant des données simulées ou réelles (PostgreSQL/MySQL)
 
+---
+## 🌐 Démo en ligne
+
+🔗 [Voir la démo Angular](https://angular.ganatan.com)
 
 ---
 
@@ -44,12 +48,6 @@ Ce dépôt contient une **Application Web fullstack**.
 
 ---
 
-## 🌐 Démo en ligne
-
-🔗 [Voir la démo Angular](https://angular.ganatan.com)
-
----
-
 ## 🔧 Configuration du frontend (Angular)
 
 Dans `environment.ts` :
@@ -60,7 +58,7 @@ backend: 'http://localhost:3000',
 ```
 
 | `useDatabase` | Mode                                  |
-|---------------|----------------------------------------|
+|---------------|---------------------------------------|
 | `false`       | Données **mockées** côté frontend     |
 | `true`        | Données **réelles** via le backend    |
 
