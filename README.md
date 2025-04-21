@@ -4,7 +4,12 @@
 
 <img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
 
-Ce dépôt contient une **Application Angular fullstack** avec Angular 19 et plusieurs backends Node.js.
+Ce dépôt contient une **Application Web fullstack**.
+
+- **frontend-angular**: Angular 19
+- **backend-nodejs**: API Node.js
+- **backend-typescript**: API Typescript
+
 
 ---
 
@@ -105,7 +110,7 @@ npm start
 
 ---
 
-### ▶️ Backend Node.js (CommonJS)
+### ▶️ Backend Node.js (ESM)
 
 ```bash
 cd angular-app/backend-nodejs
