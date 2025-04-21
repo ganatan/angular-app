@@ -18,7 +18,7 @@ Ce dépôt contient une **Application Web fullstack**.
 ### 🧩 Frontend
 
 - **`frontend-angular`**  
-  Application Angular 19.
+  Application Angular 19 (Incluant Routing, Lazy loading, SSR, PWA, SEO).
 
 ---
 
