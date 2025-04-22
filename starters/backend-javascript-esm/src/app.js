@@ -6,7 +6,16 @@ const app = express();
 app.get('/persons', getItems);
 
 app.get('/', (req, res) => {
-  res.send('backend-javascript-esm');
+  let result =
+  {
+    "success": true,
+    "data": {
+      "version": "1.0.0",
+      "status": "ok",
+      "app": "backend-javascript-esm"
+    }
+  };
+  res.send(result);
 });
 
 export default app;
