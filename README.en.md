@@ -7,7 +7,7 @@
 This repository contains a **fullstack web application** :
 
 - **frontend-angular**: Angular 19 frontend application  
-- **backend-nodejs**: Node.js API using mocked or real data (PostgreSQL/MySQL)
+- **backend-javascript**: Javascript API using mocked or real data (PostgreSQL/MySQL)
 - **backend-typescript**: Typescript API using mocked or real data (PostgreSQL/MySQL)
 
 ---
@@ -37,7 +37,7 @@ This repository contains a **fullstack web application** :
 
 ### 🚀 Backends
 
-- **`backend-nodejs`**  
+- **`backend-javascript`**  
   Express.js API in JavaScript (ESM)  
   Uses either mocked data or a real database (PostgreSQL/MySQL)
 
@@ -120,7 +120,7 @@ npm start
 ### ▶️ Node.js Backend (ESM)
 
 ```bash
-cd angular-app/backend-nodejs
+cd angular-app/backend-javascript
 npm install
 npm start
 ```

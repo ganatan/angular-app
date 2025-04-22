@@ -7,7 +7,7 @@
 Ce dépôt contient une **Application Web fullstack**.
 
 - **frontend-angular**: Application frontend Angular 19
-- **backend-nodejs**: API Node.js utilisant des données simulées ou réelles (PostgreSQL/MySQL)
+- **backend-javascript**: API Javascript utilisant des données simulées ou réelles (PostgreSQL/MySQL)
 - **backend-typescript**: API TypeScript utilisant des données simulées ou réelles (PostgreSQL/MySQL)
 
 ---
@@ -37,7 +37,7 @@ Ce dépôt contient une **Application Web fullstack**.
 
 ### 🚀 Backends
 
-- **`backend-nodejs`**  
+- **`backend-javascript`**  
   API Express.js en JavaScript (ESM)  
   Données mockées ou base de données (PostgreSQL/MySQL)
 
@@ -120,7 +120,7 @@ npm start
 ### ▶️ Backend Node.js (ESM)
 
 ```bash
-cd angular-app/backend-nodejs
+cd angular-app/backend-javascript
 npm install
 npm start
 ```
