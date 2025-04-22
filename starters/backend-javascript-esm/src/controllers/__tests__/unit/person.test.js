@@ -1,6 +1,4 @@
-'use strict';
-
-const getItems = require('../../person');
+import { getItems } from '../../person.js';
 
 test('getItems renvoie un JSON de 7 personnes', () => {
   // Arrange

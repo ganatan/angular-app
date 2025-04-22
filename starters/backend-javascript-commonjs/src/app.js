@@ -7,7 +7,7 @@ const app = express();
 app.get('/persons', getItems);
 
 app.get('/', (req, res) => {
-  res.send('backend-javascript');
+  res.send('backend-javascript-commonjs');
 });
 
 module.exports = app;
