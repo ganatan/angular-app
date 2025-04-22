@@ -1,4 +1,3 @@
-// controllers/getPersons.js
 const persons = require('../data/persons')
 
 function getPersons(req, res) {

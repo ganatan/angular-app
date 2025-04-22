@@ -1,4 +1,4 @@
-const getPersons = require('../../../controllers/getPersons')
+const getPersons = require('../../../controllers/persons')
 
 test('getPersons renvoie un JSON de 7 personnes', () => {
   // Arrange
