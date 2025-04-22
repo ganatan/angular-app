@@ -47,6 +47,7 @@ http://localhost:8080/backend-java21-maven/
 
 # Tests
 mvn clean test
+mvn clean test jacoco:report
 
 
 
