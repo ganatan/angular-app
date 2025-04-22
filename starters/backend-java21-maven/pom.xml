@@ -30,5 +30,59 @@
       <artifactId>jackson-databind</artifactId>
       <version>2.17.0</version>
     </dependency>
+    
+    
+    <dependency>
+  <groupId>org.junit.jupiter</groupId>
+  <artifactId>junit-jupiter</artifactId>
+  <version>5.10.0</version>
+  <scope>test</scope>
+</dependency>
+
+<dependency>
+  <groupId>org.mockito</groupId>
+  <artifactId>mockito-core</artifactId>
+  <version>5.11.0</version>
+  <scope>test</scope>
+</dependency>
+    
   </dependencies>
+  
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-maven-plugin</artifactId>
+      <version>11.0.25</version>
+      <configuration>
+        <webApp>
+          <contextPath>/</contextPath>
+        </webApp>
+      </configuration>
+    </plugin>
+    
+    <plugin>
+  <groupId>org.jacoco</groupId>
+  <artifactId>jacoco-maven-plugin</artifactId>
+  <version>0.8.11</version>
+  <executions>
+    <execution>
+      <goals>
+        <goal>prepare-agent</goal>
+      </goals>
+    </execution>
+    <execution>
+      <id>report</id>
+      <phase>test</phase>
+      <goals>
+        <goal>report</goal>
+      </goals>
+    </execution>
+  </executions>
+</plugin>
+    
+  </plugins>
+</build>
+
+  
 </project>
