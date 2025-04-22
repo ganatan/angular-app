@@ -1,11 +1,13 @@
-const express = require('express')
-const getPersons = require('./controllers/persons')
-const app = express()
+'use strict';
 
-app.get('/persons', getPersons)
+const express = require('express');
+const getItems = require('./controllers/person');
+const app = express();
+
+app.get('/persons', getItems);
 
 app.get('/', (req, res) => {
   res.send('backend-javascript');
-})
+});
 
-module.exports = app
+module.exports = app;
