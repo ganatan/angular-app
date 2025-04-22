@@ -14,7 +14,7 @@ Copie du war dans D:\hal\Tomcat 11.0\webapps
 Demarrer Tomcat
 
 Executer
-http://localhost:8080/backend-java21-maven/
+http://localhost:8080/backend-java21-spring/
 
 
 # Deploiement via Jetty
@@ -47,6 +47,7 @@ http://localhost:8080/backend-java21-maven/
 
 # Tests
 mvn clean test
+
 
 
 # Commandes maven

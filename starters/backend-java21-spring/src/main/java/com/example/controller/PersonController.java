@@ -10,7 +10,7 @@ import java.util.List;
 @Controller
 public class PersonController {
 
-    @GetMapping("/api/persons")
+    @GetMapping("/")
     @ResponseBody
     public List<Person> getPersons() {
         return List.of(
