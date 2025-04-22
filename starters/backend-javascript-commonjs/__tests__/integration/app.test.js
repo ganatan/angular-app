@@ -23,6 +23,6 @@ describe('API / (fallback)', () => {
 
     // Assert
     expect(res.statusCode).toBe(200);
-    expect(res.text).toBe('backend-javascript');
+    expect(res.text).toBe('backend-javascript-commonjs');
   });
 });

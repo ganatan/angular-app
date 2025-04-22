@@ -1,19 +1,32 @@
 import request from 'supertest';
 import app from '../../src/app.js';
 
-describe('GET /persons', () => {
-  test('should return a list of 7 famous directors', async () => {
+describe('API /persons', () => {
+  test('GET /persons retourne 200 et un tableau de 7 personnes', async () => {
     // Arrange
-    const expectedLength = 7;
+    const endpoint = '/persons';
 
     // Act
-    const response = await request(app).get('/persons');
+    const res = await request(app).get(endpoint);
 
     // Assert
-    expect(response.statusCode).toBe(200);
-    expect(Array.isArray(response.body)).toBe(true);
-    expect(response.body).toHaveLength(expectedLength);
-    expect(response.body[0]).toHaveProperty('id');
-    expect(response.body[0]).toHaveProperty('name');
+    expect(res.statusCode).toBe(200);
+    expect(Array.isArray(res.body)).toBe(true);
+    expect(res.body).toHaveLength(7);
+    expect(res.body[0]).toHaveProperty('name', 'Christopher Nolan');
+  });
+});
+
+describe('API / (fallback)', () => {
+  test('GET / retourne le texte d\'accueil', async () => {
+    // Arrange
+    const endpoint = '/';
+
+    // Act
+    const res = await request(app).get(endpoint);
+
+    // Assert
+    expect(res.statusCode).toBe(200);
+    expect(res.text).toBe('backend-javascript-esm');
   });
 });

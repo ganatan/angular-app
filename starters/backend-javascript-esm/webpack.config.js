@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename)
 export default {
   entry: './src/server.js',
   output: {
-    filename: 'app.bundle.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
   target: 'node',
