@@ -45,6 +45,9 @@ This repository contains a **fullstack web application** :
   Express.js API in TypeScript  
   Uses either mocked data or a real database (PostgreSQL/MySQL)
 
+- **`backend-java21-springboot`**  
+  Starter Java21 Spring Boot (JUnit)
+
 ---
 
 ### 🧪 Technical Starters (bonus)

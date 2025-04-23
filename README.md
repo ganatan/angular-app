@@ -55,6 +55,9 @@ Ce dépôt contient une **Application Web fullstack**.
 - **`backend-javascript-esm`**  
   Starter JavaScript Node.js avec ESM (`import/export`, ESLint, Jest, Webpack)
 
+- **`backend-java21-springboot`**  
+  Starter Java21 Spring Boot (JUnit)
+
 ---
 
 ## 🔧 Configuration du frontend (Angular)

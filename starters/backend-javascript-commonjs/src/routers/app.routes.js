@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const getItems = require('../modules/person/person.js');
+const getItems = require('../modules/person/person.controller.js');
 
 const router = express.Router();
 
