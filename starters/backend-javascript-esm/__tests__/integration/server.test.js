@@ -1,23 +1,23 @@
 import request from 'supertest';
 import server from '../../src/server.js';
 
-describe('Server startup and /persons endpoint', () => {
-  afterAll(() => {
-    server.close();
-  });
+afterAll((done) => {
+  server.close(done);
+});
 
-  test('should return 200 OK and 7 persons', async () => {
+describe('GET /persons via server.js', () => {
+  test('retourne 200 et un tableau de 7 personnes dans un objet success', async () => {
     // Arrange
-    const expectedLength = 7;
+    const endpoint = '/persons';
 
     // Act
-    const response = await request(server).get('/persons');
+    const res = await request(server).get(endpoint);
 
     // Assert
-    expect(response.statusCode).toBe(200);
-    expect(Array.isArray(response.body)).toBe(true);
-    expect(response.body).toHaveLength(expectedLength);
-    expect(response.body[0]).toHaveProperty('id');
-    expect(response.body[0]).toHaveProperty('name');
+    expect(res.statusCode).toBe(200);
+    expect(res.body).toHaveProperty('success', true);
+    expect(Array.isArray(res.body.data)).toBe(true);
+    expect(res.body.data).toHaveLength(7);
+    expect(res.body.data[0]).toHaveProperty('name', 'Christopher Nolan');
   });
 });

@@ -11,9 +11,10 @@ describe('API /persons', () => {
 
     // Assert
     expect(res.statusCode).toBe(200);
-    expect(Array.isArray(res.body)).toBe(true);
-    expect(res.body).toHaveLength(7);
-    expect(res.body[0]).toHaveProperty('name', 'Christopher Nolan');
+    expect(res.body).toHaveProperty('success', true);
+    expect(Array.isArray(res.body.data)).toBe(true);
+    expect(res.body.data).toHaveLength(7);
+    expect(res.body.data[0]).toHaveProperty('name', 'Christopher Nolan');
   });
 });
 

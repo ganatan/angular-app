@@ -1,5 +1,10 @@
 import persons from '../data/persons.js';
 
 export function getItems(req, res) {
-  res.json(persons);
+  const result = {
+    success: true,
+    data: persons,
+  };
+
+  res.json(result);
 }
