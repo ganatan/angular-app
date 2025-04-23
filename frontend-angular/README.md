@@ -15,7 +15,7 @@
 * `npm run coverage`
 
 ### Compilation
-* `npm run build`       ( without SSR)
+* `npm run build`       
 
 ### Production
 * `npm run serve`
