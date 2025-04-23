@@ -15,22 +15,6 @@ Starter backend for Node.js using **ESM**, with Express, Jest, ESLint, and Webpa
 - Build system with Webpack
 - Script to print project folder structure
 
-## 📁 Structure
-
-```
-src/
-  app.js              # Express app
-  server.js           # Server entry point
-  controllers/        # Controllers
-  data/               # Static data
-__tests__/
-  unit/               # Unit tests
-  integration/        # Integration tests
-  e2e/                # End-to-end tests
-tools/
-  scripts/            # Utility scripts
-```
-
 ## 📦 npm Scripts
 
 - `npm run dev`: start in dev mode (nodemon)
@@ -55,7 +39,3 @@ npm install
 ```bash
 npm test
 ```
-
-## 📚 License
-
-ISC

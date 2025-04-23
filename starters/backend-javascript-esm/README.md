@@ -15,22 +15,6 @@ Starter backend Node.js utilisant **ESM**, avec Express, Jest, ESLint et Webpack
 - Build avec Webpack
 - Script pour générer la structure du projet
 
-## 📁 Structure
-
-```
-src/
-  app.js              # Application Express
-  server.js           # Point d'entrée serveur
-  controllers/        # Contrôleurs
-  data/               # Données statiques
-__tests__/
-  unit/               # Tests unitaires
-  integration/        # Tests d'intégration
-  e2e/                # Tests end-to-end
-tools/
-  scripts/            # Scripts utilitaires
-```
-
 ## 📦 Scripts npm
 
 - `npm run dev` : démarrage en mode développement (nodemon)
@@ -55,7 +39,3 @@ npm install
 ```bash
 npm test
 ```
-
-## 📚 Licence
-
-ISC
