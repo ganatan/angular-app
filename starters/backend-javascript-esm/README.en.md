@@ -1,13 +1,13 @@
-# backend-javascript-commonjs
+# backend-javascript-esm
 
 **👉 Si vous ne parlez pas anglais, la version française est ici** : [![Français](../../ui/version-fr.png)](./README.md)
 
-Starter backend for Node.js using **CommonJS**, with Express, Jest, ESLint, and Webpack.
+Starter backend for Node.js using **ESM**, with Express, Jest, ESLint, and Webpack.
 
 ## 🚀 Features
 
 - Express server
-- CommonJS module support (`require`)
+- ESM module support (`import`)
 - Linting with ESLint
 - Unit, integration, and e2e testing with Jest
 - Coverage report (`jest --coverage`)

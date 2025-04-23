@@ -13,7 +13,7 @@
 
   <groupId>com.example</groupId>
   <artifactId>backend-java21-springboot</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>backend-java21-springboot</name>
   <description>Demo backend-java21-springboot</description>
 
@@ -37,6 +37,13 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-tomcat</artifactId>
+    <scope>provided</scope> <!-- Important pour un WAR déployé sur Tomcat -->
+  </dependency>
+  
   </dependencies>
 
   <build>
