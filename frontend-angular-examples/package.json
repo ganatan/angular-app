@@ -6,10 +6,15 @@
     "start-component": "npx nx serve angular-component",
     "lint-component": "npx nx lint angular-component",
     "test-component": "npx nx test angular-component",
-    "build-component": "npx nx build angular-component"
+    "build-component": "npx nx build angular-component",
+    "start-toastr": "npx nx serve angular-toastr",
+    "lint-toastr": "npx nx lint angular-toastr",
+    "test-toastr": "npx nx test angular-toastr",
+    "build-toastr": "npx nx build angular-toastr"
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "19.2.7",
     "@angular/common": "19.2.7",
     "@angular/compiler": "19.2.7",
     "@angular/core": "19.2.7",
@@ -17,8 +22,11 @@
     "@angular/platform-browser": "19.2.7",
     "@angular/platform-browser-dynamic": "19.2.7",
     "@angular/router": "19.2.7",
-    "rxjs": "~7.8.0",
-    "zone.js": "~0.15.0"
+    "@fortawesome/fontawesome-free": "6.6.0",
+    "bootstrap": "5.3.3",
+    "ngx-toastr": "19.0.0",
+    "rxjs": "7.8.0",
+    "zone.js": "0.15.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "19.2.9",

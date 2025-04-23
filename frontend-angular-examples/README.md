@@ -34,3 +34,12 @@
 
   Creation d'application
     npx nx g @nx/angular:app apps/angular-component
+    npx nx g @nx/angular:app apps/angular-toastr
+
+
+# angular-toastr
+  Documentation
+    https://github.com/scttcper/ngx-toastr
+
+  npm install @angular/animations
+
