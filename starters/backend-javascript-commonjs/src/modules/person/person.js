@@ -1,6 +1,6 @@
 'use strict';
 
-const persons = require('../data/persons');
+const persons = require('./person.mock-data');
 
 function getItems(req, res) {
   const result = {

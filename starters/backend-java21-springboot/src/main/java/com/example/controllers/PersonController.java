@@ -1,18 +1,18 @@
-package com.example.controller;
+package com.example.controllers;
 
-import com.example.model.Person;
-import com.example.model.Response;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class PersonController {
 
+    record Person(int id, String name) {}
+
     @GetMapping("/persons")
-    public Response<List<Person>> getAllPersons() {
-    	
+    public Map<String, Object> getAllPersons() {
         List<Person> persons = List.of(
             new Person(1, "Christopher Nolan"),
             new Person(2, "Quentin Tarantino"),
@@ -23,6 +23,9 @@ public class PersonController {
             new Person(7, "Denis Villeneuve")
         );
 
-        return new Response<>(true, persons);
+        return Map.of(
+            "success", true,
+            "data", persons
+        );
     }
 }

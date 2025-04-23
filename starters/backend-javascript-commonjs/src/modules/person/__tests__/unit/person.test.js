@@ -2,7 +2,7 @@
 
 const getItems = require('../../person');
 
-test('getItems renvoie un objet avec success et un tableau de 7 personnes', () => {
+test('getItems returns an object with success and an array of 7 persons', () => {
   // Arrange
   const req = {};
   const res = {

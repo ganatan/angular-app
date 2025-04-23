@@ -1,25 +1,16 @@
 'use strict';
 
 const express = require('express');
-const getItems = require('./controllers/person');
-const configureSecurity = require('./security');
+const configureSecurity = require('./configure-security.js');
+
+const appRoutes = require('./routers/app.routes.js');
+const rootRoutes = require('./routers/root.routes.js');
 
 const app = express();
 
 configureSecurity(app);
 
-app.get('/persons', getItems);
-
-app.get('/', (req, res) => {
-  const result = {
-    success: true,
-    data: {
-      version: '1.0.0',
-      status: 'ok',
-      app: 'backend-javascript-commonjs',
-    },
-  };
-  res.send(result);
-});
+app.use(appRoutes);
+app.use(rootRoutes);
 
 module.exports = app;
