@@ -1,34 +1,34 @@
-# backend-java21-sprintgboot
+# backend-java21-springboot
 
+## Compilation
 
+```bash
+mvn clean package
+```
+Génère le fichier WAR : `target/backend-java21-springboot-1.0.0.war`
 
-# Compilation
-  mvn clean package
-  genere le fichier war
-  
-  
-http://localhost:8080/backend-java21-springboot-1.0.0/
+Accès local après démarrage :
+- [http://localhost:8080/backend-java21-springboot-1.0.0/](http://localhost:8080/backend-java21-springboot-1.0.0/)
+- [http://localhost:8080/backend-java21-springboot-1.0.0/persons](http://localhost:8080/backend-java21-springboot-1.0.0/persons)
 
-http://localhost:8080/backend-java21-springboot-1.0.0/persons
-  
-  
-# Deploiement via Tomcat
+---
 
-Copie du war dans D:\hal\Tomcat 11.0\webapps
+## Déploiement avec Tomcat
 
+1. Copier le fichier WAR dans :  
+   `D:\hal\Tomcat 11.0\webapps`
+2. Démarrer Tomcat
+3. Accéder aux URLs :
+   - [http://localhost:8080/](http://localhost:8080/)
+   - [http://localhost:8080/persons](http://localhost:8080/persons)
 
-Demarrer Tomcat
+---
 
-Executer
-http://localhost:8080/
-http://localhost:8080/persons
+## Déploiement avec Jetty
 
+Ajouter dans `pom.xml` :
 
-# Deploiement via Jetty
-
-
-Pom.xml
-
+```xml
 <build>
   <plugins>
     <plugin>
@@ -43,22 +43,33 @@ Pom.xml
     </plugin>
   </plugins>
 </build>
+```
 
+Démarrer Jetty :
+
+```bash
 mvn clean compile jetty:run
-
+# ou simplement :
 mvn jetty:run
+```
 
-Executer
-http://localhost:8080/backend-java21-maven/
+Accéder à :
+- [http://localhost:8080/backend-java21-maven/](http://localhost:8080/backend-java21-maven/)
 
+---
 
-# Tests
+## Tests
+
+```bash
 mvn clean test
 mvn clean test jacoco:report
+```
 
+---
 
+## Commandes Maven utiles
 
-# Commandes maven
+```bash
 mvn clean
 mvn compile
 mvn test
@@ -66,3 +77,4 @@ mvn package
 mvn clean install
 mvn validate
 mvn dependency:tree
+```
