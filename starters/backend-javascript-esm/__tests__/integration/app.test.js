@@ -18,7 +18,7 @@ describe('API /persons', () => {
 });
 
 describe('API / (fallback)', () => {
-  test('GET / retourne le texte d\'accueil', async () => {
+  test('GET / retourne les infos de version de l\'API', async () => {
     // Arrange
     const endpoint = '/';
 
@@ -27,6 +27,9 @@ describe('API / (fallback)', () => {
 
     // Assert
     expect(res.statusCode).toBe(200);
-    expect(res.text).toBe('backend-javascript-esm');
+    expect(res.body).toHaveProperty('success', true);
+    expect(res.body.data).toHaveProperty('app', 'backend-javascript-esm');
+    expect(res.body.data).toHaveProperty('version', '1.0.0');
+    expect(res.body.data).toHaveProperty('status', 'ok');
   });
 });
