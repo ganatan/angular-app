@@ -1,7 +1,5 @@
 package com.example.model;
 
-import java.util.List;
-
 public class Response<T> {
     private boolean success;
     private T data;
