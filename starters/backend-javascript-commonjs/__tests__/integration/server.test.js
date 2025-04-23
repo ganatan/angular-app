@@ -8,16 +8,17 @@ afterAll((done) => {
 });
 
 describe('GET /persons via server.js', () => {
-  test('should respond with list of persons', async () => {
+  test('retourne 200 et un tableau de 7 personnes', async () => {
     // Arrange
+    const endpoint = '/persons';
 
     // Act
-    const res = await request(server).get('/persons');
+    const res = await request(server).get(endpoint);
 
     // Assert
     expect(res.statusCode).toBe(200);
     expect(Array.isArray(res.body)).toBe(true);
-    expect(res.body.length).toBe(7);
-    expect(res.body[0]).toHaveProperty('name');
+    expect(res.body).toHaveLength(7);
+    expect(res.body[0]).toHaveProperty('name', 'Christopher Nolan');
   });
 });

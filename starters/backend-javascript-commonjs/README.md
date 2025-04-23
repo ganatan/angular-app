@@ -1,6 +1,7 @@
 # Node.js CommonJS Starter
 
-Starter backend minimaliste en **JavaScript (CommonJS)**, conçu pour des API Express simples avec linting, tests, coverage et bundling Webpack.
+Starter backend en **JavaScript (CommonJS)**
+API Express avec linting, tests, coverage et bundling Webpack.
 
 ## Installation
 
@@ -19,6 +20,9 @@ npm start
 
 ```bash
 npm test
+npm test:unit
+npm test:integration
+npm test:e2e
 ```
 
 ## Couverture

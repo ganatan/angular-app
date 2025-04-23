@@ -1,6 +1,7 @@
 # Node.js ESM Starter
 
-Starter backend minimaliste en **JavaScript (ES Modules)**, conçu pour des API Express modernes avec linting ESLint, tests unitaires avec Jest, couverture de code et bundling Webpack.
+Starter backend **JavaScript (ES Modules)**
+API Express avec linting ESLint, tests unitaires avec Jest, couverture de code et bundling Webpack.
 
 ## 📦 Installation
 
@@ -19,6 +20,10 @@ npm start
 
 ```bash
 npm test
+npm test
+npm test:unit
+npm test:integration
+npm test:e2e
 ```
 
 ## 📊 Couverture
