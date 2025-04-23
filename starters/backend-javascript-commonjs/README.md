@@ -1,48 +1,59 @@
-# Node.js CommonJS Starter
+# backend-javascript-commonjs
 
-Starter backend en **JavaScript (CommonJS)**
-API Express avec linting, tests, coverage et bundling Webpack.
+Starter backend Node.js utilisant **CommonJS**, avec Express, Jest, ESLint et Webpack.
 
-## Installation
+## 🚀 Fonctionnalités
+
+- Serveur Express
+- Support CommonJS (`require`)
+- Linting avec ESLint
+- Tests unitaires, d'intégration et e2e avec Jest
+- Analyse de couverture (`jest --coverage`)
+- Rechargement à chaud (`nodemon`)
+- Build avec Webpack
+- Script pour générer la structure du projet
+
+## 📁 Structure
+
+```
+src/
+  app.js              # Application Express
+  server.js           # Point d'entrée serveur
+  controllers/        # Contrôleurs
+  data/               # Données statiques
+__tests__/
+  unit/               # Tests unitaires
+  integration/        # Tests d'intégration
+  e2e/                # Tests end-to-end
+tools/
+  scripts/            # Scripts utilitaires
+```
+
+## 📦 Scripts npm
+
+- `npm run dev` : démarrage en mode développement (nodemon)
+- `npm run start` : démarrage en mode production
+- `npm run lint` : lint du code
+- `npm run test` : tous les tests
+- `npm run test:unit` : tests unitaires uniquement
+- `npm run test:integration` : tests d'intégration
+- `npm run test:e2e` : tests end-to-end
+- `npm run coverage` : rapport de couverture
+- `npm run build` : build avec Webpack
+- `npm run generate-project-structure` : affichage de la structure du projet
+
+## 🛠 Installation
 
 ```bash
 npm install
 ```
 
-## Lancer l'application
-
-```bash
-npm run build
-npm start
-```
-
-## Tests
+## 🧪 Lancer les tests
 
 ```bash
 npm test
-npm test:unit
-npm test:integration
-npm test:e2e
 ```
 
-## Couverture
+## 📚 Licence
 
-```bash
-npm run coverage
-```
-
-## Lint
-
-```bash
-npm run lint
-```
-
-## Build Webpack
-
-```bash
-npm run build
-```
-
-## Production
-* `npm run serve`
-* in your browser [http://localhost:3000](http://localhost:3000) 
+ISC

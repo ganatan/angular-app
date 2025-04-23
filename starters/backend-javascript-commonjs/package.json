@@ -13,7 +13,8 @@
     "test:integration": "jest __tests__/integration",
     "test:e2e": "jest __tests__/e2e",
     "build": "webpack",
-    "serve": "node dist/bundle"
+    "serve": "node dist/bundle",
+    "generate-project-structure": "node tools/scripts/generate-project-structure.js"
   },
   "keywords": [],
   "author": "",
