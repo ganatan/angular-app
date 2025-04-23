@@ -1,4 +1,4 @@
-const persons = [
+export default [
   { id: 1, name: 'Christopher Nolan' },
   { id: 2, name: 'Quentin Tarantino' },
   { id: 3, name: 'Steven Spielberg' },
@@ -7,5 +7,3 @@ const persons = [
   { id: 6, name: 'Ridley Scott' },
   { id: 7, name: 'Denis Villeneuve' },
 ];
-
-export default persons;

@@ -1,23 +1,15 @@
 import express from 'express';
-import { getItems } from './controllers/person.js';
-import configureSecurity from './security.js';
+
+import configureSecurity from './infrastructure/middleware/security/security.js';
+
+import appRoutes from './routers/app.routes.js';
+import rootRoutes from './routers/root.routes.js';
 
 const app = express();
 
 configureSecurity(app);
 
-app.get('/persons', getItems);
-
-app.get('/', (req, res) => {
-  const result = {
-    success: true,
-    data: {
-      version: '1.0.0',
-      status: 'ok',
-      app: 'backend-javascript-esm',
-    },
-  };
-  res.json(result);
-});
+app.use(appRoutes);
+app.use(rootRoutes);
 
 export default app;

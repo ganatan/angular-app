@@ -1,6 +1,6 @@
-import { getItems } from '../../person.js';
+import getItems from '../../person.js';
 
-test('getItems renvoie un objet avec success et un tableau de 7 personnes', () => {
+test('getItems returns an object with success and an array of 7 persons', () => {
   // Arrange
   const req = {};
   const res = {
