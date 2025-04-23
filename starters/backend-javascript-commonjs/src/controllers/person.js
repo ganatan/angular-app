@@ -3,7 +3,12 @@
 const persons = require('../data/persons');
 
 function getItems(req, res) {
-  res.json(persons);
-};
+  const result = {
+    success: true,
+    data: persons,
+  };
+
+  res.json(result);
+}
 
 module.exports = getItems;

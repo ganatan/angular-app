@@ -2,7 +2,11 @@
 
 const express = require('express');
 const getItems = require('./controllers/person');
+const configureSecurity = require('./security');
+
 const app = express();
+
+configureSecurity(app);
 
 app.get('/persons', getItems);
 
