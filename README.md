@@ -1,5 +1,12 @@
 # Angular 19 – Application Fullstack
 
+[![Build](https://img.shields.io/github/actions/workflow/status/ganatan/angular-app/ci.yml?branch=main)](https://github.com/ganatan/angular-app/actions)
+[![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen)](https://github.com/ganatan/angular-app/actions)
+![Angular](https://img.shields.io/badge/angular-19-red)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ganatan/angular-app/blob/main/LICENSE)
+![Lang](https://img.shields.io/badge/langue-français-blue)
+
+
 **👉 If you don’t speak French, the English version is here**: [![English](./ui/version-en.png)](./README.en.md)
 
 <img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
