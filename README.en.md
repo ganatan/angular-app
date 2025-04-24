@@ -1,12 +1,11 @@
-# Angular 19 – Fullstack Application 
-
+# Angular 19 – Fullstack Application
 
 <div align="center">
 
 ### 🔧 CI Status
 
-[![frontend-angular CI](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml)
-[![backend-javascript CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml)
+[![Frontend Angular CI](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml)
+[![Backend JavaScript CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml)
 
 ### 📦 Versions
 
@@ -16,29 +15,39 @@
 
 </div>
 
+---
 
-**👉 Si vous ne parlez pas anglais, la version française est ici** : [![Français](./ui/version-fr.png)](./README.md)
+**👉 Si vous parlez français, la version française est ici** : [![Français](./ui/version-en.png)](./README.md)
 
-<img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
 
-This repository contains a **fullstack web application** :
+## 📚 Table of Contents
 
-- **frontend-angular**: Angular 19 frontend application  
-- **backend-javascript**: Javascript API using mocked or real data (PostgreSQL/MySQL)
-- **backend-typescript**: Typescript API using mocked or real data (PostgreSQL/MySQL)
+- [🔧 CI Status](#-ci-status)
+- [🌐 Live Demo](#-live-demo)
+- [📁 Project Structure](#-project-structure)
+- [🛠 Configuration](#-frontend-configuration-angular)
+- [🔗 Exposed APIs](#-exposed-apis)
+- [⚙️ Quick Start](#️-quick-start)
+- [👤 Author](#-author)
+- [📚 Documentation](#-documentation)
 
 ---
 
-## 🌐 Live Demo  
-[Check the demo](https://angular.ganatan.com)
+
+<img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
+
+This repository contains a **fullstack web application** using Angular 19 + Node.js or TypeScript with PostgreSQL/MySQL or mocked data.
+
+---
+
+## 🌐 Live Demo
+
+🔗 [Check out the Angular demo](https://angular.ganatan.com)
 
 <p align="center">
-  <p align="center">
-    <a href="https://angular.ganatan.com/">
-      <img src="https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif" alt="Angular 19 Example 
-      Application"/>
-    </a>
-  </p>
+  <a href="https://angular.ganatan.com/">
+    <img src="https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif" alt="Angular 19 Example Application"/>
+  </a>
 </p>
 
 ---
@@ -48,38 +57,27 @@ This repository contains a **fullstack web application** :
 ### 🧩 Frontend
 
 - **`frontend-angular`**  
-  Angular 19 application (including Routing, Lazy Loading, SSR, PWA, SEO).
-
----
+  Angular 19 app (with Routing, Lazy loading, SSR, PWA, SEO)
 
 ### 🚀 Backends
 
 - **`backend-javascript`**  
-  Express.js API in JavaScript (ESM)  
-  Uses either mocked data or a real database (PostgreSQL/MySQL)
+  Express.js API in JavaScript (ESM) with PostgreSQL, MySQL or mock data
 
 - **`backend-typescript`**  
-  Express.js API in TypeScript  
-  Uses either mocked data or a real database (PostgreSQL/MySQL)
-
-- **`backend-java21-springboot`**  
-  Starter Java21 Spring Boot (JUnit)
-
----
+  Express.js API in TypeScript with PostgreSQL, MySQL or mock data
 
 ### 🧪 Technical Starters (bonus)
 
-- **`backend-javascript-cjs`**  
-  JavaScript Node.js starter using CommonJS (`require/module.exports`, ESLint, Jest, Webpack)
-
-- **`backend-javascript-esm`**  
-  JavaScript Node.js starter using ESM (`import/export`, ESLint, Jest, Webpack)
+- **`backend-javascript-cjs`** : Node.js (CommonJS), ESLint, Jest, Webpack
+- **`backend-javascript-esm`** : Node.js (ESM), ESLint, Jest, Webpack
+- **`backend-java21-springboot`** : Java 21 Spring Boot starter (JUnit)
 
 ---
 
 ## 🔧 Frontend Configuration (Angular)
 
-In `environment.ts` :
+In `frontend-angular/src/environments/environment.ts`:
 
 ```ts
 useDatabase: false,
@@ -88,23 +86,23 @@ backend: 'http://localhost:3000',
 
 | `useDatabase` | Mode                                  |
 |---------------|---------------------------------------|
-| `false`       | **Mocked** data on the frontend       |
-| `true`        | **Real** data provided by the backend |
+| `false`       | **Mocked** data handled in frontend   |
+| `true`        | **Real** data fetched from backend    |
 
 ---
 
-## 🛠 Backends Configuration
+## 🛠 Backend Configuration
 
-Dans le fichier `.env` :
+In `.env` file:
 
 ```env
 PORT=3000
 DB_CLIENT=mock # mock | pg | mysql
 ```
 
-| `DB_CLIENT` | Source de données      |
+| `DB_CLIENT` | Data Source           |
 |-------------|------------------------|
-| `mock`      | Mocked Data            |
+| `mock`      | Mocked data            |
 | `pg`        | PostgreSQL             |
 | `mysql`     | MySQL                  |
 
@@ -112,8 +110,8 @@ DB_CLIENT=mock # mock | pg | mysql
 
 ## 🔗 Exposed APIs
 
-| Resource      | URL                                      |
-|---------------|------------------------------------------|
+| Resource      | URL                                        |
+|---------------|---------------------------------------------|
 | Continents    | [http://localhost:3000/continents](http://localhost:3000/continents) |
 | Cities        | [http://localhost:3000/cities](http://localhost:3000/cities)         |
 | Countries     | [http://localhost:3000/countries](http://localhost:3000/countries)   |
@@ -124,40 +122,39 @@ DB_CLIENT=mock # mock | pg | mysql
 
 ## ⚙️ Quick Start
 
-### ▶️ Angular Frontend 
+### ▶️ Clone the project
 
 ```bash
 git clone https://github.com/ganatan/angular-app.git
-cd angular-app/frontend-angular
-npm install
-npm start
+cd angular-app
 ```
 
-🔗 [http://localhost:4200](http://localhost:4200)
-
----
-
-### ▶️ Node.js Backend (ESM)
+### ▶️ Frontend Angular
 
 ```bash
-cd angular-app/backend-javascript
+cd frontend-angular
 npm install
 npm start
+# http://localhost:4200
 ```
 
-🔗 [http://localhost:3000](http://localhost:3000)
-
----
-
-### ▶️ TypeScript Backend 
+### ▶️ Backend JavaScript
 
 ```bash
-cd angular-app/backend-typescript
+cd backend-javascript
 npm install
 npm start
+# http://localhost:3000
 ```
 
-🔗 [http://localhost:3000](http://localhost:3000)
+### ▶️ Backend TypeScript
+
+```bash
+cd backend-typescript
+npm install
+npm start
+# http://localhost:3000
+```
 
 ---
 
@@ -169,5 +166,5 @@ npm start
 
 ## 📚 Documentation
 
-- 🇬🇧 [Tutorials in English](https://www.ganatan.com/en/tutorials)
-- 🇫🇷 [Tutoriels en français](https://www.ganatan.com/tutorials)
+- 🇫🇷 [French tutorials](https://www.ganatan.com/tutorials)  
+- 🇬🇧 [English tutorials](https://www.ganatan.com/en/tutorials)

@@ -17,6 +17,9 @@
 
 ---
 
+**👉 If you don’t speak French, the English version is here**: [![English](./ui/version-en.png)](./README.en.md)
+
+
 ## 📚 Table des matières
 
 - [🔧 CI Status](#-ci-status)
@@ -29,8 +32,6 @@
 - [📚 Documentation](#-documentation)
 
 ---
-
-**👉 If you don’t speak French, the English version is here**: [![English](./ui/version-en.png)](./README.en.md)
 
 <img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
 
