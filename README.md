@@ -49,7 +49,7 @@ Ce dépôt contient une **Application Web fullstack**.
 
 ### 🧪 Starters techniques (bonus)
 
-- **`backend-javascript-commonjs`**  
+- **`backend-javascript-cjs`**  
   Starter JavaScript Node.js avec CommonJS (`require/module.exports`, ESLint, Jest, Webpack)
 
 - **`backend-javascript-esm`**  

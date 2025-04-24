@@ -52,7 +52,7 @@ This repository contains a **fullstack web application** :
 
 ### 🧪 Technical Starters (bonus)
 
-- **`backend-javascript-commonjs`**  
+- **`backend-javascript-cjs`**  
   JavaScript Node.js starter using CommonJS (`require/module.exports`, ESLint, Jest, Webpack)
 
 - **`backend-javascript-esm`**  
