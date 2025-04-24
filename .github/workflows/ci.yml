@@ -21,7 +21,7 @@ jobs:
           node-version: '20'
       - run: npm ci
       - run: npm run lint
-      - run: npm run coverage
+      - run: npm run test:headless
       - run: npm run build
 
   backend-javascript:

@@ -9,6 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "coverage": "ng test --no-watch --code-coverage",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
     "serve": "node dist/angular-starter/server/server.mjs",
     "generate-project-structure": "node tools/scripts/generate-project-structure.js"
