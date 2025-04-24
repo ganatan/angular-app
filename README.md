@@ -1,5 +1,7 @@
 # Angular 19 – Application Fullstack
 
+---
+
 **👉 If you don’t speak French, the English version is here**: [![English](./ui/version-en.png)](./README.en.md)
 
 <div align="center">
