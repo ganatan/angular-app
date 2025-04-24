@@ -31,4 +31,3 @@
  *                         type: string
  *                         example: Doe
  */
-

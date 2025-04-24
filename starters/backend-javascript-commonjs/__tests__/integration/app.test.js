@@ -4,7 +4,7 @@ const request = require('supertest');
 const app = require('../../src/app');
 
 describe('API /persons', () => {
-  test('GET /persons retourne 200 et un tableau de 7 personnes', async () => {
+  test('GET /persons returns 200 and an array of 7 people', async () => {
     // Arrange
     const endpoint = '/persons';
 
@@ -21,7 +21,7 @@ describe('API /persons', () => {
 });
 
 describe('API / (fallback)', () => {
-  test('GET / retourne les infos de version de l\'API', async () => {
+  test('GET / returns API version info', async () => {
     // Arrange
     const endpoint = '/';
 

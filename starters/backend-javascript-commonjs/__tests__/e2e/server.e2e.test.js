@@ -21,7 +21,7 @@ describe('GET /persons via HTTP', () => {
       expect(res.statusCode).toBe(200);
 
       let data = '';
-      res.on('data', chunk => data += chunk);
+      res.on('data', (chunk) => (data += chunk));
       res.on('end', () => {
         const json = JSON.parse(data);
 

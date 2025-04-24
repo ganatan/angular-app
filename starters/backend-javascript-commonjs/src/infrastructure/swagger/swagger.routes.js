@@ -8,9 +8,13 @@ const { swaggerOptions } = require('./swagger.config');
 const router = express.Router();
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
 
-router.use('/', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
-  explorer: true,
-  customSiteTitle: 'Documentation API',
-}));
+router.use(
+  '/',
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerSpec, {
+    explorer: true,
+    customSiteTitle: 'Documentation API',
+  }),
+);
 
 module.exports = router;
