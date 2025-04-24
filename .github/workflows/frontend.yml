@@ -2,8 +2,8 @@ name: Frontend
 
 on:
   push:
-    paths:
-      - 'frontend-angular/**'
+    branches: [master]
+  pull_request:
     branches: [master]
 
 jobs:

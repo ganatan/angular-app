@@ -2,8 +2,8 @@ name: Backend
 
 on:
   push:
-    paths:
-      - 'backend-javascript/**'
+    branches: [master]
+  pull_request:
     branches: [master]
 
 jobs:
