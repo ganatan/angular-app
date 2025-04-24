@@ -1,0 +1,23 @@
+name: Frontend
+
+on:
+  push:
+    paths:
+      - 'frontend-angular/**'
+    branches: [master]
+
+jobs:
+  build-frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend-angular
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run test:headless
+      - run: npm run build

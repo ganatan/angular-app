@@ -1,0 +1,24 @@
+name: Backend
+
+on:
+  push:
+    paths:
+      - 'backend-javascript/**'
+    branches: [master]
+
+jobs:
+  build-backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend-javascript
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run test
+      - run: npm run coverage
+      - run: npm run build

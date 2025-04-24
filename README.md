@@ -1,9 +1,12 @@
 # Angular 19 – Application Fullstack
 
-[![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen)](https://github.com/ganatan/angular-app/actions)
+[![Frontend](https://github.com/ganatan/angular-app/actions/workflows/frontend.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend.yml)
+
 ![Angular](https://img.shields.io/badge/angular-19-red)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ganatan/angular-app/blob/main/LICENSE)
-![Lang](https://img.shields.io/badge/langue-français-blue)
+
+
+[![Backend](https://github.com/ganatan/angular-app/actions/workflows/backend.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend.yml)
 
 
 **👉 If you don’t speak French, the English version is here**: [![English](./ui/version-en.png)](./README.en.md)
