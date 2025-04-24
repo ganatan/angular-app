@@ -5,8 +5,8 @@
 
 ### 🔧 CI Status
 
-[![Frontend CI](https://github.com/ganatan/angular-app/actions/workflows/frontend.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml)
-[![Backend CI](https://github.com/ganatan/angular-app/actions/workflows/backend.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml)
+[![frontend-angular CI](https://github.com/ganatan/angular-app/actions/workflows/frontend.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml)
+[![backend-javascript CI](https://github.com/ganatan/angular-app/actions/workflows/backend.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml)
 
 ### 📦 Versions
 
