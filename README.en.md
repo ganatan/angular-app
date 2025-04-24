@@ -1,6 +1,6 @@
 # Angular 19 – Fullstack Application
 
-**👉 Si vous parlez français, la version française est ici** : [![Français](./ui/version-en.png)](./README.md)
+**👉 Si vous parlez français, la version française est ici** : [![Français](./ui/version-fr.png)](./README.md)
 ---
 
 <div align="center">
