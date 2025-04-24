@@ -1,4 +1,4 @@
-name: Frontend
+name: backend-javascript
 
 on:
   push:
@@ -7,11 +7,11 @@ on:
     branches: [master]
 
 jobs:
-  build-frontend:
+  build-backend:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: frontend-angular
+        working-directory: backend-javascript
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -19,5 +19,6 @@ jobs:
           node-version: '20'
       - run: npm ci
       - run: npm run lint
-      - run: npm run test:headless
+      - run: npm run test
+      - run: npm run coverage
       - run: npm run build

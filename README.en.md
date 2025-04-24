@@ -1,5 +1,22 @@
 # Angular 19 – Fullstack Application 
 
+
+<div align="center">
+
+### 🔧 CI Status
+
+[![Frontend CI](https://github.com/ganatan/angular-app/actions/workflows/frontend.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml)
+[![Backend CI](https://github.com/ganatan/angular-app/actions/workflows/backend.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml)
+
+### 📦 Versions
+
+![Angular](https://img.shields.io/badge/angular-19-red)
+![Node](https://img.shields.io/badge/node-20.x-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ganatan/angular-app/blob/master/LICENSE)
+
+</div>
+
+
 **👉 Si vous ne parlez pas anglais, la version française est ici** : [![Français](./ui/version-fr.png)](./README.md)
 
 <img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
