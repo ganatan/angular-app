@@ -17,6 +17,9 @@ export default {
       }
     ]
   },
+  externals: {
+    'cloudflare:sockets': 'commonjs cloudflare:sockets'
+  },  
   target: "node",
   mode: "production",
   experiments: {
