@@ -58,6 +58,15 @@ Accéder à :
 
 ---
 
+## Linter
+
+```bash
+mvn checkstyle:check
+```
+
+---
+
+
 ## Tests
 
 ```bash
