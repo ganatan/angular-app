@@ -1,6 +1,5 @@
 # Angular 19 – Application Fullstack
 
-[![Build](https://img.shields.io/github/actions/workflow/status/ganatan/angular-app/ci.yml?branch=main)](https://github.com/ganatan/angular-app/actions)
 [![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen)](https://github.com/ganatan/angular-app/actions)
 ![Angular](https://img.shields.io/badge/angular-19-red)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ganatan/angular-app/blob/main/LICENSE)
