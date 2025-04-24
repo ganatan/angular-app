@@ -1,12 +1,20 @@
 # Angular 19 – Application Fullstack
 
-[![Frontend](https://github.com/ganatan/angular-app/actions/workflows/frontend.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend.yml)
+<div align="center">
+
+### 🔧 CI Status
+
+[![Frontend CI](https://github.com/ganatan/angular-app/actions/workflows/frontend.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend.yml)
+[![Backend CI](https://github.com/ganatan/angular-app/actions/workflows/backend.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend.yml)
+
+### 📦 Versions
 
 ![Angular](https://img.shields.io/badge/angular-19-red)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ganatan/angular-app/blob/main/LICENSE)
+![Node](https://img.shields.io/badge/node-20.x-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ganatan/angular-app/blob/master/LICENSE)
 
+</div>
 
-[![Backend](https://github.com/ganatan/angular-app/actions/workflows/backend.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend.yml)
 
 
 **👉 If you don’t speak French, the English version is here**: [![English](./ui/version-en.png)](./README.en.md)
