@@ -14,6 +14,9 @@
     "serve": "node dist/angular-starter/server/server.mjs",
     "generate-project-structure": "node tools/scripts/generate-project-structure.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@angular/animations": "19.2.8",
