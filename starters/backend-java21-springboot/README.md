@@ -1,51 +1,92 @@
 # backend-java21-springboot
 
-## Compilation
+[![Build](https://img.shields.io/badge/build-maven-blue)](https://maven.apache.org/)
+[![Coverage](https://img.shields.io/badge/coverage-jacoco-brightgreen)](https://www.jacoco.org/jacoco/)
+
+Application Spring Boot packagée en WAR, compatible Tomcat / Jetty, avec linter, tests, build Maven.
+
+---
+
+## 🔧 Lint (analyse statique)
+
+Analyse du style de code Java avec Checkstyle :
 
 ```bash
-mvn clean package
+mvn checkstyle:check
 ```
-Génère le fichier WAR : `target/backend-java21-springboot-1.0.0.war`
 
-Accès local après démarrage :
-- [http://localhost:8080/backend-java21-springboot-1.0.0/](http://localhost:8080/backend-java21-springboot-1.0.0/)
-- [http://localhost:8080/backend-java21-springboot-1.0.0/persons](http://localhost:8080/backend-java21-springboot-1.0.0/persons)
+⛔️ La build échoue si le code ne respecte pas les règles définies dans `checkstyle.xml`.
 
 ---
 
-## Déploiement avec Tomcat
+## 🧪 Tests unitaires
 
-1. Copier le fichier WAR dans :  
-   `D:\hal\Tomcat 11.0\webapps`
+Exécution des tests + génération du rapport JaCoCo :
+
+```bash
+mvn clean test
+mvn jacoco:report
+```
+
+Rapport de couverture généré dans :
+
+```
+target/site/jacoco/index.html
+```
+
+---
+
+## 🏗️ Build
+
+Compilation + tests + packaging + installation locale :
+
+```bash
+mvn clean install
+```
+
+Génère le fichier :
+
+```
+target/backend-java21-springboot-1.0.0.war
+```
+
+---
+
+## 🚀 Déploiement local (Tomcat)
+
+1. Copier le fichier WAR dans :
+
+```
+<chemin-vers-tomcat>/webapps
+```
+
 2. Démarrer Tomcat
-3. Accéder aux URLs :
-   - [http://localhost:8080/](http://localhost:8080/)
-   - [http://localhost:8080/persons](http://localhost:8080/persons)
+
+3. Accéder à l'application :
+
+- http://localhost:8080/backend-java21-springboot-1.0.0/
+- http://localhost:8080/backend-java21-springboot-1.0.0/persons
 
 ---
 
-## Déploiement avec Jetty
+## 🌐 Déploiement Jetty (optionnel)
 
-Ajouter dans `pom.xml` :
+Ajoute dans `pom.xml` :
 
 ```xml
-<build>
-  <plugins>
-    <plugin>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-maven-plugin</artifactId>
-      <version>11.0.25</version>
-      <configuration>
-        <webApp>
-          <contextPath>/</contextPath>
-        </webApp>
-      </configuration>
-    </plugin>
-  </plugins>
-</build>
+<plugin>
+  <groupId>org.eclipse.jetty</groupId>
+  <artifactId>jetty-maven-plugin</artifactId>
+  <version>11.0.25</version>
+  <configuration>
+    <webApp>
+      <contextPath>/</contextPath>
+    </webApp>
+  </configuration>
+</plugin>
 ```
 
-Démarrer Jetty :
+Puis exécute :
 
 ```bash
 mvn clean compile jetty:run
@@ -53,37 +94,19 @@ mvn clean compile jetty:run
 mvn jetty:run
 ```
 
-Accéder à :
-- [http://localhost:8080/backend-java21-maven/](http://localhost:8080/backend-java21-maven/)
+Accès local :
+- http://localhost:8080/backend-java21-springboot/
 
 ---
 
-## Linter
-
-```bash
-mvn checkstyle:check
-```
-
----
-
-
-## Tests
-
-```bash
-mvn clean test
-mvn clean test jacoco:report
-```
-
----
-
-## Commandes Maven utiles
+## 📦 Commandes Maven utiles
 
 ```bash
 mvn clean
 mvn compile
 mvn test
 mvn package
-mvn clean install
-mvn validate
+mvn install
+mvn checkstyle:check
 mvn dependency:tree
 ```
