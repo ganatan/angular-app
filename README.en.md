@@ -67,12 +67,6 @@ This repository contains a **fullstack web application** using Angular 19 + Node
 - **`backend-typescript`**  
   Express.js API in TypeScript with PostgreSQL, MySQL or mock data
 
-### 🧪 Technical Starters (bonus)
-
-- **`backend-javascript-cjs`** : Node.js (CommonJS), ESLint, Jest, Webpack
-- **`backend-javascript-esm`** : Node.js (ESM), ESLint, Jest, Webpack
-- **`backend-java21-springboot`** : Java 21 Spring Boot starter (JUnit)
-
 ---
 
 ## 🔧 Frontend Configuration (Angular)

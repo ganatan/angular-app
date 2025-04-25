@@ -66,12 +66,6 @@ Ce dépôt contient une **Application Web fullstack** avec Angular 19 + Node.js 
 - **`backend-typescript`**  
   API Express.js en TypeScript avec PostgreSQL, MySQL ou données mockées
 
-### 🧪 Starters techniques (bonus)
-
-- **`backend-javascript-cjs`** : Node.js avec CommonJS, ESLint, Jest, Webpack
-- **`backend-javascript-esm`** : Node.js avec ESM, ESLint, Jest, Webpack
-- **`backend-java21-springboot`** : Spring Boot Java 21 (JUnit)
-
 ---
 
 ## 🔧 Configuration du frontend (Angular)
