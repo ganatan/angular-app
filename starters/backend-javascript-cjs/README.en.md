@@ -39,3 +39,12 @@ npm install
 ```bash
 npm test
 ```
+
+## 🚀 Start the server
+
+```bash
+npm run dev
+```
+
+API available at: [http://localhost:3000](http://localhost:3000)  
+Swagger documentation: [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
