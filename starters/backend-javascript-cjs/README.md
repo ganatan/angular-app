@@ -1,4 +1,4 @@
-# backend-javascript-commonjs
+# backend-javascript-cjs
 
 **👉 If you don’t speak French, the English version is here**: [![English](../../ui/version-en.png)](./README.en.md)
 

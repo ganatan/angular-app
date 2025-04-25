@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     data: {
       version: '1.0.0',
       status: 'ok',
-      app: 'backend-javascript-commonjs',
+      app: 'backend-javascript-cjs',
     },
   };
   res.send(result);
