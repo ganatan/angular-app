@@ -8,6 +8,7 @@ Starter backend Node.js utilisant **CommonJS**, avec Express, Jest, ESLint et We
 
 - Serveur Express
 - Support CommonJS (`require`)
+- Documentation API avec Swagger (via swagger-ui-express et swagger-jsdoc)
 - Linting avec ESLint
 - Tests unitaires, d'intégration et e2e avec Jest
 - Analyse de couverture (`jest --coverage`)
@@ -39,3 +40,12 @@ npm install
 ```bash
 npm test
 ```
+
+## 🚀 Lancer le serveur
+
+```bash
+npm run dev
+```
+
+Accès à l'API : [http://localhost:3000](http://localhost:3000)  
+Documentation Swagger : [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
