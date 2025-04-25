@@ -6,7 +6,7 @@
 
 <div align="center">
 
-## 🔧 Intégration Continue
+## 🔧 Continuous Integration
 
 [![Frontend Angular CI](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml)
 [![Backend JavaScript CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml)
@@ -14,7 +14,7 @@
 
 ---
 
-## 📦 Technologies
+## 📦 Tech Stack
 
 ![Angular](https://img.shields.io/badge/angular-19-red)
 ![Node](https://img.shields.io/badge/node-20.x-blue)
