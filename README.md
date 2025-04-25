@@ -1,26 +1,29 @@
-# Angular 19 – Application Fullstack
+# Angular 19 — Fullstack App
 
-**👉 If you don’t speak French, the English version is here**: [![English](./ui/version-en.png)](./README.en.md)
+**👉 Looking for the English version?** [![English](./ui/version-en.png)](./README.en.md)
+
 ---
 
 <div align="center">
 
-### 🔧 CI Status
+## 🔧 Continuous Integration
 
 [![Frontend Angular CI](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml)
 [![Backend JavaScript CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml)
 [![Backend Spring Boot CI](https://github.com/ganatan/angular-app/actions/workflows/backend-springboot.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-springboot.yml)
 
-### 📦 Versions
+---
+
+## 📦 Tech Stack
 
 ![Angular](https://img.shields.io/badge/angular-19-red)
 ![Node](https://img.shields.io/badge/node-20.x-blue)
+![Java](https://img.shields.io/badge/java-21-brightgreen)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ganatan/angular-app/blob/master/LICENSE)
 
 </div>
 
 ---
-
 ## 📚 Table des matières
 
 - [🔧 CI Status](#-ci-status)
