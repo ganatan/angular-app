@@ -1,8 +1,5 @@
 # backend-java21-springboot
 
-[![Build](https://img.shields.io/badge/build-maven-blue)](https://maven.apache.org/)
-[![Coverage](https://img.shields.io/badge/coverage-jacoco-brightgreen)](https://www.jacoco.org/jacoco/)
-
 Application Spring Boot packagée en WAR, compatible Tomcat / Jetty, avec linter, tests, build Maven.
 
 ---
