@@ -14,6 +14,8 @@
 
 ---
 
+Applications fullstack basées sur Angular 19, Node.js 20.x et Java 21, avec une architecture modulaire, scalable et optimisée pour la production.
+
 ## 📦 Stack technologique
 
 ![Angular](https://img.shields.io/badge/angular-19-red)

@@ -1,4 +1,4 @@
-# Angular 19 — Application Fullstack
+# Angular 19 — Fullstack Application
 
 **👉 Version française disponible ici** : [![Français](./ui/version-fr.png)](./README.md)
 
@@ -13,6 +13,8 @@
 [![Backend Spring Boot CI](https://github.com/ganatan/angular-app/actions/workflows/backend-springboot.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-springboot.yml)
 
 ---
+
+Modern fullstack applications built with Angular 19, Node.js 20.x, and Java 21, featuring a modular, scalable, and production-ready architecture.
 
 ## 📦 Tech Stack
 
