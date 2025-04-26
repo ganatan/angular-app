@@ -121,7 +121,7 @@ DB_CLIENT=mock # mock | pg | mysql
 
 ## ⚙️ Démarrage rapide
 
-### ▶️ Clonage global
+### ▶️ Cloner le projet
 
 ```bash
 git clone https://github.com/ganatan/angular-app.git
