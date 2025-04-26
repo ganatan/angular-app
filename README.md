@@ -35,12 +35,15 @@ Application fullstack basée sur Angular 19, Node.js 20.x et Java 21, avec une a
 ---
 ## 📚 Table des matières
 
-- [🔧 CI Status](#-ci-status)
+- [🔧 CI Status](#-intégration-continue)
+- [📦 Docker Images](#-images-docker)
+- [📦 Stack Technologique](#-stack-technologique)
 - [🌐 Démo en ligne](#-démo-en-ligne)
 - [📁 Structure du projet](#-structure-du-projet)
 - [🛠 Configuration](#-configuration-du-frontend-angular)
 - [🔗 APIs exposées](#-apis-exposées)
 - [⚙️ Démarrage rapide](#️-démarrage-rapide)
+- [🐳 Déploiement avec Docker](#-déploiement-avec-docker)
 - [👤 Auteur](#-auteur)
 - [📚 Documentation](#-documentation)
 
@@ -161,6 +164,28 @@ npm install
 npm start
 # http://localhost:3000
 ```
+
+---
+
+## 🐳 Déploiement avec Docker
+
+### ▶️ Prérequis
+- Docker doit être installé sur votre machine : [Installation Docker](https://docs.docker.com/get-docker/)
+
+### ▶️ Lancer le frontend Angular via Docker
+
+```bash
+docker pull ganatan/frontend-angular
+docker run -d -p 4200:4200 ganatan/frontend-angular
+# http://localhost:4000
+
+---
+### ▶️ Lancer le backend Javascript via Docker
+
+```bash
+docker pull ganatan/backend-javascript
+docker run -d -p 3000:3000 ganatan/backend-javascript
+# http://localhost:3000
 
 ---
 
