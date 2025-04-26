@@ -167,6 +167,30 @@ npm start
 
 ---
 
+
+## 🐳 Deployment with Docker
+
+### ▶️ Prerequisites
+- Docker must be installed on your machine: [Install Docker](https://docs.docker.com/get-docker/)
+
+### ▶️ Launch the Angular frontend with Docker
+
+```bash
+docker pull ganatan/frontend-angular
+docker run -d -p 4200:4200 ganatan/frontend-angular
+# http://localhost:4200
+```
+
+### ▶️ Launch the JavaScript backend with Docker
+
+```bash
+docker pull ganatan/backend-javascript
+docker run -d -p 3000:3000 ganatan/backend-javascript
+# http://localhost:3000
+```
+
+---
+
 ## 👤 Author
 
 - **Danny** – [www.ganatan.com](https://www.ganatan.com)
