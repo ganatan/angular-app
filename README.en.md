@@ -14,7 +14,7 @@
 
 ---
 
-Modern fullstack applications built with Angular 19, Node.js 20.x, and Java 21, featuring a modular, scalable, and production-ready architecture.
+Modern fullstack applications built with Angular 19, Node.js 20.x, and Java 21, featuring a scalable, and production-ready architecture.
 
 ## 📦 Tech Stack
 
