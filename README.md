@@ -17,7 +17,7 @@
 ## 📦 Images Docker 
 
 [![Docker Image Version - Backend JavaScript](https://img.shields.io/docker/v/ganatan/backend-javascript?label=Backend%20JavaScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript)
-
+[![Docker Image Version - Frontend Angular](https://img.shields.io/docker/v/ganatan/frontend-angular?label=Frontend%20Angular%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/frontend-angular)
 ---
 
 Application fullstack basée sur Angular 19, Node.js 20.x et Java 21, avec une architecture scalable et optimisée pour la production.
