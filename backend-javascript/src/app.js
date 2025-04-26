@@ -5,7 +5,7 @@ import config from './core/config/config.js';
 import configureSecurity from './infrastructure/middleware/security/security.js';
 import initLocals from './infrastructure/middleware/core/init-locals.js';
 import notFoundHandler from './infrastructure/middleware/error/not-found-handler.js';
-import responseHandler from './infrastructure/middleware/error/response-handler.js';
+import responseHandler from './infrastructure/middleware/response/response-handler.js';
 import errorHandler from './infrastructure/middleware/error/error-handler.js';
 
 import requestLogger from './infrastructure/logger/request-logger.js';
