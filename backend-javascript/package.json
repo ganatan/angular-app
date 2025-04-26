@@ -26,7 +26,9 @@
     "test:permission-handler": "npm test -- permission-handler.test.js",
     "test:query-utils": "npm test -- query-utils.test.js",
     "test:app": "npm test -- app.test.js",
-    "test:server": "npm test -- server.test.js"
+    "test:server": "npm test -- server.test.js",
+    "docker:build": "docker build -t backend-javascript .",
+    "docker:run": "docker run -p 3000:3000 backend-javascript"    
   },
   "keywords": [],
   "author": "",
