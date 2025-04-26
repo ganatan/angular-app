@@ -1,4 +1,4 @@
-# Angular 19 — Fullstack App
+# Angular 19 — Application Fullstack
 
 **👉 Looking for the English version?** [![English](./ui/version-en.png)](./README.en.md)
 
