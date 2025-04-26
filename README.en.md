@@ -11,7 +11,13 @@
 [![Frontend Angular CI](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml)
 [![Backend JavaScript CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml)
 [![Backend Spring Boot CI](https://github.com/ganatan/angular-app/actions/workflows/backend-springboot.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-springboot.yml)
-[![Docker Image Version](https://img.shields.io/docker/v/ganatan/backend-javascript?sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript)
+
+---
+
+## 📦 Docker Images
+
+[![Docker Image Version - Backend JavaScript](https://img.shields.io/docker/v/ganatan/backend-javascript?label=Backend%20JavaScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript)
+
 
 ---
 
@@ -22,6 +28,7 @@ Modern fullstack applications built with Angular 19, Node.js 20.x, and Java 21, 
 ![Angular](https://img.shields.io/badge/angular-19-red)
 ![Node](https://img.shields.io/badge/node-20.x-blue)
 ![Java](https://img.shields.io/badge/java-21-brightgreen)
+![Docker](https://img.shields.io/badge/Docker-24.x-blue?logo=docker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ganatan/angular-app/blob/master/LICENSE)
 
 </div>
