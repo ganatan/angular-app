@@ -14,7 +14,7 @@
 
 ---
 
-Application fullstack basées sur Angular 19, Node.js 20.x et Java 21, avec une architecture scalable et optimisée pour la production.
+Application fullstack basée sur Angular 19, Node.js 20.x et Java 21, avec une architecture scalable et optimisée pour la production.
 
 ## 📦 Stack technologique
 
