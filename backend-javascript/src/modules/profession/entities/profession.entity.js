@@ -1,4 +1,4 @@
-export default class ProfessionEntity {
+export default class Entity {
   constructor({ id = null, name }) {
     if (!name || typeof name !== 'string' || name.trim().length < 2) {
       throw new Error('Invalid profession name');

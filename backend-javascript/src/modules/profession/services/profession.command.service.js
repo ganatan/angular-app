@@ -1,7 +1,7 @@
 import ProfessionEntity from '../entities/profession.entity.js';
 import { ITEM_CONSTANTS } from '../constants/profession.constant.js';
 
-class ProfessionCommandService {
+class CommandService {
   constructor(repository) {
     this.repository = repository;
   }
@@ -38,4 +38,4 @@ class ProfessionCommandService {
   }
 }
 
-export default ProfessionCommandService;
+export default CommandService;
