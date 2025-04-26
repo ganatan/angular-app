@@ -12,7 +12,9 @@
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
     "serve": "node dist/angular-starter/server/server.mjs",
-    "generate-project-structure": "node tools/scripts/generate-project-structure.js"
+    "generate-project-structure": "node tools/scripts/generate-project-structure.js",
+    "docker:build": "docker build -t frontend-angular .",
+    "docker:run": "docker run -p 4000:4000 frontend-angular"    
   },
   "keywords": [],
   "author": "",
