@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev src/server.ts",
+    "start": "ts-node src/server.ts",
     "dev": "ts-node-dev src/server.ts",
     "build": "webpack --progress",
     "serve": "node dist/bundle.js",
