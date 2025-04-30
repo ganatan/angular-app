@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+    image: backend-javascript-esm
+    container_name: backend-javascript-esm-container
+    ports:
+      - "8080:8080"
+    environment:
+      NODE_ENV: production
+    command: npm run start

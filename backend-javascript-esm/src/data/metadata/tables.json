@@ -1,0 +1,35 @@
+[
+  {
+    "name": "continent"
+  },
+  {
+    "name": "country"
+  },
+  {
+    "name": "city"
+  },
+  {
+    "name": "profession"
+  },
+  {
+    "name": "person"
+  },
+  {
+    "name": "person_profession"
+  },
+  {
+    "name": "media"
+  },
+  {
+    "name": "media_type"
+  },
+  {
+    "name": "media_person"
+  },
+  {
+    "name": "playlist"
+  },
+  {
+    "name": "playlist_element"
+  }
+]
