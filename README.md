@@ -53,25 +53,23 @@ Idéal pour démarrer rapidement un projet Angular professionnel avec un backend
 ![Docker](https://img.shields.io/badge/Docker-24.x-blue?logo=docker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ganatan/angular-app/blob/master/LICENSE)
 
-</div>
-
 ---
 
 ## 📚 Table des matières
 
-- [CI Status](#ci-status)
-- [Docker Images](#docker-images)
-- [Objectifs du projet](#objectifs-du-projet)
-- [Stack technologique](#stack-technologique)
-- [Démo en ligne](#démo-en-ligne)
-- [Structure du projet](#structure-du-projet)
-- [Configuration du frontend Angular](#configuration-du-frontend-angular)
-- [Configuration des backends](#configuration-des-backends)
-- [APIs exposées](#apis-exposees)
-- [Démarrage rapide](#demarrage-rapide)
-- [Déploiement avec Docker](#deploiement-avec-docker)
-- [Auteur](#auteur)
-- [Documentation](#documentation)
+- [Intégration Continue (CI)](#-intégration-continue-ci)
+- [Images Docker](#-images-docker)
+- [Objectifs du projet](#-objectifs-du-projet)
+- [Stack technologique](#-stack-technologique)
+- [Démo en ligne](#-démo-en-ligne)
+- [Structure du projet](#-structure-du-projet)
+- [Configuration du frontend Angular](#-configuration-du-frontend-angular)
+- [Configuration des backends](#-configuration-des-backends)
+- [APIs exposées](#-apis-exposées)
+- [Démarrage rapide](#-démarrage-rapide)
+- [Déploiement avec Docker](#-déploiement-avec-docker)
+- [Author](#-author)
+- [Documentation](#-documentation)
 
 ---
 
