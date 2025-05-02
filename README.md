@@ -1,7 +1,16 @@
 # Angular 19 — Application Fullstack
 
-Application Fullstack basée sur **Angular 19**, **Node.js 20.x** et **Java 21**, avec une architecture modulaire, scalable et optimisée pour la production.  
-Ce projet contient un frontend Angular ainsi que plusieurs backends interchangeables (JavaScript ESM, JavaScript CJS, Spring Boot).
+Application Fullstack basée sur **Angular 19**, **Node.js 20.x** et **Java 21**.
+
+
+| Composant        | Technologie principale      | Description                                                             |
+|------------------|-----------------------------|-------------------------------------------------------------------------|
+| Frontend         | Angular 19                  | Application SPA avec routing, SSR, PWA, SEO                             |
+| Backend JS (ESM) | Node.js 20.x + Express (ESM)| API REST avec PostgreSQL, MySQL ou données mockées                     |
+| Backend JS (CJS) | Node.js 20.x + Express (CJS)| Variante CJS avec même structure que la version ESM                    |
+| Backend TS       | Node.js 20.x + TypeScript   | API REST typée avec PostgreSQL, MySQL ou données mockées               |
+| Backend Java     | Java 21 + Spring Boot       | API REST Java moderne et intégrée avec base de données ou mock         |
+
 
 **👉 Looking for the English version?**  
 [![English](./ui/version-en.png)](./README.en.md)
@@ -217,11 +226,27 @@ docker run -d -p 4200:4200 ganatan/frontend-angular
 # http://localhost:4200
 ```
 
-### ▶️ Lancer le backend Javascript via Docker
+### ▶️ Lancer le backend Javascript ESM via Docker
 
 ```bash
-docker pull ganatan/backend-javascript
-docker run -d -p 3000:3000 ganatan/backend-javascript
+docker pull ganatan/backend-javascript-esm
+docker run -d -p 3000:3000 ganatan/backend-javascript-esm
+# http://localhost:3000
+```
+
+### ▶️ Lancer le backend Javascript CJS via Docker
+
+```bash
+docker pull ganatan/backend-javascript-cjs
+docker run -d -p 3000:3000 ganatan/backend-javascript-cjs
+# http://localhost:3000
+```
+
+### ▶️ Lancer le backend Typescript via Docker
+
+```bash
+docker pull ganatan/backend-typescript
+docker run -d -p 3000:3000 ganatan/backend-typescript
 # http://localhost:3000
 ```
 
