@@ -214,6 +214,22 @@ docker run -d -p 3000:3000 ganatan/backend-javascript-esm
 # http://localhost:3000
 ```
 
+### ▶️ Launch the JavaScript CJS backend with Docker
+
+```bash
+docker pull ganatan/backend-javascript-cjs
+docker run -d -p 3000:3000 ganatan/backend-javascript-cjs
+# http://localhost:3000
+```
+
+### ▶️ Launch the Typescript backend with Docker
+
+```bash
+docker pull ganatan/backend-typescript
+docker run -d -p 3000:3000 ganatan/backend-typescript
+# http://localhost:3000
+```
+
 ---
 
 ## 👤 Author
