@@ -9,14 +9,16 @@
 ## 🔧 Continuous Integration
 
 [![Frontend Angular CI](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml)
-[![Backend JavaScript CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml)
+[![Backend JavaScript ESM CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-esm.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-esm.yml)
+[![Backend JavaScript CJS CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-cjs.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-cjs.yml)
 [![Backend Spring Boot CI](https://github.com/ganatan/angular-app/actions/workflows/backend-springboot.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-springboot.yml)
 
 ---
 
 ## 📦 Docker Images
 
-[![Docker Image Version - Backend JavaScript](https://img.shields.io/docker/v/ganatan/backend-javascript?label=Backend%20JavaScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript)
+[![Docker Image Version - Backend JavaScript ESM](https://img.shields.io/docker/v/ganatan/backend-javascript-esm?label=Backend%20JavaScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript-esm)
+[![Docker Image Version - Backend JavaScript CJS](https://img.shields.io/docker/v/ganatan/backend-javascript-cjs?label=Backend%20JavaScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript-cjs)
 [![Docker Image Version - Frontend Angular](https://img.shields.io/docker/v/ganatan/frontend-angular?label=Frontend%20Angular%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/frontend-angular)
 
 ---
@@ -76,8 +78,11 @@ This repository contains a **fullstack web application** using Angular 19 + Node
 
 ### 🚀 Backends
 
-- **`backend-javascript`**  
+- **`backend-javascript ESM`**  
   Express.js API in JavaScript (ESM) with PostgreSQL, MySQL or mock data
+
+- **`backend-javascript commonjs`**  
+  Express.js API in JavaScript (CJS) with PostgreSQL, MySQL or mock data
 
 - **`backend-typescript`**  
   Express.js API in TypeScript with PostgreSQL, MySQL or mock data
@@ -147,10 +152,19 @@ npm start
 # http://localhost:4200
 ```
 
-### ▶️ Backend JavaScript
+### ▶️ Backend JavaScript ESM
 
 ```bash
-cd backend-javascript
+cd backend-javascript-esm
+npm install
+npm start
+# http://localhost:3000
+```
+
+### ▶️ Backend JavaScript CJS
+
+```bash
+cd backend-javascript-cjs
 npm install
 npm start
 # http://localhost:3000
@@ -181,11 +195,11 @@ docker run -d -p 4200:4200 ganatan/frontend-angular
 # http://localhost:4200
 ```
 
-### ▶️ Launch the JavaScript backend with Docker
+### ▶️ Launch the JavaScript ESM backend with Docker
 
 ```bash
-docker pull ganatan/backend-javascript
-docker run -d -p 3000:3000 ganatan/backend-javascript
+docker pull ganatan/backend-javascript-esm
+docker run -d -p 3000:3000 ganatan/backend-javascript-esm
 # http://localhost:3000
 ```
 

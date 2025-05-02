@@ -1,9 +1,19 @@
 import app from './app';
-import config from './core/config/config';
+import appConfig from './config/app.config';
 import { Server } from 'http';
 
-const server: Server = app.listen(config.port, () => {
-  console.log(`Server started at http://localhost:${config.port}`);
+const server: Server = app.listen(appConfig.app.port, () => {
+  console.log(`✅ API listening on http://localhost:${appConfig.app.port}`);
+});
+
+server.on('error', (error: NodeJS.ErrnoException) => {
+  if (error.code === 'EADDRINUSE') {
+    console.error(`❌ Port ${appConfig.app.port} is already in use.`);
+    process.exit(1);
+  } else {
+    console.error('❌ Unexpected server error:', error);
+    process.exit(1);
+  }
 });
 
 export default server;

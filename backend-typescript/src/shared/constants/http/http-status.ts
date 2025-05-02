@@ -7,5 +7,4 @@ export const HTTP_STATUS = {
   CONFLICT: 409,
 } as const;
 
-export type HttpStatusKey = keyof typeof HTTP_STATUS;
-export type HttpStatusCode = typeof HTTP_STATUS[HttpStatusKey];
+export type HttpStatusCode = typeof HTTP_STATUS[keyof typeof HTTP_STATUS];

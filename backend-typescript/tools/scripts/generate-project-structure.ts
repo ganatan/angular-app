@@ -1,31 +1,30 @@
 import fs from 'fs';
 import path from 'path';
 
-const targetDirs = ['__tests__', 'src', 'tools'];
+const excludedDirs: string[] = ['coverage', 'dist', 'logs', 'node_modules'];
 
-function generateProjectStructure(dir: string, depth = 0): string {
+function getDirectoryStructure(dirPath: string, level = 0): string {
   let structure = '';
-  const items = fs.readdirSync(dir);
+  const files = fs.readdirSync(dirPath);
 
-  items.forEach((item) => {
-    const fullPath = path.join(dir, item);
-    const isDirectory = fs.statSync(fullPath).isDirectory();
-
-    structure += '  '.repeat(depth) + '|-- ' + item + '\n';
-
-    if (isDirectory) {
-      structure += generateProjectStructure(fullPath, depth + 1);
+  for (const file of files) {
+    if (excludedDirs.includes(file)) {
+      continue;
     }
-  });
+
+    const fullPath = path.join(dirPath, file);
+    const isDirectory = fs.lstatSync(fullPath).isDirectory();
+
+    structure += `${'  '.repeat(level)}|-- ${file}\n`;
+    if (isDirectory) {
+      structure += getDirectoryStructure(fullPath, level + 1);
+    }
+  }
 
   return structure;
 }
 
-targetDirs.forEach((dir) => {
-  if (fs.existsSync(dir)) {
-    console.log(`\nStructure of ${dir}:`);
-    console.log(generateProjectStructure(dir));
-  } else {
-    console.log(`\nDirectory ${dir} does not exist in the project.`);
-  }
-});
+const rootPath = process.cwd();
+const projectStructure = `Structure of project root:\n${getDirectoryStructure(rootPath)}`;
+
+console.log(projectStructure);

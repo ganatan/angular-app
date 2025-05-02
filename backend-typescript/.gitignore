@@ -1,6 +1,36 @@
-/node_modules/
-/.history/
-/data/logs/
-/dist
-/coverage
+# Node.js
+node_modules/
 package-lock.json
+
+# Build output
+dist/
+build/
+tmp/
+temp/
+logs/
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage reports
+coverage/
+
+# Env files (si tu en ajoutes)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# VSCode settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jest snapshots (optionnel si utilisé)
+*.snap
+
+# Webpack cache (optionnel pour Webpack 5+)
+.cache/
