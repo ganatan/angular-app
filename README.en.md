@@ -2,6 +2,8 @@
 
 Fullstack application based on **Angular 19**, **Node.js 20.x** and **Java 21**.
 
+**👉 Version française ?** : [![Français](./ui/version-fr.png)](./README.md)
+
 | 🧩 Component        | ⚙️ Main Technology            | 📝 Description                                                          |
 |---------------------|-------------------------------|-------------------------------------------------------------------------|
 | 🎨 **Frontend**      | Angular 19                    | SPA application with Routing, SSR, PWA, SEO                             |
@@ -10,7 +12,6 @@ Fullstack application based on **Angular 19**, **Node.js 20.x** and **Java 21**.
 | 🖥️ **Backend TS**       | Node.js 20.x + TypeScript     | Typed REST API with PostgreSQL, MySQL or mocked data                    |
 | ☕ **Backend Java**      | Java 21 + Spring Boot         | Modern Java REST API with real or mocked data                           |
 
-**👉 Version française ?** : [![Français](./ui/version-fr.png)](./README.md)
 
 ---
 
