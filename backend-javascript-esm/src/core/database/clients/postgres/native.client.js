@@ -1,9 +1,9 @@
-import pg from 'pg';
+import pkg from 'pg';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
-const { Pool } = pg;
+const { Pool } = pkg;
 
 const pool = new Pool({
   host: process.env.DB_PG_HOST,

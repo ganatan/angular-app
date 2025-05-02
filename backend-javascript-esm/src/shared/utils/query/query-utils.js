@@ -18,7 +18,15 @@ export function adaptSortField(sort, sortMapping) {
   return isDescending ? `-${adaptedSortKey}` : adaptedSortKey;
 }
 
-export function addRangeCondition(condition, params, column, minValue, maxValue, minSize = 0, maxSize = Infinity) {
+export function addRangeCondition(
+  condition,
+  params,
+  column,
+  minValue,
+  maxValue,
+  minSize = 0,
+  maxSize = Infinity,
+) {
   if (minValue !== null) {
     const parsedMin = parseInt(minValue, 10);
     if (!isNaN(parsedMin) && parsedMin >= minSize && parsedMin <= maxSize) {
@@ -56,7 +64,7 @@ export function addRangeDateCondition(condition, params, column, minDate, maxDat
   const parseDate = (dateString, time) => {
     if (!dateString) {
       return null;
-    };
+    }
     const decodedDate = decodeURIComponent(dateString);
     const [day, month, year] = decodedDate.split('/');
     const isoDate = `${year}-${month}-${day} ${time}+01`;
@@ -82,4 +90,3 @@ export function addRangeDateCondition(condition, params, column, minDate, maxDat
 
   return condition;
 }
-

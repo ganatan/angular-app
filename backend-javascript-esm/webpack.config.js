@@ -13,6 +13,9 @@ export default (env, argv) => {
       filename: 'server.js',
       path: path.resolve(__dirname, 'dist')
     },
+    externals: {
+      'cloudflare:sockets': 'commonjs cloudflare:sockets'
+    },  
     target: 'node',
     mode: isProduction ? 'production' : 'development',
     devtool: isProduction ? false : 'source-map',
@@ -22,8 +25,5 @@ export default (env, argv) => {
     experiments: {
       outputModule: true
     },
-    externals: {
-      'cloudflare:sockets': 'commonjs cloudflare:sockets'
-    },  
   }
 }

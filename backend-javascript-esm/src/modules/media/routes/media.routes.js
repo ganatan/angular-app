@@ -1,5 +1,4 @@
 import express from 'express';
-import appConfig from '../../../config/app.config.js';
 
 import Repository from '../repositories/media.repository.js';
 import BaseService from '../../../shared/generic/base.service.js';
@@ -9,6 +8,8 @@ import { ITEM_CONSTANTS } from '../constants/media.constant.js';
 import { validateItem } from '../schemas/media.schema.js';
 
 const router = express.Router();
+
+import appConfig from '../../../config/app.config.js';
 
 const repository = new Repository(appConfig.app.dbClient);
 const service = new BaseService(repository, ITEM_CONSTANTS);

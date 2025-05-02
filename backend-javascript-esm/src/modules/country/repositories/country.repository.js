@@ -1,4 +1,4 @@
-import DB_CLIENTS from '../../../core/config/db-clients.js';
+import DB_CLIENTS from '../../../config/db-clients.js';
 
 import MockRepository from '../repositories/country.repository.mock.js';
 import PgRepository from '../repositories/country.repository.pg.js';

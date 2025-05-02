@@ -1,4 +1,4 @@
-import DB_CLIENTS from '../../../core/config/db-clients.js';
+import DB_CLIENTS from '../../../config/db-clients.js';
 
 import MockRepository from '../repositories/person.repository.mock.js';
 import PgRepository from '../repositories/person.repository.pg.js';
@@ -6,7 +6,6 @@ import MysqlRepository from '../repositories/person.repository.mysql.js';
 
 class Repository {
   constructor(dbClient) {
-
     switch (dbClient) {
       case DB_CLIENTS.PG:
         this.repository = new PgRepository();

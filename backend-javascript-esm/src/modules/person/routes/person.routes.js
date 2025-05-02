@@ -1,11 +1,12 @@
 import express from 'express';
-import appConfig from '../../../config/app.config.js';
 
 import Repository from '../repositories/person.repository.js';
 import Service from '../services/person.service.js';
 import Controller from '../controllers/person.controller.js';
 
 const router = express.Router();
+
+import appConfig from '../../../config/app.config.js';
 
 const repository = new Repository(appConfig.app.dbClient);
 const service = new Service(repository);

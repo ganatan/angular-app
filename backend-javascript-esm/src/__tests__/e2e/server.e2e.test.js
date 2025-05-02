@@ -29,9 +29,7 @@ describe('GET /persons via HTTP (no compression)', () => {
       res.on('data', (chunk) => {
         responseData += chunk;
       });
-      console.log('00000000001');
       res.on('end', () => {
-        console.log('00000000002');
         // Assert
         expect(res.statusCode).toBe(200);
 

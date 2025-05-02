@@ -1,14 +1,13 @@
 import express from 'express';
 
-import appConfig from '../../../config/app.config.js';
-
 import Repository from '../repositories/country.repository.js';
 import Service from '../services/country.service.js';
 import Controller from '../controllers/country.controller.js';
 
 const router = express.Router();
-
+import appConfig from '../../../config/app.config.js';
 const repository = new Repository(appConfig.app.dbClient);
+
 const service = new Service(repository);
 const controller = new Controller(service);
 

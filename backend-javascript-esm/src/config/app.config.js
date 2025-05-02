@@ -1,5 +1,5 @@
 import { env } from './env.js';
-import DB_CLIENTS from '../core/config/db-clients.js';
+import DB_CLIENTS from './db-clients.js';
 
 const appConfig = {
   app: {

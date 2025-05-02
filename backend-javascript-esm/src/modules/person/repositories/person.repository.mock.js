@@ -40,7 +40,7 @@ class MockRepository {
     const totalPages = Math.ceil(totalItems / perPage);
     const data = filteredItems
       .slice(offset, offset + perPage)
-      .map(item => ({ ...item, name: `${item.name}${BACKEND_MOCK_SUFFIX}` }));
+      .map(item => ({ ...item, name: `${item.name}-${BACKEND_MOCK_SUFFIX}` }));
 
     return {
       metadata: {

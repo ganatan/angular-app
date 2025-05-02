@@ -1,5 +1,4 @@
 import express from 'express';
-import appConfig from '../../../config/app.config.js';
 
 import permissionHandler from '../../../middlewares/security/permission-handler.js';
 
@@ -9,6 +8,8 @@ import QueryService from '../services/profession.query.service.js';
 import Controller from '../controllers/profession.controller.js';
 
 const router = express.Router();
+
+import appConfig from '../../../config/app.config.js';
 
 const repository = new Repository(appConfig.app.dbClient);
 

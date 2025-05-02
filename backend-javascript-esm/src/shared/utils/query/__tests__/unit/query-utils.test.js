@@ -78,8 +78,13 @@ describe('addDensityCondition', () => {
 describe('addRangeDateCondition', () => {
   test('should add valid min and max date ranges', () => {
     const params = [];
-    const condition = addRangeDateCondition('WHERE 1=1', params, 'birthdate', '01/01/2020', '31/12/2020');
-
+    const condition = addRangeDateCondition(
+      'WHERE 1=1',
+      params,
+      'birthdate',
+      '01/01/2020',
+      '31/12/2020',
+    );
     expect(condition).toContain('birthdate >= $1');
     expect(condition).toContain('birthdate <= $2');
     expect(params[0]).toMatch(/^2020-01-01 00:00:00\+01$/);

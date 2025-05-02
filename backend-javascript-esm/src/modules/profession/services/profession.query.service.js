@@ -8,7 +8,7 @@ class QueryService {
 
   async getItems(query) {
     const result = await this.repository.getItems(query);
-    result.data = result.data.map(item => new Entity(item));
+    result.data = result.data.map((item) => new Entity(item));
 
     return result;
   }

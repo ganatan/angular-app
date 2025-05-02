@@ -1,6 +1,5 @@
 import request from 'supertest';
 import app from '../../app.js';
-
 import { BACKEND_MOCK_SUFFIX } from '../../shared/constants/routes/backend-mock.constants.js';
 
 describe('API /persons', () => {
@@ -16,7 +15,7 @@ describe('API /persons', () => {
     expect(res.body).toHaveProperty('success', true);
     expect(Array.isArray(res.body.data)).toBe(true);
     expect(res.body.data).toHaveLength(4);
-    expect(res.body.data[0]).toHaveProperty('name', `Steven Spielberg${BACKEND_MOCK_SUFFIX}`);
+    expect(res.body.data[0]).toHaveProperty('name', `Steven Spielberg-${BACKEND_MOCK_SUFFIX}`);
   });
 });
 
