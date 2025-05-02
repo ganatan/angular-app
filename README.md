@@ -33,7 +33,7 @@ Ce projet contient un frontend Angular ainsi que plusieurs backends interchangea
 
 ## 🚀 Objectifs du projet
 
-- ✅ Démonstration d'une stack **moderne** et **interopérable**
+- ✅ Démonstration d'une stack **frontend** et **backend**
 - ✅ Environnements **compatibles CI/CD et Docker**
 - ✅ Déploiement simple, sans Docker obligatoire
 - ✅ Composants indépendants et testables
@@ -56,19 +56,22 @@ Idéal pour démarrer rapidement un projet Angular professionnel avec un backend
 </div>
 
 ---
+
 ## 📚 Table des matières
 
-- [🔧 CI Status](#-intégration-continue)
-- [📦 Docker Images](#-images-docker)
-- [📦 Stack Technologique](#-stack-technologique)
-- [🌐 Démo en ligne](#-démo-en-ligne)
-- [📁 Structure du projet](#-structure-du-projet)
-- [🛠 Configuration](#-configuration-du-frontend-angular)
-- [🔗 APIs exposées](#-apis-exposées)
-- [⚙️ Démarrage rapide](#️-démarrage-rapide)
-- [🐳 Déploiement avec Docker](#-déploiement-avec-docker)
-- [👤 Auteur](#-auteur)
-- [📚 Documentation](#-documentation)
+- [CI Status](#ci-status)
+- [Docker Images](#docker-images)
+- [Objectifs du projet](#objectifs-du-projet)
+- [Stack technologique](#stack-technologique)
+- [Démo en ligne](#démo-en-ligne)
+- [Structure du projet](#structure-du-projet)
+- [Configuration du frontend Angular](#configuration-du-frontend-angular)
+- [Configuration des backends](#configuration-des-backends)
+- [APIs exposées](#apis-exposees)
+- [Démarrage rapide](#demarrage-rapide)
+- [Déploiement avec Docker](#deploiement-avec-docker)
+- [Auteur](#auteur)
+- [Documentation](#documentation)
 
 ---
 
