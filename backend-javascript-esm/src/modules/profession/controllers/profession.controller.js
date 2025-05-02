@@ -21,7 +21,6 @@ class Controller {
 
       return next();
     } catch (error) {
-
       return next(error);
     }
   }
