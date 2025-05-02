@@ -1,28 +1,47 @@
 # Angular 19 — Application Fullstack
 
-**👉 Looking for the English version?** [![English](./ui/version-en.png)](./README.en.md)
+Application Fullstack basée sur **Angular 19**, **Node.js 20.x** et **Java 21**, avec une architecture modulaire, scalable et optimisée pour la production.  
+Ce projet contient un frontend Angular ainsi que plusieurs backends interchangeables (JavaScript ESM, JavaScript CJS, Spring Boot).
+
+**👉 Looking for the English version?**  
+[![English](./ui/version-en.png)](./README.en.md)
 
 ---
 
-<div align="center">
+## 🔧 Intégration Continue (CI)
 
-## 🔧 Intégration Continue
-
-[![Frontend Angular CI](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml)
-[![Backend JavaScript ESM CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-esm.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-esm.yml)
-[![Backend JavaScript CJS CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-cjs.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-cjs.yml)
-[![Backend Spring Boot CI](https://github.com/ganatan/angular-app/actions/workflows/backend-springboot.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-springboot.yml)
----
-
-## 📦 Images Docker 
-
-[![Docker Image Version - Backend JavaScript ESM](https://img.shields.io/docker/v/ganatan/backend-javascript-esm?label=Backend%20JavaScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript-esm)
-[![Docker Image Version - Backend JavaScript CJS](https://img.shields.io/docker/v/ganatan/backend-javascript-cjs?label=Backend%20JavaScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript-cjs)
-[![Docker Image Version - Frontend Angular](https://img.shields.io/docker/v/ganatan/frontend-angular?label=Frontend%20Angular%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/frontend-angular)
+| Projet                         | Badge CI |
+|-------------------------------|----------|
+| Frontend Angular              | [![Frontend Angular CI](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml) |
+| Backend JavaScript (ESM)      | [![Backend JavaScript ESM CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-esm.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-esm.yml) |
+| Backend JavaScript (CJS)      | [![Backend JavaScript CJS CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-cjs.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-cjs.yml) |
+| Backend Java Spring Boot      | [![Backend Spring Boot CI](https://github.com/ganatan/angular-app/actions/workflows/backend-springboot.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-springboot.yml) |
 
 ---
 
-Application fullstack basée sur Angular 19, Node.js 20.x et Java 21, avec une architecture scalable et optimisée pour la production.
+## 📦 Images Docker
+
+| Composant                     | Badge Docker |
+|------------------------------|---------------|
+| Backend JavaScript (ESM)     | [![Docker Image Version - Backend JavaScript ESM](https://img.shields.io/docker/v/ganatan/backend-javascript-esm?label=Backend%20JavaScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript-esm) |
+| Backend JavaScript (CJS)     | [![Docker Image Version - Backend JavaScript CJS](https://img.shields.io/docker/v/ganatan/backend-javascript-cjs?label=Backend%20JavaScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript-cjs) |
+| Frontend Angular             | [![Docker Image Version - Frontend Angular](https://img.shields.io/docker/v/ganatan/frontend-angular?label=Frontend%20Angular%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/frontend-angular) |
+
+---
+
+## 🚀 Objectifs du projet
+
+- ✅ Démonstration d'une stack **moderne** et **interopérable**
+- ✅ Environnements **compatibles CI/CD et Docker**
+- ✅ Déploiement simple, sans Docker obligatoire
+- ✅ Composants indépendants et testables
+
+---
+
+📁 Chaque sous-répertoire (`frontend-angular`, `backend-javascript-esm`, etc.) contient sa propre configuration, ses tests, son CI et son image Docker.  
+Idéal pour démarrer rapidement un projet Angular professionnel avec un backend adapté à vos besoins.
+
+---
 
 ## 📦 Stack technologique
 
@@ -78,8 +97,11 @@ Ce dépôt contient une **Application Web fullstack** avec Angular 19 + Node.js 
 
 ### 🚀 Backends
 
-- **`backend-javascript`**  
+- **`backend-javascript ESM`**  
   API Express.js en JavaScript (ESM) avec PostgreSQL, MySQL ou données mockées
+
+- **`backend-javascript CJS`**  
+  API Express.js en JavaScript (commonJS) avec PostgreSQL, MySQL ou données mockées
 
 - **`backend-typescript`**  
   API Express.js en TypeScript avec PostgreSQL, MySQL ou données mockées
@@ -149,10 +171,19 @@ npm start
 # http://localhost:4200
 ```
 
-### ▶️ Backend JavaScript
+### ▶️ Backend JavaScript ESM
 
 ```bash
-cd backend-javascript
+cd backend-javascript-esm
+npm install
+npm start
+# http://localhost:3000
+```
+
+### ▶️ Backend JavaScript CJS
+
+```bash
+cd backend-javascript-cjs
 npm install
 npm start
 # http://localhost:3000
