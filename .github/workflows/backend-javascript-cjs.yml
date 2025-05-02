@@ -9,9 +9,6 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: backend-javascript-cjs
 
     steps:
       - name: Checkout code
@@ -24,18 +21,23 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        working-directory: backend-javascript-cjs
 
       - name: Lint
         run: npm run lint
+        working-directory: backend-javascript-cjs
 
       - name: Run tests
         run: npm run test
+        working-directory: backend-javascript-cjs
 
       - name: Generate coverage
         run: npm run coverage
+        working-directory: backend-javascript-cjs
 
       - name: Build app
         run: npm run build
+        working-directory: backend-javascript-cjs
 
       - name: Login to Docker Hub
         uses: docker/login-action@v3
@@ -45,6 +47,7 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/backend-javascript-cjs:latest .
+        working-directory: backend-javascript-cjs
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/backend-javascript-cjs:latest
