@@ -50,15 +50,18 @@ Fullstack application based on **Angular 19**, **Node.js 20.x** and **Java 21**.
 
 ## 📚 Table of Contents
 
-- [🔧 CI Status](#-ci-status)
-- [🌐 Live Demo](#-live-demo)
-- [📁 Project Structure](#-project-structure)
-- [🛠 Configuration](#-frontend-configuration-angular)
-- [🔗 Exposed APIs](#-exposed-apis)
-- [⚙️ Quick Start](#️-quick-start)
-- [👤 Author](#-author)
-- [📚 Documentation](#-documentation)
-
+- [Continuous Integration (CI)](#-continuous-integration-ci)
+- [Docker Images](#-docker-images)
+- [Tech Stack](#-tech-stack)
+- [Live Demo](#-live-demo)
+- [Project Structure](#-project-structure)
+- [Frontend Configuration (Angular)](#-frontend-configuration-angular)
+- [Backend Configuration](#-backend-configuration)
+- [Exposed APIs](#-exposed-apis)
+- [Quick Start](#-quick-start)
+- [Deployment with Docker](#-deployment-with-docker)
+- [Author](#-author)
+- [Documentation](#-documentation)
 ---
 
 
