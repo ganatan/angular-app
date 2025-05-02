@@ -3,17 +3,17 @@
 Application Fullstack basée sur **Angular 19**, **Node.js 20.x** et **Java 21**.
 
 
-| Composant        | Technologie principale      | Description                                                             |
-|------------------|-----------------------------|-------------------------------------------------------------------------|
-| Frontend         | Angular 19                  | Application SPA avec routing, SSR, PWA, SEO                             |
-| Backend JS (ESM) | Node.js 20.x + Express (ESM)| API REST avec PostgreSQL, MySQL ou données mockées                     |
-| Backend JS (CJS) | Node.js 20.x + Express (CJS)| Variante CJS avec même structure que la version ESM                    |
-| Backend TS       | Node.js 20.x + TypeScript   | API REST typée avec PostgreSQL, MySQL ou données mockées               |
-| Backend Java     | Java 21 + Spring Boot       | API REST Java moderne et intégrée avec base de données ou mock         |
+| 🧩 Composant        | ⚙️ Technologie principale      | 📝 Description                                                             |
+|---------------------|-------------------------------|---------------------------------------------------------------------------|
+| 🎨 **Frontend**      | Angular 19                    | Application SPA avec Routing, SSR, PWA, SEO                               |
+| 🖥️ **Backend JS (ESM)** | Node.js 20.x + Express (ESM)   | API REST avec PostgreSQL, MySQL ou données mockées                        |
+| 🖥️ **Backend JS (CJS)** | Node.js 20.x + Express (CJS)   | Variante CJS avec même structure que la version ESM                       |
+| 🖥️ **Backend TS**       | Node.js 20.x + TypeScript     | API REST typée avec PostgreSQL, MySQL ou données mockées                 |
+| ☕ **Backend Java**      | Java 21 + Spring Boot         | API REST Java moderne avec base de données ou données simulées           |
 
 
-**👉 Looking for the English version?**  
-[![English](./ui/version-en.png)](./README.en.md)
+
+**👉 Looking for the English version?** : [![English](./ui/version-en.png)](./README.en.md)
 
 ---
 
