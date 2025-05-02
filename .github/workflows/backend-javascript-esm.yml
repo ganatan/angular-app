@@ -27,10 +27,6 @@ jobs:
         run: npm run lint
         working-directory: backend-javascript-esm
 
-      - name: Run tests
-        run: npm run test
-        working-directory: backend-javascript-esm
-
       - name: Generate coverage
         run: npm run coverage
         working-directory: backend-javascript-esm
