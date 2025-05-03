@@ -32,7 +32,6 @@
 
 | Component                   | Docker Badge |
 |----------------------------|---------------|
-|------------------------------|---------------|
 | Backend JavaScript (ESM)     | [![Docker Image Version - Backend JavaScript ESM](https://img.shields.io/docker/v/ganatan/backend-javascript-esm?label=Backend%20JavaScript%20Docker%20esm&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript-esm) |
 | Backend JavaScript (CJS)     | [![Docker Image Version - Backend JavaScript CJS](https://img.shields.io/docker/v/ganatan/backend-javascript-cjs?label=Backend%20JavaScript%20Docker%20cjs&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript-cjs) |
 | Backend TypeScript           | [![Docker Image Version - Backend TypeScript](https://img.shields.io/docker/v/ganatan/backend-typescript?label=Backend%20TypeScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-typescript) |
