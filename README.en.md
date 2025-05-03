@@ -10,6 +10,7 @@
 
 **👉 Version française disponible ici** : [![Français](./ui/version-fr.png)](./README.md)
 
+---
 
 | Component        | Main Technology            | Description                                                          |
 |---------------------|-------------------------------|-------------------------------------------------------------------------|
