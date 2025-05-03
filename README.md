@@ -3,24 +3,21 @@
 
 **👉 Looking for the English version?** : [![English](./ui/version-en.png)](./README.en.md)
 
-<p align="center">
 
 | Composant        | Technologie principale      | Description                                                             |
 |---------------------|-------------------------------|---------------------------------------------------------------------------|
 | **Frontend**      | Angular 19                    | Application SPA avec Routing, SSR, PWA, SEO                               |
-| **Backend JS (ESM)** | Node.js 22.x + Express (ESM)   | API REST avec PostgreSQL, MySQL ou données mockées                        |
-| **Backend JS (CJS)** | Node.js 22.x + Express (CJS)   | Variante CJS avec même structure que la version ESM                       |
-| **Backend TS**       | Node.js 22.x + TypeScript     | API REST typée avec PostgreSQL, MySQL ou données mockées                 |
+| **Backend Javascript (ESM)** | Node.js 22.x + Express (ESM)   | API REST avec PostgreSQL, MySQL ou données mockées                        |
+| **Backend Javascript (CJS)** | Node.js 22.x + Express (CJS)   | Variante CJS avec même structure que la version ESM                       |
+| **Backend Typescript**       | Node.js 22.x + TypeScript     | API REST typée avec PostgreSQL, MySQL ou données mockées                 |
 | **Backend Java**      | Java 21 + Spring Boot         | API REST Java moderne avec base de données ou données simulées           |
 
-</p>
+
 
 
 ---
 
 ## 🔧 Intégration Continue (CI)
-
-<p align="center">
 
 | Projet                         | Badge CI |
 |-------------------------------|----------|
@@ -30,13 +27,9 @@
 | Backend TypeScript            | [![Backend TypeScript CI](https://github.com/ganatan/angular-app/actions/workflows/backend-typescript.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-typescript.yml) |
 | Backend Java Spring Boot      | [![Backend Spring Boot CI](https://github.com/ganatan/angular-app/actions/workflows/backend-java-springboot.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-java-springboot.yml) |
 
-</p>
-
 ---
 
 ## 📦 Images Docker
-
-<p align="center">
 
 | Composant                     | Badge Docker |
 |------------------------------|---------------|
@@ -44,8 +37,6 @@
 | Backend JavaScript (CJS)     | [![Docker Image Version - Backend JavaScript CJS](https://img.shields.io/docker/v/ganatan/backend-javascript-cjs?label=Backend%20JavaScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript-cjs) |
 | Backend TypeScript           | [![Docker Image Version - Backend TypeScript](https://img.shields.io/docker/v/ganatan/backend-typescript?label=Backend%20TypeScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-typescript) |
 | Frontend Angular             | [![Docker Image Version - Frontend Angular](https://img.shields.io/docker/v/ganatan/frontend-angular?label=Frontend%20Angular%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/frontend-angular) |
-
-</p>
 
 ---
 
