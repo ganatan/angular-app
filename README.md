@@ -1,5 +1,8 @@
 # Application Fullstack : Angular 19, Node.js 22 et Java 21
 
+---
+
+<img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
 
 ## 🚀 Objectifs du projet
 - ✅ Stack frontend / backend complète  
@@ -71,11 +74,6 @@
 - [Author](#-author)
 - [Documentation](#-documentation)
 
----
-
-<img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
-
-Ce dépôt contient une **Application Web fullstack** avec Angular 19 + Node.js ou TypeScript + PostgreSQL/MySQL ou données simulées.
 
 ---
 

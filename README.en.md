@@ -1,5 +1,8 @@
 # Fullstack Application  : Angular 19, Node.js 22 and Java 21
 
+---
+
+<img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
 
 ## 🚀 Project Goals
 - ✅ Complete frontend / backend stack  
@@ -52,8 +55,6 @@
 ![Docker](https://img.shields.io/badge/Docker-24.x-blue?logo=docker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ganatan/angular-app/blob/master/LICENSE)
 
-</div>
-
 ---
 
 ## 📚 Table of Contents
@@ -70,13 +71,6 @@
 - [Deployment with Docker](#-deployment-with-docker)
 - [Author](#-author)
 - [Documentation](#-documentation)
----
-
-
-<img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
-
-This repository contains a **fullstack web application** using Angular 19 + Node.js or TypeScript with PostgreSQL/MySQL or mocked data.
-
 ---
 
 ## 🌐 Live Demo
