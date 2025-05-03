@@ -1,4 +1,4 @@
-# Application Fullstack : Angular 19, Node.js 22.x et Java 21
+# Application Fullstack : Angular 19, Node.js 22 et Java 21
 
 
 **👉 Looking for the English version?** : [![English](./ui/version-en.png)](./README.en.md)
