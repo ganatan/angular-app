@@ -12,15 +12,13 @@
 
 ---
 
-| Component        | Main Technology            | Description                                                          |
-|---------------------|-------------------------------|-------------------------------------------------------------------------|
-| **Frontend**      | Angular 19                    | SPA application with Routing, SSR, PWA, SEO                             |
-| **Backend Javascript (ESM)** | Node.js 22.x + Express (ESM)   | REST API with PostgreSQL, MySQL or mocked data                         |
-| **Backend Javascript (CJS)** | Node.js 22.x + Express (CJS)   | CJS variant with same structure as ESM version                          |
-| **Backend Typescript**       | Node.js 22.x + TypeScript     | Typed REST API with PostgreSQL, MySQL or mocked data                    |
-| **Backend Java**      | Java 21 + Spring Boot         | Modern Java REST API with real or mocked data                           |
-
-</p>
+| Component              | Description                                                   |
+|------------------------|---------------------------------------------------------------|
+| **Frontend**           | Angular 19 — SPA with Routing, SSR, PWA, SEO                  |
+| **Backend JavaScript (ESM)**   | Node.js 22 + Express — REST API with mocked data or database   |
+| **Backend JavaScript (CJS)**   | CJS variant, same structure as ESM version                   |
+| **Backend TypeScript** | Node.js 22 + TypeScript — Typed REST API with data or database |
+| **Backend Java Spring Boot** | Java 21 + Spring Boot — Simple and modern REST API              |
 
 ---
 
