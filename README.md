@@ -1,6 +1,14 @@
 # Application Fullstack : Angular 19, Node.js 22 et Java 21
 
 
+## 🚀 Objectifs du projet
+- ✅ Stack frontend / backend complète  
+- ✅ Compatibilité CI/CD et Docker  
+- ✅ Déploiement simple (Docker optionnel)  
+- ✅ Composants isolés et testables  
+---
+
+
 **👉 Looking for the English version?** : [![English](./ui/version-en.png)](./README.en.md)
 
 
@@ -37,20 +45,6 @@
 | Backend JavaScript (CJS)     | [![Docker Image Version - Backend JavaScript CJS](https://img.shields.io/docker/v/ganatan/backend-javascript-cjs?label=Backend%20JavaScript%20Docker%20cjs&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript-cjs) |
 | Backend TypeScript           | [![Docker Image Version - Backend TypeScript](https://img.shields.io/docker/v/ganatan/backend-typescript?label=Backend%20TypeScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-typescript) |
 | Frontend Angular             | [![Docker Image Version - Frontend Angular](https://img.shields.io/docker/v/ganatan/frontend-angular?label=Frontend%20Angular%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/frontend-angular) |
-
----
-
-## 🚀 Objectifs du projet
-
-- ✅ Démonstration d'une stack **frontend** et **backend**
-- ✅ Environnements **compatibles CI/CD et Docker**
-- ✅ Déploiement simple, sans Docker obligatoire
-- ✅ Composants indépendants et testables
-
----
-
-📁 Chaque sous-répertoire (`frontend-angular`, `backend-javascript-esm`, etc.) contient sa propre configuration, ses tests, son CI et son image Docker.  
-Idéal pour démarrer rapidement un projet Angular professionnel avec un backend adapté à vos besoins.
 
 ---
 

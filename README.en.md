@@ -1,6 +1,13 @@
 # Fullstack Application  : Angular 19, Node.js 22 and Java 21
 
 
+## 🚀 Project Goals
+- ✅ Complete frontend / backend stack  
+- ✅ CI/CD and Docker compatibility  
+- ✅ Simple deployment (Docker optional)  
+- ✅ Isolated and testable components  
+---
+
 **👉 Version française disponible ici** : [![Français](./ui/version-fr.png)](./README.md)
 
 
