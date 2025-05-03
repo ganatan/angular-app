@@ -1,15 +1,16 @@
 # Angular 19 — Fullstack Application
 
-Fullstack application based on **Angular 19**, **Node.js 20.x** and **Java 21**.
+Fullstack application based on **Angular 19**, **Node.js 22.x** and **Java 21**.
 
-**👉 Version française ?** : [![Français](./ui/version-fr.png)](./README.md)
+
+**👉 Version française disponible ici** : [![Français](./ui/version-fr.png)](./README.md)
 
 | Component        | Main Technology            | Description                                                          |
 |---------------------|-------------------------------|-------------------------------------------------------------------------|
 | **Frontend**      | Angular 19                    | SPA application with Routing, SSR, PWA, SEO                             |
-| **Backend JS (ESM)** | Node.js 20.x + Express (ESM)   | REST API with PostgreSQL, MySQL or mocked data                         |
-| **Backend JS (CJS)** | Node.js 20.x + Express (CJS)   | CJS variant with same structure as ESM version                          |
-| **Backend TS**       | Node.js 20.x + TypeScript     | Typed REST API with PostgreSQL, MySQL or mocked data                    |
+| **Backend JS (ESM)** | Node.js 22.x + Express (ESM)   | REST API with PostgreSQL, MySQL or mocked data                         |
+| **Backend JS (CJS)** | Node.js 22.x + Express (CJS)   | CJS variant with same structure as ESM version                          |
+| **Backend TS**       | Node.js 22.x + TypeScript     | Typed REST API with PostgreSQL, MySQL or mocked data                    |
 | **Backend Java**      | Java 21 + Spring Boot         | Modern Java REST API with real or mocked data                           |
 
 
@@ -40,7 +41,7 @@ Fullstack application based on **Angular 19**, **Node.js 20.x** and **Java 21**.
 ## 📦 Tech Stack
 
 ![Angular](https://img.shields.io/badge/angular-19-red)
-![Node](https://img.shields.io/badge/node-20.x-blue)
+![Node](https://img.shields.io/badge/node-22.x-blue)
 ![Java](https://img.shields.io/badge/java-21-brightgreen)
 ![Docker](https://img.shields.io/badge/Docker-24.x-blue?logo=docker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ganatan/angular-app/blob/master/LICENSE)
