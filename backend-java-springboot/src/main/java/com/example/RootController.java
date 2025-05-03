@@ -16,7 +16,7 @@ public class RootController {
 	      "data", Map.of(
 	          "version", "1.0.0",
 	          "status", "ok",
-	          "app", "backend-springboot"
+	          "app", "backend-java-springboot"
 	      )
 	  );
 	}
