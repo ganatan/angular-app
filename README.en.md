@@ -1,6 +1,4 @@
-# Angular 19 — Fullstack Application
-
-Fullstack application based on **Angular 19**, **Node.js 22.x** and **Java 21**.
+# Fullstack Application with Angular 19, Node.js 22.x, and Java 21
 
 
 **👉 Version française disponible ici** : [![Français](./ui/version-fr.png)](./README.md)
