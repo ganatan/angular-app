@@ -33,7 +33,7 @@
     "@angular/service-worker": "19.2.9",
     "@angular/ssr": "19.2.10",
     "@fortawesome/fontawesome-free": "6.7.2",
-    "bootstrap": "5.3.5",
+    "bootstrap": "5.3.6",
     "express": "4.21.2",
     "prismjs": "1.30.0",
     "rxjs": "7.8.2",
@@ -46,10 +46,10 @@
     "@angular/compiler-cli": "19.2.9",
     "@types/bootstrap": "^5.2.10",
     "@types/express": "5.0.1",
-    "@types/jasmine": "5.1.7",
-    "@types/node": "22.15.3",
+    "@types/jasmine": "5.1.8",
+    "@types/node": "22.15.11",
     "angular-eslint": "19.3.0",
-    "eslint": "9.25.1",
+    "eslint": "9.26.0",
     "jasmine-core": "5.7.1",
     "karma": "6.4.4",
     "karma-chrome-launcher": "3.2.0",
@@ -57,6 +57,6 @@
     "karma-jasmine": "5.1.0",
     "karma-jasmine-html-reporter": "2.1.0",
     "typescript": "5.7.3",
-    "typescript-eslint": "8.31.1"
+    "typescript-eslint": "8.32.0"
   }
 }

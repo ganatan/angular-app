@@ -60,11 +60,11 @@
   "devDependencies": {
     "@babel/core": "7.27.1",
     "@babel/preset-env": "7.27.1",
-    "@eslint/js": "9.25.1",
+    "@eslint/js": "9.26.0",
     "@jest/globals": "29.7.0",
     "babel-jest": "29.7.0",
     "babel-loader": "10.0.0",
-    "eslint": "9.25.1",
+    "eslint": "9.26.0",
     "express": "5.1.0",
     "globals": "16.0.0",
     "jest": "29.7.0",
@@ -78,12 +78,11 @@
     "dotenv": "16.5.0",
     "express-rate-limit": "7.5.0",
     "helmet": "8.1.0",
-    "mysql2": "^3.14.1",
     "nodemon": "3.1.10",
     "pg": "8.15.6",
     "swagger-jsdoc": "6.2.8",
     "swagger-ui-express": "5.0.1",
     "winston": "3.17.0",
-    "zod": "3.24.3"
+    "zod": "3.24.4"
   }
 }
