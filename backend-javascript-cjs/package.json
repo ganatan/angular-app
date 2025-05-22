@@ -75,7 +75,7 @@
     "swagger-jsdoc": "6.2.8",
     "swagger-ui-express": "5.0.1",
     "winston": "3.17.0",
-    "zod": "3.24.4"
+    "zod": "3.25.20"
   },
   "devDependencies": {
     "@eslint/js": "9.27.0",
@@ -83,7 +83,7 @@
     "eslint": "9.27.0",
     "globals": "16.1.0",
     "jest": "29.7.0",
-    "webpack": "5.99.8",
+    "webpack": "5.99.9",
     "webpack-cli": "6.0.1"
   }
 }
