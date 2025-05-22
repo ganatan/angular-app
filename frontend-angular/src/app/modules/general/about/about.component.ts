@@ -51,9 +51,9 @@ export class AboutComponent implements OnInit {
     this.quote = new Quote();
     this.dependencies = {
       frontend: [
-        { name: 'Angular 19.2.11' },
-        { name: 'Angular CLI 19.2.12' },
-        { name: 'Angular SSR 19.2.12' },
+        { name: 'Angular 19.2.12' },
+        { name: 'Angular CLI 19.2.13' },
+        { name: 'Angular SSR 19.2.13' },
         { name: 'Bootstrap 5.3.6' },
         { name: 'Font Awesome 6.7.2' },
       ],
