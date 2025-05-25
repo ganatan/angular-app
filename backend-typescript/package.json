@@ -63,7 +63,7 @@
     "swagger-ui-express": "5.0.1",
     "ts-node-dev": "2.0.0",
     "winston": "3.17.0",
-    "zod": "3.25.20"
+    "zod": "3.25.28"
   },
   "devDependencies": {
     "@eslint/js": "9.27.0",
