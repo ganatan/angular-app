@@ -1,6 +1,6 @@
 {
   "name": "angular-starter",
-  "version": "19.2.13",
+  "version": "19.2.14",
   "scripts": {
     "ng": "ng",
     "dev": "ng serve --port 4200",
@@ -21,17 +21,17 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@angular/animations": "19.2.13",
-    "@angular/common": "19.2.13",
-    "@angular/compiler": "19.2.13",
-    "@angular/core": "19.2.13",
-    "@angular/forms": "19.2.13",
-    "@angular/platform-browser": "19.2.13",
-    "@angular/platform-browser-dynamic": "19.2.13",
-    "@angular/platform-server": "19.2.13",
-    "@angular/router": "19.2.13",
-    "@angular/service-worker": "19.2.13",
-    "@angular/ssr": "19.2.13",
+    "@angular/animations": "19.2.14",
+    "@angular/common": "19.2.14",
+    "@angular/compiler": "19.2.14",
+    "@angular/core": "19.2.14",
+    "@angular/forms": "19.2.14",
+    "@angular/platform-browser": "19.2.14",
+    "@angular/platform-browser-dynamic": "19.2.14",
+    "@angular/platform-server": "19.2.14",
+    "@angular/router": "19.2.14",
+    "@angular/service-worker": "19.2.14",
+    "@angular/ssr": "19.2.14",
     "@fortawesome/fontawesome-free": "6.7.2",
     "bootstrap": "5.3.6",
     "express": "4.21.2",
@@ -41,14 +41,14 @@
     "zone.js": "0.15.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "19.2.13",
-    "@angular/cli": "19.2.13",
-    "@angular/compiler-cli": "19.2.13",
+    "@angular-devkit/build-angular": "19.2.14",
+    "@angular/cli": "19.2.14",
+    "@angular/compiler-cli": "19.2.14",
     "@types/bootstrap": "5.2.10",
     "@types/express": "5.0.2",
     "@types/jasmine": "5.1.8",
-    "@types/node": "22.15.21",
-    "angular-eslint": "19.5.0",
+    "@types/node": "22.15.23",
+    "angular-eslint": "19.6.0",
     "eslint": "9.27.0",
     "jasmine-core": "5.7.1",
     "karma": "6.4.4",
@@ -57,6 +57,6 @@
     "karma-jasmine": "5.1.0",
     "karma-jasmine-html-reporter": "2.1.0",
     "typescript": "5.7.3",
-    "typescript-eslint": "8.32.1"
+    "typescript-eslint": "8.33.0"
   }
 }
