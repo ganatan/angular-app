@@ -1,4 +1,4 @@
-# Fullstack Application  : Angular 20, Node.js 22 and Java 21
+# Fullstack Application  : Angular 20, Node.js and Java 21
 
 <img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
 
