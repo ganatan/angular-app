@@ -1,0 +1,212 @@
+<div class="container">
+  <div class="row pt-5 pb-5">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 col-xl-4 col-xxl-4 col-lg-4 col-md-4 col-sm-12 mb-2">
+              <span class="h3">{{ name_default }}</span>
+            </div>
+            <div class="col-12 col-xl-8 col-xxl-8 col-lg-8 col-md-8 col-sm-12 text-center">
+              <button class="btn btn-primary btn-sm me-2" type="button" (click)="onCreate()">
+                <i class="fas fa-plus"></i>
+              </button>
+              <button class="btn btn-primary btn-sm me-2" type="button" (click)="onUpdate()"
+                [disabled]="formItem.invalid || (formItem.pristine && !item)">
+                <i class="fas fa-save"></i>
+              </button>
+              <button class="btn btn-primary btn-sm me-2" type="button" (click)="onCopy()"
+              [disabled]="formItem.invalid || (formItem.pristine && !item)">
+                <i class="fas fa-copy"></i>
+              </button>
+              <button class="btn btn-primary btn-sm me-2" type="button" (click)="onDelete()"
+              [disabled]="formItem.invalid || (formItem.pristine && !item)">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </div>
+          </div>
+          <hr>
+          <form [formGroup]="formItem" class="row g-3">
+            <div class="col-md-2">
+              <label for="id" class="form-label">Id</label>
+              <input type="text" class="form-control" id="id" formControlName="id" readonly>
+            </div>
+            <div class="col-md-2">
+              <label for="code" class="form-label">Code</label>
+              <input type="text" class="form-control" id="code" formControlName="code">
+              <div *ngIf="code?.invalid && code?.dirty">
+                <div *ngIf="code?.errors?.['required']" class="pt-2">
+                  <span class="pt-2 text-danger">Code is required</span>
+                </div>
+                <div *ngIf="code?.errors?.['minlength']" class="pt-2">
+                  <span class="pt-2 text-danger">Code must be at least 2 characters</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" formControlName="name">
+              <div *ngIf="name?.invalid && name?.dirty">
+                <div *ngIf="name?.errors?.['required']" class="pt-2">
+                  <span class="pt-2 text-danger">Name is required</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="wikipediaLink" class="form-label">Wikipedia</label>
+              <div class="input-group">
+                <span class="input-group-text" id="wikipediaLinkShow">
+                  <a href="https://fr.wikipedia.org/wiki/{{ formItem.value.wikipediaLink }}" target="_blank"><i
+                      class="text-success fa-brands fa-wikipedia-w"></i></a>
+                </span>
+                <input type="text" class="form-control" id="wikipediaLink" aria-describedby="wikipediaLink"
+                  formControlName="wikipediaLink">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="area" class="form-label">Area</label>
+              <input type="text" class="form-control" id="area" formControlName="area">
+              <div *ngIf="area?.errors?.['required']">
+                <span class="pt-2 text-danger">Area is required</span>
+              </div>
+              <div *ngIf="area?.errors?.['pattern']">
+                <span class="pt-2 text-danger">Numbers only</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="population" class="form-label">Population</label>
+              <input type="text" class="form-control" id="population" formControlName="population">
+              <div *ngIf="population?.errors?.['required']">
+                <span class="pt-2 text-danger">Population is required</span>
+              </div>
+              <div *ngIf="population?.errors?.['pattern']">
+                <span class="pt-2 text-danger">Numbers only</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="countriesCount" class="form-label">Country Count</label>
+              <input type="text" class="form-control" id="countriesCount" formControlName="countriesCount">
+              <div *ngIf="countriesCount?.errors?.['required']">
+                <span class="pt-2 text-danger">Country count is required</span>
+              </div>
+              <div *ngIf="countriesCount?.errors?.['pattern']">
+                <span class="pt-2 text-danger">Numbers only</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="density" class="form-label">Density</label>
+              <input type="text" class="form-control" id="countriesCount" formControlName="density" readonly>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="container">
+  <div class="row pt-5 pb-5">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 col-xl-4 col-xxl-4 col-lg-4 col-md-4 col-sm-12 mb-2">
+              <span class="h3">{{ name_default }}</span>
+            </div>
+            <div class="col-12 col-xl-8 col-xxl-8 col-lg-8 col-md-8 col-sm-12 text-center">
+              <button class="btn btn-primary btn-sm me-2" type="button" (click)="onCreate()">
+                <i class="fas fa-plus"></i>
+              </button>
+              <button class="btn btn-primary btn-sm me-2" type="button" (click)="onUpdate()"
+                [disabled]="formItem.invalid || (formItem.pristine && !item)">
+                <i class="fas fa-save"></i>
+              </button>
+              <button class="btn btn-primary btn-sm me-2" type="button" (click)="onCopy()"
+              [disabled]="formItem.invalid || (formItem.pristine && !item)">
+                <i class="fas fa-copy"></i>
+              </button>
+              <button class="btn btn-primary btn-sm me-2" type="button" (click)="onDelete()"
+              [disabled]="formItem.invalid || (formItem.pristine && !item)">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </div>
+          </div>
+          <hr>
+          <form [formGroup]="formItem" class="row g-3">
+            <div class="col-md-2">
+              <label for="id" class="form-label">Id</label>
+              <input type="text" class="form-control" id="id" formControlName="id" readonly>
+            </div>
+            <div class="col-md-2">
+              <label for="code" class="form-label">Code</label>
+              <input type="text" class="form-control" id="code" formControlName="code">
+              <div *ngIf="code?.invalid && code?.dirty">
+                <div *ngIf="code?.errors?.['required']" class="pt-2">
+                  <span class="pt-2 text-danger">Le code est obligatoire</span>
+                </div>
+                <div *ngIf="code?.errors?.['minlength']" class="pt-2">
+                  <span class="pt-2 text-danger">Le code doit contenir 2 caractères minimum.</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="name" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="name" formControlName="name">
+              <div *ngIf="name?.invalid && name?.dirty">
+                <div *ngIf="name?.errors?.['required']" class="pt-2">
+                  <span class="pt-2 text-danger">Le nom est obligatoire</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="wikipediaLink" class="form-label">wikipedia</label>
+              <div class="input-group">
+                <span class="input-group-text" id="wikipediaLinkShow">
+                  <a href="https://fr.wikipedia.org/wiki/{{ formItem.value.wikipediaLink }}" target="_blank"><i
+                      class="text-success fa-brands fa-wikipedia-w"></i></a>
+                </span>
+                <input type="text" class="form-control" id="wikipediaLink" aria-describedby="wikipediaLink"
+                  formControlName="wikipediaLink">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="area" class="form-label">Area</label>
+              <input type="text" class="form-control" id="area" formControlName="area">
+              <div *ngIf="area?.errors?.['required']">
+                <span class="pt-2 text-danger">La area est obligatoire</span>
+              </div>
+              <div *ngIf="area?.errors?.['pattern']">
+                <span class="pt-2 text-danger">Nombre uniquement</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="population" class="form-label">Population</label>
+              <input type="text" class="form-control" id="population" formControlName="population">
+              <div *ngIf="population?.errors?.['required']">
+                <span class="pt-2 text-danger">La population est obligatoire</span>
+              </div>
+              <div *ngIf="population?.errors?.['pattern']">
+                <span class="pt-2 text-danger">Nombre uniquement</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="countriesCount" class="form-label">Country Count</label>
+              <input type="text" class="form-control" id="countriesCount" formControlName="countriesCount">
+              <div *ngIf="countriesCount?.errors?.['required']">
+                <span class="pt-2 text-danger">Nb de Pays est obligatoire</span>
+              </div>
+              <div *ngIf="countriesCount?.errors?.['pattern']">
+                <span class="pt-2 text-danger">Nombre uniquement</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="density" class="form-label">Density</label>
+              <input type="text" class="form-control" id="countriesCount" formControlName="density" readonly>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

@@ -1,19 +1,3 @@
-/*
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterLink, RouterOutlet } from '@angular/router';
-
-@Component({
-  selector: 'app-about',
-  imports: [CommonModule, RouterLink, RouterOutlet],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
-})
-export class AboutComponent {
-
-}
-*/
-
 import { Component, Inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
@@ -28,13 +12,11 @@ import { Dependency } from './dependency';
 
 @Component({
   selector: 'app-about',
-  standalone: true,
   imports: [CommonModule, RouterLink, RouterOutlet],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  templateUrl: './about.html',
+  styleUrl: './about.css'
 })
-export class AboutComponent implements OnInit {
-
+export class About implements OnInit {
   dependencies: Dependency;
   features: Feature;
   quote: Quote;
@@ -51,9 +33,9 @@ export class AboutComponent implements OnInit {
     this.quote = new Quote();
     this.dependencies = {
       frontend: [
-        { name: 'Angular 19.2.14' },
-        { name: 'Angular CLI 19.2.14' },
-        { name: 'Angular SSR 19.2.14' },
+        { name: 'Angular 20.0.0' },
+        { name: 'Angular CLI 20.0.0' },
+        { name: 'Angular SSR 20.0.0' },
         { name: 'Bootstrap 5.3.6' },
         { name: 'Font Awesome 6.7.2' },
       ],
@@ -175,7 +157,5 @@ export class AboutComponent implements OnInit {
     this.id = id;
     this.quote = quotes[id];
   }
-
-
 
 }

@@ -1,4 +1,3 @@
-
 ### Installation
 * `npm install` (installing dependencies)
 * `npm outdated` (verifying dependencies)
@@ -15,7 +14,7 @@
 * `npm run coverage`
 
 ### Compilation
-* `npm run build`       
+* `npm run build`       ( without SSR)
 
 ### Production
 * `npm run serve`

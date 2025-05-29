@@ -3,12 +3,12 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
-import { environment } from '../../../../../environments/environment';
+import { environment } from '../../../../../../environments/environment';
 
-import { URL_ITEMS } from './item.constants';
+import { ITEM_CONSTANTS } from './item.constants';
 import { ItemsResponse, getDefaultItemsResponse } from './item';
 
-import { addFilterParam } from '../../../../shared/utils/query-utils';
+import { addFilterParam } from '../../../../../shared/utils/query-utils';
 
 interface Filters {
   page?: number | null;
@@ -42,7 +42,7 @@ export class ItemsService {
 
   getItems(filters: Filters = {}): Observable<ItemsResponse> {
     const params = this.buildQueryParams(filters);
-    const url = `${this.backendUrl}/${URL_ITEMS}${params}`;
+    const url = `${this.backendUrl}/${ITEM_CONSTANTS}${params}`;
 
     return this.http.get<ItemsResponse>(url).pipe(
       catchError(this.handleError<ItemsResponse>('getItems', this.getDefaultResponse()))

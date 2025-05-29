@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://angular.ganatan.com/</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/about</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/contact</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/bootstrap</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/services</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/components</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/httpclient</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/forms</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/about/experience</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/about/skill</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/contact/mailing</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/contact/mapping</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://angular.ganatan.com/contact/website</loc>
+  <lastmod>2023-12-08T12:51:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+</urlset>

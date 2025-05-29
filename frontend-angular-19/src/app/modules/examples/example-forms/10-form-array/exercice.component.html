@@ -1,0 +1,54 @@
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-7">
+        <h5 class="card-title text-center text-primary">FormArray</h5>
+        <form [formGroup]="exampleForm">
+          <div class="form-row">
+            <div class="form-group col-md-9">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" formControlName="name">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="releaseDate">Date</label>
+              <input type="text" class="form-control" id="releaseDate" formControlName="releaseDate">
+            </div>
+          </div>
+          <div class="card p-4">
+            <h5 class="card-title text-center text-info">Arrays</h5>
+            <div class="form-row">
+              <div formArrayName="characters">
+                <button type="submit" (click)="addCharacter()" class="btn btn-primary mr-2">Add</button>
+                <button type="submit" (click)="updateControls()" class="btn btn-primary mr-2">Delete</button>
+                <table class="table table-sm table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Id</th>
+                      <th>Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let character of characters.controls; let i=index">
+                      <th>{{ i + 1 }}</th>
+                      <td><input type="text" class="form-control" id="{{i}}" [formControlName]="i"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <button type="submit" (click)="resetControls()" class="btn btn-primary mr-2">Reset Controls</button>
+          <button type="submit" (click)="updateControls()" class="btn btn-primary mr-2">Update Controls</button>
+        </form>
+      </div>
+      <div class="col-5">
+        <h5 class="card-title text-center text-primary">FormArray Result</h5>
+        <strong>Valid</strong> : {{ exampleForm.valid }}<br>
+        <strong>Form Value</strong>
+        <div [innerHTML]="exampleForm.value | prettyjson"></div>
+        <strong>Array Value</strong>
+        <div [innerHTML]="exampleForm.value.characters | prettyjson"></div>
+      </div>
+    </div>
+  </div>
+</div>

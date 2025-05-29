@@ -1,16 +1,11 @@
 import { Routes } from '@angular/router';
 
-import { HomeComponent } from './modules/general/home/home.component'
-import { NotFoundComponent } from './modules/general/not-found/not-found.component';
+import { Home } from './modules/general/home/home';
+import { NotFound } from './modules/general/not-found/not-found';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent, },
+  { path: '', component: Home, },
 
-  {
-    path: 'prism',
-    loadComponent: () => import('./modules/examples/example-prism/tutorial.component')
-      .then(mod => mod.TutorialComponent)
-  },
   {
     path: 'landing-page',
     loadComponent: () => import('./modules/examples/example-landing-page/tutorial.component')
@@ -60,13 +55,13 @@ export const routes: Routes = [
 
   {
     path: 'login',
-    loadComponent: () => import(`./modules/general/login/login.component`)
-      .then(mod => mod.LoginComponent)
+    loadComponent: () => import(`./modules/general/login/login`)
+      .then(mod => mod.Login)
   },
   {
     path: 'signup',
-    loadComponent: () => import(`./modules/general/signup/signup.component`)
-      .then(mod => mod.SignupComponent)
+    loadComponent: () => import(`./modules/general/signup/signup`)
+      .then(mod => mod.Signup)
   },
   {
     path: 'contact',
@@ -99,21 +94,12 @@ export const routes: Routes = [
     loadComponent: () => import('./modules/features/crud/profession/item.component')
       .then(mod => mod.ItemComponent)
   },
-  {
-    path: 'professions/:id',
-    loadComponent: () => import('./modules/features/crud/profession-form/item.component')
-      .then(mod => mod.ItemComponent)
-  },
+
   {
     path: 'continents',
     loadComponent: () => import('./modules/features/crud/continent/item.component')
       .then(mod => mod.ItemComponent)
   },
-  {
-    path: 'continents/:id',
-    loadComponent: () => import('./modules/features/crud/continent-form/item.component')
-      .then(mod => mod.ItemComponent)
-  },
 
-  { path: '**', component: NotFoundComponent }
+  { path: '**', component: NotFound }
 ];

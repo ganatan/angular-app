@@ -1,30 +1,30 @@
 import { Routes } from '@angular/router';
 
-import { AboutComponent } from './about.component';
+import { About } from './about';
 
 export const routes: Routes = [
   {
-    path: '', component: AboutComponent, children: [
+    path: '', component: About, children: [
       {
         path: '',
-        loadComponent: () => import(`./experience/experience.component`)
-          .then(mod => mod.ExperienceComponent)
+        loadComponent: () => import(`./experience/experience`)
+          .then(mod => mod.Experience)
       },
       {
         path: 'experience',
-        loadComponent: () => import(`./experience/experience.component`)
-          .then(mod => mod.ExperienceComponent)
+        loadComponent: () => import(`./experience/experience`)
+          .then(mod => mod.Experience)
       },
       {
         path: 'skill',
-        loadComponent: () => import(`./skill/skill.component`)
-          .then(mod => mod.SkillComponent)
+        loadComponent: () => import(`./skill/skill`)
+          .then(mod => mod.Skill)
       },
 
       {
         path: '**',
-        loadComponent: () => import(`./experience/experience.component`)
-          .then(mod => mod.ExperienceComponent)
+        loadComponent: () => import(`./experience/experience`)
+          .then(mod => mod.Experience)
       },
 
     ]

@@ -70,12 +70,6 @@ export class TutorialComponent implements OnInit {
           image: 'demo-template-driven-forms.png',
           link: 'modal'
         },
-        {
-          type: 'Prism',
-          description: 'Use a lightweight, extensible syntax highlighter',
-          image: 'demo-template-driven-forms.png',
-          link: 'prism'
-        },
       ];
 
   }

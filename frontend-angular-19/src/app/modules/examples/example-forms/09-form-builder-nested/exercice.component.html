@@ -1,0 +1,65 @@
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-7">
+        <h5 class="card-title text-center text-info">Nested FormBuilder</h5>
+        <form [formGroup]="exampleForm">
+          <div class="form-row">
+            <div class="form-group col-md-9">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" formControlName="name">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="releaseDate">Date</label>
+              <input type="text" class="form-control" id="releaseDate" formControlName="releaseDate">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="summary">Summary</label>
+              <textarea class="form-control" id="summary" rows="2" formControlName="summary"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="franchise" formControlName="franchise">
+              <label class="form-check-label" for="franchise">
+                Franchise
+              </label>
+            </div>
+          </div>
+          <div class="card p-4 mb-4">
+            <h5 class="card-title text-center text-info">Nested Controls</h5>
+            <div class="form-row" formGroupName="boxoffice">
+              <div class="form-group col-md-3">
+                <label for="budget">Budget</label>
+                <input type="text" class="form-control" id="budget" formControlName="budget">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="international">International</label>
+                <input type="text" class="form-control" id="budget" formControlName="international">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="domestic">Domestic</label>
+                <input type="text" class="form-control" id="budget" formControlName="domestic">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="worldwide">Worlwide</label>
+                <input type="text" class="form-control" id="worldwide" formControlName="worldwide">
+              </div>
+            </div>
+          </div>
+          <button type="submit" (click)="resetControls()" class="btn btn-info mr-2">Reset Controls</button>
+          <button type="submit" (click)="updateControls()" class="btn btn-info mr-2">Update Controls</button>
+        </form>
+      </div>
+      <div class="col-5">
+        <h5 class="card-title text-center text-info">Nested FormBuilder Results</h5>
+        <strong>Form Value</strong>
+        <div [innerHTML]="exampleForm.value | prettyjson"></div>
+        <strong>Nested Controls Value</strong>
+        <div [innerHTML]="exampleForm.value.boxoffice | prettyjson"></div>
+      </div>
+    </div>
+  </div>
+</div>

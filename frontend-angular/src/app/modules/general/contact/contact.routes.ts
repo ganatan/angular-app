@@ -1,30 +1,30 @@
 import { Routes } from '@angular/router';
 
-import { ContactComponent } from './contact.component';
+import { Contact } from './contact';
 
 export const routes: Routes = [
   {
-    path: '', component: ContactComponent, children: [
+    path: '', component: Contact, children: [
       {
         path: '',
-        loadComponent: () => import(`./mailing/mailing.component`)
-          .then(mod => mod.MailingComponent)
+        loadComponent: () => import(`./mailing/mailing`)
+          .then(mod => mod.Mailing)
       },
       {
         path: 'mapping',
-        loadComponent: () => import(`./mapping/mapping.component`)
-          .then(mod => mod.MappingComponent)
+        loadComponent: () => import(`./mapping/mapping`)
+          .then(mod => mod.Mapping)
       },
       {
         path: 'website',
-        loadComponent: () => import(`./website/website.component`)
-          .then(mod => mod.WebsiteComponent)
+        loadComponent: () => import(`./website/website`)
+          .then(mod => mod.Website)
       },
 
       {
         path: '**',
-        loadComponent: () => import(`./mailing/mailing.component`)
-          .then(mod => mod.MailingComponent)
+        loadComponent: () => import(`./mailing/mailing`)
+          .then(mod => mod.Mailing)
       },
 
     ]

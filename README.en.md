@@ -1,4 +1,4 @@
-# Fullstack Application  : Angular 19, Node.js 22 and Java 21
+# Fullstack Application  : Angular 20, Node.js 22 and Java 21
 
 <img src="./ui/ganatan-about-github.png" align="right" width="140" height="140" alt="logo ganatan">
 
@@ -15,7 +15,7 @@
 
 | Component              | Description                                                   |
 |------------------------|---------------------------------------------------------------|
-| **Frontend**           | Angular 19 — SPA with Routing, SSR, PWA, SEO                  |
+| **Frontend**           | Angular 20 — SPA with Routing, SSR, PWA, SEO                  |
 | **Backend JavaScript (ESM)**   | Node.js 22 + Express — REST API with mocked data or database   |
 | **Backend JavaScript (CJS)**   | CJS variant, same structure as ESM version                   |
 | **Backend TypeScript** | Node.js 22 + TypeScript — Typed REST API with data or database |
@@ -47,7 +47,7 @@
 
 ## 📦 Tech Stack
 
-![Angular](https://img.shields.io/badge/angular-19-red)
+![Angular](https://img.shields.io/badge/angular-20-red)
 ![Node](https://img.shields.io/badge/node-22.x-blue)
 ![Java](https://img.shields.io/badge/java-21-brightgreen)
 ![Docker](https://img.shields.io/badge/Docker-24.x-blue?logo=docker)
@@ -77,7 +77,7 @@
 
 <p align="center">
   <a href="https://angular.ganatan.com/">
-    <img src="https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif" alt="Angular 19 Example Application"/>
+    <img src="https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif" alt="Angular 20 Example Application"/>
   </a>
 </p>
 
