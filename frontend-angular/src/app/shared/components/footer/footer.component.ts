@@ -10,5 +10,4 @@ import { environment } from '../../../../environments/environment';
 export class FooterComponent {
 
   appInfo = environment.appInfo;
-
 }

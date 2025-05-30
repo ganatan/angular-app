@@ -5,6 +5,8 @@ export const appInfo = {
   nameUC: 'GANATAN',
   logo: 'ganatan',
   network: 'ganatan',
+  xnetwork: 'dannyganatan',
+  linkedinnetwork: 'dannyganatan',
   website: 'www.ganatan.com',
 };
 
