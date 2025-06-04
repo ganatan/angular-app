@@ -75,8 +75,8 @@
     "@types/supertest": "6.0.3",
     "@types/swagger-jsdoc": "6.0.4",
     "@types/swagger-ui-express": "4.1.8",
-    "@typescript-eslint/eslint-plugin": "8.33.0",
-    "@typescript-eslint/parser": "8.33.0",
+    "@typescript-eslint/eslint-plugin": "8.33.1",
+    "@typescript-eslint/parser": "8.33.1",
     "eslint": "9.28.0",
     "eslint-plugin-prettier": "5.4.1",
     "globals": "16.2.0",
@@ -86,7 +86,7 @@
     "ts-loader": "9.5.2",
     "ts-node": "10.9.2",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.33.0",
+    "typescript-eslint": "8.33.1",
     "webpack": "5.99.9",
     "webpack-cli": "6.0.1"
   }
