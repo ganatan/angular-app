@@ -40,7 +40,7 @@
     "@angular/compiler-cli": "20.0.1",
     "@types/express": "5.0.2",
     "@types/jasmine": "5.1.8",
-    "@types/node": "22.15.29",
+    "@types/node": "22.15.30",
     "angular-eslint": "19.7.1",
     "eslint": "9.28.0",
     "jasmine-core": "5.7.1",

@@ -18,7 +18,6 @@ export default defineConfig([
     rules: {
       indent: 'off',
       quotes: ['error', 'single', { avoidEscape: true }],
-      semi: ['error', 'always'],
       'no-unused-vars': ['error', { args: 'none', ignoreRestSiblings: true }],
       'no-console': 'off',
       eqeqeq: 'error',
@@ -27,7 +26,6 @@ export default defineConfig([
       'no-redeclare': 'error',
       'consistent-return': 'error',
       'no-shadow': 'error',
-      'comma-dangle': ['error', 'always-multiline'],
       'object-curly-spacing': ['error', 'always'],
       'callback-return': 'error',
       'handle-callback-err': ['error', '^.*(e|E)rr'],
