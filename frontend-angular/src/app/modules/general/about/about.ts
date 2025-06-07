@@ -33,7 +33,7 @@ export class About implements OnInit {
     this.quote = new Quote();
     this.dependencies = {
       frontend: [
-        { name: 'Angular 20.0.1' },
+        { name: 'Angular 20.0.2' },
         { name: 'Angular CLI 20.0.1' },
         { name: 'Angular SSR 20.0.1' },
         { name: 'Bootstrap 5.3.6' },
