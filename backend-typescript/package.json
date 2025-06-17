@@ -63,20 +63,20 @@
     "swagger-ui-express": "5.0.1",
     "ts-node-dev": "2.0.0",
     "winston": "3.17.0",
-    "zod": "3.25.64"
+    "zod": "3.25.67"
   },
   "devDependencies": {
     "@eslint/js": "9.29.0",
     "@types/compression": "1.8.1",
     "@types/cors": "2.8.19",
     "@types/express": "5.0.3",
-    "@types/jest": "29.5.14",
-    "@types/node": "24.0.1",
+    "@types/jest": "30.0.0",
+    "@types/node": "24.0.3",
     "@types/supertest": "6.0.3",
     "@types/swagger-jsdoc": "6.0.4",
     "@types/swagger-ui-express": "4.1.8",
-    "@typescript-eslint/eslint-plugin": "8.34.0",
-    "@typescript-eslint/parser": "8.34.0",
+    "@typescript-eslint/eslint-plugin": "8.34.1",
+    "@typescript-eslint/parser": "8.34.1",
     "eslint": "9.29.0",
     "eslint-plugin-prettier": "5.4.1",
     "globals": "16.2.0",
@@ -86,7 +86,7 @@
     "ts-loader": "9.5.2",
     "ts-node": "10.9.2",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.34.0",
+    "typescript-eslint": "8.34.1",
     "webpack": "5.99.9",
     "webpack-cli": "6.0.1"
   }
