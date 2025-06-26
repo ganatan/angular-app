@@ -10,8 +10,8 @@ export const appInfo = {
 
 export const applicationBase = {
   name: 'angular-starter',
-  angular: 'Angular 19.2.14',
-  bootstrap: 'Bootstrap 5.3.6',
+  angular: 'Angular 20.0.4',
+  bootstrap: 'Bootstrap 5.3.7',
   fontawesome: 'Font Awesome 6.7.2',
 };
 
