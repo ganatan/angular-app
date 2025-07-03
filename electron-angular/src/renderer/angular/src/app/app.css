@@ -1,0 +1,70 @@
+.chat-bubble {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.chat-bubble.user {
+  background-color: var(--accent);
+  color: #fff;
+  align-self: flex-end;
+}
+
+.chat-bubble.bot {
+  background-color: var(--card-bg);
+  color: var(--text);
+  align-self: flex-start;
+}
+
+.sidebar {
+  background-color: var(--card-bg);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  height: 100%;
+}
+
+.conversation-list li {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.conversation-list li:hover {
+  background-color: var(--input-bg);
+}
+
+.toggle-mode {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  background-color: #dc3545;
+}
+
+.status-connected {
+  background-color: #28a745 !important;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: auto;
+  }
+}
