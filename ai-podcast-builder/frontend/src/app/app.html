@@ -1,0 +1,316 @@
+<button class="btn btn-sm btn-outline-secondary toggle-mode" (click)="toggleTheme()">Toggle thème</button>
+
+<div class="container py-4">
+  <h1 class="text-center text-primary ">podcast-builder</h1>
+
+  <div class="card p-4 mb-4">
+    <div class="row align-items-end g-2">
+      <div class="col-md-6 d-flex align-items-end gap-2">
+        <label for="topicInput" class="form-label mb-1 fw-bold">Thème</label>
+        <input id="topicInput" type="text" class="form-control" name="topic" [(ngModel)]="topic" [disabled]="useMock" />
+      </div>
+      <div class="col-md-3 d-flex align-items-end gap-2">
+        <button class="btn btn-primary" (click)="loadSpeakers()">Générer</button>
+        <select id="speakerCount" [(ngModel)]="topicSpeakerCount" class="form-select" [disabled]="useMock"
+          style="width: 70px;">
+          <option [ngValue]="2">2</option>
+          <option [ngValue]="4">4</option>
+          <option [ngValue]="6">6</option>
+          <option [ngValue]="8">8</option>
+        </select>
+        <label for="speakerCount" class="form-label mb-1 fw-bold">Intervenants</label>
+      </div>
+      <div class="col-md-3 d-flex align-items-end gap-2">
+        <button class="btn btn-primary" (click)="loadQuestions()">Générer</button>
+        <input id="questionCount" type="number" min="2" max="7" [(ngModel)]="topicQuestionCount" class="form-control"
+          [disabled]="useMock" style="width: 70px;" />
+        <label for="questionCount" class="form-label mb-1 fw-bold">Questions</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4">
+
+    <div class="col-md-6">
+
+      <div class="card p-3 mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="mb-0">Intervenants générés ({{ speakerCount }})</h5>
+          <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+            data-bs-target="#intervenants-collapse" aria-expanded="true">
+            <span class="chevron">▼</span>
+          </button>
+        </div>
+        <div class="collapse show" id="intervenants-collapse">
+          <div class="mb-3" *ngIf="speakerLoading">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="flex-grow-1 me-3">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="loading">
+                <div class="spinner-border text-primary" role="status" style="width: 1.5rem; height: 1.5rem;">
+                  <span class="visually-hidden">Chargement...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3" *ngIf="speaker && speaker.items.length > 0">
+            <div class="col-12">
+              <div class="border rounded p-3">
+                <div class="mb-2">
+                  <strong>{{ speaker.moderator.name }}</strong> —
+                  <span class="text-muted">{{ speaker.moderator.role }}</span><br />
+                  <small class="text-secondary">{{ speaker.moderator.personality }}</small>
+                </div>
+                <div class="row gy-2 gx-4 mt-2">
+                  <div class="col-12 col-md-6">
+                    <span class="d-block text-muted small mb-1">🎙️ Voix ElevenLabs</span>
+                    <div class="d-flex flex-wrap align-items-center gap-2">
+                      <span class="badge bg-primary px-3 py-1 text-capitalize">{{ speaker.moderator.voiceId.name
+                        }}</span>
+                      <span class="badge text-danger bg-light border px-3 py-1 small">{{ speaker.moderator.voiceId.id
+                        }}</span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <span class="d-block text-muted small mb-1">🧍 Avatar JoggAI</span>
+                    <div class="d-flex flex-wrap align-items-center gap-2">
+                      <span class="badge bg-secondary px-3 py-1 text-capitalize">{{ speaker.moderator.avatarId.name
+                        }}</span>
+                      <span class="badge text-danger bg-light border px-3 py-1 small">{{ speaker.moderator.avatarId.id
+                        }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ng-container *ngFor="let s of speaker.items">
+              <div class="col-12">
+                <div class="border rounded p-3">
+                  <div class="mb-2">
+                    <strong>{{ s.name }}</strong> —
+                    <span class="text-muted">{{ s.stance }}</span><br />
+                    <small class="text-secondary">{{ s.personality }}</small>
+                  </div>
+                  <div class="row gy-2 gx-4 mt-2">
+                    <div class="col-12 col-md-6">
+                      <span class="d-block text-muted small mb-1">🎙️ Voix ElevenLabs</span>
+                      <div class="d-flex flex-wrap align-items-center gap-2">
+                        <span class="badge bg-primary px-3 py-1 text-capitalize">{{ s.voiceId.name }}</span>
+                        <span class="badge text-danger bg-light border px-3 py-1 small">{{ s.voiceId.id }}</span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <span class="d-block text-muted small mb-1">🧍 Avatar JoggAI</span>
+                      <div class="d-flex flex-wrap align-items-center gap-2">
+                        <span class="badge bg-secondary px-3 py-1 text-capitalize">{{ s.avatarId.name }}</span>
+                        <span class="badge text-danger bg-light border px-3 py-1 small">{{ s.avatarId.id }}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-3 mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="mb-0">Questions générées ({{ questionCount }})</h5>
+          <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+            data-bs-target="#questions-collapse" aria-expanded="true">
+            <span class="chevron">▼</span>
+          </button>
+        </div>
+
+        <div class="collapse show" id="questions-collapse">
+          <div class="mb-3" *ngIf="questionLoading">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="flex-grow-1 me-3">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated"
+                    [style.width.%]="questionProgress"></div>
+                </div>
+              </div>
+              <div class="spinner-border text-primary" role="status" style="width: 1.5rem; height: 1.5rem;">
+                <span class="visually-hidden">Chargement...</span>
+              </div>
+            </div>
+          </div>
+
+          <table class="table table-bordered table-sm mt-2" *ngIf="question && question.items.length > 0">
+            <thead>
+              <tr>
+                <th style="width: 40px;"></th>
+                <th>Question</th>
+                <th style="width: 130px;">Dialogues</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let q of question.items">
+                <td>
+                  <input type="checkbox" [(ngModel)]="q.enabled" class="form-check-input" [disabled]="useMock" />
+                </td>
+                <td>{{ q.text }}</td>
+                <td>
+                  <input type="number" min="1" max="10" [(ngModel)]="q.dialogueCount"
+                    class="form-control form-control-sm" [disabled]="useMock" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <!-- <div class="card p-3 mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="mb-0">Questions générées ({{ questionCount }})</h5>
+          <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+            data-bs-target="#questions-collapse" aria-expanded="true">
+            <span class="chevron">▼</span>
+          </button>
+        </div>
+        <div class="collapse show" id="questions-collapse">
+          <div class="mb-3" *ngIf="questionLoading">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="flex-grow-1 me-3">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated"
+                    [style.width.%]="questionProgress">
+                  </div>
+                </div>
+              </div>
+              <div class="spinner-border text-primary" role="status" style="width: 1.5rem; height: 1.5rem;">
+                <span class="visually-hidden">Chargement...</span>
+              </div>
+            </div>
+          </div>
+
+          <table class="table table-bordered table-sm mt-2" *ngIf="question && question.items.length > 0">
+            <thead>
+              <tr>
+                <th style="width: 40px;"></th>
+                <th>Question</th>
+                <th style="width: 120px;">Dialogues</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let q of question.items; let i = index">
+                <td>
+                  <input type="checkbox" [(ngModel)]="q.enabled" class="form-check-input" [disabled]="useMock" />
+                </td>
+                <td>{{ q.text }}</td>
+                <td>
+                  <input type="number" min="1" max="10" class="form-control form-control-sm" [value]="2"
+                    [attr.data-index]="i" [disabled]="useMock" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> -->
+
+    </div>
+
+    <div class="col-md-6">
+
+      <div class="card p-3 mb-4">
+        <div class="d-flex gap-2 flex-wrap mb-3">
+          <button class="btn btn-dark flex-fill" (click)="loadDialogues()">Générer dialogues</button>
+          <button class="btn btn-success flex-fill">Générer voix</button>
+          <button class="btn btn-info flex-fill">Générer vidéos</button>
+        </div>
+
+        <div class="d-flex flex-column gap-3">
+
+          <div class="mb-3" *ngIf="dialogueLoading">
+            <div class="d-flex align-items-center gap-3">
+              <div class="flex-grow-1">
+                <div class="progress">
+                  <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated"
+                    [style.width.%]="dialogueProgress">
+                  </div>
+
+                </div>
+              </div>
+              <div class="spinner-border text-dark" role="status" *ngIf="dialogueLoading"
+                style="width: 1.5rem; height: 1.5rem;">
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="d-flex align-items-center gap-3">
+            <div class="flex-grow-1">
+              <div class="progress">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 40%">
+                </div>
+              </div>
+            </div>
+            <div class="spinner-border text-success" role="status" style="width: 1.5rem; height: 1.5rem;">
+              <span class="visually-hidden">Chargement...</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-3">
+            <div class="flex-grow-1">
+              <div class="progress">
+                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 20%"></div>
+              </div>
+            </div>
+            <div class="spinner-border text-info" role="status" style="width: 1.5rem; height: 1.5rem;">
+              <span class="visually-hidden">Chargement...</span>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+
+      <div class="card p-4 m-1" *ngIf="dialogue && dialogue.exchanges.length > 0">
+        <ng-container *ngFor="let d of dialogue.exchanges; let i = index">
+          <div class="card p-4 m-1">
+            <div class="d-flex justify-content-between align-items-center mb-3 btn-group-responsive">
+              <div class="d-flex align-items-center gap-2">
+                <button class="btn" [ngClass]="{
+              'btn-outline-secondary': d.role === 'Animateur' || d.role === 'Neutre',
+              'btn-outline-dark': d.role !== 'Animateur' && d.role !== 'Neutre'
+            }">
+                  {{ i === 0 ? 'Introduction' : i === dialogue.exchanges.length - 1 ? 'Conclusion' : d.question ?
+                  'Réplique' : 'Dialogue' }}
+                </button>
+                <span class="badge" [ngClass]="{
+              'bg-secondary': d.role === 'Animateur' || d.role === 'Neutre',
+              'bg-dark': d.role !== 'Animateur' && d.role !== 'Neutre'
+            }">{{ d.speaker }}</span>
+                <span class="text-muted small-text" *ngIf="d.role !== 'Animateur'">Voix + Vidéo prêtes</span>
+              </div>
+              <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+                [attr.data-bs-target]="'#dialogue-' + i" [attr.aria-expanded]="true">
+                <span class="chevron">▼</span>
+              </button>
+            </div>
+
+            <div class="collapse show" [id]="'dialogue-' + i">
+              <p class="mb-3">
+                <strong>{{ d.speaker }} :</strong> {{ d.text }}
+              </p>
+              <div class="d-flex gap-3">
+                <audio controls class="w-50">
+                  <source [src]="'assets/audio/' + d.speaker.toLowerCase() + '-' + i + '.mp3'" type="audio/mpeg" />
+                </audio>
+                <video controls class="w-50 rounded">
+                  <source [src]="'assets/video/' + d.speaker.toLowerCase() + '-' + i + '.mp4'" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+</div>

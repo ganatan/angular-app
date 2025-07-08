@@ -1,0 +1,28 @@
+:root {
+  --bg: #f9f9f9;
+  --text: #212529;
+  --card-bg: #ffffff;
+  --input-bg: #e9ecef;
+  --accent: #0d6efd;
+}
+
+.dark-mode {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --card-bg: #1e2a38;
+  --input-bg: #2a3b4d;
+  --accent: #00c9a7;
+}
+
+html,
+body {
+  min-height: 100%;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}

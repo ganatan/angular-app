@@ -1,0 +1,414 @@
+<button class="btn btn-sm btn-outline-secondary toggle-mode" (click)="toggleTheme()">Toggle thème</button>
+
+<div class="container p-2">
+  <h1 class="text-center text-primary">avatar-animator</h1>
+
+  <div class="row g-3 align-items-center mb-4">
+    <div class="col-12 col-lg-3">
+      <label class="form-label" for="title">Nom / Titre</label>
+      <input id="title" type="text" class="form-control" [(ngModel)]="name" [readonly]="useMock" />
+    </div>
+
+    <div class="col-12 col-lg-3">
+      <label class="form-label" for="type">Type</label>
+      <select id="type" class="form-select" [(ngModel)]="type" (ngModelChange)="onTypeChange($event)"
+        [disabled]="useMock">
+        <option value="biography">Biographie de réalisateur</option>
+        <option value="summary">Résumé de film</option>
+      </select>
+    </div>
+
+    <div class="col-12 col-lg-3">
+      <label class="form-label" for="style">Style</label>
+      <select id="style" class="form-select" [(ngModel)]="style" (ngModelChange)="onStyleChange($event)"
+        [disabled]="useMock">
+        <option *ngFor="let s of styleOptions" [value]="s.value">{{ s.label }}</option>
+      </select>
+    </div>
+
+    <div class="col-12 col-lg-3">
+      <label class="form-label" for="length">Longueur</label>
+      <select id="length" class="form-select" [(ngModel)]="length" (ngModelChange)="onLengthChange($event)"
+        [disabled]="useMock">
+        <option value="short">Courte</option>
+        <option value="medium">Moyenne</option>
+        <option value="long">Longue</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row g-4 mb-3">
+
+    <div class="col-12 col-md-6">
+      <div class="card p-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="btn-group-responsive d-flex align-items-center gap-2 flex-wrap">
+            <button class="btn btn-primary" (click)="loadContent('chatgpt')">Texte - ChatGPT</button>
+            <button class="btn btn-outline-primary" (click)="resetContent('chatgpt')">Réinitialiser</button>
+            <span *ngIf="contentChatgpt && !chatgptLoading" class="badge bg-primary">Texte Ok ✓</span>
+            <span *ngIf="chatgptDuration > 0" class="text-primary small-text">
+              Réponse en {{ chatgptDuration.toFixed(1) }}s
+            </span>
+          </div>
+          <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+            data-bs-target="#content-chatgpt" aria-expanded="true">
+            <span class="chevron">▼</span>
+          </button>
+        </div>
+        <div class="position-relative collapse show" id="content-chatgpt">
+          <div *ngIf="chatgptLoading" class="d-flex align-items-center gap-3">
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                [style.width.%]="chatgptProgress"></div>
+            </div>
+            <div class="spinner-border text-primary" role="status" style="width: 1.5rem; height: 1.5rem;">
+              <span class="visually-hidden">Chargement...</span>
+            </div>
+          </div>
+          <div class="mt-3">
+            <div *ngIf="chatgptLoading" class="alert alert-info alert-dismissible fade show" role="alert">
+              📨 Requête envoyée à OpenAI...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="chatgptLoading && !contentChatgpt && !chatgptError"
+              class="alert alert-warning alert-dismissible fade show" role="alert">
+              ⏳ Réponse de OpenAI en cours de traitement...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="chatgptError" class="alert alert-danger alert-dismissible fade show" role="alert">
+              ❌ {{ chatgptError }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="contentChatgpt && !chatgptError" class="alert alert-success alert-dismissible fade show"
+              role="alert">
+              ✅ Réponse de OpenAI reçue avec succès.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+          </div>
+          <div class="mt-3">
+            <textarea class="form-control" [value]="contentChatgpt" readonly rows="6"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="card p-4 m-1">
+        <div class="d-flex justify-content-between align-items-center mb-3 btn-group-responsive">
+          <button class="btn btn-outline-primary" (click)="loadVoice('chatgpt')">Voix - ElevenLabs</button>
+          <span *ngIf="voiceChatgpt && !voiceChatgptLoading" class="badge bg-primary">Voix OK ✓</span>
+          <span *ngIf="voiceChatgptDuration > 0" class="text-primary ms-auto small-text">Réponse en {{
+            voiceChatgptDuration.toFixed(1) }}s</span>
+          <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+            data-bs-target="#voice-chatgpt" aria-expanded="true">
+            <span class="chevron">▼</span>
+          </button>
+        </div>
+        <div class="position-relative collapse show" id="voice-chatgpt">
+          <div *ngIf="voiceChatgptLoading" class="d-flex align-items-center gap-3">
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                [style.width.%]="voiceChatgptProgress"></div>
+            </div>
+            <div class="spinner-border text-primary" role="status" style="width: 1.5rem; height: 1.5rem;">
+              <span class="visually-hidden">Chargement...</span>
+            </div>
+          </div>
+          <div class="mt-3">
+            <div *ngIf="voiceChatgptLoading" class="alert alert-info alert-dismissible fade show" role="alert">
+              📨 Requête envoyée à ElevenLabs...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="voiceChatgptLoading && !voiceChatgpt && !voiceChatgptError"
+              class="alert alert-warning alert-dismissible fade show" role="alert">
+              ⏳ Réponse de ElevenLabs en cours de traitement...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="voiceChatgptError" class="alert alert-danger alert-dismissible fade show" role="alert">
+              ❌ {{ voiceChatgptError }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="voiceChatgpt && !voiceChatgptError" class="alert alert-success alert-dismissible fade show"
+              role="alert">
+              ✅ Réponse de ElevenLabs reçue avec succès.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+          </div>
+          <div class="mt-2">
+            <audio controls class="w-100" [class.audio-disabled]="!voiceChatgpt" [src]="voiceChatgpt">
+              Votre navigateur ne supporte pas l'audio.
+            </audio>
+          </div>
+        </div>
+      </div>
+      <div class="card p-4 mt-3">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <div class="btn-group-responsive d-flex align-items-center gap-2 flex-wrap">
+            <button class="btn btn-outline-primary" (click)="loadVideo('chatgpt')">Avatar - JoggAI</button>
+            <button class="btn btn-outline-primary" (click)="checkVideo('chatgpt')" [disabled]="!videoChatgptId">🔍
+              Vérifier</button>
+            <span *ngIf="videoChatgpt && !videoChatgptLoading" class="badge bg-primary">Avatar OK ✓</span>
+            <span *ngIf="videoChatgptDuration > 0" class="text-primary small-text">
+              Réponse en {{ videoChatgptDuration.toFixed(1) }}s
+            </span>
+          </div>
+          <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+            data-bs-target="#avatar-chatgpt" aria-expanded="true">
+            <span class="chevron">▼</span>
+          </button>
+        </div>
+        <div class="position-relative collapse show" id="avatar-chatgpt">
+          <div *ngIf="videoChatgptLoading || videoCheckChatgptLoading" class="d-flex align-items-center gap-3">
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                [style.width.%]="videoChatgptProgress"></div>
+            </div>
+            <div class="spinner-border text-primary" role="status" style="width: 1.5rem; height: 1.5rem;">
+              <span class="visually-hidden">Chargement...</span>
+            </div>
+          </div>
+          <div class="mt-3">
+            <div *ngIf="videoChatgptLoading" class="alert alert-info alert-dismissible fade show" role="alert">
+              📨 Requête envoyée à JoggAI (génération)...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoChatgptLoading && !videoChatgptId && !videoChatgptError"
+              class="alert alert-warning alert-dismissible fade show" role="alert">
+              ⏳ Réponse de JoggAI (génération) en cours de traitement...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoChatgptError" class="alert alert-danger alert-dismissible fade show" role="alert">
+              ❌ {{ videoChatgptError }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoChatgptId && !videoChatgptError" class="alert alert-success alert-dismissible fade show"
+              role="alert">
+              ✅ Réponse de JoggAI (génération) reçue avec succès.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+          </div>
+          <div class="mt-3">
+            <div *ngIf="videoCheckChatgptLoading" class="alert alert-info alert-dismissible fade show" role="alert">
+              📨 Requête envoyée à JoggAI (check)...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoCheckChatgptLoading && !videoChatgpt && !videoCheckChatgptError"
+              class="alert alert-warning alert-dismissible fade show" role="alert">
+              ⏳ Réponse de JoggAI (check) en cours de traitement...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoCheckChatgptProcess" class="alert alert-warning alert-dismissible fade show" role="alert">
+              ⏳ Process de JoggAI (check) vidéo en cours de traitement...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoCheckChatgptError" class="alert alert-danger alert-dismissible fade show" role="alert">
+              ❌ {{ videoCheckChatgptError }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoChatgpt && !videoCheckChatgptError" class="alert alert-success alert-dismissible fade show"
+              role="alert">
+              ✅ Réponse de JoggAI (check) reçue avec succès.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+          </div>
+          <div class="mt-3" *ngIf="videoChatgpt">
+            <video controls class="w-100 rounded" [attr.poster]="videoPosterChatgpt">
+              <source [attr.src]="videoChatgpt" type="video/mp4">
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+          </div>
+          <div class="mt-3" *ngIf="!videoChatgpt">
+            <video controls class="w-100 rounded" poster="">
+              <source src="" type="video/mp4">
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card p-4">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <div class="btn-group-responsive d-flex align-items-center gap-2 flex-wrap">
+            <button class="btn btn-success" (click)="loadContent('claude')">Texte - Claude</button>
+            <button class="btn btn-outline-success" (click)="resetContent('claude')">Réinitialiser</button>
+            <span *ngIf="contentClaude && !claudeLoading" class="badge bg-success">Texte Ok ✓</span>
+            <span *ngIf="claudeDuration > 0" class="text-success small-text">
+              Réponse en {{ claudeDuration.toFixed(1) }}s
+            </span>
+          </div>
+          <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2 text-success" data-bs-toggle="collapse"
+            data-bs-target="#content-claude" aria-expanded="true">
+            <span class="chevron">▼</span>
+          </button>
+        </div>
+        <div class="position-relative collapse show" id="content-claude">
+          <div *ngIf="claudeLoading" class="d-flex align-items-center gap-3">
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                [style.width.%]="claudeProgress"></div>
+            </div>
+            <div class="spinner-border text-success" role="status" style="width: 1.5rem; height: 1.5rem;">
+              <span class="visually-hidden">Chargement...</span>
+            </div>
+          </div>
+          <div class="mt-3">
+            <div *ngIf="claudeLoading" class="alert alert-info alert-dismissible fade show" role="alert">
+              📨 Requête envoyée à Anthropic...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="claudeLoading && !contentClaude && !claudeError"
+              class="alert alert-warning alert-dismissible fade show" role="alert">
+              ⏳ Réponse de Anthropic en cours de traitement...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="claudeError" class="alert alert-danger alert-dismissible fade show" role="alert">
+              ❌ {{ claudeError }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="contentClaude && !claudeError" class="alert alert-success alert-dismissible fade show"
+              role="alert">
+              ✅ Réponse de Anthropic reçue avec succès.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+          </div>
+          <div class="mt-3">
+            <textarea class="form-control" [value]="contentClaude" readonly rows="6"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="card p-4 m-1">
+        <div class="d-flex justify-content-between align-items-center mb-3 btn-group-responsive">
+          <button class="btn btn-outline-success" (click)="loadVoice('claude')">Voix - ElevenLabs</button>
+          <span *ngIf="voiceClaude && !voiceClaudeLoading" class="badge bg-success">Voix OK ✓</span>
+          <span *ngIf="voiceClaudeDuration > 0" class="text-success ms-auto small-text">Réponse en {{
+            voiceClaudeDuration.toFixed(1) }}s</span>
+          <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2 text-succes" data-bs-toggle="collapse"
+            data-bs-target="#voice-claude">
+            <span class="chevron text-success">▼</span>
+          </button>
+        </div>
+        <div class="position-relative collapse show" id="voice-claude">
+          <div *ngIf="voiceClaudeLoading" class="d-flex align-items-center gap-3">
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                [style.width.%]="voiceClaudeProgress"></div>
+            </div>
+            <div class="spinner-border text-success" role="status" style="width: 1.5rem; height: 1.5rem;">
+              <span class="visually-hidden">Chargement...</span>
+            </div>
+          </div>
+          <div class="mt-3">
+            <div *ngIf="voiceClaudeLoading" class="alert alert-info alert-dismissible fade show" role="alert">
+              📨 Requête envoyée à ElevenLabs...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="voiceClaudeLoading && !voiceClaude && !voiceClaudeError"
+              class="alert alert-warning alert-dismissible fade show" role="alert">
+              ⏳ Réponse de ElevenLabs en cours de traitement...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="voiceClaudeError" class="alert alert-danger alert-dismissible fade show" role="alert">
+              ❌ {{ voiceClaudeError }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="voiceClaude && !voiceClaudeError" class="alert alert-success alert-dismissible fade show"
+              role="alert">
+              ✅ Réponse de ElevenLabs reçue avec succès.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+          </div>
+          <div class="mt-2">
+            <audio controls class="w-100" [class.audio-disabled]="!voiceClaude" [src]="voiceClaude">
+              Votre navigateur ne supporte pas l'audio.
+            </audio>
+          </div>
+        </div>
+      </div>
+      <div class="card p-4 mt-3">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <div class="btn-group-responsive d-flex align-items-center gap-2 flex-wrap">
+            <button class="btn btn-outline-success" (click)="loadVideo('claude')">Avatar - JoggAI</button>
+            <button class="btn btn-outline-success" (click)="checkVideo('claude')" [disabled]="!videoClaudeId">🔍
+              Vérifier</button>
+            <span *ngIf="videoClaude && !videoClaudeLoading" class="badge bg-success">Avatar OK ✓</span>
+            <span *ngIf="videoClaudeDuration > 0" class="text-success small-text">
+              Réponse en {{ videoClaudeDuration.toFixed(1) }}s
+            </span>
+          </div>
+          <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+            data-bs-target="#avatar-claude" aria-expanded="true">
+            <span class="chevron text-success">▼</span>
+          </button>
+        </div>
+        <div class="position-relative collapse show" id="avatar-claude">
+          <div *ngIf="videoClaudeLoading || videoCheckClaudeLoading" class="d-flex align-items-center gap-3">
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                [style.width.%]="videoClaudeProgress"></div>
+            </div>
+            <div class="spinner-border text-success" role="status" style="width: 1.5rem; height: 1.5rem;">
+              <span class="visually-hidden">Chargement...</span>
+            </div>
+          </div>
+          <div class="mt-3">
+            <div *ngIf="videoClaudeLoading" class="alert alert-info alert-dismissible fade show" role="alert">
+              📨 Requête envoyée à JoggAI (génération)...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoClaudeLoading && !videoClaudeId && !videoClaudeError"
+              class="alert alert-warning alert-dismissible fade show" role="alert">
+              ⏳ Réponse de JoggAI (génération) en cours de traitement...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoCheckClaudeProcess" class="alert alert-warning alert-dismissible fade show" role="alert">
+              ⏳ Process de JoggAI (check) vidéo en cours de traitement...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoClaudeError" class="alert alert-danger alert-dismissible fade show" role="alert">
+              ❌ {{ videoClaudeError }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoClaudeId && !videoClaudeError" class="alert alert-success alert-dismissible fade show"
+              role="alert">
+              ✅ Réponse de JoggAI (génération) reçue avec succès.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+          </div>
+          <div class="mt-3">
+            <div *ngIf="videoCheckClaudeLoading" class="alert alert-info alert-dismissible fade show" role="alert">
+              📨 Requête envoyée à JoggAI (check)...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoCheckClaudeLoading && !videoClaude && !videoCheckClaudeError"
+              class="alert alert-warning alert-dismissible fade show" role="alert">
+              ⏳ Réponse de JoggAI (check) en cours de traitement...
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoCheckClaudeError" class="alert alert-danger alert-dismissible fade show" role="alert">
+              ❌ {{ videoCheckClaudeError }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+            <div *ngIf="videoClaude && !videoCheckClaudeError" class="alert alert-success alert-dismissible fade show"
+              role="alert">
+              ✅ Réponse de JoggAI (check) reçue avec succès.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+            </div>
+          </div>
+          <div class="mt-3" *ngIf="videoClaude">
+            <video controls class="w-100 rounded" [attr.poster]="videoPosterClaude">
+              <source [attr.src]="videoClaude" type="video/mp4">
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+          </div>
+          <div class="mt-3" *ngIf="!videoClaude">
+            <video controls class="w-100 rounded" poster="">
+              <source src="" type="video/mp4">
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

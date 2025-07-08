@@ -1,0 +1,22 @@
+[
+  {
+    "speaker": "Animateur",
+    "message": "Bienvenue dans notre podcast Cinéma. Sujet : Dune de Denis Villeneuve : chef-d'œuvre de science-fiction ou exercice de style surcoté ?. Claude, tu commences."
+  },
+  {
+    "speaker": "Claude",
+    "message": "Bah voyons, encore une adaptation qui trahit l'œuvre originale ! Herbert se retourne dans sa tombe."
+  },
+  {
+    "speaker": "GPT",
+    "message": "Claude, chaque adaptation apporte une nouvelle vision, Villeneuve respecte et revitalise l'œuvre de Herbert!"
+  },
+  {
+    "speaker": "Claude",
+    "message": "Ah vraiment ? T'as dû regarder un autre film alors ! L'essence de Dune est perdue."
+  },
+  {
+    "speaker": "Animateur",
+    "message": "Merci à tous pour ce débat ! À bientôt pour un nouvel épisode Cinéma."
+  }
+]

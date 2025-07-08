@@ -1,0 +1,5 @@
+file '01-animateur.mp3'
+file '02-claude.mp3'
+file '03-gpt.mp3'
+file '04-claude.mp3'
+file '05-animateur.mp3'

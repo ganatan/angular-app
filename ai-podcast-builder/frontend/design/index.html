@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>podcast-builder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #212529;
+      --card-bg: #ffffff;
+      --input-bg: #e9ecef;
+      --accent: #0d6efd;
+    }
+
+    .dark-mode {
+      --bg: #121212;
+      --text: #f1f1f1;
+      --card-bg: #1e2a38;
+      --input-bg: #2a3b4d;
+      --accent: #00c9a7;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: "Roboto", sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      flex: 1;
+      background-color: var(--bg);
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control,
+    .form-select,
+    textarea {
+      background-color: var(--input-bg);
+      color: var(--text);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+    }
+
+    .form-control:focus,
+    .form-select:focus,
+    textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 160px;
+    }
+
+    .loading {
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+    }
+
+    .small-text {
+      font-size: 0.75rem;
+      opacity: 0.8;
+    }
+
+    .btn-group-responsive {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .progress-bar {
+      background-color: var(--accent);
+    }
+
+    .toggle-mode {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 999;
+    }
+
+    @media (max-width: 576px) {
+      .toggle-mode {
+        top: auto;
+        bottom: 1rem;
+        right: 1rem;
+      }
+
+      .container {
+        padding-top: 3rem;
+      }
+
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      .btn-group-responsive {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+
+    html.dark-mode,
+    body.dark-mode {
+      background-color: var(--bg) !important;
+    }
+
+    .audio-disabled {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    .video-disabled {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    .chevron {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    [data-bs-toggle="collapse"][aria-expanded="true"] .chevron {
+      transform: rotate(0deg);
+    }
+
+    [data-bs-toggle="collapse"][aria-expanded="false"] .chevron {
+      transform: rotate(-90deg);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <button class="btn btn-sm btn-outline-secondary toggle-mode" onclick="toggleTheme()">Toggle thème</button>
+
+  <div class="container py-4">
+    <h1 class="text-center text-primary ">podcast-builder</h1>
+
+    <div class="card p-4 mb-4">
+      <div class="row align-items-end g-2">
+        <div class="col-md-6 d-flex align-items-end gap-2">
+          <span class="form-label mb-1 fw-bold">Thème</span>
+          <input type="text" class="form-control" placeholder="" />
+        </div>
+        <div class="col-md-3 d-flex align-items-end gap-2">
+          <button class="btn btn-primary">Générer</button>
+          <input type="number" min="1" max="10" value="4" class="form-control" style="width: 70px;" />
+          <span class="form-label mb-1 fw-bold">Intervenants</span>
+        </div>
+        <div class="col-md-3 d-flex align-items-end gap-2">
+          <button class="btn btn-primary">Générer</button>
+          <input type="number" min="1" max="10" value="7" class="form-control" style="width: 70px;" />
+          <span class="form-label mb-1 fw-bold">Questions</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card p-3 mb-4">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="mb-0">Intervenants générés (5)</h5>
+            <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+              data-bs-target="#intervenants-collapse" aria-expanded="true">
+              <span class="chevron">▼</span>
+            </button>
+          </div>
+          <div class="collapse show" id="intervenants-collapse">
+            <div class="mb-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="flex-grow-1 me-3">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="spinner-border text-primary" role="status" style="width: 1.5rem; height: 1.5rem;">
+                  <span class="visually-hidden">Chargement...</span>
+                </div>
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="border rounded p-3">
+                  <div class="mb-2">
+                    <strong>Ganatan</strong> — <span class="text-muted">Animateur</span><br />
+                    <small class="text-secondary">Neutre, pose les questions, relance le débat</small>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="flex-fill">
+                      <label class="form-label mb-1 small">Voix</label>
+                      <select class="form-select form-select-sm">
+                        <option>Ganatan</option>
+                        <option>Luc</option>
+                        <option>Thomas</option>
+                      </select>
+                    </div>
+                    <div class="flex-fill">
+                      <label class="form-label mb-1 small">Avatar</label>
+                      <select class="form-select form-select-sm">
+                        <option>ganatan-001</option>
+                        <option>ganatan-002</option>
+                        <option>ganatan-003</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="border rounded p-3">
+                  <div class="mb-2">
+                    <strong>Camille</strong> — <span class="text-muted">Pour</span><br />
+                    <small class="text-secondary">Calme et analytique</small>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="flex-fill">
+                      <label class="form-label mb-1 small">Voix</label>
+                      <select class="form-select form-select-sm">
+                        <option>Clara</option>
+                        <option>Camille</option>
+                        <option>Julie</option>
+                      </select>
+                    </div>
+                    <div class="flex-fill">
+                      <label class="form-label mb-1 small">Avatar</label>
+                      <select class="form-select form-select-sm">
+                        <option>jogg-001</option>
+                        <option>jogg-003</option>
+                        <option>jogg-007</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="border rounded p-3">
+                  <div class="mb-2">
+                    <strong>Alexis</strong> — <span class="text-muted">Contre</span><br />
+                    <small class="text-secondary">Passionné et critique</small>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="flex-fill">
+                      <label class="form-label mb-1 small">Voix</label>
+                      <select class="form-select form-select-sm">
+                        <option>Antoine</option>
+                        <option>Luc</option>
+                        <option>Thomas</option>
+                      </select>
+                    </div>
+                    <div class="flex-fill">
+                      <label class="form-label mb-1 small">Avatar</label>
+                      <select class="form-select form-select-sm">
+                        <option>jogg-002</option>
+                        <option>jogg-004</option>
+                        <option>jogg-008</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-3 mb-4">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="mb-0">Questions générées</h5>
+            <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+              data-bs-target="#questions-collapse" aria-expanded="true">
+              <span class="chevron">▼</span>
+            </button>
+          </div>
+          <div class="collapse show" id="questions-collapse">
+            <div class="mb-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="flex-grow-1 me-3">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="spinner-border text-primary" role="status" style="width: 1.5rem; height: 1.5rem;">
+                  <span class="visually-hidden">Chargement...</span>
+                </div>
+              </div>
+            </div>
+            <table class="table table-bordered table-sm mt-2">
+              <thead>
+                <tr>
+                  <th style="width: 40px;"></th>
+                  <th>Question</th>
+                  <th style="width: 120px;">Dialogues</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>Est-ce que Angular est trop rigide pour les projets modernes ?</td>
+                  <td><input type="number" min="1" max="10" class="form-control form-control-sm" value="2" /></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>React favorise-t-il une meilleure modularité à long terme ?</td>
+                  <td><input type="number" min="1" max="10" class="form-control form-control-sm" value="2" /></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>Quel framework est le plus adapté aux équipes débutantes ?</td>
+                  <td><input type="number" min="1" max="10" class="form-control form-control-sm" value="2" /></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>Angular est-il dépassé face à la popularité de React ?</td>
+                  <td><input type="number" min="1" max="10" class="form-control form-control-sm" value="2" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+
+
+        <div class="card p-3 mb-4">
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <button class="btn btn-dark flex-fill">Générer dialogues</button>
+            <button class="btn btn-success flex-fill">Générer voix</button>
+            <button class="btn btn-info flex-fill">Générer vidéos</button>
+          </div>
+
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex align-items-center gap-3">
+              <div class="flex-grow-1">
+                <div class="progress">
+                  <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+                </div>
+              </div>
+              <div class="spinner-border text-dark" role="status" style="width: 1.5rem; height: 1.5rem;">
+                <span class="visually-hidden">Chargement...</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+              <div class="flex-grow-1">
+                <div class="progress">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 40%">
+                  </div>
+                </div>
+              </div>
+              <div class="spinner-border text-success" role="status" style="width: 1.5rem; height: 1.5rem;">
+                <span class="visually-hidden">Chargement...</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+              <div class="flex-grow-1">
+                <div class="progress">
+                  <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 20%"></div>
+                </div>
+              </div>
+              <div class="spinner-border text-info" role="status" style="width: 1.5rem; height: 1.5rem;">
+                <span class="visually-hidden">Chargement...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-4 m-1">
+          <div class="d-flex justify-content-between align-items-center mb-3 btn-group-responsive">
+            <div class="d-flex align-items-center gap-2">
+              <button class="btn btn-outline-secondary">Introduction</button>
+              <span class="badge bg-secondary">Ganatan</span>
+              <span class="text-muted small-text">Animateur</span>
+            </div>
+            <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+              data-bs-target="#dialogue-ganatan-1" aria-expanded="true">
+              <span class="chevron">▼</span>
+            </button>
+          </div>
+          <div class="collapse show" id="dialogue-ganatan-1">
+            <p class="mb-3">
+              <strong>Ganatan :</strong> Bonjour à tous et bienvenue dans ce nouveau podcast où nous allons plonger en
+              profondeur dans un débat technique qui passionne les développeurs depuis plusieurs années : Angular contre
+              React.
+              Camille, Alexis, préparez-vous, on commence dans un instant.
+            </p>
+            <div class="d-flex gap-3">
+              <audio controls class="w-50">
+                <source src="assets/audio/ganatan-1.mp3" type="audio/mpeg" />
+              </audio>
+              <video controls class="w-50 rounded">
+                <source src="assets/video/ganatan-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-4 m-1">
+          <div class="d-flex justify-content-between align-items-center mb-3 btn-group-responsive">
+            <div class="d-flex align-items-center gap-2">
+              <button class="btn btn-outline-dark">Dialogue</button>
+              <span class="badge bg-dark">Camille</span>
+              <span class="text-muted small-text">Voix + Vidéo prêtes</span>
+            </div>
+            <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+              data-bs-target="#dialogue-camille-1" aria-expanded="true">
+              <span class="chevron">▼</span>
+            </button>
+          </div>
+          <div class="collapse show" id="dialogue-camille-1">
+            <p class="mb-3"><strong>Camille :</strong> Je pense qu’Angular offre une architecture robuste qui sécurise
+              les projets à grande échelle.</p>
+            <div class="d-flex gap-3">
+              <audio controls class="w-50">
+                <source src="assets/audio/camille-1.mp3" type="audio/mpeg" />
+              </audio>
+              <video controls class="w-50 rounded">
+                <source src="assets/video/camille-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-4 m-1">
+          <div class="d-flex justify-content-between align-items-center mb-3 btn-group-responsive">
+            <div class="d-flex align-items-center gap-2">
+              <button class="btn btn-outline-dark">Réplique</button>
+              <span class="badge bg-dark">Alexis</span>
+              <span class="text-muted small-text">Voix + Vidéo prêtes</span>
+            </div>
+            <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+              data-bs-target="#dialogue-alexis-1" aria-expanded="true">
+              <span class="chevron">▼</span>
+            </button>
+          </div>
+          <div class="collapse show" id="dialogue-alexis-1">
+            <p class="mb-3"><strong>Alexis :</strong> Justement, cette rigidité bride la créativité. React me paraît
+              plus souple et intuitif.</p>
+            <div class="d-flex gap-3">
+              <audio controls class="w-50">
+                <source src="assets/audio/alexis-1.mp3" type="audio/mpeg" />
+              </audio>
+              <video controls class="w-50 rounded">
+                <source src="assets/video/alexis-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-4 m-1">
+          <div class="d-flex justify-content-between align-items-center mb-3 btn-group-responsive">
+            <div class="d-flex align-items-center gap-2">
+              <button class="btn btn-outline-secondary">Conclusion</button>
+              <span class="badge bg-secondary">Ganatan</span>
+              <span class="text-muted small-text">Animateur</span>
+            </div>
+            <button class="btn btn-sm btn-link text-decoration-none p-0 ms-2" data-bs-toggle="collapse"
+              data-bs-target="#dialogue-ganatan-2" aria-expanded="true">
+              <span class="chevron">▼</span>
+            </button>
+          </div>
+          <div class="collapse show" id="dialogue-ganatan-2">
+            <p class="mb-3"><strong>Ganatan :</strong> Merci à tous les deux. On voit bien que le choix entre Angular et
+              React dépend du contexte, des équipes et des objectifs du projet.</p>
+            <div class="d-flex gap-3">
+              <audio controls class="w-50">
+                <source src="assets/audio/ganatan-2.mp3" type="audio/mpeg" />
+              </audio>
+              <video controls class="w-50 rounded">
+                <source src="assets/video/ganatan-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      document.documentElement.classList.toggle('dark-mode');
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

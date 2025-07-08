@@ -1,0 +1,33 @@
+# Dépendances
+node_modules/
+dist/
+build/
+
+# Environnement local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test / Coverage
+coverage/
+*.lcov
+
+# Fichiers système temporaires
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Fichiers d’environnement (non utilisés ici, mais sécurité renforcée)
+*.env*
+
+# Autoriser explicitement les templates d'exemple
+!.env.template
+!.env.*.template

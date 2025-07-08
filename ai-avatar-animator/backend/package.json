@@ -1,0 +1,38 @@
+{
+  "name": "voice-generator-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "lint": "eslint .",
+    "generate-project-structure": "node tools/scripts/generate-project-structure.js",
+    "generate-markdown-docs": "node tools/scripts/generate-markdown-docs.js",
+    "generate-script-text-openai": "node tools/scripts/generate-script-text-openai.js",
+    "generate-pdf-from-txt": "node tools/scripts/generate-pdf-from-txt.js",
+    "generate-documentation": "npm run generate-markdown-docs && npm run generate-script-text-openai && npm run generate-pdf-from-txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "1.10.0",
+    "cors": "2.8.5",
+    "dotenv": "16.5.0",
+    "express": "5.1.0",
+    "fs": "^0.0.1-security",
+    "highlight.js": "11.11.1",
+    "markdown-it": "14.1.0",
+    "markdown-pdf": "11.0.0",
+    "node-fetch": "3.3.2",
+    "nodemon": "3.1.10",
+    "pdfkit": "0.17.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.29.0",
+    "eslint": "9.29.0",
+    "globals": "16.2.0"
+  }
+}
