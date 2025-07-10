@@ -13,40 +13,46 @@
 		<maven.compiler.source>21</maven.compiler.source>
 		<maven.compiler.target>21</maven.compiler.target>
 		<maven.compiler.release>21</maven.compiler.release>
+		<spring.version>7.0.0-M6</spring.version>
+		<jackson-databind.version>2.19.1</jackson-databind.version>
+		<junit-jupiter.version>6.0.0-M1</junit-jupiter.version>
+		<jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version>
+		<tomcat-embed-core.version>11.0.9</tomcat-embed-core.version>
+		<jacoco-maven-plugin.version>0.8.13</jacoco-maven-plugin.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>7.0.0-M6</version>
+			<version>${spring.version}</version>
 		</dependency>
 		<dependency>
 		  <groupId>org.springframework</groupId>
 		  <artifactId>spring-test</artifactId>
-		  <version>7.0.0-M6</version>
+		  <version>${spring.version}</version>
 		  <scope>test</scope>
 		</dependency>
 		<dependency>
 		  <groupId>org.junit.jupiter</groupId>
 		  <artifactId>junit-jupiter</artifactId>
-		  <version>5.10.0</version>
+		  <version>${junit-jupiter.version}</version>
 		  <scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.18.3</version>
+			<version>${jackson-databind.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-core</artifactId>
-			<version>11.0.5</version>
+			<version>${tomcat-embed-core.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>jakarta.servlet</groupId>
 			<artifactId>jakarta.servlet-api</artifactId>
-			<version>6.1.0</version>
+			<version>${jakarta.servlet-api.version}</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
@@ -57,7 +63,7 @@
         <plugin>
 	        <groupId>org.jacoco</groupId>
 	        <artifactId>jacoco-maven-plugin</artifactId>
-	        <version>0.8.10</version>
+	        <version>${jacoco-maven-plugin.version}</version>
 	        <executions>
 	          <execution>
 	            <goals>
