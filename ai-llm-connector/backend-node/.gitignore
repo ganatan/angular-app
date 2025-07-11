@@ -1,0 +1,67 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# dotenv files
+.env
+.env.*
+!.env.development
+!.env.production
+!.env.test
+!.env.template
+
+# Tests & coverage
+coverage/
+jest-output.log
+__snapshots__/
+
+# Build output
+dist/
+build/
+
+# IDE & editor settings
+.vscode/
+.idea/
+*.sw?
+
+# Temp files
+*.tmp
+*.bak
+
+# Lint & format
+.eslintcache
+
+# Webpack
+.cache/
+webpack-stats.json
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# PM2
+pids/
+pids/*.pid
+pids/*.lock
+
+# Misc
+*.tgz
+*.tar.gz
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+.env.test
+node-repl-history
+yarn.lock.backup

@@ -11,9 +11,22 @@ export interface ContentGenerationResponse {
   error?: string;
 }
 
+function getBaseUrl(): string {
+  const backend = environment.backend;
+
+  switch (backend) {
+    case 'java':
+      return 'http://localhost:8080/backend-java/api';
+    case 'node':
+    default:
+      return 'http://localhost:3000/api';
+  }
+}
+
 @Injectable({ providedIn: 'root' })
 export class AiService {
-  private baseUrl = 'http://localhost:3000/api';
+
+  private baseUrl = getBaseUrl();
   private http = inject(HttpClient);
 
   generateContent(llm: string, name: string, length: string, style: string, type: string): Observable<ContentGenerationResponse> {
@@ -24,6 +37,7 @@ export class AiService {
     }
 
     const url = `${this.baseUrl}/llm/${type}/${llm}`;
+    console.log('00000000001:' + url)
     const body = { name, length, style };
 
     return this.http.post<ContentGenerationResponse>(url, body)

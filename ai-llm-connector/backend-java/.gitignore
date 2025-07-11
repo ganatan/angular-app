@@ -1,0 +1,80 @@
+# ================================================
+# ✅ Sensitive files / Local config
+# ================================================
+
+# Do not commit real configuration or secrets
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+src/main/resources/application.properties
+
+# Keep templates for sharing example configs
+!.env.template
+!src/main/resources/application.template.properties
+
+# ================================================
+# ☕ Maven / Java build artifacts
+# ================================================
+
+target/
+build/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Logs
+*.log
+hs_err_pid*.log
+
+# ================================================
+# 🧪 IDE: Eclipse / Spring Tools Suite (STS)
+# ================================================
+
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# ================================================
+# 💡 IDE: IntelliJ IDEA
+# ================================================
+
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ================================================
+# 🧰 IDE: NetBeans
+# ================================================
+
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ================================================
+# 🖥️ IDE: Visual Studio Code
+# ================================================
+
+.vscode/
+
+# ================================================
+# 🗂️ OS files / Backup / Temp
+# ================================================
+
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
