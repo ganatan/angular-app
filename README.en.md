@@ -27,7 +27,7 @@
 | Project                      | CI Badge |
 |-----------------------------|----------|
 | Frontend Angular            | [![Frontend Angular CI](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml) |
-| Backend JavaScript (ESM)    | [![Backend JavaScript ESM CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml) |
+| Backend JavaScript          | [![Backend JavaScript CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml) |
 | Backend TypeScript          | [![Backend TypeScript CI](https://github.com/ganatan/angular-app/actions/workflows/backend-typescript.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-typescript.yml) |
 | Backend Java Spring Boot    | [![Backend Spring Boot CI](https://github.com/ganatan/angular-app/actions/workflows/backend-java.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-java.yml) |
 
@@ -37,7 +37,7 @@
 
 | Component                   | Docker Badge |
 |----------------------------|---------------|
-| Backend JavaScript (ESM)     | [![Docker Image Version - Backend JavaScript ESM](https://img.shields.io/docker/v/ganatan/backend-javascript?label=Backend%20JavaScript%20Docker%20esm&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript) |
+| Backend JavaScript           | [![Docker Image Version - Backend JavaScript](https://img.shields.io/docker/v/ganatan/backend-javascript?label=Backend%20JavaScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript) |
 | Backend TypeScript           | [![Docker Image Version - Backend TypeScript](https://img.shields.io/docker/v/ganatan/backend-typescript?label=Backend%20TypeScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-typescript) |
 | Frontend Angular             | [![Docker Image Version - Frontend Angular](https://img.shields.io/docker/v/ganatan/frontend-angular?label=Frontend%20Angular%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/frontend-angular) |
 
@@ -89,11 +89,8 @@
 
 ### 🚀 Backends
 
-- **`backend-javascript ESM`**  
-  Express.js API in JavaScript (ESM) with PostgreSQL, MySQL or mock data
-
-- **`backend-javascript commonjs`**  
-  Express.js API in JavaScript (CJS) with PostgreSQL, MySQL or mock data
+- **`backend-javascript`**  
+  Express.js API in JavaScript with PostgreSQL, MySQL or mock data
 
 - **`backend-typescript`**  
   Express.js API in TypeScript with PostgreSQL, MySQL or mock data
