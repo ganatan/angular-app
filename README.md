@@ -16,9 +16,9 @@
 | Composant              | Description                                                   |
 |------------------------|---------------------------------------------------------------|
 | **Frontend**           | Angular 20 — SPA avec Routing, SSR, PWA, SEO                  |
-| **Backend Javascript **        | Node.js 22 + Express — API REST avec données mockées ou BDD   |
+| **Backend Javascript**         | Node.js 22 + Express — API REST avec données mockées ou BDD   |
 | **Backend TypeScript** | Node.js 22 + TypeScript — API typée avec données ou BDD       |
-| **Backend Java **                 | Java 21 + Spring Boot — API REST simple et moderne            |
+| **Backend Java**                  | Java 21 + Spring Boot — API REST simple et moderne            |
 
 ---
 

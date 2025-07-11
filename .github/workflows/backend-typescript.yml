@@ -39,7 +39,7 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/backend-typescript:latest .
-        working-directory: backend-javascript-cjs
+        working-directory: backend-typescript
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/backend-typescript:latest
