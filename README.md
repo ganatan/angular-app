@@ -16,10 +16,9 @@
 | Composant              | Description                                                   |
 |------------------------|---------------------------------------------------------------|
 | **Frontend**           | Angular 20 — SPA avec Routing, SSR, PWA, SEO                  |
-| **Backend Javascript (ESM)**   | Node.js 22 + Express — API REST avec données mockées ou BDD   |
-| **Backend Javascript (CJS)**   | Variante CJS, même structure que la version ESM              |
+| **Backend Javascript **        | Node.js 22 + Express — API REST avec données mockées ou BDD   |
 | **Backend TypeScript** | Node.js 22 + TypeScript — API typée avec données ou BDD       |
-| **Backend Java Springboot**       | Java 21 + Spring Boot — API REST simple et moderne            |
+| **Backend Java **                 | Java 21 + Spring Boot — API REST simple et moderne            |
 
 ---
 
@@ -28,10 +27,9 @@
 | Projet                         | Badge CI |
 |-------------------------------|----------|
 | Frontend Angular              | [![Frontend Angular CI](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/frontend-angular.yml) |
-| Backend JavaScript (ESM)      | [![Backend JavaScript ESM CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-esm.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-esm.yml) |
-| Backend JavaScript (CJS)      | [![Backend JavaScript CJS CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-cjs.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript-cjs.yml) |
+| Backend JavaScript (ESM)      | [![Backend JavaScript ESM CI](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-javascript.yml) |
 | Backend TypeScript            | [![Backend TypeScript CI](https://github.com/ganatan/angular-app/actions/workflows/backend-typescript.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-typescript.yml) |
-| Backend Java Spring Boot      | [![Backend Spring Boot CI](https://github.com/ganatan/angular-app/actions/workflows/backend-java-springboot.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-java-springboot.yml) |
+| Backend Java Spring Boot      | [![Backend Spring Boot CI](https://github.com/ganatan/angular-app/actions/workflows/backend-java.yml/badge.svg?branch=master)](https://github.com/ganatan/angular-app/actions/workflows/backend-java.yml) |
 
 ---
 
@@ -39,8 +37,7 @@
 
 | Composant                     | Badge Docker |
 |------------------------------|---------------|
-| Backend JavaScript (ESM)     | [![Docker Image Version - Backend JavaScript ESM](https://img.shields.io/docker/v/ganatan/backend-javascript-esm?label=Backend%20JavaScript%20Docker%20esm&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript-esm) |
-| Backend JavaScript (CJS)     | [![Docker Image Version - Backend JavaScript CJS](https://img.shields.io/docker/v/ganatan/backend-javascript-cjs?label=Backend%20JavaScript%20Docker%20cjs&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript-cjs) |
+| Backend JavaScript           | [![Docker Image Version - Backend JavaScript ESM](https://img.shields.io/docker/v/ganatan/backend-javascript?label=Backend%20JavaScript%20Docker%20esm&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-javascript) |
 | Backend TypeScript           | [![Docker Image Version - Backend TypeScript](https://img.shields.io/docker/v/ganatan/backend-typescript?label=Backend%20TypeScript%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/backend-typescript) |
 | Frontend Angular             | [![Docker Image Version - Frontend Angular](https://img.shields.io/docker/v/ganatan/frontend-angular?label=Frontend%20Angular%20Docker&logo=docker&sort=semver)](https://hub.docker.com/r/ganatan/frontend-angular) |
 
@@ -96,11 +93,8 @@
 
 ### 🚀 Backends
 
-- **`backend-javascript ESM`**  
+- **`backend-javascript`**  
   API Express.js en JavaScript (ESM) avec PostgreSQL, MySQL ou données mockées
-
-- **`backend-javascript CJS`**  
-  API Express.js en JavaScript (commonJS) avec PostgreSQL, MySQL ou données mockées
 
 - **`backend-typescript`**  
   API Express.js en TypeScript avec PostgreSQL, MySQL ou données mockées
@@ -170,23 +164,15 @@ npm start
 # http://localhost:4200
 ```
 
-### ▶️ Backend JavaScript ESM
+### ▶️ Backend JavaScript
 
 ```bash
-cd backend-javascript-esm
+cd backend-javascript
 npm install
 npm start
 # http://localhost:3000
 ```
 
-### ▶️ Backend JavaScript CJS
-
-```bash
-cd backend-javascript-cjs
-npm install
-npm start
-# http://localhost:3000
-```
 
 ### ▶️ Backend TypeScript
 
@@ -213,19 +199,11 @@ docker run -d -p 4200:4200 ganatan/frontend-angular
 # http://localhost:4200
 ```
 
-### ▶️ Lancer le backend Javascript ESM via Docker
+### ▶️ Lancer le backend Javascript via Docker
 
 ```bash
-docker pull ganatan/backend-javascript-esm
-docker run -d -p 8080:8080 ganatan/backend-javascript-esm
-# http://localhost:8080
-```
-
-### ▶️ Lancer le backend Javascript CJS via Docker
-
-```bash
-docker pull ganatan/backend-javascript-cjs
-docker run -d -p 8080:8080 ganatan/backend-javascript-cjs
+docker pull ganatan/backend-javascript
+docker run -d -p 8080:8080 ganatan/backend-javascript
 # http://localhost:8080
 ```
 

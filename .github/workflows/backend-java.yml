@@ -1,4 +1,4 @@
-name: backend-java-springboot
+name: backend-java
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: backend-java-springboot
+        working-directory: backend-java
     steps:
       - uses: actions/checkout@v4
 
