@@ -34,15 +34,15 @@ jobs:
       - name: Build and install
         run: mvn clean install
 
-      - name: Login to Docker Hub
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+      # - name: Login to Docker Hub
+      #   uses: docker/login-action@v3
+      #   with:
+      #     username: ${{ secrets.DOCKER_USERNAME }}
+      #     password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/backend-java:latest .
-        working-directory: backend-java
+      # - name: Build Docker image
+      #   run: docker build -t ${{ secrets.DOCKER_USERNAME }}/backend-java:latest .
+      #   working-directory: backend-java
 
-      - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/backend-java:latest
+      # - name: Push Docker image
+      #   run: docker push ${{ secrets.DOCKER_USERNAME }}/backend-java:latest
