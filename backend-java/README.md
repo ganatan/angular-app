@@ -107,3 +107,13 @@ mvn install
 mvn checkstyle:check
 mvn dependency:tree
 ```
+
+## 📦 Commandes Java utiles
+
+```bash
+java -jar target/backend-java-1.0.0.jar
+```
+
+
+
+

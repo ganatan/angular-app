@@ -16,7 +16,9 @@
   <name>backend-java</name>
   <description>Demo backend-java</description>
 
-  <packaging>war</packaging>
+<!--  <packaging>war</packaging>
+--> 
+	<packaging>jar</packaging> 
 
   <properties>
     <java.version>21</java.version>
@@ -40,8 +42,8 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-tomcat</artifactId>
-      <scope>provided</scope> <!-- Important pour un WAR déployé sur Tomcat -->
-    </dependency>
+<!--      <scope>provided</scope>   
+-->    </dependency>
 
   </dependencies>
 
