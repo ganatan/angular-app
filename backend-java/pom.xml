@@ -11,10 +11,10 @@
   </parent>
 
   <groupId>com.example</groupId>
-  <artifactId>backend-java-springboot</artifactId>
+  <artifactId>backend-java</artifactId>
   <version>1.0.0</version>
-  <name>backend-java-springboot</name>
-  <description>Demo backend-java-springboot</description>
+  <name>backend-java</name>
+  <description>Demo backend-java</description>
 
   <packaging>war</packaging>
 
