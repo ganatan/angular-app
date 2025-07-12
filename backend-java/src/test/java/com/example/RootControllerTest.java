@@ -28,6 +28,6 @@ public class RootControllerTest {
             .andExpect(jsonPath("$.success").value(true))
             .andExpect(jsonPath("$.data.version").value("1.0.0"))
             .andExpect(jsonPath("$.data.status").value("ok"))
-            .andExpect(jsonPath("$.data.app").value("backend-java-springboot"));
+            .andExpect(jsonPath("$.data.app").value("backend-java"));
     }
 }
