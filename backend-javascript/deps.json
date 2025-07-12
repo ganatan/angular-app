@@ -41365,7 +41365,7 @@
     "totalCruised": 863,
     "totalDependenciesCruised": 1844,
     "optionsUsed": {
-      "baseDir": "D:\\Chendra\\04-tutorials\\311-angular-app\\backend-javascript-esm",
+      "baseDir": "D:\\Chendra\\04-tutorials\\311-angular-app\\backend-javascript",
       "combinedDependencies": false,
       "detectJSDocImports": false,
       "exoticRequireStrings": [],

@@ -1,4 +1,4 @@
-# backend-javascript-esm
+# backend-javascript
 
 **👉 Si vous ne parlez pas anglais, la version française est ici** : [![Français](../../ui/version-fr.png)](./README.md)
 

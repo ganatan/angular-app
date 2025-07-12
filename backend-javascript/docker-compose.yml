@@ -4,8 +4,8 @@ services:
   backend:
     build:
       context: .
-    image: backend-javascript-esm
-    container_name: backend-javascript-esm-container
+    image: backend-javascript
+    container_name: backend-javascript-container
     ports:
       - "8080:8080"
     environment:
