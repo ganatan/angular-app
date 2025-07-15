@@ -1,6 +1,6 @@
 import express from 'express';
 
-import cityRoutes from '../modules/city/routes/city.routes.js';
+import cityRoutes from '../modules/city/city.routes.js';
 import continentRoutes from '../modules/continent/routes/continent.routes.js';
 import countryRoutes from '../modules/country/routes/country.routes.js';
 import personRoutes from '../modules/person/routes/person.routes.js';

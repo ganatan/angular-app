@@ -1,7 +1,7 @@
 import express from 'express';
 
 import getItems from '../modules/person/controllers/person.controller';
-import cityRoutes from '../modules/city/routes/city.routes';
+import cityRoutes from '../modules/city/city.routes';
 
 const router = express.Router();
 

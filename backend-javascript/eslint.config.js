@@ -6,6 +6,7 @@ export default defineConfig([
   {
     ignores: [
       'dist/**',
+      'sql/**',
       'eslint.config.js',
       'webpack.config.js',
     ],

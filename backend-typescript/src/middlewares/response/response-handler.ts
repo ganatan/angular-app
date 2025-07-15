@@ -14,7 +14,6 @@ const responseHandler = (req: Request, res: Response, next: NextFunction): void 
   const payload: unknown = res.locals.data || null;
 
   const response: { success: true; data?: unknown; metadata?: unknown } = { success: true };
-
   if (payload && typeof payload === 'object' && 'metadata' in payload && 'data' in payload) {
     const parsedPayload = payload as Payload;
     response.metadata = parsedPayload.metadata;

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2016",                                 
+    "target": "es2022",                                
     "forceConsistentCasingInFileNames": true,           
     "strict": true,                                     
     "skipLibCheck": true   ,
