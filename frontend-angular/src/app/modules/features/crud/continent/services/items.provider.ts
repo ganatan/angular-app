@@ -10,6 +10,6 @@ export const ItemsProvider: Provider[] = [
   ItemsMockService,
   {
     provide: ITEMS_SERVICE,
-    useExisting: environment.useDatabase ? ItemsApiService : ItemsMockService
+    useExisting: environment.useMock ? ItemsMockService : ItemsApiService
   }
 ];
