@@ -5,6 +5,7 @@ import appConfig from '../../config/app.config.js';
 
 export default function configureSecurity(app) {
   app.use(cors({ origin: appConfig.security.corsOrigin }));
+  // app.use(cors({ origin: '*' }));
   app.use(helmet(appConfig.security.helmet));
 
   const limiter = rateLimit({

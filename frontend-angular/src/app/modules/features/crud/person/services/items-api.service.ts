@@ -21,7 +21,6 @@ export class ItemsApiService implements ItemsServiceInterface {
   getItems(filters: Filters = {}): Observable<ItemsResponse> {
     const params = this.buildQueryParams(filters);
     const url = `${this.backendUrl}/${ITEM_CONSTANTS.RESOURCE_NAME}${params}`;
-
     return this.http.get<ItemsResponse>(url).pipe(
       catchError(this.handleError('getItems', getDefaultItemsResponse()))
     );
@@ -47,4 +46,5 @@ export class ItemsApiService implements ItemsServiceInterface {
       return of(result);
     };
   }
+
 }

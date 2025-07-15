@@ -1,5 +1,6 @@
 import express from 'express';
 import compression from 'compression';
+import cors from 'cors';
 
 import appConfig from './config/app.config.js';
 
@@ -28,6 +29,7 @@ app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(initLocals);
+
 configureSecurity(app);
 
 if (['development', 'test'].includes(appConfig.app.nodeEnv)) {
