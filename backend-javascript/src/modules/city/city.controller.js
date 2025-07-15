@@ -23,7 +23,7 @@ class Controller {
 
       return next(error);
     }
-  }
+  };
 
   getItemById = async (req, res, next) => {
     try {
@@ -47,7 +47,7 @@ class Controller {
 
       return next(error);
     }
-  }
+  };
 
   createItem = async (req, res, next) => {
     try {
@@ -66,7 +66,7 @@ class Controller {
 
       return next(error);
     }
-  }
+  };
 
   updateItem = async (req, res, next) => {
     try {
@@ -85,7 +85,7 @@ class Controller {
 
       return next(error);
     }
-  }
+  };
 
   deleteItem = async (req, res, next) => {
     try {
@@ -100,7 +100,8 @@ class Controller {
 
       return next(error);
     }
-  }
+  };
+
 }
 
 export default Controller;
