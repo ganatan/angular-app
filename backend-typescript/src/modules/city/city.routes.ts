@@ -16,15 +16,15 @@ const controller = new Controller(service);
 const admin = permissionHandler(['admin']);
 const editor = permissionHandler(['admin', 'editor']);
 
-router.get('/', controller.getItems.bind(controller));
+router.get('/', controller.getItems);
 
-router.get('/authorized', editor, controller.getItems.bind(controller));
-router.get('/denied', admin, controller.getItems.bind(controller));
+router.get('/authorized', editor, controller.getItems);
+router.get('/denied', admin, controller.getItems);
 
-router.post('/', editor, controller.createItem.bind(controller));
-router.get('/:id', controller.getItemById.bind(controller));
-router.put('/:id', editor, controller.updateItem.bind(controller));
-router.delete('/:id', admin, controller.deleteItem.bind(controller));
+router.post('/', editor, controller.createItem);
+router.get('/:id', controller.getItemById);
+router.put('/:id', editor, controller.updateItem);
+router.delete('/:id', admin, controller.deleteItem);
 
 export default router;
 

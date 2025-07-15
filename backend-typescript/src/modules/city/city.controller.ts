@@ -10,15 +10,10 @@ export default class Controller {
 
   constructor(service: Service) {
     this.service = service;
-
-    this.getItems = this.getItems.bind(this);
-    this.getItemById = this.getItemById.bind(this);
-    this.createItem = this.createItem.bind(this);
-    this.updateItem = this.updateItem.bind(this);
-    this.deleteItem = this.deleteItem.bind(this);
   }
 
-  async getItems(req: Request, res: Response, next: NextFunction): Promise<void> {
+
+  getItems = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const result = await this.service.getItems(req.query);
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
@@ -29,7 +24,7 @@ export default class Controller {
     }
   }
 
-  async getItemById(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getItemById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const id = parseInt(req.params.id, 10);
       const result = await this.service.getItemById(id);
@@ -55,7 +50,7 @@ export default class Controller {
     }
   }
 
-  async createItem(req: Request, res: Response, next: NextFunction): Promise<void> {
+  createItem = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       validateItem(req.body);
       const result = await this.service.createItem(req.body as City);
@@ -76,7 +71,7 @@ export default class Controller {
     }
   }
 
-  async updateItem(req: Request, res: Response, next: NextFunction): Promise<void> {
+  updateItem = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       validateItem(req.body);
       const id = parseInt(req.params.id, 10);
@@ -96,7 +91,7 @@ export default class Controller {
     }
   }
 
-  async deleteItem(req: Request, res: Response, next: NextFunction): Promise<void> {
+  deleteItem = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const id = parseInt(req.params.id, 10);
       const result = await this.service.deleteItem(id);

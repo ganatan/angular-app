@@ -5,14 +5,8 @@ import { validateItem } from './city.schema.js';
 class Controller {
   constructor(service) {
     this.service = service;
-    // this.getItems = this.getItems.bind(this);
-    // this.getItemById = this.getItemById.bind(this);
-    // this.createItem = this.createItem.bind(this);
-    // this.updateItem = this.updateItem.bind(this);
-    // this.deleteItem = this.deleteItem.bind(this);
   }
 
-  // async getItems(req, res, next) {
   getItems = async (req, res, next) => {
     try {
       const result = await this.service.getItems(req.query);
