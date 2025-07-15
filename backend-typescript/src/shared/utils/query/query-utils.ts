@@ -2,24 +2,27 @@ export function addFilterCondition(
   condition: string,
   params: (string | number)[],
   column: string,
-  value: string | undefined
+  value: string | undefined,
 ): string {
   const decodedValue = value ? decodeURIComponent(value) : value;
   if (decodedValue) {
     const formattedValue = `%${decodedValue}%`;
     params.push(formattedValue);
+
     return `${condition} AND LOWER(${column}) LIKE LOWER($${params.length})`;
   }
+
   return condition;
 }
 
 export function adaptSortField(
   sort: string,
-  sortMapping: Record<string, string>
+  sortMapping: Record<string, string>,
 ): string {
   const isDescending = sort.startsWith('-');
   const sortKey = isDescending ? sort.substring(1) : sort;
   const adaptedSortKey = sortMapping[sortKey] || sortKey;
+
   return isDescending ? `-${adaptedSortKey}` : adaptedSortKey;
 }
 
@@ -30,7 +33,7 @@ export function addRangeCondition(
   minValue: number | string | null,
   maxValue: number | string | null,
   minSize = 0,
-  maxSize = Infinity
+  maxSize = Infinity,
 ): string {
   if (minValue !== null) {
     const parsedMin = parseInt(String(minValue), 10);
@@ -55,7 +58,7 @@ export function addDensityCondition(
   condition: string,
   params: number[],
   densityMin: number | null,
-  densityMax: number | null
+  densityMax: number | null,
 ): string {
   if (densityMin !== null) {
     params.push(densityMin);
@@ -75,7 +78,7 @@ export function addRangeDateCondition(
   params: string[],
   column: string,
   minDate: string | undefined,
-  maxDate: string | undefined
+  maxDate: string | undefined,
 ): string {
   const parseDate = (dateString: string, time: string): string | null => {
     if (!dateString) {
@@ -84,6 +87,7 @@ export function addRangeDateCondition(
     const decodedDate = decodeURIComponent(dateString);
     const [day, month, year] = decodedDate.split('/');
     const isoDate = `${year}-${month}-${day} ${time}+01`;
+
     return !isNaN(Date.parse(isoDate)) ? isoDate : null;
   };
 

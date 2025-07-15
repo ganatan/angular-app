@@ -1,17 +1,17 @@
-import pool from '../../core/database/clients/mysql/native.client';
+import pool from '../../core/database/clients/mysql/native.client.js';
 
 import {
   addFilterCondition,
   adaptSortField,
-} from '../../shared/utils/query/query-utils';
+} from '../../shared/utils/query/query-utils.js';
 
 import {
   DEFAULT_ITEMS_PER_PAGE,
   DEFAULT_MIN_ENTITY_ID,
   MAX_ITEMS_PER_PAGE,
-} from '../../shared/constants/pagination/pagination.constants';
+} from '../../shared/constants/pagination/pagination.constants.js';
 
-import { SORT_DIRECTION, SortDirection } from '../../shared/constants/sort/sort.constants';
+import { SORT_DIRECTION, SortDirection } from '../../shared/constants/sort/sort.constants.js';
 
 interface Filters {
   page?: number;
@@ -86,37 +86,38 @@ export default class MysqlRepository {
       const sqlCount = this.buildQueryCount(filterConditions);
       const sqlData = this.buildQueryData(filterConditions, perPage, offset, sortBy, sortOrder);
 
-      const [countRows] = await pool.query(sqlCount, filterParams) as any[];
-      const [dataRows] = await pool.query(sqlData, filterParams) as any[];
+      const [countRows]: any[] = await pool.query(sqlCount, filterParams);
+      const [dataRows]: any[] = await pool.query(sqlData, filterParams);
 
       return this.formatResultItems(dataRows as City[], {
-        currentPage,
-        perPage,
+        currentPage: currentPage,
+        perPage: perPage,
         totalItems: parseInt(countRows[0].count, 10),
       });
 
     } catch (error) {
       console.error(`Error retrieving ${ITEMS_NAME}:`, error);
+
       return null;
     }
   }
 
   private formatResultItems(
     data: City[],
-    { currentPage, perPage, totalItems }: PaginationInput
+    { currentPage, perPage, totalItems }: PaginationInput,
   ): any {
     const totalPages = Math.ceil(totalItems / perPage);
 
     return {
       metadata: {
         pagination: {
-          currentPage,
-          perPage,
-          totalItems,
-          totalPages,
+          currentPage: currentPage,
+          perPage: perPage,
+          totalItems: totalItems,
+          totalPages: totalPages,
         },
       },
-      data,
+      data: data,
     };
   }
 
@@ -135,7 +136,7 @@ export default class MysqlRepository {
     limit: number,
     offset: number,
     sortBy: string = 'name',
-    sortOrder: SortDirection = SORT_DIRECTION.ASC
+    sortOrder: SortDirection = SORT_DIRECTION.ASC,
   ): string {
     return `
       SELECT 
@@ -156,11 +157,45 @@ export default class MysqlRepository {
   }
 
   async getItemById(id: number): Promise<City | null> {
-    const [rows] = await pool.query(
+    const [rows]: any[] = await pool.query(
       `SELECT id, name FROM ${TABLE_NAME} WHERE id = ?`,
-      [id]
-    ) as any[];
+      [id],
+    );
 
     return rows.length ? rows[0] as City : null;
+  }
+
+  async createItem(data: Partial<City>): Promise<City> {
+    const { name } = data;
+    const [result]: any[] = await pool.query(
+      `INSERT INTO ${TABLE_NAME} (name) VALUES (?)`,
+      [name],
+    );
+
+    return this.getItemById(result.insertId) as Promise<City>;
+  }
+
+  async updateItem(id: number, data: Partial<City>): Promise<City | null> {
+    const { name } = data;
+    await pool.query(`UPDATE ${TABLE_NAME} SET name = ? WHERE id = ?`, [name, id]);
+
+    return this.getItemById(id);
+  }
+
+  async deleteItem(id: number): Promise<City | null> {
+    const item = await this.getItemById(id);
+    if (!item) { return null; }
+    await pool.query(`DELETE FROM ${TABLE_NAME} WHERE id = ?`, [id]);
+
+    return item;
+  }
+
+  async existsByName(name: string): Promise<boolean> {
+    const [rows]: any[] = await pool.query(
+      `SELECT 1 FROM ${TABLE_NAME} WHERE LOWER(name) = LOWER(?) LIMIT 1`,
+      [name],
+    );
+
+    return rows.length > 0;
   }
 }

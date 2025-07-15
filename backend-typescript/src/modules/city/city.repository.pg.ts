@@ -1,17 +1,17 @@
-import pool from '../../core/database/clients/postgres/native.client';
+import pool from '../../core/database/clients/postgres/native.client.js';
 
 import {
   addFilterCondition,
   adaptSortField,
-} from '../../shared/utils/query/query-utils';
+} from '../../shared/utils/query/query-utils.js';
 
 import {
   DEFAULT_ITEMS_PER_PAGE,
   DEFAULT_MIN_ENTITY_ID,
   MAX_ITEMS_PER_PAGE,
-} from '../../shared/constants/pagination/pagination.constants';
+} from '../../shared/constants/pagination/pagination.constants.js';
 
-import { SORT_DIRECTION, SortDirection } from '../../shared/constants/sort/sort.constants';
+import { SORT_DIRECTION, SortDirection } from '../../shared/constants/sort/sort.constants.js';
 
 interface Filters {
   page?: number;
@@ -28,7 +28,6 @@ interface PaginationInput {
   currentPage: number;
   perPage: number;
   totalItems: number;
-  totals?: any; // ignoré dans le calcul mais laissé comme dans ton code
 }
 
 interface Entity {
@@ -40,11 +39,24 @@ interface Entity {
   continentCode: string;
 }
 
+interface PaginatedResult<T> {
+  metadata: {
+    pagination: {
+      currentPage: number;
+      perPage: number;
+      totalItems: number;
+      totalPages: number;
+    };
+  };
+  data: T[];
+}
+
 const ITEMS_NAME = 'country';
 const TABLE_NAME = 'country';
 
 export default class PgRepository {
-  async getItems(filters: Filters = {}): Promise<any> {
+
+  async getItems(filters: Filters = {}): Promise<PaginatedResult<Entity> | null> {
     try {
       const {
         page = 1,
@@ -87,43 +99,82 @@ export default class PgRepository {
       const sqlCount = this.buildQueryCount(filterConditions);
       const sqlData = this.buildQueryData(filterConditions, perPage, offset, sortBy, sortOrder);
 
-      console.log('00000000001:' + sqlData)
-      console.log('00000000001:' + sqlCount)
-      console.log('00000000001:' + JSON.stringify(filterParams))
-
       const [countResult, dataResult] = await Promise.all([
         pool.query(sqlCount, filterParams),
         pool.query(sqlData, filterParams),
       ]);
 
       return this.formatResultItems(dataResult.rows, {
-        currentPage,
-        perPage,
+        currentPage: currentPage,
+        perPage: perPage,
         totalItems: parseInt(countResult.rows[0].count, 10),
       });
 
     } catch (error) {
       console.error(`Error retrieving ${ITEMS_NAME}:`, error);
+
       return null;
     }
   }
 
-  private formatResultItems(
-    data: Entity[],
-    { currentPage, perPage, totalItems }: PaginationInput
-  ): any {
-    const totalPages = Math.ceil(totalItems / perPage);
+  async getItemById(id: number): Promise<Entity | null> {
+    const { rows } = await pool.query(`SELECT * FROM ${TABLE_NAME} WHERE id = $1`, [id]);
+    if (!rows.length) { return null; }
+
+    return rows[0] as Entity;
+  }
+
+  async createItem(data: Partial<Entity>): Promise<Entity> {
+    const { name } = data;
+    const { rows } = await pool.query(
+      `INSERT INTO ${TABLE_NAME} (name) VALUES ($1) RETURNING *`,
+      [name],
+    );
+
+    return rows[0] as Entity;
+  }
+
+  async updateItem(id: number, data: Partial<Entity>): Promise<Entity | null> {
+    const { name } = data;
+    const { rows } = await pool.query(
+      `UPDATE ${TABLE_NAME} SET name = $1 WHERE id = $2 RETURNING *`,
+      [name, id],
+    );
+
+    return rows.length ? (rows[0] as Entity) : null;
+  }
+
+  async deleteItem(id: number): Promise<boolean> {
+    const { rows } = await pool.query(
+      `DELETE FROM ${TABLE_NAME} WHERE id = $1 RETURNING id`,
+      [id],
+    );
+
+    return rows.length > 0;
+  }
+
+  async existsByName(name: string): Promise<boolean> {
+    const { rows } = await pool.query(
+      `SELECT 1 FROM ${TABLE_NAME} WHERE LOWER(name) = LOWER($1) LIMIT 1`,
+      [name],
+    );
+
+    return rows.length > 0;
+  }
+
+  private formatResultItems(data: Entity[], pagination: PaginationInput): PaginatedResult<Entity> {
+    const totalPages = Math.ceil(pagination.totalItems / pagination.perPage);
 
     return {
       metadata: {
         pagination: {
-          currentPage,
-          perPage,
-          totalItems,
-          totalPages,
+          currentPage: pagination.currentPage,
+          perPage: pagination.perPage,
+          totalItems: pagination.totalItems,
+          totalPages: totalPages,
         },
       },
-      data,
+      data: data,
     };
   }
 
@@ -140,7 +191,7 @@ export default class PgRepository {
     limit: number,
     offset: number,
     sortBy: string = 'name',
-    sortOrder: SortDirection = SORT_DIRECTION.ASC
+    sortOrder: SortDirection = SORT_DIRECTION.ASC,
   ): string {
     return `
       SELECT 
@@ -160,4 +211,3 @@ export default class PgRepository {
     `;
   }
 }
-

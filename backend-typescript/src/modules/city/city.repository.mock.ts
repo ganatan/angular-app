@@ -1,6 +1,7 @@
 import { City } from './city.model';
 import { ITEMS_MOCK_DATA } from '../../data/mocks/city.mock-data';
 import { BACKEND_MOCK_SUFFIX } from '../../shared/constants/routes/backend-mock.constants';
+import { CityRepositoryInterface, PaginatedCityResult } from './city.repository.interface';
 
 interface Filters {
   page?: number;
@@ -18,28 +19,14 @@ interface Filters {
   densityMax?: number;
 }
 
-interface PaginationMetadata {
-  pagination: {
-    currentPage: number;
-    perPage: number;
-    totalItems: number;
-    totalPages: number;
-  };
-}
-
-interface PaginatedResult {
-  metadata: PaginationMetadata;
-  data: City[];
-}
-
-export default class MockRepository {
+export default class MockRepository implements CityRepositoryInterface {
   private items: City[];
 
   constructor() {
     this.items = JSON.parse(JSON.stringify(ITEMS_MOCK_DATA)) as City[];
   }
 
-  async getItems(filters: Filters = {}): Promise<PaginatedResult> {
+  async getItems(filters: Filters = {}): Promise<PaginatedCityResult> {
     const {
       page = 1,
       size = 10,
@@ -63,15 +50,11 @@ export default class MockRepository {
     let filteredItems = [...this.items];
 
     if (name) {
-      filteredItems = filteredItems.filter(item =>
-        item.name.toLowerCase().includes(name.toLowerCase())
-      );
+      filteredItems = filteredItems.filter(item => item.name.toLowerCase().includes(name.toLowerCase()));
     }
 
     if (code) {
-      filteredItems = filteredItems.filter(item =>
-        item.code.toLowerCase().includes(code.toLowerCase())
-      );
+      filteredItems = filteredItems.filter(item => item.code.toLowerCase().includes(code.toLowerCase()));
     }
 
     if (areaMin !== null) {
@@ -105,12 +88,13 @@ export default class MockRepository {
     const sortField = sort.replace(/^-/, '') as keyof City;
     const sortOrder = sort.startsWith('-') ? -1 : 1;
 
-    filteredItems.sort((a, b) => {
-      const valueA = a[sortField];
-      const valueB = b[sortField];
+    filteredItems.sort((itemA, itemB) => {
+      const valueA = itemA[sortField];
+      const valueB = itemB[sortField];
 
-      if (valueA < valueB) return -1 * sortOrder;
-      if (valueA > valueB) return 1 * sortOrder;
+      if (valueA < valueB) { return -1 * sortOrder; }
+      if (valueA > valueB) { return 1 * sortOrder; }
+
       return 0;
     });
 
@@ -125,44 +109,45 @@ export default class MockRepository {
     return {
       metadata: {
         pagination: {
-          currentPage,
-          perPage,
-          totalItems,
-          totalPages,
+          currentPage: currentPage,
+          perPage: perPage,
+          totalItems: totalItems,
+          totalPages: totalPages,
         },
       },
-      data,
+      data: data,
     };
   }
 
-  // async getItemById(id: number): Promise<City | null> {
-  //   return this.items.find(item => item.id === id) || null;
-  // }
+  async getItemById(id: number): Promise<City | null> {
+    return this.items.find(item => item.id === id) || null;
+  }
 
-  // async createItem(data: City): Promise<City> {
-  //   const newItem = { id: this.items.length + 1, ...data };
-  //   this.items.push(newItem);
-  //   return newItem;
-  // }
+  async createItem(data: City): Promise<City> {
+    const { id, ...rest } = data;
+    const newItem: City = { id: this.items.length + 1, ...rest };
+    this.items.push(newItem);
 
-  // async updateItem(id: number, data: Partial<City>): Promise<City | null> {
-  //   const index = this.items.findIndex(item => item.id === id);
-  //   if (index === -1) return null;
+    return newItem;
+  }
 
-  //   this.items[index] = { ...this.items[index], ...data };
-  //   return this.items[index];
-  // }
+  async updateItem(id: number, data: City): Promise<City> {
+    const index = this.items.findIndex(item => item.id === id);
+    if (index === -1) { throw new Error('Item not found'); }
 
-  // async deleteItem(id: number): Promise<City | null> {
-  //   const index = this.items.findIndex(item => item.id === id);
-  //   if (index === -1) return null;
+    this.items[index] = { ...this.items[index], ...data };
 
-  //   return this.items.splice(index, 1)[0] || null;
-  // }
+    return this.items[index];
+  }
 
-  // async existsByName(name: string): Promise<boolean> {
-  //   return this.items.some(
-  //     item => item.name.toLowerCase() === name.toLowerCase()
-  //   );
-  // }
+  async deleteItem(id: number): Promise<void> {
+    const index = this.items.findIndex(item => item.id === id);
+    if (index !== -1) {
+      this.items.splice(index, 1);
+    }
+  }
+
+  async existsByName(name: string): Promise<boolean> {
+    return this.items.some(item => item.name.toLowerCase() === name.toLowerCase());
+  }
 }
