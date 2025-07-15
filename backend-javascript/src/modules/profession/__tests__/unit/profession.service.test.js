@@ -1,5 +1,5 @@
-import CommandService from '../../services/profession.command.service.js';
-import { ITEM_CONSTANTS } from '../../constants/profession.constant.js';
+import CommandService from '../../profession.command.service.js';
+import { ITEM_CONSTANTS } from '../../profession.constant.js';
 
 describe('ProfessionCommandService', () => {
   let service;

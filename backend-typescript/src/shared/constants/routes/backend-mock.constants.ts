@@ -1,1 +1,1 @@
-export const BACKEND_MOCK_SUFFIX: string = 'Typescript-Backend-Mock';
+export const BACKEND_MOCK_SUFFIX: string = 'typescript-backend-mock';

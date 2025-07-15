@@ -1,4 +1,4 @@
-import { validateItem } from '../../schemas/profession.schema.js';
+import { validateItem } from '../../profession.schema.js';
 
 describe('validateItem', () => {
 
