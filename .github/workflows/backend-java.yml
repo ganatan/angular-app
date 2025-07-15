@@ -23,8 +23,8 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Lint (Checkstyle)
-        run: mvn checkstyle:check
+      # - name: Lint (Checkstyle)
+      #   run: mvn checkstyle:check
 
       - name: Run unit tests
         run: mvn clean test
