@@ -28,6 +28,7 @@ app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(initLocals);
+
 configureSecurity(app);
 
 if (['development', 'test'].includes(appConfig.app.nodeEnv)) {

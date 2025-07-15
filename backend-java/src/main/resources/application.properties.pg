@@ -9,11 +9,11 @@ db.client=sql
 spring.application.name=backend-java
 server.port=8080
 
-# === MySQL Configuration ===
-spring.datasource.url=jdbc:mysql://localhost:3306/backend_javascript
-spring.datasource.username=root
+# === PostgreSQL Configuration ===
+spring.datasource.url=jdbc:postgresql://localhost:5432/backend_javascript
+spring.datasource.username=postgres
 spring.datasource.password=Trustno1
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.driver-class-name=org.postgresql.Driver
 
 # === Hibernate / JPA ===
 spring.jpa.hibernate.ddl-auto=update
