@@ -5,14 +5,15 @@ import { validateItem } from './city.schema.js';
 class Controller {
   constructor(service) {
     this.service = service;
-    this.getItems = this.getItems.bind(this);
-    this.getItemById = this.getItemById.bind(this);
-    this.createItem = this.createItem.bind(this);
-    this.updateItem = this.updateItem.bind(this);
-    this.deleteItem = this.deleteItem.bind(this);
+    // this.getItems = this.getItems.bind(this);
+    // this.getItemById = this.getItemById.bind(this);
+    // this.createItem = this.createItem.bind(this);
+    // this.updateItem = this.updateItem.bind(this);
+    // this.deleteItem = this.deleteItem.bind(this);
   }
 
-  async getItems(req, res, next) {
+  // async getItems(req, res, next) {
+  getItems = async (req, res, next) => {
     try {
       const result = await this.service.getItems(req.query);
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
@@ -24,7 +25,7 @@ class Controller {
     }
   }
 
-  async getItemById(req, res, next) {
+  getItemById = async (req, res, next) => {
     try {
       const result = await this.service.getItemById(parseInt(req.params.id));
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
@@ -48,7 +49,7 @@ class Controller {
     }
   }
 
-  async createItem(req, res, next) {
+  createItem = async (req, res, next) => {
     try {
       validateItem(req.body);
       const result = await this.service.createItem(req.body);
@@ -67,7 +68,7 @@ class Controller {
     }
   }
 
-  async updateItem(req, res, next) {
+  updateItem = async (req, res, next) => {
     try {
       validateItem(req.body);
       const result = await this.service.updateItem(parseInt(req.params.id), req.body);
@@ -86,7 +87,7 @@ class Controller {
     }
   }
 
-  async deleteItem(req, res, next) {
+  deleteItem = async (req, res, next) => {
     try {
       const result = await this.service.deleteItem(parseInt(req.params.id));
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
