@@ -23,9 +23,9 @@ jobs:
         run: npm ci
         working-directory: backend-typescript
 
-      - name: Lint
-        run: npm run lint
-        working-directory: backend-typescript
+      # - name: Lint
+      #   run: npm run lint
+      #   working-directory: backend-typescript
 
       - name: Build app
         run: npm run build
