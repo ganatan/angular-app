@@ -12,7 +12,6 @@ export default class Controller {
     this.service = service;
   }
 
-
   getItems = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const result = await this.service.getItems(req.query);
@@ -22,7 +21,7 @@ export default class Controller {
     } catch (error) {
       return next(error);
     }
-  }
+  };
 
   getItemById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
@@ -48,7 +47,7 @@ export default class Controller {
 
       return next(error);
     }
-  }
+  };
 
   createItem = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
@@ -69,7 +68,7 @@ export default class Controller {
 
       return next(error);
     }
-  }
+  };
 
   updateItem = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
@@ -89,7 +88,7 @@ export default class Controller {
 
       return next(error);
     }
-  }
+  };
 
   deleteItem = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
@@ -105,5 +104,5 @@ export default class Controller {
 
       return next(error);
     }
-  }
+  };
 }
