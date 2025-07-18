@@ -16,6 +16,7 @@ import requestLogger from './infrastructure/logger/request-logger.js';
 
 import fakeAuth from './middlewares/auth/fake-auth.js';
 
+import metricsRoutes from './routes/metrics.routes.js';
 import healthRoutes from './routes/health.routes.js';
 import versionRoutes from './routes/version.routes.js';
 import swaggerRoutes from './routes/swagger.routes.js';
@@ -38,6 +39,7 @@ if (['development', 'test'].includes(appConfig.app.nodeEnv)) {
 app.use(correlationIdMiddleware);
 app.use(requestLogger);
 
+app.use(metricsRoutes);
 app.use(healthRoutes);
 
 app.use(versionRoutes);
