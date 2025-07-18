@@ -46,7 +46,8 @@
     "compose:up:force": "docker-compose up -d --build --force-recreate",
     "compose:down": "docker-compose down",
     "compose:restart": "docker-compose down && docker-compose up -d",
-    "compose:rebuild-force": "docker-compose down && docker-compose up -d --build --force-recreate"
+    "compose:rebuild-force": "docker-compose down && docker-compose up -d --build --force-recreate",
+    "compose:monitoring": "docker compose -f docker-compose.monitoring.yml up -d"
   },
   "keywords": [
     "nodejs",
@@ -85,8 +86,9 @@
     "swagger-jsdoc": "6.2.8",
     "swagger-ui-express": "5.0.1",
     "uuid": "^11.1.0",
-    "winston": "3.17.0",
+    "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0",
+    "winston-elasticsearch": "^0.19.0",
     "zod": "3.25.75"
   }
 }

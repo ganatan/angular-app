@@ -3,6 +3,8 @@ import compression from 'compression';
 
 import appConfig from './config/app.config.js';
 
+import logger from './infrastructure/logger/logger.js';
+
 import configureSecurity from './middlewares/security/security.js';
 
 import initLocals from './middlewares/core/init-locals.js';
@@ -38,6 +40,12 @@ if (['development', 'test'].includes(appConfig.app.nodeEnv)) {
 
 app.use(correlationIdMiddleware);
 app.use(requestLogger);
+
+app.get('/test', (req, res) => {
+  logger.info('Test ELK réussi : requête GET /test', { route: '/test' });
+  console.log('Requête /test : log envoyé vers ELK');
+  res.send('Log envoyé vers ElasticSearch');
+});
 
 app.use(metricsRoutes);
 app.use(healthRoutes);

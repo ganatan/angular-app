@@ -1,5 +1,14 @@
 import { createLogger, transports, format } from 'winston';
 import DailyRotateFile from 'winston-daily-rotate-file';
+import { ElasticsearchTransport } from 'winston-elasticsearch';
+
+const esTransport = new ElasticsearchTransport({
+  level: 'info',
+  indexPrefix: 'backend-javascript-logs',
+  clientOpts: {
+    node: process.env.ELASTICSEARCH_NODE || 'http://localhost:9200',
+  },
+});
 
 const logger = createLogger({
   level: process.env.LOG_LEVEL || 'warn',
@@ -10,6 +19,7 @@ const logger = createLogger({
     format.json(),
   ),
   transports: [
+    esTransport,
     new DailyRotateFile({
       filename: 'logs/error-%DATE%.log',
       datePattern: 'YYYY-MM-DD',
