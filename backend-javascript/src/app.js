@@ -11,6 +11,7 @@ import notFoundHandler from './middlewares/error/not-found-handler.js';
 import responseHandler from './middlewares/response/response-handler.js';
 import errorHandler from './middlewares/error/error-handler.js';
 
+import correlationIdMiddleware from './middlewares/core/correlation-id.js';
 import requestLogger from './infrastructure/logger/request-logger.js';
 
 import fakeAuth from './middlewares/auth/fake-auth.js';
@@ -34,6 +35,7 @@ if (['development', 'test'].includes(appConfig.app.nodeEnv)) {
   app.use(fakeAuth(appConfig.app.fakeUser));
 }
 
+app.use(correlationIdMiddleware);
 app.use(requestLogger);
 
 app.use(healthRoutes);

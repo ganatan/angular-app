@@ -19,6 +19,8 @@ class Controller {
   getItems = async (req, res, next) => {
     try {
 
+      // throw new Error('Erreur volontaire');
+
       const result = await this.service.getItems(req.query);
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
 

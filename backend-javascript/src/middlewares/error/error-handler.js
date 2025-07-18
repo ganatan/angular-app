@@ -19,9 +19,10 @@ function errorHandler(err, req, res, next) {
     context: context,
     details: details,
     stack: err.stack,
+    correlationId: req.correlationId,
   };
 
-  if (statusCode >= 500) {
+  if (statusCode >= 500 || statusCode === 401 || statusCode === 403 || statusCode === 409) {
     logger.error(logMessage, logData);
   } else {
     logger.warn(logMessage, logData);
