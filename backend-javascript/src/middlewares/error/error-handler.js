@@ -10,19 +10,28 @@ function errorHandler(err, req, res, next) {
     timestamp: new Date().toISOString(),
   };
 
-  logger.error(`[ERROR] ${statusCode}: ${message}`);
-  if (context) {
-    logger.error(`[CONTEXT] ${context}`);
+  const logMessage = `[${req.method}] ${req.originalUrl} - ${statusCode} ${message}`;
+  const logData = {
+    method: req.method,
+    route: req.originalUrl,
+    statusCode: statusCode,
+    message: message,
+    context: context,
+    details: details,
+    stack: err.stack,
+  };
+
+  if (statusCode >= 500) {
+    logger.error(logMessage, logData);
+  } else {
+    logger.warn(logMessage, logData);
   }
 
   res.status(statusCode).json({
     success: false,
-    error: {
-      message,
-      context,
-      details,
-    },
+    error: { message, context, details },
   });
 }
 
 export default errorHandler;
+

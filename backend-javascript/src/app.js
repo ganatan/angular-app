@@ -12,7 +12,6 @@ import responseHandler from './middlewares/response/response-handler.js';
 import errorHandler from './middlewares/error/error-handler.js';
 
 import requestLogger from './infrastructure/logger/request-logger.js';
-import errorLogger from './infrastructure/logger/error-logger.js';
 
 import fakeAuth from './middlewares/auth/fake-auth.js';
 
@@ -35,9 +34,9 @@ if (['development', 'test'].includes(appConfig.app.nodeEnv)) {
   app.use(fakeAuth(appConfig.app.fakeUser));
 }
 
-app.use(healthRoutes);
-
 app.use(requestLogger);
+
+app.use(healthRoutes);
 
 app.use(versionRoutes);
 app.use(swaggerRoutes);
@@ -49,6 +48,5 @@ app.use(notFoundHandler);
 app.use(responseHandler);
 
 app.use(errorHandler);
-app.use(errorLogger);
 
 export default app;

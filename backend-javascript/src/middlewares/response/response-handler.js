@@ -5,7 +5,9 @@ function responseHandler(req, res, next) {
 
   const statusCode = res.locals.statusCode || 200;
   const payload = res.locals.data || null;
-  const response = { success: true };
+  const success = statusCode >= 200 && statusCode < 300;
+
+  const response = { success };
 
   if (payload && payload.metadata && payload.data) {
     response.metadata = payload.metadata;
