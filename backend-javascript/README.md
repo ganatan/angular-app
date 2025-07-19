@@ -2,7 +2,7 @@
 
 **👉 If you don’t speak French, the English version is here**: [![English](../../ui/version-en.png)](./README.en.md)
 
-Starter backend Node.js utilisant **ESM**, avec Express, Jest, ESLint et Webpack.
+Starter backend Node.js avec Express, Jest, ESLint et Webpack.
 
 ## 🚀 Fonctionnalités
 
