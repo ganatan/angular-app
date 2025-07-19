@@ -8,7 +8,7 @@
     "generate:version": "node tools/scripts/generate-version.js",
     "dev": "nodemon src/server-start",
     "dev:prod": "cross-env NODE_ENV=production nodemon src/server-start",
-    "start": "node src/server",
+    "start": "node src/server-start",
     "start:prod": "cross-env NODE_ENV=production node src/server-start",
     "lint": "eslint .",
     "test": "cross-env NODE_ENV=test jest",

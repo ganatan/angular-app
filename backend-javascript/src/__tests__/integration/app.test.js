@@ -1,7 +1,7 @@
 import request from 'supertest';
 import app from '../../app.js';
 
-import { BACKEND_MOCK_SUFFIX } from '../../shared/constants/routes/backend-mock.constants.js';
+// import { BACKEND_MOCK_SUFFIX } from '../../shared/constants/routes/backend-mock.constants.js';
 
 // describe('API /persons', () => {
 //   test('GET /persons should return status 200 and an array of 7 persons', async () => {
