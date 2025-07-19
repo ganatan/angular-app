@@ -22,7 +22,7 @@ describe('notFoundHandler Middleware', () => {
     expect(next).toHaveBeenCalledTimes(1);
     const errorArg = next.mock.calls[0][0];
     expect(errorArg).toBeInstanceOf(Error);
-    expect(errorArg.message).toBe('Resource not found');
+    expect(errorArg.message).toBe('Route not found');
     expect(errorArg.statusCode).toBe(404);
     expect(errorArg.context).toBe('GET /non-existing-route');
     expect(errorArg.details).toEqual(

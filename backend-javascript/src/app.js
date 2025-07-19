@@ -56,9 +56,7 @@ app.use(appRoutes);
 app.use(rootRoutes);
 
 app.use(notFoundHandler);
-
 app.use(responseHandler);
-
 app.use(errorHandler);
 
 export default app;

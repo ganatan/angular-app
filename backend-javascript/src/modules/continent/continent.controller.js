@@ -52,9 +52,11 @@ class Controller {
       return next();
     } catch (error) {
       if (error.message === ITEM_CONSTANTS.ALREADY_EXISTS) {
+
         return next({ statusCode: HTTP_STATUS.CONFLICT, message: error.message });
       }
       if (error.name === 'ValidationError') {
+
         return next({ statusCode: HTTP_STATUS.BAD_REQUEST, message: error.message });
       }
 

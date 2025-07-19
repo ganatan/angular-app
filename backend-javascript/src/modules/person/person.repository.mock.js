@@ -82,8 +82,13 @@ class MockRepository {
   }
 
   async existsByName(name) {
+    if (typeof name !== 'string') {
+      return false;
+    }
+
     return this.items.some(
-      item => item.name.toLowerCase() === name.toLowerCase(),
+      item =>
+        typeof item.name === 'string' && item.name.toLowerCase() === name.toLowerCase(),
     );
   }
 

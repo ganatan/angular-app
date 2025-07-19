@@ -5,11 +5,23 @@ import { validateItem } from './person.schema.js';
 const validatePositiveInteger = (value, fieldName = 'ID') => {
   const parsed = parseInt(value);
   if (isNaN(parsed) || parsed <= 0) {
-    throw new Error(`Invalid ${fieldName} parameter. Must be a positive integer.`);
+    return { valid: false, message: `Invalid ${fieldName} parameter. Must be a positive integer.`, value: value };
   }
 
-  return parsed;
+  return { valid: true, value: parsed };
 };
+
+const buildError = (statusCode, message, req, details = {}) => ({
+  statusCode: statusCode,
+  message: message,
+  context: `${req.method} ${req.originalUrl}`,
+  details: {
+    path: req.originalUrl,
+    errorCode: statusCode,
+    timestamp: new Date().toISOString(),
+    ...details,
+  },
+});
 
 class Controller {
   constructor(service) {
@@ -18,54 +30,29 @@ class Controller {
 
   getItems = async (req, res, next) => {
     try {
-
-      // throw new Error('Erreur volontaire');
-
       const result = await this.service.getItems(req.query);
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
 
       return next();
     } catch (error) {
-
       return next(error);
     }
   };
 
   getItemById = async (req, res, next) => {
     try {
-      const id = validatePositiveInteger(req.params.id);
+      const { valid, message, value } = validatePositiveInteger(req.params.id);
+      if (!valid) {
+        return next(buildError(HTTP_STATUS.BAD_REQUEST, message, req, { receivedId: req.params.id }));
+      }
 
-      const result = await this.service.getItemById(id);
+      const result = await this.service.getItemById(value);
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
 
       return next();
-
     } catch (error) {
-      if (error.message.includes('Invalid') && error.message.includes('parameter')) {
-        return next({
-          statusCode: HTTP_STATUS.BAD_REQUEST,
-          message: error.message,
-          context: `${req.method} ${req.originalUrl}`,
-          details: {
-            path: req.originalUrl,
-            errorCode: HTTP_STATUS.BAD_REQUEST,
-            timestamp: new Date().toISOString(),
-            receivedId: req.params.id,
-          },
-        });
-      }
-
       if (error.message === ITEM_CONSTANTS.NOT_FOUND) {
-        return next({
-          statusCode: HTTP_STATUS.NOT_FOUND,
-          message: error.message,
-          context: `${req.method} ${req.originalUrl}`,
-          details: {
-            path: req.originalUrl,
-            errorCode: HTTP_STATUS.NOT_FOUND,
-            timestamp: new Date().toISOString(),
-          },
-        });
+        return next(buildError(HTTP_STATUS.NOT_FOUND, error.message, req));
       }
 
       return next(error);
@@ -74,17 +61,20 @@ class Controller {
 
   createItem = async (req, res, next) => {
     try {
-      validateItem(req.body);
+      const validation = validateItem(req.body);
+      if (!validation.valid) {
+        return next({
+          statusCode: HTTP_STATUS.BAD_REQUEST,
+          message: validation.message,
+        });
+      }
       const result = await this.service.createItem(req.body);
       res.locals = { data: result, statusCode: HTTP_STATUS.CREATED };
 
       return next();
     } catch (error) {
       if (error.message === ITEM_CONSTANTS.ALREADY_EXISTS) {
-        return next({ statusCode: HTTP_STATUS.CONFLICT, message: error.message });
-      }
-      if (error.name === 'ValidationError') {
-        return next({ statusCode: HTTP_STATUS.BAD_REQUEST, message: error.message });
+        return next(buildError(HTTP_STATUS.CONFLICT, error.message, req));
       }
 
       return next(error);
@@ -93,43 +83,23 @@ class Controller {
 
   updateItem = async (req, res, next) => {
     try {
-      const id = validatePositiveInteger(req.params.id);
+      const { valid, message, value } = validatePositiveInteger(req.params.id);
+      if (!valid) {
+        return next(buildError(HTTP_STATUS.BAD_REQUEST, message, req, { receivedId: req.params.id }));
+      }
 
-      validateItem(req.body);
-      const result = await this.service.updateItem(id, req.body);
+      const validation = validateItem(req.body);
+      if (validation?.error) {
+        return next(buildError(HTTP_STATUS.BAD_REQUEST, validation.error, req));
+      }
+
+      const result = await this.service.updateItem(value, req.body);
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
 
       return next();
-
     } catch (error) {
-      if (error.message.includes('Invalid') && error.message.includes('parameter')) {
-        return next({
-          statusCode: HTTP_STATUS.BAD_REQUEST,
-          message: error.message,
-          context: `${req.method} ${req.originalUrl}`,
-          details: {
-            path: req.originalUrl,
-            errorCode: HTTP_STATUS.BAD_REQUEST,
-            timestamp: new Date().toISOString(),
-            receivedId: req.params.id,
-          },
-        });
-      }
-
       if (error.message === ITEM_CONSTANTS.NOT_FOUND) {
-        return next({
-          statusCode: HTTP_STATUS.NOT_FOUND,
-          message: error.message,
-          context: `${req.method} ${req.originalUrl}`,
-          details: {
-            path: req.originalUrl,
-            errorCode: HTTP_STATUS.NOT_FOUND,
-            timestamp: new Date().toISOString(),
-          },
-        });
-      }
-      if (error.name === 'ValidationError') {
-        return next({ statusCode: HTTP_STATUS.BAD_REQUEST, message: error.message });
+        return next(buildError(HTTP_STATUS.NOT_FOUND, error.message, req));
       }
 
       return next(error);
@@ -138,46 +108,23 @@ class Controller {
 
   deleteItem = async (req, res, next) => {
     try {
-      const id = validatePositiveInteger(req.params.id);
+      const { valid, message, value } = validatePositiveInteger(req.params.id);
+      if (!valid) {
+        return next(buildError(HTTP_STATUS.BAD_REQUEST, message, req, { receivedId: req.params.id }));
+      }
 
-      const result = await this.service.deleteItem(id);
+      const result = await this.service.deleteItem(value);
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
 
       return next();
-
     } catch (error) {
-      if (error.message.includes('Invalid') && error.message.includes('parameter')) {
-        return next({
-          statusCode: HTTP_STATUS.BAD_REQUEST,
-          message: error.message,
-          context: `${req.method} ${req.originalUrl}`,
-          details: {
-            path: req.originalUrl,
-            errorCode: HTTP_STATUS.BAD_REQUEST,
-            timestamp: new Date().toISOString(),
-            receivedId: req.params.id,
-          },
-        });
-      }
-
       if (error.message === ITEM_CONSTANTS.NOT_FOUND) {
-        return next({
-          statusCode: HTTP_STATUS.NOT_FOUND,
-          message: error.message,
-          context: `${req.method} ${req.originalUrl}`,
-          details: {
-            path: req.originalUrl,
-            errorCode: HTTP_STATUS.NOT_FOUND,
-            timestamp: new Date().toISOString(),
-          },
-        });
+        return next(buildError(HTTP_STATUS.NOT_FOUND, error.message, req));
       }
 
       return next(error);
     }
   };
-
 }
 
 export default Controller;
-
