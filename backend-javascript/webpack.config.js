@@ -8,9 +8,9 @@ export default (env, argv) => {
   const isProduction = argv.mode === 'production';
 
   return {
-    entry: './src/server.js',
+    entry: './src/server-start.js',
     output: {
-      filename: 'server.js',
+      filename: 'server-start.js',
       path: path.resolve(__dirname, 'dist')
     },
     externals: {

@@ -2,10 +2,12 @@ import { HTTP_STATUS } from '../../shared/constants/http/http-status.js';
 import { ITEM_CONSTANTS } from './person.constant.js';
 import { validateItem } from './person.schema.js';
 
+import { redisClient } from '../../core/cache/redis.client.js';
+
 const validatePositiveInteger = (value, fieldName = 'ID') => {
   const parsed = parseInt(value);
   if (isNaN(parsed) || parsed <= 0) {
-    return { valid: false, message: `Invalid ${fieldName} parameter. Must be a positive integer.`, value: value };
+    return { valid: false, message: `Invalid ${fieldName} parameter. Must be a positive integer.` };
   }
 
   return { valid: true, value: parsed };
@@ -28,10 +30,37 @@ class Controller {
     this.service = service;
   }
 
+  handleKnownErrors = (error, req, next) => {
+    const errorMap = {
+      [ITEM_CONSTANTS.NOT_FOUND]: HTTP_STATUS.NOT_FOUND,
+      [ITEM_CONSTANTS.ALREADY_EXISTS]: HTTP_STATUS.CONFLICT,
+    };
+
+    const statusCode = errorMap[error.message];
+    if (statusCode) {
+      return next(buildError(statusCode, error.message, req));
+    }
+
+    return next(error);
+  };
+
   getItems = async (req, res, next) => {
     try {
+      const cacheKey = 'persons:all';
+      const cached = await redisClient.get(cacheKey);
+      if (cached) {
+        res.locals.data = JSON.parse(cached);
+        res.locals.statusCode = HTTP_STATUS.OK;
+
+        return next();
+      }
+
       const result = await this.service.getItems(req.query);
-      res.locals = { data: result, statusCode: HTTP_STATUS.OK };
+
+      await redisClient.set(cacheKey, JSON.stringify(result), { EX: 300 });
+
+      res.locals.data = result;
+      res.locals.statusCode = HTTP_STATUS.OK;
 
       return next();
     } catch (error) {
@@ -47,15 +76,12 @@ class Controller {
       }
 
       const result = await this.service.getItemById(value);
-      res.locals = { data: result, statusCode: HTTP_STATUS.OK };
+      res.locals.data = result;
+      res.locals.statusCode = HTTP_STATUS.OK;
 
       return next();
     } catch (error) {
-      if (error.message === ITEM_CONSTANTS.NOT_FOUND) {
-        return next(buildError(HTTP_STATUS.NOT_FOUND, error.message, req));
-      }
-
-      return next(error);
+      return this.handleKnownErrors(error, req, next);
     }
   };
 
@@ -63,21 +89,16 @@ class Controller {
     try {
       const validation = validateItem(req.body);
       if (!validation.valid) {
-        return next({
-          statusCode: HTTP_STATUS.BAD_REQUEST,
-          message: validation.message,
-        });
+        return next(buildError(HTTP_STATUS.BAD_REQUEST, validation.message, req));
       }
+
       const result = await this.service.createItem(req.body);
-      res.locals = { data: result, statusCode: HTTP_STATUS.CREATED };
+      res.locals.data = result;
+      res.locals.statusCode = HTTP_STATUS.CREATED;
 
       return next();
     } catch (error) {
-      if (error.message === ITEM_CONSTANTS.ALREADY_EXISTS) {
-        return next(buildError(HTTP_STATUS.CONFLICT, error.message, req));
-      }
-
-      return next(error);
+      return this.handleKnownErrors(error, req, next);
     }
   };
 
@@ -89,20 +110,17 @@ class Controller {
       }
 
       const validation = validateItem(req.body);
-      if (validation?.error) {
-        return next(buildError(HTTP_STATUS.BAD_REQUEST, validation.error, req));
+      if (!validation.valid) {
+        return next(buildError(HTTP_STATUS.BAD_REQUEST, validation.message, req));
       }
 
       const result = await this.service.updateItem(value, req.body);
-      res.locals = { data: result, statusCode: HTTP_STATUS.OK };
+      res.locals.data = result;
+      res.locals.statusCode = HTTP_STATUS.OK;
 
       return next();
     } catch (error) {
-      if (error.message === ITEM_CONSTANTS.NOT_FOUND) {
-        return next(buildError(HTTP_STATUS.NOT_FOUND, error.message, req));
-      }
-
-      return next(error);
+      return this.handleKnownErrors(error, req, next);
     }
   };
 
@@ -114,15 +132,12 @@ class Controller {
       }
 
       const result = await this.service.deleteItem(value);
-      res.locals = { data: result, statusCode: HTTP_STATUS.OK };
+      res.locals.data = result;
+      res.locals.statusCode = HTTP_STATUS.OK;
 
       return next();
     } catch (error) {
-      if (error.message === ITEM_CONSTANTS.NOT_FOUND) {
-        return next(buildError(HTTP_STATUS.NOT_FOUND, error.message, req));
-      }
-
-      return next(error);
+      return this.handleKnownErrors(error, req, next);
     }
   };
 }

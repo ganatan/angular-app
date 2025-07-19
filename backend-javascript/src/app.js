@@ -9,6 +9,8 @@ import configureSecurity from './middlewares/security/security.js';
 
 import initLocals from './middlewares/core/init-locals.js';
 
+// import redisClient from './core/cache/redis.client.js';
+
 import notFoundHandler from './middlewares/error/not-found-handler.js';
 import responseHandler from './middlewares/response/response-handler.js';
 import errorHandler from './middlewares/error/error-handler.js';
@@ -41,11 +43,24 @@ if (['development', 'test'].includes(appConfig.app.nodeEnv)) {
 app.use(correlationIdMiddleware);
 app.use(requestLogger);
 
-app.get('/test', (req, res) => {
+app.get('/test-elk', (req, res) => {
   logger.info('Test ELK réussi : requête GET /test', { route: '/test' });
   console.log('Requête /test : log envoyé vers ELK');
   res.send('Log envoyé vers ElasticSearch');
 });
+
+// app.get('/test-redis', async (req, res, next) => {
+//   try {
+//     await redisClient.set('test-redis', 'Redis is working!');
+//     const value = await redisClient.get('test-redis');
+
+//     console.log('Requête /test-redis : valeur dans Redis =', value);
+
+//     res.send(`Redis test : ${value}`);
+//   } catch (error) {
+//     next(error);
+//   }
+// });
 
 app.use(metricsRoutes);
 app.use(healthRoutes);

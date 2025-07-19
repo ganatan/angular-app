@@ -6,10 +6,10 @@
   "scripts": {
     "generate-project-structure": "node tools/scripts/generate-project-structure.js",
     "generate:version": "node tools/scripts/generate-version.js",
-    "dev": "nodemon src/server",
-    "dev:prod": "cross-env NODE_ENV=production nodemon src/server",
+    "dev": "nodemon src/server-start",
+    "dev:prod": "cross-env NODE_ENV=production nodemon src/server-start",
     "start": "node src/server",
-    "start:prod": "cross-env NODE_ENV=production node src/server",
+    "start:prod": "cross-env NODE_ENV=production node src/server-start",
     "lint": "eslint .",
     "test": "cross-env NODE_ENV=test jest",
     "test:failures": "cross-env NODE_ENV=test jest --onlyFailures",
@@ -27,7 +27,7 @@
     "test:e2e": "cross-env NODE_ENV=test jest src/__tests__/e2e",
     "build": "npm run generate:version && webpack --mode=production",
     "build:dev": "npm run generate:version && webpack --mode=development",
-    "serve": "node dist/server.js",
+    "serve": "node dist/server-start.js",
     "docker:remove-all-containers": "FOR /f %i IN ('docker ps -a -q') DO docker rm -f %i",
     "docker:remove-all-images": "FOR /f %i IN ('docker images -q') DO docker rmi -f %i",
     "docker:remove-all-volumes": "FOR /f %i IN ('docker volume ls -q') DO docker volume rm %i",
@@ -49,7 +49,9 @@
     "compose:down": "docker-compose down",
     "compose:restart": "docker-compose down && docker-compose up -d",
     "compose:rebuild-force": "docker-compose down && docker-compose up -d --build --force-recreate",
-    "compose:monitoring": "docker compose -f docker-compose.monitoring.yml up -d"
+    "compose:monitoring": "docker compose -f docker-compose.monitoring.yml up -d",
+    "compose:monitoring:clean": "docker compose -f docker-compose.monitoring.yml down --volumes --rmi all",
+    "compose:logstash": "docker compose -f docker-compose.logstash.yml up -d"
   },
   "keywords": [
     "nodejs",
@@ -85,6 +87,7 @@
     "nodemon": "3.1.10",
     "pg": "8.16.3",
     "prom-client": "^15.1.3",
+    "redis": "^5.6.0",
     "swagger-jsdoc": "6.2.8",
     "swagger-ui-express": "5.0.1",
     "uuid": "^11.1.0",

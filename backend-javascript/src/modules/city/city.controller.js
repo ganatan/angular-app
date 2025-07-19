@@ -2,6 +2,8 @@ import { HTTP_STATUS } from '../../shared/constants/http/http-status.js';
 import { ITEM_CONSTANTS } from './city.constant.js';
 import { validateItem } from './city.schema.js';
 
+import { redisClient } from '../../core/cache/redis.client.js';
+
 class Controller {
   constructor(service) {
     this.service = service;
@@ -9,7 +11,18 @@ class Controller {
 
   getItems = async (req, res, next) => {
     try {
+      const cacheKey = 'cities:all';
+      const cached = await redisClient.get(cacheKey);
+      if (cached) {
+        res.locals.data = JSON.parse(cached);
+        res.locals.statusCode = HTTP_STATUS.OK;
+
+        return next();
+      }
+
       const result = await this.service.getItems(req.query);
+      await redisClient.set(cacheKey, JSON.stringify(result), { EX: 300 });
+
       res.locals = { data: result, statusCode: HTTP_STATUS.OK };
 
       return next();

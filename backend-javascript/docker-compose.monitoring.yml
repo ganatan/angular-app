@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
 
   elasticsearch:
@@ -23,7 +21,7 @@ services:
     image: docker.elastic.co/logstash/logstash:8.14.0
     container_name: logstash
     volumes:
-      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - ./logstash/pipeline:/usr/share/logstash/pipeline
     environment:
       - LS_JAVA_OPTS=-Xms512m -Xmx512m
     ports:
@@ -42,3 +40,15 @@ services:
     container_name: grafana
     ports:
       - "3000:3000"
+
+  redis:
+    image: redis:7
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  redisinsight:
+    image: redislabs/redisinsight:1.14.0
+    container_name: redisinsight
+    ports:
+      - "8001:8001" 
