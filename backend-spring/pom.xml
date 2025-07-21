@@ -1,0 +1,145 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.ganatan</groupId>
+  <artifactId>backend-spring</artifactId>
+  <version>1.0.0</version>
+  <packaging>war</packaging>
+
+  <properties>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <spring.version>7.0.0-M6</spring.version>
+    <jackson.version>2.19.1</jackson.version>
+    <jakarta.servlet.version>6.1.0</jakarta.servlet.version>
+    <junit.version>6.0.0-M1</junit.version>
+    <jacoco.version>0.8.11</jacoco.version>
+    <hamcrest.version>3.0</hamcrest.version>
+    <json-path.version>2.9.0</json-path.version>
+    <surefire.plugin.version>3.2.5</surefire.plugin.version>
+    <checkstyle.plugin.version>3.3.0</checkstyle.plugin.version>
+    <jacoco.plugin.version>0.8.11</jacoco.plugin.version>
+    
+	<checkstyle.version>10.26.1</checkstyle.version>
+    <maven.checkstyle.plugin.version>3.6.0</maven.checkstyle.plugin.version>
+
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>${jakarta.servlet.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    
+    <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-test</artifactId>
+	    <version>${spring.version}</version>
+	    <scope>test</scope>
+	</dependency>
+	<dependency>
+	    <groupId>org.hamcrest</groupId>
+	    <artifactId>hamcrest</artifactId>
+	    <version>${hamcrest.version}</version>
+	    <scope>test</scope>
+	</dependency>	
+	<dependency>
+	    <groupId>com.jayway.jsonpath</groupId>
+	    <artifactId>json-path</artifactId>
+	    <version>${json-path.version}</version>
+	    <scope>test</scope>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.mockito</groupId>
+	    <artifactId>mockito-core</artifactId>
+	    <version>5.11.0</version>
+	    <scope>test</scope>
+	</dependency>
+	
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    
+  </dependencies>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${surefire.plugin.version}</version>
+      </plugin>
+
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>${maven.checkstyle.plugin.version}</version>
+        <configuration>
+            <configLocation>checkstyle.xml</configLocation>
+            <consoleOutput>true</consoleOutput>
+            <failsOnError>false</failsOnError>
+        </configuration>
+        <dependencies>
+            <dependency>
+                <groupId>com.puppycrawl.tools</groupId>
+                <artifactId>checkstyle</artifactId>
+                <version>${checkstyle.version}</version>
+            </dependency>
+        </dependencies>
+    </plugin>
+
+    <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>${jacoco.version}</version>
+        <configuration>
+            <excludes>
+                <exclude>scripts/**</exclude>
+            </excludes>
+        </configuration>
+        <executions>
+            <execution>
+                <goals>
+                    <goal>prepare-agent</goal>
+                </goals>
+            </execution>
+            <execution>
+                <id>report</id>
+                <phase>verify</phase>
+                <goals>
+                    <goal>report</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
+
+    </plugins>
+  </build>
+
+</project>
