@@ -49,11 +49,12 @@
     "compose:up:build": "docker-compose up -d --build",
     "compose:up:force": "docker-compose up -d --build --force-recreate",
     "compose:down": "docker-compose down",
+    "compose:clean": "docker compose -f docker-compose.yml down --volumes --rmi all",
     "compose:restart": "docker-compose down && docker-compose up -d",
     "compose:rebuild-force": "docker-compose down && docker-compose up -d --build --force-recreate",
     "compose:monitoring": "docker compose -f docker/docker-compose.monitoring.yml up -d",
-    "compose:monitoring:clean": "docker compose -f docker-compose.monitoring.yml down --volumes --rmi all",
-    "compose:logstash": "docker compose -f docker-compose.logstash.yml up -d"
+    "compose:monitoring:clean": "docker compose -f docker/docker-compose.monitoring.yml down --volumes --rmi all",
+    "compose:logstash": "docker compose -f docker/docker-compose.logstash.yml up -d"
   },
   "keywords": [
     "nodejs",
