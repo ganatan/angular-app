@@ -15,6 +15,7 @@ public class HealthController {
 	@GET
 	public Response getStatus() {
 		Map<String, Object> response = new LinkedHashMap<>();
+		System.out.println("00000000001");
 
 		response.put("status", "ok");
 
