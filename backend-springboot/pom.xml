@@ -8,9 +8,9 @@
 		<version>3.5.3</version>
 	</parent>
 	<groupId>com.ganatan</groupId>
-	<artifactId>backend-java</artifactId>
+	<artifactId>backend-springboot</artifactId>
 	<version>1.0.0</version>
-	<name>backend-java</name>
+	<name>backend-springboot</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

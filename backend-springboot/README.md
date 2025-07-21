@@ -1,4 +1,4 @@
-# backend-java
+# backend-springboot
 
 Application Spring Boot packagée en WAR, compatible Tomcat / Jetty, avec linter, tests, build Maven.
 
@@ -44,7 +44,7 @@ mvn clean install
 Génère le fichier :
 
 ```
-target/backend-java-1.0.0.war
+target/backend-springboot-1.0.0.war
 ```
 
 ---
@@ -61,8 +61,8 @@ target/backend-java-1.0.0.war
 
 3. Accéder à l'application :
 
-- http://localhost:8080/backend-java-1.0.0/
-- http://localhost:8080/backend-java-1.0.0/persons
+- http://localhost:8080/backend-springboot-1.0.0/
+- http://localhost:8080/backend-springboot-1.0.0/persons
 
 ---
 
@@ -92,7 +92,7 @@ mvn jetty:run
 ```
 
 Accès local :
-- http://localhost:8080/backend-java/
+- http://localhost:8080/backend-springboot/
 
 ---
 
@@ -111,7 +111,7 @@ mvn dependency:tree
 ## 📦 Commandes Java utiles
 
 ```bash
-java -jar target/backend-java-1.0.0.jar
+java -jar target/backend-springboot-1.0.0.jar
 ```
 
 

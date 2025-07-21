@@ -1,4 +1,4 @@
-name: backend-java
+name: backend-springboot
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: backend-java
+        working-directory: backend-springboot
 
     steps:
       - name: Checkout code
@@ -42,7 +42,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/backend-java:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/backend-springboot:latest .
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/backend-java:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/backend-springboot:latest

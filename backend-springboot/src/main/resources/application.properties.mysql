@@ -1,12 +1,12 @@
 # === Infos ===
 app.version=1.0.0
-app.name=backend-java
+app.name=backend-springboot
 
 # === Database Client (mock | pg | mysql) ===
 db.client=sql
 
 # === Application ===
-spring.application.name=backend-java
+spring.application.name=backend-springboot
 server.port=8080
 
 # === MySQL Configuration ===
