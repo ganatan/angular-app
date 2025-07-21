@@ -8,7 +8,6 @@
 .env.development
 .env.test
 .env.production
-src/main/resources/application.properties
 
 # Keep templates for sharing example configs
 !.env.template
