@@ -41,15 +41,15 @@ npm test
 ```
 
 
-# Test des outils
+# Minitoring Tools
   
   ElasticSearch	        http://localhost:9200
 
-  Kibana	            http://localhost:5601
+  Kibana	              http://localhost:5601
 
-  Prometheus	        http://localhost:9090
+  Prometheus	          http://localhost:9090
 
-  Grafana	            http://localhost:3000
+  Grafana	              http://localhost:3000
                         Login : admin / admin
 
   redis                 http://localhost:6379
