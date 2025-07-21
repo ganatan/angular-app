@@ -5,6 +5,8 @@ import { catchError, Observable, of } from 'rxjs';
 import { environment } from '../../../../../../environments/environment';
 import { addFilterParam } from '../../../../../shared/utils/query-utils';
 
+import { v4 as uuidv4 } from 'uuid';
+
 import { ITEM_CONSTANTS } from './item.constants';
 import { Filters } from './filters.model';
 import {
@@ -21,8 +23,12 @@ export class ItemsApiService implements ItemsServiceInterface {
   getItems(filters: Filters = {}): Observable<ItemsResponse> {
     const params = this.buildQueryParams(filters);
     const url = `${this.backendUrl}/${ITEM_CONSTANTS.RESOURCE_NAME}${params}`;
-    
-    return this.http.get<ItemsResponse>(url).pipe(
+
+    const correlationId = uuidv4();
+
+    const headers = { 'X-Correlation-Id': correlationId };
+
+    return this.http.get<ItemsResponse>(url, { headers }).pipe(
       catchError(this.handleError('getItems', getDefaultItemsResponse()))
     );
   }
