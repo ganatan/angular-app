@@ -12,6 +12,7 @@ async function connectRedis() {
   if (!REDIS_ENABLED) {
     console.log('Redis disabled');
     redisAvailable = false;
+
     return;
   }
 
@@ -38,6 +39,7 @@ async function connectRedis() {
 async function disconnectRedis() {
   if (!REDIS_ENABLED) {
     redisAvailable = false;
+
     return;
   }
 

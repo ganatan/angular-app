@@ -59,6 +59,7 @@ class Controller {
     if (cached) {
       res.locals.data = JSON.parse(cached);
       res.locals.statusCode = HTTP_STATUS.OK;
+
       return next();
     }
 
@@ -68,11 +69,13 @@ class Controller {
       try {
         await redisClient.set(cacheKey, JSON.stringify(result), { EX: 300 });
       } catch {
+        console.warn('Redis set failed (ignored)');
       }
     }
 
     res.locals.data = result;
     res.locals.statusCode = HTTP_STATUS.OK;
+
     return next();
   };
 

@@ -11,9 +11,14 @@ async function startServer() {
 
   server.stop = async () => {
     await disconnectRedis();
-    await new Promise((resolve, reject) => {
+
+    return new Promise((resolve, reject) => {
       server.close((err) => {
-        if (err) return reject(err);
+        if (err) {
+          reject(err);
+
+          return;
+        }
         resolve();
       });
     });
