@@ -2,7 +2,7 @@ import { HTTP_STATUS } from '../../shared/constants/http/http-status.js';
 import { ITEM_CONSTANTS } from './person.constant.js';
 import { validateItem } from './person.schema.js';
 
-import { redisClient } from '../../core/cache/redis.client.js';
+import { redisClient, isRedisAvailable } from '../../core/cache/redis.client.js';
 
 const validatePositiveInteger = (value, fieldName = 'ID') => {
   const parsed = parseInt(value);
@@ -45,27 +45,35 @@ class Controller {
   };
 
   getItems = async (req, res, next) => {
-    try {
-      const cacheKey = 'persons:all';
-      const cached = await redisClient.get(cacheKey);
-      if (cached) {
-        res.locals.data = JSON.parse(cached);
-        res.locals.statusCode = HTTP_STATUS.OK;
+    const cacheKey = 'persons:all';
+    let cached;
 
-        return next();
+    if (isRedisAvailable()) {
+      try {
+        cached = await redisClient.get(cacheKey);
+      } catch {
+        cached = null;
       }
-
-      const result = await this.service.getItems(req.query);
-
-      await redisClient.set(cacheKey, JSON.stringify(result), { EX: 300 });
-
-      res.locals.data = result;
-      res.locals.statusCode = HTTP_STATUS.OK;
-
-      return next();
-    } catch (error) {
-      return next(error);
     }
+
+    if (cached) {
+      res.locals.data = JSON.parse(cached);
+      res.locals.statusCode = HTTP_STATUS.OK;
+      return next();
+    }
+
+    const result = await this.service.getItems(req.query);
+
+    if (isRedisAvailable()) {
+      try {
+        await redisClient.set(cacheKey, JSON.stringify(result), { EX: 300 });
+      } catch {
+      }
+    }
+
+    res.locals.data = result;
+    res.locals.statusCode = HTTP_STATUS.OK;
+    return next();
   };
 
   getItemById = async (req, res, next) => {

@@ -23,6 +23,8 @@
     "test:env": "jest -- env.test.js",
     "test:app": "jest -- app.test.js",
     "test:unit": "cross-env NODE_ENV=test jest src/modules --testPathPattern=__tests__/unit",
+    "test:integration:app": "cross-env NODE_ENV=test jest src/__tests__/integration/app",
+    "test:integration:server": "cross-env NODE_ENV=test jest src/__tests__/integration/server",
     "test:integration": "cross-env NODE_ENV=test jest src/__tests__/integration",
     "test:e2e": "cross-env NODE_ENV=test jest src/__tests__/e2e",
     "build": "npm run generate:version && webpack --mode=production",
