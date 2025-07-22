@@ -1,6 +1,11 @@
+import { Request, Response, NextFunction } from 'express';
 import { v4 as uuidv4 } from 'uuid';
 
-const correlationIdMiddleware = (req, res, next) => {
+interface CorrelationIdRequest extends Request {
+  correlationId?: string;
+}
+
+const correlationIdMiddleware = (req: CorrelationIdRequest, res: Response, next: NextFunction): void => {
   const existingId = req.header('X-Correlation-Id');
   req.correlationId = existingId || uuidv4();
   res.setHeader('X-Correlation-Id', req.correlationId);
@@ -8,3 +13,4 @@ const correlationIdMiddleware = (req, res, next) => {
 };
 
 export default correlationIdMiddleware;
+

@@ -22,8 +22,6 @@ describe('Dummy test', () => {
 //     expect(true).toBe(true);
 //   });
 // });
-  
-
 
 // describe('GET /persons via HTTP (no compression)', () => {
 //   test('should return 200 and valid JSON payload', (done) => {

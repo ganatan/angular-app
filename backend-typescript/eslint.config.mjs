@@ -32,6 +32,7 @@ export default defineConfig([
       'consistent-return': 'error',
       'no-shadow': 'off',
       '@typescript-eslint/no-shadow': ['error'],
+      '@typescript-eslint/no-explicit-any': 'off',
       'comma-dangle': ['error', 'always-multiline'],
       'object-curly-spacing': ['error', 'always'],
       'callback-return': 'error',

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import logger from './logger';
+import logger from '../../infrastructure/logger/logger';
 
 type ErrorWithStatus = Error & { statusCode?: number };
 

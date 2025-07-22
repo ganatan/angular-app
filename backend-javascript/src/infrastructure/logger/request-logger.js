@@ -4,7 +4,7 @@ import { incrementHttpRequests } from '../metrics/metrics.js';
 
 const requestLogger = (req, res, next) => {
   const startTime = Date.now();
-
+  console.log('00000000001:request-logger');
   res.on('finish', () => {
     incrementHttpRequests(req.method, req.originalUrl, res.statusCode);
 

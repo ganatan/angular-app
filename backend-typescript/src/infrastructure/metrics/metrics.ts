@@ -6,22 +6,20 @@ if (PROMETHEUS_ENABLED) {
   client.collectDefaultMetrics();
 }
 
-let httpRequestCounter = null;
-
-if (PROMETHEUS_ENABLED) {
-  httpRequestCounter = new client.Counter({
+const httpRequestCounter = PROMETHEUS_ENABLED
+  ? new client.Counter({
     name: 'http_requests_total',
     help: 'Nombre total de requêtes HTTP',
-    labelNames: ['method', 'route', 'status'],
-  });
-}
+    labelNames: ['method', 'route', 'status'] as const,
+  })
+  : null;
 
-function incrementHttpRequests(method, route, status) {
+function incrementHttpRequests(method: string, route: string, status: number): void {
   if (httpRequestCounter) {
     httpRequestCounter.inc({
       method: method,
       route: route,
-      status: String(status),
+      status: status.toString(),
     });
   }
 }

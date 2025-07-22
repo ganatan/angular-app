@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
+
 import logger from '../../infrastructure/logger/logger';
 
 interface HttpError extends Error {
@@ -10,6 +11,8 @@ interface HttpError extends Error {
     timestamp: string;
     [key: string]: unknown;
   };
+  isTechnical404?: boolean;
+  stack?: string;
 }
 
 function errorHandler(err: HttpError, req: Request, res: Response, next: NextFunction): void {
@@ -22,18 +25,38 @@ function errorHandler(err: HttpError, req: Request, res: Response, next: NextFun
     timestamp: new Date().toISOString(),
   };
 
-  logger.error(`[ERROR] ${statusCode}: ${message}`);
-  if (context) {
-    logger.error(`[CONTEXT] ${context}`);
+  const logMessage = `[${req.method}] ${req.originalUrl} - ${statusCode} ${message}`;
+  let errorStack = err.stack;
+  if (statusCode === 404 && err.isTechnical404) {
+    errorStack = 'stack unknown';
+  }
+
+  const logData = {
+    method: req.method,
+    route: req.originalUrl,
+    statusCode: statusCode,
+    message: message,
+    context: context,
+    details: details,
+    stack: errorStack,
+    correlationId: (req as any).correlationId,
+  };
+
+  if (statusCode === 404) {
+    if (err.isTechnical404) {
+      logger.warn('404 unknown route', logData);
+    } else {
+      logger.warn('404 resource not found', logData);
+    }
+  } else if (statusCode >= 500 || statusCode === 401 || statusCode === 403 || statusCode === 409) {
+    logger.error(logMessage, logData);
+  } else {
+    logger.warn(logMessage, logData);
   }
 
   res.status(statusCode).json({
     success: false,
-    error: {
-      message,
-      context,
-      details,
-    },
+    error: { message, context, details },
   });
 }
 

@@ -1,0 +1,15 @@
+global:
+  scrape_interval: 25s
+
+scrape_configs:
+  - job_name: 'backend-javascript'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets:
+          - host.docker.internal:3001
+
+  - job_name: 'backend-typescript'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets:
+          - host.docker.internal:3002
