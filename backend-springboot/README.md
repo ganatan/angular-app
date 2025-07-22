@@ -4,6 +4,17 @@ Application Spring Boot packagée en WAR, compatible Tomcat / Jetty, avec linter
 
 ---
 
+## 📊 Updates (Dependency Updates)
+
+Check outdated dependencies and plugins:
+
+```bash
+mvn versions:display-dependency-updates
+mvn versions:display-plugin-updates
+```
+
+---
+
 ## 🔧 Lint (analyse statique)
 
 Analyse du style de code Java avec Checkstyle :

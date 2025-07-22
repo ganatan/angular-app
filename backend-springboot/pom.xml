@@ -56,6 +56,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+			</dependency>
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+		</dependency>
+		
+		
 	</dependencies>
 
 	<build>
@@ -64,21 +76,21 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			
-			
-		 <!-- Plugin JaCoCo -->
+
+
+			<!-- Plugin JaCoCo -->
 		    <plugin>
 		      <groupId>org.jacoco</groupId>
 		      <artifactId>jacoco-maven-plugin</artifactId>
 		      <version>0.8.11</version>
 		      <executions>
-		        <!-- Agent JaCoCo avant les tests -->
+					<!-- Agent JaCoCo avant les tests -->
 		        <execution>
 		          <goals>
 		            <goal>prepare-agent</goal>
 		          </goals>
 		        </execution>
-		        <!-- Génération du rapport après les tests -->
+					<!-- Génération du rapport après les tests -->
 		        <execution>
 		          <id>report</id>
 		          <phase>test</phase>
