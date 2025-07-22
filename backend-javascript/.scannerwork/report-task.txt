@@ -1,0 +1,6 @@
+projectKey=backend-javascript
+serverUrl=http://localhost:9000
+serverVersion=25.7.0.110598
+dashboardUrl=http://localhost:9000/dashboard?id=backend-javascript
+ceTaskId=752fcaa9-1a89-4577-9257-05739b720aba
+ceTaskUrl=http://localhost:9000/api/ce/task?id=752fcaa9-1a89-4577-9257-05739b720aba
