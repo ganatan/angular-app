@@ -31,6 +31,7 @@ services:
     image: prom/prometheus
     container_name: prometheus
     volumes:
+      - prometheus_data:/prometheus
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
       - "9090:9090"
@@ -51,4 +52,7 @@ services:
     image: redislabs/redisinsight:1.14.0
     container_name: redisinsight
     ports:
-      - "8001:8001" 
+      - "8001:8001"
+
+volumes:
+  prometheus_data:

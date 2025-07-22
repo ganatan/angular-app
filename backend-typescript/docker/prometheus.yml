@@ -13,3 +13,9 @@ scrape_configs:
     static_configs:
       - targets:
           - host.docker.internal:3002
+
+  - job_name: 'backend-springboot'
+    metrics_path: '/prometheus'
+    static_configs:
+      - targets:
+          - host.docker.internal:3003
