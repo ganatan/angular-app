@@ -2,6 +2,8 @@ import { createLogger, transports, format, Logger, transport } from 'winston';
 import DailyRotateFile from 'winston-daily-rotate-file';
 import { ElasticsearchTransport, ElasticsearchTransportOptions } from 'winston-elasticsearch';
 
+const ELASTIC_INDEX_PREFIX = process.env.ELASTIC_INDEX_PREFIX || 'backend-typescript-logs';
+
 const transportsArray: transport[] = [];
 
 if (process.env.LOGSTASH_ENABLED === 'true') {
@@ -18,7 +20,7 @@ if (process.env.LOGSTASH_ENABLED === 'true') {
 } else if (process.env.ELASTIC_ENABLED === 'true') {
   const esOptions: ElasticsearchTransportOptions = {
     level: 'info',
-    indexPrefix: 'backend-javascript-logs',
+    indexPrefix: ELASTIC_INDEX_PREFIX,
     clientOpts: {
       node: process.env.ELASTICSEARCH_NODE || 'http://localhost:9200',
     },

@@ -35,6 +35,7 @@
     "docker:remove-all-containers": "FOR /f %i IN ('docker ps -a -q') DO docker rm -f %i",
     "docker:remove-all-images": "FOR /f %i IN ('docker images -q') DO docker rmi -f %i",
     "docker:remove-all-volumes": "FOR /f %i IN ('docker volume ls -q') DO docker volume rm %i",
+    "docker:remove-all": "npm run docker:remove-all-containers && npm run docker:remove-all-images && npm run docker:remove-all-volumes",
     "docker:list-containers": "docker ps -a",
     "docker:list-images": "docker images",
     "docker:list-volumes": "docker volume ls",

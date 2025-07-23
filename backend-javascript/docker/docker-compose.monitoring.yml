@@ -27,15 +27,6 @@ services:
     ports:
       - "5044:5044"
 
-  prometheus:
-    image: prom/prometheus
-    container_name: prometheus
-    volumes:
-      - prometheus_data:/prometheus
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
-    ports:
-      - "9090:9090"
-
   grafana:
     image: grafana/grafana
     container_name: grafana
@@ -53,6 +44,3 @@ services:
     container_name: redisinsight
     ports:
       - "8001:8001"
-
-volumes:
-  prometheus_data:

@@ -15,7 +15,7 @@ const requestLogger = (req: ExtendedRequest, res: Response, next: NextFunction):
 
   res.on('finish', () => {
     incrementHttpRequests(req.method, req.originalUrl, res.statusCode);
-
+    console.log('00000000001:request-logger');
     const responseTime = Date.now() - startTime;
     const logLevel = res.statusCode >= 400 ? 'warn' : 'info';
 

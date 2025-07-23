@@ -27,6 +27,8 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
+		<checkstyle.version>10.26.1</checkstyle.version>
+        <maven.checkstyle.plugin.version>3.6.0</maven.checkstyle.plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -71,14 +73,14 @@
 	</dependencies>
 
 	<build>
+
 		<plugins>
+		
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
-
-			<!-- Plugin JaCoCo -->
 		    <plugin>
 		      <groupId>org.jacoco</groupId>
 		      <artifactId>jacoco-maven-plugin</artifactId>
@@ -99,8 +101,31 @@
 		          </goals>
 		        </execution>
 		      </executions>
-		    </plugin>			
-				</plugins>
-			</build>
+		    </plugin>	
+		    		
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>${maven.checkstyle.plugin.version}</version>
+                <configuration>
+                    <configLocation>checkstyle.xml</configLocation>
+                    <consoleOutput>true</consoleOutput>
+                    <failsOnError>false</failsOnError>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.puppycrawl.tools</groupId>
+                        <artifactId>checkstyle</artifactId>
+                        <version>${checkstyle.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+		    		
+		    		
+		</plugins>
+	
+	</build>
+			
+			
 
 </project>
