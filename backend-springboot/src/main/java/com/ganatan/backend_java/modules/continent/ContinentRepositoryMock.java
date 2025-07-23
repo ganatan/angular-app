@@ -24,9 +24,9 @@ public class ContinentRepositoryMock implements ContinentRepositoryInterface {
             ObjectMapper mapper = new ObjectMapper();
             ClassPathResource resource = new ClassPathResource("data/mock/continent.json");
             continents = mapper.readValue(resource.getInputStream(), new TypeReference<List<Continent>>() {});
-            System.out.println("📁 [GANATAN MOCK] JSON chargé : " + continents.size() + " continents.");
+            System.out.println("[GANATAN MOCK] JSON chargé : " + continents.size() + " continents.");
         } catch (IOException e) {
-            System.err.println("❌ [GANATAN MOCK] Erreur JSON : " + e.getMessage());
+            System.err.println("[GANATAN MOCK] Erreur JSON : " + e.getMessage());
             continents.clear();
         }
     }
