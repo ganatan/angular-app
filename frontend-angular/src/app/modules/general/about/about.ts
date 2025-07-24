@@ -37,7 +37,7 @@ export class About implements OnInit {
         { name: 'Angular CLI 20.0.5' },
         { name: 'Angular SSR 20.0.5' },
         { name: 'Bootstrap 5.3.7' },
-        { name: 'Font Awesome 6.7.2' },
+        { name: 'Font Awesome 7.0.0' },
       ],
       backend: [
         { name: 'Node.js 22.14.0' },
